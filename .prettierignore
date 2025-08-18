@@ -1,0 +1,11 @@
+# Ignore all files in the "node_modules" directory
+node_modules/
+/public/
+# Ignore built files and directories
+/.next/
+/out/
+.yarn/
+
+# Ignore specific files
+/public/images/*.jpg
+/public/**/*.svg

@@ -1,0 +1,47 @@
+.gotQuestions {
+    background-color: #093F38;
+    padding: 112px 0px;
+}
+
+.gotTitle h2 {
+    color: #C6EEE2 !important;
+}
+
+.gotTitle p {
+    color: #c49073 !important;
+}
+
+.gotTitle span {
+    color: #c49073 !important;
+}
+
+.gotAccordion .accordion {
+    background-color: transparent !important;
+}
+
+.gotAccordion button.accordion-button {
+    background-color: transparent !important;
+}
+
+.gotAccordion .accordion-item {
+    background: transparent;
+    border-radius: 0px;
+}
+
+.gotAccordion .accordion-item {
+    border: 1px solid #c49073 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-radius: 0 !important;
+}
+
+.gotAccordion .accordion-button::after {
+    background-image: url(/images/Arrow-Icon.png) !important;
+
+}
+
+@media(max-width:767px) {
+    .gotQuestions {
+        padding: 50px 0px;
+    }
+}

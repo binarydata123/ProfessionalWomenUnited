@@ -1,0 +1,56 @@
+.error-input {
+	border: 1px solid #ff5050 !important;
+}
+
+.error-text {
+	color: #ff5050 !important;
+}
+
+.form-group-wrapper input {
+	background-color: transparent !important;
+}
+
+input:-internal-autofill-selected {
+	background-image: none !important;
+	background-color: none !important;
+}
+
+.form-group-wrapper input:focus {
+	border: 1px solid var(--green-light) !important;
+	box-shadow: none;
+}
+
+.d-flex.input-box {
+	flex-direction: column-reverse;
+}
+
+.form-group-wrapper label {
+	color: var(--text-sonic-silver);
+	font-size: var(--font-small);
+	font-weight: var(--weight-medium);
+}
+
+input,
+select,
+textarea {
+	transition: all 0.3s ease;
+
+	&:focus {
+		outline: none;
+		border-color: var(--green-light) !important;
+
+		+ label {
+			color: #093f38 !important;
+		}
+	}
+}
+
+.error-message {
+	color: #ff5050;
+	font-size: 12px;
+	font-weight: var(--weight-light);
+}
+
+.form-control:focus {
+	box-shadow: none;
+}

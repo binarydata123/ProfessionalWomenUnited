@@ -1,0 +1,30 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /user/
+Disallow: /lawyer/
+Disallow: /temp/
+Disallow: /404/
+Disallow: /503/
+Disallow: /login/
+Disallow: /search/
+Disallow: /feed/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /wp-admin/
+Disallow: /images/
+Disallow: /_next/
+Disallow: /submit-review-2/
+Disallow: /profiles/
+Disallow: /*/page/
+Disallow: /cdn-cgi/l/email-protection/
+
+# Disallow crawling for specific subdomains
+User-agent: *
+Disallow: http://api.connectlegal.ae/
+Disallow: http://dev.connectlegal.ae/
+
+Sitemap: https://connectlegal.ae/sitemap.xml
+
+# Termly scanner
+User-agent: TermlyBot
+Allow: /

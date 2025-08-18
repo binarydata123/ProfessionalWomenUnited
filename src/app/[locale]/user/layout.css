@@ -1,0 +1,371 @@
+.left-part {
+	width: 25%;
+	padding: 45px 45px 45px 56px;
+	border-right: 1px solid #cccccc99;
+	/* height: 100vh; */
+}
+.left-menu {
+	margin-top: 60px;
+}
+.left-menu li a {
+	font-size: var(--font-small) !important;
+	line-height: var(--line-height-small) !important;
+	color: var(--social-link);
+	font-weight: var(--weight-medium);
+	display: block;
+	padding: 10px 16px;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	transition: 0.5s;
+}
+.left-menu li a:hover {
+	background: var(--green-light);
+}
+.left-menu li a.active {
+	background: var(--green-light);
+}
+.right-part {
+	width: 75%;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+
+.glyphicon-bell {
+	font-size: 1.5rem;
+}
+
+.notifications {
+	min-width: 420px;
+}
+
+.notifications-wrapper {
+	overflow: auto;
+	max-height: 250px;
+}
+
+.menu-title {
+	color: #ff7788;
+	font-size: 1.5rem;
+	display: inline-block;
+}
+
+.glyphicon-circle-arrow-right {
+	margin-left: 10px;
+}
+
+.notification-heading,
+.notification-footer {
+	padding: 2px 10px;
+}
+
+.dropdown-menu.divider {
+	margin: 5px 0;
+}
+
+.item-title {
+	font-size: 1.3rem;
+	color: #000;
+}
+
+.notifications a.content {
+	text-decoration: none;
+	background: #ccc;
+}
+
+.notification-item {
+	padding: 10px;
+	margin: 5px;
+	background: #ccc;
+	border-radius: 4px;
+}
+
+/*  */
+
+.top-header {
+	border-bottom: 1px solid #cccccc99;
+	padding-right: 56px;
+}
+.head-icons {
+	text-align: right;
+}
+.head-icons {
+	text-align: right;
+	padding: 18px 0;
+}
+.head-icons li a small.num {
+	position: absolute;
+	right: -10px;
+	top: -15px;
+}
+a.pog {
+	position: relative;
+}
+.head-icons li a i {
+	color: #b0e8d8;
+	font-size: 25px;
+}
+.head-icons li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 0 0 30px;
+}
+li.user-profile img {
+	width: 42px;
+	height: 42px;
+	border-radius: 100px;
+}
+.bell-icons {
+	position: relative;
+	top: 9px;
+}
+.head-icons li a small.num {
+	position: absolute;
+	right: -10px;
+	top: -15px;
+}
+
+.dropdown .dropdown-toggle::after {
+	display: none;
+}
+.dropdown button {
+	border: 1.5px solid var(--button-1);
+	background: #fff0;
+}
+.dropdown button i {
+	color: var(--button-1);
+	font-size: 18px;
+}
+.dropdown button {
+	border: 1.5px solid var(--button-1);
+	background: #fff0 !important;
+	padding: 4px 6px;
+}
+.dropdown ul.dropdown-menu.show {
+	border-radius: 4px;
+	padding: 8px;
+	width: 196px;
+	border: solid 1px #efefef6b;
+	margin-top: 12px !important;
+}
+.dropdown ul.dropdown-menu.show li a {
+	font-size: 12px !important;
+	line-height: 18px !important;
+	color: var(--text-sonic-silver);
+	font-weight: 500;
+}
+.dropdown ul.dropdown-menu.show li a img {
+	width: 18px;
+}
+.dropdown ul.dropdown-menu.show li {
+	display: block;
+	margin: 6px 8px;
+	padding: 4px 1px;
+}
+
+.notifaction-box {
+	position: absolute;
+	/* right: 215px; */
+	right: 10px;
+	z-index: 999999;
+	background: var(--text-white);
+	top: 40px;
+	text-align: left;
+}
+
+.notifaction-box {
+	width: 480px;
+}
+
+.box-not {
+	border-bottom: 1px solid var(--anti-flash-white);
+	padding: 10px 10px;
+}
+.notifaction-box {
+	border: 1px solid var(--anti-flash-white);
+}
+.notifaction-box {
+	border: 1px solid var(--anti-flash-white);
+	border-radius: 4px;
+}
+.box-not h5 {
+	margin-top: 5px;
+}
+.bell-icons i.fa-solid.fa-bell {
+	position: relative;
+	left: -8px;
+}
+.h-80 {
+	height: 80px;
+}
+.left-menu-icon {
+	width: 17px;
+	margin-right: 12px;
+}
+
+/* menu-mobile */
+
+.logos {
+	width: 175px;
+}
+.btn-208C84 {
+	background: var(--button-1);
+	font-size: var(--font-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small);
+	color: var(--text-white);
+	border: solid 1px var(--button-1);
+	border-radius: 4px;
+	padding: 8px 20px;
+}
+.btn-208C84:hover {
+	color: var(--button-1);
+	background: var(--text-white);
+}
+.btn-fff {
+	background: var(--text-white);
+	font-size: var(--font-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small);
+	color: var(--button-1);
+	border: solid 1px var(--button-1);
+	border-radius: 4px;
+	padding: 8px 20px;
+}
+.btn-fff:hover {
+	background: var(--button-1);
+	color: var(--text-white);
+}
+.sp-r {
+	margin-right: 10px;
+}
+#navbarSupportedContent ul li a {
+	color: var(--social-link);
+	font-size: var(--font-small);
+	font-weight: var(--weight-medium);
+	padding: 14px 10px;
+}
+.left-menu {
+	margin-top: 5px;
+	/* border-top: 1px solid #093F381A; */
+	padding-top: 18px;
+}
+div#navbarSupportedContent {
+	border-top: 1px solid #093f381a;
+	margin-top: 20px;
+}
+#navbarSupportedContent ul li a.active {
+	color: var(--green-medium-2);
+}
+#navbarSupportedContent ul li a:hover {
+	color: var(--green-medium-2);
+}
+
+.header-part {
+	padding: 6px 0;
+}
+.navbar-toggler {
+	background: var(--bg-transperent);
+	border: none;
+}
+.navbar-light .navbar-toggler-icon {
+	background-image: url(/images/togal-img.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.navbar-toggler:focus {
+	box-shadow: unset;
+}
+.w-12 img.round-user {
+	width: 42px !important;
+	max-width: 42px;
+}
+.mt-2-user {
+	margin-top: 11px;
+}
+a.drop-a .dropdown {
+	width: 100%;
+}
+
+@media (max-width: 1199px) {
+	.left-part {
+		padding: 25px 20px;
+	}
+}
+
+@media (min-width: 991px) {
+	.dask-none {
+		display: none;
+	}
+}
+@media (max-width: 991px) {
+	.left-part {
+		width: 30%;
+	}
+	.right-part {
+		width: 70%;
+	}
+	#navbarSupportedContent a.drop-a ul.dropdown-menu.show li a {
+		font-size: 13px !important;
+		padding: 3px 3px;
+	}
+	.dropdown ul.dropdown-menu.show {
+		width: 100%;
+	}
+	.dropdown ul.dropdown-menu.show li {
+		margin: 0;
+	}
+	.top-header {
+		padding-right: 5px;
+	}
+}
+
+@media (max-width: 767px) {
+	.m-d-flex-none {
+		display: unset !important;
+	}
+	.left-part {
+		width: 100%;
+	}
+	.right-part {
+		width: 100%;
+	}
+	.left-part {
+		height: unset;
+	}
+	.notifaction-box {
+		width: 99%;
+		margin: 0 auto;
+	}
+	.top-header {
+		padding-right: 0;
+	}
+	.left-part {
+		display: none;
+	}
+}
+
+@media (max-width: 350px) {
+	.mt-2-user {
+		margin-left: 8px;
+	}
+}
+
+/* .padd{
+    padding-bottom: 16rem;
+} */
+.outer-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.main-content.add-content-user {
+	height: 100%;
+	padding-bottom: 200px;
+}
+
+@media (max-width: 991px) {
+	.main-content.add-content-user {
+		height: 100%;
+		padding-bottom: 60px;
+	}
+}

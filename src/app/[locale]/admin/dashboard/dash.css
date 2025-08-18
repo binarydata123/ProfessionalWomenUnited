@@ -1,0 +1,65 @@
+.pag-box {
+	width: 100%;
+	height: 8px;
+	background: var(--anti-flash-white);
+	border-radius: 8px;
+}
+.g-pag-box {
+	width: 32px;
+	height: 8px;
+	background: var(--green-medium-1);
+	border-radius: 8px;
+}
+.b-r-100 {
+	border-radius: 100px;
+}
+.pad-btn-set {
+	padding: 9px 9px;
+}
+.back-dash-card {
+	background: var(--green-dark);
+}
+.dash-card-g {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 15px;
+	border-radius: 8px;
+}
+.box-right {
+	border: solid 1px;
+	padding: 3px 6px;
+	border-radius: 4px;
+	position: relative;
+	left: 2px;
+}
+.icon-size-10 {
+	font-size: 10px;
+	padding: 1px 3px;
+}
+
+.card-notifaction {
+	background: #fcfcfc;
+	border: 1px solid var(--anti-flash-white);
+	border-radius: 8px;
+	padding: 4px 8px;
+}
+.w-39 {
+	width: 39px;
+	height: 39px;
+}
+
+.white-208C84 {
+	color: #208c84 !important;
+	border: 1px solid var(--button-1);
+}
+.white-208C84:hover {
+	background-color: #208c84 !important;
+	color: #fff !important;
+}
+
+@media (max-width: 991px) {
+	.recent-reviews {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,74 @@
+.modal-ok-button {
+	background-color: var(--boysenberry) !important;
+	border: 1px solid var(--boysenberry) !important;
+	height: 42px !important;
+	padding: 0 20px !important;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+button.modal-ok-button.text-white.mt-2.mx-2 {
+	background-color: transparent !important;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #BE8363 !important;
+	border: none !important;
+}
+
+button.modal-cancel-button.btn.btn-primary {
+	background: transparent;
+	color: var(--boysenberry);
+	border: none;
+	height: 42px !important;
+	padding: 0 20px !important;
+	border-radius: 4px;
+}
+
+button.btn-close {
+	border: 1px solid var(--text-sonic-silver);
+	color: var(--text-sonic-silver);
+	width: 8px;
+	height: 8px;
+	font-size: 8px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	padding: 5px !important;
+	z-index: 9999;
+}
+
+.user-info-modal div#contained-modal-title-vcenter {
+	color: var(--green-dark);
+}
+
+div#contained-modal-title-vcenter {
+	color: var(--social-link);
+	font-size: var(--font-x-s-large);
+	font-weight: var(--weight-bold);
+}
+
+.modal-header {
+	border-bottom: none;
+	padding: 1rem 1rem 0 1rem !important;
+}
+
+.modal-footer {
+	border-top: none;
+	padding: 0 1rem 1rem 1rem !important;
+}
+
+@media (min-width: 576px) {
+	.modal-sm {
+		--bs-modal-width: 400px;
+	}
+}
+
+h4.green-med-pop {
+	color: #c49073 !important;
+}

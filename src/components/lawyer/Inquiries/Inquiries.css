@@ -1,0 +1,58 @@
+#lawyer-dash .dropdown button {
+	border: none !important;
+}
+
+.welcome {
+	border-radius: 8px;
+	background-image: url('/images/Blogs/b-image.png');
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+}
+.welcome h3 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 45px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #093f38;
+}
+.welcome p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #093f38;
+	padding-top: 20px;
+}
+.arrow-top {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+#find-clients {
+	padding: 18px !important;
+}
+#find-clients h5 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 34px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #093f38;
+}
+#find-clients p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #1f1f1f;
+	padding-top: 20px;
+}
+.border-color {
+	border: 1px solid #208c84 !important;
+	border-radius: 4px;
+}

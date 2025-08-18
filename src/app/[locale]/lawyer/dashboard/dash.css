@@ -1,0 +1,136 @@
+.pag-box {
+	width: 100%;
+	height: 8px;
+	background: var(--anti-flash-white);
+	border-radius: 8px;
+}
+
+.g-pag-box {
+	width: 100%;
+	height: 8px;
+	background: var(--green-medium-1);
+	border-radius: 8px;
+}
+
+.b-r-100 {
+	border-radius: 100px;
+}
+
+.pad-btn-set {
+	padding: 9px 9px;
+}
+
+.dash-card-g {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+.box-right {
+	border: solid 1px;
+	padding: 3px 6px;
+	border-radius: 4px;
+	position: relative;
+	left: 2px;
+}
+
+.icon-size-10 {
+	font-size: 10px;
+	padding: 1px 3px;
+}
+
+.card-inquiries {
+	border: 1px solid var(--green-light);
+	padding: 8px 24px;
+	border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+	.recent-reviews {
+		margin-top: 20px;
+	}
+}
+
+.recent-reviews.dashboard-banner {
+	display: flex;
+	height: 240px;
+	align-items: center;
+}
+
+.recent-reviews.dashboard-banner.banner-2 {
+	display: flex;
+	height: 190px;
+	align-items: center;
+}
+
+.dashboard-banner h2 {
+	color: var(--green-dark);
+	font-size: var(--font-x-large);
+	font-weight: var(--weight-bold);
+}
+
+.dashboard-banner .banner-button {
+	border: 1px solid var(--button-1);
+	border-radius: 4px;
+}
+
+.banner-box {
+	background-image: url('/images/empty-state-top-bg.jpg');
+	background-size: cover;
+	border-radius: 6px;
+}
+
+.recent-reviews.dashboard-banner.banner-box p {
+	color: var(--green-dark);
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+}
+
+.cross-btn {
+	top: 0;
+	right: 0;
+}
+
+.cross-btn button {
+	border: 1px solid rgba(9, 63, 56, 1);
+	padding: 0px 3px 3px 4px !important;
+}
+@media (min-width: 1400px) {
+	.dashboard-banner {
+		padding: 0 40px !important;
+	}
+}
+
+.card-notifaction {
+	background: #fcfcfc;
+	border: 1px solid var(--anti-flash-white);
+	border-radius: 8px;
+	padding: 6px 8px;
+}
+
+.w-39 {
+	width: 39px;
+	height: 39px;
+}
+
+.white-208C84 {
+	color: #208c84 !important;
+	border: 1px solid var(--button-1);
+}
+
+.white-208C84:hover {
+	background-color: #208c84 !important;
+	color: #fff !important;
+}
+
+p.list-right-text {
+	color: var(--text-sonic-silver);
+	font-size: 12px;
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--custom-line-height);
+}
+.main-content.add-content-user {
+	padding: 0px 0px 200px 0px;
+}

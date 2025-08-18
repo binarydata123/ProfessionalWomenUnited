@@ -1,0 +1,28 @@
+.card-notifaction {
+	background: #fcfcfc;
+	border: 1px solid var(--anti-flash-white);
+	border-radius: 8px;
+	padding: 6px 8px;
+}
+
+.w-39 {
+	width: 39px;
+	height: 39px;
+}
+
+.white-208C84 {
+	color: #208c84 !important;
+	border: 1px solid var(--button-1);
+}
+
+.white-208C84:hover {
+	background-color: #208c84 !important;
+	color: #fff !important;
+}
+
+p.list-right-text {
+	color: var(--text-sonic-silver);
+	font-size: 12px;
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--custom-line-height);
+}

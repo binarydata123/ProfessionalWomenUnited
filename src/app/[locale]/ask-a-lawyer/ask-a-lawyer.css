@@ -1,0 +1,184 @@
+.main-section h5 {
+	font-size: var(--font-xx-small);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--green-medium-2);
+	padding-top: 20px;
+}
+.main-section h1 {
+	font-size: var(--font-larger);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-larger);
+	letter-spacing: 0em;
+	text-align: center;
+	color: var(--social-link);
+	padding-top: 20px;
+}
+.main-section p {
+	font-size: var(--font-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: center;
+	color: var(--text-sonic-silver);
+	padding: 20px 0px;
+}
+.ask-a-lawyer {
+	max-width: 1076px;
+	margin: 0 auto;
+}
+.main-section .accordion-header {
+	padding: 8px 8px 8px 12px;
+	border-radius: 8px;
+	background-color: var(--green-light);
+}
+.main-section button.accordion-button {
+	padding: 10px 0px;
+	background-color: var(--bg-transperent);
+}
+.main-section .accordion-button:not(.collapsed) {
+	background-color: var(--bg-transperent) !important;
+}
+.main-section .accordion-button:focus {
+	z-index: 3;
+	border-color: var(--bg-transperent);
+	outline: 0;
+	box-shadow: none;
+}
+.main-section .accordian-tabs-class h6 {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--green-medium-2);
+}
+.main-section .accordion-body h3 {
+	font-size: var(--font-small);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--social-link);
+	padding: 10px 0px;
+}
+.main-section .accordion-body h6 {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--social-link);
+}
+.main-section .accordion-body p {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--text-sonic-silver);
+	padding: 10px 0px;
+}
+.main-section .accordion-body ul {
+	padding-left: 20px;
+}
+.accordion-body {
+	padding: 10px 0px 0px 0px;
+}
+.main-section .accordion-body ul li {
+	list-style: disc;
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--text-sonic-silver);
+}
+.main-section .accordion-button:not(.collapsed) {
+	box-shadow: unset;
+}
+.line-hr {
+	height: 1px;
+	background-color: var(--Chinese-silver);
+	width: 100%;
+	margin: 20px 0px;
+}
+.legal-issue label {
+	font-size: var(--font-small);
+	font-weight: var(--weight-medium);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--text-sonic-silver);
+	padding: 15px 0px;
+}
+.legal-issue input {
+	height: 55px;
+	padding: 17px 16px 17px 20px;
+	border-radius: 4px;
+	border: 1px solid #e0e0e0;
+}
+.legal-issue input:focus {
+	box-shadow: 0;
+	outline: 0;
+}
+.legal-issue textarea {
+	padding: 20px;
+}
+.legal-issue input::placeholder,
+.legal-issue textarea::placeholder {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--text-sonic-silver);
+}
+.there-check-box .form-check-input:checked {
+	background-color: var(--anti-flash-white);
+	border-color: var(--anti-flash-white);
+}
+.there-check-box .form-check-input:checked[type='radio'] {
+	background: var(--green-medium-1);
+}
+.there-check-box .form-check-input {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.there-check-box label {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+span.border.border-radius-1.banner-arrow-btn {
+	border-radius: 6px;
+	display: flex;
+}
+.main-section span {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-medium);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--Chinese-silver);
+}
+.privacy-policy {
+	padding-top: 10%;
+}
+
+@media (max-width: 767px) {
+	.btn-commn {
+		width: 100% !important;
+	}
+	.main-section h1 {
+		font-size: var(--font-xxx-large);
+	}
+	.privacy-policy {
+		padding-top: 25%;
+		padding-bottom: 30px;
+	}
+}

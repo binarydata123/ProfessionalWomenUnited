@@ -1,0 +1,236 @@
+.guest-layout-wrapper {
+	background-image: url('/auth-bg.jpg');
+	background-repeat: no-repeat;
+}
+
+.guest-layout-wrappe1 {
+	background-image: url('/auth-bg-1.png');
+	background-repeat: no-repeat;
+}
+.auth-page-wrapper {
+	align-items: center;
+}
+.auth-page-wrapper h1 {
+	color: var(--green-medium-2);
+	font-size: var(--font-smaller);
+	font-weight: var(--weight-bold);
+}
+
+.auth-page-wrapper p {
+	font-size: var(--font-small);
+	font-weight: var(--weight-medium);
+	line-height: var(--line-height-small) !important;
+	color: var(--social-link);
+}
+
+.register-page-link a {
+	font-size: var(--font-small);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: center;
+	color: #5679fd;
+}
+
+.auth-page-wrapper h1 span {
+	color: var(--color-black);
+}
+.main-login {
+	max-width: 480px;
+	padding-top: 20px;
+}
+
+.password-key {
+	width: 20px;
+	position: absolute;
+	right: 10px;
+	top: 58%;
+}
+.main-login button {
+	height: 55px;
+	border-radius: 4px;
+}
+.main-login button + button {
+	border: 1px solid var(--Chinese-silver);
+	font-size: var(--font-small);
+	font-weight: var(--weight-medium);
+	line-height: var(--line-height-small) !important;
+	color: #18181b;
+}
+.main-login button + button svg {
+	font-size: 30px;
+}
+.register-page-link p {
+	font-size: var(--font-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: center;
+	color: var(--social-link);
+}
+h3.text-light.logo-style {
+	padding: 20px 60px;
+}
+
+.geust-layout-content-box {
+	width: 70%;
+}
+
+@media (max-width: 768px) {
+	.guest-layout-wrapper {
+		padding: 20px 20px 70px 20px;
+		margin-bottom: 30px;
+	}
+	.geust-layout-content-box.bg-light {
+		border-radius: 10px;
+	}
+	.register-page-link a {
+		font-size: 12px;
+	}
+	.auth-page-wrapper p {
+		font-size: 12px;
+	}
+	.auth-page-wrapper h1 {
+		font-size: var(--font-xx-large);
+	}
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1700px) {
+	.main-login {
+		padding-left: 100px;
+	}
+}
+@media (min-width: 1366px) {
+	.guest-layout-wrapper {
+		height: 100vh;
+	}
+	.main-login {
+		/* max-width: 480px; */
+		max-width: 630px;
+		padding-top: 20px;
+	}
+	/* .auth-page-wrapper {
+    height: 100vh;
+  } */
+	form.d-flex.justify-content-end.p-2.btn-header {
+		padding: 20px 70px !important;
+	}
+}
+
+.video-style {
+	position: relative;
+	width: 30%;
+}
+
+.logo-style img {
+	width: 100%;
+}
+.logo-img {
+	position: fixed;
+	z-index: 1;
+	width: 16%;
+	top: 20px;
+	left: 20px;
+	width: 200px;
+}
+
+#mobile-auth-header {
+	display: none;
+}
+
+#background-video {
+	height: 100vh;
+	position: fixed;
+}
+
+.left-video-area {
+	position: relative;
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1024px) {
+	.main-login {
+		max-width: 800px !important;
+		padding-top: 20px;
+		padding-left: 35%;
+	}
+	.geust-layout-content-box {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.geust-layout-content-box {
+		width: 100%;
+		padding: 15px;
+		z-index: 9;
+		max-width: 95%;
+		margin: 30px auto 0px;
+		border-radius: 12px;
+	}
+	.toggle-main {
+		margin-top: 20px;
+	}
+	video#background-video {
+		position: fixed;
+		width: 100%;
+		height: unset;
+	}
+	.main-login {
+		max-width: 100%;
+		padding-top: 20px;
+	}
+	.logo-img {
+		top: 20px;
+		left: 20px;
+	}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.video-style {
+		position: relative;
+		width: unset;
+	}
+	#paymentform {
+		max-width: 100% !important;
+	}
+}
+@media (max-width: 767px) {
+	#mobile-auth-header {
+		display: block;
+	}
+	form.d-flex.justify-content-end.p-2.btn-header {
+		background: #fff;
+		padding: 10px !important;
+		border-radius: 8px;
+		max-width: 90%;
+		padding-top: 10px !important;
+		margin: 30px auto;
+	}
+	a.btn.btn-outline-success.btn-login {
+		width: 100%;
+		text-align: center;
+	}
+	a.btn.btn-outline-success.btn-login.ml-add {
+		margin-left: 10px;
+	}
+	.btn.btn-outline-success.btn-lawyer {
+		text-align: center;
+		width: 100%;
+	}
+	.auth-layout-row {
+		flex-direction: column;
+	}
+}
+
+.geust-layout-content-box::-webkit-scrollbar {
+	width: 0px !important;
+}
+
+.geust-layout-content-box::-webkit-scrollbar-thumb {
+	background: transparent !important;
+}
+
+.main-wrapper.main-container.bg-back.color {
+	background: #f8f9fa;
+}
+
+.auth-page-wrapper {
+	padding: 0 0px 40px 20px;
+}

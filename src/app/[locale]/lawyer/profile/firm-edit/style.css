@@ -1,0 +1,54 @@
+.options-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.options-list li {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.options-list li:hover {
+	background-color: #f2f2f2;
+}
+
+.selected-options {
+	margin-top: 10px;
+}
+
+.selected-option {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 5px;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+}
+
+.selected-option .remove-spcl {
+	/* margin-left: 5px; */
+	color: #ff5c5c;
+	border: none;
+	cursor: pointer;
+}
+
+.remove-spcl {
+	border: none;
+	cursor: pointer;
+}
+img.img-set {
+	width: 32px;
+}
+
+/* Style for the remove button on hover */
+.selected-option button:hover {
+	background-color: #ff3333;
+}
+
+.options-list {
+	max-height: 150px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	padding: 5px;
+}

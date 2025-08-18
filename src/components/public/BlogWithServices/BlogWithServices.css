@@ -1,0 +1,30 @@
+.legal-sights .pagination li a.page-link {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	padding: 12px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px !important;
+}
+.legal-sights .active_pagination a {
+	border: 0px !important;
+	background: rgba(61, 201, 161, 0.32);
+	border-radius: 12px !important;
+}
+.legal-sights li.active_pagination.page-item a {
+	border: 1px solid #02142d !important;
+	border-radius: 44px;
+}
+
+@media (max-width: 768px) {
+	.legal-sights .pagination li a.page-link {
+		display: flex;
+		width: 25px;
+		height: 25px;
+		padding: 0px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px !important;
+	}
+}

@@ -1,0 +1,37 @@
+.primary-btn-wrapper {
+	.btn-primary {
+		border: 1px solid var(--boysenberry) !important;
+		padding: 12px 24px 12px 24px !important;
+		border-radius: 4px !important;
+		background: var(--boysenberry) !important;
+		font-weight: var(--weight-semi-bold) !important;
+		color: var(--text-white) !important;
+		line-height: var(--line-height-small);
+		font-size: var(--font-small);
+		letter-spacing: 0px;
+		transition: 0.5s;
+	}
+
+	.btn-primary:hover {
+		border: 1px solid var(--boysenberry-light) !important;
+		background: var(--boysenberry-light) !important;
+	}
+
+	.btn-primary:focus {
+		background: var(--color-senberry-sunlight);
+		border: 1px solid var(--color-senberry-sunlight);
+	}
+
+	.btn-primary:focus-visible {
+		background: var(--color-senberry-sunlight);
+		border: 1px solid var(--color-senberry-sunlight);
+	}
+
+	.btn-primary.left-icon i {
+		margin: 0 6px 0 0;
+	}
+
+	.btn-primary.right-icon i {
+		margin: 0 0 0 6px;
+	}
+}

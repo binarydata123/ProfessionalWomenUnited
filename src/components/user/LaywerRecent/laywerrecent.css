@@ -1,0 +1,53 @@
+button.accordion-button.p-0.accordian-phone {
+	font-size: 12px;
+	padding: 10px !important;
+	border-bottom: 1px solid #c6eee2 !important;
+	margin-bottom: 0px;
+	background: #fff0 !important;
+	color: #02142d;
+}
+.sort-down {
+	max-width: 120px;
+}
+.d-block-li li {
+	background-color: #effaf7;
+	color: #02142d;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	padding: 8px;
+}
+.accordian-phone .accordion-button::after {
+	flex-shrink: 0;
+	width: var(--bs-accordion-btn-icon-width);
+	height: var(--bs-accordion-btn-icon-width);
+	margin-left: auto;
+	content: '';
+	background-image: url(/images/arrow-down.png) !important;
+	background-repeat: no-repeat;
+	background-size: var(--bs-accordion-btn-icon-width);
+	transition: var(--bs-accordion-btn-icon-transition);
+}
+ul.dropdown-menu.drop-btn.show {
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 4px 8px 0px rgba(5, 27, 68, 0.08);
+}
+ul.dropdown-menu.drop-btn.show li.active {
+	color: rgba(30, 130, 123, 1);
+}
+@media (max-width: 991px) {
+	.accordian-phone .accordion-item button {
+		font-size: 12px;
+		padding: 4px 8px;
+		line-height: 20px;
+		color: var(--social-link);
+		font-weight: var(--weight-semi-bold);
+	}
+	p.font-large.social-link.weight-bold {
+		position: relative;
+		bottom: -20px;
+	}
+}

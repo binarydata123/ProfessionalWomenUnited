@@ -1,0 +1,95 @@
+'use client';
+import React, { useState, useEffect, useContext } from 'react';
+import Link from 'next/link';
+import { GetTotalUnreadInquiries } from '../../../lib/lawyerapi';
+import { usePathname, useRouter } from 'next/navigation';
+import AuthContext from '@/context/AuthContext';
+
+interface Props {
+	closeMenu?: () => void;
+}
+
+export default function LawyerMenu({ closeMenu }: Props) {
+	const { user, logout } = useContext(AuthContext)
+	const [totalUnreadInquiries, setTotalUnreadInquiries] = useState(0);
+	const pathname = usePathname();
+	const router = useRouter();
+
+	useEffect(() => {
+		if (user) {
+			if (pathname.includes('/lawyer/')) {
+				fetchTotallInquiriesCount(user?.id);
+			} else {
+				redirectToLogin();
+			}
+		}
+	}, []);
+
+	function redirectToLogin() {
+		logout()
+		router.push('/auth/login');
+	}
+
+	const fetchTotallInquiriesCount = async (user_id: any) => {
+		try {
+			const response = await GetTotalUnreadInquiries(user_id);
+			setTotalUnreadInquiries(response.data[0].totalInq);
+		} catch (error) {
+			console.error('Error on fetching unread inquiries:', error);
+		}
+	};
+
+	return (
+		<>
+			<li onClick={closeMenu}>
+				<Link href={`/lawyer/dashboard`} className={pathname.includes('dashboard') ? 'active' : ''}>
+					<img src="/icon/Dashboard-Icon.png" alt="left-menu-1" className="left-menu-icon" />
+					Dashboard
+				</Link>
+			</li>
+			<li onClick={closeMenu}>
+				{/* <Link className={pathname.includes('/lawyer/profile') ? 'active' : ''} href="/lawyer/profile"> */}
+				<Link className={pathname === '/lawyer/profile' ? 'active' : ''} href="/lawyer/profile">
+					<img src="/icon/Profile-Icon.png" alt="left-menu-2" className="left-menu-icon" />
+					Profile
+				</Link>
+			</li>
+			{user?.firm_owner == 1 ? (
+				<li onClick={closeMenu}>
+					<Link className={pathname.includes('/lawyer/profile/firm-edit') ? 'active' : ''} href="/lawyer/profile/firm-edit">
+						<i className="fa-solid fa-building left-menu-icon" style={{ color: '#02142d' }}></i>
+						Firm
+					</Link>
+				</li>
+			) : null}
+
+			<li onClick={closeMenu}>
+				<Link href="/lawyer/inquiries" className={pathname.includes('/lawyer/inquiries') ? 'active' : ''}>
+					<img src="/images/left-menu-3.png" alt="left-menu-3" className="left-menu-icon" /> Inquiries{' '}
+					{totalUnreadInquiries > 0 && (
+						<small className="num">
+							{totalUnreadInquiries < 10 ? `0${totalUnreadInquiries}` : totalUnreadInquiries}
+						</small>
+					)}
+				</Link>
+			</li>
+
+			<li onClick={closeMenu}>
+				<Link
+					href="/lawyer/legal-community"
+					className={pathname.includes('/lawyer/legal-community') ? 'active' : ''}
+				>
+					<img src="/icon/Legal-Forum-Icon.png" alt="left-menu-4" className="left-menu-icon" /> Legal
+					Community
+				</Link>
+			</li>
+			<Link
+				href="/lawyer/legal-community"
+				style={{ background: '#208C84' }}
+				className={pathname.includes('/') ? 'active btn-commn w-100 d-block mt-3 d-block d-md-none' : ''}
+			>
+				Go to Website
+			</Link>
+		</>
+	);
+}

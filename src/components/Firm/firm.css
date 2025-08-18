@@ -1,0 +1,138 @@
+button.default-button.w-100.max-width-126 {
+	color: #093f38;
+	background: #fff;
+	width: 126px !important;
+}
+
+button.default-button.w-100.max-width-115 {
+	color: #093f38;
+	background: #fff;
+	width: 115px;
+}
+
+.d-flex.gap-3 {
+	float: right;
+}
+
+button.default-button.max-width-115 {
+	margin-left: 12px;
+}
+
+.filter-btn {
+	display: flex;
+	align-items: center;
+	/* float: right; */
+}
+
+ul.list-12 li a h1 {
+	color: var(--Chinese-silver);
+	font-weight: var(--weight-bold);
+	font-size: 12px;
+	line-height: var(--custom-line-height);
+}
+
+ul.list-12 li a h1.active {
+	color: var(--green-medium-2);
+}
+
+@media (max-width: 991px) {
+	.filter-btn {
+		display: flex;
+		align-items: center;
+		float: unset;
+	}
+	button.default-button.w-100.max-width-126 {
+		width: 240px !important ;
+	}
+	button.default-button.max-width-126 {
+		width: 70% !important;
+	}
+	button.default-button.max-width-115 {
+		margin-left: 0px;
+	}
+}
+
+.filter-items {
+	cursor: pointer;
+	padding: 10px;
+	border-bottom: 1px solid #edeff5;
+}
+
+.filter-items.active {
+	background-color: #effaf7;
+	color: #02142d;
+}
+
+.filter-items:hover {
+	background-color: #effaf7;
+	color: #02142d;
+}
+
+.service-list-group {
+	height: 150px;
+	overflow-y: scroll;
+}
+
+.clear-btn {
+	border: 1px solid #208c84;
+	color: #208c84;
+	border-radius: 4px;
+	background-color: #fff;
+	height: 42px;
+}
+
+.icon-fild.icon-g.class-add .form-fild {
+	border: none;
+	border-bottom: 2px solid #02142d;
+	padding: 15px 20px 15px 45px;
+	border-radius: 0;
+	background: #fff0;
+	color: var(--text-sonic-silver);
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	outline: none;
+	margin: 5px 0 0 0;
+	color: #000;
+	font-size: 20px;
+}
+
+.icon-fild.icon-g.class-add .find-a-lawyer-input:focus-visible {
+	border-bottom: 2px solid #02142d !important;
+}
+
+.icon-fild.icon-g.class-add .search-normal {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.class-add input::placeholder {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #cccccc;
+}
+.set-accordian .accordion-button::after {
+	background-image: url('/images/arrow-circle-down.svg');
+}
+.set-accordian .accordion-button:not(.collapsed)::after {
+	background-image: url('/images/arrow-circle-down.svg');
+}
+.set-accordian .accordion-button:not(.collapsed) {
+	color: #1f1f1f;
+}
+
+.icon-fild i,
+.icon-fild svg {
+	position: absolute;
+	left: 2px;
+	top: 10px;
+	font-size: 27px;
+	color: #02142d;
+}
+
+.social-link {
+	color: var(--social-link) !important;
+	font-weight: 600;
+}

@@ -1,0 +1,340 @@
+.top-border {
+	border-top: 1px solid #cccccc99;
+}
+
+/* active tab css  */
+
+.has-search .form-control {
+	padding-left: 2.375rem;
+	height: 48px;
+}
+
+.has-search .form-control-feedback {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 25px;
+	height: 50px;
+	line-height: 2.375rem;
+	text-align: center;
+	pointer-events: none;
+	margin-left: 6px;
+}
+
+.form-select {
+	height: 48px;
+}
+
+.table-action-button {
+	background: #BE836314;
+	padding: 0px 5px;
+	margin-right: 2px;
+}
+
+.active-lawyers-table thead tr th {
+	background-color: var(--green-dark);
+	color: var(--text-white);
+	font-size: var(--font-small);
+	font-weight: var(--weight-bold);
+}
+
+.active-lawyers-table thead {
+	height: 58px;
+	vertical-align: middle;
+}
+
+.table-heading span {
+	font-size: var(--font-small);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-small);
+	color: var(--green-dark);
+}
+
+.table-heading {
+	font-size: var(--font-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-small);
+	color: #000;
+}
+
+.active-lawyers-table tbody tr {
+	height: 80px;
+	vertical-align: middle;
+}
+
+.active-lawyers-table {
+	border: 1px solid var(--green-dark);
+}
+
+.active-lawyers-table tbody tr {
+	border-bottom: var(--green-dark);
+}
+
+.active-lawyers-table tbody tr td {
+	font-size: var(--font-small);
+	font-weight: var(--weight-light);
+	color: var(--social-link);
+	vertical-align: middle;
+}
+
+.active-lawyers-table tbody tr td p {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	color: #1f1f1f !important;
+}
+
+.active-lawyers-table tbody tr td h6 {
+	font-weight: var(--weight-medium);
+	color: var(--social-link);
+}
+
+.plan-btn {
+	color: var(--green-medium-2);
+	background-color: #5d96a71f;
+}
+
+.table-status-btn {
+	padding: 1px 5px;
+	border-radius: 10px;
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-semi-bold);
+}
+
+.warning {
+	color: #f79e1b;
+	background-color: #ffac331f;
+}
+
+.danger {
+	color: #d04e4f;
+	background-color: #d04e4f1f;
+}
+
+.text-primary {
+	color: #02142d !important;
+	font-weight: 700 !important;
+	font-size: 14px !important;
+}
+
+/* 29-08-23 */
+
+.border-down {
+	border-bottom: 1px solid #cccccc99;
+	padding-bottom: 8px;
+}
+
+.form-fild {
+	border: 1px solid #e0e0e0;
+	padding: 15px 20px;
+	border-radius: 4px;
+	background: var(--text-white);
+	color: var(--text-sonic-silver);
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	outline: none;
+	margin: 5px 0 0 0;
+}
+.sp-right {
+	padding-right: 50px;
+}
+.icon-fild {
+	position: relative;
+}
+
+select.form-fild {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url('/images/arrow-down.png') no-repeat right center;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.line-hr {
+	background: var(--anti-flash-white);
+	height: 1px;
+	border: none;
+	opacity: 1;
+}
+.icon-fild .form-fild {
+	padding-left: 40px;
+}
+.icon-fild {
+	position: relative;
+}
+.icon-fild i {
+	position: absolute;
+	left: 15px;
+	top: 25px;
+	color: var(--Chinese-silver);
+}
+.icon-g i {
+	color: var(--green-medium-2);
+}
+
+/* table----css */
+
+.rwd-table {
+	margin: auto;
+	min-width: 300px;
+	max-width: 100%;
+	border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+	border-top: none;
+	background: var(--green-dark);
+	color: var(--text-white);
+}
+
+.rwd-table tr {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+	background-color: #ffffff;
+}
+.rwd-table tr {
+	border-color: #093f38 !important;
+}
+.rwd-table th {
+	display: none;
+}
+
+.rwd-table td {
+	display: block;
+}
+
+.rwd-table td:first-child {
+	margin-top: 0.5em;
+}
+
+.rwd-table td:last-child {
+	margin-bottom: 0.5em;
+}
+
+.rwd-table td:before {
+	content: attr(data-th) ': ';
+	font-weight: bold;
+	width: 120px;
+	display: inline-block;
+	color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+	text-align: left;
+}
+
+.rwd-table {
+	color: #333;
+	border-radius: 0.4em;
+	overflow: hidden;
+	width: 100%;
+}
+
+.rwd-table tr {
+	border-color: #bfbfbf;
+}
+.rwd-table tr {
+	border-color: #093f38 !important;
+	border-right: solid 1px;
+	border-left: solid 1px;
+}
+.rwd-table th,
+.rwd-table td {
+	padding: 0.5em 1em;
+}
+@media screen and (max-width: 601px) {
+	.rwd-table tr:nth-child(2) {
+		border-top: none;
+	}
+}
+@media screen and (min-width: 600px) {
+	.rwd-table tr:hover:not(:first-child) {
+		background-color: #d8e7f3;
+	}
+	.rwd-table td:before {
+		display: none;
+	}
+	.rwd-table th,
+	.rwd-table td {
+		display: table-cell;
+		padding: 0.25em 0.5em;
+	}
+	.rwd-table th:first-child,
+	.rwd-table td:first-child {
+		padding-left: 0;
+	}
+	.rwd-table th:last-child,
+	.rwd-table td:last-child {
+		padding-right: 0;
+	}
+	.rwd-table th,
+	.rwd-table td {
+		padding: 1em !important;
+	}
+}
+.rwd-table tr:hover:not(:first-child) {
+	background-color: #ffffff !important;
+}
+table.rwd-table tr th {
+	font-size: var(--font-small) !important;
+	line-height: var(--line-height-small) !important;
+	font-weight: var(--weight-bold) !important;
+}
+.monthly {
+	background: #5d96a71f;
+	padding: 0px 8px;
+	border: none;
+	font-size: var(--font-x-small);
+	border-radius: 16px;
+	color: #166379;
+	font-weight: var(--weight-semi-bold);
+}
+
+.monthly.pending {
+	color: #f79e1b;
+	background: #ffac331f;
+}
+
+.monthly.approved {
+	color: var(--green-medium-2);
+	background: #c490731f;
+}
+
+.monthly.rejected {
+	color: #d04e4f;
+	background: #d04e4f1f;
+}
+
+.create-tags .modal-sm {
+	max-width: 680px;
+}
+
+.create-tags #contained-modal-title-vcenter {
+	color: #093f38 !important;
+	padding-top: 40px;
+}
+button.btn.btn-cancel.w-100.save-pad.cancel-class {
+	border: 1px solid #BE8363;
+	padding: 12px 24px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #BE8363;
+}
+@media (min-width: 1199px) {
+	table.rwd-table tr th.fist:first-child {
+		width: 40%;
+	}
+}
+
+@media (max-width: 599px) {
+	td.text-right {
+		text-align: left !important;
+	}
+}

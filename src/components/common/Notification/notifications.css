@@ -1,0 +1,40 @@
+.card-inquiries {
+	border: 1px solid var(--green-light);
+	background: #c6eee266;
+	padding: 8px;
+	border-radius: 8px;
+}
+.image-placeholder-wrapper .main-content p {
+	color: #cccccc !important;
+}
+
+.image-placeholder-wrapper .main-content img {
+	width: 80px;
+}
+
+.btn-pagination {
+	color: #ccc;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-pagination.active {
+	background-color: #02142d;
+	color: #cccccc;
+}
+
+.btn-pagination.disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.btn-pagination:hover {
+	background-color: #02142d;
+}
+
+.button-text {
+	font-size: 16px;
+	font-weight: bold;
+}

@@ -1,0 +1,321 @@
+.about-banner {
+	padding: 96px 0;
+}
+
+.lawyers-online-img li {
+	display: inline-block;
+	transition: unset;
+}
+.lawyers-online-img li:nth-child(2) {
+	margin-left: -20px;
+}
+.lawyers-online-img li:nth-child(3) {
+	margin-left: -20px;
+}
+.lawyers-online-img li:nth-child(4) {
+	margin-left: -20px;
+}
+.lawyers-online-img li:nth-child(5) {
+	margin-left: -20px;
+}
+
+li.position-growing {
+	background: var(--color-btn-testi);
+	padding: 3px 22px;
+	border-radius: 13px;
+	font-size: var(--font-small);
+	color: var(--green-medium-2);
+	font-weight: var(--weight-semi-bold);
+	position: relative;
+	left: 10px;
+}
+.round-box {
+	color: var(--green-medium-1);
+	box-shadow: 0px 0px 4px 0px #c49073a3;
+	border-radius: 100px;
+	font-size: 11px;
+	position: relative;
+	left: 2px;
+	top: -1px;
+}
+.border-radius-6 {
+	border-radius: 6px;
+	border: solid 1.6px !important;
+}
+.why-join {
+	padding: 100px 0;
+	background-image: url('/images/FOR-LAWYERS-PAGE/bannnr-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.box-acc {
+	padding: 25px;
+}
+
+.f-20 {
+	font-size: var(--font-large);
+	line-height: var(--line-height-small-medium);
+}
+.c-h-200 {
+	height: 200px;
+}
+.pricing-part {
+	padding: 70px 0;
+}
+.mar-top-125 {
+	margin-top: 125px;
+}
+.pricing-part {
+	padding: 100px 0;
+	background-image: url('/images/FOR-LAWYERS-PAGE/Pricing Plan-Desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+.f-32 {
+	font-size: var(--font-xx-large);
+	line-height: 44.8px;
+}
+.benefits i {
+	color: var(--button-1);
+	font-size: var(--font-small);
+	margin-right: 10px;
+}
+.faq-part {
+	padding: 70px 0;
+}
+.icon-big i {
+	font-size: var(--font-x-s-large);
+	position: relative;
+	top: 2px;
+}
+
+.questions-part {
+	padding: 80px 0;
+	background-image: url('/images/que.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.white-893168:hover {
+	background: var(--boysenberry);
+	color: var(--text-white) !important;
+}
+
+.box-acc {
+	transition: all 0.3s;
+}
+.box-acc:hover img {
+	filter: opacity(50%) saturate(200%);
+}
+@media (max-width: 1199px) {
+	.about-banner {
+		padding: 70px 0;
+	}
+	.mar-top-125 {
+		margin-top: 75px;
+	}
+	.questions-part {
+		padding: 35px 0;
+	}
+	.questions-part {
+		padding: 50px 0 100px 0;
+		background-image: url(/images/que2.jpg);
+	}
+}
+
+@media (max-width: 767px) {
+	.about-banner {
+		padding: 40px 0;
+	}
+
+	li.position-growing {
+		line-height: var(--line-height-xs-small) !important;
+		font-size: var(--font-x-small) !important;
+	}
+	/* .lawyers-online-img li img {
+    width: 30px;
+  } */
+	.lawyers-online-img li:nth-child(2) {
+		margin-left: -14px;
+	}
+	.lawyers-online-img li:nth-child(3) {
+		margin-left: -14px;
+	}
+	.lawyers-online-img li:nth-child(4) {
+		margin-left: -14px;
+	}
+	.lawyers-online-img li:nth-child(5) {
+		margin-left: -14px;
+	}
+	.why-join {
+		padding: 50px 0;
+	}
+	.box-acc {
+		padding: 0 15px;
+		margin-bottom: 25px;
+	}
+	.c-h-200 {
+		height: unset;
+		margin-bottom: 60px;
+	}
+	.mar-top-125 {
+		margin-top: 20px;
+	}
+	.mar-top-125 {
+		margin-top: 10px;
+	}
+	.btn-group-893168 {
+		justify-content: left;
+	}
+	.m-top-80 {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 350px) {
+	.btn-commn {
+		padding: 10px 14px;
+	}
+	.btn.white-893168 {
+		padding: 12px 14px;
+	}
+}
+
+.about-btn-two {
+	display: flex;
+}
+span.border.border-radius-1.banner-arrow-btn {
+	display: flex;
+	border-radius: 6px;
+}
+button.btn-get-free.btn-commn.ml-2 {
+	background: none;
+	border: 1px solid var(--boysenberry);
+	border-radius: 4px;
+	color: var(--boysenberry);
+}
+
+@media (min-width: 991px) {
+	.show-hide {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	.tab-dask-none {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.m-none {
+		display: none;
+	}
+	.font-larger {
+		font-size: 40px;
+		padding-top: 80px;
+	}
+	.font-smaller {
+		font-size: 32px !important;
+		line-height: 38px !important;
+	}
+	.trolli-image {
+		z-index: -1;
+	}
+	.lawyers-online-img li:nth-child(2) {
+		margin-left: -23px;
+	}
+	.lawyers-online-img li:nth-child(3) {
+		margin-left: -23px;
+	}
+	.lawyers-online-img li:nth-child(4) {
+		margin-left: -23px;
+	}
+	.lawyers-online-img li:nth-child(5) {
+		margin-left: -23px;
+	}
+	li.position-growing {
+		padding: 4px 22px 25px 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.join-us {
+		width: 100%;
+	}
+	.sp-90 {
+		padding: 70px 0;
+	}
+}
+
+.blinking {
+	position: absolute;
+	top: 10px;
+	width: 10px;
+	height: 10px;
+	background-color: var(--green-medium-1);
+	border-radius: 30px;
+	right: 8px;
+	box-shadow: rgba(196,144,115);
+	animation: blink 1s ease infinite;
+}
+@keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes blink {
+	from,
+	to {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+.trolli-image {
+	position: absolute;
+	bottom: -77px;
+	right: 0;
+}
+.trolli-image img {
+	width: 504px;
+	height: 440px;
+	object-fit: cover;
+}

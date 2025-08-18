@@ -1,0 +1,6 @@
+.star-rating li {
+	display: inline-block;
+	color: var(--green-medium-1);
+	font-size: var(--font-small);
+	font-weight: var(--weight-bold);
+}

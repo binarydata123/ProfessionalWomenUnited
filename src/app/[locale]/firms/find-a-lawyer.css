@@ -1,0 +1,38 @@
+button.default-button.w-100.max-width-126 {
+	color: #093f38;
+	background: #fff;
+	width: 126px !important ;
+}
+button.default-button.w-100.max-width-115 {
+	color: #093f38;
+	background: #fff;
+	width: 115px;
+}
+.d-flex.gap-3 {
+	float: right;
+}
+button.default-button.max-width-115 {
+	margin-left: 12px;
+}
+.filter-btn {
+	display: flex;
+	align-items: center;
+	float: right;
+}
+
+@media (max-width: 991px) {
+	.filter-btn {
+		display: flex;
+		align-items: center;
+		float: unset;
+	}
+	button.default-button.max-width-126 {
+		width: 70% !important;
+	}
+	button.default-button.max-width-115 {
+		margin-left: 0px !important;
+	}
+	button.default-button.w-100.max-width-126 {
+		width: 240px !important ;
+	}
+}

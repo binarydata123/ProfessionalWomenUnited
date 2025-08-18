@@ -1,0 +1,95 @@
+/* components/SliderWithProgressBar.css */
+.slider-container {
+	position: relative;
+	width: 100%;
+}
+.progress-container {
+	position: absolute;
+	bottom: 0;
+	left: 70px;
+	width: 100%;
+	height: 5px;
+	background-color: transparent;
+}
+.progress {
+	height: 60%;
+	background-color: var(--text-white);
+	transition: width 0.3s ease-in-out;
+	position: absolute;
+	top: 30px;
+	z-index: 2;
+}
+.progress-shadow {
+	height: 60%;
+	background-color: rgb(97 97 97);
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 0;
+}
+/* .slick-prev {
+  right: 0;
+  left: 90%;
+}
+.slick-prev,
+.slick-next {
+  top: 112%;
+}
+.slick-next {
+  right: 70px;
+} */
+.slick-prev:before {
+	content: '';
+	background-image: url('/images/about-us/arrowleft.png');
+	position: absolute;
+	top: 0;
+	left: -70px;
+	width: 30px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+.slick-next:before {
+	content: '';
+	background-image: url('/images/about-us/arrowright.png');
+	position: absolute;
+	top: 0;
+	width: 30px;
+	left: -60px;
+	height: 35px;
+	background-repeat: no-repeat;
+}
+.slick-prev,
+.slick-next {
+	position: absolute;
+	bottom: -70px;
+	top: unset;
+}
+.slick-next {
+	right: 30px;
+}
+.slick-prev {
+	left: unset;
+	right: 60px;
+}
+
+@media (max-width: 991px) {
+	.slick-prev,
+	.slick-next {
+		bottom: -40px;
+	}
+	.slick-next {
+		right: 0px;
+	}
+	.slick-prev {
+		right: 30px;
+	}
+	.slick-next:before {
+		left: -30px;
+	}
+	.slick-prev:before {
+		left: -40px;
+	}
+	.progress-container {
+		left: 20px;
+	}
+}

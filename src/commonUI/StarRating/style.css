@@ -1,0 +1,7 @@
+.write-a-review-rating-box small.error-message.message-d-none.error-title-1 {
+	display: none;
+}
+
+.write-a-review-rating-box label.pb-2.pt-2.label-d-none.error-title-2.error-text {
+	display: none;
+}

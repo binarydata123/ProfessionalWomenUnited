@@ -1,0 +1,24 @@
+.sort {
+	border: 1px solid var(--anti-flash-white);
+	width: 100px;
+	padding: 10px;
+}
+a#navbarDropdownMenuLink {
+	padding: 0px !important;
+}
+.active a.dropdown-item {
+	color: #02142d !important;
+}
+li.p-0.m-0.active {
+	background: #effaf7 !important;
+}
+.nav-tab ul li.active a {
+	color: var(--green-medium-2);
+	font-weight: var(--weight-semi-bold);
+	border-bottom: 1px solid var(--green-medium-2);
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: var(--bs-dropdown-link-hover-color);
+	background-color: #effaf7;
+}

@@ -1,0 +1,100 @@
+.about-banner {
+	padding: 96px 0;
+}
+
+.lawyers-online-img li {
+	display: inline-block;
+}
+
+.author-left-content .top-text {
+	font-size: 18px;
+	font-weight: 700;
+	color: #02142d;
+}
+
+.author-left-content .heading {
+	font-size: 56px;
+	font-weight: 700;
+	color: #1F1F1F;
+}
+
+.author-left-content .bottom-text {
+	font-size: 16px;
+	font-weight: 400;
+	color: #1F1F1F;
+}
+
+.author-card-wrapper .author-name {
+	font-size: 20px;
+	color: #093F38;
+	font-weight: 700;
+}
+
+.single-author-wrapper .author-name {
+	font-size: 40px;
+	color: #093F38;
+	font-weight: 700;
+}
+
+.single-author-wrapper .post {
+	font-size: 20px;
+	font-weight: 400;
+	color: #1F1F1F;
+}
+
+.single-author-wrapper .about-author {
+	font-size: 16px;
+	font-weight: 400;
+	color: #1F1F1F;
+}
+
+.single-author-wrapper .about-author-bottom {
+	font-size: 18px;
+	font-weight: 500;
+	color: #1F1F1F;
+}
+
+.single-author-wrapper .author-write-about {
+	background: #C6EEE233;
+	color: #02142d;
+	border: 1px solid #02142d;
+	padding: 4px 8px;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 8px;
+}
+
+.single-author-wrapper .blog-section-heading h1 {
+	font-size: 32px;
+	font-weight: 600;
+	color: #093F38;
+}
+
+ul.list-12 li a h1 {
+    color: var(--Chinese-silver);
+    font-weight: var(--weight-bold);
+    font-size: 12px;
+    line-height: var(--custom-line-height);
+}
+
+ul.list-12 li a h1.active {
+    color: var(--green-medium-2);
+}
+
+.multiline-ellipsis {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+@media (max-width: 767px) {
+	.author-left-content {
+		position: absolute;
+		z-index: 9;
+	}
+
+	.author-right-content.text-end img {
+		position: relative;
+	}
+}

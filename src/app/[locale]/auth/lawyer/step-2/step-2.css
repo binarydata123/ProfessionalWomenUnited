@@ -1,0 +1,48 @@
+.select-wrapper {
+	border: 1px solid #aaa;
+	color: #aaa;
+	cursor: pointer;
+	float: left;
+	overflow: hidden;
+	padding-right: 3em;
+	position: relative;
+	width: 100%;
+}
+
+.select {
+	border-width: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	float: left;
+	font-size: 1em;
+	line-height: 1em;
+	padding: 1em 1em;
+	width: 100%;
+	width: calc(100% + 2em);
+}
+
+.select:focus {
+	outline: none;
+}
+
+.select-icon {
+	position: absolute;
+	top: 0.8em;
+	right: 1em;
+}
+
+.react-tel-input .form-control {
+	height: 50px !important;
+	width: 100% !important;
+}
+
+.backtobtn {
+	font-size: var(--font-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--button-1);
+	display: flex;
+	align-items: center;
+}

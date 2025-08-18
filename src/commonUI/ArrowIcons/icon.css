@@ -1,0 +1,15 @@
+.link-button {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+}
+.link-button span.link-button-icon svg {
+	border: 1px solid;
+	border-radius: 5px;
+	margin-left: 3px;
+}
+/* span.link-button-icon {
+    color: #37c19d;
+} */

@@ -1,0 +1,28 @@
+#payment .main-login {
+	max-width: 800px;
+	padding: 20px 0 40px 0;
+}
+
+#paymentform input::placeholder {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--text-sonic-silver);
+}
+#paymentform {
+	max-width: 480px;
+}
+.backtobtn {
+	font-size: var(--font-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--button-1);
+	display: flex;
+	align-items: center;
+}
+@media (min-width: 1024px) {
+}

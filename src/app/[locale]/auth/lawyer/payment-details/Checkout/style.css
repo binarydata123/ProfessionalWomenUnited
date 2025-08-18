@@ -1,0 +1,51 @@
+.card-element-container {
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.pay-button {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.pay-button:disabled {
+	background-color: #cccccc;
+	cursor: not-allowed;
+}
+
+.my-card-element {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+.my-card-element .InputElement {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.my-card-element .CardNumberElement,
+.my-card-element .CardExpiryElement,
+.my-card-element .CardCvcElement {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.commanclassall label {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #4f4f4f;
+	padding-top: 16px;
+}

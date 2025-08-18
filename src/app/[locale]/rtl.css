@@ -1,0 +1,132 @@
+.ar .rtlHead,
+.ar .rtlPera {
+	text-align: right;
+}
+
+.ar .rtlH4 {
+	padding-left: 38px;
+}
+.ar .lawyers-online-home {
+	text-align: initial;
+}
+.ar button,
+.ar .ltr-pad,
+.ar .p {
+	direction: ltr;
+}
+.ar .pop-head-set {
+	padding-left: 15px !important;
+}
+
+.ar .font-weight-menu,
+.ar .set-top-margin {
+	padding-right: 15px;
+}
+
+.ar .owl-carousel.owl-theme.mt-5.owl-loaded.owl-drag {
+	direction: ltr;
+}
+.ar .banner-text-left {
+	padding: 0px !important;
+}
+/* .ar.current-lang {
+	padding: 3px 5px 0px 5px !important;
+	border-radius: 5px !important;
+	display: flex !important;
+	margin-top: 9px !important;
+}
+
+.current-lang-set {
+	padding: 3px 5px 0px 5px !important;
+	border-radius: 5px !important;
+	display: flex !important;
+	margin-top: 2px !important;
+	margin-right: 6px;
+}
+.ar .selecting-lang {
+	color: #000;
+} */
+
+.ar.btn.btn-outline-success.btn-lawyer.hide-btn.w-100.text-center.set-bt {
+	margin-left: 5px;
+}
+.ar .accordion-item {
+	direction: ltr;
+}
+/* .switch-lang.ar.locale-class {
+	width: 110px;
+	text-align: left;
+	cursor: pointer;
+	z-index: 50;
+	position: absolute;
+	top: 13px;
+	left: 12%;
+} */
+/* @media (min-width: 1200px) {
+	.ar .scroll-menu {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1440px) {
+	.ar.current-lang {
+		padding: 3px 5px 0px 5px !important;
+		border-radius: 5px !important;
+		display: flex !important;
+		margin-top: 9px !important;
+		margin-right: 13px;
+	}
+	.withoutlogin:hover .lang-dropdown {
+		display: block;
+		position: absolute;
+		left: 27px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.ar.current-lang {
+		margin-right: -62px;
+	}
+}
+@media (max-width: 991px) {
+	.switch-lang.ar.locale-class {
+		width: 110px;
+		text-align: left;
+		cursor: pointer;
+		z-index: 50;
+		position: unset;
+		top: 0px;
+		left: 0%;
+	}
+
+	.current-lang-set {
+		padding: 3px 5px 0px 5px !important;
+		border-radius: 5px !important;
+		display: flex !important;
+		margin-top: 2px !important;
+		margin-right: 35px !important;
+		color: #000;
+	}
+	.ar .current-lang-set.font-padd {
+		margin-right: 22px !important;
+		font-size: 15px !important;
+	}
+	.ar .set-mob {
+		float: left;
+	}
+	.ar .switch-lang:hover .lang-dropdown {
+		display: block;
+		position: unset !important;
+		left: 0px;
+		z-index: 1;
+		top: 0px !important;
+	}
+	.ar.current-lang {
+		padding: 3px 5px 0px 5px !important;
+		border-radius: 5px !important;
+		display: flex !important;
+		margin-top: 2px !important;
+		margin-right: 20px;
+	}
+} */

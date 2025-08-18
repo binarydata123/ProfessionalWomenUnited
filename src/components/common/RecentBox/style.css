@@ -1,0 +1,26 @@
+.recent-action-wrapper {
+	border: 1px solid var(--Chinese-silver);
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.recent-reviews-header {
+	height: 48px;
+	align-items: center;
+}
+
+.recent-reviews-header p {
+	color: var(--green-dark);
+	font-size: var(--font-large);
+	font-weight: var(--weight-semi-bold);
+}
+
+/* .recent-reviews-rating{
+    height: 100px;
+} */
+
+.recent-reviews {
+	border: 1px solid var(--Chinese-silver);
+	border-radius: 8px;
+	padding: 10px;
+}

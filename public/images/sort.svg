@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 21" width="33" height="21">
+	<title>arrow-down</title>
+	<style>
+		.s0 { fill: none;stroke: #02142d;stroke-linecap: round;stroke-width: 1.5 } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m2 7h18"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m5 12h12"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m9 17h4"/>
+</svg>

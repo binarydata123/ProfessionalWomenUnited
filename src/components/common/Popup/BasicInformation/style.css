@@ -1,0 +1,65 @@
+p.text-sonic-silver.weight-medium.font-small {
+	color: var(--text-sonic-silver);
+	font-size: var(--font-small);
+	font-weight: var(--weight-medium);
+}
+
+.form-fild-des label {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 15px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.form-fild-des label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	height: 24px;
+	width: 24px;
+	background-color: var(--text-white);
+	border-radius: 30px;
+	border: solid 1px var(--anti-flash-white);
+}
+
+.form-fild-des textarea {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+.form-fild-des label:hover input ~ .checkmark {
+	background-color: #f7f7f7;
+}
+
+.form-fild-des label input:checked ~ .checkmark {
+	border: solid 1px var(--anti-flash-white);
+}
+.checkmark:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+.form-fild-des label input:checked ~ .checkmark:after {
+	display: block;
+}
+.form-fild-des label .checkmark:after {
+	width: 17px;
+	height: 17px;
+	background: var(--green-medium-1);
+	border-radius: 31px;
+	left: 4.8px;
+	top: 4.3px;
+}

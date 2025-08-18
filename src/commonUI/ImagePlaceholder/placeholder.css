@@ -1,0 +1,21 @@
+.image-placeholder-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-placeholder-wrapper .main-content {
+	text-align: center;
+}
+
+.image-placeholder-wrapper .main-content h3 {
+	color: var(--Chinese-silver);
+	font-size: var(--font-x-s-large);
+	font-weight: var(--weight-bold);
+}
+
+.image-placeholder-wrapper .main-content p {
+	color: var(--text-sonic-silver);
+	font-size: var(--font-medium);
+	font-weight: var(--weight-semi-bold);
+}

@@ -1,0 +1,128 @@
+.hr-line {
+	background-color: var(--green-medium-2);
+	height: 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0px;
+}
+
+.link-footer li {
+	display: inline-block;
+}
+
+.link-footer li a {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: center;
+	color: var(--green-dark);
+	font-family: var(--font-Manrope);
+}
+
+img.footerlogoIcon {
+	width: 200px;
+}
+
+.copy-right p {
+	font-family: var(--font-Manrope);
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	color: var(--text-sonic-silver);
+}
+
+.social-icon-link li {
+	display: inline-block;
+	padding: 0px 8px;
+}
+
+.social-icon-link li a {
+	color: var(--text-sonic-silver);
+}
+
+.social-icon-link li a i {
+	color: var(--text-sonic-silver);
+}
+
+.circle-arrow {
+	width: 30px;
+	height: 30px;
+	background-color: var(--green-medium-2);
+	color: var(--text-white);
+	border-radius: var(--border-redius-30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+ul.justify-content-center.link-footer {
+	text-align: center;
+}
+.justify-content-center.link-footer li {
+	padding: 34px 0px 44px 0px;
+}
+
+@media (max-width: 991px) {
+	.link-footer li {
+		display: block;
+	}
+	.justify-content-center.link-footer li {
+		padding: 0px 0px 0px 0px;
+	}
+	.copy-right p {
+		text-align: center;
+	}
+	ul.social-icon-link.list-unstyled {
+		padding: 20px 0px 0px 0px;
+	}
+	.justify-content-center.link-footer li {
+		padding-bottom: 24px;
+	}
+	.img.footerlogoIcon {
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 1700px) {
+	button.btn.btn-outline-success.btn-lawyer {
+		font-size: var(--font-small);
+	}
+
+	button.btn.btn-outline-success.btn-login {
+		font-size: var(--font-small);
+	}
+
+	.link-footer li a {
+		font-size: var(--font-small);
+	}
+
+	.social-icon a {
+		font-size: var(--font-small);
+	}
+}
+
+.footer-dark a {
+	color: #fff !important;
+}
+.footer-dark .hr-line {
+	background-color: #c6eee2;
+}
+
+.footer-dark .circle-arrow {
+	background-color: #c6eee2;
+}
+
+.footer-dark .circle-arrow svg {
+	color: #093f38;
+}
+
+.footer-dark .copy-right p {
+	color: #f2f2f2;
+}
+.ar.text-line {
+	text-align: end;
+}

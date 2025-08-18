@@ -1,0 +1,7 @@
+.dropdown-menu-list {
+	transition: all 0.9s;
+}
+.menu-border {
+	border-bottom: 1px solid var(--green-dark);
+	border-top: 1px solid var(--green-dark);
+}

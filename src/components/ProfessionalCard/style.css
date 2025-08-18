@@ -1,0 +1,255 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.header .highlight {
+    color: #BE8363;
+}
+
+.header p {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Filter Section */
+.filter-section {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 14px;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.filter-btn.active {
+    background: #1B3067;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Professionals Grid */
+.professionals-grid {
+    display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.professional-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.professional-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.professional-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.verified-badge {
+    display: none;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.professional-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.professional-specialty {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #BE8363;
+    margin-bottom: 15px;
+}
+
+.professional-info {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.contact-info {
+    display: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* .btn-primary {
+    display: none;
+} */
+
+/* .btn-secondary {
+    flex: 1;
+    background: transparent;
+    color: #1B3067;
+    border: 2px solid #1B3067;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #1B3067;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(27, 48, 103, 0.3);
+} */
+
+/* Stats Section */
+.stats-section {
+    margin-top: 80px;
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.stat-1 h3 { color: #BE8363; }
+.stat-2 h3 { color: #1B3067; }
+.stat-3 h3 { color: #CA2129; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.0rem;
+    }
+
+    .professionals-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .filter-buttons {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .stats-section {
+        padding: 30px 20px;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+.hidden {
+    display: none;
+}

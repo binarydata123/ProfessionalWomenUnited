@@ -1,0 +1,66 @@
+#needlawyer {
+	padding: 100px 0px;
+}
+.span {
+	color: var(--social-link);
+}
+
+.needlawyer-text h6 {
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-xs-small);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: #fff;
+	padding-top: 5%;
+	padding-bottom: 10px;
+}
+.needlawyer-text h2 {
+	font-size: var(--font-smaller);
+	font-weight: var(--weight-bold);
+	line-height: var(--line-height-large);
+	letter-spacing: 0em;
+	text-align: left;
+	color: #fff !important;
+	margin-bottom: 16px;
+}
+.needlawyer-text span {
+	color: var(--social-link);
+}
+.needlawyer-text p {
+	font-size: var(--font-medium);
+	font-weight: var(--weight-light);
+	line-height: var(--line-height-high-rise);
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: #fff;
+	margin-bottom: 40px;
+}
+.joint span + span {
+	margin-left: 10px;
+}
+span.border-radius-1.banner-arrow-btn {
+	border: 1px solid var(--green-dark);
+	display: flex;
+	border-radius: 6px;
+}
+span.border-radius-1.banner-arrow-btn.border-3DC9A1.color-add {
+	border: 1px solid #c49073;
+}
+@media (min-width: 991px) {
+	#bg-are-you {
+		border-radius: 16px;
+		background-color: #fff;
+		background-image: url('https://images.pexels.com/photos/5356220/pexels-photo-5356220.jpeg');
+		background-position: right;
+		display: block;
+	}
+}
+@media (max-width: 991px) {
+	#bg-are-you {
+		border-radius: 16px;
+		background-color: var(--green-medium-1);
+		background-image: url('/images/Home/Column.jpg');
+		background-position: right;
+	}
+}

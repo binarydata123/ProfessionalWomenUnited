@@ -1,0 +1,43 @@
+.test-part {
+	padding: 0px 0 0px 0px;
+	background: var(--green-light);
+	height: 640px;
+}
+.silder-imge {
+	background-image: url('/images/slider-bg.png');
+	background-size: cover;
+	padding: 60px 0;
+	height: 638px;
+}
+.card-box-rest {
+	border-radius: 16px;
+	background: var(--text-white);
+	padding: 30px;
+	margin: 12px;
+	max-width: 560px;
+}
+
+.card-box-rest.mar {
+	margin-left: 70px;
+}
+@media (min-width: 1440px) {
+	.tes-sp {
+		padding: 65px 80px;
+	}
+}
+
+@media (max-width: 991px) {
+	.card-box-rest.mar {
+		margin-left: 12px;
+		height: 320px;
+	}
+	.tes-sp {
+		padding: 50px 15px 30px;
+	}
+	.silder-imge {
+		height: 500px;
+	}
+	.test-part {
+		height: auto;
+	}
+}

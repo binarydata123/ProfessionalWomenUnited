@@ -1,0 +1,37 @@
+.secondary-btn-wrapper {
+	.btn-secondary {
+		padding: 12px 24px 12px 24px;
+		border-radius: 4px;
+		font-weight: 600;
+		color: #BE8363;
+		line-height: 25.6px;
+		font-size: 16px;
+		letter-spacing: 0px;
+		transition: 0.5s;
+		background: #fff;
+		border: 1px solid #BE8363;
+	}
+
+	.btn-secondary:hover {
+		border: 1px solid #ad3e83;
+		color: #ad3e83;
+	}
+
+	.btn-secondary:focus {
+		color: #782b5b;
+		border: 1px solid #782b5b;
+	}
+
+	.btn-secondary:focus-visible {
+		color: #782b5b;
+		border: 1px solid #782b5b;
+	}
+
+	.btn-secondary.left-icon i {
+		margin: 0 6px 0 0;
+	}
+
+	.btn-secondary.right-icon i {
+		margin: 0 0 0 6px;
+	}
+}

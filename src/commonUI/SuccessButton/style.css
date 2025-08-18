@@ -1,0 +1,37 @@
+.success-btn-wrapper {
+	.btn-primary-true {
+		border: 1px solid #208c84;
+		padding: 12px 24px 12px 24px;
+		border-radius: 4px;
+		background: #208c84;
+		font-weight: 600;
+		color: #fff;
+		line-height: 25.6px;
+		font-size: 16px;
+		letter-spacing: 0px;
+		transition: 0.5s;
+	}
+
+	.btn-primary-true:hover {
+		border: 1px solid #2ab7ac;
+		background: #2ab7ac;
+	}
+
+	.btn-primary-true:focus {
+		background: #093f38;
+		border: 1px solid #093f38;
+	}
+
+	.btn-primary-true:focus-visible {
+		background: #093f38;
+		border: 1px solid #093f38;
+	}
+
+	.btn-primary-true.left-icon i {
+		margin: 0 6px 0 0;
+	}
+
+	.btn-primary-true.right-icon i {
+		margin: 0 0 0 6px;
+	}
+}

@@ -1,0 +1,10 @@
+.checkbox-wrapper #form-checkbox {
+	border: 1px solid var(--anti-flash-white);
+	width: 18px;
+	height: 18px;
+	border-radius: 4px;
+}
+
+.main input:checked ~ .geekmark {
+	background-color: var(--green-medium-2);
+}
