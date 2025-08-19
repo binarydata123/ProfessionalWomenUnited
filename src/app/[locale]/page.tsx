@@ -278,7 +278,7 @@ export default async function Page() {
 											))}
 										</Slider>
 									)} */}
-									<ProfessionalCard professional={professionals}/>
+									<ProfessionalCard />
 									<div className="text-end all-btn">
 										{/* <Link href="/find-a-lawyer"> */}
 										<button>{t('view_all')}</button>

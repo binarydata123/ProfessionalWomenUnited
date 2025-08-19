@@ -43,7 +43,7 @@ export default function Footer() {
 			className='text-center text-lg-start py-lg-5 py-3 footer-wrapper' style={{backgroundColor:'#02142d'}}>
 			<div className="container" >
 				<div className="text-center">
-					<Image
+					{/* <Image
 						src={`${pathname === '/legal-services/banking' ||
 							pathname === '/find-a-lawyer' ||
 							pathname === '/ask-a-lawyer' ||
@@ -55,7 +55,7 @@ export default function Footer() {
 						alt="site logo"
 						width={160}
 						height={140}
-					/>
+					/> */}
 				</div>
 				<ul className="justify-content-center link-footer">
 					<li className="nav-item list-unstyled">
