@@ -201,7 +201,7 @@ export default function reportCenter() {
 						<div className="icon-fild icon-g p-set position-relative">
 							<input
 								type="text"
-								placeholder="Search for a lawyer"
+								placeholder="Search For a professional"
 								className="form-fild w-100 sp-right"
 								value={name}
 								onChange={e => handleChange('name', e.target.value, user_id)}

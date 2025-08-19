@@ -80,7 +80,7 @@ export default function Page({ allfirm }: Props) {
 									/>
 								</li>
 								<li>
-									<Link href="/find-a-lawyer" >
+									<Link href="/find-a-professional" >
 										<h1 className="active">Firms</h1>
 									</Link>
 								</li>
@@ -123,9 +123,9 @@ export default function Page({ allfirm }: Props) {
 							</div>
 						))
 					) : (
-						<center>
+						<div className="no-record">
 							<h5>No matching record found!</h5>
-						</center>
+						</div>
 					)}
 
 					{/* <div className="col-lg-12 d-flex justify-content-end py-4">

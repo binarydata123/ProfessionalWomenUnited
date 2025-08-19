@@ -18,7 +18,7 @@ export default function Lawyers() {
 		<>
 			<tr>
 				<td data-th="Name">
-					<p className="font-small weight-light social-link"> Lawyer Name</p>
+					<p className="font-small weight-light social-link"> Professional Name</p>
 				</td>
 				<td data-th="Designation">
 					<p className="font-small weight-medium social-link">Legal consultant</p>

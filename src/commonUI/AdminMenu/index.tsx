@@ -60,7 +60,7 @@ export default function AdminMenu() {
 							className={`dropdown-item ${pathname.includes('user-mgmt/lawyers') ? 'active' : ''}`}
 							href="/admin/user-mgmt/lawyers"
 						>
-							Lawyers
+							Professionals
 						</Link>
 					</li>
 					<li>

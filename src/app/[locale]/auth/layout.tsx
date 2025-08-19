@@ -16,23 +16,16 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 				<div className="p-0">
 					<div className="d-flex auth-layout-row">
 						<div className="video-style p-lg-0 bg-light">
-							<div className="left-video-area">
-								{/* <Link href={'/'}>
-									<img className="logo-img d-none d-md-block" src={'/footer.png'} alt="logo" />
-								</Link> */}
+							<div className="left-video-area" style={pathname === '/auth/lawyer/step-2' ? { height: '120vh' } : { height: '100vh' }}>
 								{pathname === '/auth/lawyer/step-2' ? (
-									// <img src="/" id="background-video" alt="bg-image" />
-									<></>
+									<>
+										<img src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className="sidebar-img" />
+									</>
 								) : pathname.includes('auth/lawyer') ? (
 									<img src="/auth-bg-img.jpg" id="background-video" alt="bg-image" />
 								) : (
-									// <video autoPlay muted loop id="background-video">
-									// <video autoPlay muted loop playsInline id="background-video">
-									// 	<source src="/video/onboarding-animation-540.mp4" type="video/mp4" />
-									// 	Your browser does not support the video tag.
-									// </video>
 
-									<img src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className="sidebar-img"/>
+									<img src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' className="sidebar-img" />
 								)}
 							</div>
 						</div>

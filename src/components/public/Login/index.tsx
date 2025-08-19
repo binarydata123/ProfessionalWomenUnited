@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'; // Import useState
 import { useRouter } from 'next/navigation';
 import { userlogin, googleLogin } from '../../../../lib/frontendapi';
 import { signIn, signOut, useSession } from 'next-auth/react';
-import { EyeSlashIcon, EyeIcon } from '@heroicons/react/20/solid';
+import { EyeSlashIcon, EyeIcon, ArrowSmallLeftIcon } from '@heroicons/react/20/solid';
 import { toast } from 'react-toastify';
 import AuthContext from '@/context/AuthContext';
 import Cookies from 'js-cookie';
@@ -208,6 +208,10 @@ export default function Login() {
 				<div className="row">
 					<div className="">
 						<div className="main-login top-sp-big">
+							<Link href="/" className="backtobtn mb-3">
+								<ArrowSmallLeftIcon width={20} />
+								Back
+							</Link>
 							<h1>
 								<span>Welcome</span> Back!
 							</h1>

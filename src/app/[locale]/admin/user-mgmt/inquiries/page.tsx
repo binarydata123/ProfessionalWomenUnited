@@ -254,7 +254,7 @@ export default function inquiries() {
 						<div className="icon-fild icon-g p-set position-relative">
 							<input
 								type="text"
-								placeholder="Search for a lawyer"
+								placeholder="Search For a professional"
 								className="form-fild w-100 sp-right"
 								value={to_name}
 								onChange={e => handleChange('to_name', e.target.value, user_id)}

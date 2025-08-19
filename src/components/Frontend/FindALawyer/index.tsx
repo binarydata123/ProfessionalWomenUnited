@@ -69,15 +69,6 @@ export default function Page({ filterlawyer }: Props) {
 			setCountries(res.data);
 		});
 	};
-	// const handleLawyers = (data: {}) => {
-	// 	getAllLawyersOrFilter(data).then(res => {
-	// 		setlawyers(res.data.slice((currentPage - 1) * itemsPerPage, ((currentPage - 1) * itemsPerPage) + itemsPerPage));
-	// 		setfilterPopup(false);
-	// 		setfilterData(data);
-
-	// 		setTotallawyers(Math.ceil(res.data.length / itemsPerPage))
-	// 	});
-	// };
 
 	const handleLawyers = (data: {}) => {
 		getAllLawyersOrFilter(data).then(res => {
@@ -87,7 +78,7 @@ export default function Page({ filterlawyer }: Props) {
 			} else {
 				filteredLawyers = res.data;
 			}
-			setlawyers(filteredLawyers.slice((currentPage - 1) * itemsPerPage, ((currentPage - 1) * itemsPerPage) + itemsPerPage));
+			setlawyers(filteredLawyers?.slice((currentPage - 1) * itemsPerPage, ((currentPage - 1) * itemsPerPage) + itemsPerPage));
 			setfilterPopup(false);
 			setfilterData(data);
 			setTotallawyers(Math.ceil(filteredLawyers.length / itemsPerPage));
@@ -253,19 +244,19 @@ export default function Page({ filterlawyer }: Props) {
 					</div>
 				</div>
 				<div className="row">
-					{lawyers.length > 0 ? (
-						lawyers.map((item: any, index: any) => (
+					{lawyers?.length > 0 ? (
+						lawyers?.map((item: any, index: any) => (
 							<div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
 								<LawyerCard lawyer={item} Key={index} />
 							</div>
 						))
 					) : (
-						<center>
+						<div className="no-record">
 							<h5>No matching record found!</h5>
-							<PrimaryButton className="mt-3" onClick={() => handleLawyers(initialData)}>
+							{/* <PrimaryButton className="mt-3" onClick={() => handleLawyers(initialData)}>
 								View all professionals
-							</PrimaryButton>
-						</center>
+							</PrimaryButton> */}
+						</div>
 					)}
 
 					<div className="col-lg-12 d-flex justify-content-end py-4">

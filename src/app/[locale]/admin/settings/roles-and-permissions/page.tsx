@@ -223,7 +223,7 @@ export default function Page() {
 						>
 							<option value={''}>User</option>
 							<option value={'enduser'}>Individual</option>
-							<option value={'lawyer'}>Lawyer</option>
+							<option value={'lawyer'}>Professional</option>
 						</select>
 					</div>
 

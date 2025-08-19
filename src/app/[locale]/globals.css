@@ -1926,3 +1926,25 @@ div#tabs-viwe-buton button:nth-child(2) {
 .set-abt-btn {
 	margin-right: 10px;
 }
+
+.backtobtn {
+	font-size: var(--font-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small) !important;
+	letter-spacing: var(--letter-spacing-02);
+	text-align: left;
+	color: var(--button-1);
+	display: flex;
+	align-items: center;
+}
+
+.no-record {
+	display: flex;
+	justify-content: center;
+	align-items: center;    
+	height: 45vh;            
+	text-align: center;
+	font-size: 1.2rem;
+	color: #333;            
+  }
+  

@@ -295,6 +295,19 @@ export default function Header({ locale }: any) {
 												setmenuCollappse(true);
 												setLawyerMenuOpen(false);
 											}}
+											className={`nav-link ${pathname === '/firms' ? 'active' : null}`}
+											aria-current="page"
+											href='/firms'>
+											Firms
+										</Link>
+									</li>
+
+									<li className="nav-item">
+										<Link
+											onClick={() => {
+												setmenuCollappse(true);
+												setLawyerMenuOpen(false);
+											}}
 											className={`nav-link ${pathname === '/blogs' ? 'active' : null}`}
 											aria-current="page"
 											href='/blogs'>

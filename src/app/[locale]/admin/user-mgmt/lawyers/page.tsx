@@ -153,7 +153,7 @@ export default function lawyers() {
 						<div className="icon-fild icon-g p-set position-relative">
 							<input
 								type="text"
-								placeholder="Search for a lawyer"
+								placeholder="Search For a professional"
 								className="form-fild w-100 sp-right"
 								value={name}
 								onChange={e => handleChange('name', e.target.value, user_id)}
@@ -209,7 +209,7 @@ export default function lawyers() {
 			</div>
 
 			<p className="font-small weight-light social-link mt-3 mb-3">
-				Displaying <span className="span-color-dash weight-bold">{filter_lawyer.length}</span> lawyers
+				Displaying <span className="span-color-dash weight-bold">{filter_lawyer.length}</span> professionals
 			</p>
 
 			<div className="table-part">

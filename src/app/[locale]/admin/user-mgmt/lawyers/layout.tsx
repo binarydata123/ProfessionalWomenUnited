@@ -68,10 +68,10 @@ export default function LawyersLayout({children}: {children: React.ReactNode}) {
 					<span>
 						<Image src="/images/legal-service/arrow-right.png" alt="Lawyers" width={16} height={16} />
 					</span>
-					<span>Lawyers</span>
+					<span>Professionals</span>
 				</div>
 			</section>
-			<h4 className="font-xx-large social-link weight-semi-bold mb-3 p-0 pt-4">Lawyers</h4>
+			<h4 className="font-xx-large social-link weight-semi-bold mb-3 p-0 pt-4">Professionals</h4>
 			<div className="nav-tab use-lawyer p-set p-0 border-0">
 				<ul className="border-bottom">
 					<li className={pathname === '/admin/user-mgmt/lawyers' ? 'active' : ''}>
