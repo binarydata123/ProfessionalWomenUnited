@@ -4,16 +4,16 @@ import BusinessLawyer from '@/components/services/BusinessLawyer';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Business Lawyer in Dubai – Connect Legal',
+		title: 'Business Lawyer in Dubai – Professional Women United',
 		description:
-			'Expand or protect your business with a business lawyer in Dubai. Connect Legal provides expert consultations for all your business law needs.',
+			'Expand or protect your business with a business lawyer in Dubai. Professional Women United provides expert consultations for all your business law needs.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/business-lawyer-dubai`
 		},
 		openGraph: {
-			title: 'Business Lawyer in Dubai – Connect Legal',
+			title: 'Business Lawyer in Dubai – Professional Women United',
 			description:
-				'Expand or protect your business with a business lawyer in Dubai. Connect Legal provides expert consultations for all your business law needs.',
+				'Expand or protect your business with a business lawyer in Dubai. Professional Women United provides expert consultations for all your business law needs.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/business-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

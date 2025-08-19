@@ -338,22 +338,22 @@ export default function ImmigrationLawyer() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											Connect Legal has the best immigration lawyer Dubai has to offer.
+											Professional Women United has the best immigration lawyer Dubai has to offer.
 											<br />
 											<br />
-											At Connect Legal, we pride ourselves in connecting you with top immigration
+											At Professional Women United, we pride ourselves in connecting you with top immigration
 											lawyers in Dubai who excel in their field through a combination of expertise
 											and dedication. Immigration lawyers possess in-depth knowledge of local and
 											international immigration laws, allowing them to handle complex cases with
 											efficiency and professionalism.
-											<br /> What sets Connect Legal’s immigration lawyers apart is their
+											<br /> What sets Professional Women United’s immigration lawyers apart is their
 											personalized approach. They make sure each client receives tailored advice
 											and comprehensive support throughout their legal journey. Trust us to find
 											you the best immigration lawyer Abu Dhabi and Dubai have to offer as we
 											handle your immigration matters with care and attention to detail.
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves in connecting you with top immigration lawyers in Dubai who excel in their field through a combination of expertise and dedication. Immigration lawyers possess in-depth knowledge of local and international immigration laws, allowing them to handle complex cases with efficiency and professionalism. 										'
+										'At Professional Women United, we pride ourselves in connecting you with top immigration lawyers in Dubai who excel in their field through a combination of expertise and dedication. Immigration lawyers possess in-depth knowledge of local and international immigration laws, allowing them to handle complex cases with efficiency and professionalism. 										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -364,15 +364,15 @@ export default function ImmigrationLawyer() {
 								</>
 							) : (
 								<>
-									Connect Legal has the best immigration lawyer Dubai has to offer.
+									Professional Women United has the best immigration lawyer Dubai has to offer.
 									<br />
 									<br />
-									At Connect Legal, we pride ourselves in connecting you with top immigration lawyers
+									At Professional Women United, we pride ourselves in connecting you with top immigration lawyers
 									in Dubai who excel in their field through a combination of expertise and dedication.
 									Immigration lawyers possess in-depth knowledge of local and international
 									immigration laws, allowing them to handle complex cases with efficiency and
 									professionalism.
-									<br /> What sets Connect Legal’s immigration lawyers apart is their personalized
+									<br /> What sets Professional Women United’s immigration lawyers apart is their personalized
 									approach. They make sure each client receives tailored advice and comprehensive
 									support throughout their legal journey. Trust us to find you the best immigration
 									lawyer Abu Dhabi and Dubai have to offer as we handle your immigration matters with

@@ -273,7 +273,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 											aria-controls="collapseThree"
 										>
 											<div className="legal-review">
-												<h6>Connect Legal Review Guidelines</h6>
+												<h6>Professional Women United Review Guidelines</h6>
 											</div>
 										</button>
 									</h2>
@@ -462,10 +462,10 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 									</button>
 								</form>
 								<p>
-									By clicking the “Submit” button, you agree to Connect Legal’s
+									By clicking the “Submit” button, you agree to Professional Women United’s
 									<Link href="#"> terms of use.</Link> Please see our
 									<Link href="#"> community guidelines</Link> and
-									<Link href="#"> privacy policy</Link> for information on posting to Connect Legal
+									<Link href="#"> privacy policy</Link> for information on posting to Professional Women United
 									and how we collect, use, and share information you provide to us.
 								</p>
 							</div>
@@ -477,7 +477,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 									<div className="row">
 										<div className="col-lg-8">
 											<div className="legal-review d-none d-lg-block">
-												<h6>Connect Legal Review Guidelines</h6>
+												<h6>Professional Women United Review Guidelines</h6>
 											</div>
 										</div>
 										<div className="col-lg-4 text-end d-none d-lg-block">

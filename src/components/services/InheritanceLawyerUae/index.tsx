@@ -533,7 +533,7 @@ export default function InheritanceLawyerUae() {
 											{t('At_Connect_Legal,_we_pride')}
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves on having a network of top inheritance lawyers in Dubai. Our attorneys possess a combination of legal expertise, strategic thinking, and dedication to client satisfaction. They have a proven track record of successfully handling complex inheritance cases, demonstrating exceptional problem-solving skills, attention to detail, and a commitment to achieving favorable outcomes for our clients. '
+										'At Professional Women United, we pride ourselves on having a network of top inheritance lawyers in Dubai. Our attorneys possess a combination of legal expertise, strategic thinking, and dedication to client satisfaction. They have a proven track record of successfully handling complex inheritance cases, demonstrating exceptional problem-solving skills, attention to detail, and a commitment to achieving favorable outcomes for our clients. '
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

@@ -5,14 +5,14 @@ import InjuryLawyer from '@/components/services/InjuryLawyer';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "Injury Lawyer in Dubai – Connect Legal",
-		description: "Injured and seeking justice? An injury lawyer in Dubai can help. Connect Legal provides expert legal counsel for injury cases.",
+		title: "Injury Lawyer in Dubai – Professional Women United",
+		description: "Injured and seeking justice? An injury lawyer in Dubai can help. Professional Women United provides expert legal counsel for injury cases.",
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/injury-lawyer-dubai`
 		},
 		openGraph: {
-			title: "Injury Lawyer in Dubai – Connect Legal",
-			description: "Injured and seeking justice? An injury lawyer in Dubai can help. Connect Legal provides expert legal counsel for injury cases.",
+			title: "Injury Lawyer in Dubai – Professional Women United",
+			description: "Injured and seeking justice? An injury lawyer in Dubai can help. Professional Women United provides expert legal counsel for injury cases.",
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/injury-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

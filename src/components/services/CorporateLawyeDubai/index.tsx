@@ -75,7 +75,7 @@ export default function CorporateLawyeDubai() {
 												representation to businesses on a wide range of corporate matters,
 												including mergers and acquisitions, corporate governance, and compliance
 												with regulations. . <br />
-												At Connect Legal, our corporate lawyers offer comprehensive legal
+												At Professional Women United, our corporate lawyers offer comprehensive legal
 												solutions tailored to each client's specific needs and objectives. They
 												work closely with businesses to handle legal issues, avoid risks, and
 												achieve their strategic goals efficiently and effectively.
@@ -95,7 +95,7 @@ export default function CorporateLawyeDubai() {
 										A corporate lawyer specializes in providing legal advice and representation to
 										businesses on a wide range of corporate matters, including mergers and
 										acquisitions, corporate governance, and compliance with regulations. . <br />
-										At Connect Legal, our corporate lawyers offer comprehensive legal solutions
+										At Professional Women United, our corporate lawyers offer comprehensive legal solutions
 										tailored to each client's specific needs and objectives. They work closely with
 										businesses to handle legal issues, avoid risks, and achieve their strategic
 										goals efficiently and effectively.
@@ -561,7 +561,7 @@ export default function CorporateLawyeDubai() {
 									<span className="green-medium-2">
 										Corporate Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -582,7 +582,7 @@ export default function CorporateLawyeDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Hiring a corporate lawyer from Connect Legal allows access to
+												Hiring a corporate lawyer from Professional Women United allows access to
 												professionals with extensive expertise in corporate law. Our corporate
 												lawyers specialize in handling a wide range of corporate matters,
 												including mergers and acquisitions, contract negotiation, and corporate
@@ -610,7 +610,7 @@ export default function CorporateLawyeDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, our corporate lawyers have a proven track record of
+												At Professional Women United, our corporate lawyers have a proven track record of
 												success representing clients in various corporate law matters. They have
 												consistently achieved favorable outcomes for clients and are committed
 												to delivering results that exceed expectations.
@@ -719,7 +719,7 @@ export default function CorporateLawyeDubai() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we prioritize clear and open communication with our
+												At Professional Women United, we prioritize clear and open communication with our
 												clients. Our corporate lawyers make themselves readily accessible to
 												address your questions and concerns promptly, fostering a collaborative
 												attorney-client relationship built on trust and transparency. Whether
@@ -771,7 +771,7 @@ export default function CorporateLawyeDubai() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, our top corporate lawyers in Dubai are distinguished by
+											At Professional Women United, our top corporate lawyers in Dubai are distinguished by
 											their extensive legal expertise, dedication to client satisfaction, and
 											proven track record of success. They possess a deep understanding of
 											corporate law and business dynamics, allowing them to provide strategic
@@ -780,7 +780,7 @@ export default function CorporateLawyeDubai() {
 											advocacy for your interests distinguish them as top talents.
 										</>
 									) : (
-										'At Connect Legal, our top corporate lawyers in Dubai are distinguished by their extensive legal expertise, dedication to client satisfaction, and proven track record of success. They possess a deep understanding of corporate law and business dynamics, allowing them to provide strategic advice and effective solutions to our clients. 										'
+										'At Professional Women United, our top corporate lawyers in Dubai are distinguished by their extensive legal expertise, dedication to client satisfaction, and proven track record of success. They possess a deep understanding of corporate law and business dynamics, allowing them to provide strategic advice and effective solutions to our clients. 										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -791,7 +791,7 @@ export default function CorporateLawyeDubai() {
 								</>
 							) : (
 								<>
-									At Connect Legal, our top corporate lawyers in Dubai are distinguished by their
+									At Professional Women United, our top corporate lawyers in Dubai are distinguished by their
 									extensive legal expertise, dedication to client satisfaction, and proven track
 									record of success. They possess a deep understanding of corporate law and business
 									dynamics, allowing them to provide strategic advice and effective solutions to our
@@ -869,7 +869,7 @@ export default function CorporateLawyeDubai() {
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Clients frequently search for knowledgeable legal representation and clarity when seeking
-						information on corporate legal matters. At Connect Legal, we ensure that our corporate lawyer
+						information on corporate legal matters. At Professional Women United, we ensure that our corporate lawyer
 						can provide expert guidance on various issues, including business transactions, corporate
 						governance, mergers and acquisitions, and regulatory compliance.
 						<br />

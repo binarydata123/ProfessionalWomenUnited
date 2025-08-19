@@ -74,7 +74,7 @@ export default function MarriageLawyer() {
 										{showFullText ? (
 											<>{t('A_marriage_lawyer_specializes')}</>
 										) : (
-											'A marriage lawyer specializes in legal matters related to marriage, including drafting prenuptial and postnuptial agreements, advising on spousal rights and responsibilities, and navigating the legal aspects of separation and divorce. They help clients understand their rights and obligations and represent them in legal proceedings if necessary. The experienced marriage lawyers on Connect Legal offer personalized, professional legal services tailored to each clients unique situation. 					'
+											'A marriage lawyer specializes in legal matters related to marriage, including drafting prenuptial and postnuptial agreements, advising on spousal rights and responsibilities, and navigating the legal aspects of separation and divorce. They help clients understand their rights and obligations and represent them in legal proceedings if necessary. The experienced marriage lawyers on Professional Women United offer personalized, professional legal services tailored to each clients unique situation. 					'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

@@ -526,9 +526,9 @@ export default function BestLawyersAbuDhabi() {
 									{t('Through_Connect_Legal')}
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -706,7 +706,7 @@ export default function BestLawyersAbuDhabi() {
 											{t('What_sets_the_lawyers')}
 										</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

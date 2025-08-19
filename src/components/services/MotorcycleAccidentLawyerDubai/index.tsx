@@ -633,7 +633,7 @@ export default function MotorcycleAccidentLawyerDubai() {
 											{t('With_Connect_Legal,_clients')}
 										</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

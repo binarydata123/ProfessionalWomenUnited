@@ -5,8 +5,8 @@ import { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "404 Not Found - Connect Legal | Find Experienced Lawyers for Your Legal Needs",
-		description: "Oops! It seems the page you're looking for is not found. No worries! Connect Legal is here to help you find experienced lawyers tailored to your specific legal issues. Explore our platform to discover a network of qualified attorneys ready to assist you. Your legal solution is just a click away!",
+		title: "404 Not Found - Professional Women United | Find Experienced Lawyers for Your Legal Needs",
+		description: "Oops! It seems the page you're looking for is not found. No worries! Professional Women United is here to help you find experienced lawyers tailored to your specific legal issues. Explore our platform to discover a network of qualified attorneys ready to assist you. Your legal solution is just a click away!",
 		alternates: {
 			canonical: '/'
 		}

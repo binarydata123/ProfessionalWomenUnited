@@ -5,16 +5,16 @@ import InsolvencyLawyer from '@/components/services/BankruptcyLawyerUuae';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Bankruptcy Lawyer in UAE – Connect Legal',
+		title: 'Bankruptcy Lawyer in UAE – Professional Women United',
 		description:
-			'Facing financial distress? A bankruptcy lawyer in UAE can provide the guidance you need. Contact Connect Legal today.',
+			'Facing financial distress? A bankruptcy lawyer in UAE can provide the guidance you need. Contact Professional Women United today.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/bankruptcy-lawyer-uae`
 		},
 		openGraph: {
-			title: 'Bankruptcy Lawyer in UAE – Connect Legal',
+			title: 'Bankruptcy Lawyer in UAE – Professional Women United',
 			description:
-				'Facing financial distress? A bankruptcy lawyer in UAE can provide the guidance you need. Contact Connect Legal today.',
+				'Facing financial distress? A bankruptcy lawyer in UAE can provide the guidance you need. Contact Professional Women United today.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/bankruptcy-lawyer-uae`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

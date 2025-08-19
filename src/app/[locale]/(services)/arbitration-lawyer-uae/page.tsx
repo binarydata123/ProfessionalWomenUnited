@@ -4,16 +4,16 @@ import ArbitrationLawyer from '@/components/services/ArbitrationLawyer';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Arbitration Lawyer in UAE – Connect Legal',
+		title: 'Arbitration Lawyer in UAE – Professional Women United',
 		description:
-			'For arbitration matters, a skilled arbitration lawyer in UAE can assist you. Reach out to Connect Legal for professional guidance.',
+			'For arbitration matters, a skilled arbitration lawyer in UAE can assist you. Reach out to Professional Women United for professional guidance.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/arbitration-lawyer-uae`
 		},
 		openGraph: {
-			title: 'Arbitration Lawyer in UAE – Connect Legal',
+			title: 'Arbitration Lawyer in UAE – Professional Women United',
 			description:
-				'For arbitration matters, a skilled arbitration lawyer in UAE can assist you. Reach out to Connect Legal for professional guidance.',
+				'For arbitration matters, a skilled arbitration lawyer in UAE can assist you. Reach out to Professional Women United for professional guidance.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/arbitration-lawyer-uae`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

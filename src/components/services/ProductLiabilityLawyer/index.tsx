@@ -72,7 +72,7 @@ export default function ProductLiabilityLawyer() {
 										{showFullText ? (
 											<>
 												A product liability lawyer specializes in helping those harmed by
-												defective or dangerous products pursue legal action. Connect Legal
+												defective or dangerous products pursue legal action. Professional Women United
 												connects individuals in the UAE with experienced product liability
 												lawyers who can provide legal advice, representation, and guidance
 												throughout the process of filing a claim and seeking justice against
@@ -91,7 +91,7 @@ export default function ProductLiabilityLawyer() {
 								) : (
 									<>
 										A product liability lawyer specializes in helping those harmed by defective or
-										dangerous products pursue legal action. Connect Legal connects individuals in
+										dangerous products pursue legal action. Professional Women United connects individuals in
 										the UAE with experienced product liability lawyers who can provide legal advice,
 										representation, and guidance throughout the process of filing a claim and
 										seeking justice against negligent manufacturers or distributors.
@@ -460,10 +460,10 @@ export default function ProductLiabilityLawyer() {
 								<h3 className="font-smaller weight-bold text-black-add-fig">
 									Why Should I Hire a <br />{' '}
 									<span className="green-medium-2">
-										Product Liability Lawyer from Connect Legal?
+										Product Liability Lawyer from Professional Women United?
 										<br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -484,7 +484,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal connects you with experienced product liability lawyers
+												Professional Women United connects you with experienced product liability lawyers
 												who specialize in handling cases like yours. The attorneys on our
 												platform have in-depth knowledge of the UAE product liability laws and
 												regulations, allowing them to handle legal proceedings effectively. With
@@ -512,7 +512,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												When you hire a product liability lawyer through Connect Legal, you can
+												When you hire a product liability lawyer through Professional Women United, you can
 												expect personalized legal representation tailored to your unique needs
 												and circumstances. The attorney will take the time to understand your
 												situation, listen to your concerns, and provide compassionate support
@@ -539,7 +539,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal partners with top-tier product liability lawyers who have
+												Professional Women United partners with top-tier product liability lawyers who have
 												a proven track record of successful handling similar cases. These
 												attorneys have successfully represented clients in a wide range of
 												product liability claims, securing substantial compensation for their
@@ -567,7 +567,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal's network of product liability lawyers in the UAE has
+												Professional Women United's network of product liability lawyers in the UAE has
 												access to extensive resources and expert witnesses who can strengthen
 												your case. These resources may include medical experts, engineers,
 												accident reconstruction specialists, and other professionals who can
@@ -596,7 +596,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Many product liability lawyers affiliated with Connect Legal offer their
+												Many product liability lawyers affiliated with Professional Women United offer their
 												services on a contingency fee basis, meaning you only pay legal fees if
 												they successfully recover compensation for you. This arrangement
 												eliminates the financial burden of upfront legal costs and allows you to
@@ -624,7 +624,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												When you hire a product liability lawyer through Connect Legal, you
+												When you hire a product liability lawyer through Professional Women United, you
 												receive comprehensive legal support every step of the way. From the
 												initial consultation to the resolution of your case, the product
 												liability lawyers on our platform handle all aspects of the legal
@@ -677,7 +677,7 @@ export default function ProductLiabilityLawyer() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, we pride ourselves on connecting clients with the top
+											At Professional Women United, we pride ourselves on connecting clients with the top
 											product liability lawyers in Dubai. Our top talents are distinguished by
 											their extensive experience, exceptional legal expertise, and track record of
 											success in handling product liability cases. They possess a deep
@@ -685,7 +685,7 @@ export default function ProductLiabilityLawyer() {
 											to advocate for your rights successfully.
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves on connecting clients with the top product liability lawyers in Dubai. Our top talents are distinguished by their extensive experience, exceptional legal expertise, '
+										'At Professional Women United, we pride ourselves on connecting clients with the top product liability lawyers in Dubai. Our top talents are distinguished by their extensive experience, exceptional legal expertise, '
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -696,7 +696,7 @@ export default function ProductLiabilityLawyer() {
 								</>
 							) : (
 								<>
-									At Connect Legal, we pride ourselves on connecting clients with the top product
+									At Professional Women United, we pride ourselves on connecting clients with the top product
 									liability lawyers in Dubai. Our top talents are distinguished by their extensive
 									experience, exceptional legal expertise, and track record of success in handling
 									product liability cases. They possess a deep understanding of UAE product liability

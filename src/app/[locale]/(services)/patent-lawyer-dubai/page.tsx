@@ -6,14 +6,14 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: 'Patent Lawyer in Dubai',
 		description:
-			'Protect your inventions with a patent lawyer in Dubai. Connect Legal provides expert advice on securing and defending patents.',
+			'Protect your inventions with a patent lawyer in Dubai. Professional Women United provides expert advice on securing and defending patents.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/patent-lawyer-dubai`
 		},
 		openGraph: {
 			title: 'Patent Lawyer in Dubai',
 			description:
-				'Protect your inventions with a patent lawyer in Dubai. Connect Legal provides expert advice on securing and defending patents.',
+				'Protect your inventions with a patent lawyer in Dubai. Professional Women United provides expert advice on securing and defending patents.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/patent-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

@@ -4,16 +4,16 @@ import RealEstateLawyers from '@/components/services/RealEstateLawyers';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Real Estate Lawyer in Dubai – Connect Legal',
+		title: 'Real Estate Lawyer in Dubai – Professional Women United',
 		description:
-			'Buying or selling property? A real estate lawyer in Dubai can guide you through the process. Contact Connect Legal for expert advice.',
+			'Buying or selling property? A real estate lawyer in Dubai can guide you through the process. Contact Professional Women United for expert advice.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/real-estate-lawyer-dubai`
 		},
 		openGraph: {
-			title: 'Real Estate Lawyer in Dubai – Connect Legal',
+			title: 'Real Estate Lawyer in Dubai – Professional Women United',
 			description:
-				'Buying or selling property? A real estate lawyer in Dubai can guide you through the process. Contact Connect Legal for expert advice.',
+				'Buying or selling property? A real estate lawyer in Dubai can guide you through the process. Contact Professional Women United for expert advice.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/real-estate-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
     return {
-        title: 'Ask a Lawyer - Connect Legal',
-        description: 'Get legal advice and answers to your questions from experienced lawyers on Connect Legal. Ask a lawyer today!',
+        title: 'Ask a Lawyer - Professional Women United',
+        description: 'Get legal advice and answers to your questions from experienced lawyers on Professional Women United. Ask a lawyer today!',
         alternates: {
             canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/legal-forum/${params.slug}/ask-a-lawyer`
         },
         openGraph: {
-            title: 'Ask a Lawyer - Connect Legal',
-            description: 'Get legal advice and answers to your questions from experienced lawyers on Connect Legal. Ask a lawyer today!',
+            title: 'Ask a Lawyer - Professional Women United',
+            description: 'Get legal advice and answers to your questions from experienced lawyers on Professional Women United. Ask a lawyer today!',
             url: `${process.env.NEXT_PUBLIC_BASE_URL}/legal-forum/${params.slug}/ask-a-lawyer`,
             siteName: `${process.env.NEXT_APP_NAME}`,
             images: [

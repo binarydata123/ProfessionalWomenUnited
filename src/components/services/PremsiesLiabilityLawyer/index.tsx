@@ -79,7 +79,7 @@ export default function PremsiesLiabilityLawyer() {
 												{t('Our_Platform_Provides')}
 											</>
 										) : (
-											'A premises liability lawyer specializes in representing individuals who have been injured on someone else property. At Connect Legal, we connect clients with experienced premises liability lawyers who assist in overcoming legal issues, advocating for fair compensation, and holding negligent property owners accountable.'
+											'A premises liability lawyer specializes in representing individuals who have been injured on someone else property. At Professional Women United, we connect clients with experienced premises liability lawyers who assist in overcoming legal issues, advocating for fair compensation, and holding negligent property owners accountable.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -471,9 +471,9 @@ export default function PremsiesLiabilityLawyer() {
 									{t('From_Connect_Legal')}
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -603,7 +603,7 @@ export default function PremsiesLiabilityLawyer() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Client satisfaction is our top priority at Connect Legal. We strive to
+												Client satisfaction is our top priority at Professional Women United. We strive to
 												exceed our clients' expectations by providing responsive communication,
 												transparent guidance, and aggressive advocacy. Our commitment to client
 												satisfaction has earned us numerous positive reviews and referrals,
@@ -649,7 +649,7 @@ export default function PremsiesLiabilityLawyer() {
 									{showFullTextDiscover ? (
 										<>{t('At_Connect_Legal')}</>
 									) : (
-										'At Connect Legal, we have a network of the top premises liability lawyers in the UAE, each recognized for their exceptional skills and expertise in handling premises liability cases. Our top talents possess a deep understanding of premises liability law and have a proven track record of successfully representing clients in a wide range of premises liability matters. '
+										'At Professional Women United, we have a network of the top premises liability lawyers in the UAE, each recognized for their exceptional skills and expertise in handling premises liability cases. Our top talents possess a deep understanding of premises liability law and have a proven track record of successfully representing clients in a wide range of premises liability matters. '
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

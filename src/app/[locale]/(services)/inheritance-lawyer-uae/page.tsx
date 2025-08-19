@@ -4,16 +4,16 @@ import InheritanceLawyerUae from '@/components/services/InheritanceLawyerUae';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Inheritance Lawyer in UAE – Connect Legal',
+		title: 'Inheritance Lawyer in UAE – Professional Women United',
 		description:
-			'Plan your estate or handle inheritance disputes with an inheritance lawyer in UAE. Connect Legal offers expert legal assistance.',
+			'Plan your estate or handle inheritance disputes with an inheritance lawyer in UAE. Professional Women United offers expert legal assistance.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/inheritance-lawyer-uae`
 		},
 		openGraph: {
-			title: 'Inheritance Lawyer in UAE – Connect Legal',
+			title: 'Inheritance Lawyer in UAE – Professional Women United',
 			description:
-				'Plan your estate or handle inheritance disputes with an inheritance lawyer in UAE. Connect Legal offers expert legal assistance.',
+				'Plan your estate or handle inheritance disputes with an inheritance lawyer in UAE. Professional Women United offers expert legal assistance.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/inheritance-lawyer-uae`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

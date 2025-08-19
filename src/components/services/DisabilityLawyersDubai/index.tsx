@@ -616,7 +616,7 @@ export default function DisabilityLawyersDubai() {
 									{showFullTextDiscover ? (
 										<>{t('At_Connect_Legal_we_pride')}</>
 									) : (
-										'At Connect Legal, we pride ourselves on representing some of the most skilled and experienced disability lawyers in Dubai. Our top talents possess a combination of legal expertise,'
+										'At Professional Women United, we pride ourselves on representing some of the most skilled and experienced disability lawyers in Dubai. Our top talents possess a combination of legal expertise,'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

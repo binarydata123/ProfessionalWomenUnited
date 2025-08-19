@@ -75,7 +75,7 @@ export default function BicycleAccidentLawyerDubai() {
 												have been injured in bicycle accidents, providing legal assistance to
 												help them recover compensation for their injuries, damages, and losses.
 												<br />
-												At Connect Legal, we're dedicated to supporting individuals who have
+												At Professional Women United, we're dedicated to supporting individuals who have
 												been involved in bicycle accidents. Our team of experienced bicycle
 												accident lawyers specializes in handling these cases, providing
 												personalized legal representation tailored to each client's unique
@@ -97,7 +97,7 @@ export default function BicycleAccidentLawyerDubai() {
 										injured in bicycle accidents, providing legal assistance to help them recover
 										compensation for their injuries, damages, and losses.
 										<br />
-										At Connect Legal, we're dedicated to supporting individuals who have been
+										At Professional Women United, we're dedicated to supporting individuals who have been
 										involved in bicycle accidents. Our team of experienced bicycle accident lawyers
 										specializes in handling these cases, providing personalized legal representation
 										tailored to each client's unique circumstances and needs.
@@ -227,7 +227,7 @@ export default function BicycleAccidentLawyerDubai() {
 														collisions, contribute to over 60% of cycling fatalities and can
 														lead to long-term disabilities. In the UAE, where bicycle
 														accidents are prevalent, victims can seek legal assistance from
-														firms like Connect Legal to navigate claims and secure deserved
+														firms like Professional Women United to navigate claims and secure deserved
 														compensation.
 													</div>
 												</div>
@@ -438,12 +438,12 @@ export default function BicycleAccidentLawyerDubai() {
 									<span className="green-medium-2">
 										Bicycle Accident Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -465,7 +465,7 @@ export default function BicycleAccidentLawyerDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Our bicycle accident lawyers at Connect Legal specialize in handling
+												Our bicycle accident lawyers at Professional Women United specialize in handling
 												bicycle accident cases and possess in-depth knowledge and experience
 												dealing with such claims. We understand the unique challenges faced by
 												cyclists and are dedicated to securing favorable outcomes for our
@@ -495,7 +495,7 @@ export default function BicycleAccidentLawyerDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we provide personalized legal representation tailored
+												At Professional Women United, we provide personalized legal representation tailored
 												to each client's specific needs and circumstances. We recognize that
 												every bicycle accident case is unique, and we take the time to
 												understand the individual challenges and objectives of our clients. From
@@ -557,7 +557,7 @@ export default function BicycleAccidentLawyerDubai() {
 												accident can take on victims and their families. That's why we provide
 												compassionate and supportive representation to guide you through this
 												challenging time.
-												<br /> Our bicycle accident lawyers at Connect Legal are committed to
+												<br /> Our bicycle accident lawyers at Professional Women United are committed to
 												providing you with the support and guidance you need to navigate the
 												legal process confidently and safely. We are here to answer your
 												questions, address your concerns, and advocate tirelessly on your
@@ -583,7 +583,7 @@ export default function BicycleAccidentLawyerDubai() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												When you hire a bicycle accident lawyer from Connect Legal, you can
+												When you hire a bicycle accident lawyer from Professional Women United, you can
 												expect a thorough investigation into the circumstances surrounding your
 												accident. We will gather evidence, interview witnesses, and consult with
 												experts to build a strong case on your behalf.
@@ -619,7 +619,7 @@ export default function BicycleAccidentLawyerDubai() {
 												with clients. We keep you informed every step of the way, providing
 												regular updates on the progress of your case and promptly responding to
 												your inquiries. <br />
-												At Connect Legal, you can expect open and honest communication from our
+												At Professional Women United, you can expect open and honest communication from our
 												bicycle accident lawyers in the UAE. We will make sure that you are
 												fully informed and empowered to make decisions about your case. Our aim
 												is to provide you with the highest level of service and support

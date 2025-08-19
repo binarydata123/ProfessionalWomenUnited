@@ -71,10 +71,10 @@ export default function BestLawyersUmmAlQuwain() {
 									<>
 										{showFullText ? (
 											<>
-												Connecting you with the best lawyers Umm Al Quwain has to offer, Connect Legal is your gateway to professional legal representation. Our platform simplifies the process of finding the perfect lawyer for your needs with a user-friendly interface and a curated selection of experts. Whether you require assistance with family matters, business transactions, or property disputes, Connect Legal ensures seamless access to the best lawyers in Umm Al Quwain with just a couple of clicks! Start your search today and find the perfect lawyer for your case.
+												Connecting you with the best lawyers Umm Al Quwain has to offer, Professional Women United is your gateway to professional legal representation. Our platform simplifies the process of finding the perfect lawyer for your needs with a user-friendly interface and a curated selection of experts. Whether you require assistance with family matters, business transactions, or property disputes, Professional Women United ensures seamless access to the best lawyers in Umm Al Quwain with just a couple of clicks! Start your search today and find the perfect lawyer for your case.
 											</>
 										) : (
-											'Finding the best lawyer in Dubai is quick and easy with Connect Legal. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
+											'Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -85,7 +85,7 @@ export default function BestLawyersUmmAlQuwain() {
 									</>
 								) : (
 									<>
-										Connecting you with the best lawyers Umm Al Quwain has to offer, Connect Legal is your gateway to professional legal representation. Our platform simplifies the process of finding the perfect lawyer for your needs with a user-friendly interface and a curated selection of experts. Whether you require assistance with family matters, business transactions, or property disputes, Connect Legal ensures seamless access to the best lawyers in Umm Al Quwain with just a couple of clicks! Start your search today and find the perfect lawyer for your case.
+										Connecting you with the best lawyers Umm Al Quwain has to offer, Professional Women United is your gateway to professional legal representation. Our platform simplifies the process of finding the perfect lawyer for your needs with a user-friendly interface and a curated selection of experts. Whether you require assistance with family matters, business transactions, or property disputes, Professional Women United ensures seamless access to the best lawyers in Umm Al Quwain with just a couple of clicks! Start your search today and find the perfect lawyer for your case.
 									</>
 								)}
 							</p>
@@ -124,7 +124,7 @@ export default function BestLawyersUmmAlQuwain() {
 									<span className="green-medium-2">
 										Lawyer in <span className="desktop-br"><br /></span>{' '}Umm Al Quwain {' '}
 									</span>{' '}
-									through Connect Legal?
+									through Professional Women United?
 								</h3>
 
 								<div className="accordion mt-4" id="setbotomspace">
@@ -146,7 +146,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Lawyers in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it family law, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Connect Legal guarantees that you receive tailored guidance and representation relevant to your case.
+												Lawyers in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it family law, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
 											</div>
 										</div>
 									</div>
@@ -168,7 +168,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal provides convenient access to top-tier legal professionals in Umm Al Quwain. With just a few clicks, you can browse through our curated selection of lawyers, view their profiles, and connect with the perfect match for your needs. Our user-friendly platform makes it easy to find and hire the best lawyer in Umm Al Quwain, saving you time and hassle in your search for legal assistance.
+												Professional Women United provides convenient access to top-tier legal professionals in Umm Al Quwain. With just a few clicks, you can browse through our curated selection of lawyers, view their profiles, and connect with the perfect match for your needs. Our user-friendly platform makes it easy to find and hire the best lawyer in Umm Al Quwain, saving you time and hassle in your search for legal assistance.
 											</div>
 										</div>
 									</div>
@@ -190,7 +190,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												The lawyers in Umm Al Quwain on Connect Legal develop personalized legal strategies designed to maximize success and achieve favorable outcomes for their clients. By understanding your objectives, concerns, and constraints, they craft customized approaches tailored to your specific needs. Be it negotiating settlements, litigating in court, or providing strategic advice, lawyers on our platform employ tactics adapted to your unique circumstances.
+												The lawyers in Umm Al Quwain on Professional Women United develop personalized legal strategies designed to maximize success and achieve favorable outcomes for their clients. By understanding your objectives, concerns, and constraints, they craft customized approaches tailored to your specific needs. Be it negotiating settlements, litigating in court, or providing strategic advice, lawyers on our platform employ tactics adapted to your unique circumstances.
 											</div>
 										</div>
 									</div>
@@ -212,7 +212,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal offers comprehensive legal support across a wide range of practice areas in Umm Al Quwain. From family law and real estate matters to business transactions and civil litigation, our platform connects you with lawyers who specialize in various areas of law, providing comprehensive assistance for your diverse legal needs. Whether you need advice, representation, or help with legal documentation, the attorneys on our platform are equipped to handle all aspects of your case with professionalism and expertise.
+												Professional Women United offers comprehensive legal support across a wide range of practice areas in Umm Al Quwain. From family law and real estate matters to business transactions and civil litigation, our platform connects you with lawyers who specialize in various areas of law, providing comprehensive assistance for your diverse legal needs. Whether you need advice, representation, or help with legal documentation, the attorneys on our platform are equipped to handle all aspects of your case with professionalism and expertise.
 											</div>
 										</div>
 									</div>
@@ -234,7 +234,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												All lawyers listed on Connect Legal undergo a rigorous selection process to ensure that only the most qualified and reputable legal professionals are represented. Each lawyer in Umm Al Quwain goes through assessments of their qualifications, experience, and ethical standards. This way, when you hire a lawyer through Connect Legal, you&apos;re working with a trusted professional who meets our criteria for excellence and reliability.
+												All lawyers listed on Professional Women United undergo a rigorous selection process to ensure that only the most qualified and reputable legal professionals are represented. Each lawyer in Umm Al Quwain goes through assessments of their qualifications, experience, and ethical standards. This way, when you hire a lawyer through Professional Women United, you&apos;re working with a trusted professional who meets our criteria for excellence and reliability.
 											</div>
 										</div>
 									</div>
@@ -256,7 +256,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												The lawyers on Connect Legal possess extensive knowledge and expertise in local laws and regulations specific to Umm Al Quwain. Their familiarity with the region&apos;s legal landscape, including specific statutes, regulations, and court procedures, allows them to handle your case with precision and effectiveness. Whether you&apos;re facing issues related to property law, commercial transactions, or family matters, you can trust that the lawyers in Umm Al Quwain can provide strategic guidance and representation tailored to your needs.
+												The lawyers on Professional Women United possess extensive knowledge and expertise in local laws and regulations specific to Umm Al Quwain. Their familiarity with the region&apos;s legal landscape, including specific statutes, regulations, and court procedures, allows them to handle your case with precision and effectiveness. Whether you&apos;re facing issues related to property law, commercial transactions, or family matters, you can trust that the lawyers in Umm Al Quwain can provide strategic guidance and representation tailored to your needs.
 											</div>
 										</div>
 									</div>
@@ -303,7 +303,7 @@ export default function BestLawyersUmmAlQuwain() {
 										<>
 											The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these legal experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
 											<br />
-											At Connect Legal, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the legal services you need.
+											At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the legal services you need.
 
 										</>
 									) : (
@@ -323,7 +323,7 @@ export default function BestLawyersUmmAlQuwain() {
 								<>
 									The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these legal experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
 									<br />
-									At Connect Legal, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the legal services you need.
+									At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the legal services you need.
 
 								</>
 							)}
@@ -522,7 +522,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													When selecting a lawyer in Umm Al Quwain through Connect Legal, you’ll want to consider their expertise in your specific legal area, track record of success, and communication style. Review their profile, client reviews, and case history to make sure they meet your needs and expectations.
+													When selecting a lawyer in Umm Al Quwain through Professional Women United, you’ll want to consider their expertise in your specific legal area, track record of success, and communication style. Review their profile, client reviews, and case history to make sure they meet your needs and expectations.
 												</div>
 											</div>
 										</div>
@@ -535,7 +535,7 @@ export default function BestLawyersUmmAlQuwain() {
 													data-bs-target="#collapseTwo1"
 													aria-expanded="true"
 													aria-controls="collapseTwo1">
-													What types of legal issues can Connect Legal help with?
+													What types of legal issues can Professional Women United help with?
 												</button>
 											</h2>
 											<div
@@ -544,7 +544,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Connect Legal’s network of attorneys can help with a wide range of legal matters, including family law, real estate transactions, business disputes, employment issues, and more. Our platform connects you with lawyers in Umm Al Quwain who specialize in various practice areas, ensuring comprehensive support for your diverse legal needs.
+													Professional Women United’s network of attorneys can help with a wide range of legal matters, including family law, real estate transactions, business disputes, employment issues, and more. Our platform connects you with lawyers in Umm Al Quwain who specialize in various practice areas, ensuring comprehensive support for your diverse legal needs.
 												</div>
 											</div>
 										</div>
@@ -557,7 +557,7 @@ export default function BestLawyersUmmAlQuwain() {
 													data-bs-target="#collapseThree"
 													aria-expanded="true"
 													aria-controls="collapseThree">
-													How much will hiring a lawyer through Connect Legal cost?
+													How much will hiring a lawyer through Professional Women United cost?
 												</button>
 											</h2>
 											<div
@@ -566,7 +566,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													The cost of hiring a lawyer through Connect Legal depends on the complexity of your case, the lawyer&apos;s experience, and the services required. Many lawyers offer flexible fee structures, including hourly rates, flat fees, and contingency arrangements. Before proceeding with your case, consider discussing the fee structure and payment terms with your chosen lawyer.
+													The cost of hiring a lawyer through Professional Women United depends on the complexity of your case, the lawyer&apos;s experience, and the services required. Many lawyers offer flexible fee structures, including hourly rates, flat fees, and contingency arrangements. Before proceeding with your case, consider discussing the fee structure and payment terms with your chosen lawyer.
 												</div>
 											</div>
 										</div>
@@ -654,7 +654,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingSeven"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													If you&apos;re not satisfied with your lawyer&apos;s services, communicate your concerns directly with them to address any issues. If the matter remains unresolved, you can try looking for a second opinion from another lawyer or exploring alternative dispute resolution methods. Connect Legal aims to ensure client satisfaction and can guide in resolving disputes with legal professionals.
+													If you&apos;re not satisfied with your lawyer&apos;s services, communicate your concerns directly with them to address any issues. If the matter remains unresolved, you can try looking for a second opinion from another lawyer or exploring alternative dispute resolution methods. Professional Women United aims to ensure client satisfaction and can guide in resolving disputes with legal professionals.
 												</div>
 											</div>
 										</div>

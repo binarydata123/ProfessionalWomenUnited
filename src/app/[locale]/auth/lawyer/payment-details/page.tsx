@@ -78,7 +78,7 @@ export default function stepTwo() {
 									<div className="col-lg-9">
 										<div className="payment-plan">
 											<h5>
-												Connect Legal: {plan_type.charAt(0).toUpperCase()}
+												Professional Women United: {plan_type.charAt(0).toUpperCase()}
 												{plan_type.slice(1)} Plan{' '}
 											</h5>
 											<p style={{ fontWeight: '400' }}>charged {plan_type}</p>

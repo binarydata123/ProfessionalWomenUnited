@@ -74,7 +74,7 @@ export default function BestLawyersFujairah() {
 										{showFullText ? (
 											<>{t('Connect_Legal_Simplifies_the_Process')}</>
 										) : (
-											'Finding the best lawyer in Dubai is quick and easy with Connect Legal. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
+											'Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

@@ -74,7 +74,7 @@ export default function CriminalLawyersDubai() {
 												committing crimes. They provide legal representation throughout all
 												stages of the criminal justice process, from investigation and arrest to
 												trial and sentencing. <br />
-												At Connect Legal, we offer expert criminal defense services tailored to
+												At Professional Women United, we offer expert criminal defense services tailored to
 												each client's unique circumstances. Our team of experienced criminal
 												lawyers in Abu Dhabi diligently protects our clients' rights, challenges
 												evidence, negotiates plea deals, and advocates in court to guarantee the
@@ -95,7 +95,7 @@ export default function CriminalLawyersDubai() {
 										A criminal lawyer specializes in defending individuals accused of committing
 										crimes. They provide legal representation throughout all stages of the criminal
 										justice process, from investigation and arrest to trial and sentencing. <br />
-										At Connect Legal, we offer expert criminal defense services tailored to each
+										At Professional Women United, we offer expert criminal defense services tailored to each
 										client's unique circumstances. Our team of experienced criminal lawyers in Abu
 										Dhabi diligently protects our clients' rights, challenges evidence, negotiates
 										plea deals, and advocates in court to guarantee the best possible outcomes for
@@ -342,7 +342,7 @@ export default function CriminalLawyersDubai() {
 															<br />
 															For legal assistance and guidance throughout criminal
 															proceedings, seek the expertise of experienced criminal
-															lawyers at Connect Legal.
+															lawyers at Professional Women United.
 														</div>
 													</div>
 												</div>
@@ -498,13 +498,13 @@ export default function CriminalLawyersDubai() {
 									<span className="green-medium-2">
 										Criminal Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<p className="font-medium weight-light text-black-add-fig mt-3">
-									Hiring a criminal lawyer in Dubai from Connect Legal ensures you have access to
+									Hiring a criminal lawyer in Dubai from Professional Women United ensures you have access to
 									professionals who are well-versed in the details of the country's criminal legal
 									system. We will make sure that you find the best criminal lawyers in Abu Dhabi,
-									Dubai, and the UAE at Connect Legal. Our lawyers deeply understand UAE laws and
+									Dubai, and the UAE at Professional Women United. Our lawyers deeply understand UAE laws and
 									regulations, allowing them to handle your case effectively and provide sound legal
 									advice specific to the local context.
 								</p>
@@ -527,10 +527,10 @@ export default function CriminalLawyersDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Hiring a criminal lawyer in Dubai from Connect Legal ensures you have
+												Hiring a criminal lawyer in Dubai from Professional Women United ensures you have
 												access to professionals who are well-versed in the details of the
 												country's criminal legal system. We will make sure that you find the
-												best criminal lawyers in Abu Dhabi, Dubai, and the UAE at Connect Legal.
+												best criminal lawyers in Abu Dhabi, Dubai, and the UAE at Professional Women United.
 												Our lawyers deeply understand UAE laws and regulations, allowing them to
 												handle your case effectively and provide sound legal advice specific to
 												the local context.
@@ -555,7 +555,7 @@ export default function CriminalLawyersDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we have a history of securing favorable outcomes for
+												At Professional Women United, we have a history of securing favorable outcomes for
 												our clients facing criminal charges. From minor infractions to serious
 												felonies, our team of the best criminal lawyers in Abu Dhabi, Dubai, and
 												the UAE has successfully defended numerous individuals, earning their
@@ -611,7 +611,7 @@ export default function CriminalLawyersDubai() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												Facing wrongful criminal charges can be a daunting experience, but you
-												don't have to go through it alone. At Connect Legal, our criminal lawyer
+												don't have to go through it alone. At Professional Women United, our criminal lawyer
 												will provide compassionate support to you every step of the way. From
 												the initial consultation to resolving your case, our team of criminal
 												lawyers in Dubai and beyond offers guidance, reassurance, and unwavering
@@ -664,7 +664,7 @@ export default function CriminalLawyersDubai() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Client satisfaction is our top priority at Connect Legal. We strive to
+												Client satisfaction is our top priority at Professional Women United. We strive to
 												exceed our clients' expectations by providing responsive communication,
 												transparent guidance, and aggressive advocacy. Our commitment to client
 												satisfaction has earned us numerous positive reviews and referrals,
@@ -709,14 +709,14 @@ export default function CriminalLawyersDubai() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, our top criminal lawyers in Dubai excel in legal expertise
+											At Professional Women United, our top criminal lawyers in Dubai excel in legal expertise
 											and client advocacy. They navigate complex cases precisely and
 											professionally, earning your trust and respect. Our criminal
 											lawyers—Dubai-based or beyond—will show commitment to achieving favorable
 											outcomes and work hard to win the case.
 										</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -727,7 +727,7 @@ export default function CriminalLawyersDubai() {
 								</>
 							) : (
 								<>
-									At Connect Legal, our top criminal lawyers in Dubai excel in legal expertise and
+									At Professional Women United, our top criminal lawyers in Dubai excel in legal expertise and
 									client advocacy. They navigate complex cases precisely and professionally, earning
 									your trust and respect. Our criminal lawyers—Dubai-based or beyond—will show
 									commitment to achieving favorable outcomes and work hard to win the case.
@@ -803,7 +803,7 @@ export default function CriminalLawyersDubai() {
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Individuals seeking legal information on criminal law are typically concerned with finding
 						knowledgeable legal representation and clarity regarding their legal options. Our criminal
-						lawyers at Connect Legal will provide expert guidance and advocate effectively on your behalf.
+						lawyers at Professional Women United will provide expert guidance and advocate effectively on your behalf.
 						<br />
 						Select the legal issue that you face and connect with a legal expert.
 					</p>

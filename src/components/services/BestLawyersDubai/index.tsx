@@ -71,7 +71,7 @@ export default function BestLawyersDubai() {
 									<>
 										{showFullText ? (
 											<>
-												Finding the best lawyer in Dubai is quick and easy with Connect Legal.
+												Finding the best lawyer in Dubai is quick and easy with Professional Women United.
 												We offer the most user-friendly platform for connecting clients with the
 												best lawyers in the UAE and simplifying the process of finding top-tier
 												legal representation.
@@ -83,7 +83,7 @@ export default function BestLawyersDubai() {
 												require.
 											</>
 										) : (
-											'Finding the best lawyer in Dubai is quick and easy with Connect Legal. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
+											'Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -94,7 +94,7 @@ export default function BestLawyersDubai() {
 									</>
 								) : (
 									<>
-										Finding the best lawyer in Dubai is quick and easy with Connect Legal. We offer
+										Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer
 										the most user-friendly platform for connecting clients with the best lawyers in
 										the UAE and simplifying the process of finding top-tier legal representation.
 										<br />
@@ -537,7 +537,7 @@ export default function BestLawyersDubai() {
 									<span className="green-medium-2">
 										Lawyer in <span className="desktop-br"><br /></span>{' '}Dubai {' '}
 									</span>{' '}
-									through Connect Legal?
+									through Professional Women United?
 								</h3>
 
 								<div className="accordion mt-4" id="setbotomspace">
@@ -559,7 +559,7 @@ export default function BestLawyersDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Lawyers at Connect Legal possess an in-depth understanding of
+												Lawyers at Professional Women United possess an in-depth understanding of
 												Dubai&apos;s legal environment, including local regulations, customs,
 												and practices. This insight allows them to handle your case effectively
 												within the context of Dubai&apos;s legal landscape, providing you with
@@ -642,7 +642,7 @@ export default function BestLawyersDubai() {
 											<div className="accordion-body border-0">
 												We maintain the highest ethical standards in the legal profession,
 												making sure all attorneys on our platform uphold integrity, honesty, and
-												trustworthiness. When you hire a lawyer in Dubai through Connect Legal
+												trustworthiness. When you hire a lawyer in Dubai through Professional Women United
 												in Dubai, you can rest assured that you're working with a legal
 												professional who prioritizes your interests and operates with utmost
 												integrity, giving you peace of mind throughout your legal proceedings.
@@ -667,7 +667,7 @@ export default function BestLawyersDubai() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal has a proven track record of successfully connecting
+												Professional Women United has a proven track record of successfully connecting
 												clients with top-tier legal representation in Dubai. Our selection of
 												the best lawyers in Dubai has achieved favorable outcomes for numerous
 												clients across a wide range of legal matters, earning a reputation for
@@ -750,7 +750,7 @@ export default function BestLawyersDubai() {
 											professionals have a deep understanding of local laws and regulations,
 											allowing them to handle complex legal issues with precision.
 											<br />
-											At Connect Legal, we only list the best lawyers in Dubai so that you get
+											At Professional Women United, we only list the best lawyers in Dubai so that you get
 											personalized and effective legal solutions tailored to your unique needs. Be
 											it resolving disputes, drafting contracts, or representing you in court, the
 											lawyers on our platform demonstrate professionalism, dedication, and a
@@ -776,7 +776,7 @@ export default function BestLawyersDubai() {
 									deep understanding of local laws and regulations, allowing them to handle complex
 									legal issues with precision.
 									<br />
-									At Connect Legal, we only list the best lawyers in Dubai so that you get
+									At Professional Women United, we only list the best lawyers in Dubai so that you get
 									personalized and effective legal solutions tailored to your unique needs. Be it
 									resolving disputes, drafting contracts, or representing you in court, the lawyers on
 									our platform demonstrate professionalism, dedication, and a relentless pursuit of
@@ -995,7 +995,7 @@ export default function BestLawyersDubai() {
 													data-bs-target="#collapseOne"
 													aria-expanded="true"
 													aria-controls="collapseOne">
-													How do I find the best lawyer in Dubai through Connect Legal?
+													How do I find the best lawyer in Dubai through Professional Women United?
 												</button>
 											</h2>
 											<div
@@ -1004,7 +1004,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Finding the best lawyer in Dubai is simple with Connect Legal. Our
+													Finding the best lawyer in Dubai is simple with Professional Women United. Our
 													user-friendly platform allows you to browse through a curated
 													selection of top-tier legal professionals, each with expertise in
 													various practice areas. You can easily review their profile to make
@@ -1022,7 +1022,7 @@ export default function BestLawyersDubai() {
 													aria-expanded="true"
 													aria-controls="collapseTwo1">
 													What types of legal matters can I seek assistance with through
-													Connect Legal?
+													Professional Women United?
 												</button>
 											</h2>
 											<div
@@ -1031,7 +1031,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Connect Legal offers expertise across a wide range of legal areas,
+													Professional Women United offers expertise across a wide range of legal areas,
 													including family law, corporate matters, real estate issues,
 													intellectual property, and more. Whether you&apos;re dealing with
 													personal injury claims, employment disputes, property disputes, or
@@ -1049,7 +1049,7 @@ export default function BestLawyersDubai() {
 													data-bs-target="#collapseThree"
 													aria-expanded="true"
 													aria-controls="collapseThree">
-													How can a lawyer from Connect Legal help me navigate Dubai&apos;s
+													How can a lawyer from Professional Women United help me navigate Dubai&apos;s
 													legal landscape?
 												</button>
 											</h2>
@@ -1059,7 +1059,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Lawyers from Connect Legal possess a deep understanding of
+													Lawyers from Professional Women United possess a deep understanding of
 													Dubai&apos;s legal environment, including local regulations,
 													customs, and practices. This insight allows them to handle your case
 													effectively within the context of Dubai&apos;s legal landscape,
@@ -1087,7 +1087,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Connect Legal prioritizes efficient resolution of legal disputes in
+													Professional Women United prioritizes efficient resolution of legal disputes in
 													Dubai. The lawyers on our platform excel in alternative dispute
 													resolution methods such as mediation and arbitration, minimizing
 													time, costs, and stress associated with traditional litigation
@@ -1106,7 +1106,7 @@ export default function BestLawyersDubai() {
 													data-bs-target="#collapseFive"
 													aria-expanded="true"
 													aria-controls="collapseFive">
-													How does Connect Legal ensure confidentiality and trust in the legal
+													How does Professional Women United ensure confidentiality and trust in the legal
 													process?
 												</button>
 											</h2>
@@ -1116,7 +1116,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingFive"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Connect Legal maintains the highest ethical standards in the legal
+													Professional Women United maintains the highest ethical standards in the legal
 													profession, ensuring strict confidentiality of client information.
 													The lawyers we select for you adhere to professional standards and
 													legal obligations to maintain integrity, honesty, and

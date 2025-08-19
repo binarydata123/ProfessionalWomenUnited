@@ -71,7 +71,7 @@ export default function AboutUs() {
 										<span className="green-medium-2 ">Legal {isVisible ? 'experts' : ''}.</span>
 									</h1>
 									<p className="weight-bold social-link font-medium mt-4">
-										Something about how connect legal provides value to lawyers, specifically
+										Something about how Professional Women United provides value to lawyers, specifically
 										financialy.
 									</p>
 
@@ -199,7 +199,7 @@ export default function AboutUs() {
 										<Link className="underlineClass" href="/">
 											legal consultant in Dubai{' '}
 										</Link>
-										to help you with your case? Connect Legal is the ideal place to find it. Our
+										to help you with your case? Professional Women United is the ideal place to find it. Our
 										legal advisors can give you the support you need to go through any type of legal
 										trouble you may be having. Find the perfect lawyer with our help!
 									</p>
@@ -227,7 +227,7 @@ export default function AboutUs() {
 										If you are a lawyer looking to put your knowledge into practice, this is the
 										ideal place for you.{' '}
 										<Link className="underlineClass" href="/">
-											Connect Legal
+											Professional Women United
 										</Link>{' '}
 										is the space were you can find users looking for legal advice in real time. Make
 										the most out of your expertise and find the ideal clients to support here.
@@ -272,7 +272,7 @@ export default function AboutUs() {
 										>
 											<div className="accordion-body border-0">
 												If you are a lawyer proficient in UAE law, all you have to do is go to
-												our “For Lawyers” section and create your Connect Legal account.
+												our “For Lawyers” section and create your Professional Women United account.
 												Creating a{' '}
 												<Link className="underlineClass" href="/find-a-lawyer">
 													professional lawyer

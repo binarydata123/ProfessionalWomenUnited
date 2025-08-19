@@ -73,14 +73,14 @@ export default function RealEstateLawyers() {
 											<>
 												A real estate lawyer specializes in legal matters related to property
 												transactions, including buying, selling, leasing, and financing real
-												estate. At Connect Legal, our experienced real estate lawyers provide
+												estate. At Professional Women United, our experienced real estate lawyers provide
 												comprehensive services, and the law conducts all aspects of property
 												deals. We offer personalized legal advice, contract review, and
 												representation to safeguard your interests and facilitate smooth
 												transactions.
 											</>
 										) : (
-											'A real estate lawyer specializes in legal matters related to property transactions, including buying, selling, leasing, and financing real estate. At Connect Legal, our experienced real estate lawyers provide comprehensive services, and the law conducts all aspects of property deals. We offer personalized legal advice, contract review, and representation to safeguard your interests and facilitate smooth transactions.											'
+											'A real estate lawyer specializes in legal matters related to property transactions, including buying, selling, leasing, and financing real estate. At Professional Women United, our experienced real estate lawyers provide comprehensive services, and the law conducts all aspects of property deals. We offer personalized legal advice, contract review, and representation to safeguard your interests and facilitate smooth transactions.											'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -93,7 +93,7 @@ export default function RealEstateLawyers() {
 									<>
 										A real estate lawyer specializes in legal matters related to property
 										transactions, including buying, selling, leasing, and financing real estate. At
-										Connect Legal, our experienced real estate lawyers provide comprehensive
+										Professional Women United, our experienced real estate lawyers provide comprehensive
 										services, and the law conducts all aspects of property deals. We offer
 										personalized legal advice, contract review, and representation to safeguard your
 										interests and facilitate smooth transactions.
@@ -476,7 +476,7 @@ export default function RealEstateLawyers() {
 									<span className="green-medium-2">
 										Real Estate Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -497,7 +497,7 @@ export default function RealEstateLawyers() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal’s real estate lawyers in Dubai have an in-depth
+												Professional Women United’s real estate lawyers in Dubai have an in-depth
 												understanding of local property laws and regulations. Our network is
 												well-versed in handling legal requirements and making and your
 												transactions comply with UAE law. Whether you’re buying, selling, or
@@ -528,7 +528,7 @@ export default function RealEstateLawyers() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												When it comes to real estate transactions, Connect Legal’s real estate
+												When it comes to real estate transactions, Professional Women United’s real estate
 												lawyers offer comprehensive support throughout the process. From
 												contract negotiation to title searches, our legal experts handle every
 												aspect of your real estate deals. We aim to minimize risks and
@@ -556,7 +556,7 @@ export default function RealEstateLawyers() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal lawyers offer personalized estate planning services
+												Professional Women United lawyers offer personalized estate planning services
 												tailored to your needs. They assist clients with creating wills, trusts,
 												and other estate planning documents to protect their assets and loved
 												ones. Our estate planning lawyers understand the importance of planning
@@ -613,7 +613,7 @@ export default function RealEstateLawyers() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Navigating real estate financing can be challenging, but Connect Legal’s
+												Navigating real estate financing can be challenging, but Professional Women United’s
 												real estate lawyers provide expert guidance in this area. Hiring UAE
 												real estate lawyer services will help you understand various financing
 												options, including mortgages and loans, ensuring the best terms and
@@ -641,7 +641,7 @@ export default function RealEstateLawyers() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal’s real estate lawyers take a proactive approach to risk
+												Professional Women United’s real estate lawyers take a proactive approach to risk
 												management in all real estate matters. They identify potential legal
 												issues early on and develop strategies to mitigate risks. By working
 												with a real estate lawyer in Dubai, you can benefit from a wealth of
@@ -695,12 +695,12 @@ export default function RealEstateLawyers() {
 											Legal, we’ll help you find the top estate lawyers. Our network of lawyers
 											consists of legal professionals with deep expertise in real estate and
 											investment law, offering personalized and strategic advice to each client.
-											The top talents at Connect Legal have in-depth knowledge of local laws,
+											The top talents at Professional Women United have in-depth knowledge of local laws,
 											exceptional negotiation skills, and a strong track record in handling
 											complex cases.
 										</>
 									) : (
-										'Looking for the best real estate lawyer Dubai has to offer? At Connect Legal, we’ll help you find the top estate lawyers. Our network of lawyers consists of legal professionals with deep expertise in real estate and investment law, offering personalized and strategic advice to each client. The top talents at Connect Legal have in-depth knowledge of local laws, exceptional negotiation skills, and a strong track record in handling complex cases.										'
+										'Looking for the best real estate lawyer Dubai has to offer? At Professional Women United, we’ll help you find the top estate lawyers. Our network of lawyers consists of legal professionals with deep expertise in real estate and investment law, offering personalized and strategic advice to each client. The top talents at Professional Women United have in-depth knowledge of local laws, exceptional negotiation skills, and a strong track record in handling complex cases.										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -714,10 +714,10 @@ export default function RealEstateLawyers() {
 								</>
 							) : (
 								<>
-									Looking for the best real estate lawyer Dubai has to offer? At Connect Legal, we’ll
+									Looking for the best real estate lawyer Dubai has to offer? At Professional Women United, we’ll
 									help you find the top estate lawyers. Our network of lawyers consists of legal
 									professionals with deep expertise in real estate and investment law, offering
-									personalized and strategic advice to each client. The top talents at Connect Legal
+									personalized and strategic advice to each client. The top talents at Professional Women United
 									have in-depth knowledge of local laws, exceptional negotiation skills, and a strong
 									track record in handling complex cases.
 								</>

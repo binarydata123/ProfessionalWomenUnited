@@ -68,7 +68,7 @@ export default function Page() {
 								<span className="green-medium-2"> legal network in Dubai!</span>
 							</h1>
 							<p className="weight-bold social-link font-medium mt-4">
-								Something about how connect legal provides value to lawyers, specifically financialy.
+								Something about how Professional Women United provides value to lawyers, specifically financialy.
 							</p>
 
 							<div className="lawyers-online-img  mt-4 mb-4">

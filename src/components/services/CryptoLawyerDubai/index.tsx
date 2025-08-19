@@ -71,10 +71,10 @@ export default function CryptoLawyerDubai() {
 									<>
 										{showFullText ? (
 											<>
-												Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Connect Legal is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
+												Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
 											</>
 										) : (
-											'Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Connect Legal is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai.'
+											'Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -85,7 +85,7 @@ export default function CryptoLawyerDubai() {
 									</>
 								) : (
 									<>
-										Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Connect Legal is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
+										Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
 
 									</>
 								)}
@@ -437,7 +437,7 @@ export default function CryptoLawyerDubai() {
 									<span className="green-medium-2">
 										Cryptocurrency Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -481,7 +481,7 @@ export default function CryptoLawyerDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												The crypto lawyers on Connect Legal understand that each cryptocurrency case is unique, requiring customized legal strategies tailored to your specific circumstances and objectives. Crypto lawyers in Dubai take the time to listen to your concerns, assess your situation, and develop personalized legal solutions designed to achieve the best possible outcomes for you.
+												The crypto lawyers on Professional Women United understand that each cryptocurrency case is unique, requiring customized legal strategies tailored to your specific circumstances and objectives. Crypto lawyers in Dubai take the time to listen to your concerns, assess your situation, and develop personalized legal solutions designed to achieve the best possible outcomes for you.
 
 
 											</div>
@@ -505,7 +505,7 @@ export default function CryptoLawyerDubai() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Crypto lawyers in Dubai referred by Connect Legal, have a proven track record of success in handling cryptocurrency-related cases. They have represented clients in various matters, from fraud and theft to regulatory compliance and dispute resolution, consistently delivering favorable results. You can trust their expertise and track record of achieving positive client outcomes.
+												Crypto lawyers in Dubai referred by Professional Women United, have a proven track record of success in handling cryptocurrency-related cases. They have represented clients in various matters, from fraud and theft to regulatory compliance and dispute resolution, consistently delivering favorable results. You can trust their expertise and track record of achieving positive client outcomes.
 
 											</div>
 										</div>
@@ -528,7 +528,7 @@ export default function CryptoLawyerDubai() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal connects you with skilled advocates who will vigorously protect your interests and rights throughout the legal process. They leverage their expertise in cryptocurrency law to craft persuasive legal arguments and strategies to achieve your goals, whether through negotiation, litigation, or alternative dispute resolution methods.
+												Professional Women United connects you with skilled advocates who will vigorously protect your interests and rights throughout the legal process. They leverage their expertise in cryptocurrency law to craft persuasive legal arguments and strategies to achieve your goals, whether through negotiation, litigation, or alternative dispute resolution methods.
 
 											</div>
 										</div>
@@ -552,7 +552,7 @@ export default function CryptoLawyerDubai() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Transparency and communication are paramount when dealing with legal matters, and the crypto lawyers on Connect Legal prioritize clear and open communication with their clients. They keep you informed and involved at every stage of your case, providing updates, answering your questions, and addressing any concerns you may have promptly and comprehensively.
+												Transparency and communication are paramount when dealing with legal matters, and the crypto lawyers on Professional Women United prioritize clear and open communication with their clients. They keep you informed and involved at every stage of your case, providing updates, answering your questions, and addressing any concerns you may have promptly and comprehensively.
 
 											</div>
 										</div>
@@ -575,7 +575,7 @@ export default function CryptoLawyerDubai() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Our crypto lawyers are committed to providing client-centered representation focused on your needs, priorities, and objectives. They understand the importance of building trust and rapport with their clients, and they strive to cultivate strong attorney-client relationships based on mutual respect, integrity, and professionalism. When you hire a Dubai-based crypto lawyer through Connect Legal, you can expect dedicated advocacy and support tailored to your unique needs and goals.
+												Our crypto lawyers are committed to providing client-centered representation focused on your needs, priorities, and objectives. They understand the importance of building trust and rapport with their clients, and they strive to cultivate strong attorney-client relationships based on mutual respect, integrity, and professionalism. When you hire a Dubai-based crypto lawyer through Professional Women United, you can expect dedicated advocacy and support tailored to your unique needs and goals.
 											</div>
 										</div>
 									</div>
@@ -616,10 +616,10 @@ export default function CryptoLawyerDubai() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, we pride ourselves on connecting clients with top crypto lawyers in Dubai. Our top talents possess a combination of specialized expertise, extensive experience, and a proven track record of success in handling complex cryptocurrency cases. They play a crucial role in advising clients on navigating the complex legal landscape of cryptocurrency, ensuring compliance, and providing strategic legal consultation. They demonstrate exceptional legal knowledge, strategic thinking, and a client-centered approach, ensuring favorable outcomes.
+											At Professional Women United, we pride ourselves on connecting clients with top crypto lawyers in Dubai. Our top talents possess a combination of specialized expertise, extensive experience, and a proven track record of success in handling complex cryptocurrency cases. They play a crucial role in advising clients on navigating the complex legal landscape of cryptocurrency, ensuring compliance, and providing strategic legal consultation. They demonstrate exceptional legal knowledge, strategic thinking, and a client-centered approach, ensuring favorable outcomes.
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves on connecting clients with top crypto lawyers in Dubai. Our top talents possess a combination of specialized expertise, extensive experience, and a proven track record of success in handling complex cryptocurrency cases.'
+										'At Professional Women United, we pride ourselves on connecting clients with top crypto lawyers in Dubai. Our top talents possess a combination of specialized expertise, extensive experience, and a proven track record of success in handling complex cryptocurrency cases.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -630,7 +630,7 @@ export default function CryptoLawyerDubai() {
 								</>
 							) : (
 								<>
-									At Connect Legal, we pride ourselves on connecting clients with top crypto lawyers in Dubai. Our top talents possess a combination of specialized expertise, extensive experience, and a proven track record of success in handling complex cryptocurrency cases. They play a crucial role in advising clients on navigating the complex legal landscape of cryptocurrency, ensuring compliance, and providing strategic legal consultation. They demonstrate exceptional legal knowledge, strategic thinking, and a client-centered approach, ensuring favorable outcomes.
+									At Professional Women United, we pride ourselves on connecting clients with top crypto lawyers in Dubai. Our top talents possess a combination of specialized expertise, extensive experience, and a proven track record of success in handling complex cryptocurrency cases. They play a crucial role in advising clients on navigating the complex legal landscape of cryptocurrency, ensuring compliance, and providing strategic legal consultation. They demonstrate exceptional legal knowledge, strategic thinking, and a client-centered approach, ensuring favorable outcomes.
 								</>
 							)}
 						</p>

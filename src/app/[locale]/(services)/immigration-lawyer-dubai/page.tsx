@@ -4,16 +4,16 @@ import ImmigrationLawyer from '@/components/services/ImmigrationLawyer';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Immigration Lawyer in Dubai – Connect Legal',
+		title: 'Immigration Lawyer in Dubai – Professional Women United',
 		description:
-			'Navigate immigration laws and regulations with an immigration lawyer in Dubai. Connect Legal provides expert legal counsel.',
+			'Navigate immigration laws and regulations with an immigration lawyer in Dubai. Professional Women United provides expert legal counsel.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/immigration-lawyer-dubai`
 		},
 		openGraph: {
-			title: 'Immigration Lawyer in Dubai – Connect Legal',
+			title: 'Immigration Lawyer in Dubai – Professional Women United',
 			description:
-				'Navigate immigration laws and regulations with an immigration lawyer in Dubai. Connect Legal provides expert legal counsel.',
+				'Navigate immigration laws and regulations with an immigration lawyer in Dubai. Professional Women United provides expert legal counsel.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/immigration-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

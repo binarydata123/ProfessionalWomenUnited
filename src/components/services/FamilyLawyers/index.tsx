@@ -593,7 +593,7 @@ export default function FamilyLawyers() {
 											{t('These_top_talents ')}
 										</>
 									) : (
-										'At Connect Legal, we connect you with some of the top family lawyers in Abu Dhabi, known for their exceptional legal expertise, comprehensive knowledge of UAE family law, and commitment to client satisfaction.'
+										'At Professional Women United, we connect you with some of the top family lawyers in Abu Dhabi, known for their exceptional legal expertise, comprehensive knowledge of UAE family law, and commitment to client satisfaction.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

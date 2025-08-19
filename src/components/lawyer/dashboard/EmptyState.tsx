@@ -58,7 +58,7 @@ export default function EmptyState() {
 										<XMarkIcon width={20} color="rgba(9, 63, 56, 1)" />
 									</button>
 								</div>
-								<h2 className="text-center">Welcome to Connect Legal!</h2>
+								<h2 className="text-center">Welcome to Professional Women United!</h2>
 								<p className="text-center">
 									Connect with lawyers or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
 								</p>

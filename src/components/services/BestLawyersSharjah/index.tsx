@@ -71,7 +71,7 @@ export default function BestLawyersSharjah() {
 									<>
 										{showFullText ? (
 											<>
-												Connect Legal is your go-to destination for connecting with the best
+												Professional Women United is your go-to destination for connecting with the best
 												lawyers Sharjah has to offer. We specialize in linking clients with the
 												finest legal minds in the region, ready to handle a wide range of legal
 												matters. Whether you require expert advice on family law, assistance
@@ -80,7 +80,7 @@ export default function BestLawyersSharjah() {
 												couple of clicks.
 											</>
 										) : (
-											'Connect Legal is your go-to destination for connecting with the best lawyers Sharjah has to offer. We specialize in linking clients with the finest legal minds in the region, ready to handle a wide range of legal matters. 											'
+											'Professional Women United is your go-to destination for connecting with the best lawyers Sharjah has to offer. We specialize in linking clients with the finest legal minds in the region, ready to handle a wide range of legal matters. 											'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -91,7 +91,7 @@ export default function BestLawyersSharjah() {
 									</>
 								) : (
 									<>
-										Connect Legal is your go-to destination for connecting with the best lawyers
+										Professional Women United is your go-to destination for connecting with the best lawyers
 										Sharjah has to offer. We specialize in linking clients with the finest legal
 										minds in the region, ready to handle a wide range of legal matters. Whether you
 										require expert advice on family law, assistance with commercial contracts, or
@@ -532,7 +532,7 @@ export default function BestLawyersSharjah() {
 									<span className="green-medium-2">
 										Lawyer in <span className="desktop-br"><br /></span>{' '}Sharjah{' '}
 									</span>{' '}
-									through Connect Legal?
+									through Professional Women United?
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -553,11 +553,11 @@ export default function BestLawyersSharjah() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal offers access to a wide range of legal professionals with
+												Professional Women United offers access to a wide range of legal professionals with
 												diverse expertise. Whether you&apos;re dealing with family matters,
 												business disputes, or real estate issues, our platform connects you with
 												lawyers who specialize in your specific area of need. By hiring a lawyer
-												in Sharjah through Connect Legal, you can rest assured that you&apos;re
+												in Sharjah through Professional Women United, you can rest assured that you&apos;re
 												getting expert advice tailored to your unique circumstances.
 											</div>
 										</div>
@@ -607,7 +607,7 @@ export default function BestLawyersSharjah() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, our attorneys prioritize your needs above all else. We
+												At Professional Women United, our attorneys prioritize your needs above all else. We
 												find the best lawyers in Sharjah who take the time to understand your
 												objectives, concerns, and constraints, offering personalized legal
 												strategies that align with your goals. With a client-centric approach,
@@ -662,10 +662,10 @@ export default function BestLawyersSharjah() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal maintains the highest ethical standards in the legal
+												Professional Women United maintains the highest ethical standards in the legal
 												profession. We carefully select every lawyer on our platform to make
 												sure they offer integrity, honesty, and trustworthiness. When you choose
-												a specialist through Connect Legal, you&apos;ll be working with the best
+												a specialist through Professional Women United, you&apos;ll be working with the best
 												lawyer in Sharjah who prioritizes your interests and operates with the
 												utmost integrity.
 											</div>
@@ -689,7 +689,7 @@ export default function BestLawyersSharjah() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal has a proven track record of successfully connecting
+												Professional Women United has a proven track record of successfully connecting
 												clients with top-tier legal representation in Sharjah. Our network of
 												the best lawyers in Sharjah has achieved favorable outcomes for
 												countless clients across a spectrum of legal matters. Partnering with us
@@ -747,7 +747,7 @@ export default function BestLawyersSharjah() {
 											If you&apos;re looking for a lawyer who is committed to providing
 											personalized and effective solutions tailored to your unique needs,
 											you&apos;re at the right place. Be it resolving disputes, drafting
-											contracts, or representing clients in court, at Connect Legal, we&apos;ll
+											contracts, or representing clients in court, at Professional Women United, we&apos;ll
 											help you find the best lawyer Sharjah has to offer.
 										</>
 									) : (
@@ -773,7 +773,7 @@ export default function BestLawyersSharjah() {
 									If you&apos;re looking for a lawyer who is committed to providing personalized and
 									effective solutions tailored to your unique needs, you&apos;re at the right place.
 									Be it resolving disputes, drafting contracts, or representing clients in court, at
-									Connect Legal, we&apos;ll help you find the best lawyer Sharjah has to offer.
+									Professional Women United, we&apos;ll help you find the best lawyer Sharjah has to offer.
 								</>
 							)}
 						</p>

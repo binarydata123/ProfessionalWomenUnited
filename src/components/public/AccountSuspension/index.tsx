@@ -58,7 +58,7 @@ export default function AccountSuspension() {
 							<div className="hr-line"></div>
 							<h4>What this means?</h4>
 							<p>
-								Your profile will not be visible to other people on Connect Legal from now, and you
+								Your profile will not be visible to other people on Professional Women United from now, and you
 								cannot use it.
 							</p>
 							<h4>What can you do?</h4>

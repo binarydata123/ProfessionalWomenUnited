@@ -4,16 +4,16 @@ import MedicalMalpracticeLawyer from '@/components/services/MedicalMalpracticeLa
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Medical Malpractice Lawyer – Connect Legal',
+		title: 'Medical Malpractice Lawyer – Professional Women United',
 		description:
-			'Address medical malpractice concerns with a medical malpractice lawyer in Dubai. Connect Legal can help you claim rightful compensation.',
+			'Address medical malpractice concerns with a medical malpractice lawyer in Dubai. Professional Women United can help you claim rightful compensation.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/medical-malpractice-lawyer`
 		},
 		openGraph: {
-			title: 'Medical Malpractice Lawyer – Connect Legal			',
+			title: 'Medical Malpractice Lawyer – Professional Women United			',
 			description:
-				'Address medical malpractice concerns with a medical malpractice lawyer in Dubai. Connect Legal can help you claim rightful compensation.',
+				'Address medical malpractice concerns with a medical malpractice lawyer in Dubai. Professional Women United can help you claim rightful compensation.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/medical-malpractice-lawyer`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

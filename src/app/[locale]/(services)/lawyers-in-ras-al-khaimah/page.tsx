@@ -4,16 +4,16 @@ import BestLawyersRasAlKhaimah from '@/components/services/BestLawyersRasAlKhaim
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Find the Best Lawyers in Ras Al Khaimah | Connect Legal',
+		title: 'Find the Best Lawyers in Ras Al Khaimah | Professional Women United',
 		description:
-			'With Connect Legal, finding the best lawyers Ras Al Khaimah has to offer is simple and quick. Connect with the best lawyer in Ras Al Khaimah now!',
+			'With Professional Women United, finding the best lawyers Ras Al Khaimah has to offer is simple and quick. Connect with the best lawyer in Ras Al Khaimah now!',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/lawyers-in-ras-al-khaimah`
 		},
 		openGraph: {
-			title: 'Find the Best Lawyers in Ras Al Khaimah | Connect Legal',
+			title: 'Find the Best Lawyers in Ras Al Khaimah | Professional Women United',
 			description:
-				'With Connect Legal, finding the best lawyers Ras Al Khaimah has to offer is simple and quick. Connect with the best lawyer in Ras Al Khaimah now!',
+				'With Professional Women United, finding the best lawyers Ras Al Khaimah has to offer is simple and quick. Connect with the best lawyer in Ras Al Khaimah now!',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/lawyers-in-ras-al-khaimah`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

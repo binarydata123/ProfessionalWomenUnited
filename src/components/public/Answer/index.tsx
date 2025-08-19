@@ -136,7 +136,7 @@ export default function Answer({ answer, Key, loginUser }: Props) {
             />
           )}
         </div>
-        <h6>Connect Legal Verified</h6>
+        <h6>Professional Women United Verified</h6>
         {showCommentField ? (
           <div className="answer-box col-sm-12">
             <div className="form-group">

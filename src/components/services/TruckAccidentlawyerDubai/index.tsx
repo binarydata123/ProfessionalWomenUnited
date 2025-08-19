@@ -570,7 +570,7 @@ export default function TruckAccidentlawyerDubai() {
 									{showFullTextDiscover ? (
 										<>{t('At_Connect_Legal,_our')}</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top Truck accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top Truck accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

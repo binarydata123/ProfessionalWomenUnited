@@ -4,16 +4,16 @@ import EmploymentLawyerDubai from '@/components/services/EmploymentLawyerDubai';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Employment Lawyer in Dubai – Connect Legal',
+		title: 'Employment Lawyer in Dubai – Professional Women United',
 		description:
-			'Handle employment disputes or agreements with an employment lawyer in Dubai. Connect Legal provides expert guidance for all employment issues.',
+			'Handle employment disputes or agreements with an employment lawyer in Dubai. Professional Women United provides expert guidance for all employment issues.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/employment-lawyer-dubai`
 		},
 		openGraph: {
-			title: 'Employment Lawyer in Dubai – Connect Legal',
+			title: 'Employment Lawyer in Dubai – Professional Women United',
 			description:
-				'Handle employment disputes or agreements with an employment lawyer in Dubai. Connect Legal provides expert guidance for all employment issues.',
+				'Handle employment disputes or agreements with an employment lawyer in Dubai. Professional Women United provides expert guidance for all employment issues.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/employment-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

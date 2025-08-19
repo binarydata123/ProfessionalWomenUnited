@@ -74,7 +74,7 @@ export default function PropertyLawyer() {
 										{showFullText ? (
 											<>{t('A_property_lawyer')}</>
 										) : (
-											'A property lawyer handles legal matters related to real estate, such as buying, selling, leasing, or resolving disputes. They advise on property law contracts and make sure transactions are legally sound. Connect Legal has the best property lawyers in Dubai who provide personalized assistance and guide clients through the process with expertise. Our attorneys offer clear, accessible legal services, helping you deal with property law efficiently and confidently.'
+											'A property lawyer handles legal matters related to real estate, such as buying, selling, leasing, or resolving disputes. They advise on property law contracts and make sure transactions are legally sound. Professional Women United has the best property lawyers in Dubai who provide personalized assistance and guide clients through the process with expertise. Our attorneys offer clear, accessible legal services, helping you deal with property law efficiently and confidently.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -594,7 +594,7 @@ export default function PropertyLawyer() {
 											{t('What_sets_our_top ')}
 										</>
 									) : (
-										'If you’re looking up “property lawyers near me,” you’re already in the right place. Connect Legal has the best property lawyers UAE has to offer. We can help you find the best Dubai property lawyer for your case.										'
+										'If you’re looking up “property lawyers near me,” you’re already in the right place. Professional Women United has the best property lawyers UAE has to offer. We can help you find the best Dubai property lawyer for your case.										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

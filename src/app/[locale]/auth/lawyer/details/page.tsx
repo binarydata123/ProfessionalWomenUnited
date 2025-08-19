@@ -24,7 +24,7 @@ export default function stepTwo() {
 								<div className="row align-items-center">
 									<div className="col-lg-9">
 										<div className="payment-plan">
-											<h5>Connect Legal: Monthly Plan </h5>
+											<h5>Professional Women United: Monthly Plan </h5>
 											<p style={{ fontWeight: '400' }}>charged monthly</p>
 										</div>
 									</div>

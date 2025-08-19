@@ -324,7 +324,7 @@ export default function ChildSupportLawyer() {
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
 									Navigating child custody disputes requires specialized expertise and compassionate
-									guidance. Discover why hiring a custody lawyer from Connect Legal can make all the
+									guidance. Discover why hiring a custody lawyer from Professional Women United can make all the
 									difference in your case.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">

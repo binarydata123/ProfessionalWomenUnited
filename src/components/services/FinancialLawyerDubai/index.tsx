@@ -536,9 +536,9 @@ export default function FinancialLawyerDubai() {
 							{isMobileViewDiscover ? (
 								<>
 									{showFullTextDiscover ? (
-										<>{t('At Connect Legal, the')}</>
+										<>{t('At Professional Women United, the')}</>
 									) : (
-										'At Connect Legal, the top financial lawyers are distinguished by their exceptional expertise, dedication, and track record of success in the UAEs legal landscape.'
+										'At Professional Women United, the top financial lawyers are distinguished by their exceptional expertise, dedication, and track record of success in the UAEs legal landscape.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -551,7 +551,7 @@ export default function FinancialLawyerDubai() {
 									</div>
 								</>
 							) : (
-								<>{t('At Connect Legal, the')}</>
+								<>{t('At Professional Women United, the')}</>
 							)}
 						</p>
 					</div>

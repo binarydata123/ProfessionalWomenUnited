@@ -401,9 +401,9 @@ export default function MaritimeLawyer() {
 									{t('from_Connect_Legal?')} 
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -583,7 +583,7 @@ export default function MaritimeLawyer() {
 											{t('Connect_Legal_boasts_some')} 
 										</>
 									) : (
-										'Connect Legal boasts some of the top maritime lawyers in Dubai, known for their exceptional knowledge and dedication to marine law. Our network of experts is well-versed in local and international regulations, making them highly adept at handling complex cases and legal challenges. Top talents on our platform are characterized by meticulous attention to detail, strong negotiation skills, and a client-focused approach. 										'
+										'Professional Women United boasts some of the top maritime lawyers in Dubai, known for their exceptional knowledge and dedication to marine law. Our network of experts is well-versed in local and international regulations, making them highly adept at handling complex cases and legal challenges. Top talents on our platform are characterized by meticulous attention to detail, strong negotiation skills, and a client-focused approach. 										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

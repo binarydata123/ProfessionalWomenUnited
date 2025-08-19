@@ -4,16 +4,16 @@ import TruckAccidentlawyerDubai from '@/components/services/TruckAccidentlawyerD
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Truck Accident Lawyer in Dubai – Connect Legal',
+		title: 'Truck Accident Lawyer in Dubai – Professional Women United',
 		description:
-			'If you\'ve been involved in a truck accident, a truck accident lawyer in Dubai can help.Contact Connect Legal for expert legal assistance.',
+			'If you\'ve been involved in a truck accident, a truck accident lawyer in Dubai can help.Contact Professional Women United for expert legal assistance.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/truck-accident-lawyer-dubai`
 		},
 		openGraph: {
-			title: 'Truck Accident Lawyer in Dubai – Connect Legal',
+			title: 'Truck Accident Lawyer in Dubai – Professional Women United',
 			description:
-				'If you\'ve been involved in a truck accident, a truck accident lawyer in Dubai can help.Contact Connect Legal for expert legal assistance.',
+				'If you\'ve been involved in a truck accident, a truck accident lawyer in Dubai can help.Contact Professional Women United for expert legal assistance.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/truck-accident-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

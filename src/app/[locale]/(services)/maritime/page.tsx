@@ -4,16 +4,16 @@ import MaritimeLawPage from '@/components/services/MaritimeLawPage';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Maritime Law | Connect Legal ',
+		title: 'Maritime Law | Professional Women United ',
 		description:
-			'Maritime law in the UAE covers shipping, navigation, and marine commerce. Connect Legal helps find top maritime lawyers in Dubai for contracts, disputes, and insurance claims.',
+			'Maritime law in the UAE covers shipping, navigation, and marine commerce. Professional Women United helps find top maritime lawyers in Dubai for contracts, disputes, and insurance claims.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/maritime`
 		},
 		openGraph: {
-			title: 'Maritime Law | Connect Legal ',
+			title: 'Maritime Law | Professional Women United ',
 			description:
-				'Maritime law in the UAE covers shipping, navigation, and marine commerce. Connect Legal helps find top maritime lawyers in Dubai for contracts, disputes, and insurance claims.',
+				'Maritime law in the UAE covers shipping, navigation, and marine commerce. Professional Women United helps find top maritime lawyers in Dubai for contracts, disputes, and insurance claims.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/maritime`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

@@ -74,7 +74,7 @@ export default function EntertainmentLawyerDubai() {
 							{t("An_entertainment_lawyer_handles")}							
 											</>
 										) : (
-											'An entertainment lawyer handles legal matters related to the entertainment industry, such as contracts, licensing agreements, and intellectual property rights. At Connect Legal, we connect clients with experienced entertainment lawyers who provide tailored legal advice '
+											'An entertainment lawyer handles legal matters related to the entertainment industry, such as contracts, licensing agreements, and intellectual property rights. At Professional Women United, we connect clients with experienced entertainment lawyers who provide tailored legal advice '
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

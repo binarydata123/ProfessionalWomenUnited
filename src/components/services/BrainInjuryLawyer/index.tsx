@@ -76,7 +76,7 @@ export default function BrainInjuryLawyer() {
 												or other negligence. They work to secure compensation for their clients
 												to cover medical expenses and other implications.
 												<br />
-												At Connect Legal, our team of experienced brain injury lawyers will
+												At Professional Women United, our team of experienced brain injury lawyers will
 												guide you through the legal process, offering support and expertise to
 												help achieve the best possible result for your case.
 											</>
@@ -97,7 +97,7 @@ export default function BrainInjuryLawyer() {
 										negligence. They work to secure compensation for their clients to cover medical
 										expenses and other implications.
 										<br />
-										At Connect Legal, our team of experienced brain injury lawyers will guide you
+										At Professional Women United, our team of experienced brain injury lawyers will guide you
 										through the legal process, offering support and expertise to help achieve the
 										best possible result for your case.
 									</>
@@ -283,7 +283,7 @@ export default function BrainInjuryLawyer() {
 														becomes essential. Brain injury lawyers specialize in TBI cases
 														and advocate for individuals to secure compensation for medical
 														expenses and other related needs. Our traumatic brain injury
-														lawyers at Connect Legal negotiate with insurance companies and,
+														lawyers at Professional Women United negotiate with insurance companies and,
 														if necessary, represent clients in court proceedings to ensure
 														fair treatment and just outcomes for TBI victims.
 													</div>
@@ -312,7 +312,7 @@ export default function BrainInjuryLawyer() {
 														becomes essential. Brain injury lawyers specialize in TBI cases
 														and advocate for individuals to secure compensation for medical
 														expenses and other related needs. Our traumatic brain injury
-														lawyers at Connect Legal negotiate with insurance companies and,
+														lawyers at Professional Women United negotiate with insurance companies and,
 														if necessary, represent clients in court proceedings to ensure
 														fair treatment and just outcomes for TBI victims.
 													</div>
@@ -527,7 +527,7 @@ export default function BrainInjuryLawyer() {
 									<span className="green-medium-2">
 										Hire a Brain Injury Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -548,7 +548,7 @@ export default function BrainInjuryLawyer() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, our brain injury lawyers specialize in this complex
+												At Professional Women United, our brain injury lawyers specialize in this complex
 												area of law. With years of experience and a deep understanding of the
 												medical and legal aspects of brain injuries, our brain injury lawyers
 												are equipped to handle even the most challenging cases. From traumatic
@@ -580,7 +580,7 @@ export default function BrainInjuryLawyer() {
 												circumstances. Traumatic brain injury lawyers in Dubai take the time to
 												listen to our clients, understand their concerns, and develop customized
 												strategies to achieve the best possible outcome for their cases. With
-												Connect Legal, you can trust that your case will receive the
+												Professional Women United, you can trust that your case will receive the
 												individualized attention it deserves.
 											</div>
 										</div>
@@ -603,7 +603,7 @@ export default function BrainInjuryLawyer() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we have a proven track record of success in
+												At Professional Women United, we have a proven track record of success in
 												representing clients who have suffered from brain injuries. Our brain
 												injury lawyers have secured substantial settlements and verdicts for our
 												clients, helping them obtain the compensation they need to cover medical
@@ -633,7 +633,7 @@ export default function BrainInjuryLawyer() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												Facing a brain injury can be an overwhelming ordeal, but you don't have
-												to go through it alone. Our team at Connect Legal provides compassionate
+												to go through it alone. Our team at Professional Women United provides compassionate
 												and supportive guidance to our clients every step of the way. We
 												understand the physical, emotional, and financial toll a brain injury
 												can take, and we are committed to helping our clients go through the
@@ -687,13 +687,13 @@ export default function BrainInjuryLawyer() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Above all, hiring a brain injury lawyer from Connect Legal means having
+												Above all, hiring a brain injury lawyer from Professional Women United means having
 												a dedicated advocate who will fight tirelessly for your rights. Our
 												brain injury lawyers are passionate about helping clients seek justice
 												and fair compensation for their harm. Whether through negotiation or
 												litigation, we are committed to achieving the best possible outcome for
 												our clients and holding negligent parties accountable for their actions.
-												With Connect Legal, you can rest assured that your case is in capable
+												With Professional Women United, you can rest assured that your case is in capable
 												hands.
 											</div>
 										</div>
@@ -735,7 +735,7 @@ export default function BrainInjuryLawyer() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, our top brain injury lawyers possess a unique combination
+											At Professional Women United, our top brain injury lawyers possess a unique combination
 											of legal expertise, compassion, and dedication to client advocacy. They have
 											extensive experience handling complex brain injury cases and a track record
 											of successful outcomes for their clients. You can trust that you're working
@@ -743,7 +743,7 @@ export default function BrainInjuryLawyer() {
 											strive for the best results.
 										</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -754,7 +754,7 @@ export default function BrainInjuryLawyer() {
 								</>
 							) : (
 								<>
-									At Connect Legal, our top brain injury lawyers possess a unique combination of legal
+									At Professional Women United, our top brain injury lawyers possess a unique combination of legal
 									expertise, compassion, and dedication to client advocacy. They have extensive
 									experience handling complex brain injury cases and a track record of successful
 									outcomes for their clients. You can trust that you're working with the best brain
@@ -831,7 +831,7 @@ export default function BrainInjuryLawyer() {
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Clients frequently seek knowledgeable legal representation and clarity when seeking information
-						on brain injury cases. At Connect Legal, we ensure that your traumatic brain injury lawyer
+						on brain injury cases. At Professional Women United, we ensure that your traumatic brain injury lawyer
 						understands the complexities of your situation and can provide clear guidance on your legal
 						options.
 						<br />

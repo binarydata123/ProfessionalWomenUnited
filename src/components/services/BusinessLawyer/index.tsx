@@ -88,7 +88,7 @@ export default function BusinessLawyer() {
 												drafting and negotiation, corporate governance, mergers and
 												acquisitions, and dispute resolution.
 												<br />
-												Our business lawyers at Connect Legal will help your businesses navigate
+												Our business lawyers at Professional Women United will help your businesses navigate
 												complex legal issues, minimize risks, and achieve objectives while
 												ensuring compliance with relevant laws and regulations.
 											</>
@@ -110,7 +110,7 @@ export default function BusinessLawyer() {
 										negotiation, corporate governance, mergers and acquisitions, and dispute
 										resolution.
 										<br />
-										Our business lawyers at Connect Legal will help your businesses navigate complex
+										Our business lawyers at Professional Women United will help your businesses navigate complex
 										legal issues, minimize risks, and achieve objectives while ensuring compliance
 										with relevant laws and regulations.
 									</>
@@ -464,12 +464,12 @@ export default function BusinessLawyer() {
 									<span className="green-medium-2">
 										Business Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -491,7 +491,7 @@ export default function BusinessLawyer() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, our business lawyers specialize in business law,
+												At Professional Women United, our business lawyers specialize in business law,
 												possessing extensive knowledge and experience in various areas such as
 												contract negotiation, corporate governance, and intellectual property
 												protection. Our expertise guarantees that your business receives
@@ -544,7 +544,7 @@ export default function BusinessLawyer() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we have a proven track record of success in handling a
+												At Professional Women United, we have a proven track record of success in handling a
 												wide range of business legal matters. From resolving complex disputes to
 												facilitating smooth mergers and acquisitions, our business lawyers have
 												achieved favorable outcomes for numerous clients, demonstrating our
@@ -597,7 +597,7 @@ export default function BusinessLawyer() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we prioritize client satisfaction and responsiveness.
+												At Professional Women United, we prioritize client satisfaction and responsiveness.
 												Our business lawyers in Dubai are accessible and responsive to your
 												needs, making sure you receive timely updates and support throughout the
 												legal process. We are committed to building strong, long-term
@@ -627,7 +627,7 @@ export default function BusinessLawyer() {
 												We understand the importance of cost-effectiveness for businesses, which
 												is why we offer transparent pricing and strive to provide efficient
 												legal solutions that deliver value for your investment. By partnering
-												with Connect Legal, you can access high-quality business legal advice
+												with Professional Women United, you can access high-quality business legal advice
 												and services that are tailored to your budget and designed to help your
 												business thrive in today's competitive market.
 											</div>
@@ -665,7 +665,7 @@ export default function BusinessLawyer() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, our top business lawyers in Dubai possess a unique
+											At Professional Women United, our top business lawyers in Dubai possess a unique
 											combination of legal expertise, strategic thinking, and a client-focused
 											approach. They have extensive experience handling complex business legal
 											matters, including contract negotiations, corporate structuring, and
@@ -679,7 +679,7 @@ export default function BusinessLawyer() {
 											for top-tier legal representation in Dubai.
 										</>
 									) : (
-										'At Connect Legal, our top business lawyers in Dubai possess a unique combination of legal expertise, strategic thinking, and a client-focused approach. They have extensive experience handling complex business legal matters, including contract negotiations, corporate structuring, and international transactions.'
+										'At Professional Women United, our top business lawyers in Dubai possess a unique combination of legal expertise, strategic thinking, and a client-focused approach. They have extensive experience handling complex business legal matters, including contract negotiations, corporate structuring, and international transactions.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -693,7 +693,7 @@ export default function BusinessLawyer() {
 								</>
 							) : (
 								<>
-									At Connect Legal, our top business lawyers in Dubai possess a unique combination of
+									At Professional Women United, our top business lawyers in Dubai possess a unique combination of
 									legal expertise, strategic thinking, and a client-focused approach. They have
 									extensive experience handling complex business legal matters, including contract
 									negotiations, corporate structuring, and international transactions.
@@ -929,7 +929,7 @@ export default function BusinessLawyer() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													At Connect Legal, we assist businesses of all sizes and across
+													At Professional Women United, we assist businesses of all sizes and across
 													various industries, including startups, SMEs, and multinational
 													corporations. Our experienced team of business lawyers has expertise
 													in catering to the diverse needs of businesses operating in sectors
@@ -973,7 +973,7 @@ export default function BusinessLawyer() {
 													data-bs-target="#collapseThree"
 													aria-expanded="true"
 													aria-controls="collapseThree">
-													What sets Connect Legal apart from other law firms?
+													What sets Professional Women United apart from other law firms?
 												</button>
 											</h2>
 											<div
@@ -982,7 +982,7 @@ export default function BusinessLawyer() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													At Connect Legal, we prioritize client satisfaction, responsiveness,
+													At Professional Women United, we prioritize client satisfaction, responsiveness,
 													and delivering results. Our personalized approach, combined with our
 													team's expertise and dedication, ensures that each client receives
 													tailored legal solutions and exceptional service. We strive to build
@@ -1052,7 +1052,7 @@ export default function BusinessLawyer() {
 													data-bs-target="#collapseSix"
 													aria-expanded="true"
 													aria-controls="collapseSix">
-													How can Connect Legal help protect my intellectual property?
+													How can Professional Women United help protect my intellectual property?
 												</button>
 											</h2>
 											<div
@@ -1061,7 +1061,7 @@ export default function BusinessLawyer() {
 												aria-labelledby="headingSix"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													At Connect Legal, we understand the importance of intellectual
+													At Professional Women United, we understand the importance of intellectual
 													property (IP) protection for businesses. Our experienced team of
 													business lawyers can assist you in registering trademarks, patents,
 													and copyrights to safeguard your IP rights. We also provide legal

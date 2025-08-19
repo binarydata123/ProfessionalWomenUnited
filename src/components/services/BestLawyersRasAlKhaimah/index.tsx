@@ -309,7 +309,7 @@ export default function BestLawyersRasAlKhaimah() {
 											{t('What_sets_the_best_lawyers_in')}
 										</>
 									) : (
-										'At Connect Legal, we find the top lawyers in Ras Al Khaimah known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a complete knowledge of local laws and regulations, allowing them to resolve complex legal issues.'
+										'At Professional Women United, we find the top lawyers in Ras Al Khaimah known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a complete knowledge of local laws and regulations, allowing them to resolve complex legal issues.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

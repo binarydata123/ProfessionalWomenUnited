@@ -77,7 +77,7 @@ export default function BestLawyersAjman() {
 												{t('Browse_through_our')}
 											</>
 										) : (
-											'Discover the best lawyers in Ajman effortlessly with Connect Legal. We are your go-to platform for connecting with top-tier legal professionals in the region. With our user-friendly interface and streamlined process, you can easily find the perfect lawyer who meets your specific needs and enjoy hassle-free legal services from start to finish'
+											'Discover the best lawyers in Ajman effortlessly with Professional Women United. We are your go-to platform for connecting with top-tier legal professionals in the region. With our user-friendly interface and streamlined process, you can easily find the perfect lawyer who meets your specific needs and enjoy hassle-free legal services from start to finish'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -311,7 +311,7 @@ export default function BestLawyersAjman() {
 											{t('What_Sets_the_Lawyers')}
 										</>
 									) : (
-										'At Connect Legal, we list the best lawyers Ajman has to offer. The lawyers on our platform are distinguished by their exceptional legal expertise, extensive experience, and proven track record of success. They know the ins and outs of local regulations, allowing them to handle legal issues with precision.'
+										'At Professional Women United, we list the best lawyers Ajman has to offer. The lawyers on our platform are distinguished by their exceptional legal expertise, extensive experience, and proven track record of success. They know the ins and outs of local regulations, allowing them to handle legal issues with precision.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

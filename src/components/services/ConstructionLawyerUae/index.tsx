@@ -43,10 +43,10 @@ export default function ConstructionLawyerUae() {
 	return (
 		<>
 			{/* <Head>
-				<title> Uber Accident Lawyers in Dubai – Connect Legal</title>
+				<title> Uber Accident Lawyers in Dubai – Professional Women United</title>
 				<meta
 					name="description"
-					content=" Connect Legal Uber accident lawyers have over five years of experience. If you’ve been involved in an Uber accident and need legal guidance, contact us.
+					content=" Professional Women United Uber accident lawyers have over five years of experience. If you’ve been involved in an Uber accident and need legal guidance, contact us.
 					"
 				/>
 				<meta name="robots" content="noindex" />
@@ -84,7 +84,7 @@ export default function ConstructionLawyerUae() {
 												construction projects, such as contract disputes, regulatory compliance,
 												and construction defects.
 												<br />
-												At Connect Legal, our construction lawyers leverage their expertise and
+												At Professional Women United, our construction lawyers leverage their expertise and
 												experience to provide comprehensive legal services tailored to our
 												clients' needs. We work closely with individuals, contractors,
 												developers, and other stakeholders to handle complex legal issues,
@@ -107,7 +107,7 @@ export default function ConstructionLawyerUae() {
 										projects, such as contract disputes, regulatory compliance, and construction
 										defects.
 										<br />
-										At Connect Legal, our construction lawyers leverage their expertise and
+										At Professional Women United, our construction lawyers leverage their expertise and
 										experience to provide comprehensive legal services tailored to our clients'
 										needs. We work closely with individuals, contractors, developers, and other
 										stakeholders to handle complex legal issues, resolve disputes, and guarantee
@@ -486,12 +486,12 @@ export default function ConstructionLawyerUae() {
 									<span className="green-medium-2">
 										Construction Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -565,7 +565,7 @@ export default function ConstructionLawyerUae() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we have a proven track record of successfully
+												At Professional Women United, we have a proven track record of successfully
 												representing clients in construction-related matters. From resolving
 												complex contractual disputes to defending against construction defect
 												claims, our lawyers have consistently delivered favorable outcomes for
@@ -618,7 +618,7 @@ export default function ConstructionLawyerUae() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we prioritize effective communication and
+												At Professional Women United, we prioritize effective communication and
 												collaboration with our clients. This means keeping you informed and
 												involved every step of the way, providing regular updates, and seeking
 												your input throughout the legal process. Our collaborative approach
@@ -645,14 +645,14 @@ export default function ConstructionLawyerUae() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												By choosing a construction accident lawyer from Connect Legal, clients t
+												By choosing a construction accident lawyer from Professional Women United, clients t
 												the heart of our practice is a commitment to client satisfaction. We go
 												above and beyond to make sure that our clients receive the highest level
 												of service and representation. From providing timely legal advice to
 												offering practical solutions to complex legal issues, we are dedicated
 												to achieving the best possible outcomes for our clients and exceeding
 												their expectations. When you choose a top Dubai construction lawyer from
-												Connect Legal, your legal matters are in good hands.
+												Professional Women United, your legal matters are in good hands.
 											</div>
 										</div>
 									</div>
@@ -692,7 +692,7 @@ export default function ConstructionLawyerUae() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, we pride ourselves on housing some of the top construction
+											At Professional Women United, we pride ourselves on housing some of the top construction
 											lawyers in Dubai.
 											<br />
 											Our lawyers possess in-depth knowledge of local regulations, a proven track
@@ -700,7 +700,7 @@ export default function ConstructionLawyerUae() {
 											commitment to providing personalized, client-focused service.
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves on housing some of the top construction lawyers in Dubai. 										.'
+										'At Professional Women United, we pride ourselves on housing some of the top construction lawyers in Dubai. 										.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -711,7 +711,7 @@ export default function ConstructionLawyerUae() {
 								</>
 							) : (
 								<>
-									At Connect Legal, we pride ourselves on housing some of the top construction lawyers
+									At Professional Women United, we pride ourselves on housing some of the top construction lawyers
 									in Dubai.
 									<br />
 									Our lawyers possess in-depth knowledge of local regulations, a proven track record

@@ -77,7 +77,7 @@ export default function BankingLawyerUae() {
 												clients navigate the complex legal landscape of banking laws and
 												regulations, protecting their interests.
 												<br />
-												With our banking lawyers’ expertise and dedication, Connect Legal is a
+												With our banking lawyers’ expertise and dedication, Professional Women United is a
 												trusted partner for all finance-related legal matters.
 											</>
 										) : (
@@ -97,7 +97,7 @@ export default function BankingLawyerUae() {
 										transactions, and financial litigation. They help clients navigate the complex
 										legal landscape of banking laws and regulations, protecting their interests.
 										<br />
-										With our banking lawyers’ expertise and dedication, Connect Legal is a trusted
+										With our banking lawyers’ expertise and dedication, Professional Women United is a trusted
 										partner for all finance-related legal matters.
 									</>
 								)}
@@ -252,7 +252,7 @@ export default function BankingLawyerUae() {
 														risks.
 														<br /> <br />
 														If you’re looking for legal assistance in banking and finance
-														matters, contact us at Connect Legal, and we’ll help you find
+														matters, contact us at Professional Women United, and we’ll help you find
 														the best banking lawyer in the UAE.
 													</div>
 												</div>
@@ -450,10 +450,10 @@ export default function BankingLawyerUae() {
 									<span className="green-medium-2">
 										Banking Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								<p className="font-medium weight-light text-black-add-fig mt-3">
-									At Connect Legal, our banking lawyers have specialized expertise in banking law.
+									At Professional Women United, our banking lawyers have specialized expertise in banking law.
 									They offer comprehensive guidance tailored to the unique needs of financial
 									institutions and clients in the banking sector. With a deep understanding of
 									regulatory frameworks and industry practices, our lawyers provide strategic advice
@@ -479,7 +479,7 @@ export default function BankingLawyerUae() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, our banking lawyers have specialized expertise in
+												At Professional Women United, our banking lawyers have specialized expertise in
 												banking law. They offer comprehensive guidance tailored to the unique
 												needs of financial institutions and clients in the banking sector. With
 												a deep understanding of regulatory frameworks and industry practices,
@@ -532,7 +532,7 @@ export default function BankingLawyerUae() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal's banking lawyers offer strategic counsel for various
+												Professional Women United's banking lawyers offer strategic counsel for various
 												financial transactions, including mergers and acquisitions, financing
 												arrangements, securities offerings, and asset management. Our lawyers
 												focus on maximizing value and mitigating risks, guiding clients through
@@ -585,7 +585,7 @@ export default function BankingLawyerUae() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we prioritize our client's needs and objectives,
+												At Professional Women United, we prioritize our client's needs and objectives,
 												providing personalized and client-centric representation. Our banking
 												lawyers maintain open communication, foster collaborative relationships,
 												and remain accessible to clients so that their concerns are addressed
@@ -611,7 +611,7 @@ export default function BankingLawyerUae() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal is committed to excellence and integrity in our practice.
+												Professional Women United is committed to excellence and integrity in our practice.
 												Our UAE banking lawyers uphold the highest ethical standards, delivering
 												trusted advice and zealous advocacy to our clients. With a dedication to
 												achieving favorable outcomes and building long-term relationships, we
@@ -661,7 +661,7 @@ export default function BankingLawyerUae() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, our banking lawyers excel as top talents in Dubai,
+											At Professional Women United, our banking lawyers excel as top talents in Dubai,
 											boasting specialized expertise and extensive experience in banking law. They
 											have a deep understanding of financial regulations, innovative
 											problem-solving skills, and a client-centric approach. With a proven track
@@ -670,7 +670,7 @@ export default function BankingLawyerUae() {
 											leaders in the field.
 										</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -681,7 +681,7 @@ export default function BankingLawyerUae() {
 								</>
 							) : (
 								<>
-									At Connect Legal, our banking lawyers excel as top talents in Dubai, boasting
+									At Professional Women United, our banking lawyers excel as top talents in Dubai, boasting
 									specialized expertise and extensive experience in banking law. They have a deep
 									understanding of financial regulations, innovative problem-solving skills, and a
 									client-centric approach. With a proven track record in structuring transactions,
@@ -1055,7 +1055,7 @@ export default function BankingLawyerUae() {
 												<div className="accordion-body border-0 text-white">
 													To select the best banking lawyer in Dubai for your specific
 													requirements, consider scheduling consultations with multiple
-													lawyers from Connect Legal to discuss your case or transaction,
+													lawyers from Professional Women United to discuss your case or transaction,
 													evaluate their expertise and approach, and assess their
 													compatibility with your goals and preferences.
 												</div>

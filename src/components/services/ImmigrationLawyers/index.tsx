@@ -590,7 +590,7 @@ export default function ImmigrationLawyers() {
 											{t('The_Immigration_Lawyers_in_Abu_Dhabi')}
 										</>
 									) : (
-										'Connect Legal has the best immigration lawyer Abu Dhabi has to offer.'
+										'Professional Women United has the best immigration lawyer Abu Dhabi has to offer.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

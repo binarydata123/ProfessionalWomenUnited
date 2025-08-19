@@ -76,7 +76,7 @@ export default function EmploymentLawyerDubai() {
 									{t("An_employment_lawyer_specializes")}												<br />
 									{t("Our_platform_facilitates_seamless")}											</>
 										) : (
-											'An employment lawyer specializes in legal matters related to the workplace, offering advice, representation, and advocacy to both employees and employers. At Connect Legal, we connect clients with experienced employment lawyers who provide guidance on a range of employment issues, including contracts, discrimination, harassment, and wrongful termination.'
+											'An employment lawyer specializes in legal matters related to the workplace, offering advice, representation, and advocacy to both employees and employers. At Professional Women United, we connect clients with experienced employment lawyers who provide guidance on a range of employment issues, including contracts, discrimination, harassment, and wrongful termination.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -583,7 +583,7 @@ export default function EmploymentLawyerDubai() {
 									{t("What_sets_our_top_employment")}
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves on connecting clients with top-tier employment lawyers in Dubai who possess exceptional skills, experience, and dedication to their craft.'
+										'At Professional Women United, we pride ourselves on connecting clients with top-tier employment lawyers in Dubai who possess exceptional skills, experience, and dedication to their craft.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

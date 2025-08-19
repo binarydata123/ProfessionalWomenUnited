@@ -76,7 +76,7 @@ export default function UberAccidentLawyerDubai() {
 												negotiations, and litigation to secure compensation for their client's
 												injuries or damages.
 												<br />
-												Connect Legal is committed to providing top-notch legal representation
+												Professional Women United is committed to providing top-notch legal representation
 												for individuals involved in Uber accidents. Our team of experienced Uber
 												accident lawyers understands the complexities of these cases and works
 												tirelessly to protect your rights.
@@ -97,7 +97,7 @@ export default function UberAccidentLawyerDubai() {
 										Uber services. They handle legal aspects such as insurance claims, negotiations,
 										and litigation to secure compensation for their client's injuries or damages.
 										<br />
-										Connect Legal is committed to providing top-notch legal representation for
+										Professional Women United is committed to providing top-notch legal representation for
 										individuals involved in Uber accidents. Our team of experienced Uber accident
 										lawyers understands the complexities of these cases and works tirelessly to
 										protect your rights.
@@ -415,12 +415,12 @@ export default function UberAccidentLawyerDubai() {
 									<span className="green-medium-2">
 										Uber Accident Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -442,7 +442,7 @@ export default function UberAccidentLawyerDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal offers specialized expertise and a track record of success
+												Professional Women United offers specialized expertise and a track record of success
 												in handling Uber accident cases. Our Uber accident lawyers have
 												extensive experience representing clients involved in Uber accidents. We
 												understand the complexities of these cases and have the expertise to
@@ -468,7 +468,7 @@ export default function UberAccidentLawyerDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, we provide personalized legal representation tailored
+												At Professional Women United, we provide personalized legal representation tailored
 												to the unique circumstances of each case. Our UAE Uber accident lawyers
 												take the time to understand our client's needs and concerns, offering
 												guidance and support throughout the legal process.
@@ -493,7 +493,7 @@ export default function UberAccidentLawyerDubai() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal has a proven track record of successfully obtaining
+												Professional Women United has a proven track record of successfully obtaining
 												favorable settlements and verdicts for Uber accident victims. Our Uber
 												accident lawyers in the UAE have successfully represented numerous
 												clients and helped them recover the compensation they deserve for their
@@ -544,7 +544,7 @@ export default function UberAccidentLawyerDubai() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Connect Legal offers comprehensive legal support to Uber accident
+												Professional Women United offers comprehensive legal support to Uber accident
 												victims, including assistance with insurance claims, accident
 												investigation, gathering evidence, and representing clients in court if
 												necessary. Our Dubai Uber accident lawyers handle all aspects of the
@@ -571,7 +571,7 @@ export default function UberAccidentLawyerDubai() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												We understand how Uber accidents can physically, emotionally, and
-												financially impact victims and their families. At Connect Legal, the
+												financially impact victims and their families. At Professional Women United, the
 												Uber accident lawyers provide compassionate and responsive
 												representation, guiding our clients through the legal process with care
 												and empathy.
@@ -614,7 +614,7 @@ export default function UberAccidentLawyerDubai() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											At Connect Legal, our top Uber accident lawyers in Dubai are distinguished
+											At Professional Women United, our top Uber accident lawyers in Dubai are distinguished
 											by their exceptional legal insight, dedication to client advocacy, and
 											commitment to achieving favorable outcomes.
 											<br />
@@ -626,7 +626,7 @@ export default function UberAccidentLawyerDubai() {
 											victims in Dubai.
 										</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -637,7 +637,7 @@ export default function UberAccidentLawyerDubai() {
 								</>
 							) : (
 								<>
-									At Connect Legal, our top Uber accident lawyers in Dubai are distinguished by their
+									At Professional Women United, our top Uber accident lawyers in Dubai are distinguished by their
 									exceptional legal insight, dedication to client advocacy, and commitment to
 									achieving favorable outcomes.
 									<br />

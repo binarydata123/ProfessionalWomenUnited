@@ -78,7 +78,7 @@ export default function InjuryLawyer() {
 												{t('Through_personalized')}
 											</>
 										) : (
-											'An injury lawyer provides legal representation to those who have been physically or psychologically harmed because of the negligence or intentional actions of others. At Connect Legal, we connect clients with experienced injury lawyers who assess the circumstances of each case'
+											'An injury lawyer provides legal representation to those who have been physically or psychologically harmed because of the negligence or intentional actions of others. At Professional Women United, we connect clients with experienced injury lawyers who assess the circumstances of each case'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

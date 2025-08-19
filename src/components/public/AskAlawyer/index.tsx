@@ -302,7 +302,7 @@ export default function AskAlawyer({ slug = '' }: Props) {
 						</div>
 						<div className="privacy-policy mb-5">
 							<span>
-								Questions are posted anonymously on Connect Legal. By clicking on ‘Continue’
+								Questions are posted anonymously on Professional Women United. By clicking on ‘Continue’
 								<br /> you agree to our{' '}
 								<Link href="#" style={{ textDecoration: 'underline', color: '#CCCCCC' }}>
 									Terms of Service

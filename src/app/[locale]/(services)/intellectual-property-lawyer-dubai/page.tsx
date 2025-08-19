@@ -4,17 +4,17 @@ import IntellectualPropertyLawyer from '@/components/services/IntellectualProper
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Intellectual Property Lawyer in Dubai – Connect Legal',
+		title: 'Intellectual Property Lawyer in Dubai – Professional Women United',
 		description:
-			'Protect your creative and industrial property with an intellectual property lawyer in Dubai. Connect Legal can guide you through the process.',
+			'Protect your creative and industrial property with an intellectual property lawyer in Dubai. Professional Women United can guide you through the process.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL} /intellectual-property-lawyer-dubai
 `
 		},
 		openGraph: {
-			title: 'Intellectual Property Lawyer in Dubai – Connect Legal',
+			title: 'Intellectual Property Lawyer in Dubai – Professional Women United',
 			description:
-				'Protect your creative and industrial property with an intellectual property lawyer in Dubai. Connect Legal can guide you through the process.',
+				'Protect your creative and industrial property with an intellectual property lawyer in Dubai. Professional Women United can guide you through the process.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL} /intellectual-property-lawyer-dubai
 `,
 			siteName: process.env.NEXT_APP_NAME,

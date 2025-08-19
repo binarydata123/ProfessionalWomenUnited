@@ -216,7 +216,7 @@ export default function LawyerDashboard() {
 							<div className="welcome position-relative">
 								<h3>
 									Welcome to <br />
-									Connect Legal!
+									Professional Women United!
 								</h3>
 								<p>
 									Connect with lawyers or legal consultants through our platform and get the legal help you need within the United Arab Emirates.

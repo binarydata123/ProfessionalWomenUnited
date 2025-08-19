@@ -81,7 +81,7 @@ export default function ConstructionAccidentLawyerUae() {
 												{t('We_offer_compassionate_support')}
 											</>
 										) : (
-											'A construction accident lawyer specializes in representing individuals injured in construction site accidents. At Connect Legal, our team of experienced lawyers provides personalized legal representation to victims of construction accidents. '
+											'A construction accident lawyer specializes in representing individuals injured in construction site accidents. At Professional Women United, our team of experienced lawyers provides personalized legal representation to victims of construction accidents. '
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -639,7 +639,7 @@ export default function ConstructionAccidentLawyerUae() {
 											{t('Our_top_talents_possess')}
 										</>
 									) : (
-										'At Connect Legal, we pride ourselves on connecting you with top-notch construction accident lawyers dedicated to providing exceptional legal representation in Dubai and beyond.'
+										'At Professional Women United, we pride ourselves on connecting you with top-notch construction accident lawyers dedicated to providing exceptional legal representation in Dubai and beyond.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

@@ -57,7 +57,7 @@ export default function CommercialLawyerDubai() {
 								negotiation, mergers and acquisitions, intellectual property rights, and regulatory
 								compliance.
 								<span className="commercial_lawyer">
-									At Connect Legal, our commercial lawyers work closely with clients to understand
+									At Professional Women United, our commercial lawyers work closely with clients to understand
 									their business objectives and provide tailored legal solutions.
 								</span>
 							</p>
@@ -445,12 +445,12 @@ export default function CommercialLawyerDubai() {
 									<span className="green-medium-2">
 										Commercial Lawyer <br />{' '}
 									</span>{' '}
-									from Connect Legal?
+									from Professional Women United?
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -472,7 +472,7 @@ export default function CommercialLawyerDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												By hiring a commercial lawyer from Connect Legal, you get access to
+												By hiring a commercial lawyer from Professional Women United, you get access to
 												professionals with extensive expertise in commercial law. Our commercial
 												lawyers specialize in handling a wide variety of commercial matters.
 												These include contract negotiation, business transactions, and
@@ -500,10 +500,10 @@ export default function CommercialLawyerDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, our attorneys have a proven track record of success in
+												At Professional Women United, our attorneys have a proven track record of success in
 												representing clients in various commercial law matters. Be it resolving
 												contract disputes or facilitating complex business transactions, a
-												Dunai-based commercial lawyer from Connect Legal will have a record of
+												Dunai-based commercial lawyer from Professional Women United will have a record of
 												consistently achieving favorable outcomes for clients.
 											</div>
 										</div>
@@ -607,7 +607,7 @@ export default function CommercialLawyerDubai() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												At Connect Legal, clear and open communication with clients is a top
+												At Professional Women United, clear and open communication with clients is a top
 												priority for our attorneys. Our commercial lawyers are readily
 												accessible to address your questions and concerns promptly, fostering a
 												collaborative attorney-client relationship built on trust and
@@ -645,7 +645,7 @@ export default function CommercialLawyerDubai() {
 							Discover the <span className="green-medium-2">Top Commercial Lawyers in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black mt-3">
-							At Connect Legal, our top commercial lawyers in Dubai possess a combination of legal
+							At Professional Women United, our top commercial lawyers in Dubai possess a combination of legal
 							expertise, industry knowledge, and dedication to client satisfaction. They excel in
 							providing strategic legal advice and representation to businesses of all sizes, handling
 							commercial transactions, and resolving disputes effectively.

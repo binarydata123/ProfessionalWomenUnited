@@ -4,16 +4,16 @@ import DivorceLawyer from '@/components/services/DivorceLawyer';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Divorce Lawyer in Dubai – Connect Legal',
+		title: 'Divorce Lawyer in Dubai – Professional Women United',
 		description:
-			'Need guidance on divorce proceedings? Connect Legal can help you find a divorce lawyer in Dubai who offers expert advice for your legal needs.',
+			'Need guidance on divorce proceedings? Professional Women United can help you find a divorce lawyer in Dubai who offers expert advice for your legal needs.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/divorce-lawyer-dubai`
 		},
 		openGraph: {
-			title: ' Divorce Lawyer in Dubai – Connect Legal',
+			title: ' Divorce Lawyer in Dubai – Professional Women United',
 			description:
-				'Need guidance on divorce proceedings? Connect Legal can help you find a divorce lawyer in Dubai who offers expert advice for your legal needs.',
+				'Need guidance on divorce proceedings? Professional Women United can help you find a divorce lawyer in Dubai who offers expert advice for your legal needs.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/divorce-lawyer-dubai`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [

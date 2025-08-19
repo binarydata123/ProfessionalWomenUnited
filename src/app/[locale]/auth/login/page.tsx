@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 import Login from '@/components/public/Login';
 
 export const metadata: Metadata = {
-	title: 'Login to Connect Legal',
-	description: 'Sign in to your Connect Legal account to access legal services and resources.',
+	title: 'Login to Professional Women United',
+	description: 'Sign in to your Professional Women United account to access legal services and resources.',
 	alternates: {
 		canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/auth/login`
 	},
 	openGraph: {
-		title: 'Login to Connect Legal',
-		description: 'Sign in to your Connect Legal account to access legal services and resources.',
+		title: 'Login to Professional Women United',
+		description: 'Sign in to your Professional Women United account to access legal services and resources.',
 		url: `${process.env.NEXT_PUBLIC_BASE_URL}/auth/login`,
 		siteName: `${process.env.NEXT_APP_NAME}`,
 		images: [

@@ -582,7 +582,7 @@ export default function ArbitrationLawyer() {
 									{showFullTextDiscover ? (
 										<>{t('At_Connect_Legal,_we_pride ')}</>
 									) : (
-										'At Connect Legal, we pride ourselves on housing top arbitration lawyers in Dubai who possess a unique blend of expertise, experience, and dedication to client success. Our top talents exhibit a deep understanding of arbitration laws and regulations, coupled with extensive practical experience in handling a wide range of arbitration cases. 										'
+										'At Professional Women United, we pride ourselves on housing top arbitration lawyers in Dubai who possess a unique blend of expertise, experience, and dedication to client success. Our top talents exhibit a deep understanding of arbitration laws and regulations, coupled with extensive practical experience in handling a wide range of arbitration cases. 										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

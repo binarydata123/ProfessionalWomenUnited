@@ -15,7 +15,7 @@ export default function HireSection() {
                                 <span className="green-medium-2">
                                     Immigration Lawyer <br />{' '}
                                 </span>{' '}
-                                from Connect Legal?
+                                from Professional Women United?
                             </h3>
                             <div className="accordion mt-4" id="setbotomspace">
                                 <div className="accordion-item">
@@ -36,7 +36,7 @@ export default function HireSection() {
                                         aria-labelledby="headingEight"
                                         data-bs-parent="#accordionExample">
                                         <div className="accordion-body border-0">
-                                            Connect Legal's immigration lawyers possess extensive knowledge of
+                                            Professional Women United's immigration lawyers possess extensive knowledge of
                                             immigration laws and procedures. They’ll help you find the best
                                             immigration lawyers in Dubai who will help you navigate through the
                                             ever-changing regulations and legal precedents to provide the most
@@ -100,7 +100,7 @@ export default function HireSection() {
                                         aria-labelledby="headingTen"
                                         data-bs-parent="#accordionExample">
                                         <div className="accordion-body border-0">
-                                            The immigration lawyers on Connect Legal prioritize providing efficient
+                                            The immigration lawyers on Professional Women United prioritize providing efficient
                                             and effective solutions for your immigration needs. Streamlining
                                             processes and minimizing unnecessary delays saves you valuable time and
                                             reduces stress. Their approach focuses on achieving the best possible
@@ -131,7 +131,7 @@ export default function HireSection() {
                                         aria-labelledby="headingEleven"
                                         data-bs-parent="#accordionExample">
                                         <div className="accordion-body border-0">
-                                            Connect Legal offers personalized attention and support to every client,
+                                            Professional Women United offers personalized attention and support to every client,
                                             understanding that each individual's situation and goals are unique. Our
                                             immigration lawyers take the time to listen to your story and assess
                                             your specific needs, providing customized advice and representation.

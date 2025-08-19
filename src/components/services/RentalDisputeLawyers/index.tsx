@@ -74,7 +74,7 @@ export default function RentalDisputeLawyers() {
 										{showFullText ? (
 											<>{t('A_rental_dispute_lawyer_specializes')}</>
 										) : (
-											'A rental dispute lawyer specializes in resolving conflicts between landlords and tenants, such as lease disagreements, evictions, and maintenance issues. Our network of rental dispute lawyers at Connect Legal can provide personalized guidance'
+											'A rental dispute lawyer specializes in resolving conflicts between landlords and tenants, such as lease disagreements, evictions, and maintenance issues. Our network of rental dispute lawyers at Professional Women United can provide personalized guidance'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -390,9 +390,9 @@ export default function RentalDisputeLawyers() {
 									{t('from_Connect_Legal')}
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal specializes in motorcycle accident cases, offering clients expert
+									Professional Women United specializes in motorcycle accident cases, offering clients expert
 									legal representation and personalized support. Hiring a motorcycle accident lawyer
-									from Connect Legal can provide you with the expert assistance and support you need
+									from Professional Women United can provide you with the expert assistance and support you need
 									to get through this challenging time.
 								</p> */}
 								<div className="accordion mt-4" id="setbotomspace">
@@ -570,7 +570,7 @@ export default function RentalDisputeLawyers() {
 											{t('With_strong_negotiation')}
 										</>
 									) : (
-										'At Connect Legal, you can find the best rental dispute lawyer Dubai has to offer. 										'
+										'At Professional Women United, you can find the best rental dispute lawyer Dubai has to offer. 										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

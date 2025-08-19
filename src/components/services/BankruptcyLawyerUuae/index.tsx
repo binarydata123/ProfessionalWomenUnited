@@ -78,7 +78,7 @@ export default function InsolvencyLawyer() {
 												{t('At_Connect_Legal_Our')}
 											</>
 										) : (
-											'At Connect Legal, our bankruptcy lawyers understand the challenges individuals and businesses face during financial crises. We are dedicated to finding the best solutions for your needs.'
+											'At Professional Women United, our bankruptcy lawyers understand the challenges individuals and businesses face during financial crises. We are dedicated to finding the best solutions for your needs.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -418,7 +418,7 @@ export default function InsolvencyLawyer() {
 									{t('From_Connect_Legal')}
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
-									Connect Legal's bankruptcy lawyers specialize in dealing with bankruptcy and
+									Professional Women United's bankruptcy lawyers specialize in dealing with bankruptcy and
 									insolvency law. With a deep understanding of relevant statutes and regulations, our
 									insolvency lawyers provide comprehensive guidance tailored to the unique needs of
 									creditors, debtors, and other stakeholders affected by financial distress.
@@ -619,7 +619,7 @@ export default function InsolvencyLawyer() {
 									{showFullTextDiscover ? (
 										<>{t('At_Connect_Legal_Our_Bankruptcy_Lawyers')}</>
 									) : (
-										'At Connect Legal, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

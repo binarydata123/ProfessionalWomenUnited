@@ -574,7 +574,7 @@ export default function PersonalInjuryLawyer() {
 											{t('At_Connect_Legal,_we_take')}											<br />
 											{t('Our_personal_injury')}											</>
 									) : (
-										'At Connect Legal, we take pride in our network of top personal injury lawyers in the UAE. We&apos;ll find you the best personal injury lawyer with extensive experience, exceptional legal skills, and a strong commitment to securing favorable outcomes for your case.'
+										'At Professional Women United, we take pride in our network of top personal injury lawyers in the UAE. We&apos;ll find you the best personal injury lawyer with extensive experience, exceptional legal skills, and a strong commitment to securing favorable outcomes for your case.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

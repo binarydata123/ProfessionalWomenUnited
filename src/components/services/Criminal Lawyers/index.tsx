@@ -264,7 +264,7 @@ export default function CriminalLawyersDubai() {
 															<br />
 															For legal assistance and guidance throughout criminal
 															proceedings, seek the expertise of experienced criminal
-															lawyers at Connect Legal.
+															lawyers at Professional Women United.
 														</div> */}
 													</div>
 												</div>
