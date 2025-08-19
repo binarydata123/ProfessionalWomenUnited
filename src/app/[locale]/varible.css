@@ -33,7 +33,7 @@ html {
 	--button-1: #02142d;
 	--color-green-light: #02142d;
 	--social-link: #1f1f1f;
-	--green-light: #c6eee2;
+	--green-light: #e2bca8;
 	--anti-flash-white: #f2f2f2;
 	--Chinese-silver: #cccccc;
 	--boysenberry: #c49073;
@@ -1168,17 +1168,17 @@ ul.list-12 li a svg {
 	transition: 0.6s;
 }
 .link-button:hover {
-	color: #ad3e83 !important;
+	color: #fff !important;
 }
 .link-button:hover span.link-button-icon svg {
-	background: #ad3e83;
+	background: #fff;
 	color: #fff;
 }
 #dropdownMenuButton1.bg-white {
 	background: #fff !important;
 }
 .back-dash-card:hover .link-button {
-	color: rgb(61, 201, 161) !important;
+	color: rgb(0,0,0) !important;
 }
 .back-dash-card .link-button:hover span.link-button-icon svg {
 	background: #c49073;

@@ -674,7 +674,7 @@ p.stong-text {
 
 button#dropdownMenu2 {
 	background-color: transparent !important;
-	border: 2px solid rgba(32, 140, 132, 1);
+	border: 2px solid rgba(196,144,115);
 	padding: 0px 3px;
 	border-radius: 8px;
 }
@@ -1101,9 +1101,9 @@ img.logo-img.class-add-mobile {
 }
 
 .left-part img.dash-logo {
-	max-width: 220px;
+	max-width: 120px;
 	margin-bottom: 25px;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 .big-screen-w img {

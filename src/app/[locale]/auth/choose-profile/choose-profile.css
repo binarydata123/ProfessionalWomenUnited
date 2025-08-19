@@ -59,7 +59,7 @@
 		rgba(196, 144, 115, 0.5) 100%
 	  ),
 	  var(--text-white);
-		  box-shadow: 4px 4px 9px 0px rgba(61, 201, 161, 0.15);
+		  box-shadow: 4px 4px 9px 0px rgba(196,144,115, 0.15);
 }
 
 @media (max-width: 991px) {

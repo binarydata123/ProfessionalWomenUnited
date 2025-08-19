@@ -419,7 +419,7 @@ export default function Header() {
 					)
 						: <p style={{ marginTop: '7px' }}>
 							<Image
-								src="https://api.connectlegal.ae/images/favicon.png"
+								src="https://pro-women.api.ai-developer.site/images/favicon.png"
 								alt="user-img"
 								width={30}
 								height={30}
@@ -657,7 +657,7 @@ export default function Header() {
 											<div className="d-flex align-items-center">
 												<div className="img-class">
 													<Image
-														src={user?.role !== 'admin' ? profileImageSrc : 'https://api.connectlegal.ae/images/favicon.png'}
+														src={user?.role !== 'admin' ? profileImageSrc : 'https://pro-women.api.ai-developer.site/images/favicon.png'}
 														alt="user-img2"
 														width={42}
 														height={42}

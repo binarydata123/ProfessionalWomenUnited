@@ -14,7 +14,7 @@ export default function Sidebar() {
 		<div className="left-part">
 			<div className="left-fixed">
 				<Link href={'/'}>
-					<img src="/off-logo.png" alt="off-logo" className="dash-logo" />
+					<img src="/footer.png" alt="off-logo" className="dash-logo" />
 				</Link>
 				<ul className="left-menu">
 					{user?.role === 'enduser' && <UserMenu />}

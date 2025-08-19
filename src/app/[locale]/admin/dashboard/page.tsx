@@ -79,7 +79,7 @@ export default function Dashboard() {
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.lawyer_count}
 											</p>
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Active Lawyers
 											</LinkButton>
 										</div>
@@ -91,7 +91,7 @@ export default function Dashboard() {
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.enduser_count}
 											</p>
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Individuals
 											</LinkButton>
 										</div>
@@ -103,7 +103,7 @@ export default function Dashboard() {
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.forum_count_all}
 											</p>
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Questions Posted
 											</LinkButton>
 										</div>
@@ -115,7 +115,7 @@ export default function Dashboard() {
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.forum_count_pending}
 											</p>
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Pending Approval
 											</LinkButton>
 										</div>
@@ -127,7 +127,7 @@ export default function Dashboard() {
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.total_inquiry_count}
 											</p>
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Inquiries
 											</LinkButton>
 										</div>
@@ -139,7 +139,7 @@ export default function Dashboard() {
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.blog_count}
 											</p>
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Blogs Posted
 											</LinkButton>
 										</div>
@@ -196,7 +196,7 @@ export default function Dashboard() {
 								<div className="col-sm-3 mt-4">
 									<Link href={'/admin/settings/roles-and-permissions/add-new-lawyer'}>
 										<div className="dash-card-g dash-add back-dash-card">
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Create Profile
 											</LinkButton>
 										</div>
@@ -205,7 +205,7 @@ export default function Dashboard() {
 								<div className="col-sm-3 mt-4">
 									<Link href="/admin/content-mgmt/blogs/create">
 										<div className="dash-card-g dash-add back-dash-card">
-											<LinkButton color="#c49073" height={0}>
+											<LinkButton color="#fff" height={0}>
 												Write a Blog
 											</LinkButton>
 										</div>

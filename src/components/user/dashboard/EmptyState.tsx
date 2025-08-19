@@ -23,7 +23,7 @@ export default function EmptyState() {
 							</p>
 							<DefaultButton
 								className="w-100"
-								color="rgba(61, 201, 161, 1)"
+								color="rgba(196,144,115, 1)"
 								background="rgba(9, 63, 56, 1)"
 							>
 								Ask A Lawyer
