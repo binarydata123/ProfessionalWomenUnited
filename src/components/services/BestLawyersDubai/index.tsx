@@ -903,7 +903,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Navigating Dubai&apos;s Legal Landscape
 											</h4>
 										</div>
@@ -919,7 +919,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Strategic Legal Planning for Business Growth
 											</h4>
 										</div>
@@ -936,7 +936,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Legal Compliance and Risk Management
 											</h4>
 										</div>
@@ -953,7 +953,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Advising on Shariah-Compliant Transactions
 											</h4>
 										</div>

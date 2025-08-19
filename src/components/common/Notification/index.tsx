@@ -73,7 +73,7 @@ export default function Notification() {
 														__html: notification.notification.replace(
 															/<a href="([^"]+)">([^<]+)<\/a>/,
 															(match: any, href: any, text: any) => {
-																return `<a href="${href}" style="color:#093f38; font-weight:bold;text-decoration: none;">${text}</a>`;
+																return `<a href="${href}" style="color:#c49073; font-weight:bold;text-decoration: none;">${text}</a>`;
 															}
 														)
 													}}

@@ -719,7 +719,7 @@ export default function EmploymentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Legal_Advice_and_Consultation")}
 											</h4>
 										</div>
@@ -729,7 +729,7 @@ export default function EmploymentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Representation_in_Disputes_and_Litigation")}	tion
 											</h4>
 										</div>
@@ -739,7 +739,7 @@ export default function EmploymentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Contract_Drafting_and_Review")}	
 											</h4>
 										</div>
@@ -749,7 +749,7 @@ export default function EmploymentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Compliance_and_Risk_Management")}	
 											</h4>
 										</div>

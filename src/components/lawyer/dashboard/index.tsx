@@ -156,7 +156,7 @@ export default function LawyerDashboard() {
 							</div>
 						) : (
 							<div className="recent-reviews mt-4 p-4">
-								<h5 className="p-2" style={{ color: '#093f38', fontSize: '20px' }}>
+								<h5 className="p-2" style={{ color: '#c49073', fontSize: '20px' }}>
 									Recent Reviews
 								</h5>
 								<div className="py-4">

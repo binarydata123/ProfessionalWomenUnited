@@ -770,7 +770,7 @@ export default function UberAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Expert Guidance on Legal Procedures
 											</h4>
 										</div>
@@ -791,7 +791,7 @@ export default function UberAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Negotiation with Insurance Companies
 											</h4>
 										</div>
@@ -811,7 +811,7 @@ export default function UberAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Representation in Court Proceedings
 											</h4>
 										</div>
@@ -832,7 +832,7 @@ export default function UberAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Local Expertise and Resources
 											</h4>
 										</div>

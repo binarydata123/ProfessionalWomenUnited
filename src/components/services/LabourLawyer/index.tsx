@@ -656,7 +656,7 @@ export default function LabourLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Contract_Review_and_Negotiation')}
 											</h4>
 										</div>
@@ -667,7 +667,7 @@ export default function LabourLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Dispute_Resolution_and_Litigation')}
 											</h4>
 										</div>
@@ -678,7 +678,7 @@ export default function LabourLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Employment_Rights_and_Protection')}
 											</h4>
 										</div>
@@ -689,7 +689,7 @@ export default function LabourLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Severance_and_Settlement_Negotiations')}
 											</h4>
 										</div>

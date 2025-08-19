@@ -147,7 +147,7 @@ export default function Page({ filterlawyer }: Props) {
 							<div className="icon-fild icon-g class-add">
 								<input
 									type="text"
-									placeholder="Search for a lawyer"
+									placeholder="Search for a professional"
 									className="form-fild find-a-lawyer-input w-100 sp-right"
 									onChange={e => handleSearchLawyer(e)}
 								/>
@@ -163,7 +163,7 @@ export default function Page({ filterlawyer }: Props) {
 								<DefaultButton
 									onClick={() => setfilterPopup(true)}
 									background="#fff"
-									color="#093F38"
+									color="#c49073"
 									height={48}
 									className="max-width-126 w-100"
 									showIcon={false}
@@ -181,7 +181,7 @@ export default function Page({ filterlawyer }: Props) {
 									label={
 										<DefaultButton
 											background="#fff"
-											color="#093F38"
+											color="#c49073"
 											height={48}
 											className="max-width-115"
 											showIcon={false}
@@ -246,7 +246,7 @@ export default function Page({ filterlawyer }: Props) {
 							</li>
 							<li>
 								<Link href="/find-a-lawyer" >
-									<h1 className="active">Find a lawyer</h1>
+									<h1 className="active">Find a professional</h1>
 								</Link>
 							</li>
 						</ul>
@@ -263,7 +263,7 @@ export default function Page({ filterlawyer }: Props) {
 						<center>
 							<h5>No matching record found!</h5>
 							<PrimaryButton className="mt-3" onClick={() => handleLawyers(initialData)}>
-								View all lawyers
+								View all professionals
 							</PrimaryButton>
 						</center>
 					)}
@@ -402,7 +402,7 @@ export default function Page({ filterlawyer }: Props) {
 									</ul>
 								</AccordionItem>
 							</li>
-							<li>
+							{/* <li>
 								<AccordionItem title="Jurisdiction" Key={'3'}>
 									<ul className="service-list-group mt-1">
 										{jurisdication &&
@@ -431,7 +431,7 @@ export default function Page({ filterlawyer }: Props) {
 											))}
 									</ul>
 								</AccordionItem>
-							</li>
+							</li> */}
 							<li>
 								<AccordionItem title="Gender" Key={'4'}>
 									<ul className="service-list-group mt-2">
@@ -473,7 +473,7 @@ export default function Page({ filterlawyer }: Props) {
 						onClick={() => handleLawyers(filterData)}
 						className="w-100 mt-4"
 						showIcon={false}
-						background={'#208C84'}
+						background={'#c49073'}
 					>
 						Show results
 					</DefaultButton>

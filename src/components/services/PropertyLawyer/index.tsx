@@ -734,7 +734,7 @@ export default function PropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Navigating_Complex_Transactions')}
 											</h4>
 										</div>
@@ -745,7 +745,7 @@ export default function PropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Resolving_Property_Disputes')}
 											</h4>
 										</div>
@@ -756,7 +756,7 @@ export default function PropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Ensuring_Compliance_with_Laws_and_Regulations')}
 											</h4>
 										</div>
@@ -767,7 +767,7 @@ export default function PropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Protecting_Your_Property_Rights')}
 											</h4>
 										</div>

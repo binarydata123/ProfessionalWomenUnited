@@ -196,7 +196,7 @@ select.form-fild {
 	background-color: #ffffff;
 }
 .rwd-table tr {
-	border-color: #093f38 !important;
+	border-color: #c49073 !important;
 }
 .rwd-table th {
 	display: none;
@@ -238,7 +238,7 @@ select.form-fild {
 	border-color: #bfbfbf;
 }
 .rwd-table tr {
-	border-color: #093f38 !important;
+	border-color: #c49073 !important;
 	border-right: solid 1px;
 	border-left: solid 1px;
 }
@@ -314,7 +314,7 @@ table.rwd-table tr th {
 }
 
 .create-tags #contained-modal-title-vcenter {
-	color: #093f38 !important;
+	color: #c49073 !important;
 	padding-top: 40px;
 }
 button.btn.btn-cancel.w-100.save-pad.cancel-class {

@@ -695,7 +695,7 @@ export default function IntellectualPropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Copyright_Registration_Process')}
 											</h4>
 										</div>
@@ -706,7 +706,7 @@ export default function IntellectualPropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Enforcement_of_Copyright_Rights')}
 											</h4>
 										</div>
@@ -717,7 +717,7 @@ export default function IntellectualPropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Licensing_and_Contracts')}
 											</h4>
 										</div>
@@ -728,7 +728,7 @@ export default function IntellectualPropertyLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Defense_Against_Infringement')}
 											</h4>
 										</div>

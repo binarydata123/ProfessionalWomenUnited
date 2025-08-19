@@ -713,7 +713,7 @@ export default function RentalDisputeLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Expert_Negotiation_and_Mediation')}
 											</h4>
 										</div>
@@ -724,7 +724,7 @@ export default function RentalDisputeLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('In-Depth_Knowledge')}
 											</h4>
 										</div>
@@ -735,7 +735,7 @@ export default function RentalDisputeLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Representation_in_Rental')}
 											</h4>
 										</div>
@@ -746,7 +746,7 @@ export default function RentalDisputeLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Drafting_and_Reviewing')}
 											</h4>
 										</div>

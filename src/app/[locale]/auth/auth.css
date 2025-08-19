@@ -142,9 +142,9 @@ h3.text-light.logo-style {
 	position: fixed;
 }
 
-.left-video-area {
+/* .left-video-area {
 	position: relative;
-}
+} */
 @media screen and (min-device-width: 1000px) and (max-device-width: 1024px) {
 	.main-login {
 		max-width: 800px !important;
@@ -234,3 +234,36 @@ h3.text-light.logo-style {
 .auth-page-wrapper {
 	padding: 0 0px 40px 20px;
 }
+
+.sidebar-img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	opacity: 0.65;
+  }
+
+  .left-video-area {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  .left-video-area img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  /* Overlay */
+  .left-video-area::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2); 
+	pointer-events: none; 
+  }
+  

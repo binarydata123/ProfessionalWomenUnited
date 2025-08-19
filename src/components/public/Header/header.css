@@ -289,7 +289,7 @@ ul.list-mega li a {
 }
 
 .set-menu-head {
-	color: #093f38;
+	color: #c49073;
 	font-size: 18px !important;
 	font-weight: 700 !important;
 }
@@ -303,7 +303,7 @@ ul.list-mega li a {
 }
 
 a.pop-head-set:hover {
-	color: #093f38;
+	color: #c49073;
 }
 .font-weight-menu {
 	font-weight: 600 !important;
@@ -546,7 +546,7 @@ a.pop-head-set:hover {
 		font-size: 12px !important;
 	}
 	.set-menu-head {
-		color: #093f38;
+		color: #c49073;
 		font-size: 13px !important;
 		font-weight: 700 !important;
 	}
@@ -596,7 +596,7 @@ a.pop-head-set:hover {
 		font-size: 12px !important;
 	}
 	.set-menu-head {
-		color: #093f38;
+		color: #c49073;
 		font-size: 13px !important;
 		font-weight: 700 !important;
 	}
@@ -665,7 +665,7 @@ a.pop-head-set:hover {
 
 .top-header-dark .lang-dropdown {
 	display: none;
-	background: #093f38;
+	background: #c49073;
 	border-radius: 5px;
 	margin-top: 2px;
 }

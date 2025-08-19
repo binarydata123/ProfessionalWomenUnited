@@ -32,7 +32,7 @@ export default function UpperFooter() {
                         <div className="col-md-7">
                             <div className="needlawyer-text blogs position-relative" id="bg-are-you">
                                 <h6 className="pt-0 c-093F38 text-white">ARE YOU A PROFESSIONAL WOMAN?</h6>
-                                <h2 className="" style={{ color: '#093F38' }}>
+                                <h2 className="" style={{ color: '#c49073' }}>
                                     Get Recognized and Expand Your Network.
                                 </h2>
                                 <Link

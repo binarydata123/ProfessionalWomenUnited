@@ -1,11 +1,11 @@
 button.default-button.w-100.max-width-126 {
-	color: #093f38;
+	color: #c49073;
 	background: #fff;
 	width: 126px !important;
 }
 
 button.default-button.w-100.max-width-115 {
-	color: #093f38;
+	color: #c49073;
 	background: #fff;
 	width: 115px;
 }
@@ -59,12 +59,12 @@ ul.list-12 li a h1.active {
 }
 
 .filter-items.active {
-	background-color: #effaf7;
+	background-color: #ead4c7;
 	color: #02142d;
 }
 
 .filter-items:hover {
-	background-color: #effaf7;
+	background-color: #ead4c7;
 	color: #02142d;
 }
 

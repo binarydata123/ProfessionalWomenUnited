@@ -54,7 +54,7 @@ a.dropdown-item:hover {
 }
 
 .down-btn ul.dropdown-menu li a:hover {
-	background-color: #effaf7;
+	background-color: #ead4c7;
 	padding: 8px 12px;
 	color: var(--green-medium-2);
 }

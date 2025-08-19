@@ -855,7 +855,7 @@ export default function CriminalLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Legal Advice and Guidance
 											</h4>
 										</div>
@@ -870,7 +870,7 @@ export default function CriminalLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Representation in Court
 											</h4>
 										</div>
@@ -886,7 +886,7 @@ export default function CriminalLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Negotiation and Settlement
 											</h4>
 										</div>
@@ -902,7 +902,7 @@ export default function CriminalLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Negotiating Plea Deals
 											</h4>
 										</div>
@@ -918,7 +918,7 @@ export default function CriminalLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Case Analysis and Investigation
 											</h4>
 										</div>

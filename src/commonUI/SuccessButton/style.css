@@ -18,13 +18,13 @@
 	}
 
 	.btn-primary-true:focus {
-		background: #093f38;
-		border: 1px solid #093f38;
+		background: #c49073;
+		border: 1px solid #c49073;
 	}
 
 	.btn-primary-true:focus-visible {
-		background: #093f38;
-		border: 1px solid #093f38;
+		background: #c49073;
+		border: 1px solid #c49073;
 	}
 
 	.btn-primary-true.left-icon i {

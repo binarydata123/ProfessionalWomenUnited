@@ -732,7 +732,7 @@ export default function DisputeLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Legal_Analysis_and_Strategy_Development')}
 											</h4>
 										</div>
@@ -743,7 +743,7 @@ export default function DisputeLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Negotiation_and_Mediation_Representation')}
 											</h4>
 										</div>
@@ -754,7 +754,7 @@ export default function DisputeLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Advocacy_in_Arbitration_and_Litigation')}
 											</h4>
 										</div>
@@ -767,7 +767,7 @@ export default function DisputeLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Legal_Documentation_and_Compliance')}
 											</h4>
 										</div>

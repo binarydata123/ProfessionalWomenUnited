@@ -808,7 +808,7 @@ export default function BankingLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Regulatory Compliance and Advisory Services
 											</h4>
 										</div>
@@ -823,7 +823,7 @@ export default function BankingLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Transactional Support and Documentation{' '}
 											</h4>
 										</div>
@@ -839,7 +839,7 @@ export default function BankingLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Dispute Resolution and Litigation{' '}
 											</h4>
 										</div>
@@ -855,7 +855,7 @@ export default function BankingLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Risk Management and Compliance Audits
 											</h4>
 										</div>

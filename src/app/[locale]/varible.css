@@ -580,7 +580,7 @@ button:hover {
 	line-height: 21px;
 	letter-spacing: 0.02em;
 	text-align: left;
-	color: #093f38;
+	color: #c49073;
 }
 ul.dash-add {
 	text-align: left !important;
@@ -610,7 +610,7 @@ ul.dash-add {
 #legalforum {
 	background-image: url('/images/legal/gavel-sounding-block.png');
 	background-size: cover;
-	background-color: #effaf7;
+	background-color: #ead4c7;
 	padding: 20px 0px 50px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1129,7 +1129,7 @@ ul.list-12 li a svg {
 	color: #4f4f4f;
 }
 .span-color-dash {
-	color: #093f38 !important;
+	color: #c49073 !important;
 }
 
 @media (min-width: 1020px) {

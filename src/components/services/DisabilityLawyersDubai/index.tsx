@@ -753,7 +753,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Accommodation_and_Accessibility_Advocacy')}
 											</h4>
 										</div>
@@ -764,7 +764,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Assistance_with_Disability_Benefit_Claims')}
 											</h4>
 										</div>
@@ -775,7 +775,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Representation_in_Disability_Appeals')}
 											</h4>
 										</div>
@@ -786,7 +786,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Educational_Advocacy_for_Students_with_Disabilities')}
 											</h4>
 										</div>

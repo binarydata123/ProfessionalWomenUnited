@@ -609,7 +609,7 @@ export default function ChildSupportLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Expert_Guidance_on_Child_Support_Laws_in_the_UAE")}
 											</h4>
 										</div>
@@ -621,7 +621,7 @@ export default function ChildSupportLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											
 											{t("Skilled_Representation_in_Child_Support_Negotiations")}
 											</h4>
@@ -635,7 +635,7 @@ export default function ChildSupportLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											 {t("Courtroom_Advocacy_in_Child_Support_Cases")}
 											</h4>
 										</div>
@@ -646,7 +646,7 @@ export default function ChildSupportLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											
 											{t("Support_in_Enforcing_Child_Support_Orders")}
 											</h4>

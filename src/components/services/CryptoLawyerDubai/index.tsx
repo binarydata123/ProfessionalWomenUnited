@@ -754,7 +754,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Legal Guidance on Regulatory Compliance
 											</h4>
 										</div>
@@ -765,7 +765,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Asset Protection Strategies
 											</h4>
 										</div>
@@ -777,7 +777,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Contract Drafting and Review
 											</h4>
 										</div>
@@ -789,7 +789,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Security Incident Response
 											</h4>
 										</div>

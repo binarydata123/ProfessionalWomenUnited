@@ -40,7 +40,7 @@ export default async function Page() {
 		<>
 			<section className="blogs-section">
 				<div className="container">
-					<div className="text-center">
+					<div className="text-center mt-5">
 						<h1>
 							{' '}
 							Legal <span>Insights</span>{' '}

@@ -746,7 +746,7 @@ export default function PatentLawyerinDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Patent_Application_Preparation_and_Filing')}
 											</h4>
 										</div>
@@ -758,7 +758,7 @@ export default function PatentLawyerinDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Evidence_Collection_and_Investigation')}
 											</h4>
 										</div>
@@ -769,7 +769,7 @@ export default function PatentLawyerinDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Patent_Prosecution_and_Examination')}
 											</h4>
 										</div>
@@ -780,7 +780,7 @@ export default function PatentLawyerinDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Patent_Portfolio_Management')}
 											</h4>
 										</div>
@@ -792,7 +792,7 @@ export default function PatentLawyerinDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Patent_Litigation_and_Dispute_Resolution')}
 											</h4>
 										</div>

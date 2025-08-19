@@ -367,7 +367,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                     <div className="row align-items-center g-3">
                         <div className="col-lg-8 col-12">
                             <div className="bank-law">
-                                <h2 style={{ color: '#093F38' }}>About us</h2>
+                                <h2 style={{ color: '#c49073' }}>About us</h2>
                                 <br />
                                 <h5>We Specialize In:</h5>
                                 <p>
@@ -529,7 +529,7 @@ export default function SingleFirm({ slug = '' }: Props) {
             <section id="silder-section">
                 <div className="container" >
                     <div className="needlawyer-text-firm" >
-                        <h2 className="text-start Discover-lawyer" style={{ color: '#093F38' }} >
+                        <h2 className="text-start Discover-lawyer" style={{ color: '#c49073' }} >
                             {lawyers.length ? 'Our Legal Team' : ''}
                         </h2>
                     </div>

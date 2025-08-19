@@ -65,12 +65,24 @@ export default function Footer() {
 						</Link>
 					</li>
 					<li className="nav-item list-unstyled">
-						<Link className="nav-link" href="/">
+						<Link className="nav-link"
+							href="/find-a-professional">
+							Find a Professional
+						</Link>
+					</li>
+					<li className="nav-item list-unstyled">
+						<Link className="nav-link"
+							href="/blogs">
+							Insights
+						</Link>
+					</li>
+					<li className="nav-item list-unstyled">
+						<Link className="nav-link" href="/about-us">
 							About
 						</Link>
 					</li>
 					<li className="nav-item list-unstyled">
-						<Link className="nav-link" href='/'>
+						<Link className="nav-link" href='/contact-us'>
 							Contact
 						</Link>
 					</li>

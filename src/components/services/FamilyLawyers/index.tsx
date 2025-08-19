@@ -737,7 +737,7 @@ export default function FamilyLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Navigating')}
 											</h4>
 										</div>
@@ -748,7 +748,7 @@ export default function FamilyLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Resolving_Child')}
 											</h4>
 										</div>
@@ -759,7 +759,7 @@ export default function FamilyLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Facilitating')}
 											</h4>
 										</div>
@@ -770,7 +770,7 @@ export default function FamilyLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Providing_Protection ')}Providing Protection in Domestic Violence
 												Cases
 											</h4>

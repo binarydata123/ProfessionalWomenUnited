@@ -752,7 +752,7 @@ export default function HospitalNegligenceLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Legal_Guidance_and_Advice')}
 											</h4>
 										</div>
@@ -763,7 +763,7 @@ export default function HospitalNegligenceLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Investigation_and_Case_Preparation')}
 											</h4>
 										</div>
@@ -774,7 +774,7 @@ export default function HospitalNegligenceLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Advocacy_and_Representation')}
 											</h4>
 										</div>
@@ -786,7 +786,7 @@ export default function HospitalNegligenceLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Settlement_Negotiations_and_Litigation')}
 											</h4>
 										</div>

@@ -752,7 +752,7 @@ export default function MedicalMalpracticeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Case_Evaluation_and_Consultation')}
 											</h4>
 										</div>
@@ -763,7 +763,7 @@ export default function MedicalMalpracticeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Negotiation_with_Insurance_Companies')}
 											</h4>
 										</div>
@@ -774,7 +774,7 @@ export default function MedicalMalpracticeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Litigation_and_Court_Representation')}
 											</h4>
 										</div>
@@ -785,7 +785,7 @@ export default function MedicalMalpracticeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Guidance_Throughout_the_Legal_Process')}
 											</h4>
 										</div>

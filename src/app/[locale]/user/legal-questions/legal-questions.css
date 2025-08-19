@@ -164,7 +164,7 @@ li {
 .active > .page-link,
 .page-link.active {
 	background: #c4907352 !important;
-	color: #093f38 !important;
+	color: #c49073 !important;
 	border-radius: 11px;
 }
 .text-right ul.pagination {

@@ -449,7 +449,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Providing_Comprehensive_Legal_Analysis_and_Strategy')}
 											</h4>
 										</div>
@@ -460,7 +460,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Navigating_Cultural_and_Regulatory_Nuances')}
 											</h4>
 										</div>
@@ -471,7 +471,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Offering_Personalized_Client_Care_and_Support')}
 											</h4>
 										</div>
@@ -482,7 +482,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Providing_Access_to_Alternative_Dispute_Resolution')}
 											</h4>
 										</div>

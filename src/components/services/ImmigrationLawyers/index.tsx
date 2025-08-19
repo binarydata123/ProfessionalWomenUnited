@@ -730,7 +730,7 @@ export default function ImmigrationLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Legal_Advice_and_Guidance')}
 											</h4>
 										</div>
@@ -741,7 +741,7 @@ export default function ImmigrationLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Document_Preparation_and_Review')}
 											</h4>
 										</div>
@@ -752,7 +752,7 @@ export default function ImmigrationLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Representation_in_Legal_Proceedings')}
 											</h4>
 										</div>
@@ -763,7 +763,7 @@ export default function ImmigrationLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Appeals_and_Legal_Strategies')}
 											</h4>
 										</div>

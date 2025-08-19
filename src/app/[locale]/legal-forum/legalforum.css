@@ -22,7 +22,7 @@
 #legalforum {
 	background-image: url('/images/legal/gavel-sounding-block.png');
 	background-size: cover;
-	background-color: #effaf7;
+	background-color: #ead4c7;
 	padding: 20px 0px 50px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -149,7 +149,7 @@
 	line-height: 29px;
 	letter-spacing: 0.02em;
 	text-align: center;
-	color: #093f38;
+	color: #c49073;
 }
 
 .browse-icon:hover {
@@ -343,7 +343,7 @@
 
 .result-box li a:hover {
 	background-color: #c6eee2;
-	color: #093f38;
+	color: #c49073;
 }
 
 @media (max-width: 768px) {

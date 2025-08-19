@@ -445,7 +445,7 @@ export default function BestLawyersRasAlKhaimah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Strategic_Legal_Planning')}
 											</h4>
 										</div>
@@ -456,7 +456,7 @@ export default function BestLawyersRasAlKhaimah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Personalized_Legal_Solutions')}
 											</h4>
 										</div>
@@ -467,7 +467,7 @@ export default function BestLawyersRasAlKhaimah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Effective_Communication_and_Advocacy')}
 											</h4>
 										</div>
@@ -478,7 +478,7 @@ export default function BestLawyersRasAlKhaimah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Timely_Legal_Support')}
 											</h4>
 										</div>

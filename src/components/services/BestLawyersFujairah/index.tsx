@@ -437,7 +437,7 @@ export default function BestLawyersFujairah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Navigating_Complex_Legal_Processes')}
 											</h4>
 										</div>
@@ -448,7 +448,7 @@ export default function BestLawyersFujairah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Protecting_Your_Rights_and_Interests')}
 											</h4>
 										</div>
@@ -459,7 +459,7 @@ export default function BestLawyersFujairah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Providing_Strategic_Legal_Advice')}
 											</h4>
 										</div>
@@ -470,7 +470,7 @@ export default function BestLawyersFujairah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Offering_Timely_Legal_Support')}
 											</h4>
 										</div>

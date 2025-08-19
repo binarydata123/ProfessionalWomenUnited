@@ -66,12 +66,17 @@ export default function AboutUs() {
 							<div className="row">
 								<div className="col-12 col-lg-8">
 									<h1 className="font-larger weight-bold social-link mt-5 mobile-m-0 ">
-										Connect{isVisible ? 'ing you to' : ''}
+										{/* Connect{isVisible ? 'ing you to' : ''} */}
+										Connecting you to
 										<br />
-										<span className="green-medium-2 ">Legal {isVisible ? 'experts' : ''}.</span>
+										<span className="green-medium-2 ">
+											{/* Legal {isVisible ? 'experts' : ''}. */}
+											Legal experts
+
+										</span>
 									</h1>
 									<p className="weight-bold social-link font-medium mt-4">
-										Something about how Professional Women United provides value to lawyers, specifically
+										Something about how Professional Women United provides value to professionals, specifically
 										financialy.
 									</p>
 
@@ -118,7 +123,7 @@ export default function AboutUs() {
 												/>
 											</li>
 											<li className="position-growing">
-												250+ Lawyers & Growing
+												250+ Professionals & Growing
 												<div className="blinking"></div>
 											</li>
 											<li>
@@ -138,14 +143,14 @@ export default function AboutUs() {
 										<button className="btn-get-free btn-commn  w-100-percentue">
 											<span className="text-white">
 												<Link href="/auth/create-profile/?role=lawyer" style={{ color: 'white' }}>
-													Join As Lawyer
+													Join As Professional
 												</Link>
 											</span>
 										</button>
 										<button className={`${locale == 'ar' ? 'btn-get-free btn-commn ml-2 set-top-btn-about set-abt-btn' : 'btn-get-free btn-commn ml-2 set-top-btn-about'}`}>
 											<span className="text-white">
-												<Link href="/find-a-lawyer" style={{ color: 'rgba(137, 49, 104, 1)' }}>
-													Find A Lawyer
+												<Link href="/find-a-professional" style={{ color: 'rgb(196,144,115)' }}>
+													Find A Professional
 												</Link>
 											</span>
 										</button>
@@ -176,8 +181,8 @@ export default function AboutUs() {
 								<div className="our-story-text">
 									<p>
 										Established in 2014, our company is a legal advice platform that connects
-										clients with top-rated lawyers across the UAE. With our user-friendly platform,
-										clients can easily find and connect with experienced lawyers, while lawyers can
+										clients with top-rated professionals across the UAE. With our user-friendly platform,
+										clients can easily find and connect with experienced professionals, while professionals can
 										efficiently manage their practice and expand their client base.
 									</p>
 								</div>
@@ -192,7 +197,7 @@ export default function AboutUs() {
 							<div className="col-lg-6">
 								<div className="find-text">
 									<h2>
-										Find the right <br /> lawyer...
+										Find the right <br /> professional...
 									</h2>
 									<p>
 										Are you looking for a{' '}
@@ -201,10 +206,10 @@ export default function AboutUs() {
 										</Link>
 										to help you with your case? Professional Women United is the ideal place to find it. Our
 										legal advisors can give you the support you need to go through any type of legal
-										trouble you may be having. Find the perfect lawyer with our help!
+										trouble you may be having. Find the perfect professional with our help!
 									</p>
-									<Link href={'/find-a-lawyer'}>
-										<button className="btn-commn">Find A Lawyer</button>
+									<Link href={'/find-a-professional'}>
+										<button className="btn-commn">Find A Professional</button>
 									</Link>
 								</div>
 							</div>
@@ -224,7 +229,7 @@ export default function AboutUs() {
 								<div className="find-text cover-padding">
 									<h2>Or the right client...</h2>
 									<p className="p-0">
-										If you are a lawyer looking to put your knowledge into practice, this is the
+										If you are a professional looking to put your knowledge into practice, this is the
 										ideal place for you.{' '}
 										<Link className="underlineClass" href="/">
 											Professional Women United
@@ -233,7 +238,7 @@ export default function AboutUs() {
 										the most out of your expertise and find the ideal clients to support here.
 									</p>
 									<Link href="/auth/create-profile/?role=lawyer">
-										<button className="btn-commn">Join As Lawyer</button>
+										<button className="btn-commn">Join As Professional</button>
 									</Link>
 								</div>
 							</div>
@@ -261,7 +266,7 @@ export default function AboutUs() {
 												aria-expanded="true"
 												aria-controls="collapseOne"
 											>
-												How do I sign up as a lawyer?
+												How do I sign up as a professional?
 											</button>
 										</h2>
 										<div
@@ -271,11 +276,11 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												If you are a lawyer proficient in UAE law, all you have to do is go to
-												our “For Lawyers” section and create your Professional Women United account.
+												If you are a professional proficient in UAE law, all you have to do is go to
+												our “For Professionals” section and create your Professional Women United account.
 												Creating a{' '}
-												<Link className="underlineClass" href="/find-a-lawyer">
-													professional lawyer
+												<Link className="underlineClass" href="/find-a-professional">
+													professional expert
 												</Link>{' '}
 												profile with us only takes a few minutes. And then, you can start
 												providing your support to individuals in need.
@@ -303,7 +308,7 @@ export default function AboutUs() {
 										>
 											<div className="accordion-body border-0">
 												The fees will go according to the type of services you require and the
-												lawyer working with you.
+												professional working with you.
 											</div>
 										</div>
 									</div>
@@ -317,7 +322,7 @@ export default function AboutUs() {
 												aria-expanded="false"
 												aria-controls="collapseThree"
 											>
-												How are client requests assigned to lawyers?
+												How are client requests assigned to professionals?
 											</button>
 										</h2>
 										<div
@@ -327,7 +332,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												Usually, clients select the lawyer they want according to the{' '}
+												Usually, clients select the professional they want according to the{' '}
 												<Link className="underlineClass" href="/legal-services/banking">
 													legal services
 												</Link>{' '}
@@ -357,7 +362,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												As a lawyer, you can go to your profile and easily update your
+												As a professional, you can go to your profile and easily update your
 												information with just a few clicks.
 											</div>
 										</div>
@@ -383,7 +388,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												When they need to, lawyers can cancel consultations with scheduled
+												When they need to, professionals can cancel consultations with scheduled
 												clients. However, they must not disclose the information they received
 												before the appointment with any other person.
 											</div>

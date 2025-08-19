@@ -29,7 +29,7 @@ export default function BenfitSection() {
                             <div className="col-lg-12">
                                 <div className="titleHow pt-lg-0">
                                     <div className=" pt-4">
-                                        <h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+                                        <h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
                                             Navigating Visa Applications and Renewals
                                         </h4>
                                     </div>
@@ -48,7 +48,7 @@ export default function BenfitSection() {
                             <div className="col-lg-12">
                                 <div className="titleHow pt-lg-0">
                                     <div className=" pt-4">
-                                        <h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+                                        <h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
                                             Handling Work Permits and Employment Visas
                                         </h4>
                                     </div>
@@ -67,7 +67,7 @@ export default function BenfitSection() {
                             <div className="col-lg-12">
                                 <div className="titleHow pt-lg-0">
                                     <div className=" pt-4">
-                                        <h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+                                        <h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
                                             Managing Citizenship and Naturalization Applications
                                         </h4>
                                     </div>
@@ -85,7 +85,7 @@ export default function BenfitSection() {
                             <div className="col-lg-12">
                                 <div className="titleHow pt-lg-0">
                                     <div className=" pt-4">
-                                        <h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+                                        <h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
                                             Providing Legal Support for Appeals and Reconsiderations
                                         </h4>
                                     </div>

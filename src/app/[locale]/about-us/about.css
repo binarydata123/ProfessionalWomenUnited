@@ -19,7 +19,7 @@ li.position-growing {
 	background: rgba(32, 140, 132, 0.08);
 	padding: 3px 20px 3px 12px;
 	font-size: var(--font-small);
-	color: var(--green-dark, #093f38);
+	color: var(--green-dark, #c49073);
 	font-weight: var(--weight-semi-bold);
 	position: relative;
 	left: 10px;
@@ -151,7 +151,7 @@ li.position-growing {
 }
 
 .questions-part {
-	background-color: #0a3f37;
+	background-color: #c49073;
 }
 .still {
 	padding: 60px 0px;

@@ -55,7 +55,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 									) : (
 										<ImageComponent
 											className="w-100"
-											src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/624x351.png`}
+											src={`${process.env.NEXT_PUBLIC_BASE_URL}/images/624x351.png`}
 											placeholderImgUrl={
 												process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`
 											}

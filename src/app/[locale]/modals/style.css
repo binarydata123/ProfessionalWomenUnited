@@ -316,7 +316,7 @@ ul.rating-location li i {
 	position: relative;
 }
 .list-search li.active {
-	background: #effaf7;
+	background: #ead4c7;
 	color: var(--green-medium-2);
 }
 .list-search li i {

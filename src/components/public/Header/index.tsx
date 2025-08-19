@@ -85,10 +85,10 @@ export default function Header({ locale }: any) {
 			<div className={locale} id={`${locale == 'ar' ? `${locale}` : 'en-fix'}`}>
 				<header
 					className={`header-wrapper ${pathname === `/${locale}/legal-services/banking` ||
-						pathname === `/find-a-lawyer` ||
+						pathname === `/find-a-professional` ||
 						pathname === `/${locale}/ask-a-lawyer` ||
 						pathname.includes(`/${locale}/legal-forum`)
-						? 'top-header-dark'
+						? 'top-header-light'
 						: 'top-header-light'
 						}`}>
 					<nav className="navbar navbar-expand-xl">
@@ -96,7 +96,7 @@ export default function Header({ locale }: any) {
 							<Link className="navbar-brand" href="/">
 								<img
 									src={`${pathname === `/${locale}/legal-services/banking` ||
-										pathname === `/find-a-lawyer` ||
+										pathname === `/find-a-professional` ||
 										pathname === `/${locale}/ask-a-lawyer` ||
 										pathname.includes(`/${locale}/legal-forum`)
 										? '/1logo.webp'
@@ -284,7 +284,7 @@ export default function Header({ locale }: any) {
 											}}
 											className={`nav-link ${pathname === '/professional' ? 'active' : null}`}
 											aria-current="page"
-											href={locale === 'en' ? '/' : `/${locale}`}>
+											href='/find-a-professional'>
 											Find a Professional
 										</Link>
 									</li>
@@ -295,8 +295,21 @@ export default function Header({ locale }: any) {
 												setmenuCollappse(true);
 												setLawyerMenuOpen(false);
 											}}
+											className={`nav-link ${pathname === '/blogs' ? 'active' : null}`}
+											aria-current="page"
+											href='/blogs'>
+											Insights
+										</Link>
+									</li>
+
+									<li className="nav-item">
+										<Link
+											onClick={() => {
+												setmenuCollappse(true);
+												setLawyerMenuOpen(false);
+											}}
 											className={`nav-link ${pathname === '/about-us' ? 'active' : null}`}
-											href='/'>
+											href='/about-us'>
 											{t('about')}
 										</Link>
 									</li>
@@ -307,7 +320,7 @@ export default function Header({ locale }: any) {
 												setLawyerMenuOpen(false);
 											}}
 											className={`nav-link ${pathname === '/contact-us' ? 'active' : null}`}
-											href='/'>
+											href='/contact-us'>
 											{t('contact')}
 										</Link>
 									</li>

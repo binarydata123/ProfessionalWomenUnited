@@ -104,7 +104,7 @@ export default function ContactUs() {
 												onChange={handleInputChange}
 											/>
 											<label className="form-check-label mx-2" htmlFor="inlineRadio1">
-												{t('lawyer')}
+												Professional
 											</label>
 										</div>
 										<div className="form-check form-check-inline">
@@ -192,7 +192,7 @@ export default function ContactUs() {
 							<h5>{t('write_to_us')}</h5>
 							<a href="mailto:wisuva@mailinator.com">
 								{' '}
-								<p>contact@connectlegal.com</p>
+								<p>contact@profesionalwomen.com</p>
 							</a>
 						</div>
 					</div>
@@ -202,7 +202,7 @@ export default function ContactUs() {
 							<h5>{t('talk_to_us')}</h5>
 							<a href="tel:+97143316688">
 								{' '}
-								<p>+97143316688</p>
+								<p>+159654894564</p>
 							</a>
 						</div>
 					</div>
@@ -212,7 +212,7 @@ export default function ContactUs() {
 							<h5>{t('visit_us')}</h5>
 							<a href="https://goo.gl/maps/7hfKjBNd8t5vuLej8" target="blank">
 								{' '}
-								<p>804, City Tower 2, Sheikh Zayed Road, Dubai</p>
+								<p>804, City Tower 2, willaim Road, USA</p>
 							</a>
 						</div>
 					</div>

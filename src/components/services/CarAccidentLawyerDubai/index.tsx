@@ -723,7 +723,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t('Related_Legal_Matters')}
 											</h4>
 										</div>
@@ -734,7 +734,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t('negotiation_with_insurance_companies')}
 											</h4>
 										</div>
@@ -745,7 +745,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t('evidence_gathering')}
 
 											</h4>
@@ -757,7 +757,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t('court_representation')}
 											</h4>
 										</div>

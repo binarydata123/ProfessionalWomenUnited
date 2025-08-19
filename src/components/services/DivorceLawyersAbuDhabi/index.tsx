@@ -718,7 +718,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Navigating_Divorce_Procedures')}
 											</h4>
 										</div>
@@ -729,7 +729,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Advocating_for_Child_Custody_and_Visitation_Rights')}
 											</h4>
 										</div>
@@ -740,7 +740,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Handling_Alimony_and_Spousal_Support')}
 											</h4>
 										</div>
@@ -751,7 +751,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Dividing_Marital_Property')}
 											</h4>
 										</div>

@@ -726,7 +726,7 @@ export default function EntertainmentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Legal_Counsel_on_Contract_Drafting_and_Negotiation")}
 											</h4>
 										</div>
@@ -736,7 +736,7 @@ export default function EntertainmentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Dispute_Resolution_and_Litigation")}	
 											</h4>
 										</div>
@@ -746,7 +746,7 @@ export default function EntertainmentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Intellectual_Property_Protection")}
 											</h4>
 										</div>
@@ -756,7 +756,7 @@ export default function EntertainmentLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t("Compliance_with_Industry_Regulations")}	
 											</h4>
 										</div>

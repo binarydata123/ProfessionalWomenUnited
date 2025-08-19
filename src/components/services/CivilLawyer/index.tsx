@@ -714,7 +714,7 @@ export default function CivilLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{c('Legal_Advice_and_Guidance')}
 											</h4>
 										</div>
@@ -725,7 +725,7 @@ export default function CivilLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{c('Drafting_and_Reviewing_Legal_Documents')}
 											</h4>
 										</div>
@@ -736,7 +736,7 @@ export default function CivilLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{c('Representation_in_Legal_Proceedings')}
 											</h4>
 										</div>
@@ -747,7 +747,7 @@ export default function CivilLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{c('Negotiation_and_Mediation')}
 											</h4>
 										</div>

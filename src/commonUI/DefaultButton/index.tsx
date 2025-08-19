@@ -20,7 +20,7 @@ export default function DefaultButton({
 	children,
 	showIcon = true,
 	color = '#FFFFFF',
-	background = '#BE8363',
+	background = '#c49073',
 	height = 42,
 	fontSize = 16,
 	onClick

@@ -63,7 +63,7 @@ button.dropdown-toggle.btn.btn-primary {
 
 .dropdown-wrapper ul li a:hover,
 .dropdown-wrapper ul li:hover {
-	background-color: #effaf7;
+	background-color: #ead4c7;
 	color: var(--green-medium-2);
 	overflow: hidden;
 }

@@ -264,7 +264,7 @@ export default function MaritimeLawPage() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Resolving_Disputes')}
 											</h4>
 										</div>
@@ -275,7 +275,7 @@ export default function MaritimeLawPage() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Drafting_and_Reviewing_Contracts')}
 											</h4>
 										</div>
@@ -286,7 +286,7 @@ export default function MaritimeLawPage() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Handling_Insurance_Claims')}
 											</h4>
 										</div>
@@ -297,7 +297,7 @@ export default function MaritimeLawPage() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												{t('Ensuring_Regulatory_Compliance')}
 											</h4>
 										</div>

@@ -840,7 +840,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												Expert Guidance on Legal Compliance
 											</h4>
 										</div>
@@ -855,7 +855,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												Contract Drafting and Review
 											</h4>
 										</div>
@@ -870,7 +870,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												Dispute Resolution and Litigation
 											</h4>
 										</div>
@@ -885,7 +885,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#093F38'}}>
+											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
 												Title Verification and Due Diligence
 											</h4>
 										</div>

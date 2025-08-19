@@ -85,7 +85,7 @@ const SliderWithProgressBar = () => {
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
 									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Lawyer, Law Firm</p>
+									<p className="font-small weight-light text-black">Business Professional, Law Firm</p>
 								</div>
 							</div>
 						</div>
@@ -106,7 +106,7 @@ const SliderWithProgressBar = () => {
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
 									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Lawyer, Law Firm</p>
+									<p className="font-small weight-light text-black">Business Professional, Law Firm</p>
 								</div>
 							</div>
 						</div>
@@ -127,7 +127,7 @@ const SliderWithProgressBar = () => {
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
 									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Lawyer, Law Firm</p>
+									<p className="font-small weight-light text-black">Business Professional, Law Firm</p>
 								</div>
 							</div>
 						</div>
@@ -148,7 +148,7 @@ const SliderWithProgressBar = () => {
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
 									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Lawyer, Law Firm</p>
+									<p className="font-small weight-light text-black">Business Professional, Law Firm</p>
 								</div>
 							</div>
 						</div>

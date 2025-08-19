@@ -196,7 +196,7 @@ select.form-fild {
 	background-color: #ffffff;
 }
 .rwd-table tr {
-	border-color: #093f38 !important;
+	border-color: #c49073 !important;
 }
 .rwd-table th {
 	display: none;
@@ -238,7 +238,7 @@ select.form-fild {
 	border-color: #bfbfbf;
 }
 .rwd-table tr {
-	border-color: #093f38 !important;
+	border-color: #c49073 !important;
 	border-right: solid 1px;
 	border-left: solid 1px;
 }
@@ -343,7 +343,7 @@ ul.star-rating li {
 }
 .btn-tertiary1 {
 	font-weight: 700;
-	color: #093f38;
+	color: #c49073;
 	line-height: var(--line-height-small);
 	font-size: 22px;
 	background-color: var(--bg-transperent);

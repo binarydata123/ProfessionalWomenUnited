@@ -117,7 +117,7 @@ ul.justify-content-center.link-footer {
 }
 
 .footer-dark .circle-arrow svg {
-	color: #093f38;
+	color: #c49073;
 }
 
 .footer-dark .copy-right p {
@@ -125,4 +125,8 @@ ul.justify-content-center.link-footer {
 }
 .ar.text-line {
 	text-align: end;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #c49073 !important;
 }

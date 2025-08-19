@@ -10,7 +10,7 @@ a#navbarDropdownMenuLink {
 	color: #02142d !important;
 }
 li.p-0.m-0.active {
-	background: #effaf7 !important;
+	background: #ead4c7 !important;
 }
 .nav-tab ul li.active a {
 	color: var(--green-medium-2);
@@ -20,5 +20,5 @@ li.p-0.m-0.active {
 .dropdown-item:focus,
 .dropdown-item:hover {
 	color: var(--bs-dropdown-link-hover-color);
-	background-color: #effaf7;
+	background-color: #ead4c7;
 }

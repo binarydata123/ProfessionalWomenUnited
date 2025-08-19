@@ -53,7 +53,7 @@ export default function BlogWithServices({ blogData, serviceData }: Props) {
 			});
 		} else {
 			setblogs(blogData?.slice((currentPage - 1) * itemsPerPage, (currentPage - 1) * itemsPerPage + itemsPerPage));
-			setTotalblogs(Math.ceil(blogData.length / itemsPerPage));
+			setTotalblogs(Math.ceil(blogData?.length / itemsPerPage));
 		}
 	};
 

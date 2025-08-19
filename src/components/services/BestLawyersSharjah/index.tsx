@@ -898,7 +898,7 @@ export default function BestLawyersSharjah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Mediation and Dispute Resolution
 											</h4>
 										</div>
@@ -914,7 +914,7 @@ export default function BestLawyersSharjah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Estate Planning and Probate
 											</h4>
 										</div>
@@ -930,7 +930,7 @@ export default function BestLawyersSharjah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Representation in Legal Proceedings
 											</h4>
 										</div>
@@ -945,7 +945,7 @@ export default function BestLawyersSharjah() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Legal Guidance and Advice
 											</h4>
 										</div>

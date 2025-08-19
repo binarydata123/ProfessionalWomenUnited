@@ -822,7 +822,7 @@ export default function ProductLiabilityLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Legal Consultation and Strategy
 											</h4>
 										</div>
@@ -837,7 +837,7 @@ export default function ProductLiabilityLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Thorough Investigation and Evidence Collection
 											</h4>
 										</div>
@@ -852,7 +852,7 @@ export default function ProductLiabilityLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Expert Negotiation and Settlement
 											</h4>
 										</div>
@@ -867,7 +867,7 @@ export default function ProductLiabilityLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Aggressive Litigation Representation
 											</h4>
 										</div>

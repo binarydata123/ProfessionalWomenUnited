@@ -662,7 +662,7 @@ export default function InheritanceLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 											{t('Expertise_in_Inheritance')}
 											</h4>
 										</div>
@@ -672,7 +672,7 @@ export default function InheritanceLawyerUae() {
 									<div className="col-lg-12">
 										<div className="titleHow pt-lg-0">
 											<div className=" pt-4">
-												<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+												<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Guidance_Through_Probate_Proceedings')}
 												</h4>
 											</div>
@@ -683,7 +683,7 @@ export default function InheritanceLawyerUae() {
 									<div className="col-lg-12">
 										<div className="titleHow pt-lg-0">
 											<div className=" pt-4">
-												<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+												<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Resolution_of_Inheritance_Disputes')}
 												</h4>
 											</div>
@@ -694,7 +694,7 @@ export default function InheritanceLawyerUae() {
 									<div className="col-lg-12">
 										<div className="titleHow pt-lg-0">
 											<div className=" pt-4">
-												<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+												<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Estate_Planning_and_Asset_Protection')}
 												</h4>
 											</div>

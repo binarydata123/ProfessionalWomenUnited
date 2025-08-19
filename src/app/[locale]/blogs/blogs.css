@@ -102,7 +102,7 @@
 	padding: 10px 20px;
 	transition: all 0.3s;
 	margin-left: 15px;
-	color: #093f38;
+	color: #c49073;
 	cursor: pointer;
 }
 
@@ -658,7 +658,7 @@ i.fa-brands.fa-x-twitter {
 	height: 100%;
 	z-index: -1;
 	opacity: 0.5; 
-	background-color: #093f38; 
+	background-color: #c49073; 
 	border-radius: 8px; 
 } */
 .blog-popup-fix.modal .modal-header {

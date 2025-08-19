@@ -840,7 +840,7 @@ export default function ConstructionLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Contract Drafting and Review
 											</h4>
 										</div>
@@ -856,7 +856,7 @@ export default function ConstructionLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Dispute Resolution
 											</h4>
 										</div>
@@ -872,7 +872,7 @@ export default function ConstructionLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Regulatory Compliance
 											</h4>
 										</div>
@@ -889,7 +889,7 @@ export default function ConstructionLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Risk Management and Prevention
 											</h4>
 										</div>

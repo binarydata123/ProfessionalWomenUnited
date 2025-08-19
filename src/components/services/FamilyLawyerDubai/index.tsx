@@ -726,7 +726,7 @@ export default function FamilyLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 
 												{t("Providing_Legal_Guidance_and_Advice")}
 											</h4>
@@ -738,7 +738,7 @@ export default function FamilyLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t("Negotiating_Settlements")}											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />A significant aspect of a family
@@ -748,7 +748,7 @@ export default function FamilyLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t("Representing_Clients_in_Court")}
 											</h4>
 										</div>
@@ -761,7 +761,7 @@ export default function FamilyLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{ color: '#093F38' }}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t("Drafting_Legal_Documents")}
 											</h4>
 										</div>

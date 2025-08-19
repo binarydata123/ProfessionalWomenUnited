@@ -341,7 +341,8 @@ span.border.border-radius-1.banner-arrow-btn {
 
 .hero-banner {
 	position: relative;
-    background: url("https://images.unsplash.com/photo-1590650046871-92c887180603") center/cover no-repeat;
+    /* background: url("https://images.unsplash.com/photo-1590650046871-92c887180603") center/cover no-repeat; */
+    background: url("/images/homebanner.webp") center/cover no-repeat;
 	min-height: 500px;
 	display: flex;
 	align-items: center;

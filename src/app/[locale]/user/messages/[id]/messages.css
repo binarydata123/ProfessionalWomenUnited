@@ -29,7 +29,7 @@
 }
 
 .card-drop li.active {
-	background: #effaf7;
+	background: #ead4c7;
 }
 
 .card-drop li.active a {
@@ -47,7 +47,7 @@
 }
 
 .card-drop li:hover {
-	background: #effaf7;
+	background: #ead4c7;
 }
 
 .dropdown.card-drop ul.dropdown-menu.text-right {
@@ -88,12 +88,12 @@
 .active > .page-link,
 .page-link.active {
 	background: #c4907352 !important;
-	color: #093f38 !important;
+	color: #c49073 !important;
 	border-radius: 11px;
 }
 
 nav.pagination-tab ul.pagination li a:hover {
-	color: #093f38 !important;
+	color: #c49073 !important;
 }
 
 .hr-line {
