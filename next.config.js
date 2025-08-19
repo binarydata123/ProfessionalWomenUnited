@@ -8,9 +8,9 @@ const withNextIntl = createNextIntlPlugin();
 module.exports = withNextIntl({
 	reactStrictMode: true,
 	cache: false,
-	assetPrefix: isProd ? 'https://connectlegal.ae/' : 'http://localhost:3000/',
+	assetPrefix: isProd ? 'https://professional-women.ai-developer.site/' : 'http://localhost:3000/',
 	images: {
-		domains: ['localhost', 'connectlegal.ae', 'api.connectlegal.ae', 'connect-legal-api.test'] // Add your local domain(s) here
+		domains: ['localhost', 'connectlegal.ae','professional-women.ai-developer.site', 'api.connectlegal.ae', 'connect-legal-api.test'] // Add your local domain(s) here
 	},
 	webpack: (config, {buildId, dev, isServer, defaultLoaders, webpack}) => {
 		config.plugins.push(
