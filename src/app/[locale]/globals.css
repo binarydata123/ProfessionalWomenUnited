@@ -66,7 +66,7 @@ html {
 	border-radius: 6px;
 }
 a {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 .container {
 	max-width: 1296px;
@@ -407,7 +407,8 @@ section#our-blogs img {
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
 	color: var(--social-link);
-	padding-top: 5px;
+	/* padding-top: 5px; */
+	padding-top: 0px;
 }
 
 .description span {
@@ -674,7 +675,7 @@ p.stong-text {
 
 button#dropdownMenu2 {
 	background-color: transparent !important;
-	border: 2px solid rgba(196,144,115);
+	border: 2px solid rgba(196, 144, 115);
 	padding: 0px 3px;
 	border-radius: 8px;
 }
@@ -1122,10 +1123,10 @@ img.logo-img.class-add-mobile {
 
 /* Small Primary Button */
 .btn-primary {
-	border: 1px solid #BE8363 !important;
+	border: 1px solid #be8363 !important;
 	padding: 12px 24px 12px 24px !important;
 	border-radius: 4px;
-	background: #BE8363 !important;
+	background: #be8363 !important;
 	font-weight: 600;
 	color: #fff;
 	line-height: 25.6px;
@@ -1239,14 +1240,14 @@ select.form-fild {
 }
 
 button.icon-button-wrapper {
-	background: #BE836314 !important;
-	border: #BE836314 !important;
+	background: #be836314 !important;
+	border: #be836314 !important;
 	padding: 0 !important;
 	margin: 0px;
 }
 
 button.icon-button-wrapper span i {
-	color: #BE8363 !important;
+	color: #be8363 !important;
 }
 
 a.navbar-brand {
@@ -1941,10 +1942,13 @@ div#tabs-viwe-buton button:nth-child(2) {
 .no-record {
 	display: flex;
 	justify-content: center;
-	align-items: center;    
-	height: 45vh;            
+	align-items: center;
+	height: 45vh;
 	text-align: center;
 	font-size: 1.2rem;
-	color: #333;            
-  }
-  
+	color: #333;
+}
+.set-inquery-space {
+	padding: '50px';
+	height: none;
+}

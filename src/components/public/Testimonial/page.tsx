@@ -13,7 +13,7 @@ export default function page() {
 								<p className="font-x-small green-medium-2 weight-bold mb-2">TESTIMONIALS</p>
 								<h3 className="font-xxx-large weight-bold social-link">
 									Real experiences from
-									<span className="green-medium-2"> Legal Professionals</span>
+									<span className="green-medium-2"> Women Professionals</span>
 								</h3>
 								<button className="btn-208C84 mt-4 effect">View All</button>
 							</div>

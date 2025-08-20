@@ -1,13 +1,13 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersDataByIds} from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
+import { useTranslations } from 'next-intl';
 
 export default function MaritimeLawyer() {
 	const [lawyers, setlawyers] = useState([]);
@@ -15,7 +15,7 @@ export default function MaritimeLawyer() {
 	const [isMobileView, setIsMobileView] = useState(false);
 	const [showFullTextDiscover, setShowFullTextDiscover] = useState(false);
 	const [isMobileViewDiscover, setIsMobileViewDiscover] = useState(false);
-	const t  = useTranslations("maritimelawyer");
+	const t = useTranslations("maritimelawyer");
 
 	const handleToggleText = () => {
 		setShowFullText(!showFullText);
@@ -59,7 +59,7 @@ export default function MaritimeLawyer() {
 									/>
 								</span>
 
-								<span style={{color: 'rgba(9, 63, 56, 1)'}}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
@@ -81,7 +81,7 @@ export default function MaritimeLawyer() {
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -97,7 +97,7 @@ export default function MaritimeLawyer() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -111,7 +111,7 @@ export default function MaritimeLawyer() {
 								className="effect show-hide"
 								width={516}
 								height={344}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -127,7 +127,7 @@ export default function MaritimeLawyer() {
 								<span className="green-med-col"> {t('Maritime_Law')} </span>
 							</h2>
 							<div className="accordion-body border-0 text-white">
-							{t('The_UAE')} 
+								{t('The_UAE')}
 							</div>
 						</div>
 
@@ -146,7 +146,7 @@ export default function MaritimeLawyer() {
 														data-bs-target="#collapseOne"
 														aria-expanded="true"
 														aria-controls="collapseOne">
-														{t('Ownership_of_a_UAE_Registered_Vessel')} 
+														{t('Ownership_of_a_UAE_Registered_Vessel')}
 													</button>
 												</h2>
 												<div
@@ -155,16 +155,16 @@ export default function MaritimeLawyer() {
 													aria-labelledby="headingOne"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t('The_New_Maritime_Law_introduces')} 
+														{t('The_New_Maritime_Law_introduces')}
 														<ul className="custom-bullets mt-3 mb-3">
 															<li>
-															{t('UAE_nationality')} 
+																{t('UAE_nationality')}
 															</li>
 															<li>
-															{t('Registration')} 
+																{t('Registration')}
 															</li>
 															<li>
-															{t('Ownership_requirements')} 
+																{t('Ownership_requirements')}
 															</li>
 														</ul>
 													</div>
@@ -179,7 +179,7 @@ export default function MaritimeLawyer() {
 														data-bs-target="#collapseTwo1"
 														aria-expanded="true"
 														aria-controls="collapseTwo1">
-														{t('Registration_of_a_Vessel_in_the_UAE')} 
+														{t('Registration_of_a_Vessel_in_the_UAE')}
 													</button>
 												</h2>
 												<div
@@ -188,15 +188,15 @@ export default function MaritimeLawyer() {
 													aria-labelledby="headingTwo1"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t('The_New_Maritime_Law_outlines')} 
+														{t('The_New_Maritime_Law_outlines')}
 														<ul className="custom-bullets mt-3 mb-3">
 															<li>
-															{t('Specifications_approval')} 															</li>
+																{t('Specifications_approval')} 															</li>
 															<li>
-															{t('Under_construction_ships_register')} 	
+																{t('Under_construction_ships_register')}
 															</li>
 															<li>
-															{t('Shipbuilders_responsibility')} 	
+																{t('Shipbuilders_responsibility')}
 															</li>
 														</ul>
 													</div>
@@ -211,7 +211,7 @@ export default function MaritimeLawyer() {
 														data-bs-target="#collapseThree"
 														aria-expanded="true"
 														aria-controls="collapseThree">
-														{t('Bareboat_Chartering')} 	
+														{t('Bareboat_Chartering')}
 													</button>
 												</h2>
 												<div
@@ -220,16 +220,16 @@ export default function MaritimeLawyer() {
 													aria-labelledby="headingThree"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t('The_New_Maritime_Law_introducesS')} 	
+														{t('The_New_Maritime_Law_introducesS')}
 														<ul className="custom-bullets mt-3 mb-3">
 															<li>
-															{t('Chartering_in')} 	
+																{t('Chartering_in')}
 															</li>
 															<li>
-															{t('Chartering_out')} 	
+																{t('Chartering_out')}
 															</li>
 															<li>
-															{t('New_provisions')} 	
+																{t('New_provisions')}
 															</li>
 														</ul>
 													</div>
@@ -242,7 +242,7 @@ export default function MaritimeLawyer() {
 											<span className="text-white findlawyertext">
 												<Link
 													href={'/auth/create-profile/?role=lawyer'}
-													style={{color: 'white'}}>
+													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
 											</span>
@@ -259,7 +259,7 @@ export default function MaritimeLawyer() {
 					<div className="row sectionGap flex-wrap-none">
 						<div className="col-lg-12 col-xl-5 col-md-12">
 							<h2 className="font-smaller text-black  weight-bold mb-4">
-							{t('Maritime_Safety')} 	 <span className="green-medium-2">{t('Regulations')} </span>
+								{t('Maritime_Safety')} 	 <span className="green-medium-2">{t('Regulations')} </span>
 							</h2>
 							<Image
 								src="/images/car/Frame.jpg"
@@ -280,7 +280,7 @@ export default function MaritimeLawyer() {
 											data-bs-target="#collapseOne"
 											aria-expanded="true"
 											aria-controls="collapseOne">
-											{t('International_Conventions_and_Protocols')} 
+											{t('International_Conventions_and_Protocols')}
 										</button>
 									</h2>
 									<div
@@ -289,7 +289,7 @@ export default function MaritimeLawyer() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('Maritime_safety_is_governed')} 
+											{t('Maritime_safety_is_governed')}
 										</div>
 									</div>
 								</div>
@@ -302,7 +302,7 @@ export default function MaritimeLawyer() {
 											data-bs-target="#collapseTwo"
 											aria-expanded="false"
 											aria-controls="collapseTwo">
-											{t('Safety_Inspections_and_Compliance')} 
+											{t('Safety_Inspections_and_Compliance')}
 										</button>
 									</h2>
 									<div
@@ -311,7 +311,7 @@ export default function MaritimeLawyer() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('Regulatory_authorities_conduct')} 
+											{t('Regulatory_authorities_conduct')}
 										</div>
 									</div>
 								</div>
@@ -324,7 +324,7 @@ export default function MaritimeLawyer() {
 											data-bs-target="#collapseThree"
 											aria-expanded="false"
 											aria-controls="collapseThree">
-												{t('Training_and_Certification_of_Seafarers')} 
+											{t('Training_and_Certification_of_Seafarers')}
 										</button>
 									</h2>
 									<div
@@ -333,7 +333,7 @@ export default function MaritimeLawyer() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('To_operate_vessels_safely')} 
+											{t('To_operate_vessels_safely')}
 										</div>
 									</div>
 								</div>
@@ -346,7 +346,7 @@ export default function MaritimeLawyer() {
 											data-bs-target="#collapsefour"
 											aria-expanded="false"
 											aria-controls="collapsefour">
-											{t('Vessel_Design_and_Construction_Standards')} 
+											{t('Vessel_Design_and_Construction_Standards')}
 										</button>
 									</h2>
 									<div
@@ -355,7 +355,7 @@ export default function MaritimeLawyer() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('International_regulations_specify')} 
+											{t('International_regulations_specify')}
 										</div>
 									</div>
 								</div>
@@ -368,7 +368,7 @@ export default function MaritimeLawyer() {
 											data-bs-target="#collapseFive"
 											aria-expanded="false"
 											aria-controls="collapseFive">
-									{t('Emergency_Preparedness_and_Drills')} 
+											{t('Emergency_Preparedness_and_Drills')}
 
 										</button>
 									</h2>
@@ -378,7 +378,7 @@ export default function MaritimeLawyer() {
 										aria-labelledby="headingFive"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('Maritime_safety_includes_preparedness')} 
+											{t('Maritime_safety_includes_preparedness')}
 										</div>
 									</div>
 								</div>
@@ -394,11 +394,11 @@ export default function MaritimeLawyer() {
 						<div className="col-lg-7 text-right order-lg-0 order-last">
 							<div className="still" id="accordianSectionGreen">
 								<h3 className="font-smaller weight-bold text-black-add-fig">
-								{t('Why_Should_I_Hire_a_')}  <br />{' '}
+									{t('Why_Should_I_Hire_a_')}  <br />{' '}
 									<span className="green-medium-2">
-									{t('Maritime_Lawyer')}  <br />{' '}
+										{t('Maritime_Lawyer')}  <br />{' '}
 									</span>{' '}
-									{t('from_Connect_Legal?')} 
+									{t('from_Connect_Legal?')}
 								</h3>
 								{/* <p className="font-medium weight-light text-black-add-fig mt-3">
 									Professional Women United specializes in motorcycle accident cases, offering clients expert
@@ -416,7 +416,7 @@ export default function MaritimeLawyer() {
 												data-bs-target="#collapseEight"
 												aria-expanded="true"
 												aria-controls="collapseEight">
-													{t('Expertise_in_Maritime_Law_and_Regulations')} 
+												{t('Expertise_in_Maritime_Law_and_Regulations')}
 											</button>
 										</h2>
 										<div
@@ -425,7 +425,7 @@ export default function MaritimeLawyer() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('The_maritime_lawyers')} 
+												{t('The_maritime_lawyers')}
 											</div>
 										</div>
 									</div>
@@ -438,7 +438,7 @@ export default function MaritimeLawyer() {
 												data-bs-target="#collapseNine"
 												aria-expanded="false"
 												aria-controls="collapseNine">
-												{t('Proven_Success_in_Litigation_and_Dispute_Resolution')} 
+												{t('Proven_Success_in_Litigation_and_Dispute_Resolution')}
 											</button>
 										</h2>
 										<div
@@ -447,7 +447,7 @@ export default function MaritimeLawyer() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('The_maritime_lawyers_on_Connect')} 
+												{t('The_maritime_lawyers_on_Connect')}
 											</div>
 										</div>
 									</div>
@@ -460,7 +460,7 @@ export default function MaritimeLawyer() {
 												data-bs-target="#collapseTen"
 												aria-expanded="false"
 												aria-controls="collapseTen">
-												{t('Tailored_Legal_Solutions_for_Your_Needs')} 
+												{t('Tailored_Legal_Solutions_for_Your_Needs')}
 											</button>
 										</h2>
 										<div
@@ -469,7 +469,7 @@ export default function MaritimeLawyer() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('The_attorneys_in_our_network')} 
+												{t('The_attorneys_in_our_network')}
 											</div>
 										</div>
 									</div>
@@ -482,7 +482,7 @@ export default function MaritimeLawyer() {
 												data-bs-target="#collapseEleven"
 												aria-expanded="false"
 												aria-controls="collapseEleven">
-												{t('Strong_Network_and_Industry_Connections')} 
+												{t('Strong_Network_and_Industry_Connections')}
 											</button>
 										</h2>
 										<div
@@ -491,7 +491,7 @@ export default function MaritimeLawyer() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('The_maritime_lawyers_on_our')} 
+												{t('The_maritime_lawyers_on_our')}
 											</div>
 										</div>
 									</div>
@@ -504,7 +504,7 @@ export default function MaritimeLawyer() {
 												data-bs-target="#collapseTweleve"
 												aria-expanded="false"
 												aria-controls="collapseTweleve">
-												{t('Prompt_and_Transparent_Communication')} 
+												{t('Prompt_and_Transparent_Communication')}
 											</button>
 										</h2>
 										<div
@@ -513,7 +513,7 @@ export default function MaritimeLawyer() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Maritime_lawyers_prioritize')} 
+												{t('Maritime_lawyers_prioritize')}
 											</div>
 										</div>
 									</div>
@@ -526,7 +526,7 @@ export default function MaritimeLawyer() {
 												data-bs-target="#collapseThirteen"
 												aria-expanded="false"
 												aria-controls="collapseThirteen">
-												{t('Dedicated_Client_Support_and_Advocacy')} 
+												{t('Dedicated_Client_Support_and_Advocacy')}
 											</button>
 										</h2>
 										<div
@@ -535,7 +535,7 @@ export default function MaritimeLawyer() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Our_lawyer_base_is_dedicated_to')} 
+												{t('Our_lawyer_base_is_dedicated_to')}
 											</div>
 										</div>
 									</div>
@@ -543,7 +543,7 @@ export default function MaritimeLawyer() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -569,18 +569,18 @@ export default function MaritimeLawyer() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-						{t('Discover_the')}  <span className="green-medium-2">{t('Top_Maritime_Lawyers_in_Dubai')}</span>
+							{t('Discover_the')}  <span className="green-medium-2">{t('Top_Maritime_Lawyers_in_Dubai')}</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
 								<>
 									{showFullTextDiscover ? (
 										<>
-											{t('Connect_Legal_boasts_some')} 
+											{t('Connect_Legal_boasts_some')}
 										</>
 									) : (
 										'Professional Women United boasts some of the top maritime lawyers in Dubai, known for their exceptional knowledge and dedication to marine law. Our network of experts is well-versed in local and international regulations, making them highly adept at handling complex cases and legal challenges. Top talents on our platform are characterized by meticulous attention to detail, strong negotiation skills, and a client-focused approach. 										'
@@ -590,14 +590,14 @@ export default function MaritimeLawyer() {
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
 								</>
 							) : (
 								<>
-									{t('Connect_Legal_boasts_some')} 
+									{t('Connect_Legal_boasts_some')}
 								</>
 							)}
 						</p>
@@ -647,7 +647,7 @@ export default function MaritimeLawyer() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -661,16 +661,16 @@ export default function MaritimeLawyer() {
 						<h6 className="text-center p-0">LEGAL ISSUES</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
-					{t('What_Do_Clients?')} 
+						{t('What_Do_Clients?')}
 						<span className="green-medium-2">
 							{' '}
-							{t('Most_Frequently_Search_For')} 
+							{t('Most_Frequently_Search_For')}
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-					{t('Individuals_seeking_legal_information')} 
+						{t('Individuals_seeking_legal_information')}
 						<br />
-						{t('Select_the_legal')} 
+						{t('Select_the_legal')}
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -705,23 +705,23 @@ export default function MaritimeLawyer() {
 							<div className="titleHow">
 								<h6 className="text-start">BENEFITS</h6>
 								<h2 className="text-black-add-fig Discover-lawyer discover-text-fun">
-								{t('How_Lawyers_Can_Assist_in')}
-																	<span className="green-medium-2"> {t('Maritime')}</span>{t('Related_Legal_Matters')}
+									{t('How_Lawyers_Can_Assist_in')}
+									<span className="green-medium-2"> {t('Maritime')}</span>{t('Related_Legal_Matters')}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
-											{t('Drafting_and_Reviewing_Maritime_Contracts')}
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
+												{t('Drafting_and_Reviewing_Maritime_Contracts')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />A maritime lawyer can assist in
@@ -731,8 +731,8 @@ export default function MaritimeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
-											{t('Handling_Disputes_and_Litigation')}
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
+												{t('Handling_Disputes_and_Litigation')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -742,8 +742,8 @@ export default function MaritimeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
-											{t('Ensuring_Compliance_with_Regulations')}
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
+												{t('Ensuring_Compliance_with_Regulations')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -753,8 +753,8 @@ export default function MaritimeLawyer() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
-											{t('Advising_on_Vessel_Registration_and_Ownership')}
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
+												{t('Advising_on_Vessel_Registration_and_Ownership')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -774,7 +774,7 @@ export default function MaritimeLawyer() {
 								<div className="gotTitle">
 									<p className="font-x-small green-medium-2 weight-bold mb-2">FAQs</p>
 									<h2 className="font-smaller  weight-bold mb-4">
-									{t('Got_questions')} <br />
+										{t('Got_questions')} <br />
 										<span className="green-medium-2"> {t('We_have_answers')}</span>
 									</h2>
 								</div>
@@ -798,7 +798,7 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('A_maritime_lawyer_specializes')}
+													{t('A_maritime_lawyer_specializes')}
 												</div>
 											</div>
 										</div>
@@ -811,7 +811,7 @@ export default function MaritimeLawyer() {
 													data-bs-target="#collapseTwo1"
 													aria-expanded="true"
 													aria-controls="collapseTwo1">
-										{t('What_role_does')}												</button>
+													{t('What_role_does')}												</button>
 											</h2>
 											<div
 												id="collapseTwo1"
@@ -819,8 +819,8 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('A_maritime_lawyer_provides_valuable')}	
-													<br /> {t('By_representing_clients_in_negotiations')}	
+													{t('A_maritime_lawyer_provides_valuable')}
+													<br /> {t('By_representing_clients_in_negotiations')}
 												</div>
 											</div>
 										</div>
@@ -833,7 +833,7 @@ export default function MaritimeLawyer() {
 													data-bs-target="#collapseThree"
 													aria-expanded="true"
 													aria-controls="collapseThree">
-													{t('How_can_a_maritimeS')}	
+													{t('How_can_a_maritimeS')}
 												</button>
 											</h2>
 											<div
@@ -842,8 +842,8 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('A_maritime_lawyer_can')}	
-													<br />{t('By_staying_up_to_date')}	
+													{t('A_maritime_lawyer_can')}
+													<br />{t('By_staying_up_to_date')}
 												</div>
 											</div>
 										</div>
@@ -856,7 +856,7 @@ export default function MaritimeLawyer() {
 													data-bs-target="#collapseFour"
 													aria-expanded="true"
 													aria-controls="collapseFour">
-													{t('What_kind_of_maritime')}	
+													{t('What_kind_of_maritime')}
 												</button>
 											</h2>
 											<div
@@ -865,7 +865,7 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('Connect_Legal_offers_a')}
+													{t('Connect_Legal_offers_a')}
 												</div>
 											</div>
 										</div>
@@ -887,7 +887,7 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingFive"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('A_maritime_lawyer_can_guide')}
+													{t('A_maritime_lawyer_can_guide')}
 
 												</div>
 											</div>
@@ -901,7 +901,7 @@ export default function MaritimeLawyer() {
 													data-bs-target="#collapseSix"
 													aria-expanded="true"
 													aria-controls="collapseSix">
-																									{t('What_is_the_importance')}
+													{t('What_is_the_importance')}
 
 												</button>
 											</h2>
@@ -911,7 +911,7 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingSix"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('Hiring_a_maritime_lawyer_for')}
+													{t('Hiring_a_maritime_lawyer_for')}
 												</div>
 											</div>
 										</div>
@@ -933,7 +933,7 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingSeven"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('Maritime_lawyers_at_Connect')}
+													{t('Maritime_lawyers_at_Connect')}
 												</div>
 											</div>
 										</div>
@@ -946,7 +946,7 @@ export default function MaritimeLawyer() {
 													data-bs-target="#collapseEight"
 													aria-expanded="true"
 													aria-controls="collapseEight">
-												{t('How_do_the_maritime_lawyers')}
+													{t('How_do_the_maritime_lawyers')}
 												</button>
 											</h2>
 											<div
@@ -955,7 +955,7 @@ export default function MaritimeLawyer() {
 												aria-labelledby="headingEight"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('The_maritime_law_experts_on')}
+													{t('The_maritime_law_experts_on')}
 
 												</div>
 											</div>
@@ -992,7 +992,7 @@ export default function MaritimeLawyer() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1001,7 +1001,7 @@ export default function MaritimeLawyer() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

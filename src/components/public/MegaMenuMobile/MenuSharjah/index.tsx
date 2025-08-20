@@ -69,7 +69,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Banking Law
@@ -113,7 +113,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className="p-0 ">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Buisness Law
@@ -149,7 +149,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Commercial Law
@@ -196,7 +196,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Inheritence Law
@@ -244,7 +244,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Civil Law
@@ -261,7 +261,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/find-a-lawyer"
+												href="/find-a-professional"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												Accident Professionals
@@ -396,7 +396,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Family Law
@@ -459,7 +459,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Dispute Resolution Law
@@ -499,7 +499,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Islamic Law
@@ -544,7 +544,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Maritime Law
@@ -575,7 +575,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Employment Law
@@ -614,7 +614,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Real Estate Law
@@ -653,7 +653,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Criminal Law
@@ -692,7 +692,7 @@ export default function MegaMenusharjah({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													Intellectual Property Law

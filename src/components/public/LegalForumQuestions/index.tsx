@@ -1,14 +1,14 @@
 'use client';
 import Image from 'next/image';
-import React, {useEffect, useState} from 'react';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import React, { useEffect, useState } from 'react';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import UpperFooter from '@/components/public/UpperFooter';
 import Link from 'next/link';
-import {getAllQuestions, getAlltags, getQuestionWithTags} from '../../../../lib/frontendapi';
-import {getAllBlogs} from '../../../../lib/blogapi';
+import { getAllQuestions, getAlltags, getQuestionWithTags } from '../../../../lib/frontendapi';
+import { getAllBlogs } from '../../../../lib/blogapi';
 import Blog from '@/components/public/Blog';
 import Question from '@/components/public/Question';
-import {useSearchParams} from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import LegalForumSearch from '../LegalForumSearch';
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 	slug?: string;
 }
 
-export default function LegalForumQuestions({questionsData, slug = ''}: Props) {
+export default function LegalForumQuestions({ questionsData, slug = '' }: Props) {
 	const searchParams = useSearchParams();
 	const [relatedBlogs, setrelatedBlogs]: any = useState([]);
 	const [questions, setquestions]: any = useState(questionsData);
@@ -41,7 +41,7 @@ export default function LegalForumQuestions({questionsData, slug = ''}: Props) {
 	};
 
 	const handleTags = () => {
-		getAlltags({service: slug, count: 30}).then(res => {
+		getAlltags({ service: slug, count: 30 }).then(res => {
 			settags(res.data);
 		});
 	};
@@ -53,7 +53,7 @@ export default function LegalForumQuestions({questionsData, slug = ''}: Props) {
 	};
 
 	useEffect(() => {
-		handleRelatedBlog({service_id: 1, count: 3, order_by: 'random'});
+		handleRelatedBlog({ service_id: 1, count: 3, order_by: 'random' });
 		handleTags();
 		handleQuestionWithTag();
 	}, []);
@@ -135,16 +135,15 @@ export default function LegalForumQuestions({questionsData, slug = ''}: Props) {
 						<div className="row align-items-center" id="get-legal-question">
 							<div className="col-lg-8">
 								<div className="gotalegalquestion">
-									<h4>Got A Legal Question?</h4>
+									<h4>GOT A PROFESSIONAL QUESTION?</h4>
 									<h5>Post your questions for FREE & get advice from multiple lawyers.</h5>
 								</div>
 							</div>
 							<div className="col-lg-4 text-lg-end">
 								<div className="gotalegalquestion">
 									<Link
-										href={`/legal-forum/${slug}/ask-a-lawyer${
-											tag_id !== null ? `/?tag_id=${tag_id}` : ''
-										}`}
+										href={`/legal-forum/${slug}/ask-a-lawyer${tag_id !== null ? `/?tag_id=${tag_id}` : ''
+											}`}
 									>
 										<button className="btn-commn">Ask A Lawyer</button>
 									</Link>

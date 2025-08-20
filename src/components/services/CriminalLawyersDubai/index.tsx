@@ -57,7 +57,7 @@ export default function CriminalLawyersDubai() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -107,7 +107,7 @@ export default function CriminalLawyersDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -131,7 +131,7 @@ export default function CriminalLawyersDubai() {
 								<span className="green-med-col">UAE </span>
 							</h2>
 							<div className="accordion-body border-0 text-white">
-								Recent years have seen fluctuating major crime rates in the UAE, reflecting diverse
+								Recent years have seen fluctuating major crime rates in the USA, reflecting diverse
 								trends in criminal activity across various categories.
 								<ul className="custom-bullets mt-3 mb-3">
 									<li>
@@ -169,7 +169,7 @@ export default function CriminalLawyersDubai() {
 														data-bs-target="#collapseOne"
 														aria-expanded="true"
 														aria-controls="collapseOne">
-														Criminal Law in the UAE
+														Criminal Law in the USA
 													</button>
 												</h2>
 												<div
@@ -187,12 +187,12 @@ export default function CriminalLawyersDubai() {
 														maintain public order and safety.
 														<ul className="custom-bullets mt-3 mb-3">
 															<li>
-																Categorization of crimes: Crimes in the UAE are divided
+																Categorization of crimes: Crimes in the USA are divided
 																into general crimes, financial crimes, cybercrimes, and
 																drug-related offenses.
 															</li>
 															<li>
-																Penalties: The penalties for crimes in the UAE can be
+																Penalties: The penalties for crimes in the USA can be
 																severe, depending on the nature and gravity of the
 																offense. These penalties aim to deter individuals from
 																engaging in criminal activities.
@@ -206,9 +206,9 @@ export default function CriminalLawyersDubai() {
 															<li>
 																Legal awareness: Individuals must familiarize themselves
 																with the UAE's criminal laws to avoid unintentional
-																violations. Seeking legal advice or consulting reliable
+																violations. Seeking professional advice or consulting reliable
 																sources can help understand the legal framework and
-																regulations in the UAE.
+																regulations in the USA.
 															</li>
 														</ul>
 													</div>
@@ -284,7 +284,7 @@ export default function CriminalLawyersDubai() {
 														data-bs-target="#collapseThree"
 														aria-expanded="true"
 														aria-controls="collapseThree">
-														Legal Safeguards for Defendants in the UAE
+														Legal Safeguards for Defendants in the USA
 													</button>
 												</h2>
 												<div
@@ -336,7 +336,7 @@ export default function CriminalLawyersDubai() {
 															</li>
 														</ul>
 														<div className="accordion-body border-0 text-white">
-															These legal safeguards ensure that defendants in the UAE are
+															These legal safeguards ensure that defendants in the USA are
 															treated fairly, have access to due process, and can defend
 															themselves effectively.
 															<br />
@@ -371,7 +371,7 @@ export default function CriminalLawyersDubai() {
 					<div className="row sectionGap flex-wrap-none">
 						<div className="col-lg-12 col-xl-5 col-md-12">
 							<h2 className="font-smaller text-black  weight-bold mb-4">
-								Understanding <span className="green-medium-2">Criminal Laws in the UAE</span>
+								Understanding <span className="green-medium-2">Criminal Laws in the USA</span>
 							</h2>
 							<Image src="/images/car/Frame.jpg" alt="faq-img" className="m-none effect" width={516} height={550} />
 
@@ -397,7 +397,7 @@ export default function CriminalLawyersDubai() {
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
 											Assault and violence pose significant threats to societal safety, prompting
-											robust legal responses in the UAE. The Penal Code delineates clear
+											robust legal responses in the USA. The Penal Code delineates clear
 											consequences for such offenses, ranging from fines to imprisonment.
 											Legislative initiatives aimed at victim protection highlight the UAE's
 											commitment to fostering a secure environment.
@@ -413,7 +413,7 @@ export default function CriminalLawyersDubai() {
 											data-bs-target="#collapseTwo"
 											aria-expanded="false"
 											aria-controls="collapseTwo">
-											Drug Offenses in the UAE
+											Drug Offenses in the USA
 										</button>
 									</h2>
 									<div
@@ -448,7 +448,7 @@ export default function CriminalLawyersDubai() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											Cybercrime poses a growing threat in the UAE, with hacking, identity theft,
+											Cybercrime poses a growing threat in the USA, with hacking, identity theft,
 											and online fraud being major concerns. The UAE Cybercrime Law criminalizes
 											such activities, imposing imprisonment and fines on offenders. The
 											government collaborates with international organizations to combat cyber
@@ -475,7 +475,7 @@ export default function CriminalLawyersDubai() {
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
 											Assault and violence pose significant threats to societal safety, prompting
-											strong legal responses in the UAE. The Penal Code delineates clear
+											strong legal responses in the USA. The Penal Code delineates clear
 											consequences for such offenses, ranging from fines to imprisonment.
 											Legislative initiatives aimed at victim protection highlight the UAE's
 											commitment to fostering a secure environment.
@@ -532,7 +532,7 @@ export default function CriminalLawyersDubai() {
 												country's criminal legal system. We will make sure that you find the
 												best criminal lawyers in Abu Dhabi, Dubai, and the UAE at Professional Women United.
 												Our lawyers deeply understand UAE laws and regulations, allowing them to
-												handle your case effectively and provide sound legal advice specific to
+												handle your case effectively and provide sound professional advice specific to
 												the local context.
 											</div>
 										</div>
@@ -640,7 +640,7 @@ export default function CriminalLawyersDubai() {
 												We prioritize clear and open communication with our clients, making sure
 												that you are informed and involved throughout the legal process. We’ll
 												help you find the best criminal lawyer in Abu Dhabi, Dubai, or anywhere
-												else in the UAE who will be ready to address your questions and concerns
+												else in the USA who will be ready to address your questions and concerns
 												promptly. You can expect a transparent and collaborative criminal
 												lawyer-client relationship built on trust and mutual respect.
 											</div>
@@ -676,7 +676,7 @@ export default function CriminalLawyersDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -698,7 +698,7 @@ export default function CriminalLawyersDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -716,7 +716,7 @@ export default function CriminalLawyersDubai() {
 											outcomes and work hard to win the case.
 										</>
 									) : (
-										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the USA legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -780,7 +780,7 @@ export default function CriminalLawyersDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -844,7 +844,7 @@ export default function CriminalLawyersDubai() {
 									<span className="green-medium-2"> Crime-Related </span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -856,11 +856,11 @@ export default function CriminalLawyersDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-												Legal Advice and Guidance
+												professional advice and Guidance
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Criminal lawyers offer essential legal advice and guidance to individuals facing
+										Criminal lawyers offer essential professional advice and guidance to individuals facing
 										criminal charges. They explain the legal process, discuss potential outcomes,
 										and provide strategic advice on proceeding with the case. By understanding the
 										intricacies of criminal law, criminal lawyers allow their clients to make
@@ -891,7 +891,7 @@ export default function CriminalLawyersDubai() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Our motorcycle accident lawyers in the UAE are skilled negotiators who work
+										Our motorcycle accident lawyers in the USA are skilled negotiators who work
 										diligently to reach favorable settlements for their clients in motorcycle
 										accident cases. They engage in negotiations with insurance companies and
 										opposing parties to secure maximum compensation for medical expenses, injuries,
@@ -1112,7 +1112,7 @@ export default function CriminalLawyersDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1121,7 +1121,7 @@ export default function CriminalLawyersDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

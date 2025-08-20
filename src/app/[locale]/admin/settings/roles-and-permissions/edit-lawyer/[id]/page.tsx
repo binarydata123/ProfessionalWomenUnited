@@ -310,15 +310,15 @@ export default function Page({ params }: { params: { id: string } }) {
 		if (!formData.designation) {
 			newErrors.designation = 'Designation is required';
 		}
-		if (!formData.firm_id) {
-			newErrors.firm_id = 'Company name is required';
-		}
+		// if (!formData.firm_id) {
+		// 	newErrors.firm_id = 'Company name is required';
+		// }
 		if (!formData.bio) {
 			newErrors.bio = 'Bio is required';
 		}
-		if (!formData.jurisdiction) {
-			newErrors.jurisdiction = 'Jurisdiction is required';
-		}
+		// if (!formData.jurisdiction) {
+		// 	newErrors.jurisdiction = 'Jurisdiction is required';
+		// }
 		if (!formData.primary_practice_area) {
 			newErrors.primary_practice_area = 'Practice area is required';
 		}
@@ -817,7 +817,7 @@ export default function Page({ params }: { params: { id: string } }) {
 											{errors.designation}
 										</small>
 									)}
-									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
+									{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
 										Company Name
 									</label>
 									<select
@@ -836,7 +836,7 @@ export default function Page({ params }: { params: { id: string } }) {
 										<small className="error-message text-danger d-block">
 											{errors.firm_id}
 										</small>
-									)}
+									)} */}
 									<label className="font-small weight-medium text-sonic-silver w-100 mt-4 pb-2">
 										Bio
 									</label>
@@ -872,7 +872,7 @@ export default function Page({ params }: { params: { id: string } }) {
 									Tell us about your legal expertise
 								</p>
 
-								<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
+								{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
 									Select Jurisdiction
 								</label>
 								<select
@@ -889,7 +889,7 @@ export default function Page({ params }: { params: { id: string } }) {
 								</select>
 								{errors.jurisdiction && (
 									<small className="error-message text-danger d-block">{errors.jurisdiction}</small>
-								)}
+								)} */}
 								<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
 									Primary Practice Area
 								</label>
@@ -1062,7 +1062,7 @@ export default function Page({ params }: { params: { id: string } }) {
 										</label>
 										<input
 											type="text"
-											placeholder="AED"
+											placeholder="USD"
 											className="form-fild  w-100"
 											value={formData.hourly_rate}
 											onChange={e => setFormData({ ...formData, hourly_rate: e.target.value })}

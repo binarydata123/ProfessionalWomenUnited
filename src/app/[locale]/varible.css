@@ -316,7 +316,7 @@ button:hover {
 	color: var(--green-medium-2) !important;
 }
 .green-medium-dark {
-	color: rgba(9, 63, 56, 1) !important;
+	color: rgba(196, 144, 115) !important;
 }
 
 .boysenberry {
@@ -1111,7 +1111,7 @@ ul.dash-add {
 .btn-tertiary:hover i {
 	position: relative;
 	left: 2px;
-	background: #BE8363;
+	background: #be8363;
 	color: #fff;
 }
 .btn-tertiary.font-small-12 i {
@@ -1121,7 +1121,7 @@ ul.dash-add {
 	transition: 0.6s;
 }
 .menu-border {
-	padding-top: 15px;
+	padding-top: 0px;
 	margin-bottom: 15px;
 }
 ul.list-12 li a svg {
@@ -1178,7 +1178,7 @@ ul.list-12 li a svg {
 	background: #fff !important;
 }
 .back-dash-card:hover .link-button {
-	color: rgb(0,0,0) !important;
+	color: rgb(0, 0, 0) !important;
 }
 .back-dash-card .link-button:hover span.link-button-icon svg {
 	background: #c49073;

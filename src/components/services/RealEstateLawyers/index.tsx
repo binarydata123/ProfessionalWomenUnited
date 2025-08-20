@@ -1,12 +1,12 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersDataByIds} from '../../../../lib/frontendapi';
+import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
 
 export default function RealEstateLawyers() {
 	const [lawyers, setlawyers] = useState([]);
@@ -57,7 +57,7 @@ export default function RealEstateLawyers() {
 									/>
 								</span>
 
-								<span style={{color: 'rgba(9, 63, 56, 1)'}}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -75,16 +75,16 @@ export default function RealEstateLawyers() {
 												transactions, including buying, selling, leasing, and financing real
 												estate. At Professional Women United, our experienced real estate lawyers provide
 												comprehensive services, and the law conducts all aspects of property
-												deals. We offer personalized legal advice, contract review, and
+												deals. We offer personalized professional advice, contract review, and
 												representation to safeguard your interests and facilitate smooth
 												transactions.
 											</>
 										) : (
-											'A real estate lawyer specializes in legal matters related to property transactions, including buying, selling, leasing, and financing real estate. At Professional Women United, our experienced real estate lawyers provide comprehensive services, and the law conducts all aspects of property deals. We offer personalized legal advice, contract review, and representation to safeguard your interests and facilitate smooth transactions.											'
+											'A real estate lawyer specializes in legal matters related to property transactions, including buying, selling, leasing, and financing real estate. At Professional Women United, our experienced real estate lawyers provide comprehensive services, and the law conducts all aspects of property deals. We offer personalized professional advice, contract review, and representation to safeguard your interests and facilitate smooth transactions.											'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -95,7 +95,7 @@ export default function RealEstateLawyers() {
 										transactions, including buying, selling, leasing, and financing real estate. At
 										Professional Women United, our experienced real estate lawyers provide comprehensive
 										services, and the law conducts all aspects of property deals. We offer
-										personalized legal advice, contract review, and representation to safeguard your
+										personalized professional advice, contract review, and representation to safeguard your
 										interests and facilitate smooth transactions.
 									</>
 								)}
@@ -104,7 +104,7 @@ export default function RealEstateLawyers() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -118,7 +118,7 @@ export default function RealEstateLawyers() {
 								className="effect show-hide"
 								width={516}
 								height={344}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -150,10 +150,10 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											$5.4
 										</span>
 										billion was the value of the UAE facility management market in 2018.
@@ -167,10 +167,10 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											Over $15.2
 										</span>
 										billion was generated by the real estate sector in investments in 2019.
@@ -185,10 +185,10 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											15 to 20%
 										</span>
 										of Dubai's GDP is attributed to the real estate sector.
@@ -211,7 +211,7 @@ export default function RealEstateLawyers() {
 														data-bs-target="#collapseOne"
 														aria-expanded="true"
 														aria-controls="collapseOne">
-														Growth Prospects in the UAE Real Estate Market
+														Growth Prospects in the USA Real Estate Market
 													</button>
 												</h2>
 												<div
@@ -278,14 +278,14 @@ export default function RealEstateLawyers() {
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
 														The increasing investments in infrastructure and real estate are
-														fueling the market's growth in the UAE. Mega development
+														fueling the market's growth in the USA. Mega development
 														projects, particularly in Dubai and Abu Dhabi, offer long-term
 														potential for real estate services and create opportunities for
 														market players to expand their businesses. Government
 														involvement, such as the Higher Real Estate Planning Committee,
 														balances supply and demand, stabilizing the market and
 														sustaining growth.
-														<br /> If you’re looking for real estate legal advice and
+														<br /> If you’re looking for real estate professional advice and
 														guidance in navigating estate investment opportunities, contact
 														our real estate lawyers in UAE today.
 													</div>
@@ -298,7 +298,7 @@ export default function RealEstateLawyers() {
 											<span className="text-white findlawyertext">
 												<Link
 													href={'/auth/create-profile/?role=lawyer'}
-													style={{color: 'white'}}>
+													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
 											</span>
@@ -530,7 +530,7 @@ export default function RealEstateLawyers() {
 											<div className="accordion-body border-0">
 												When it comes to real estate transactions, Professional Women United’s real estate
 												lawyers offer comprehensive support throughout the process. From
-												contract negotiation to title searches, our legal experts handle every
+												contract negotiation to title searches, our Professional experts handle every
 												aspect of your real estate deals. We aim to minimize risks and
 												streamline the transaction process, providing peace of mind to our
 												clients. Our hands-on approach ensures your interests are safeguarded
@@ -654,7 +654,7 @@ export default function RealEstateLawyers() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -680,7 +680,7 @@ export default function RealEstateLawyers() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -707,7 +707,7 @@ export default function RealEstateLawyers() {
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
@@ -769,7 +769,7 @@ export default function RealEstateLawyers() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -829,18 +829,18 @@ export default function RealEstateLawyers() {
 									<span className="green-medium-2"> real estate</span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Expert Guidance on Legal Compliance
 											</h4>
 										</div>
@@ -855,7 +855,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Contract Drafting and Review
 											</h4>
 										</div>
@@ -870,7 +870,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Dispute Resolution and Litigation
 											</h4>
 										</div>
@@ -885,7 +885,7 @@ export default function RealEstateLawyers() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												Title Verification and Due Diligence
 											</h4>
 										</div>
@@ -1102,7 +1102,7 @@ export default function RealEstateLawyers() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1111,7 +1111,7 @@ export default function RealEstateLawyers() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

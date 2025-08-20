@@ -90,7 +90,7 @@ export default function Checkout() {
                                         // 'Your 1 month free trial plan has been activated after that amount ' +
                                         'Your 1 month plan has been activated after that amount ' +
                                         plan_amount +
-                                        ' AED will be charge monthly',
+                                        ' USD will be charge monthly',
                                     showConfirmButton: true,
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {
@@ -104,7 +104,7 @@ export default function Checkout() {
                                     text:
                                         'Your payment of amount ' +
                                         plan_amount +
-                                        ' AED for yearly plan has been succesfuly done',
+                                        ' USD for yearly plan has been succesfuly done',
                                     showConfirmButton: true,
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {
@@ -163,11 +163,11 @@ export default function Checkout() {
                         <span className="">
                             {/* {plan_type == 'monthly'
                                 ? 'Start 1 Month Free Trial.'
-                                : `Pay ${Number(plan_amount)} AED`}{' '} */}
+                                : `Pay ${Number(plan_amount)} USD`}{' '} */}
                             {
                                 plan_type === 'monthly'
-                                    ? `Pay ${Number(plan_amount)} AED`
-                                    : `Pay ${Number(plan_amount)} AED`}{' '}
+                                    ? `Pay ${Number(plan_amount)} USD`
+                                    : `Pay ${Number(plan_amount)} USD`}{' '}
                         </span>
                     ) : (
                         <span className="">Processing.. </span>

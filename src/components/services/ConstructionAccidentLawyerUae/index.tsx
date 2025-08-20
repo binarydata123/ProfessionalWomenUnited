@@ -1,14 +1,14 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Head from 'next/head';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersDataByIds} from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
+import { useTranslations } from 'next-intl';
 
 export default function ConstructionAccidentLawyerUae() {
 	const [lawyers, setlawyers] = useState([]);
@@ -61,7 +61,7 @@ export default function ConstructionAccidentLawyerUae() {
 									/>
 								</span>
 
-								<span style={{color: 'rgba(9, 63, 56, 1)'}}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
@@ -85,7 +85,7 @@ export default function ConstructionAccidentLawyerUae() {
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -103,7 +103,7 @@ export default function ConstructionAccidentLawyerUae() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{color: 'white'}}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -117,7 +117,7 @@ export default function ConstructionAccidentLawyerUae() {
 								className="effect show-hide"
 								width={516}
 								height={344}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -142,10 +142,10 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											{t('20%')}
 										</span>
 										{t('of_the_UAE')}
@@ -159,10 +159,10 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											{t('33%')}
 										</span>
 										{t('of_accidents_in Sharjah')}
@@ -177,10 +177,10 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											{t('16%_to_22%')}
 										</span>
 										{t('of_injuries_in Abu Dhabi')}
@@ -283,7 +283,7 @@ export default function ConstructionAccidentLawyerUae() {
 											<span className="text-white findlawyertext">
 												<Link
 													href={'/auth/create-profile/?role=lawyer'}
-													style={{color: 'white'}}>
+													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
 											</span>
@@ -595,7 +595,7 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -621,7 +621,7 @@ export default function ConstructionAccidentLawyerUae() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -646,7 +646,7 @@ export default function ConstructionAccidentLawyerUae() {
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
@@ -706,7 +706,7 @@ export default function ConstructionAccidentLawyerUae() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -771,18 +771,18 @@ export default function ConstructionAccidentLawyerUae() {
 									{t('related_legal_matters')}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Legal_Consultation')}
 											</h4>
 										</div>
@@ -793,7 +793,7 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Investigation and Evidence')}
 											</h4>
 										</div>
@@ -804,7 +804,7 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Negotiation')}
 											</h4>
 										</div>
@@ -815,7 +815,7 @@ export default function ConstructionAccidentLawyerUae() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Litigation')}
 											</h4>
 										</div>
@@ -1007,7 +1007,7 @@ export default function ConstructionAccidentLawyerUae() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1016,7 +1016,7 @@ export default function ConstructionAccidentLawyerUae() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

@@ -28,7 +28,7 @@ export default function LegalForum({ serviceData, blogsData, tagsData, TotalQues
 					<div className="row align-items-center">
 						<div className="col-lg-6">
 							<div className="gotalegalquestion">
-								<h4>Got A Legal Question?</h4>
+								<h4>GOT A PROFESSIONAL QUESTION?</h4>
 								<h5>Post your questions for FREE & get advice from multiple lawyers.</h5>
 							</div>
 						</div>

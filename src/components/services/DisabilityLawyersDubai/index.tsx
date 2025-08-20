@@ -1,13 +1,13 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersDataByIds} from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
+import { useTranslations } from 'next-intl';
 
 export default function DisabilityLawyersDubai() {
 	const t = useTranslations('disabilityLawyer');
@@ -59,7 +59,7 @@ export default function DisabilityLawyersDubai() {
 									/>
 								</span>
 
-								<span style={{color: 'rgba(9, 63, 56, 1)'}}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
@@ -78,7 +78,7 @@ export default function DisabilityLawyersDubai() {
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -91,7 +91,7 @@ export default function DisabilityLawyersDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -105,7 +105,7 @@ export default function DisabilityLawyersDubai() {
 								className="effect show-hide"
 								width={516}
 								height={344}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -123,7 +123,7 @@ export default function DisabilityLawyersDubai() {
 							<p className="weight-light font-medium text-white mt-3">
 								{t('People_with_disabilities_have')}{' '}
 								<Link
-									style={{color: '#BAE3DD'}}
+									style={{ color: '#BAE3DD' }}
 									href="https://disabilityin.org/country/uae/#:~:text=There%20are%20no%20official%20statistics,various%20foreign%20expatriates%20[9]."
 									target="_blank">
 									following numbers.
@@ -138,10 +138,10 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											15,782
 										</span>
 										{t('of_these_individuals')}
@@ -155,10 +155,10 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											62%
 										</span>
 										{t('percent_of_these_individuals')}
@@ -173,10 +173,10 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgb(249,242,239)'}}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
-											style={{marginRight: '10px', color: '#fff'}}>
+											style={{ marginRight: '10px', color: '#fff' }}>
 											5,913
 										</span>
 										{t('of_these_individuals')}
@@ -265,7 +265,7 @@ export default function DisabilityLawyersDubai() {
 											<span className="text-white findlawyertext">
 												<Link
 													href={'/auth/create-profile/?role=lawyer'}
-													style={{color: 'white'}}>
+													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
 											</span>
@@ -577,7 +577,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -603,7 +603,7 @@ export default function DisabilityLawyersDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -623,7 +623,7 @@ export default function DisabilityLawyersDubai() {
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
@@ -678,7 +678,7 @@ export default function DisabilityLawyersDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -742,18 +742,18 @@ export default function DisabilityLawyersDubai() {
 									{t('Related_legal_matters')}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Accommodation_and_Accessibility_Advocacy')}
 											</h4>
 										</div>
@@ -764,7 +764,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Assistance_with_Disability_Benefit_Claims')}
 											</h4>
 										</div>
@@ -775,7 +775,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Representation_in_Disability_Appeals')}
 											</h4>
 										</div>
@@ -786,7 +786,7 @@ export default function DisabilityLawyersDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Educational_Advocacy_for_Students_with_Disabilities')}
 											</h4>
 										</div>
@@ -956,7 +956,7 @@ export default function DisabilityLawyersDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -965,7 +965,7 @@ export default function DisabilityLawyersDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

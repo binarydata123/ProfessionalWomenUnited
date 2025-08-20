@@ -57,7 +57,7 @@ export default function UberAccidentLawyerDubai() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -108,7 +108,7 @@ export default function UberAccidentLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -495,7 +495,7 @@ export default function UberAccidentLawyerDubai() {
 											<div className="accordion-body border-0">
 												Professional Women United has a proven track record of successfully obtaining
 												favorable settlements and verdicts for Uber accident victims. Our Uber
-												accident lawyers in the UAE have successfully represented numerous
+												accident lawyers in the USA have successfully represented numerous
 												clients and helped them recover the compensation they deserve for their
 												injuries and damages.
 											</div>
@@ -582,7 +582,7 @@ export default function UberAccidentLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -603,7 +603,7 @@ export default function UberAccidentLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -626,7 +626,7 @@ export default function UberAccidentLawyerDubai() {
 											victims in Dubai.
 										</>
 									) : (
-										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the UAE legal industry. Our team comprises'
+										'At Professional Women United, we are proud to house some of the top motorcycle accident lawyers in the USA legal industry. Our team comprises'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -695,7 +695,7 @@ export default function UberAccidentLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -759,7 +759,7 @@ export default function UberAccidentLawyerDubai() {
 									<span className="green-medium-2"> uber accident</span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -1054,7 +1054,7 @@ export default function UberAccidentLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1063,7 +1063,7 @@ export default function UberAccidentLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

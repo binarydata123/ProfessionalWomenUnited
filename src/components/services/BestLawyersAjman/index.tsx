@@ -1,13 +1,13 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersDataByIds} from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
+import { useTranslations } from 'next-intl';
 
 export default function BestLawyersAjman() {
 	const [lawyers, setlawyers] = useState([]);
@@ -58,7 +58,7 @@ export default function BestLawyersAjman() {
 									/>
 								</span>
 
-								<span style={{color: 'rgba(9, 63, 56, 1)'}}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
@@ -77,11 +77,11 @@ export default function BestLawyersAjman() {
 												{t('Browse_through_our')}
 											</>
 										) : (
-											'Discover the best lawyers in Ajman effortlessly with Professional Women United. We are your go-to platform for connecting with top-tier legal professionals in the region. With our user-friendly interface and streamlined process, you can easily find the perfect lawyer who meets your specific needs and enjoy hassle-free legal services from start to finish'
+											'Discover the best lawyers in Ajman effortlessly with Professional Women United. We are your go-to platform for connecting with top-tier legal professionals in the region. With our user-friendly interface and streamlined process, you can easily find the perfect lawyer who meets your specific needs and enjoy hassle-free professional services from start to finish'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -98,7 +98,7 @@ export default function BestLawyersAjman() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -112,7 +112,7 @@ export default function BestLawyersAjman() {
 								className="effect show-hide"
 								width={516}
 								height={344}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -269,7 +269,7 @@ export default function BestLawyersAjman() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -295,7 +295,7 @@ export default function BestLawyersAjman() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -318,7 +318,7 @@ export default function BestLawyersAjman() {
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
@@ -377,7 +377,7 @@ export default function BestLawyersAjman() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -438,18 +438,18 @@ export default function BestLawyersAjman() {
 									{t('Help_Me')}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Providing_Comprehensive_Legal_Analysis_and_Strategy')}
 											</h4>
 										</div>
@@ -460,7 +460,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Navigating_Cultural_and_Regulatory_Nuances')}
 											</h4>
 										</div>
@@ -471,7 +471,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Offering_Personalized_Client_Care_and_Support')}
 											</h4>
 										</div>
@@ -482,7 +482,7 @@ export default function BestLawyersAjman() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Providing_Access_to_Alternative_Dispute_Resolution')}
 											</h4>
 										</div>
@@ -677,7 +677,7 @@ export default function BestLawyersAjman() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -686,7 +686,7 @@ export default function BestLawyersAjman() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

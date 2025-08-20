@@ -1,13 +1,13 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersData} from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { getAllLawyersData } from '../../../../lib/frontendapi';
+import { useTranslations } from 'next-intl';
 
 export default function DivorceLawyersAbuDhabi() {
 	const [lawyers, setlawyers] = useState([]);
@@ -60,7 +60,7 @@ export default function DivorceLawyersAbuDhabi() {
 											height={16}
 										/>
 									</span>
-									<span style={{color: 'rgba(9, 63, 56, 1)'}}>{t('Find_a_Lawyer')}</span>
+									<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 								</div>
 							</div>
 						</section>
@@ -81,11 +81,11 @@ export default function DivorceLawyersAbuDhabi() {
 												{t('At_Connect_Legal,_we_connect ')}
 											</>
 										) : (
-											'A divorce lawyer assists clients with the legal process of ending a marriage, handling issues such as asset division, spousal support, and child custody. They provide legal advice, represent clients in court, and work to negotiate fair settlements.'
+											'A divorce lawyer assists clients with the legal process of ending a marriage, handling issues such as asset division, spousal support, and child custody. They provide professional advice, represent clients in court, and work to negotiate fair settlements.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -102,7 +102,7 @@ export default function DivorceLawyersAbuDhabi() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{color: 'white'}}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -116,7 +116,7 @@ export default function DivorceLawyersAbuDhabi() {
 								className="effect show-hide"
 								width={624}
 								height={415}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -216,7 +216,7 @@ export default function DivorceLawyersAbuDhabi() {
 							<div className="about-btn-two mt-lg-5 mt-5 ">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue mb-5 ">
 									<span className="text-white">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{color: 'white'}}>
+										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -534,7 +534,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -580,7 +580,7 @@ export default function DivorceLawyersAbuDhabi() {
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
@@ -639,7 +639,7 @@ export default function DivorceLawyersAbuDhabi() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -665,7 +665,7 @@ export default function DivorceLawyersAbuDhabi() {
 					<p className="font-medium weight-light social-link mt-3">
 						{t('Individuals_seeking_legal_information ')}
 					</p>
-					<h5 className="mt-4" style={{color: '#4F4F4F'}}>
+					<h5 className="mt-4" style={{ color: '#4F4F4F' }}>
 						{t('Select_the_legal_issue')}
 					</h5>
 					<ul className="pt-3 class-add">
@@ -707,18 +707,18 @@ export default function DivorceLawyersAbuDhabi() {
 								</h2>
 								{/* Hiring a divorce lawyer provides */}
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Navigating_Divorce_Procedures')}
 											</h4>
 										</div>
@@ -729,7 +729,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Advocating_for_Child_Custody_and_Visitation_Rights')}
 											</h4>
 										</div>
@@ -740,7 +740,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Handling_Alimony_and_Spousal_Support')}
 											</h4>
 										</div>
@@ -751,7 +751,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Dividing_Marital_Property')}
 											</h4>
 										</div>
@@ -943,7 +943,7 @@ export default function DivorceLawyersAbuDhabi() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -952,7 +952,7 @@ export default function DivorceLawyersAbuDhabi() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Abu Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

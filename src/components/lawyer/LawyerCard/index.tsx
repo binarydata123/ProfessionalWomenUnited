@@ -86,7 +86,7 @@ export default function LawyerCard({
 						</div>
 
 						<div className="portfolioDisc_data row">
-							
+
 
 							{lawyer?.is_new == 1 && (
 								<div className="freeconsultation_new bg-change cursor-pointer col-3 ">
@@ -100,28 +100,27 @@ export default function LawyerCard({
 								</div>
 							)}
 						</div>
-						<div 
-						// className="lawyer-img-set-mobile"
-						className={
-							lawyer?.profile_image ? "lawyer-img-set-mobile" : "lawyer-dummy-image"
-						  }
-						 style={{
-							// backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer?.profile_image}`,
-							backgroundImage: `url(${
-								lawyer?.profile_image
-								  ? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-								  : "/images/find-A-lawyer/second.png"
-							  })`,
-							backgroundSize: 'contain',
-							backgroundRepeat: 'no-repeat',
-							backgroundPosition: 'center top',
-						}}>
+						<div
+							// className="lawyer-img-set-mobile"
+							className={
+								lawyer?.profile_image ? "lawyer-img-set-mobile" : "lawyer-dummy-image"
+							}
+							style={{
+								// backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer?.profile_image}`,
+								backgroundImage: `url(${lawyer?.profile_image
+									? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
+									: "/images/Jessica-Ramirez.jpg"
+									})`,
+								backgroundSize: 'cover',
+								backgroundRepeat: 'no-repeat',
+								backgroundPosition: 'center top',
+							}}>
 						</div>
 					</div>
 
 				</Link>
 				<Link href={`/find-a-professional/${lawyer?.slug}`}>
-					<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{textDecoration:'none'}}>
+					<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ textDecoration: 'none' }}>
 						{lawyer?.full_name}
 						{isOnline}
 					</h3>
@@ -168,9 +167,9 @@ export default function LawyerCard({
 
 				<div className="btn-family-more">
 					{lawyer?.service_name && (
-						<Link href={`/legal-services/${lawyer?.service_slug}`}>
-							<button> {lawyer?.service_name.split(',')[0]} Law</button>
-						</Link>
+						// <Link href={`/legal-services/${lawyer?.service_slug}`}>
+						// </Link>
+						<button> {lawyer?.service_name.split(',')[0]} Profession</button>
 					)}
 					<span className="view-more-btn" onClick={() => handleSingleLawyerDetails(lawyer.id)}>
 						More details
@@ -189,10 +188,13 @@ export default function LawyerCard({
 							<div className="testimonial">
 								<div className="pic position-relative lawyer-img">
 									<ImageComponent
-										src={`${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer?.profile_image}`}
-										placeholderImgUrl={
+										src={
+											lawyer?.profile_image
+												? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
+												: '/images/Jessica-Ramirez.jpg'
+										} placeholderImgUrl={
 											process.env.NEXT_PUBLIC_IMAGE_URL +
-											`/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+											`/images/default/${lawyer.gender == 'female' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
 											}`
 										}
 										alt="user-popup"
@@ -248,7 +250,7 @@ export default function LawyerCard({
 									{lawyer?.service_name &&
 										lawyer.service_name.split(',').map((service: any, index: any) => (
 											<button className="mx-1" key={index}>
-												{service} Law
+												{service} Profession
 											</button>
 										))}
 
@@ -283,10 +285,10 @@ export default function LawyerCard({
 					<div className="detail-fil">
 						<div className="About-detail">
 							<h3>About {single_lawyer?.full_name}</h3>
-							<p className="mb-3">
+							{/* <p className="mb-3">
 								<Image src="/images/map.png" alt="map icon image" width={20} height={20} />
 								Legal Jurisdiction: <span>{single_lawyer?.jurisdiction_name}</span>
-							</p>
+							</p> */}
 						</div>
 
 						<div className="more-detail">
@@ -316,7 +318,7 @@ export default function LawyerCard({
 
 
 
-							{single_lawyer?.hourly_rate_range && (
+							{/* {single_lawyer?.hourly_rate_range && (
 								<>
 									<h3 className="pb-0">Cost</h3>
 									<p>Hourly Rates</p>
@@ -333,7 +335,7 @@ export default function LawyerCard({
 										{single_lawyer?.payment_method}
 									</div>
 								</>
-							)}
+							)} */}
 						</div>
 					</div>
 				</div>

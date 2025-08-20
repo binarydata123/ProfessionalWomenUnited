@@ -48,7 +48,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/banking" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Banking_Law')}
@@ -91,7 +91,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/business" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Business_Law')}
@@ -126,7 +126,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/commercial" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Commercial_Law')}
@@ -172,7 +172,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/inheritance" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Inheritance_Law')}
@@ -213,7 +213,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/civil" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Civil_Law')}
@@ -227,7 +227,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 								</Link>
 							</li>
 							{/* <li>
-								<Link href="/find-a-lawyer" className="set-color-sub-menus" onClick={onclose}>
+								<Link href="/find-a-professional" className="set-color-sub-menus" onClick={onclose}>
 									Accident Professionals
 								</Link>
 							</li> */}
@@ -358,7 +358,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/family" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Family_Law')}
@@ -423,7 +423,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/rental-dispute-lawyer-dubai" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Dispute_Resolution_Law')}
@@ -465,7 +465,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/islamic-finance" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Islamic_Finance_Law')}
@@ -512,7 +512,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="#" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Maritime_Law')}
@@ -545,7 +545,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/employment" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Employment_Law')}
@@ -586,7 +586,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/real-estate" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Real_Estate_Law')}
@@ -627,7 +627,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/criminal" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Criminal_Law')}
@@ -668,7 +668,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 									<Link href="/legal-services/intellectual-property" onClick={onclose}>
 										<h6
 											style={{
-												color: 'rgba(9, 63, 56, 1)',
+												color: 'rgba(196,144,115)',
 												fontWeight: '700'
 											}}>
 											{t('Intellectual_Property_Law')}

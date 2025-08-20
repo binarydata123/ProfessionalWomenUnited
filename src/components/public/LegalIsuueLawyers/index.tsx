@@ -33,7 +33,7 @@ export default function LegalIsuueLawyers({ relatedLawyers, service = '' }: Prop
 			<div className="container">
 				<div className="needlawyer-text">
 					<h1 className="text-start">
-						Top legal experts
+						Top Professional experts
 						<span className="span">
 							{" "}to <br />
 							resolve your issue

@@ -49,7 +49,7 @@ export default function UserDashboard() {
 						</p>
 					</div>
 					<div className="col-lg-4 col-md-12 text-right tab-left">
-						<Link href="/find-a-lawyer">
+						<Link href="/find-a-professional">
 							<DefaultButton className=" mt-3">Find A Professional </DefaultButton>
 						</Link>
 					</div>
@@ -103,16 +103,16 @@ export default function UserDashboard() {
 									<div className="row">
 										<div className="col-sm-12">
 											<div className="left-bottom-bg inner-content p-3">
-												<h2>Got A Legal Question?</h2>
+												<h2>GOT A PROFESSIONAL QUESTION?</h2>
 												<p className="mt-3">
 													Contribute to our legal community & grow your reach by sharing your
 													expertise.{' '}
 												</p>
-												<Link href="/find-a-lawyer">
+												<Link href="/find-a-professional">
 													<DefaultButton
 														className="w-100"
 														color="rgba(196,144,115, 1)"
-														background="rgba(9, 63, 56, 1)"
+														background="rgba(196,144,115)"
 													>
 														Ask A Professional
 													</DefaultButton>

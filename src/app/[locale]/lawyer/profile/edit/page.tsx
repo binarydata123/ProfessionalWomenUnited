@@ -1085,7 +1085,7 @@ export default function Page() {
 									</label>
 									<input
 										type="text"
-										placeholder="AED"
+										placeholder="USD"
 										className="form-fild  w-100"
 										value={formData.hourly_rate}
 										onChange={e => setFormData({ ...formData, hourly_rate: e.target.value })}

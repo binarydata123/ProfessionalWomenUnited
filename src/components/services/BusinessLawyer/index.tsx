@@ -69,7 +69,7 @@ export default function BusinessLawyer() {
 										/>
 									</span> */}
 
-									<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+									<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 								</div>
 							</div>
 						</section>
@@ -82,7 +82,7 @@ export default function BusinessLawyer() {
 									<>
 										{showFullText ? (
 											<>
-												A business lawyer is a legal professional who provides legal advice and
+												A business lawyer is a legal professional who provides professional advice and
 												representation to businesses and corporations. They handle a wide range
 												of legal matters related to business operations, including contract
 												drafting and negotiation, corporate governance, mergers and
@@ -93,7 +93,7 @@ export default function BusinessLawyer() {
 												ensuring compliance with relevant laws and regulations.
 											</>
 										) : (
-											'A business lawyer is a legal professional who provides legal advice and representation to businesses and corporations. They handle a wide range of legal matters related to business operations, including contract drafting and negotiation, corporate governance, mergers and acquisitions, and dispute resolution.'
+											'A business lawyer is a legal professional who provides professional advice and representation to businesses and corporations. They handle a wide range of legal matters related to business operations, including contract drafting and negotiation, corporate governance, mergers and acquisitions, and dispute resolution.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -104,7 +104,7 @@ export default function BusinessLawyer() {
 									</>
 								) : (
 									<>
-										A business lawyer is a legal professional who provides legal advice and
+										A business lawyer is a legal professional who provides professional advice and
 										representation to businesses and corporations. They handle a wide range of legal
 										matters related to business operations, including contract drafting and
 										negotiation, corporate governance, mergers and acquisitions, and dispute
@@ -120,7 +120,7 @@ export default function BusinessLawyer() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -202,7 +202,7 @@ export default function BusinessLawyer() {
 											<div className="accordion-body border-0 text-white">
 												Dubai's e-commerce market is experiencing robust growth, driven by
 												increasing internet penetration, high smartphone usage, and a tech-savvy
-												consumer base. With online sales projected to reach AED 100 billion (USD
+												consumer base. With online sales projected to reach USD 100 billion (USD
 												27 billion) by 2022, entrepreneurs have significant opportunities to tap
 												into this lucrative market. Whether setting up online retail platforms
 												or providing logistics and payment solutions, e-commerce ventures in
@@ -574,7 +574,7 @@ export default function BusinessLawyer() {
 												strategic guidance and advice to help you make informed decisions that
 												benefit your business in the long term. Whether dealing with a
 												contractual dispute or exploring growth opportunities, we provide
-												valuable business legal advice and recommendations to guide your
+												valuable business professional advice and recommendations to guide your
 												business forward.
 											</div>
 										</div>
@@ -627,7 +627,7 @@ export default function BusinessLawyer() {
 												We understand the importance of cost-effectiveness for businesses, which
 												is why we offer transparent pricing and strive to provide efficient
 												legal solutions that deliver value for your investment. By partnering
-												with Professional Women United, you can access high-quality business legal advice
+												with Professional Women United, you can access high-quality business professional advice
 												and services that are tailored to your budget and designed to help your
 												business thrive in today's competitive market.
 											</div>
@@ -637,7 +637,7 @@ export default function BusinessLawyer() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -752,7 +752,7 @@ export default function BusinessLawyer() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -817,7 +817,7 @@ export default function BusinessLawyer() {
 									<span className="green-medium-2"> business</span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -867,7 +867,7 @@ export default function BusinessLawyer() {
 										<div className="text-start Discover-lawyer" />
 										Business lawyers play a vital role in facilitating mergers and acquisitions by
 										conducting due diligence, structuring transactions, and negotiating deals on
-										behalf of their clients. In the UAE, experienced business lawyers navigate the
+										behalf of their clients. in the USA, experienced business lawyers navigate the
 										complexities of local regulations and cultural nuances to facilitate smooth
 										transactions. They help businesses evaluate risks, negotiate favorable terms,
 										and confirm compliance with regulatory requirements, ultimately allowing for
@@ -1036,7 +1036,7 @@ export default function BusinessLawyer() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													If you need urgent legal help, please contact our office as soon as
-													possible. Our team is available to provide prompt legal advice and
+													possible. Our team is available to provide prompt professional advice and
 													support, helping you address any urgent legal matters or emergencies
 													efficiently. We prioritize responsiveness and are committed to
 													assisting our clients whenever they need us.
@@ -1098,7 +1098,7 @@ export default function BusinessLawyer() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1107,7 +1107,7 @@ export default function BusinessLawyer() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

@@ -300,9 +300,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 												<Image
 													// src={getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)}
 													src={
-														getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender) 
+														getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)
 														|| "/images/female-lawyer-180x180.png"
-													  }
+													}
 													alt={lawyer.full_name}
 													width={180}
 													height={180}
@@ -365,7 +365,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 														<div className="atypebtn mt-2 text-start">
 															<div className="d-flex">
 																{lawyer.service_name && (
-																	<p>{lawyer.service_name} Law</p>
+																	<p>{lawyer.service_name} Profession</p>
 																)}
 																{lawyer.license_for_years && (
 																	<p>Licensed for {lawyer.license_for_years} years</p>

@@ -568,7 +568,7 @@ export default function popup() {
 
 									<p className="weight-light font-small color-light mt-2">Hourly Rates</p>
 									<p className="modal-title font-large weight-bold  green-medium-2 ">
-										AED 500 - AED 1000/hr
+										USD 500 - USD 1000/hr
 									</p>
 
 									<p className="weight-light font-small color-light mt-2">Payment Methods</p>
@@ -1019,7 +1019,7 @@ export default function popup() {
 
 									<p className="weight-light font-small color-light mt-2">Hourly Rates</p>
 									<p className="modal-title font-large weight-bold  green-medium-2 ">
-										AED 500 - AED 1000/hr
+										USD 500 - USD 1000/hr
 									</p>
 
 									<p className="weight-light font-small color-light mt-2">Payment Methods</p>

@@ -167,7 +167,7 @@ export default function support() {
 							onChange={e => handleChange('user_type', e.target.value, user_id)}
 						>
 							<option value={''}>User</option>
-							<option value={'lawyer'}>Lawyer</option>
+							<option value={'lawyer'}>Professional</option>
 							<option value={'individual'}>Individual</option>
 						</select>
 					</div>

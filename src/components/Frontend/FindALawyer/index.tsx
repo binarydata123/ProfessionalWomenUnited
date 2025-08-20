@@ -6,7 +6,7 @@ import DropDown from '@/commonUI/DropDown';
 import FormInput from '@/commonUI/FormInput';
 import Popup from '@/commonUI/Popup';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import './find-a-lawyer.css';
+import './find-a-professional.css';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
@@ -236,7 +236,7 @@ export default function Page({ filterlawyer }: Props) {
 								/>
 							</li>
 							<li>
-								<Link href="/find-a-lawyer" >
+								<Link href="/find-a-professional" >
 									<h1 className="active">Find a professional</h1>
 								</Link>
 							</li>

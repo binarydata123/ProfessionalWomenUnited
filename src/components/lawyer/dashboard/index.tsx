@@ -219,7 +219,7 @@ export default function LawyerDashboard() {
 									Professional Women United!
 								</h3>
 								<p>
-									Connect with lawyers or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
+									Connect with Professionals or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
 								</p>
 								<Link href={'/lawyer/profile/edit'}>
 									<button className="w-100 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 mt-4">

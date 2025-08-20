@@ -43,7 +43,13 @@ export default function LatestBlog({ latestBlog }: Props) {
 									) : latestBlogData?.image ? (
 										<ImageComponent
 											className="w-100"
-											src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${latestBlogData?.image}`}
+											// src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${latestBlogData?.image}`}
+											src={
+												latestBlogData?.image
+													? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${latestBlogData.image}`
+													: `${process.env.NEXT_PUBLIC_BASE_URL}/images/624x351.png`
+											}
+
 											placeholderImgUrl={
 												process.env.NEXT_PUBLIC_BASE_URL + `/images/624x351.png`
 											}

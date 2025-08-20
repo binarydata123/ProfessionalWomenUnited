@@ -78,7 +78,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 		<>
 			<section className="blog-section start">
 				<div className="container">
-					<div className="text-left-line text-start pt-lg-5 mt-2">
+					<div className="text-left-line text-start pt-lg-5 mt-5">
 						{isLoading ? (
 							<div
 								style={{
@@ -213,9 +213,9 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 							</div>
 							<section className="connect-with-lawyes">
 								<div className="connect-title">
-									<h4>Connect with lawyers & seek expert legal advice</h4>
+									<h4>Connect with Professionals & seek expert professional advice</h4>
 									<p>Check out how we can offer this service to you.</p>
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-commn bg-color">Find A Professional</button>
 									</Link>
 								</div>
@@ -286,9 +286,9 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 							) : (
 								<div className={`profile-data profile-d-change ${isSticky ? 'sticky-profile' : ''}`}>
 									<div className={`left-bar-image ccc `}>
-										<h6>GOT A LEGAL QUESTION?</h6>
+										<h6 style={{ color: '#fff' }}>GOT A PROFESSIONAL QUESTION?</h6>
 										<p>Post a question for free on our Legal Forum</p>
-										<Link href="/ask-a-lawyer">
+										<Link href="/find-a-professional">
 											<button className="w-100 btn-get-free btn-commn bg-color d-flex align-items-center justify-content-center gap-2 mt-5">
 												<span>Ask A Question</span>
 												<span className="border border-radius-1 banner-arrow-btn">
@@ -371,9 +371,9 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 			>
 				<section className="connect-with-lawyes-popup text-center" >
 					<div className="connect-title">
-						<h4 className='green-med-pop text-center need-advice-txt' >Need Legal Advice?</h4>
-						<p className='text-white text-center pop-dis'>Connect with top professionals in the UAE and get the expert help you need.</p>
-						<Link href={'/find-a-lawyer'} >
+						<h4 className='green-med-pop text-center need-advice-txt' >Need Professional Advice?</h4>
+						<p className='text-white text-center pop-dis'>Connect with top professionals in the USA and get the expert help you need.</p>
+						<Link href={'/find-a-professional'} >
 							<button className="btn-get-free btn-commn mx-auto m-w-full">
 								Find A Professional</button>
 						</Link>

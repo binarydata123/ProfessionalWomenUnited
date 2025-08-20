@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 	return {
 		title: meta.data.service.seo_meta_title
 			? meta.data.service.seo_meta_title
-			: `Legal Services | ${process.env.NEXT_APP_NAME}`,
+			: `professional services | ${process.env.NEXT_APP_NAME}`,
 		description: meta.data.service.seo_meta_description
 			? meta.data.service.seo_meta_description
 			: `${process.env.NEXT_APP_NAME}`,
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 		openGraph: {
 			title: meta.data.service.seo_meta_title
 				? meta.data.service.seo_meta_title
-				: `Legal Services | ${process.env.NEXT_APP_NAME}`,
+				: `professional services | ${process.env.NEXT_APP_NAME}`,
 			description: meta.data.service.seo_meta_description
 				? meta.data.service.seo_meta_description
 				: `${process.env.NEXT_APP_NAME}`,

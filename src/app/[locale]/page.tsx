@@ -61,7 +61,7 @@ export default async function Page() {
 			],
 		},
 		{
-			name: "Legal Services",
+			name: "professional services",
 			image: "Belashia-Wallace.jpg",
 			slug: "legal-services",
 			tags: [
@@ -214,7 +214,7 @@ export default async function Page() {
 			verified: true
 		}
 	];
-	  
+
 	return (
 		<>
 			<div className="landing-page-wrapper">
@@ -225,7 +225,7 @@ export default async function Page() {
 					<DirectoryTabs />
 
 					<section >
-					{/* <section id="silder-section"> */}
+						{/* <section id="silder-section"> */}
 						<div className="container">
 							{/* <div className="needlawyer-text">
 								<h6 className="text-start">TOP LEGAL PROFESSIONAL</h6>
@@ -280,7 +280,7 @@ export default async function Page() {
 									)} */}
 									<ProfessionalCard />
 									<div className="text-end all-btn">
-										{/* <Link href="/find-a-lawyer"> */}
+										{/* <Link href="/find-a-professional"> */}
 										<button>{t('view_all')}</button>
 									</div>
 								</div>
@@ -361,15 +361,15 @@ export default async function Page() {
 					{/* <ProfessionalDirectory/> */}
 					<section id="needlawyer">
 						{/* <div className="container"> */}
-							<div className="row">
-								
-								<div className="col-md-12">
-									<div className="needlawyer-text pt-lg-0 pt-4 hover">
-									
-										<MapChart/>
-									</div>
+						<div className="row">
+
+							<div className="col-md-12">
+								<div className="needlawyer-text pt-lg-0 pt-4 hover">
+
+									<MapChart />
 								</div>
 							</div>
+						</div>
 						{/* </div> */}
 					</section>
 				</div>

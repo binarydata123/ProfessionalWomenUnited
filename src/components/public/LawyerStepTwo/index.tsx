@@ -56,7 +56,7 @@ export default function LawyerStepTwo() {
 		jurisdiction_id: '', // Assign a default number value here
 		phone_number: '',
 		location: '', // Assign a default number value here
-		gender: '',
+		gender: 'female',
 		service_id: '', // Assign a default number value here
 		profile_status: ''
 	});
@@ -174,9 +174,9 @@ export default function LawyerStepTwo() {
 
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
-		if (!formData.license_number) {
-			newErrors.license_number = 'License number is required';
-		}
+		// if (!formData.license_number) {
+		// 	newErrors.license_number = 'License number is required';
+		// }
 		if (!formData.designation) {
 			newErrors.designation = 'Designation is required';
 		}
@@ -195,9 +195,9 @@ export default function LawyerStepTwo() {
 		if (!formData.location) {
 			newErrors.location = 'Location is required';
 		}
-		if (!formData.gender) {
-			newErrors.gender = 'Gender is required';
-		}
+		// if (!formData.gender) {
+		// 	newErrors.gender = 'Gender is required';
+		// }
 
 		setErrors(newErrors);
 		return Object.keys(newErrors).length === 0;
@@ -218,7 +218,8 @@ export default function LawyerStepTwo() {
 				service_id: formData.service_id,
 				phone_number: formData.phone_number,
 				location: formData.location,
-				gender: formData.gender,
+				// gender: formData.gender,
+				gender: 'female',
 				firm_id: selectedLawFirmId,
 				firm_owner: selectedLawFirmId ? true : false,
 				profile_status: '',
@@ -337,7 +338,7 @@ export default function LawyerStepTwo() {
 									<div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2">
-												License Number*
+												License Number
 											</label>
 											<input
 												type="text"
@@ -351,11 +352,11 @@ export default function LawyerStepTwo() {
 													})
 												}
 											/>
-											{errors.license_number && (
+											{/* {errors.license_number && (
 												<small className="error-message text-danger d-block">
 													{errors.license_number}
 												</small>
-											)}
+											)} */}
 										</div>
 									</div>
 									<div className="col-md-12">
@@ -383,10 +384,10 @@ export default function LawyerStepTwo() {
 											)}
 										</div>
 									</div>
-									<div className="col-md-12">
+									{/* <div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
-												Law Firm Name*
+												Name*
 											</label>
 											<input
 												type="text"
@@ -432,7 +433,7 @@ export default function LawyerStepTwo() {
 												</small>
 											)}
 										</div>
-									</div>
+									</div> */}
 									{/* <div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
@@ -505,7 +506,7 @@ export default function LawyerStepTwo() {
 											<ReactPhoneInput
 												inputClass="form-control"
 												value={formData.phone_number}
-												country={"ae"}
+												country={"us"}
 												onChange={value => setFormData({ ...formData, phone_number: value })}
 											/>
 											{errors.phone_number && (
@@ -523,13 +524,16 @@ export default function LawyerStepTwo() {
 											<div className="bg-fff">
 												<select
 													className="form-fild w-100"
-													value={formData.gender}
-													onChange={e => setFormData({ ...formData, gender: e.target.value })}
+													// value={formData.gender}
+													// onChange={e => setFormData({ ...formData, gender: e.target.value })}
+													value="female"
+													disabled
 												>
-													<option value="">Select Gender</option>
+													{/* <option value="">Select Gender</option>
 													<option value="male">Male</option>
 													<option value="female">Female</option>
-													<option value="other">Other</option>
+													<option value="other">Other</option> */}
+													<option value="female">Female</option>
 												</select>
 												<span className="select-icon entypo-arrow-combo" />
 											</div>

@@ -27,7 +27,7 @@ export default function LawyersList() {
 								Free Consultation<div className="blinking"></div>
 							</div>
 							<Image
-								src="/images/find-A-lawyer/profile-Picture.jpg"
+								src="/images/find-a-professional/profile-Picture.jpg"
 								alt="profile-Picture"
 								width={1200}
 								height={380}
@@ -79,7 +79,7 @@ export default function LawyersList() {
 								<Image src="/images/contact/blink.svg" alt="blink" width={25} height={25} />
 							</div>
 							<Image
-								src="/images/find-A-lawyer/second.png"
+								src="/images/find-a-professional/second.png"
 								alt="Avi Hassan"
 								width={1200}
 								height={380}
@@ -125,7 +125,7 @@ export default function LawyersList() {
 								</Link>
 							</div>
 							<Image
-								src="/images/find-A-lawyer/women.png"
+								src="/images/find-a-professional/women.png"
 								alt="Company Name"
 								width={1200}
 								height={380}
@@ -171,7 +171,7 @@ export default function LawyersList() {
 								</Link>
 							</div>
 							<Image
-								src="/images/find-A-lawyer/women.png"
+								src="/images/find-a-professional/women.png"
 								alt="Avi Hassan"
 								width={1200}
 								height={380}

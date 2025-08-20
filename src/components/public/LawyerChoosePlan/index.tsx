@@ -103,10 +103,10 @@ export default function LawyerChoosePlan() {
                             </h1>
                             <p className="mb-3 mt-2">
                                 Choose a plan that works for you.
-                                {/* We also offer FREE 1 month trial to legal experts on our{' '}
+                                {/* We also offer FREE 1 month trial to Professional experts on our{' '}
                                 <br /> platform. */}
                             </p>
-                            <div className="btn-group-893168">
+                            {/* <div className="btn-group-893168">
                                 <button
                                     className={`weight-semi-bold font-small common_plan mx-2 ${selectedPlan === 'individuals' ? 'active_plan' : 'inactive_plan'}`}
                                     onClick={() => handlePlanSelection('individuals')}
@@ -119,7 +119,7 @@ export default function LawyerChoosePlan() {
                                 >
                                     For Firms
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     {selectedPlan === 'individuals' && (
@@ -129,20 +129,20 @@ export default function LawyerChoosePlan() {
                                     <div className="row">
                                         <div className="col-sm-6">
                                             <Image
-                                                src="/images/Group_2780.png"
+                                                src="/favicon.png"
                                                 alt="A responsive image"
                                                 width={50}
                                                 height={50}
                                             />
                                             <h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
                                                 {/* {isMonthly == 'monthly' ? 'Solo Lawyer Plan' : ' Solo Lawyer Plan'} */}
-                                                Solo Lawyer Plan
+                                                Solo Plan
                                             </h5>
                                         </div>
                                         <div className="col-sm-6 text-right tab-left">
                                             {isMonthly == 'monthly' ? (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
-                                                    AED{' '}
+                                                    USD{' '}
                                                     <span className="text-xx-50">
                                                         {membershipPlan && membershipPlan.monthly_amount}
 
@@ -151,7 +151,7 @@ export default function LawyerChoosePlan() {
                                                 </h6>
                                             ) : (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
-                                                    AED{' '}
+                                                    USD{' '}
                                                     <span className="text-xx-50">
                                                         {membershipPlan && membershipPlan.yearly_amount}
 

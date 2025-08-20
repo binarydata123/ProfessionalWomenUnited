@@ -1,5 +1,5 @@
 import React from 'react';
-import {StarIcon} from '@heroicons/react/20/solid';
+import { StarIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/Slider';
 import Image from 'next/image';
 export default function HomesliderSame() {
@@ -8,7 +8,7 @@ export default function HomesliderSame() {
 			<section id="silder-section">
 				<div className="container">
 					<div className="needlawyer-text">
-						<h6 className="text-start">TOP LEGAL EXPERTS</h6>
+						<h6 className="text-start">TOP Professional experts</h6>
 						<h2 className="text-start">
 							<span className="span"> Discover the </span>top lawyers in
 							<br />
@@ -65,7 +65,7 @@ export default function HomesliderSame() {
 											<StarIcon
 												width={20}
 												color="#208C84"
-												style={{marginRight: '5px', height: '30px'}}
+												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
 										<span>
@@ -98,7 +98,7 @@ export default function HomesliderSame() {
 											<StarIcon
 												width={20}
 												color="#208C84"
-												style={{marginRight: '5px', height: '30px'}}
+												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
 										<span>
@@ -131,7 +131,7 @@ export default function HomesliderSame() {
 											<StarIcon
 												width={20}
 												color="#208C84"
-												style={{marginRight: '5px', height: '30px'}}
+												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
 										<span>
@@ -164,7 +164,7 @@ export default function HomesliderSame() {
 											<StarIcon
 												width={20}
 												color="#208C84"
-												style={{marginRight: '5px', height: '30px'}}
+												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
 										<span>
@@ -197,7 +197,7 @@ export default function HomesliderSame() {
 											<StarIcon
 												width={20}
 												color="#208C84"
-												style={{marginRight: '5px', height: '30px'}}
+												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
 										<span>

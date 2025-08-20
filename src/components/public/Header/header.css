@@ -36,7 +36,7 @@ header nav.navbar.navbar-expand-lg.bg-light {
 }
 
 .btn.btn-outline-success.btn-lawyer {
-	background:  #c49073 !important;
+	background: #c49073 !important;
 	color: var(--text-white);
 	font-size: var(--font-small);
 	font-weight: var(--weight-semi-bold);
@@ -45,7 +45,7 @@ header nav.navbar.navbar-expand-lg.bg-light {
 	text-align: left;
 	--family-Epilogue: var(--family-Manrope);
 	padding: 8px 20px;
-	border:none;
+	border: none;
 }
 
 .btn.btn-outline-success.btn-lawyer:hover {
@@ -159,7 +159,7 @@ button.navbar-toggler span {
 }
 
 .top-header-dark {
-	background-color: rgba(9, 63, 56, 1);
+	background-color: rgba(196, 144, 115);
 }
 
 .top-header-dark a.nav-link {
@@ -167,12 +167,12 @@ button.navbar-toggler span {
 }
 
 .top-header-dark .social-icon .active {
-	color: rgba(196,144,115, 1) !important;
+	color: rgba(196, 144, 115, 1) !important;
 }
 
 .top-header-dark .btn.btn-outline-success.btn-lawyer {
 	background-color: var(--text-white);
-	color: rgba(9, 63, 56, 1) !important;
+	color: rgba(196, 144, 115) !important;
 }
 
 .top-header-dark .btn.btn-outline-success.btn-login {
@@ -264,14 +264,14 @@ ul.list-mega li a {
 } */
 .county-set {
 	max-width: 260px;
-	border: 1px solid rgb(249,242,239);
+	border: 1px solid rgb(249, 242, 239);
 	background-color: rgba(252, 252, 252, 1);
 	height: 75vh;
 	/* border-radius: 20px 0 0 20px; */
 }
 .county-set .active {
-	background-color: rgb(249,242,239);
-	color: rgba(9, 63, 56, 1);
+	background-color: rgb(249, 242, 239);
+	color: rgba(196, 144, 115);
 	font-weight: 500;
 	/* border-radius: 20px 0 0 0; */
 }

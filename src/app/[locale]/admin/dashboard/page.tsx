@@ -98,25 +98,25 @@ export default function Dashboard() {
 									</Link>
 								</div>
 								<div className="col-sm-4 ">
-									<Link href={'/admin/content-mgmt/legal-forum'}>
+									<Link href={'/admin/support'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.forum_count_all}
+												{dashboard_box.forum_count_all || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
-												Questions Posted
+												Support
 											</LinkButton>
 										</div>
 									</Link>
 								</div>
 								<div className="col-sm-4 mt-3">
-									<Link href={'/admin/content-mgmt/legal-forum/approvals'}>
+									<Link href={'/admin/settings/global-parameters/authors'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.forum_count_pending}
 											</p>
 											<LinkButton color="#fff" height={0}>
-												Pending Approval
+												Authors
 											</LinkButton>
 										</div>
 									</Link>

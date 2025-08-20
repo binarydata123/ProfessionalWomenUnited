@@ -43,7 +43,7 @@ export default function CommercialLawyerDubai() {
 										/>
 									</span> */}
 
-									<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+									<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 								</div>
 							</div>
 						</section>
@@ -52,7 +52,7 @@ export default function CommercialLawyerDubai() {
 						<div className="col-lg-6">
 							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">Commercial Lawyer in Dubai</h1>
 							<p className="weight-light social-link font-medium mt-4">
-								A commercial lawyer provides legal advice and representation for businesses and
+								A commercial lawyer provides professional advice and representation for businesses and
 								corporate entities. They handle various matters, including contract drafting and
 								negotiation, mergers and acquisitions, intellectual property rights, and regulatory
 								compliance.
@@ -71,7 +71,7 @@ export default function CommercialLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -200,7 +200,7 @@ export default function CommercialLawyerDubai() {
 													contribute to socio-economic development. Nevertheless, handling the
 													legal procedures of starting or maintaining a business can be
 													challenging. If you have any questions regarding corporate law in
-													the UAE and need legal advice, contact us, and we’ll have you
+													the UAE and Need Professional Advice, contact us, and we’ll have you
 													covered.
 												</div>
 											</div>
@@ -416,7 +416,7 @@ export default function CommercialLawyerDubai() {
 												disputes
 											</li>
 											<li>
-												Providing ongoing legal advice and support to address emerging issues
+												Providing ongoing professional advice and support to address emerging issues
 											</li>
 											<li>
 												Carrying out regular compliance audits to ensure adherence to laws and
@@ -611,7 +611,7 @@ export default function CommercialLawyerDubai() {
 												priority for our attorneys. Our commercial lawyers are readily
 												accessible to address your questions and concerns promptly, fostering a
 												collaborative attorney-client relationship built on trust and
-												transparency. Whether you need legal advice, updates on your case, or
+												transparency. Whether you Need Professional Advice, updates on your case, or
 												assistance with business transactions, they are here to offer the
 												support you need.
 											</div>
@@ -621,7 +621,7 @@ export default function CommercialLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -647,7 +647,7 @@ export default function CommercialLawyerDubai() {
 						<p className="font-medium weight-light text-black mt-3">
 							At Professional Women United, our top commercial lawyers in Dubai possess a combination of legal
 							expertise, industry knowledge, and dedication to client satisfaction. They excel in
-							providing strategic legal advice and representation to businesses of all sizes, handling
+							providing strategic professional advice and representation to businesses of all sizes, handling
 							commercial transactions, and resolving disputes effectively.
 							<span className="discover_span pt-2">
 								They are committed to understanding clients' unique needs, delivering innovative
@@ -700,7 +700,7 @@ export default function CommercialLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -758,7 +758,7 @@ export default function CommercialLawyerDubai() {
 									<span className="green-medium-2"> business</span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -898,7 +898,7 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													A commercial lawyer can provide valuable legal advice and
+													A commercial lawyer can provide valuable professional advice and
 													representation if you're facing a contract dispute. They can review
 													the terms of the contract, assess your rights and obligations, and
 													help you understand your options for resolving the dispute. Whether
@@ -1020,7 +1020,7 @@ export default function CommercialLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1029,7 +1029,7 @@ export default function CommercialLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

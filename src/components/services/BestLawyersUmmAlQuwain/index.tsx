@@ -57,7 +57,7 @@ export default function BestLawyersUmmAlQuwain() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -74,7 +74,7 @@ export default function BestLawyersUmmAlQuwain() {
 												Connecting you with the best lawyers Umm Al Quwain has to offer, Professional Women United is your gateway to professional legal representation. Our platform simplifies the process of finding the perfect lawyer for your needs with a user-friendly interface and a curated selection of experts. Whether you require assistance with family matters, business transactions, or property disputes, Professional Women United ensures seamless access to the best lawyers in Umm Al Quwain with just a couple of clicks! Start your search today and find the perfect lawyer for your case.
 											</>
 										) : (
-											'Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer the most user-friendly platform for connecting clients with the best lawyers in the UAE and simplifying the process of finding top-tier legal representation. '
+											'Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer the most user-friendly platform for connecting clients with the best lawyers in the USA and simplifying the process of finding top-tier legal representation. '
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -93,7 +93,7 @@ export default function BestLawyersUmmAlQuwain() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -159,7 +159,7 @@ export default function BestLawyersUmmAlQuwain() {
 												data-bs-target="#collapseNine"
 												aria-expanded="false"
 												aria-controls="collapseNine">
-												Convenient Access to Legal Professionals
+												Convenient Access to Women Professionals
 											</button>
 										</h2>
 										<div
@@ -264,7 +264,7 @@ export default function BestLawyersUmmAlQuwain() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -290,7 +290,7 @@ export default function BestLawyersUmmAlQuwain() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -301,13 +301,13 @@ export default function BestLawyersUmmAlQuwain() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these legal experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
+											The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
 											<br />
-											At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the legal services you need.
+											At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the professional services you need.
 
 										</>
 									) : (
-										'The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these legal experts can handle complex legal issues with precision.'
+										'The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex legal issues with precision.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -321,9 +321,9 @@ export default function BestLawyersUmmAlQuwain() {
 								</>
 							) : (
 								<>
-									The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these legal experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
+									The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
 									<br />
-									At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the legal services you need.
+									At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the professional services you need.
 
 								</>
 							)}
@@ -374,7 +374,7 @@ export default function BestLawyersUmmAlQuwain() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -395,7 +395,7 @@ export default function BestLawyersUmmAlQuwain() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Clients often look for legal information to find knowledgeable representation and clarity on matters of law. Whether you’re dealing with personal injury claims, family law matters, employment disputes, or real estate issues, we connect you with legal experts who can provide tailored guidance.
+						Clients often look for legal information to find knowledgeable representation and clarity on matters of law. Whether you’re dealing with personal injury claims, family law matters, employment disputes, or real estate issues, we connect you with Professional experts who can provide tailored guidance.
 						<br />
 						Select the legal issue you&apos;re facing and connect with a legal expert.
 					</p>
@@ -433,7 +433,7 @@ export default function BestLawyersUmmAlQuwain() {
 									<span className="green-medium-2"> in Umm Al Quwain</span> help me?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -445,11 +445,11 @@ export default function BestLawyersUmmAlQuwain() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-												Providing Expert Legal Advice
+												Providing Expert professional advice
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Professionals in Umm Al Quwain offer expert legal advice tailored to your specific situation. They analyze your case thoroughly, explaining your rights and options in clear terms. With their deep understanding of the law, they provide strategic guidance to help you make informed decisions and handle your legal matters with confidence.
+										Professionals in Umm Al Quwain offer expert professional advice tailored to your specific situation. They analyze your case thoroughly, explaining your rights and options in clear terms. With their deep understanding of the law, they provide strategic guidance to help you make informed decisions and handle your legal matters with confidence.
 									</div>
 								</div>
 								<div className="col-lg-12">
@@ -734,7 +734,7 @@ export default function BestLawyersUmmAlQuwain() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -743,7 +743,7 @@ export default function BestLawyersUmmAlQuwain() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

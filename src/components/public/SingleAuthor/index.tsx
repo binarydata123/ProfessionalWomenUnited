@@ -57,7 +57,7 @@ export default function SingleAuthor({ Author }: SingleAuthorProps) {
                                         />
                                     </li>
                                     <li>
-                                        <Link href="/find-a-lawyer" >
+                                        <Link href="/find-a-professional" >
                                             <h1 className="active">{Author.author.name}</h1>
                                         </Link>
                                     </li>

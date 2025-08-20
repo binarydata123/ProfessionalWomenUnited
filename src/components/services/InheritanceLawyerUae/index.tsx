@@ -7,7 +7,7 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
 import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function InheritanceLawyerUae() {
 	const [lawyers, setlawyers] = useState([]);
@@ -58,7 +58,7 @@ export default function InheritanceLawyerUae() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
@@ -86,7 +86,7 @@ export default function InheritanceLawyerUae() {
 								) : (
 									<>
 										{t('An_inheritance_lawyer_specializes')} <br />
-												{t('At_Connect_Legal,_our_network')}
+										{t('At_Connect_Legal,_our_network')}
 									</>
 								)}
 							</p>
@@ -94,7 +94,7 @@ export default function InheritanceLawyerUae() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -118,7 +118,7 @@ export default function InheritanceLawyerUae() {
 									<span className="green-med-col">{t('Law')}</span>
 								</h2>
 								<p className="weight-light font-medium text-white mt-3">
-								{t('In_the_United_Arab_Emirates')}
+									{t('In_the_United_Arab_Emirates')}
 									<ul className="custom-bullets mt-3 mb-3">
 										<li>{t('Governed_by')}</li>
 										<li>{t('Regulated_by')}</li>
@@ -153,7 +153,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingOne"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0 text-white">
-											{t('By_Shariah_law')}
+												{t('By_Shariah_law')}
 
 											</div>
 										</div>
@@ -167,7 +167,7 @@ export default function InheritanceLawyerUae() {
 												data-bs-target="#collapseTwo1"
 												aria-expanded="true"
 												aria-controls="collapseTwo1">
-									{t('UAE_Inheritance_Law_for_Non_Muslims')}											</button>
+												{t('UAE_Inheritance_Law_for_Non_Muslims')}											</button>
 										</h2>
 										<div
 											id="collapseTwo1"
@@ -175,9 +175,9 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingTwo1"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0 text-white">
-											{t('For_non_Muslims')}	
+												{t('For_non_Muslims')}
 												<br />
-												<br /> {t('If_you_need_assistance_navigating')}	
+												<br /> {t('If_you_need_assistance_navigating')}
 											</div>
 										</div>
 									</div>
@@ -202,7 +202,7 @@ export default function InheritanceLawyerUae() {
 					<div className="row sectionGap flex-wrap-none">
 						<div className="col-lg-12 col-xl-5 col-md-12">
 							<h2 className="font-smaller text-black  weight-bold mb-4">
-							{t('Forced_Inheritance')}	
+								{t('Forced_Inheritance')}
 								<span className="green-medium-2">{t('the_uae')}	 </span>
 							</h2>
 							<Image src="/images/car/Frame.jpg" alt="faq-img" className="m-none effect" width={516} height={550} />
@@ -218,7 +218,7 @@ export default function InheritanceLawyerUae() {
 											data-bs-target="#collapseOne"
 											aria-expanded="true"
 											aria-controls="collapseOne">
-											{t('Half_Inheritance')}	
+											{t('Half_Inheritance')}
 										</button>
 									</h2>
 									<div
@@ -227,7 +227,7 @@ export default function InheritanceLawyerUae() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('In_certain_circumstances')}	
+											{t('In_certain_circumstances')}
 										</div>
 									</div>
 								</div>
@@ -240,7 +240,7 @@ export default function InheritanceLawyerUae() {
 											data-bs-target="#collapseTwo"
 											aria-expanded="false"
 											aria-controls="collapseTwo">
-											{t('In_certain_circumstances')}	
+											{t('In_certain_circumstances')}
 										</button>
 									</h2>
 									<div
@@ -249,7 +249,7 @@ export default function InheritanceLawyerUae() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('If_no_descendants_exist')}	
+											{t('If_no_descendants_exist')}
 										</div>
 									</div>
 								</div>
@@ -262,7 +262,7 @@ export default function InheritanceLawyerUae() {
 											data-bs-target="#collapseThree"
 											aria-expanded="false"
 											aria-controls="collapseThree">
-									{t('One_Fourth_Inheritance')}	
+											{t('One_Fourth_Inheritance')}
 										</button>
 									</h2>
 									<div
@@ -271,7 +271,7 @@ export default function InheritanceLawyerUae() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('Under_certain_circumstances')}	
+											{t('Under_certain_circumstances')}
 										</div>
 									</div>
 								</div>
@@ -284,7 +284,7 @@ export default function InheritanceLawyerUae() {
 											data-bs-target="#collapseFour"
 											aria-expanded="false"
 											aria-controls="collapseFour">
-												{t('One_Sixth_Inheritance')}	
+											{t('One_Sixth_Inheritance')}
 										</button>
 									</h2>
 									<div
@@ -293,7 +293,7 @@ export default function InheritanceLawyerUae() {
 										aria-labelledby="headingFour"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('In_the_absence_of_descendants')}
+											{t('In_the_absence_of_descendants')}
 										</div>
 									</div>
 								</div>
@@ -316,7 +316,7 @@ export default function InheritanceLawyerUae() {
 										aria-labelledby="headingFive"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('Under_certain_conditions')}
+											{t('Under_certain_conditions')}
 										</div>
 									</div>
 								</div>
@@ -338,7 +338,7 @@ export default function InheritanceLawyerUae() {
 										aria-labelledby="headingSix"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t('After_fulfilling_forced_inheritance')}
+											{t('After_fulfilling_forced_inheritance')}
 										</div>
 									</div>
 								</div>
@@ -354,10 +354,10 @@ export default function InheritanceLawyerUae() {
 						<div className="col-lg-7 text-right order-lg-0 order-last">
 							<div className="still" id="accordianSectionGreen">
 								<h3 className="font-smaller weight-bold text-black-add-fig">
-								{t('Why_Should_I_Hire_an')}
-												 <br />{' '}
+									{t('Why_Should_I_Hire_an')}
+									<br />{' '}
 									<span className="green-medium-2">
-									{t('Inheritance_Lawyer')}<br />{' '}
+										{t('Inheritance_Lawyer')}<br />{' '}
 									</span>{' '}
 									{t('from_Connect_Legal?')}
 								</h3>
@@ -380,7 +380,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Our_inheritance_lawyers_at_Connect_Legal')}
+												{t('Our_inheritance_lawyers_at_Connect_Legal')}
 											</div>
 										</div>
 									</div>
@@ -393,8 +393,8 @@ export default function InheritanceLawyerUae() {
 												data-bs-target="#collapseNine"
 												aria-expanded="false"
 												aria-controls="collapseNine">
-							{t('Personalized_Legal_Representation')}		
-															</button>
+												{t('Personalized_Legal_Representation')}
+											</button>
 										</h2>
 										<div
 											id="collapseNine"
@@ -402,7 +402,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('At_Connect_Legal')}
+												{t('At_Connect_Legal')}
 											</div>
 										</div>
 									</div>
@@ -424,7 +424,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Our_inheritance_lawyers')}
+												{t('Our_inheritance_lawyers')}
 											</div>
 										</div>
 									</div>
@@ -446,7 +446,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('We_provide_comprehensive')}
+												{t('We_provide_comprehensive')}
 											</div>
 										</div>
 									</div>
@@ -468,7 +468,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Our_inheritance_attorneys')}
+												{t('Our_inheritance_attorneys')}
 											</div>
 										</div>
 									</div>
@@ -481,7 +481,7 @@ export default function InheritanceLawyerUae() {
 												data-bs-target="#collapseThirteen"
 												aria-expanded="false"
 												aria-controls="collapseThirteen">
-													{t('Client_Satisfaction')}
+												{t('Client_Satisfaction')}
 											</button>
 										</h2>
 										<div
@@ -490,7 +490,7 @@ export default function InheritanceLawyerUae() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('We_strive_to_exceed_your')}
+												{t('We_strive_to_exceed_your')}
 											</div>
 										</div>
 									</div>
@@ -498,7 +498,7 @@ export default function InheritanceLawyerUae() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -519,11 +519,11 @@ export default function InheritanceLawyerUae() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-						{t('Discover_the')} <span className="green-medium-2">	{t('Top_Inheritance')}</span>
+							{t('Discover_the')} <span className="green-medium-2">	{t('Top_Inheritance')}</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -594,7 +594,7 @@ export default function InheritanceLawyerUae() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -608,13 +608,13 @@ export default function InheritanceLawyerUae() {
 						<h6 className="text-center p-0">LEGAL ISSUES</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
-					{t('What_Do_Clients')}						<span className="green-medium-2">
+						{t('What_Do_Clients')}						<span className="green-medium-2">
 							{' '}
-							{t('Most_Frequently_Search_For')}	
+							{t('Most_Frequently_Search_For')}
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-					{t('Clients_looking_for_legal')}
+						{t('Clients_looking_for_legal')}
 						<br />
 						{t('Select_the_legal_issue')}
 					</p>
@@ -647,11 +647,11 @@ export default function InheritanceLawyerUae() {
 							<div className="titleHow">
 								<h6 className="text-start">BENEFITS</h6>
 								<h2 className="text-black-add-fig Discover-lawyer discover-text-fun">
-								{t('How_Lawyers_Can')}
+									{t('How_Lawyers_Can')}
 									<span className="green-medium-2"> {t('Inheritance_Related')}</span>-{t('Legal_Matters')}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -663,7 +663,7 @@ export default function InheritanceLawyerUae() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t('Expertise_in_Inheritance')}
+												{t('Expertise_in_Inheritance')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -673,7 +673,7 @@ export default function InheritanceLawyerUae() {
 										<div className="titleHow pt-lg-0">
 											<div className=" pt-4">
 												<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-												{t('Guidance_Through_Probate_Proceedings')}
+													{t('Guidance_Through_Probate_Proceedings')}
 												</h4>
 											</div>
 											<div className="text-start Discover-lawyer" />
@@ -684,7 +684,7 @@ export default function InheritanceLawyerUae() {
 										<div className="titleHow pt-lg-0">
 											<div className=" pt-4">
 												<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-												{t('Resolution_of_Inheritance_Disputes')}
+													{t('Resolution_of_Inheritance_Disputes')}
 												</h4>
 											</div>
 											<div className="text-start Discover-lawyer" />
@@ -695,7 +695,7 @@ export default function InheritanceLawyerUae() {
 										<div className="titleHow pt-lg-0">
 											<div className=" pt-4">
 												<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-												{t('Estate_Planning_and_Asset_Protection')}
+													{t('Estate_Planning_and_Asset_Protection')}
 												</h4>
 											</div>
 											<div className="text-start Discover-lawyer" />
@@ -716,7 +716,7 @@ export default function InheritanceLawyerUae() {
 								<div className="gotTitle">
 									<p className="font-x-small green-medium-2 weight-bold mb-2">FAQs</p>
 									<h2 className="font-smaller  weight-bold mb-4">
-									{t('Got_questions')}? <br />
+										{t('Got_questions')}? <br />
 										<span className="green-medium-2"> {t('We_have_answers')}.</span>
 									</h2>
 								</div>
@@ -740,7 +740,7 @@ export default function InheritanceLawyerUae() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('An_inheritance_lawyer')}
+													{t('An_inheritance_lawyer')}
 												</div>
 											</div>
 										</div>
@@ -762,7 +762,7 @@ export default function InheritanceLawyerUae() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													
+
 													{t('It_s_advisable_to_hire_an_inheritance')}
 												</div>
 											</div>
@@ -785,7 +785,7 @@ export default function InheritanceLawyerUae() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('An_inheritance_lawyer_can')}
+													{t('An_inheritance_lawyer_can')}
 												</div>
 											</div>
 										</div>
@@ -807,7 +807,7 @@ export default function InheritanceLawyerUae() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('During_the_initial_consultation')}
+													{t('During_the_initial_consultation')}
 												</div>
 											</div>
 										</div>
@@ -829,7 +829,7 @@ export default function InheritanceLawyerUae() {
 												aria-labelledby="headingFive"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('The_cost_of_hiring_an_inheritance')}
+													{t('The_cost_of_hiring_an_inheritance')}
 												</div>
 											</div>
 										</div>
@@ -842,7 +842,7 @@ export default function InheritanceLawyerUae() {
 													data-bs-target="#collapseSix"
 													aria-expanded="true"
 													aria-controls="collapseSix">
-														{t('What_should_I_do')}
+													{t('What_should_I_do')}
 												</button>
 											</h2>
 											<div
@@ -851,7 +851,7 @@ export default function InheritanceLawyerUae() {
 												aria-labelledby="headingSix"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('If_you_suspect_foul_play')}
+													{t('If_you_suspect_foul_play')}
 												</div>
 											</div>
 										</div>
@@ -881,7 +881,7 @@ export default function InheritanceLawyerUae() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -890,7 +890,7 @@ export default function InheritanceLawyerUae() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

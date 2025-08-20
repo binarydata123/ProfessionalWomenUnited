@@ -283,7 +283,7 @@ export default function Login() {
 								</button> */}
 								<p className="mt-4 text-center register-page-link">
 									Dont have an account?
-									<Link href="/auth/choose-profile"> Create an account</Link>
+									<Link href="/auth/choose-profile" style={{ color: '#c49073' }}> Create an account</Link>
 								</p>
 							</form>
 						</div>

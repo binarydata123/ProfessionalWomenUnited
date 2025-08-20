@@ -155,19 +155,19 @@ ul.rating-location li i {
 }
 
 .top-banner-box h1 {
-	color: rgba(9, 63, 56, 1);
+	color: rgba(196, 144, 115);
 	font-size: var(--font-xx-large);
 	font-weight: 600;
 }
 
 .top-banner-box p {
-	color: rgba(9, 63, 56, 1);
+	color: rgba(196, 144, 115);
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-light);
 }
 
 .left-bottom-bg {
-	background-color: rgba(9, 63, 56, 1);
+	background-color: rgba(196, 144, 115);
 	border: 1px solid rgba(204, 204, 204, 1);
 	border-radius: 8px;
 }
@@ -184,7 +184,7 @@ ul.rating-location li i {
 }
 
 .bottom-content .inner-content p {
-	color: rgb(249,242,239);
+	color: rgb(249, 242, 239);
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-light);
 }
@@ -195,7 +195,7 @@ ul.rating-location li i {
 }
 
 .right-bottom-bg h2 {
-	color: rgba(9, 63, 56, 1);
+	color: rgba(196, 144, 115);
 	font-size: var(--font-x-large);
 	font-weight: var(--weight-bold);
 }
@@ -334,7 +334,7 @@ ul.rating-location li i {
 	font-weight: var(--weight-semi-bold) !important;
 	font-size: var(--font-small) !important;
 	line-height: var(--line-height-small) !important;
-	color: #BE8363 !important;
+	color: #be8363 !important;
 	border: solid 1px var(--boysenberry) !important;
 	padding: 12px 24px;
 }
@@ -407,7 +407,7 @@ ul.rating-location li i {
 .danger-btn {
 	border: 1px solid var(--boysenberry);
 	color: var(--boysenberry);
-	background: #BE83631a;
+	background: #be83631a;
 }
 .sub-span {
 	font-size: 12px;

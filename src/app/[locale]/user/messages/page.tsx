@@ -356,7 +356,7 @@ export default function Dashboard() {
 								image="/images/inquiry-image.png"
 								text="You don’t have any messages."
 								buttonText="Find A Professional"
-								link="/find-a-lawyer"
+								link="/find-a-professional"
 							/>
 						)}
 					</div>
@@ -463,7 +463,7 @@ export default function Dashboard() {
 								image="/images/inquiry-image.png"
 								text="You don’t have any messages."
 								buttonText="Find A Professional"
-								link="/find-a-lawyer"
+								link="/find-a-professional"
 							/>
 						)}
 					</div>

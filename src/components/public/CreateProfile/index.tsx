@@ -152,7 +152,7 @@ export default function CreateProfile() {
 					}, 1000);
 				});
 			// if (recaptchaValue) {
-				
+
 			// } else {
 			// 	toast.info('Please complete the recaptcha verification');
 			// 	setIsLoading(false);
@@ -312,7 +312,7 @@ export default function CreateProfile() {
 								</button> */}
 								<p className="mt-4 text-center register-page-link">
 									Already have an account?
-									<Link href="/auth/login"> Log in</Link>
+									<Link href="/auth/login" style={{ color: '#c49073' }}> Log in</Link>
 								</p>
 							</form>
 						</div>

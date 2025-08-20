@@ -1,5 +1,5 @@
-import {EllipsisHorizontalIcon, EyeIcon} from '@heroicons/react/20/solid';
-import {DocumentTextIcon, MagnifyingGlassIcon} from '@heroicons/react/24/solid';
+import { EllipsisHorizontalIcon, EyeIcon } from '@heroicons/react/20/solid';
+import { DocumentTextIcon, MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import React from 'react';
 
@@ -34,10 +34,10 @@ export default function reportCenter() {
 					</div>
 					<div className="col-sm-3">
 						<select className="form-fild  w-100">
-							<option>Law Firm</option>
-							<option>Law Firm</option>
-							<option>Law Firm</option>
-							<option>Law Firm</option>
+							<option></option>
+							<option></option>
+							<option></option>
+							<option></option>
 						</select>
 					</div>
 					<div className="col-sm-2">

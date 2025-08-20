@@ -1,13 +1,13 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import {getAllLawyersDataByIds} from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
+import { useTranslations } from 'next-intl';
 
 export default function FinancialLawyerDubai() {
 	const [lawyers, setlawyers] = useState([]);
@@ -59,7 +59,7 @@ export default function FinancialLawyerDubai() {
 									/>
 								</span>
 
-								<span style={{color: 'rgba(9, 63, 56, 1)'}}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
@@ -74,11 +74,11 @@ export default function FinancialLawyerDubai() {
 										{showFullText ? (
 											<>{t('A_financial_lawyer_provides ')}</>
 										) : (
-											'A financial lawyer provides legal advice and representation on finance-related matters, including regulatory compliance, contract negotiation, mergers and acquisitions, and dispute resolution.'
+											'A financial lawyer provides professional advice and representation on finance-related matters, including regulatory compliance, contract negotiation, mergers and acquisitions, and dispute resolution.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
-											<Link href="#" onClick={handleToggleText} style={{color: '#02142d'}}>
+											<Link href="#" onClick={handleToggleText} style={{ color: '#02142d' }}>
 												{showFullText ? 'Show Less' : 'Show More'}
 											</Link>
 										</div>
@@ -91,7 +91,7 @@ export default function FinancialLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -105,7 +105,7 @@ export default function FinancialLawyerDubai() {
 								className="effect show-hide"
 								width={516}
 								height={344}
-								style={{borderRadius: '8px'}}
+								style={{ borderRadius: '8px' }}
 							/>
 						</div>
 					</div>
@@ -212,7 +212,7 @@ export default function FinancialLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 									<span className="text-white findlawyertext">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{color: 'white'}}>
+										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -499,7 +499,7 @@ export default function FinancialLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{color: 'white'}}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -525,7 +525,7 @@ export default function FinancialLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -538,14 +538,14 @@ export default function FinancialLawyerDubai() {
 									{showFullTextDiscover ? (
 										<>{t('At Professional Women United, the')}</>
 									) : (
-										'At Professional Women United, the top financial lawyers are distinguished by their exceptional expertise, dedication, and track record of success in the UAEs legal landscape.'
+										'At Professional Women United, the top financial lawyers are distinguished by their exceptional expertise, dedication, and track record of success in the USAs legal landscape.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
 										<Link
 											href="javascript:void(0)"
 											onClick={handleToggleDiscoverText}
-											style={{color: '#02142d'}}>
+											style={{ color: '#02142d' }}>
 											{showFullTextDiscover ? 'Show Less' : 'Show More'}
 										</Link>
 									</div>
@@ -600,7 +600,7 @@ export default function FinancialLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -660,18 +660,18 @@ export default function FinancialLawyerDubai() {
 									{t('related_legal_matters')}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>
 							</div>
-							<div className="row mt-5 benefit-margin" style={{marginBottom: '65px'}}>
+							<div className="row mt-5 benefit-margin" style={{ marginBottom: '65px' }}>
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Contract_Drafting_and_Negotiation')}
 											</h4>
 										</div>
@@ -682,7 +682,7 @@ export default function FinancialLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Tax_Planning ')}
 											</h4>
 										</div>
@@ -693,7 +693,7 @@ export default function FinancialLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('Due_Diligence ')}
 											</h4>
 										</div>
@@ -706,7 +706,7 @@ export default function FinancialLawyerDubai() {
 								<div className="col-lg-12">
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
-											<h4 className="text-start weight-bold" style={{color: '#c49073'}}>
+											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
 												{t('International_Transactions ')}
 											</h4>
 										</div>
@@ -941,7 +941,7 @@ export default function FinancialLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -950,7 +950,7 @@ export default function FinancialLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

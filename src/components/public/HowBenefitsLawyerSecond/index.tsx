@@ -65,7 +65,7 @@ export default function HowBenefitsLawyerSecond({ data }: GotBenefitsProps) {
 										<span className=""> car accident-related</span> legal matters?
 									</h2>
 								</div>
-								<Link href={'/find-a-lawyer'}>
+								<Link href={'/find-a-professional'}>
 									<button className="w-40 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
 										<span className="text-white"> Find A Professional </span>
 									</button>

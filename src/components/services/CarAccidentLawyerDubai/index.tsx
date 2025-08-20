@@ -10,7 +10,7 @@ import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
 import { useTranslations } from 'next-intl';
 export default function CarAccidentLawyerDubai() {
 	const [lawyers, setlawyers] = useState([]);
-	const t= useTranslations("CarAccidentLawyer");
+	const t = useTranslations("CarAccidentLawyer");
 
 	useEffect(() => {
 		getAllLawyersDataByIds().then(res => {
@@ -36,7 +36,7 @@ export default function CarAccidentLawyerDubai() {
 										/>
 									</span>
 
-									<span style={{ color: 'rgba(9, 63, 56, 1)' }}>{t('Find_a_Lawyer')}</span>
+									<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 								</div>
 							</div>
 						</section>
@@ -44,10 +44,10 @@ export default function CarAccidentLawyerDubai() {
 					<div className="row">
 						<div className="col-lg-7">
 							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">
-							{t("Car_Accident_Lawyer_in_Dubai")}
+								{t("Car_Accident_Lawyer_in_Dubai")}
 							</h1>
 							<p className="weight-light social-link font-medium mt-4">
-							{t("Car_accident_lawyers_provide_crucial")}
+								{t("Car_accident_lawyers_provide_crucial")}
 								<br />
 								{t("These_legal_professionals")}
 							</p>
@@ -61,7 +61,7 @@ export default function CarAccidentLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -84,7 +84,7 @@ export default function CarAccidentLawyerDubai() {
 								<span className="green-med-col">{t("Statistics")}</span>
 							</h2>
 							<p className="weight-light font-small text-white">
-							{t("In_Dubai,_the_number_of_active")}
+								{t("In_Dubai,_the_number_of_active")}
 							</p>
 						</div>
 						<div className="col-lg-8 col-md-12  mt-md-0 mt-4 text-lg-0 text-center " id="commaonSection">
@@ -151,7 +151,7 @@ export default function CarAccidentLawyerDubai() {
 														data-bs-target="#collapseOne"
 														aria-expanded="true"
 														aria-controls="collapseOne">
-													{t("Total_Collisions")}
+														{t("Total_Collisions")}
 													</button>
 												</h2>
 
@@ -161,7 +161,7 @@ export default function CarAccidentLawyerDubai() {
 													aria-labelledby="headingOne"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t("As_reported_by_the")}
+														{t("As_reported_by_the")}
 													</div>
 												</div>
 											</div>
@@ -183,7 +183,7 @@ export default function CarAccidentLawyerDubai() {
 													aria-labelledby="headingTwo1"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t("Out_of_the_320_traffic_a")}
+														{t("Out_of_the_320_traffic_a")}
 													</div>
 												</div>
 											</div>
@@ -205,7 +205,7 @@ export default function CarAccidentLawyerDubai() {
 													aria-labelledby="headingThree"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t("A_number_of_traffic")}
+														{t("A_number_of_traffic")}
 													</div>
 												</div>
 											</div>
@@ -233,7 +233,7 @@ export default function CarAccidentLawyerDubai() {
 					<div className="row">
 						<div className="col-lg-12 col-xl-5 col-md-12">
 							<h2 className="font-smaller text-black  weight-bold mb-4">
-							{t("Which_Roads_in_Dubai")}<span className="green-medium-2">{t("Dubai_Are_The_Most_Dangerous")}</span>
+								{t("Which_Roads_in_Dubai")}<span className="green-medium-2">{t("Dubai_Are_The_Most_Dangerous")}</span>
 							</h2>
 							<Image src="/images/car/Frame.jpg" alt="faq-img" className="m-none effect" width={516} height={550} />
 						</div>
@@ -258,7 +258,7 @@ export default function CarAccidentLawyerDubai() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Emirates_Road,_also_known")}
+											{t("Emirates_Road,_also_known")}
 										</div>
 									</div>
 								</div>
@@ -280,7 +280,7 @@ export default function CarAccidentLawyerDubai() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Sheikh_Zayed_Road_is_a_perfect")}
+											{t("Sheikh_Zayed_Road_is_a_perfect")}
 										</div>
 									</div>
 								</div>
@@ -302,7 +302,7 @@ export default function CarAccidentLawyerDubai() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Connecting_Dubai")}
+											{t("Connecting_Dubai")}
 										</div>
 									</div>
 								</div>
@@ -324,7 +324,7 @@ export default function CarAccidentLawyerDubai() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Known_as_Sheikh_Mohammed_Bin_Zayed_Road")}
+											{t("Known_as_Sheikh_Mohammed_Bin_Zayed_Road")}
 										</div>
 									</div>
 								</div>
@@ -346,7 +346,7 @@ export default function CarAccidentLawyerDubai() {
 										aria-labelledby="headingFive"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Dubai-Al_Ain_Road,_known")}
+											{t("Dubai-Al_Ain_Road,_known")}
 										</div>
 									</div>
 								</div>
@@ -418,12 +418,12 @@ export default function CarAccidentLawyerDubai() {
 								<h3 className="font-xxx-large weight-bold text-black">
 									{t('Why_Should_I_Hire')} <br />{' '}
 									<span className="green-medium-2">
-									{t('Construction_Accident_Lawyer')} <br />{' '}
+										{t('Construction_Accident_Lawyer')} <br />{' '}
 									</span>{' '}
 									{t('from_Connect_Legal')}
 								</h3>
 								<p className="font-medium weight-light text-black mt-3">
-								{t('When_you_been_involved')}
+									{t('When_you_been_involved')}
 								</p>
 								<div className="accordion mt-5" id="">
 									{/* <div className=""> */}
@@ -445,7 +445,7 @@ export default function CarAccidentLawyerDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Our_car_accident_lawyers')}
+												{t('Our_car_accident_lawyers')}
 												<br />
 												{t('Whether_you_re_negotiating')}
 
@@ -470,7 +470,7 @@ export default function CarAccidentLawyerDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('When_you_choose_a_car')}
+												{t('When_you_choose_a_car')}
 												<br />
 												{t('With_their_meticulous')}
 											</div>
@@ -494,7 +494,7 @@ export default function CarAccidentLawyerDubai() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('Negotiating_with_insurance')}
+												{t('Negotiating_with_insurance')}
 											</div>
 										</div>
 									</div>
@@ -516,7 +516,7 @@ export default function CarAccidentLawyerDubai() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('At_Connect_Legal,_our')}
+												{t('At_Connect_Legal,_our')}
 											</div>
 										</div>
 									</div>
@@ -538,7 +538,7 @@ export default function CarAccidentLawyerDubai() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('When_you_hire')}
+												{t('When_you_hire')}
 											</div>
 										</div>
 									</div>
@@ -560,11 +560,11 @@ export default function CarAccidentLawyerDubai() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t('At_Connect_Legal,_we_understand')}
+												{t('At_Connect_Legal,_we_understand')}
 												<br />
 												{t('We_will_keep_you')}
 												<br />
-												{t('Whether_you_re_hiring')}<br/>
+												{t('Whether_you_re_hiring')}<br />
 
 											</div>
 										</div>
@@ -573,7 +573,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 										<span className="text-white">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>
 											<ChevronRightIcon width={20} color={'#fff'} />
@@ -592,14 +592,14 @@ export default function CarAccidentLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3">
-						{t('Discover_the')} <span className="green-medium-2">{t('Top_Construction_Accident_Lawyers_in_Dubai')}</span>
+							{t('Discover_the')} <span className="green-medium-2">{t('Top_Construction_Accident_Lawyers_in_Dubai')}</span>
 						</h3>
 						<p className="font-medium weight-light text-black mt-3">
-						{t('You_don’t_have_to_search')} 
+							{t('You_don’t_have_to_search')}
 						</p>
 					</div>
 				</div>
@@ -651,7 +651,7 @@ export default function CarAccidentLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -672,7 +672,7 @@ export default function CarAccidentLawyerDubai() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-paddings color-frequent set-top-mrgin-mbl">
-					{t('Clients_most_frequently_search')}
+						{t('Clients_most_frequently_search')}
 						<br />
 						{t('Select_the_legal_issue_you_face_and_connect_with_a_legal_expert')}
 					</p>
@@ -713,7 +713,7 @@ export default function CarAccidentLawyerDubai() {
 									{t('How_Lawyers_Can_Assist_in')}
 									<span className="green-medium-2"> 	{t('car')}</span>	{t('Related_Legal_Matters')}
 								</h2>
-								<Link href={'/find-a-lawyer'}>
+								<Link href={'/find-a-professional'}>
 									<button className="w-40 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 mt-3">
 										<span className="text-white"> Find A Professional </span>
 									</button>
@@ -724,7 +724,7 @@ export default function CarAccidentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t('Related_Legal_Matters')}
+												{t('Related_Legal_Matters')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -735,7 +735,7 @@ export default function CarAccidentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t('negotiation_with_insurance_companies')}
+												{t('negotiation_with_insurance_companies')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -746,7 +746,7 @@ export default function CarAccidentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t('evidence_gathering')}
+												{t('evidence_gathering')}
 
 											</h4>
 										</div>
@@ -758,7 +758,7 @@ export default function CarAccidentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t('court_representation')}
+												{t('court_representation')}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -778,7 +778,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="gotTitle">
 									<p className="font-x-small green-medium-2 weight-bold mb-2">FAQs</p>
 									<h2 className="font-smaller  weight-bold mb-4">
-									{t('Got_questions')} <br />
+										{t('Got_questions')} <br />
 										<span className="green-medium-2"> {t('We_have_answers')} </span>
 									</h2>
 								</div>
@@ -803,7 +803,7 @@ export default function CarAccidentLawyerDubai() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('this_can_be_a_tricky_situation')}
+													{t('this_can_be_a_tricky_situation')}
 												</div>
 											</div>
 										</div>
@@ -825,7 +825,7 @@ export default function CarAccidentLawyerDubai() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('yes_you_can_comparative_neg')}
+													{t('yes_you_can_comparative_neg')}
 												</div>
 											</div>
 										</div>
@@ -838,7 +838,7 @@ export default function CarAccidentLawyerDubai() {
 													data-bs-target="#collapseThree"
 													aria-expanded="true"
 													aria-controls="collapseThree">
-												{t('what_types_of_damages')}
+													{t('what_types_of_damages')}
 												</button>
 											</h2>
 											<div
@@ -847,7 +847,7 @@ export default function CarAccidentLawyerDubai() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('Car_accident_lawyers')}
+													{t('Car_accident_lawyers')}
 												</div>
 											</div>
 										</div>
@@ -869,7 +869,7 @@ export default function CarAccidentLawyerDubai() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('some_key_steps_are_to_seek_medical')}
+													{t('some_key_steps_are_to_seek_medical')}
 												</div>
 											</div>
 										</div>
@@ -891,7 +891,7 @@ export default function CarAccidentLawyerDubai() {
 												aria-labelledby="headingFive"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t('each_state_has_a_statute_of_limitations')}
+													{t('each_state_has_a_statute_of_limitations')}
 												</div>
 											</div>
 										</div>
@@ -921,7 +921,7 @@ export default function CarAccidentLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -930,7 +930,7 @@ export default function CarAccidentLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

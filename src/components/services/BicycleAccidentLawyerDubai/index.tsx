@@ -57,7 +57,7 @@ export default function BicycleAccidentLawyerDubai() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -108,7 +108,7 @@ export default function BicycleAccidentLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -138,7 +138,7 @@ export default function BicycleAccidentLawyerDubai() {
 								<span className="green-med-col">Related Statistics </span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-								Bicycling in the UAE is rising in popularity, enhancing sustainable transportation and
+								Bicycling in the USA is rising in popularity, enhancing sustainable transportation and
 								health. However, safety concerns persist, particularly in Abu Dhabi, where compliance
 								with regulations remains low.
 							</p>
@@ -225,7 +225,7 @@ export default function BicycleAccidentLawyerDubai() {
 														extremities and head, with head injuries comprising 22-47% of
 														cases. These severe injuries, frequently resulting from vehicle
 														collisions, contribute to over 60% of cycling fatalities and can
-														lead to long-term disabilities. In the UAE, where bicycle
+														lead to long-term disabilities. in the USA, where bicycle
 														accidents are prevalent, victims can seek legal assistance from
 														firms like Professional Women United to navigate claims and secure deserved
 														compensation.
@@ -620,7 +620,7 @@ export default function BicycleAccidentLawyerDubai() {
 												regular updates on the progress of your case and promptly responding to
 												your inquiries. <br />
 												At Professional Women United, you can expect open and honest communication from our
-												bicycle accident lawyers in the UAE. We will make sure that you are
+												bicycle accident lawyers in the USA. We will make sure that you are
 												fully informed and empowered to make decisions about your case. Our aim
 												is to provide you with the highest level of service and support
 												throughout the legal process.
@@ -631,7 +631,7 @@ export default function BicycleAccidentLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -652,7 +652,7 @@ export default function BicycleAccidentLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -741,7 +741,7 @@ export default function BicycleAccidentLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn ">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -803,7 +803,7 @@ export default function BicycleAccidentLawyerDubai() {
 									<span className="green-medium-2"> bicycle accident</span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -815,7 +815,7 @@ export default function BicycleAccidentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-												Expert Legal Advice
+												Expert professional advice
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />A bicycle accident lawyer can
@@ -850,7 +850,7 @@ export default function BicycleAccidentLawyerDubai() {
 										</div>
 										<div className="text-start Discover-lawyer" />
 										Recovering compensation for your injuries and damages requires a thorough
-										understanding of the legal system that our bicycle accident lawyers in the UAE
+										understanding of the legal system that our bicycle accident lawyers in the USA
 										possess. We work diligently to maximize your compensation by assessing the full
 										extent of your losses, including medical expenses, lost wages, pain and
 										suffering, and future rehabilitation costs. Our bicycle accident lawyers aim to
@@ -1074,7 +1074,7 @@ export default function BicycleAccidentLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1083,7 +1083,7 @@ export default function BicycleAccidentLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

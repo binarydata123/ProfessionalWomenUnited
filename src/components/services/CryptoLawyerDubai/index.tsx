@@ -57,7 +57,7 @@ export default function CryptoLawyerDubai() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -71,10 +71,10 @@ export default function CryptoLawyerDubai() {
 									<>
 										{showFullText ? (
 											<>
-												Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
+												Experienced cryptocurrency lawyers in Dubai specialize in providing professional advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
 											</>
 										) : (
-											'Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai.'
+											'Experienced cryptocurrency lawyers in Dubai specialize in providing professional advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -85,7 +85,7 @@ export default function CryptoLawyerDubai() {
 									</>
 								) : (
 									<>
-										Experienced cryptocurrency lawyers in Dubai specialize in providing legal advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
+										Experienced cryptocurrency lawyers in Dubai specialize in providing professional advice and representation to clients involved in cryptocurrency-related matters, such as regulatory compliance, transactional issues, and dispute resolution. Professional Women United is a law firm that connects clients seeking legal assistance with qualified crypto lawyers in Dubai. Through our platform, clients can access a network of experienced legal professionals who possess expertise in cryptocurrency law and can provide tailored solutions to address their specific needs and objectives.
 
 									</>
 								)}
@@ -94,7 +94,7 @@ export default function CryptoLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -458,7 +458,7 @@ export default function CryptoLawyerDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												The crypto and blockchain lawyers on our platform specialize in cryptocurrency law and possess in-depth knowledge and experience in navigating the complexities of this rapidly evolving legal landscape. The lawyers on our platform stay abreast of the latest developments, regulations, and case law relevant to cryptocurrencies, ensuring that they can provide you with informed and effective legal representation. These experts offer a comprehensive range of legal services, including legal compliance, system design, regulatory advice, corporate and commercial services, and civil litigation and disputes related to cryptocurrency and blockchain projects.
+												The crypto and blockchain lawyers on our platform specialize in cryptocurrency law and possess in-depth knowledge and experience in navigating the complexities of this rapidly evolving legal landscape. The lawyers on our platform stay abreast of the latest developments, regulations, and case law relevant to cryptocurrencies, ensuring that they can provide you with informed and effective legal representation. These experts offer a comprehensive range of professional services, including legal compliance, system design, regulatory advice, corporate and commercial services, and civil litigation and disputes related to cryptocurrency and blockchain projects.
 
 											</div>
 										</div>
@@ -583,7 +583,7 @@ export default function CryptoLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -604,7 +604,7 @@ export default function CryptoLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -680,7 +680,7 @@ export default function CryptoLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -701,7 +701,7 @@ export default function CryptoLawyerDubai() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Clients most frequently search for knowledgeable legal representation and clarity when seeking information on cryptocurrency-related legal issues. They are looking for guidance on navigating complex regulations, protecting their assets, and understanding their rights and obligations in the cryptocurrency space. Additionally, clients often seek legal advice for their cryptocurrency business, emphasizing the business-oriented legal inquiries related to blockchain projects, investment in digital assets, and compliance with legal standards.
+						Clients most frequently search for knowledgeable legal representation and clarity when seeking information on cryptocurrency-related legal issues. They are looking for guidance on navigating complex regulations, protecting their assets, and understanding their rights and obligations in the cryptocurrency space. Additionally, clients often seek professional advice for their cryptocurrency business, emphasizing the business-oriented legal inquiries related to blockchain projects, investment in digital assets, and compliance with legal standards.
 
 						<br />
 						Select the legal issue that you face and connect with a legal expert.
@@ -743,7 +743,7 @@ export default function CryptoLawyerDubai() {
 									<span className="green-medium-2">Crypto</span>-Related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -837,7 +837,7 @@ export default function CryptoLawyerDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													Investing in cryptocurrency brings various legal risks, including regulatory uncertainty and potential fraud. Regulatory frameworks governing cryptocurrencies are still evolving, creating uncertainty about compliance obligations and legal liabilities for investors.
-													On top of that, the decentralized nature of cryptocurrencies makes them vulnerable to fraudulent schemes and theft, with limited recourse for investors in case of losses. To stay safe, investors should research thoroughly, seek legal advice through a crypto lawyer, and follow any rules to protect their investments.
+													On top of that, the decentralized nature of cryptocurrencies makes them vulnerable to fraudulent schemes and theft, with limited recourse for investors in case of losses. To stay safe, investors should research thoroughly, seek professional advice through a crypto lawyer, and follow any rules to protect their investments.
 
 												</div>
 											</div>
@@ -981,7 +981,7 @@ export default function CryptoLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -990,7 +990,7 @@ export default function CryptoLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

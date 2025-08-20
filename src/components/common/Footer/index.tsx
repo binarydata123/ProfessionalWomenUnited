@@ -20,13 +20,13 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link href="/find-a-lawyer" target="blank">
+								<Link href="/find-a-professional" target="blank">
 									Find A Professional
 								</Link>
 							</li>
 							<li>
 								<Link href="/legal-services/banking" target="blank">
-									Legal Services
+									professional services
 								</Link>
 							</li>
 							<li>

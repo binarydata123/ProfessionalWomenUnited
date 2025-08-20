@@ -293,7 +293,7 @@ export default function Profile() {
 				<h5 className="font-x-large22 weight-bold green-dark">Cost</h5>
 				<p className="font-small  weight-light text-sonic-silver mt-1 mb-1">Hourly Rates</p>
 				{lawyerDetails?.hourly_rate_range ? (
-					<p className="font-large weight-bold green-medium-2">AED {lawyerDetails?.hourly_rate_range}/hr</p>
+					<p className="font-large weight-bold green-medium-2">USD {lawyerDetails?.hourly_rate_range}/hr</p>
 				) : (
 					'-'
 				)}

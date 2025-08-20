@@ -1,7 +1,7 @@
 'use client';
 import DateFormat from '@/commonUI/DateFormat';
 import Link from 'next/link';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import Image from 'next/image';
 import ImageComponent from '@/commonUI/ImageComponent';
@@ -11,7 +11,7 @@ interface Props {
 	blog?: any;
 }
 
-export default function Blog({blog}: Props) {
+export default function Blog({ blog }: Props) {
 	const [isLoading, setisLoading] = useState(true);
 
 	useEffect(() => {
@@ -52,7 +52,7 @@ export default function Blog({blog}: Props) {
 				)}
 			</Link>
 			<Link href={`/legal-services/banking`}>
-				<span className="law-btn">{blog.service_name || blog.services.name} Law</span>
+				<span className="law-btn">{blog.service_name || blog.services.name} Profession</span>
 			</Link>
 			<Link href={`/blogs/${blog.slug}`}>
 				<h5>{blog.title && blog.title.length > 50 ? blog.title.substring(0, 50) + '...' : blog.title}</h5>

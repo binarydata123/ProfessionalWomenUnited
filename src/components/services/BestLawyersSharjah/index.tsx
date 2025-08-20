@@ -57,7 +57,7 @@ export default function BestLawyersSharjah() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -104,7 +104,7 @@ export default function BestLawyersSharjah() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -280,7 +280,7 @@ export default function BestLawyersSharjah() {
 														<br />
 														These findings highlight the urgent need for targeted preventive
 														measures to reduce the number and severity of motorcycle-related
-														injuries in the UAE. Strategies focusing on enhancing road
+														injuries in the USA. Strategies focusing on enhancing road
 														safety, enforcing helmet laws, and promoting responsible riding
 														behavior are crucial to minimize the risks faced by
 														motorcyclists and improve overall road safety outcomes.
@@ -702,7 +702,7 @@ export default function BestLawyersSharjah() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -728,7 +728,7 @@ export default function BestLawyersSharjah() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -823,7 +823,7 @@ export default function BestLawyersSharjah() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -848,7 +848,7 @@ export default function BestLawyersSharjah() {
 						representation and clarification on their legal concerns.
 						<br />
 						Whether you&apos;re dealing with personal injury claims, family law matters, employment
-						disputes, or real estate issues, we help you connect with legal experts who can provide guidance
+						disputes, or real estate issues, we help you connect with Professional experts who can provide guidance
 						tailored to your specific needs.
 						<br />
 						Select the legal issue you&apos;re facing and connect with a legal expert.
@@ -887,7 +887,7 @@ export default function BestLawyersSharjah() {
 									<span className="green-medium-2"> in Sharjah</span> help me?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -920,7 +920,7 @@ export default function BestLawyersSharjah() {
 										</div>
 										<div className="text-start Discover-lawyer" />
 										If you need assistance with your real estate legal matters, we&apos;ll help you
-										find it. Our network of legal experts in Sharjah can provide comprehensive
+										find it. Our network of Professional experts in Sharjah can provide comprehensive
 										estate planning services, helping individuals protect their assets and ensure
 										their wishes are carried out after their passing. From drafting wills and
 										establishing trusts to navigating the probate process, they offer personalized
@@ -1022,7 +1022,7 @@ export default function BestLawyersSharjah() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													A motorcycle accident lawyer in Dubai can assist you in various
-													ways, including offering legal advice, representing you in
+													ways, including offering professional advice, representing you in
 													negotiations with insurance companies, and advocating for your
 													rights in court if necessary. They are well-versed in Dubai legal
 													system and can help you navigate the complexities of your case.
@@ -1169,7 +1169,7 @@ export default function BestLawyersSharjah() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1178,7 +1178,7 @@ export default function BestLawyersSharjah() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

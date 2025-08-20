@@ -57,7 +57,7 @@ export default function ProductLiabilityLawyer() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -73,8 +73,8 @@ export default function ProductLiabilityLawyer() {
 											<>
 												A product liability lawyer specializes in helping those harmed by
 												defective or dangerous products pursue legal action. Professional Women United
-												connects individuals in the UAE with experienced product liability
-												lawyers who can provide legal advice, representation, and guidance
+												connects individuals in the USA with experienced product liability
+												lawyers who can provide professional advice, representation, and guidance
 												throughout the process of filing a claim and seeking justice against
 												negligent manufacturers or distributors.
 											</>
@@ -92,7 +92,7 @@ export default function ProductLiabilityLawyer() {
 									<>
 										A product liability lawyer specializes in helping those harmed by defective or
 										dangerous products pursue legal action. Professional Women United connects individuals in
-										the UAE with experienced product liability lawyers who can provide legal advice,
+										the UAE with experienced product liability lawyers who can provide professional advice,
 										representation, and guidance throughout the process of filing a claim and
 										seeking justice against negligent manufacturers or distributors.
 									</>
@@ -102,7 +102,7 @@ export default function ProductLiabilityLawyer() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -130,7 +130,7 @@ export default function ProductLiabilityLawyer() {
 							<div className="content-wrapper">
 								<h2 className="font-smaller weight-bold text-white">
 									<span className="green-med">Product Liability</span>{' '}
-									<span className="green-med-col">in the UAE</span>
+									<span className="green-med-col">in the USA</span>
 								</h2>
 								<p className="weight-light font-medium text-white mt-3">
 									Corporate law in the United Arab Emirates (UAE) underwent significant changes with
@@ -148,7 +148,7 @@ export default function ProductLiabilityLawyer() {
 											product liability law.
 										</li>
 										<li>
-											Up to 2 million AED of fines could be faced by suppliers engaging in
+											Up to 2 million USD of fines could be faced by suppliers engaging in
 											misleading practices.
 										</li>
 									</ul>
@@ -182,13 +182,13 @@ export default function ProductLiabilityLawyer() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0 text-white">
 												With the enactment of the New Consumer Protection Law (CPL) in November
-												2020, consumers in the UAE now enjoy broader rights and protections.
+												2020, consumers in the USA now enjoy broader rights and protections.
 												This law, approved by His Highness Sheikh Khalifa bin Zayed Al Nahyan,
 												President of the UAE, replaces the old CPL, significantly enhancing
 												consumer rights and extending product liability to include e-commerce
 												and free zone areas. The primary goal of the CPL is to safeguard
 												consumer interests, emphasizing safety, quality, and fair consumption
-												practices across all goods and services provided or sold in the UAE.
+												practices across all goods and services provided or sold in the USA.
 											</div>
 										</div>
 									</div>
@@ -217,7 +217,7 @@ export default function ProductLiabilityLawyer() {
 												values, traditions, and customs are respected in the delivery of goods
 												or services. The CPL aims to empower consumers by ensuring transparency,
 												accountability, and respect for their rights in all consumer-business
-												transactions within the UAE.
+												transactions within the USA.
 											</div>
 										</div>
 									</div>
@@ -249,7 +249,7 @@ export default function ProductLiabilityLawyer() {
 												or services free of charge, follow accurate product descriptions, and
 												ensure compliance with safety and health standards outlined in the law.
 												These obligations emphasize the commitment to consumer safety and
-												satisfaction in the UAE marketplace.
+												satisfaction in the USA marketplace.
 											</div>
 										</div>
 									</div>
@@ -567,7 +567,7 @@ export default function ProductLiabilityLawyer() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Professional Women United's network of product liability lawyers in the UAE has
+												Professional Women United's network of product liability lawyers in the USA has
 												access to extensive resources and expert witnesses who can strengthen
 												your case. These resources may include medical experts, engineers,
 												accident reconstruction specialists, and other professionals who can
@@ -640,7 +640,7 @@ export default function ProductLiabilityLawyer() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -666,7 +666,7 @@ export default function ProductLiabilityLawyer() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -750,7 +750,7 @@ export default function ProductLiabilityLawyer() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -811,7 +811,7 @@ export default function ProductLiabilityLawyer() {
 									<span className="green-medium-2"> Product Liability</span>-Related Legal Matters
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -1071,7 +1071,7 @@ export default function ProductLiabilityLawyer() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1080,7 +1080,7 @@ export default function ProductLiabilityLawyer() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

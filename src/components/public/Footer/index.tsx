@@ -40,12 +40,12 @@ export default function Footer() {
 	return (
 		// showFooter &&
 		<footer
-			className='text-center text-lg-start py-lg-5 py-3 footer-wrapper' style={{backgroundColor:'#02142d'}}>
+			className='text-center text-lg-start py-lg-5 py-3 footer-wrapper' style={{ backgroundColor: '#02142d' }}>
 			<div className="container" >
 				<div className="text-center">
 					{/* <Image
 						src={`${pathname === '/legal-services/banking' ||
-							pathname === '/find-a-lawyer' ||
+							pathname === '/find-a-professional' ||
 							pathname === '/ask-a-lawyer' ||
 							pathname.includes('/legal-forum')
 							? '/footer.png'
@@ -70,12 +70,12 @@ export default function Footer() {
 							Find a Professional
 						</Link>
 					</li>
-					<li className="nav-item list-unstyled">
+					{/* <li className="nav-item list-unstyled">
 						<Link className="nav-link"
 							href="/firms">
 							Firms
 						</Link>
-					</li>
+					</li> */}
 					<li className="nav-item list-unstyled">
 						<Link className="nav-link"
 							href="/blogs">
@@ -107,7 +107,7 @@ export default function Footer() {
 							<ul className="social-icon-link list-unstyled" >
 								<li>
 									<a target="_blank" href="https://www.facebook.com/connectlegaluae" rel="noreferrer">
-										<FaFacebookF style={{color:'#fff'}}/>
+										<FaFacebookF style={{ color: '#fff' }} />
 									</a>
 								</li>
 								<li>
@@ -115,7 +115,7 @@ export default function Footer() {
 										target="_blank"
 										href="https://www.instagram.com/connectlegaluae/"
 										rel="noreferrer">
-										<FaInstagram style={{color:'#fff'}}/>
+										<FaInstagram style={{ color: '#fff' }} />
 									</a>
 								</li>
 								<li>
@@ -124,7 +124,7 @@ export default function Footer() {
 										href="https://www.linkedin.com/company/connect-legal-uae/"
 										aria-label="LinkedIn Company Page"
 										rel="noreferrer">
-										<FaLinkedin style={{color:'#fff'}}/>
+										<FaLinkedin style={{ color: '#fff' }} />
 									</a>
 								</li>
 							</ul>
@@ -132,7 +132,7 @@ export default function Footer() {
 					</div>
 					<div className="col-md-6 text-end">
 						<div className="py-3 copy-right">
-							<p className={`${locale} text-line`} style={{color:'#fff'}}>© {currentYear} Professional Women United. {t('version')}: 0.0.1</p>
+							<p className={`${locale} text-line`} style={{ color: '#fff' }}>© {currentYear} Professional Women United. {t('version')}: 0.0.1</p>
 						</div>
 					</div>
 				</div>

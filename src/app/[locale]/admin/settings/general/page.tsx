@@ -104,11 +104,11 @@ export default function Page() {
 					/>
 				</div>
 			</div>
-			<hr></hr>
-			<div className="row mt-4 font-icon admin_genral_css">
+			{/* <hr></hr> */}
+			{/* <div className="row mt-4 font-icon admin_genral_css">
 				<div className="col-sm-4">
 					<div className="bank-law green-medium-2 fw-bold mt-3">
-						<h4>Legal Services Page</h4>
+						<h4>professional services Page</h4>
 					</div>
 				</div>
 				<div className="col-sm-8">
@@ -133,9 +133,9 @@ export default function Page() {
 						type="text"
 					/>
 				</div>
-			</div>
-			<hr></hr>
-			<div className="row mt-4 font-icon admin_genral_css">
+			</div> */}
+			{/* <hr></hr> */}
+			{/* <div className="row mt-4 font-icon admin_genral_css">
 				<div className="col-sm-4">
 					<div className="bank-law green-medium-2 fw-bold mt-3">
 						<h4>Legal Forum Page</h4>
@@ -163,13 +163,13 @@ export default function Page() {
 						type="text"
 					/>
 				</div>
-			</div>
+			</div> */}
 
 			<hr></hr>
 			<div className="row mt-4 font-icon admin_genral_css">
 				<div className="col-sm-4">
 					<div className="bank-law green-medium-2 fw-bold mt-3">
-						<h4>Blogs Page</h4>
+						<h4>Blog Page</h4>
 					</div>
 				</div>
 				<div className="col-sm-8">
@@ -257,7 +257,7 @@ export default function Page() {
 					/>
 				</div>
 			</div>
-			<hr></hr>
+			{/* <hr></hr>
 			<div className="row mt-4 font-icon admin_genral_css">
 				<div className="col-sm-4">
 					<div className="bank-law green-medium-2 fw-bold mt-3">
@@ -286,14 +286,14 @@ export default function Page() {
 						type="text"
 					/>
 				</div>
-			</div>
+			</div> */}
 
 
 			<hr></hr>
-			<div className="row mt-4 font-icon admin_genral_css">
+			{/* <div className="row mt-4 font-icon admin_genral_css">
 				<div className="col-sm-4">
 					<div className="bank-law green-medium-2 fw-bold mt-3">
-						<h4>For lawyer Page</h4>
+						<h4>For Professional Page</h4>
 					</div>
 				</div>
 				<div className="col-sm-8">
@@ -318,7 +318,7 @@ export default function Page() {
 						type="text"
 					/>
 				</div>
-			</div>
+			</div> */}
 			<div className="row mt-4 font-icon admin_genral_css">
 				<div className="col-sm-4">
 					<div className='row'>

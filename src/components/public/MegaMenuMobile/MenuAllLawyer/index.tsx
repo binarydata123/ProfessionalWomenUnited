@@ -21,11 +21,11 @@ export default function MenuAllLawyer({ onclose }: any) {
 						<h2 className="accordion-header">
 
 							<Link
-								href="/find-a-lawyer"
+								href="/find-a-professional"
 								className="pop-head-set d-flex justify-content-between align-items-center set-pad-left-menu">
 								<span
 									style={{
-										color: 'rgba(137, 49, 104, 1)',
+										color: 'rgba(196,144,115)',
 										fontWeight: '600'
 									}} >
 									{t('View_All_Lawyers')}

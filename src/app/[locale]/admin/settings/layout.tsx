@@ -1,11 +1,11 @@
 'use client';
-import React, {useState} from 'react';
-import {usePathname} from 'next/navigation';
+import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import './lawyer.css';
 import Image from 'next/image';
 
-export default function LawyersLayout({children}: {children: React.ReactNode}) {
+export default function LawyersLayout({ children }: { children: React.ReactNode }) {
 	const pathname = usePathname();
 
 	return (
@@ -54,10 +54,10 @@ export default function LawyersLayout({children}: {children: React.ReactNode}) {
 						{pathname === '/admin/settings/general'
 							? 'General'
 							: pathname.includes('/admin/settings/global-parameters')
-							  ? 'Global Parameters'
-							  : pathname.includes('/admin/settings/roles-and-permissions')
-							    ? 'Roles & Permissions'
-							    : ''}
+								? 'Global Parameters'
+								: pathname.includes('/admin/settings/roles-and-permissions')
+									? 'Roles & Permissions'
+									: ''}
 					</Link>
 				</li>
 			</ul>
@@ -80,33 +80,38 @@ export default function LawyersLayout({children}: {children: React.ReactNode}) {
 				{pathname === '/admin/settings/general'
 					? 'General'
 					: pathname.includes('/admin/settings/global-parameters')
-					  ? 'Global Parameters'
-					  : pathname === '/admin/settings/roles-and-permissions'
-					    ? 'Roles & Permissions'
-					    : ''}
+						? 'Global Parameters'
+						: pathname === '/admin/settings/roles-and-permissions'
+							? 'Roles & Permissions'
+							: ''}
 			</h4>
 			<div className="nav-tab use-lawyer p-set p-0 border-0">
 				{pathname.includes('/admin/settings/global-parameters') ? (
 					<ul className="border-bottom">
-						<li className={pathname === '/admin/settings/global-parameters' ? 'active' : ''}>
-							<Link aria-current="page" href="/admin/settings/global-parameters">
-								Jurisdictions
-							</Link>
-						</li>
-						<li className={pathname === '/admin/settings/global-parameters/legal-services' ? 'active' : ''}>
-							<Link href="/admin/settings/global-parameters/legal-services">Legal Services</Link>
-						</li>
-						<li
-							className={pathname === '/admin/settings/global-parameters/specializations' ? 'active' : ''}
-						>
-							<Link href="/admin/settings/global-parameters/specializations">Specializations</Link>
-						</li>
-						<li
-							className={pathname === '/admin/settings/global-parameters/authors' ? 'active' : ''}
-						>
+						<li className={pathname === '/admin/settings/global-parameters' || pathname === '/admin/settings/global-parameters/authors' ? 'active' : ''}>
 							<Link href="/admin/settings/global-parameters/authors">Authors</Link>
 						</li>
 					</ul>
+					// <ul className="border-bottom">
+					// 	<li className={pathname === '/admin/settings/global-parameters' ? 'active' : ''}>
+					// 		<Link aria-current="page" href="/admin/settings/global-parameters">
+					// 			Jurisdictions
+					// 		</Link>
+					// 	</li>
+					// 	<li className={pathname === '/admin/settings/global-parameters/legal-services' ? 'active' : ''}>
+					// 		<Link href="/admin/settings/global-parameters/legal-services">professional services</Link>
+					// 	</li>
+					// 	<li
+					// 		className={pathname === '/admin/settings/global-parameters/specializations' ? 'active' : ''}
+					// 	>
+					// 		<Link href="/admin/settings/global-parameters/specializations">Specializations</Link>
+					// 	</li>
+					// 	<li
+					// 		className={pathname === '/admin/settings/global-parameters/authors' ? 'active' : ''}
+					// 	>
+					// 		<Link href="/admin/settings/global-parameters/authors">Authors</Link>
+					// 	</li>
+					// </ul>
 				) : null}
 			</div>
 

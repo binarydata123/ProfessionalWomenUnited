@@ -26,7 +26,7 @@ export default function Faq() {
                                                 data-bs-target="#collapseOne"
                                                 aria-expanded="true"
                                                 aria-controls="collapseOne">
-                                                What documents are required for a visa application in the UAE?
+                                                What documents are required for a visa application in the USA?
                                             </button>
                                         </h2>
                                         <div
@@ -53,7 +53,7 @@ export default function Faq() {
                                                 data-bs-target="#collapseTwo1"
                                                 aria-expanded="true"
                                                 aria-controls="collapseTwo1">
-                                                How long does it take to process a visa application in the UAE?
+                                                How long does it take to process a visa application in the USA?
                                             </button>
                                         </h2>
                                         <div
@@ -103,7 +103,7 @@ export default function Faq() {
                                                 data-bs-target="#collapseFour"
                                                 aria-expanded="true"
                                                 aria-controls="collapseFour">
-                                                What are the residency visa requirements in the UAE?
+                                                What are the residency visa requirements in the USA?
                                             </button>
                                         </h2>
                                         <div
@@ -128,7 +128,7 @@ export default function Faq() {
                                                 data-bs-target="#collapseFive"
                                                 aria-expanded="true"
                                                 aria-controls="collapseFive">
-                                                Can I work in the UAE on a visit visa?
+                                                Can I work in the USA on a visit visa?
                                             </button>
                                         </h2>
                                         <div
@@ -137,8 +137,8 @@ export default function Faq() {
                                             aria-labelledby="headingFive"
                                             data-bs-parent="#accordionExample">
                                             <div className="accordion-body border-0 text-white">
-                                                No, you cannot legally work in the UAE on a visit visa. You must
-                                                obtain a work visa if you want to work in the UAE. An immigration
+                                                No, you cannot legally work in the USA on a visit visa. You must
+                                                obtain a work visa if you want to work in the USA. An immigration
                                                 lawyer can guide you through the application process and ensure you
                                                 meet all legal requirements.
                                             </div>

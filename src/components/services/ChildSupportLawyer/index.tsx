@@ -45,7 +45,7 @@ export default function ChildSupportLawyer() {
 										/>
 									</span> */}
 
-									<span style={{ color: 'rgba(9, 63, 56, 1)' }}>{t('Find_a_Lawyer')}</span>
+									<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 								</div>
 							</div>
 						</section>
@@ -53,12 +53,12 @@ export default function ChildSupportLawyer() {
 					<div className="row">
 						<div className="col-lg-6">
 							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">
-								
+
 								{t("Child_Support_Lawyer")}
 							</h1>
 							<p className="weight-light social-link font-medium mt-4">
 								{t("A_child_support_lawyer_specializes")}
-								
+
 							</p>
 
 							<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -70,7 +70,7 @@ export default function ChildSupportLawyer() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -95,9 +95,9 @@ export default function ChildSupportLawyer() {
 								<span className="green-med-col"> {t("the_UAE")}</span>
 							</h2>
 							<p className="weight-light font-small text-white">
-							{t("In_the_UAE_child_support_is_governed_by_Federal")}
+								{t("In_the_UAE_child_support_is_governed_by_Federal")}
 
-							
+
 							</p>
 						</div>
 					</div>
@@ -112,11 +112,11 @@ export default function ChildSupportLawyer() {
 										data-bs-toggle="collapse"
 										data-bs-target="#collapseOne"
 										aria-expanded="true"
-										aria-controls="collapseOne">			
-								{t("Roles_of_Custodian_and_Guardian")}	
+										aria-controls="collapseOne">
+										{t("Roles_of_Custodian_and_Guardian")}
 
-												
-											</button>
+
+									</button>
 								</h2>
 								<div
 									id="collapseOne"
@@ -124,7 +124,7 @@ export default function ChildSupportLawyer() {
 									aria-labelledby="headingOne"
 									data-bs-parent="#accordionExample">
 									<div className="accordion-body border-0 text-white">
-									{t("In_UAE_family_law,_the_mother")}	
+										{t("In_UAE_family_law,_the_mother")}
 									</div>
 								</div>
 							</div>
@@ -137,10 +137,10 @@ export default function ChildSupportLawyer() {
 										data-bs-target="#collapseTwo1"
 										aria-expanded="true"
 										aria-controls="collapseTwo1">
-										
-										{t("Determination_of_Child_Support_Amount")}	
 
-										
+										{t("Determination_of_Child_Support_Amount")}
+
+
 									</button>
 								</h2>
 								<div
@@ -149,8 +149,8 @@ export default function ChildSupportLawyer() {
 									aria-labelledby="headingTwo1"
 									data-bs-parent="#accordionExample">
 									<div className="accordion-body border-0 text-white">
-									
-									{t("The_Dubai_Courts_provide_guidelines_for_determining")}	
+
+										{t("The_Dubai_Courts_provide_guidelines_for_determining")}
 
 									</div>
 								</div>
@@ -173,15 +173,15 @@ export default function ChildSupportLawyer() {
 					<div className="row sectionGap flex-wrap-none">
 						<div className="col-lg-12 col-xl-5 col-md-12">
 							<h2 className="font-smaller text-black  weight-bold mb-4">
-							{t("Child_Protection_Laws_in_the_UAE")}	 <span className="green-medium-2">{t("the_UAE")} </span>
+								{t("Child_Protection_Laws_in_the_UAE")}	 <span className="green-medium-2">{t("the_UAE")} </span>
 							</h2>
 							<Image src="/images/car/Frame.jpg" alt="faq-img" className="m-none effect" width={516} height={550} />
 						</div>
 						<div className="col-lg-11 col-12 col-xl-7 col-md-11" id="commoncause">
 							<div className="accordion mt-5 margin-top-1" id="accordionExample">
 								<div>
-								
-								{t("Children_in_the_United_Arab_Emirates")}
+
+									{t("Children_in_the_United_Arab_Emirates")}
 								</div>
 								<div className="accordion-item">
 									<h2 className="accordion-header" id="headingOne">
@@ -192,7 +192,7 @@ export default function ChildSupportLawyer() {
 											data-bs-target="#collapseOne"
 											aria-expanded="true"
 											aria-controls="collapseOne">
-											{t("Reporting_Mechanisms_for_Child_Abuse")}	
+											{t("Reporting_Mechanisms_for_Child_Abuse")}
 										</button>
 									</h2>
 									<div
@@ -201,8 +201,8 @@ export default function ChildSupportLawyer() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										
-										{t("In_the_UAE,_individuals_and_professionals_are_mandated")}	
+
+											{t("In_the_UAE,_individuals_and_professionals_are_mandated")}
 
 										</div>
 									</div>
@@ -216,9 +216,9 @@ export default function ChildSupportLawyer() {
 											data-bs-target="#collapseTwo"
 											aria-expanded="false"
 											aria-controls="collapseTwo">
-								
-										{t("Intervention_Procedures_by_Authorities")}	
-								</button>
+
+											{t("Intervention_Procedures_by_Authorities")}
+										</button>
 									</h2>
 									<div
 										id="collapseTwo"
@@ -226,8 +226,8 @@ export default function ChildSupportLawyer() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										
-										{t("Upon_receiving_reports_of_ child_abuse")}
+
+											{t("Upon_receiving_reports_of_ child_abuse")}
 										</div>
 									</div>
 								</div>
@@ -250,7 +250,7 @@ export default function ChildSupportLawyer() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Perpetrators_of_child_abuse")}
+											{t("Perpetrators_of_child_abuse")}
 										</div>
 									</div>
 								</div>
@@ -264,7 +264,7 @@ export default function ChildSupportLawyer() {
 											data-bs-target="#collapsefour"
 											aria-expanded="false"
 											aria-controls="collapsefour">
-											
+
 											{t("Protection_Orders_and_Support_Services")}
 										</button>
 									</h2>
@@ -274,8 +274,8 @@ export default function ChildSupportLawyer() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										
-										{t("Courts_in_the_UAE_have_the_authority")}
+
+											{t("Courts_in_the_UAE_have_the_authority")}
 										</div>
 									</div>
 								</div>
@@ -289,7 +289,7 @@ export default function ChildSupportLawyer() {
 											data-bs-target="#collapsefive"
 											aria-expanded="false"
 											aria-controls="collapsefive">
-											
+
 											{t("Prevention_and_Awareness_Initiatives")}
 										</button>
 									</h2>
@@ -299,8 +299,8 @@ export default function ChildSupportLawyer() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										
-										{t("To_prevent_child_abuse_and_promote")}
+
+											{t("To_prevent_child_abuse_and_promote")}
 										</div>
 									</div>
 								</div>
@@ -316,7 +316,7 @@ export default function ChildSupportLawyer() {
 						<div className="col-lg-7 text-right order-lg-0 order-last">
 							<div className="still" id="accordianSectionGreen">
 								<h3 className="font-smaller weight-bold text-black-add-fig">
-								{t("Why_Should_I_Hire_a_Child_Support")} <br />{' '}
+									{t("Why_Should_I_Hire_a_Child_Support")} <br />{' '}
 									<span className="green-medium-2">
 										{t('Child_Support_Lawyer')} <br />{' '}
 									</span>{' '}
@@ -337,7 +337,7 @@ export default function ChildSupportLawyer() {
 												data-bs-target="#collapseEight"
 												aria-expanded="true"
 												aria-controls="collapseEight">
-												
+
 												{t("Expertise_in_Family_Law")}
 											</button>
 										</h2>
@@ -347,7 +347,7 @@ export default function ChildSupportLawyer() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("Our_child_support_lawyers_at_Connect_Legal")}
+												{t("Our_child_support_lawyers_at_Connect_Legal")}
 
 											</div>
 										</div>
@@ -361,7 +361,7 @@ export default function ChildSupportLawyer() {
 												data-bs-target="#collapseNine"
 												aria-expanded="false"
 												aria-controls="collapseNine">
-												
+
 												{t("Personalized_Legal_Strategies")}
 											</button>
 										</h2>
@@ -371,8 +371,8 @@ export default function ChildSupportLawyer() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											
-											{t("We_understand_that_every_family's")}
+
+												{t("We_understand_that_every_family's")}
 
 											</div>
 										</div>
@@ -386,7 +386,7 @@ export default function ChildSupportLawyer() {
 												data-bs-target="#collapseTen"
 												aria-expanded="false"
 												aria-controls="collapseTen">
-												
+
 												{t("Strong_Advocacy_in_Court")}
 											</button>
 										</h2>
@@ -396,8 +396,8 @@ export default function ChildSupportLawyer() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											
-											{t("When_negotiations_fail")}
+
+												{t("When_negotiations_fail")}
 											</div>
 										</div>
 									</div>
@@ -410,7 +410,7 @@ export default function ChildSupportLawyer() {
 												data-bs-target="#collapseEleven"
 												aria-expanded="false"
 												aria-controls="collapseEleven">
-												
+
 												{t("Compassionate_Support_and_Guidance")}
 
 											</button>
@@ -421,8 +421,8 @@ export default function ChildSupportLawyer() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											
-											{t("Navigating_child_support_issues")}
+
+												{t("Navigating_child_support_issues")}
 
 											</div>
 										</div>
@@ -436,7 +436,7 @@ export default function ChildSupportLawyer() {
 												data-bs-target="#collapseTweleve"
 												aria-expanded="false"
 												aria-controls="collapseTweleve">
-												
+
 												{t("Comprehensive_Legal_Services")}
 
 											</button>
@@ -447,7 +447,7 @@ export default function ChildSupportLawyer() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("In_addition_to_child_support")}
+												{t("In_addition_to_child_support")}
 
 											</div>
 										</div>
@@ -456,7 +456,7 @@ export default function ChildSupportLawyer() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -478,12 +478,12 @@ export default function ChildSupportLawyer() {
 				<div className="container">
 					<div className="still">
 						<h3 className="font-xxx-large weight-bold text-black">
-						{t("Discover_the_Top_Child_Support_Lawyers_in_Dubai")} 
-						 <span className="green-medium-2">{t("Child_Support")}</span>
-							
+							{t("Discover_the_Top_Child_Support_Lawyers_in_Dubai")}
+							<span className="green-medium-2">{t("Child_Support")}</span>
+
 						</h3>
 						<p className="font-medium weight-light text-black mt-3">
-						{t("The_top_child_support_lawyers_in_Dubai")}
+							{t("The_top_child_support_lawyers_in_Dubai")}
 
 						</p>
 					</div>
@@ -532,7 +532,7 @@ export default function ChildSupportLawyer() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -546,24 +546,24 @@ export default function ChildSupportLawyer() {
 						<h6 className="text-center p-0">LEGAL ISSUES</h6>
 					</div>
 					<h3 className="font-xxx-large weight-bold social-link">
-					{t("What_Do_Clients_Most_Frequently_Search_For")}
+						{t("What_Do_Clients_Most_Frequently_Search_For")}
 						<span className="green-medium-2">
 							{' '}
 							{t("Most_Frequently_Search_For")}
-							
 
-						
+
+
 						</span>
 					</h3>
 					<p className="font-medium weight-light social-link mt-3">
-					
-					{t("Clients_most_frequently_search_for_knowledgeable")}
+
+						{t("Clients_most_frequently_search_for_knowledgeable")}
 					</p>
 					<h5 className="mt-4" style={{ color: '#4F4F4F' }}>
-									
-					
-					{t("Select_the_legal_issue_you_face_and_connect_with_a_legal")}
-	</h5>
+
+
+						{t("Select_the_legal_issue_you_face_and_connect_with_a_legal")}
+					</h5>
 					<ul className="pt-3 class-add">
 						<li>
 							<Link href="#">   {t("Child_support_calculation_and_enforcement")}</Link>
@@ -594,11 +594,11 @@ export default function ChildSupportLawyer() {
 							<div className="titleHow">
 								<h6 className="text-start">BENEFITS</h6>
 								<h2 className="text-black-add-fig Discover-lawyer discover-text-fun">
-								{t("How_Lawyers_Can_Assist_in_Child_Support-Related_Legal_Matters")}
+									{t("How_Lawyers_Can_Assist_in_Child_Support-Related_Legal_Matters")}
 									<span className="green-medium-2"> {t("Child_Supportz")}</span>-{t("Related_Legal_Matters")}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -610,11 +610,11 @@ export default function ChildSupportLawyer() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t("Expert_Guidance_on_Child_Support_Laws_in_the_UAE")}
+												{t("Expert_Guidance_on_Child_Support_Laws_in_the_UAE")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										
+
 										{t("Our_team_of_UAE_child_support_lawyers")}
 									</div>
 								</div>
@@ -622,12 +622,12 @@ export default function ChildSupportLawyer() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											
-											{t("Skilled_Representation_in_Child_Support_Negotiations")}
+
+												{t("Skilled_Representation_in_Child_Support_Negotiations")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										
+
 										{t("Our_child_support_lawyers_in_Dubai_offer")}
 
 									</div>
@@ -636,7 +636,7 @@ export default function ChildSupportLawyer() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											 {t("Courtroom_Advocacy_in_Child_Support_Cases")}
+												{t("Courtroom_Advocacy_in_Child_Support_Cases")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -647,13 +647,13 @@ export default function ChildSupportLawyer() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											
-											{t("Support_in_Enforcing_Child_Support_Orders")}
+
+												{t("Support_in_Enforcing_Child_Support_Orders")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
 										{t("We_assist_in_enforcing_court-ordered")}
-										
+
 									</div>
 								</div>
 							</div>
@@ -669,7 +669,7 @@ export default function ChildSupportLawyer() {
 								<div className="gotTitle">
 									<p className="font-x-small green-medium-2 weight-bold mb-2">{t("FAQ")}</p>
 									<h2 className="font-smaller  weight-bold mb-4">
-									{t("Got_questions")} <br />
+										{t("Got_questions")} <br />
 										<span className="green-medium-2"> {t("We_have_answers")}</span>
 									</h2>
 								</div>
@@ -684,7 +684,7 @@ export default function ChildSupportLawyer() {
 													data-bs-target="#collapseOne"
 													aria-expanded="true"
 													aria-controls="collapseOne">
-													
+
 													{t("Why_do_I_need_a_child_support_lawyer?")}
 												</button>
 											</h2>
@@ -694,8 +694,8 @@ export default function ChildSupportLawyer() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												
-												{t("Hiring_a_child_support_or_child_custody_lawyer")}
+
+													{t("Hiring_a_child_support_or_child_custody_lawyer")}
 
 												</div>
 											</div>
@@ -710,7 +710,7 @@ export default function ChildSupportLawyer() {
 													aria-expanded="true"
 													aria-controls="collapseTwo1">
 
-								{t("How_can_a_child_support_lawyer_help_me_calculate_child_support_payments?")}												
+													{t("How_can_a_child_support_lawyer_help_me_calculate_child_support_payments?")}
 												</button>
 											</h2>
 											<div
@@ -719,7 +719,7 @@ export default function ChildSupportLawyer() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t("Child_support_lawyers_are_well-versed_in_the_formulas")}												
+													{t("Child_support_lawyers_are_well-versed_in_the_formulas")}
 
 												</div>
 											</div>
@@ -742,8 +742,8 @@ export default function ChildSupportLawyer() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												
-												{t("If_your_ex-spouse_refuses_to_pay_child_support,_seeking_legal")}
+
+													{t("If_your_ex-spouse_refuses_to_pay_child_support,_seeking_legal")}
 												</div>
 											</div>
 										</div>
@@ -756,7 +756,7 @@ export default function ChildSupportLawyer() {
 													data-bs-target="#collapseFour"
 													aria-expanded="true"
 													aria-controls="collapseFour">
-													
+
 													{t("Can_a_child_support_lawyer_help_modify_existing_child_support_orders?")}
 												</button>
 											</h2>
@@ -766,8 +766,8 @@ export default function ChildSupportLawyer() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												
-												{t("Yes,_a_child_support_lawyer_can_assist_in_modifying")}
+
+													{t("Yes,_a_child_support_lawyer_can_assist_in_modifying")}
 												</div>
 											</div>
 										</div>
@@ -780,7 +780,7 @@ export default function ChildSupportLawyer() {
 													data-bs-target="#collapseFive"
 													aria-expanded="true"
 													aria-controls="collapseFive">
-													
+
 													{t("How_long_does_resolving_a_child_support_case_with_a_lawyer's_assistance_take?")}
 												</button>
 											</h2>
@@ -790,8 +790,8 @@ export default function ChildSupportLawyer() {
 												aria-labelledby="headingFive"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-										
-												{t("The_duration_of_a_child_support_case_can_vary_depending_on_various_factors,")}
+
+													{t("The_duration_of_a_child_support_case_can_vary_depending_on_various_factors,")}
 												</div>
 											</div>
 										</div>
@@ -822,7 +822,7 @@ export default function ChildSupportLawyer() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -831,7 +831,7 @@ export default function ChildSupportLawyer() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

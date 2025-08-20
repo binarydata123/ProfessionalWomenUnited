@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Popup from '@/commonUI/Popup';
 import Table from '@/commonUI/Table';
@@ -49,10 +49,10 @@ export default function Page() {
 					</div>
 					<div className="col-sm-3">
 						<select className="form-fild  w-100">
-							<option>Law Firm</option>
-							<option>Law Firm</option>
-							<option>Law Firm</option>
-							<option>Law Firm</option>
+							<option></option>
+							<option></option>
+							<option></option>
+							<option></option>
 						</select>
 					</div>
 					<div className="col-sm-2">

@@ -86,7 +86,7 @@ export default function StatistcsSection() {
                                                 data-bs-parent="#accordionExample">
                                                 <div className="accordion-body border-0 text-white">
                                                     Transporters and employers have obligations when it comes to the
-                                                    entry and residence of foreigners in the UAE.
+                                                    entry and residence of foreigners in the USA.
                                                     <ul className="custom-bullets mt-3 mb-3">
                                                         <li>
                                                             Transporter obligations: Captains of vessels, aircraft,

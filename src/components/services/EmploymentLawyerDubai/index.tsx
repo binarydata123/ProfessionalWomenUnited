@@ -7,7 +7,7 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Slider from '@/commonUI/SliderHome';
 import LawyerCard from '@/components/lawyer/LawyerCard';
 import { getAllLawyersDataByIds } from '../../../../lib/frontendapi';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 export default function EmploymentLawyerDubai() {
 	const [lawyers, setlawyers] = useState([]);
 	const [showFullText, setShowFullText] = useState(false);
@@ -15,7 +15,7 @@ export default function EmploymentLawyerDubai() {
 	const [showFullTextDiscover, setShowFullTextDiscover] = useState(false);
 	const [isMobileViewDiscover, setIsMobileViewDiscover] = useState(false);
 
-	const t= useTranslations("employmentLawyer");
+	const t = useTranslations("employmentLawyer");
 
 	const handleToggleText = () => {
 		setShowFullText(!showFullText);
@@ -59,22 +59,22 @@ export default function EmploymentLawyerDubai() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>{t('Find_a_Lawyer')}</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>{t('Find_a_Lawyer')}</span>
 							</div>
 						</section>
 					</div>
 					<div className="row">
 						<div className="col-lg-7">
 							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">
-							{t("Employment_Lawyer_in_Dubai")}
+								{t("Employment_Lawyer_in_Dubai")}
 							</h1>
 							<p className="weight-light social-link font-medium mt-4">
 								{isMobileView ? (
 									<>
 										{showFullText ? (
 											<>
-									{t("An_employment_lawyer_specializes")}												<br />
-									{t("Our_platform_facilitates_seamless")}											</>
+												{t("An_employment_lawyer_specializes")}												<br />
+												{t("Our_platform_facilitates_seamless")}											</>
 										) : (
 											'An employment lawyer specializes in legal matters related to the workplace, offering advice, representation, and advocacy to both employees and employers. At Professional Women United, we connect clients with experienced employment lawyers who provide guidance on a range of employment issues, including contracts, discrimination, harassment, and wrongful termination.'
 										)}
@@ -87,15 +87,15 @@ export default function EmploymentLawyerDubai() {
 									</>
 								) : (
 									<>
-{t("An_employment_lawyer_specializes")}											<br />
-{t("Our_platform_facilitates_seamless")}										</>
+										{t("An_employment_lawyer_specializes")}											<br />
+										{t("Our_platform_facilitates_seamless")}										</>
 								)}
 							</p>
 
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -119,7 +119,7 @@ export default function EmploymentLawyerDubai() {
 								<span className="green-med-col">{t("in_the_UAE")}</span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-							{t("Navigating_the_workplace_challenges")}						</p>
+								{t("Navigating_the_workplace_challenges")}						</p>
 						</div>
 						<div className="col-lg-8 col-md-12  mt-md-0 mt-4 text-lg-0 text-center" id="commaonSection">
 							<div className="row align-items-lg-center set-pad-stat set-mob-pad">
@@ -190,7 +190,7 @@ export default function EmploymentLawyerDubai() {
 														data-bs-target="#collapseOne"
 														aria-expanded="true"
 														aria-controls="collapseOne">
-															{t("Unfair_Dismissal")}
+														{t("Unfair_Dismissal")}
 													</button>
 												</h2>
 												<div
@@ -199,8 +199,8 @@ export default function EmploymentLawyerDubai() {
 													aria-labelledby="headingOne"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t("Unfair_dismissal_occurs_when_an_employee")}														<br />
-														{/* An unfair dismissal can lead to financial hardship and emotional distress for the affected employee, and seeking legal advice through an employment lawyer is crucial to understanding and protecting one&apos;s rights under employment laws. */}
+														{t("Unfair_dismissal_occurs_when_an_employee")}														<br />
+														{/* An unfair dismissal can lead to financial hardship and emotional distress for the affected employee, and seeking professional advice through an employment lawyer is crucial to understanding and protecting one&apos;s rights under employment laws. */}
 
 													</div>
 												</div>
@@ -214,7 +214,7 @@ export default function EmploymentLawyerDubai() {
 														data-bs-target="#collapseTwo1"
 														aria-expanded="true"
 														aria-controls="collapseTwo1">
-													{t("Workplace_Discrimination")}
+														{t("Workplace_Discrimination")}
 													</button>
 												</h2>
 												<div
@@ -223,7 +223,7 @@ export default function EmploymentLawyerDubai() {
 													aria-labelledby="headingTwo1"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t("Workplace_discrimination_involves")}
+														{t("Workplace_discrimination_involves")}
 														<br />
 														{t("Employees_who_experience")}
 													</div>
@@ -247,8 +247,8 @@ export default function EmploymentLawyerDubai() {
 													aria-labelledby="headingThree"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-													{t("Wage_and_hour_disputes_arise")}														<br />
-													{t("in_the_New_UAE_Law")}	
+														{t("Wage_and_hour_disputes_arise")}														<br />
+														{t("in_the_New_UAE_Law")}
 													</div>
 												</div>
 											</div>
@@ -276,7 +276,7 @@ export default function EmploymentLawyerDubai() {
 					<div className="row sectionGap flex-wrap-none">
 						<div className="col-lg-12 col-xl-5 col-md-12">
 							<h2 className="font-smaller text-black  weight-bold mb-4">
-							{t("Essential_Updates")}	<span className="green-medium-2">{t("in_the_New_UAE_Law")}</span>
+								{t("Essential_Updates")}	<span className="green-medium-2">{t("in_the_New_UAE_Law")}</span>
 							</h2>
 							<Image src="/images/car/Frame.jpg" alt="faq-img" className="m-none effect" width={516} height={550} />
 						</div>
@@ -314,7 +314,7 @@ export default function EmploymentLawyerDubai() {
 											data-bs-target="#collapseTwo"
 											aria-expanded="false"
 											aria-controls="collapseTwo">
-										{t("Employment_Contract_Duration")}
+											{t("Employment_Contract_Duration")}
 										</button>
 									</h2>
 									<div
@@ -323,7 +323,7 @@ export default function EmploymentLawyerDubai() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Under_the_new_UAE_Labor_Law")}										</div>
+											{t("Under_the_new_UAE_Labor_Law")}										</div>
 									</div>
 								</div>
 								<div className="accordion-item">
@@ -335,7 +335,7 @@ export default function EmploymentLawyerDubai() {
 											data-bs-target="#collapseThree"
 											aria-expanded="false"
 											aria-controls="collapseThree">
-												{t("Sick_Leave_Entitlements")}	
+											{t("Sick_Leave_Entitlements")}
 										</button>
 									</h2>
 									<div
@@ -344,8 +344,8 @@ export default function EmploymentLawyerDubai() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("Employees_in_the_UAE_are_entitled")}												<br />
-										{t("This_entitlement_includes")}												<br />
+											{t("Employees_in_the_UAE_are_entitled")}												<br />
+											{t("This_entitlement_includes")}												<br />
 										</div>
 									</div>
 								</div>
@@ -358,7 +358,7 @@ export default function EmploymentLawyerDubai() {
 											data-bs-target="#collapsefour"
 											aria-expanded="false"
 											aria-controls="collapsefour">
-{t("Probation_Period_Limitations")}										</button>
+											{t("Probation_Period_Limitations")}										</button>
 									</h2>
 									<div
 										id="collapsefour"
@@ -366,8 +366,8 @@ export default function EmploymentLawyerDubai() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-										{t("The_new_UAE_Labor_Law_imposes")}													<br />
-										{t("Employees_seeking")}
+											{t("The_new_UAE_Labor_Law_imposes")}													<br />
+											{t("Employees_seeking")}
 										</div>
 									</div>
 								</div>
@@ -389,8 +389,8 @@ export default function EmploymentLawyerDubai() {
 										aria-labelledby="headingFive"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-{t("Employment_termination_procedures")}											<br />
-{t("Notice_periods_typically")}	
+											{t("Employment_termination_procedures")}											<br />
+											{t("Notice_periods_typically")}
 										</div>
 									</div>
 								</div>
@@ -406,11 +406,11 @@ export default function EmploymentLawyerDubai() {
 						<div className="col-lg-7 text-right order-lg-0 order-last">
 							<div className="still" id="accordianSectionGreen">
 								<h3 className="font-smaller weight-bold text-black-add-fig">
-								{t("Why_Should_I_Hire")}	 <br />{' '}
+									{t("Why_Should_I_Hire")}	 <br />{' '}
 									<span className="green-medium-2">
-									{t("Employment_Lawyer")}	 <br />{' '}
+										{t("Employment_Lawyer")}	 <br />{' '}
 									</span>{' '}
-									{t("from_Connect_Legal")}	
+									{t("from_Connect_Legal")}
 								</h3>
 								<div className="accordion mt-4" id="setbotomspace">
 									<div className="accordion-item">
@@ -422,7 +422,7 @@ export default function EmploymentLawyerDubai() {
 												data-bs-target="#collapseEight"
 												aria-expanded="true"
 												aria-controls="collapseEight">
-											{t("Expertise_in_Employment_Law")}	
+												{t("Expertise_in_Employment_Law")}
 											</button>
 										</h2>
 										<div
@@ -431,7 +431,7 @@ export default function EmploymentLawyerDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("Connect_Legal_offers_access_to_employment")}												</div>
+												{t("Connect_Legal_offers_access_to_employment")}												</div>
 										</div>
 									</div>
 									<div className="accordion-item">
@@ -443,7 +443,7 @@ export default function EmploymentLawyerDubai() {
 												data-bs-target="#collapseNine"
 												aria-expanded="false"
 												aria-controls="collapseNine">
-												{t("Successful_Track_Record")}	
+												{t("Successful_Track_Record")}
 											</button>
 										</h2>
 										<div
@@ -452,7 +452,7 @@ export default function EmploymentLawyerDubai() {
 											aria-labelledby="headingNine"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("The_employment_lawyers_on_Connect_Legal")}												</div>
+												{t("The_employment_lawyers_on_Connect_Legal")}												</div>
 										</div>
 									</div>
 									<div className="accordion-item">
@@ -464,7 +464,7 @@ export default function EmploymentLawyerDubai() {
 												data-bs-target="#collapseTen"
 												aria-expanded="false"
 												aria-controls="collapseTen">
-												{t("Personalized_Legal_Guidance")}	
+												{t("Personalized_Legal_Guidance")}
 											</button>
 										</h2>
 										<div
@@ -473,7 +473,7 @@ export default function EmploymentLawyerDubai() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("The_attorneys_on_our_platform_offer")}	
+												{t("The_attorneys_on_our_platform_offer")}
 											</div>
 										</div>
 									</div>
@@ -486,7 +486,7 @@ export default function EmploymentLawyerDubai() {
 												data-bs-target="#collapseEleven"
 												aria-expanded="false"
 												aria-controls="collapseEleven">
-												{t("Effective_Negotiation_Skills")}	
+												{t("Effective_Negotiation_Skills")}
 											</button>
 										</h2>
 										<div
@@ -495,7 +495,7 @@ export default function EmploymentLawyerDubai() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("Connect_Legal_helps_you_find_employment")}												</div>
+												{t("Connect_Legal_helps_you_find_employment")}												</div>
 										</div>
 									</div>
 									<div className="accordion-item">
@@ -507,7 +507,7 @@ export default function EmploymentLawyerDubai() {
 												data-bs-target="#collapseTweleve"
 												aria-expanded="false"
 												aria-controls="collapseTweleve">
-												{t("Comprehensive_Legal_Representation")}	
+												{t("Comprehensive_Legal_Representation")}
 											</button>
 										</h2>
 										<div
@@ -516,7 +516,7 @@ export default function EmploymentLawyerDubai() {
 											aria-labelledby="headingTweleve"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("Connect_Legal_provides_comprehensive")}												</div>
+												{t("Connect_Legal_provides_comprehensive")}												</div>
 										</div>
 									</div>
 									<div className="accordion-item">
@@ -528,7 +528,7 @@ export default function EmploymentLawyerDubai() {
 												data-bs-target="#collapseThirteen"
 												aria-expanded="false"
 												aria-controls="collapseThirteen">
-												{t("Client-Centered_Approach")}	
+												{t("Client-Centered_Approach")}
 											</button>
 										</h2>
 										<div
@@ -537,14 +537,14 @@ export default function EmploymentLawyerDubai() {
 											aria-labelledby="headingThirteen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-											{t("At_Connect_Legal_we_prioritize_our_users'")}												</div>
+												{t("At_Connect_Legal_we_prioritize_our_users'")}												</div>
 										</div>
 									</div>
 								</div>
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -565,12 +565,12 @@ export default function EmploymentLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-						
-						{t("Discover_the")}
+
+							{t("Discover_the")}
 							<span className="green-medium-2">	{t("Top_Family_Lawyers_in_Abu_Dhabi")}</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
@@ -578,9 +578,9 @@ export default function EmploymentLawyerDubai() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-									{t("At_Connect_Legal_we_pride_ourselves_on")}<br />
-									{t("Our_top_talents_are_known")}<br />
-									{t("What_sets_our_top_employment")}
+											{t("At_Connect_Legal_we_pride_ourselves_on")}<br />
+											{t("Our_top_talents_are_known")}<br />
+											{t("What_sets_our_top_employment")}
 										</>
 									) : (
 										'At Professional Women United, we pride ourselves on connecting clients with top-tier employment lawyers in Dubai who possess exceptional skills, experience, and dedication to their craft.'
@@ -646,7 +646,7 @@ export default function EmploymentLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -660,16 +660,16 @@ export default function EmploymentLawyerDubai() {
 						<h6 className="text-center p-0">LEGAL ISSUES</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
-					{t("What_Do_Clients")}
+						{t("What_Do_Clients")}
 
 						<span className="green-medium-2">
 							{' '}
-							{t("most_frequently")} <br /> {t("searched_for")} 
+							{t("most_frequently")} <br /> {t("searched_for")}
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-					{t("Clients_often_look_for_legal_information")} 						<br />
-					{t("Select_the_legal_issue")} 
+						{t("Clients_often_look_for_legal_information")} 						<br />
+						{t("Select_the_legal_issue")}
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -704,11 +704,11 @@ export default function EmploymentLawyerDubai() {
 							<div className="titleHow">
 								<h6 className="text-start">BENEFITS</h6>
 								<h2 className="text-black-add-fig Discover-lawyer discover-text-fun">
-								{t("Employer_obligations_and_compliance_requirements")}
+									{t("Employer_obligations_and_compliance_requirements")}
 									<span className="green-medium-2"> {t("Employment")}</span>{t("related_legal_matters")}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -720,7 +720,7 @@ export default function EmploymentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t("Legal_Advice_and_Consultation")}
+												{t("Legal_Advice_and_Consultation")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -730,7 +730,7 @@ export default function EmploymentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t("Representation_in_Disputes_and_Litigation")}	tion
+												{t("Representation_in_Disputes_and_Litigation")}	tion
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -740,7 +740,7 @@ export default function EmploymentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t("Contract_Drafting_and_Review")}	
+												{t("Contract_Drafting_and_Review")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
@@ -750,12 +750,12 @@ export default function EmploymentLawyerDubai() {
 									<div className="titleHow pt-lg-0">
 										<div className=" pt-4">
 											<h4 className="text-start weight-bold" style={{ color: '#c49073' }}>
-											{t("Compliance_and_Risk_Management")}	
+												{t("Compliance_and_Risk_Management")}
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
 										{t("Employment_lawyers_are_crucial_for_businesses")}										<br />
-										{t("Employment_lawyers_also_offer")	}								</div>
+										{t("Employment_lawyers_also_offer")}								</div>
 								</div>
 							</div>
 						</div>
@@ -770,8 +770,8 @@ export default function EmploymentLawyerDubai() {
 								<div className="gotTitle">
 									<p className="font-x-small green-medium-2 weight-bold mb-2">FAQs</p>
 									<h2 className="font-smaller  weight-bold mb-4">
-									{t("Got_questions")	} <br />
-										<span className="green-medium-2"> 	{t("We_have_answers")	}</span>
+										{t("Got_questions")} <br />
+										<span className="green-medium-2"> 	{t("We_have_answers")}</span>
 									</h2>
 								</div>
 								<div className="gotAccordion" id="accordionExamplelegalquestion">
@@ -794,7 +794,7 @@ export default function EmploymentLawyerDubai() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t("In_the_UAE_employers_can_terminate_employment")}												</div>
+													{t("In_the_UAE_employers_can_terminate_employment")}												</div>
 											</div>
 										</div>
 										<div className="accordion-item">
@@ -815,7 +815,7 @@ export default function EmploymentLawyerDubai() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t("Employees_have_legal_rights_protected")}
+													{t("Employees_have_legal_rights_protected")}
 												</div>
 											</div>
 										</div>
@@ -828,7 +828,7 @@ export default function EmploymentLawyerDubai() {
 													data-bs-target="#collapseThree"
 													aria-expanded="true"
 													aria-controls="collapseThree">
-												{t("Can_I_negotiate_the_terms_of_my_employment?")}
+													{t("Can_I_negotiate_the_terms_of_my_employment?")}
 												</button>
 											</h2>
 											<div
@@ -837,7 +837,7 @@ export default function EmploymentLawyerDubai() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t("Yes_employees_have_the_right_to_negotiate")}												</div>
+													{t("Yes_employees_have_the_right_to_negotiate")}												</div>
 											</div>
 										</div>
 										<div className="accordion-item">
@@ -849,7 +849,7 @@ export default function EmploymentLawyerDubai() {
 													data-bs-target="#collapseFour"
 													aria-expanded="true"
 													aria-controls="collapseFour">
-													{t("What_should_I_do_if_I_believe_my_employer_is_violating_labor_laws?")}	
+													{t("What_should_I_do_if_I_believe_my_employer_is_violating_labor_laws?")}
 												</button>
 											</h2>
 											<div
@@ -858,7 +858,7 @@ export default function EmploymentLawyerDubai() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-												{t("If_you_believe_your_employer_is_violating_labor_laws")}													</div>
+													{t("If_you_believe_your_employer_is_violating_labor_laws")}													</div>
 											</div>
 										</div>
 									</div>
@@ -887,7 +887,7 @@ export default function EmploymentLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -896,7 +896,7 @@ export default function EmploymentLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

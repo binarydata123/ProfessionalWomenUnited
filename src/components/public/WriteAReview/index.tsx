@@ -105,7 +105,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 		<>
 			<section className="blog-section start">
 				<div className="container">
-					<div className="text-left-line text-start pt-lg-5 mt-2">
+					<div className="text-left-line text-start pt-lg-5 mt-5">
 						<ul>
 							<li>
 								<Link href="#" className="unactive">
@@ -144,7 +144,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 			<section>
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-8">
+						<div className="col-lg-8 mb-5">
 							<div className="profile-data">
 								<div className="row">
 									<div className="col-lg-3 col-3">
@@ -237,7 +237,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 																.split(',')
 																.map((service: any, index: any) => (
 																	<button className="mx-1" key={index}>
-																		{service} Law
+																		{service} Profession
 																	</button>
 																))}
 

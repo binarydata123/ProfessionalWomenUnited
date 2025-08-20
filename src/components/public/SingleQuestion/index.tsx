@@ -1,16 +1,16 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, {useContext, useEffect, useState} from 'react';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import React, { useContext, useEffect, useState } from 'react';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import UpperFooter from '@/components/public/UpperFooter';
 import Answer from '@/components/public/Answer';
 import Question from '@/components/public/Question';
 import DateFormat from '@/commonUI/DateFormat';
 import Blog from '@/components/public/Blog';
 import PrimaryButton from '@/commonUI/PrimaryButton';
-import {toast} from 'react-toastify';
-import {getSingleQuestionByIdOrSlug, storeQuestionResponse} from '../../../../lib/frontendapi';
+import { toast } from 'react-toastify';
+import { getSingleQuestionByIdOrSlug, storeQuestionResponse } from '../../../../lib/frontendapi';
 import FormTextarea from '@/commonUI/FormTextArea';
 import AuthContext from '@/context/AuthContext';
 
@@ -31,7 +31,7 @@ export default function SingleQuestion({
 	relatedBlogs,
 	relatedQuestion
 }: Props) {
-	const {user} = useContext(AuthContext)
+	const { user } = useContext(AuthContext)
 	const [questionResponse, setquestionResponse]: any = useState([]);
 	const [showCommentField, setshowCommentField]: any = useState(false);
 	const [comment, setcomment]: any = useState('');
@@ -222,7 +222,7 @@ export default function SingleQuestion({
 				<div className="row align-items-center" id="get-legal-question">
 					<div className="col-lg-8">
 						<div className="gotalegalquestion">
-							<h4>Got A Legal Question?</h4>
+							<h4>GOT A PROFESSIONAL QUESTION?</h4>
 							<h5>Post your questions for FREE & get advice from multiple lawyers.</h5>
 						</div>
 					</div>

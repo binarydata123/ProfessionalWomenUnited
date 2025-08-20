@@ -137,7 +137,7 @@ export default function Page() {
 									<span className="text-white">
 										<Link
 											href="/auth/lawyer/choose-pricing-plan"
-											style={{ color: 'rgba(137, 49, 104, 1)' }}
+											style={{ color: 'rgba(196,144,115)' }}
 										>
 											View Pricing Plans
 										</Link>
@@ -200,7 +200,7 @@ export default function Page() {
 								/>
 								<h4 className="f-24 text-white mb-4 mt-4 weight-bold">Streamline Communication</h4>
 								<p className="weight-light font-small text-white">
-									Easily connect with lawyers on our platform for faster response times and
+									Easily Connect with Professionals on our platform for faster response times and
 									streamlined communication.
 								</p>
 							</div>
@@ -341,7 +341,7 @@ export default function Page() {
 														<div className="social-link weight-bold f-22 m-top-80">
 															{isMonthly == 'monthly' ? (
 																<h6 className="social-link weight-bold f-22 m-top-80">
-																	AED{' '}
+																	USD{' '}
 																	<span className="text-xx-50">
 																		{membershipPlan && membershipPlan.monthly_amount}
 
@@ -350,7 +350,7 @@ export default function Page() {
 																</h6>
 															) : (
 																<h6 className="social-link weight-bold f-22 m-top-80">
-																	AED{' '}
+																	USD{' '}
 																	<span className="text-xx-50">
 																		{membershipPlan && membershipPlan.quarterly_amount}
 

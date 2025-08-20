@@ -10,7 +10,7 @@ module.exports = withNextIntl({
 	cache: false,
 	assetPrefix: isProd ? 'https://professional-women.ai-developer.site/' : 'http://localhost:3000/',
 	images: {
-		domains: ['localhost','professional-women.ai-developer.site','pro-women.api.ai-developer.site'] // Add your local domain(s) here
+		domains: ['localhost', 'professional-women.ai-developer.site', 'pro-women.api.ai-developer.site'] // Add your local domain(s) here
 	},
 	webpack: (config, {buildId, dev, isServer, defaultLoaders, webpack}) => {
 		config.plugins.push(
@@ -45,8 +45,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/ar/find-a-lawyer/:path*',
-				destination: '/en/find-a-lawyer/:path*',
+				source: '/ar/find-a-professional/:path*',
+				destination: '/en/find-a-professional/:path*',
 				permanent: true
 			},
 			{
@@ -570,7 +570,7 @@ module.exports = withNextIntl({
 			},
 			{
 				source: '/uae-unemployment-insurance-scheme-guidebook',
-				destination: '/blogs/uae-unemployment-insurance-now-compulsory-how-you-can-get-aed20-000-a-month',
+				destination: '/blogs/uae-unemployment-insurance-now-compulsory-how-you-can-get-USD20-000-a-month',
 				permanent: true
 			},
 			{
@@ -681,7 +681,7 @@ module.exports = withNextIntl({
 			},
 			{
 				source: '/divorce-lawyers-in-dubai',
-				destination: '/find-a-lawyer',
+				destination: '/find-a-professional',
 				permanent: true
 			},
 			{
@@ -736,7 +736,7 @@ module.exports = withNextIntl({
 			},
 			{
 				source: '/corporate-lawyers-in-dubai',
-				destination: '/find-a-lawyer',
+				destination: '/find-a-professional',
 				permanent: true
 			},
 			{

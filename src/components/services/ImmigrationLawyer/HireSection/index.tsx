@@ -211,7 +211,7 @@ export default function HireSection() {
                             <div className="about-btn-two mt-lg-5 mt-3">
                                 <button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
                                     <span className="text-white set-lawyer-icon">
-                                        <Link href="/find-a-lawyer" style={{ color: 'white' }}>
+                                        <Link href="/find-a-professional" style={{ color: 'white' }}>
                                             Find A Professional
                                         </Link>{' '}
                                         <span className="border-btn-lawyer">

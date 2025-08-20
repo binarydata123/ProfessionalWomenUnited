@@ -23,7 +23,7 @@ a.unactive {
 
 .profile-data {
 	border: 1px solid var(--green-light);
-	background-color: #f3fbf9;
+	background-color: #f9f2ef;
 	border-radius: 8px;
 	padding: 16px;
 	margin: 16px 0px;
@@ -119,7 +119,7 @@ a.unactive {
 .atypebtn a:nth-child(3) {
 	border: 1px solid var(--boysenberry);
 	border-radius: 4px;
-	background-color: #BE83631a;
+	background-color: #be83631a;
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-medium);
 	line-height: var(--line-height-xs-small);
@@ -249,7 +249,7 @@ a.unactive {
 .btn-primary-red {
 	border: 1px solid var(--boysenberry);
 	border-radius: 4px;
-	background-color: #BE83631a;
+	background-color: #be83631a;
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-medium);
 	line-height: var(--line-height-xs-small);
@@ -271,7 +271,7 @@ a.unactive {
 
 .profile-data.profile-d-change {
 	border: 1px solid var(--green-light);
-	background-color: #f3fbf9;
+	background-color: #f9f2ef;
 	border-radius: 8px;
 	padding: 16px;
 	margin: 16px 0px;

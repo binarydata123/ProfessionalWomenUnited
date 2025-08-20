@@ -70,7 +70,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Banking_Law')}
@@ -114,7 +114,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className="p-0 ">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Business_Law')}
@@ -150,7 +150,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Commercial_Law')}
@@ -197,7 +197,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Inheritance_Law')}
@@ -245,7 +245,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Civil_Law')}
@@ -262,7 +262,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										{/* <li>
 											<Link
-												href="/find-a-lawyer"
+												href="/find-a-professional"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												Accident Professionals
@@ -397,7 +397,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Family_Law')}
@@ -460,7 +460,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Dispute_Resolution_Law')}
@@ -500,7 +500,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Islamic_Finance_Law')}
@@ -546,7 +546,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 												<Link href="/maritime">
 													<h6
 														style={{
-															color: 'rgba(9, 63, 56, 1)',
+															color: 'rgba(196,144,115)',
 															fontWeight: '700'
 														}}>
 														{t('Maritime_Law')}
@@ -577,7 +577,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Employment_Law')}
@@ -616,7 +616,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Real_Estate_Law')}
@@ -655,7 +655,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Criminal_Law')}
@@ -694,7 +694,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 											<div className=" p-0">
 												<h6
 													style={{
-														color: 'rgba(9, 63, 56, 1)',
+														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
 													{t('Intellectual_Property_Law')}

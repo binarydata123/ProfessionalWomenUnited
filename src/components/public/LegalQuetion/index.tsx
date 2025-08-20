@@ -1,5 +1,5 @@
 import React from 'react';
-import {ChevronRightIcon} from '@heroicons/react/20/solid';
+import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 export default function LegalQuetion() {
@@ -22,7 +22,7 @@ Advice for Free"
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -31,7 +31,7 @@ Advice for Free"
 								<p>
 									Make an appointment with Advocates and Legal consultancy, Today! or chat with a
 									lawyer online for free in Dubai and across UAE now, We work on a wide range of legal
-									matters. Our legal Services.
+									matters. Our professional services.
 								</p>
 								<Link href={'/legal-forum'}>
 									<button className="w-40 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">

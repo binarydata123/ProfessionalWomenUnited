@@ -17,7 +17,7 @@ export default function Service({ data }: Props) {
 							<div className="bank-law">
 								<h2>{data.name} </h2>
 								<p>{data.description}</p>
-								<Link href={'/find-a-lawyer'}>
+								<Link href={'/find-a-professional'}>
 									<button className="btn-commn mt-5">Find A Professional</button>
 								</Link>
 							</div>

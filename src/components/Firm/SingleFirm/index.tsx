@@ -164,7 +164,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                     />
                                 </li>
                                 <li>
-                                    <Link href="/find-a-lawyer" className="unactive">
+                                    <Link href="/find-a-professional" className="unactive">
                                         Firm
                                     </Link>
                                 </li>

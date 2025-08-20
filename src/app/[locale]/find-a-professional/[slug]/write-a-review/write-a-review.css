@@ -21,7 +21,7 @@ a.unactive {
 
 .profile-data {
 	border: 1px solid var(--green-light);
-	background-color: #f3fbf9;
+	background-color: #f9f2ef;
 	border-radius: 8px;
 	padding: 16px;
 	margin: 16px 0px;
@@ -109,7 +109,7 @@ a.unactive {
 .atypebtn a:nth-child(3) {
 	border: 1px solid var(--boysenberry);
 	border-radius: 4px;
-	background-color: #BE83631a;
+	background-color: #be83631a;
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-medium);
 	line-height: var(--line-height-xs-small);
@@ -136,7 +136,7 @@ a.unactive {
 }
 .connect-legal-review-class {
 	padding: 10px;
-	background-color: #e0f6ef;
+	background-color: #f9f2ef;
 }
 .legal-reviwes {
 	padding: 10px;
@@ -256,7 +256,7 @@ a.unactive {
 	border-color: transparent;
 }
 .write-accordian button.accordion-button.collapsed {
-	background: #e0f6ef;
+	background: #f9f2ef;
 	padding: 10px 12px;
 }
 .write-accordian .accordion-item:first-of-type .accordion-button {

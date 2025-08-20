@@ -100,7 +100,7 @@ export default function LegalServices({ service, allServices }: Props) {
 					<span>
 						<Image src="/images/legal-service/arrow-right.png" alt="arrow-right" width={16} height={16} />
 					</span>
-					<span>Legal Services</span>
+					<span>professional services</span>
 				</div>
 				<div className="col-md-12">
 					{allServicesName && (
@@ -135,7 +135,7 @@ export default function LegalServices({ service, allServices }: Props) {
 					<Service data={service} />
 					{relatedLawyer.length > 0 ? (
 						<div className="needlawyer-text mt-5">
-							<h6>TOP LEGAL EXPERTS?</h6>
+							<h6>TOP Professional experts?</h6>
 							<h2 style={{ color: '#000' }}>
 								Discover the {' '}
 								<span className="needlawyer-text" style={{ color: '#02142d' }}>top {service.name} lawyers in Dubai</span>

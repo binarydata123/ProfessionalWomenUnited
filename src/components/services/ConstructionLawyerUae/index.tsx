@@ -66,7 +66,7 @@ export default function ConstructionLawyerUae() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -85,7 +85,7 @@ export default function ConstructionLawyerUae() {
 												and construction defects.
 												<br />
 												At Professional Women United, our construction lawyers leverage their expertise and
-												experience to provide comprehensive legal services tailored to our
+												experience to provide comprehensive professional services tailored to our
 												clients' needs. We work closely with individuals, contractors,
 												developers, and other stakeholders to handle complex legal issues,
 												resolve disputes, and guarantee compliance with construction laws and
@@ -108,7 +108,7 @@ export default function ConstructionLawyerUae() {
 										defects.
 										<br />
 										At Professional Women United, our construction lawyers leverage their expertise and
-										experience to provide comprehensive legal services tailored to our clients'
+										experience to provide comprehensive professional services tailored to our clients'
 										needs. We work closely with individuals, contractors, developers, and other
 										stakeholders to handle complex legal issues, resolve disputes, and guarantee
 										compliance with construction laws and regulations.
@@ -119,7 +119,7 @@ export default function ConstructionLawyerUae() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -648,7 +648,7 @@ export default function ConstructionLawyerUae() {
 												By choosing a construction accident lawyer from Professional Women United, clients t
 												the heart of our practice is a commitment to client satisfaction. We go
 												above and beyond to make sure that our clients receive the highest level
-												of service and representation. From providing timely legal advice to
+												of service and representation. From providing timely professional advice to
 												offering practical solutions to complex legal issues, we are dedicated
 												to achieving the best possible outcomes for our clients and exceeding
 												their expectations. When you choose a top Dubai construction lawyer from
@@ -660,7 +660,7 @@ export default function ConstructionLawyerUae() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -681,7 +681,7 @@ export default function ConstructionLawyerUae() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -766,7 +766,7 @@ export default function ConstructionLawyerUae() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -829,7 +829,7 @@ export default function ConstructionLawyerUae() {
 									<span className="green-medium-2"> construction </span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -1004,7 +1004,7 @@ export default function ConstructionLawyerUae() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													Construction lawyers help resolve disputes through negotiation,
-													mediation, arbitration, or litigation. They provide legal advice,
+													mediation, arbitration, or litigation. They provide professional advice,
 													representation, and advocacy so parties can reach mutually
 													beneficial resolutions while protecting their legal rights and
 													interests.
@@ -1141,7 +1141,7 @@ export default function ConstructionLawyerUae() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1150,7 +1150,7 @@ export default function ConstructionLawyerUae() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

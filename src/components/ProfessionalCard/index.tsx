@@ -189,7 +189,7 @@ export default function Home() {
           </h1>
           <p>
             Connect with verified professionals in your area. From healthcare to
-            legal services, find the expertise you need with confidence.
+            professional services, find the expertise you need with confidence.
           </p>
         </div>
       </header>
@@ -201,9 +201,8 @@ export default function Home() {
             {specialties.map((spec) => (
               <button
                 key={spec}
-                className={`filter-btn ${
-                  selectedSpecialty === spec ? "active" : ""
-                }`}
+                className={`filter-btn ${selectedSpecialty === spec ? "active" : ""
+                  }`}
                 onClick={() => setSelectedSpecialty(spec)}
               >
                 {spec}

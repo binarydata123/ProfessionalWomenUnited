@@ -200,7 +200,7 @@ export default function Page() {
 						<div className="icon-fild icon-g p-set position-relative">
 							<input
 								type="text"
-								placeholder="Search for a Blog"
+								placeholder="Search for a Professional"
 								className="form-fild w-100 sp-right"
 								value={name}
 								onChange={e => handleChange('name', e.target.value, user_id)}
@@ -261,7 +261,7 @@ export default function Page() {
 					<div className="col-sm-6 col-md-6 col-lg-2">
 						<Link href={'/admin/settings/roles-and-permissions/add-new-lawyer'}>
 							<DefaultButton height={55} showIcon={false} className="w-100 mt-1">
-								+ Lawyer
+								+ Professional
 							</DefaultButton>
 						</Link>
 					</div>
@@ -269,7 +269,7 @@ export default function Page() {
 			</div>
 
 			<p className="font-small weight-light social-link mt-3 mb-3">
-				Displaying <span className="span-color-dash weight-bold">{filter_users.length}</span> lawyers &
+				Displaying <span className="span-color-dash weight-bold">{filter_users.length}</span> professionals &
 				individual
 			</p>
 

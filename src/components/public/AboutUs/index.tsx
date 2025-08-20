@@ -71,7 +71,7 @@ export default function AboutUs() {
 										<br />
 										<span className="green-medium-2 ">
 											{/* Legal {isVisible ? 'experts' : ''}. */}
-											Legal experts
+											Professional experts
 
 										</span>
 									</h1>
@@ -180,7 +180,7 @@ export default function AboutUs() {
 							<div className="col-lg-6">
 								<div className="our-story-text">
 									<p>
-										Established in 2014, our company is a legal advice platform that connects
+										Established in 2014, our company is a professional advice platform that connects
 										clients with top-rated professionals across the UAE. With our user-friendly platform,
 										clients can easily find and connect with experienced professionals, while professionals can
 										efficiently manage their practice and expand their client base.
@@ -234,7 +234,7 @@ export default function AboutUs() {
 										<Link className="underlineClass" href="/">
 											Professional Women United
 										</Link>{' '}
-										is the space were you can find users looking for legal advice in real time. Make
+										is the space were you can find users looking for professional advice in real time. Make
 										the most out of your expertise and find the ideal clients to support here.
 									</p>
 									<Link href="/auth/create-profile/?role=lawyer">
@@ -334,7 +334,7 @@ export default function AboutUs() {
 											<div className="accordion-body border-0">
 												Usually, clients select the professional they want according to the{' '}
 												<Link className="underlineClass" href="/legal-services/banking">
-													legal services
+													professional services
 												</Link>{' '}
 												they need, their location, language, practice area, and other
 												characteristics.

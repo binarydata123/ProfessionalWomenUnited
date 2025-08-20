@@ -22,9 +22,9 @@ export default function Header({ locale }: any) {
 	};
 	const [isLawyerMenuOpen, setLawyerMenuOpen] = useState(false);
 	const menuRef = useRef<HTMLUListElement>(null);
-	
 
-	
+
+
 	const [menuCollapse, setMenuCollapse] = useState(false);
 
 	const handleClickOutside = (event: any) => {
@@ -261,7 +261,7 @@ export default function Header({ locale }: any) {
 								)}
 								{/* <ul className="navbar-nav me-auto mb-lg-0 mb-2 social-icon homecss">
 								 */}
-								 <ul className="navbar-nav mx-auto mb-lg-0 mb-2 social-icon homecss">
+								<ul className="navbar-nav mx-auto mb-lg-0 mb-2 social-icon homecss">
 
 									<li className="nav-item">
 										<Link
@@ -289,7 +289,7 @@ export default function Header({ locale }: any) {
 										</Link>
 									</li>
 
-									<li className="nav-item">
+									{/* <li className="nav-item">
 										<Link
 											onClick={() => {
 												setmenuCollappse(true);
@@ -300,7 +300,7 @@ export default function Header({ locale }: any) {
 											href='/firms'>
 											Firms
 										</Link>
-									</li>
+									</li> */}
 
 									<li className="nav-item">
 										<Link

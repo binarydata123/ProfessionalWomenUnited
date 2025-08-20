@@ -192,7 +192,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									/>
 								</li>
 								<li>
-									<Link href="/find-a-lawyer" className="unactive">
+									<Link href="/find-a-professional" className="unactive">
 										Find a professional
 									</Link>
 								</li>
@@ -511,7 +511,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 			<section>
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-8">
+						<div className="col-lg-8 mb-5">
 							<div className="abcd pb-lg-0 pb-5">
 								<div id="pills-contact-tab1">
 									<div className="row mb-3">
@@ -562,7 +562,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										</>
 									)}
 
-									{isLoading ? (
+									{/* {isLoading ? (
 										<div
 											className="mt-2"
 											style={{
@@ -571,7 +571,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												width: '500px'
 											}}
 										></div>
-									) : (
+									) : (Community Contributions:
 										<>
 											<p className="text-sonic-silver">
 												<Image src="/images/map.png" alt="location" width={20} height={20} />
@@ -582,7 +582,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												{single_lawyer?.jurisdiction_name}
 											</p>
 										</>
-									)}
+									)} */}
 									{single_lawyer?.specializ_name && (
 										<>
 											{isLoading ? (
@@ -617,7 +617,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											)}
 										</>
 									)}
-									{isLoading ? (
+									{/* {isLoading ? (
 										<div
 											className="mt-2"
 											style={{
@@ -631,9 +631,9 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											{' '}
 											Community Contributions:{' '}
 										</p>
-									)}
+									)} */}
 
-									<div className="row">
+									{/* <div className="row">
 										<div className="col-sm-4">
 											{isLoading ? (
 												<div
@@ -660,7 +660,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												</div>
 											)}
 										</div>
-									</div>
+									</div> */}
 
 									{/* {single_lawyer?.bio && (
 										<>

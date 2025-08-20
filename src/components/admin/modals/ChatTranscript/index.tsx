@@ -30,7 +30,7 @@ export default function ChatTranscript(props: any) {
 	}, [props.inquiryData]);
 
 	return (
-		<div className="chat-transcript-wrapper" ref={chatContainerRef} id="inquiry_chat">
+		<div className="chat-transcript-wrapper set-inquery-space" ref={chatContainerRef} id="inquiry_chat">
 			{props.inquiryData &&
 				props.inquiryData.map((message: any, index: number) => (
 					<>

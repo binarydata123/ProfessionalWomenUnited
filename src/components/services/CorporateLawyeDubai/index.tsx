@@ -57,7 +57,7 @@ export default function CorporateLawyeDubai() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+								<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -71,7 +71,7 @@ export default function CorporateLawyeDubai() {
 									<>
 										{showFullText ? (
 											<>
-												A corporate lawyer specializes in providing legal advice and
+												A corporate lawyer specializes in providing professional advice and
 												representation to businesses on a wide range of corporate matters,
 												including mergers and acquisitions, corporate governance, and compliance
 												with regulations. . <br />
@@ -81,7 +81,7 @@ export default function CorporateLawyeDubai() {
 												achieve their strategic goals efficiently and effectively.
 											</>
 										) : (
-											'A corporate lawyer specializes in providing legal advice and representation to businesses on a wide range of corporate matters, including mergers and acquisitions, corporate governance, and compliance with regulations.'
+											'A corporate lawyer specializes in providing professional advice and representation to businesses on a wide range of corporate matters, including mergers and acquisitions, corporate governance, and compliance with regulations.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -92,7 +92,7 @@ export default function CorporateLawyeDubai() {
 									</>
 								) : (
 									<>
-										A corporate lawyer specializes in providing legal advice and representation to
+										A corporate lawyer specializes in providing professional advice and representation to
 										businesses on a wide range of corporate matters, including mergers and
 										acquisitions, corporate governance, and compliance with regulations. . <br />
 										At Professional Women United, our corporate lawyers offer comprehensive legal solutions
@@ -106,7 +106,7 @@ export default function CorporateLawyeDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" className="findlawyertext">
+										<Link href="/find-a-professional" className="findlawyertext">
 											Find A Professional
 										</Link>
 									</span>
@@ -261,7 +261,7 @@ export default function CorporateLawyeDubai() {
 													</li>
 													<li>
 														Directors' remuneration is capped at 10% of net profits or a
-														lump sum fee of up to AED 200,000 in case of profit failure.
+														lump sum fee of up to USD 200,000 in case of profit failure.
 													</li>
 												</ul>
 												The New Companies Law signifies the UAE's commitment to economic
@@ -664,7 +664,7 @@ export default function CorporateLawyeDubai() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												Navigating the complexities of corporate law requires strategic thinking
-												and sound legal advice. Our corporate lawyers in Dubai offer expert
+												and sound professional advice. Our corporate lawyers in Dubai offer expert
 												guidance on various business matters, helping you make informed
 												decisions that mitigate risks and maximize growth opportunities. Whether
 												you’re considering a major business transaction or seeking advice on
@@ -723,7 +723,7 @@ export default function CorporateLawyeDubai() {
 												clients. Our corporate lawyers make themselves readily accessible to
 												address your questions and concerns promptly, fostering a collaborative
 												attorney-client relationship built on trust and transparency. Whether
-												you need legal advice, updates on your case, or assistance with
+												you Need Professional Advice, updates on your case, or assistance with
 												corporate transactions, they are here to support you every step of the
 												way.
 											</div>
@@ -733,7 +733,7 @@ export default function CorporateLawyeDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -760,7 +760,7 @@ export default function CorporateLawyeDubai() {
 				<div className="container">
 					<div className="still">
 						<h6 className="text-start">
-							<span className="green-medium-2 font-x-small weight-bold">TOP LEGAL EXPERTS</span>
+							<span className="green-medium-2 font-x-small weight-bold">TOP Professional experts</span>
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
@@ -847,7 +847,7 @@ export default function CorporateLawyeDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -909,7 +909,7 @@ export default function CorporateLawyeDubai() {
 									<span className="green-medium-2"> Corporate-Related </span>-related legal matters?
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -1165,7 +1165,7 @@ export default function CorporateLawyeDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -1174,7 +1174,7 @@ export default function CorporateLawyeDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

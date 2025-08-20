@@ -18,7 +18,7 @@ export default function BenfitSection() {
                                 <span className="green-medium-2"> Immigration</span>-related legal matters?
                             </h2>
                             <div className="mt-4">
-                                <Link href={'/find-a-lawyer'}>
+                                <Link href={'/find-a-professional'}>
                                     <button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
                                         <span className="text-white"> Find A Professional </span>
                                     </button>

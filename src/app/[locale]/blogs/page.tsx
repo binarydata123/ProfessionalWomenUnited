@@ -46,7 +46,7 @@ export default async function Page() {
 							Legal <span>Insights</span>{' '}
 						</h1>
 						<p>
-							"Legal Insights" is a concise, thought-provoking platform that provides readers with
+							"Professional Insights" is a concise, thought-provoking platform that provides readers with
 							valuable perspectives and analysis.
 						</p>
 					</div>

@@ -55,12 +55,12 @@ export default function EmptyState() {
 							<div>
 								<div className="position-absolute cross-btn">
 									<button className="btn p-0 m-2">
-										<XMarkIcon width={20} color="rgba(9, 63, 56, 1)" />
+										<XMarkIcon width={20} color="rgba(196,144,115)" />
 									</button>
 								</div>
 								<h2 className="text-center">Welcome to Professional Women United!</h2>
 								<p className="text-center">
-									Connect with lawyers or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
+									Connect with Professionals or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
 								</p>
 								<Link href={'/lawyer/profile/edit'}>
 									<DefaultButton className="w-100 mt-3">Update Profile</DefaultButton>
@@ -71,7 +71,7 @@ export default function EmptyState() {
 							<div>
 								<div className="position-absolute cross-btn">
 									<button className="btn p-0 m-2">
-										<XMarkIcon width={20} color="rgba(9, 63, 56, 1)" />
+										<XMarkIcon width={20} color="rgba(196,144,115)" />
 									</button>
 								</div>
 								<h2>Find clients easily...</h2>

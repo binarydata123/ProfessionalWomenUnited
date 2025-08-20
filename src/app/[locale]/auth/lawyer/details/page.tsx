@@ -31,7 +31,7 @@ export default function stepTwo() {
 									<div className="col-lg-3 text-end">
 										<div className="payment-plan">
 											<h3>
-												<span> AED </span> 2x
+												<span> USD </span> 2x
 											</h3>
 										</div>
 									</div>

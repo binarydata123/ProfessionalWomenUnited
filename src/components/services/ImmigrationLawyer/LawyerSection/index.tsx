@@ -48,7 +48,7 @@ export default function LawyerSection({ lawyers }: any) {
                         </Slider>
                     )}
                     <div className="text-end all-btn">
-                        <Link href="/find-a-lawyer">
+                        <Link href="/find-a-professional">
                             <button>View All</button>
                         </Link>
                     </div>

@@ -43,7 +43,7 @@ export default function FamilyLawyerDubai() {
 										/>
 									</span> */}
 
-									<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
+									<span style={{ color: 'rgba(196,144,115)' }}>Find A Professional</span>
 								</div>
 							</div>
 						</section>
@@ -68,7 +68,7 @@ export default function FamilyLawyerDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+										<Link href="/find-a-professional" style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -106,7 +106,7 @@ export default function FamilyLawyerDubai() {
 						<div className="about-btn-two mt-lg-5 mt-3">
 							<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 								<span className="text-white">
-									<Link href="/find-a-lawyer" style={{color: 'white'}}>
+									<Link href="/find-a-professional" style={{color: 'white'}}>
 										Find A Professional
 									</Link>
 								</span>
@@ -578,7 +578,7 @@ export default function FamilyLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
-											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
+											<Link href="/find-a-professional" style={{ color: 'white' }}>
 												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
@@ -652,7 +652,7 @@ export default function FamilyLawyerDubai() {
 							</Slider>
 						)}
 						<div className="text-end all-btn">
-							<Link href="/find-a-lawyer">
+							<Link href="/find-a-professional">
 								<button>View All</button>
 							</Link>
 						</div>
@@ -714,7 +714,7 @@ export default function FamilyLawyerDubai() {
 									<span className="green-medium-2"> 	{t("How_Lawyers_Can_Assist_in")}</span>-{t("related_legal_matters")}
 								</h2>
 								<div className="mt-4">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
 											<span className="text-white"> Find A Professional </span>
 										</button>
@@ -932,7 +932,7 @@ export default function FamilyLawyerDubai() {
 						</div>
 						<div className="col-md-6">
 							<div className="needlawyer-text pt-0">
-								<h6 className="pt-0">GOT A LEGAL QUESTION?</h6>
+								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
 									<span className="span">Join Our Legal Forum and </span>
 									Get Expert
@@ -941,7 +941,7 @@ export default function FamilyLawyerDubai() {
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
 									firms in Dubai and across the UAE, Today! or chat with a{' '}
-									<Link className="underlineClass" href="/find-a-lawyer">
+									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
 									for free across UAE now, We work on a wide range of legal matters.

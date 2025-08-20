@@ -74,10 +74,10 @@ export default function Overview() {
 				</div>
 				<div className="col-lg-4 col-md-12">
 					<div className="dash-card-g back-dash-card-4">
-						<p className="font-large text-white weight-bold">Got a Legal Question?</p>
+						<p className="font-large text-white weight-bold">GOT A PROFESSIONAL QUESTION?</p>
 						<p>
 							{' '}
-							<Link href="/find-a-lawyer" className="green-medium-1 font-small-12 weight-semi-bold">
+							<Link href="/find-a-professional" className="green-medium-1 font-small-12 weight-semi-bold">
 								Ask A Lawyer <ArrowIcons />
 							</Link>
 						</p>

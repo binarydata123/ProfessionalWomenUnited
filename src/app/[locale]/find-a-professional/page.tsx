@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			? meta.data.find_a_lawyer_meta_description
 			: `${process.env.NEXT_APP_NAME}`,
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional`
 		},
 		openGraph: {
 			title: meta.data.find_a_lawyer_meta_title
@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			description: meta.data.find_a_lawyer_meta_description
 				? meta.data.find_a_lawyer_meta_description
 				: `${process.env.NEXT_APP_NAME}`,
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer`,
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional`,
 			siteName: `${process.env.NEXT_APP_NAME}`,
 			images: [
 				{
