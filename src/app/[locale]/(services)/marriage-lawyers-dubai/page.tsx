@@ -4,7 +4,7 @@ import MarriageLawyer from '@/components/services/MarriageLawyer';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Marriage Lawyers in Dubai – Professional Women United',
+		title: 'Marriage Professionals in Dubai – Professional Women United',
 		description:
 			'Ensure your marriage aligns with local laws using a marriage lawyer in Dubai. Professional Women United can guide you through marital legal requirements.',
 		alternates: {
@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	`
 		},
 		openGraph: {
-			title: 'Marriage Lawyers in Dubai – Professional Women United',
+			title: 'Marriage Professionals in Dubai – Professional Women United',
 			description:
 				'Ensure your marriage aligns with local laws using a marriage lawyer in Dubai. Professional Women United can guide you through marital legal requirements.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/marriage-lawyers-dubai

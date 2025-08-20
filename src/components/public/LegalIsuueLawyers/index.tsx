@@ -65,7 +65,7 @@ export default function LegalIsuueLawyers({ relatedLawyers, service = '' }: Prop
 						<span className="border-radius-1 banner-arrow-btn">
 							<PlusSmallIcon width={20} color={'#BE8363'} />
 						</span>
-						<span>{lawyers && lawyers.length < 8 ? 'See All Lawyers' : 'Load More'}</span>
+						<span>{lawyers && lawyers.length < 8 ? 'See All Professionals' : 'Load More'}</span>
 					</button>
 				</div>
 			</div>

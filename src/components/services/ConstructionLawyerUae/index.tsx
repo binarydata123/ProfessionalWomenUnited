@@ -43,7 +43,7 @@ export default function ConstructionLawyerUae() {
 	return (
 		<>
 			{/* <Head>
-				<title> Uber Accident Lawyers in Dubai – Professional Women United</title>
+				<title> Uber Accident Professionals in Dubai – Professional Women United</title>
 				<meta
 					name="description"
 					content=" Professional Women United Uber accident lawyers have over five years of experience. If you’ve been involved in an Uber accident and need legal guidance, contact us.
@@ -685,7 +685,7 @@ export default function ConstructionLawyerUae() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Dubai Construction Lawyers</span>
+							Discover the <span className="green-medium-2">Top Dubai Construction Professionals</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (

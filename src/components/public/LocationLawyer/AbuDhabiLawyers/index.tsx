@@ -583,7 +583,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 											}`}
 											onMouseEnter={() => handleMouseEnter('rentalfinance')}
 											onMouseLeave={handleMouseLeave}>
-											Rental Dispute Lawyers
+											Rental Dispute Professionals
 										</Link>
 									</li>
 									<li>

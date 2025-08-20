@@ -263,7 +263,7 @@ export default function approvals() {
 			</p>
 
 			<div className="table-part">
-				<Table columns={['Name', 'Lawyers Listed', 'Added by', 'Added on', 'Actions']}
+				<Table columns={['Name', 'Professionals Listed', 'Added by', 'Added on', 'Actions']}
 					data={currentLawyer.filter((firm: { firm_name: string; country_name: string; }) => {
 						const nameMatch = firm.firm_name.toLowerCase().includes(name.toLowerCase());
 						const locationMatch = location === '' || firm.country_name.trim().toLowerCase() === location.trim().toLowerCase();

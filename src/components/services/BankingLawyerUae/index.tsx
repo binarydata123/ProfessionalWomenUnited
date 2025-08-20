@@ -134,7 +134,7 @@ export default function BankingLawyerUae() {
 						<div className="col-lg-12 col-xl-12 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">The Importance of Hiring</span>{' '}
-								<span className="green-med-col"> Banking Lawyers</span>
+								<span className="green-med-col"> Banking Professionals</span>
 							</h2>
 							<div className="accordion-body border-0 text-white">
 								Hiring banking lawyers is crucial to navigating complex financial landscapes and
@@ -654,7 +654,7 @@ export default function BankingLawyerUae() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Banking Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Banking Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -880,7 +880,7 @@ export default function BankingLawyerUae() {
 						<div className="row">
 							<div className="col-lg-12 col-xl-7 col-md-12">
 								<div className="gotTitle">
-									<p className="font-x-small green-medium-2 weight-bold mb-2">Banking Lawyers FAQ</p>
+									<p className="font-x-small green-medium-2 weight-bold mb-2">Banking Professionals FAQ</p>
 									<h2 className="font-smaller  weight-bold mb-4">
 										Got Questions? <br />
 										<span className="green-medium-2"> We have answers.</span>

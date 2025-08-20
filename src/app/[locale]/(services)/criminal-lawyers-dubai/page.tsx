@@ -5,14 +5,14 @@ import CriminalLawyersDubai from '@/components/services/CriminalLawyersDubai';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Criminal Lawyers in Dubai – Professional Women United',
+		title: 'Criminal Professionals in Dubai – Professional Women United',
 		description:
 			'Defend against criminal charges with a criminal lawyer in Dubai. Professional Women United provides access to experienced defense attorneys.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/criminal-lawyers-dubai`
 		},
 		openGraph: {
-			title: 'Criminal Lawyers in Dubai – Professional Women United',
+			title: 'Criminal Professionals in Dubai – Professional Women United',
 			description:
 				'Defend against criminal charges with a criminal lawyer in Dubai. Professional Women United provides access to experienced defense attorneys.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/criminal-lawyers-dubai`,

@@ -288,8 +288,8 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                 <div className="col-lg-8">
                                                     <div className="company-detail">
                                                         {single_firm?.member_count > 0 ? (
-                                                            // <p>{single_firm?.member_count} Lawyers Online</p>
-                                                            <p>{single_firm?.member_count} {single_firm?.member_count == 1 ? 'Lawyer Online' : 'Lawyers Online'}</p>
+                                                            // <p>{single_firm?.member_count} Professionals Online</p>
+                                                            <p>{single_firm?.member_count} {single_firm?.member_count == 1 ? 'Lawyer Online' : 'Professionals Online'}</p>
 
                                                         ) : (
                                                             <></>
@@ -329,7 +329,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                                     }
                                                                 }}
                                                             >
-                                                                <button className="btn-commn">Our Lawyers</button>
+                                                                <button className="btn-commn">Our Professionals</button>
                                                             </span>)
                                                             :
                                                             (
@@ -347,7 +347,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                     href={`/find-a-professional/${slug}/make-an-inquiry`}
                                                     className="text-white"
                                                 >
-                                                    <button className="btn-commn">Our Lawyers</button>
+                                                    <button className="btn-commn">Our Professionals</button>
                                                 </Link>
                                             )}
                                         </div>

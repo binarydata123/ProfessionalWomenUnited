@@ -42,7 +42,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 									<Navbar.Collapse id="navbarScroll">
 										<form className="d-flex justify-content-end p-2 btn-header" role="search">
 											<Link className="btn btn-outline-success btn-lawyer" href="/for-lawyers">
-												For Lawyers
+												For Professionals
 											</Link>
 											<Link
 												className="btn btn-outline-success btn-login ml-add"

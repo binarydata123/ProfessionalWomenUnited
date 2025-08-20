@@ -559,7 +559,7 @@ export default function BestLawyersDubai() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Lawyers at Professional Women United possess an in-depth understanding of
+												Professionals at Professional Women United possess an in-depth understanding of
 												Dubai&apos;s legal environment, including local regulations, customs,
 												and practices. This insight allows them to handle your case effectively
 												within the context of Dubai&apos;s legal landscape, providing you with
@@ -612,7 +612,7 @@ export default function BestLawyersDubai() {
 											aria-labelledby="headingTen"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Lawyers on our platform excel in efficiently resolving legal disputes in
+												Professionals on our platform excel in efficiently resolving legal disputes in
 												Dubai, offering alternative methods such as mediation and arbitration.
 												By leveraging their negotiation skills and legal expertise, they
 												facilitate amicable resolutions outside of court, minimizing time,
@@ -738,7 +738,7 @@ export default function BestLawyersDubai() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -908,7 +908,7 @@ export default function BestLawyersDubai() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Lawyers in Dubai are skilled at dealing with the city&apos;s complex legal
+										Professionals in Dubai are skilled at dealing with the city&apos;s complex legal
 										landscape, including its unique regulations, business environment, and cultural
 										dynamics. With their deep understanding of Dubai&apos;s legal framework, they
 										provide strategic advice and representation tailored to your specific needs,
@@ -941,7 +941,7 @@ export default function BestLawyersDubai() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Lawyers in Dubai offer expertise in risk management, helping you identify,
+										Professionals in Dubai offer expertise in risk management, helping you identify,
 										assess, and mitigate legal risks associated with their business operations or
 										personal affairs. They carry out thorough risk assessments, analyzing potential
 										liabilities and legal exposure to develop proactive strategies that minimize the
@@ -1059,7 +1059,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Lawyers from Professional Women United possess a deep understanding of
+													Professionals from Professional Women United possess a deep understanding of
 													Dubai&apos;s legal environment, including local regulations,
 													customs, and practices. This insight allows them to handle your case
 													effectively within the context of Dubai&apos;s legal landscape,

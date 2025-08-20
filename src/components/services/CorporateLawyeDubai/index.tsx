@@ -764,7 +764,7 @@ export default function CorporateLawyeDubai() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Corporate Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Corporate Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (

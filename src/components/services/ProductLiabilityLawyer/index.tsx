@@ -670,7 +670,7 @@ export default function ProductLiabilityLawyer() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Product Liability Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Product Liability Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (

@@ -4,14 +4,14 @@ import ConstructionAccidentLawyerUae from '@/components/services/ConstructionAcc
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Construction Accident Lawyers in UAE – Professional Women United',
+		title: 'Construction Accident Professionals in UAE – Professional Women United',
 		description:
 			'Injured on a construction site? A construction accident lawyer in UAE can help. Contact Professional Women United for expert advice.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/construction-accident-lawyer-uae`
 		},
 		openGraph: {
-			title: 'Construction Accident Lawyers in UAE – Professional Women United',
+			title: 'Construction Accident Professionals in UAE – Professional Women United',
 			description:
 				'Injured on a construction site? A construction accident lawyer in UAE can help. Contact Professional Women United for expert advice.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/construction-accident-lawyer-uae`,

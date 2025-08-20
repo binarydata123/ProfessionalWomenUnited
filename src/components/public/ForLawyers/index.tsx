@@ -115,7 +115,7 @@ export default function Page() {
 										/>
 									</li>
 									<li className="position-growing p-ding">
-										250+ Lawyers & Growing
+										250+ Professionals & Growing
 										<div className="blinking"></div>
 									</li>
 								</ul>

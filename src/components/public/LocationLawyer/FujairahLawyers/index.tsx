@@ -85,7 +85,7 @@ export default function FujairahLawyers({ onclose }: any) {
 												}`}
 											onMouseEnter={() => handleMouseEnter('banking')}
 											onMouseLeave={handleMouseLeave}>
-											Best Lawyers Sharjah
+											Best Professionals Sharjah
 										</Link>
 									</li> */}
 									{/* <li>
@@ -217,7 +217,7 @@ export default function FujairahLawyers({ onclose }: any) {
 												}`}
 											onMouseEnter={() => handleMouseEnter('intbuisness')}
 											onMouseLeave={handleMouseLeave}>
-											Best Lawyers Sharjah
+											Best Professionals Sharjah
 										</Link>
 									</li>
 									<li>
@@ -582,7 +582,7 @@ export default function FujairahLawyers({ onclose }: any) {
 											}`}
 											onMouseEnter={() => handleMouseEnter('rentalfinance')}
 											onMouseLeave={handleMouseLeave}>
-											Rental Dispute Lawyers
+											Rental Dispute Professionals
 										</Link>
 									</li>
 									<li>

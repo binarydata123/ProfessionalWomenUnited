@@ -4,14 +4,14 @@ import CryptoLawyerDubai from '@/components/services/CryptoLawyerDubai';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "Crypto Lawyers in Dubai – Professional Women United",
+		title: "Crypto Professionals in Dubai – Professional Women United",
 		description: "Professional Women United offers expert cryptocurrency lawyers in Dubai for legal advice on regulatory compliance, transactional matters, and dispute resolution in the crypto space. Find experienced crypto lawyers for tailored solutions.",
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/crypto-lawyer-dubai
 `
 		},
 		openGraph: {
-			title: "Crypto Lawyers in Dubai – Professional Women United",
+			title: "Crypto Professionals in Dubai – Professional Women United",
 			description: "Professional Women United offers expert cryptocurrency lawyers in Dubai for legal advice on regulatory compliance, transactional matters, and dispute resolution in the crypto space. Find experienced crypto lawyers for tailored solutions.",
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/crypto-lawyer-dubai
 `,

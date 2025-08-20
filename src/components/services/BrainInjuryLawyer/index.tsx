@@ -728,7 +728,7 @@ export default function BrainInjuryLawyer() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Brain Injury Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Brain Injury Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -866,7 +866,7 @@ export default function BrainInjuryLawyer() {
 							<div className="titleHow">
 								<h6 className="text-start">BENEFITS</h6>
 								<h2 className="text-black-add-fig Discover-lawyer discover-text-fun">
-									How Lawyers Can Assist in
+									How Professionals Can Assist in
 									<span className="green-medium-2">Brain Injury</span>-Related Legal Matters
 								</h2>
 								<div className="mt-4">

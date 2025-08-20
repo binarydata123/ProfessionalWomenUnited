@@ -119,7 +119,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 										</li>
 										<li>
 											<Link href="/corporate-lawyer-dubai" className="set-color-sub-menus">
-												Corporate Lawyers
+												Corporate Professionals
 											</Link>
 										</li>
 									</div> */}
@@ -150,7 +150,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/commercial-lawyer-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Commercial Lawyers
+												Commercial Professionals
 											</Link>
 										</li>
 										<li>
@@ -158,7 +158,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/dubai-construction-lawyer"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Construction Lawyers
+												Construction Professionals
 											</Link>
 										</li>
 										<li>
@@ -245,7 +245,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/civil-lawyer-dubai"
 												className="set-color-sub-menus"
 												onClick={onclose}>
-												Civil Lawyers
+												Civil Professionals
 											</Link>
 										</li>
 										<li>
@@ -253,7 +253,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/find-a-lawyer"
 												className="set-color-sub-menus"
 												onClick={onclose}>
-												Accident Lawyers
+												Accident Professionals
 											</Link>
 										</li>
 										<li>
@@ -461,7 +461,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/rental-dispute-lawyer-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Rental Dispute Lawyers
+												Rental Dispute Professionals
 											</Link>
 										</li>
 
@@ -501,7 +501,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/rental-dispute-lawyer-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Rental Dispute Lawyers
+												Rental Dispute Professionals
 											</Link>
 										</li>
 
@@ -577,7 +577,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/employment-lawyer-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Employment Lawyers
+												Employment Professionals
 											</Link>
 										</li>
 										<li>
@@ -616,7 +616,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/real-estate-lawyer-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Real Estate Lawyers
+												Real Estate Professionals
 											</Link>
 										</li>
 										<li>
@@ -624,7 +624,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/property-lawyer-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Property Lawyers
+												Property Professionals
 											</Link>
 										</li>
 									</div> */}
@@ -655,7 +655,7 @@ export default function MegaMenuAbuDhabi({ onclose }: any) {
 												href="/criminal-lawyers-dubai"
 												onClick={onclose}
 												className="set-color-sub-menus">
-												Criminal Lawyers
+												Criminal Professionals
 											</Link>
 										</li>
 										<li>

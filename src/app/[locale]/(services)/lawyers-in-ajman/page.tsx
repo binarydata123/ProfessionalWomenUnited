@@ -4,14 +4,14 @@ import BestLawyersAjman from '@/components/services/BestLawyersAjman';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Find the Best Lawyers in Ajman | Professional Women United',
+		title: 'Find the Best Professionals in Ajman | Professional Women United',
 		description:
 			'Find the best lawyers in Ajman with Professional Women United. We are your go-to platform for connecting with top-tier legal professionals in the region.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/lawyers-in-ajman`
 		},
 		openGraph: {
-			title: 'Find the Best Lawyers in Ajman | Professional Women United',
+			title: 'Find the Best Professionals in Ajman | Professional Women United',
 			description:
 				'Find the best lawyers in Ajman with Professional Women United. We are your go-to platform for connecting with top-tier legal professionals in the region.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/lawyers-in-ajman`,

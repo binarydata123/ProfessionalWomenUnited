@@ -84,7 +84,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 			const response = await lawyerReportByUser(data);
 			if (response.status === true) {
 				setreportMessage(true);
-				toast.success('Lawyer successfully reported');
+				toast.success('Professional successfully reported');
 				setreportSubmitPopup(false);
 				setCheckReport(true);
 				setreportSubmitPopup(false);
@@ -115,7 +115,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 		try {
 			const response = await lawyerUnReportByUser(data);
 			if (response.message === 'Row deleted successfully') {
-				toast.success('Lawyer successfully unreported');
+				toast.success('Professional successfully unreported');
 				setCheckReport(false);
 			} else {
 				alert('Failed to unreport the lawyer. Please try again.');

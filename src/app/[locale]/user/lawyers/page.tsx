@@ -194,7 +194,7 @@ export default function page() {
 			<div className="right-body">
 				<div className="height-fixed1">
 					<div id="sticky">
-						<h4 className="font-xx-large social-link weight-semi-bold">Lawyers</h4>
+						<h4 className="font-xx-large social-link weight-semi-bold">Professionals</h4>
 						<div className="row mb-1">
 							<div className="col-sm-12">
 								<div className="nav-tab p-set d-flex justify-content-between">

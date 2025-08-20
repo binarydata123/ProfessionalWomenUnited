@@ -63,7 +63,7 @@ export default function CriminalLawyersDubai() {
 					</div>
 					<div className="row">
 						<div className="col-lg-7">
-							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">Criminal Lawyers in Dubai
+							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">Criminal Professionals in Dubai
 							</h1>
 							<p className="weight-light social-link font-medium mt-4">
 								{isMobileView ? (
@@ -702,7 +702,7 @@ export default function CriminalLawyersDubai() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Criminal Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Criminal Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -895,7 +895,7 @@ export default function CriminalLawyersDubai() {
 										diligently to reach favorable settlements for their clients in motorcycle
 										accident cases. They engage in negotiations with insurance companies and
 										opposing parties to secure maximum compensation for medical expenses, injuries,
-										and other damages. Lawyers strive to achieve swift and fair resolutions that
+										and other damages. Professionals strive to achieve swift and fair resolutions that
 										address their clients needs and interests.
 									</div>
 								</div>

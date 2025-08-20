@@ -66,7 +66,7 @@ export default function UserMenu({ closeMenu }: Props) {
 			<li onClick={closeMenu}>
 				<Link href={`/user/lawyers`} className={pathname.includes('lawyers') ? 'active' : ''}>
 					<img src="/icon/Profile-Icon.png" alt="left-menu-1" className="left-menu-icon" />
-					Lawyers
+					Professionals
 				</Link>
 			</li>
 		</>

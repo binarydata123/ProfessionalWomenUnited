@@ -658,7 +658,7 @@ export default function BusinessLawyer() {
 				<div className="container">
 					<div className="still">
 						<h3 className="font-xxx-large weight-bold text-black">
-							Discover the <span className="green-medium-2">Top Business Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Business Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (

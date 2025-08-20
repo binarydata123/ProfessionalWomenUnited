@@ -114,7 +114,7 @@ export default function UserDashboard() {
 														color="rgba(196,144,115, 1)"
 														background="rgba(9, 63, 56, 1)"
 													>
-														Ask A Lawyer
+														Ask A Professional
 													</DefaultButton>
 												</Link>
 											</div>

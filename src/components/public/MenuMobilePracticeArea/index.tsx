@@ -228,7 +228,7 @@ export default function MenuMobilePracticeArea({ onclose }: any) {
 							</li>
 							{/* <li>
 								<Link href="/find-a-lawyer" className="set-color-sub-menus" onClick={onclose}>
-									Accident Lawyers
+									Accident Professionals
 								</Link>
 							</li> */}
 							<li>

@@ -642,7 +642,7 @@ export default function CommercialLawyerDubai() {
 				<div className="container">
 					<div className="still">
 						<h3 className="font-xxx-large weight-bold text-black">
-							Discover the <span className="green-medium-2">Top Commercial Lawyers in Dubai</span>
+							Discover the <span className="green-medium-2">Top Commercial Professionals in Dubai</span>
 						</h3>
 						<p className="font-medium weight-light text-black mt-3">
 							At Professional Women United, our top commercial lawyers in Dubai possess a combination of legal

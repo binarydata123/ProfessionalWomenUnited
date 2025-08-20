@@ -265,7 +265,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 												href="/find-a-lawyer"
 												className="set-color-sub-menus"
 												onClick={onclose}>
-												Accident Lawyers
+												Accident Professionals
 											</Link>
 										</li> */}
 										<li>

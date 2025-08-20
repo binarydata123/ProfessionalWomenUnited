@@ -732,7 +732,7 @@ export default function BestLawyersSharjah() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Lawyers in Sharjah</span>
+							Discover the <span className="green-medium-2">Top Professionals in Sharjah</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -950,7 +950,7 @@ export default function BestLawyersSharjah() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Lawyers in Sharjah provide valuable legal guidance and advice to individuals
+										Professionals in Sharjah provide valuable legal guidance and advice to individuals
 										facing various legal issues. From clarifying complex legal concepts to outlining
 										available options and potential risks, they offer insightful guidance to help
 										clients make informed decisions. A lawyer in Sharjah can provide the clarity and

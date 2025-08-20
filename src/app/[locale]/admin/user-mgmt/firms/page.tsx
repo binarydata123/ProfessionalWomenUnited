@@ -453,7 +453,7 @@ export default function lawyers() {
 			</p>
 
 			<div className="table-part">
-				<Table columns={['Name', 'Lawyers Listed', 'Added by', 'Added on', 'Actions']}
+				<Table columns={['Name', 'Professionals Listed', 'Added by', 'Added on', 'Actions']}
 					data={currentLawyer.filter((firm: { firm_name: string; country_id: string; }) => {
 						const nameMatch = firm.firm_name.toLowerCase().includes(name.toLowerCase());
 						const countryId = firm.country_id;
@@ -539,7 +539,7 @@ export default function lawyers() {
 												onClick={() => handleAddLawyerFirm(rowData.id)
 												}
 											>
-												Add Lawyers
+												Add Professionals
 											</Link>
 										</li>
 										<li>
@@ -548,7 +548,7 @@ export default function lawyers() {
 												onClick={() => handleRemoveLawyerFirm(rowData.id)
 												}
 											>
-												Remove Lawyers
+												Remove Professionals
 											</Link>
 										</li>
 										<li>
@@ -599,7 +599,7 @@ export default function lawyers() {
 				size="lg"
 				show={lawyerpopup}
 				className="create-tags"
-				title={firmId ? `Add Lawyers for ${firmName}` : "Add Lawyers"}
+				title={firmId ? `Add Professionals for ${firmName}` : "Add Professionals"}
 				onCancel={() => setLawyerPopup(false)}
 				onOk={() => setLawyerPopup(false)}
 				footer={false}
@@ -748,7 +748,7 @@ export default function lawyers() {
 				size="lg"
 				show={removelawyerpopup}
 				className="create-tags"
-				title={firmId ? `Remove Lawyers from ${firmName}` : "Remove Lawyers"}
+				title={firmId ? `Remove Professionals from ${firmName}` : "Remove Professionals"}
 				onCancel={() => setRemoveLawyerPopup(false)}
 				onOk={() => setRemoveLawyerPopup(false)}
 				footer={false}

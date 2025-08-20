@@ -371,7 +371,7 @@ export default function popup() {
 						data-bs-toggle="modal"
 						data-bs-target="#exampleModal6"
 					>
-						Lawyers - Active - View Profile
+						Professionals - Active - View Profile
 					</button>
 
 					<div
@@ -588,7 +588,7 @@ export default function popup() {
 						data-bs-toggle="modal"
 						data-bs-target="#exampleModal7"
 					>
-						Lawyers - Active - View Profile
+						Professionals - Active - View Profile
 					</button>
 
 					<div

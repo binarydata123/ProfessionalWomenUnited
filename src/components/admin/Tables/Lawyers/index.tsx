@@ -9,7 +9,7 @@ import ReportAccount from '@/components/admin/modals/ReportAccount';
 import EyeButton from '@/commonUI/TableActionButtons/EyeButton';
 import MessageButton from '@/commonUI/TableActionButtons/MessageButton';
 
-export default function Lawyers() {
+export default function Professionals() {
 	const [viewProfile, setviewProfile] = useState(false);
 	const [sendMessage, setsendMessage] = useState(false);
 	const [reportAccount, setreportAccount] = useState(false);

@@ -64,7 +64,7 @@ export default function BestLawyersUmmAlQuwain() {
 					<div className="row">
 						<div className="col-lg-7">
 							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">
-								Find the Best Lawyers in Umm Al Quwain
+								Find the Best Professionals in Umm Al Quwain
 							</h1>
 							<p className="weight-light social-link font-medium mt-4">
 								{isMobileView ? (
@@ -146,7 +146,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Lawyers in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it family law, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
+												Professionals in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it family law, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
 											</div>
 										</div>
 									</div>
@@ -294,7 +294,7 @@ export default function BestLawyersUmmAlQuwain() {
 						</h6>
 
 						<h3 className="font-xxx-large weight-bold text-black mt-3 discover-font">
-							Discover the <span className="green-medium-2">Top Lawyers in Umm Al Quwain</span>
+							Discover the <span className="green-medium-2">Top Professionals in Umm Al Quwain</span>
 						</h3>
 						<p className="font-medium weight-light text-black-add-fig mt-3">
 							{isMobileViewDiscover ? (
@@ -449,7 +449,7 @@ export default function BestLawyersUmmAlQuwain() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Lawyers in Umm Al Quwain offer expert legal advice tailored to your specific situation. They analyze your case thoroughly, explaining your rights and options in clear terms. With their deep understanding of the law, they provide strategic guidance to help you make informed decisions and handle your legal matters with confidence.
+										Professionals in Umm Al Quwain offer expert legal advice tailored to your specific situation. They analyze your case thoroughly, explaining your rights and options in clear terms. With their deep understanding of the law, they provide strategic guidance to help you make informed decisions and handle your legal matters with confidence.
 									</div>
 								</div>
 								<div className="col-lg-12">

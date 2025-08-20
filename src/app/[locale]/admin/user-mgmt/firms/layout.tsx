@@ -66,7 +66,7 @@ export default function LawyersLayout({ children }: { children: React.ReactNode 
 					</span>
 					<span>User Mgmt.</span>
 					<span>
-						<Image src="/images/legal-service/arrow-right.png" alt="Lawyers" width={16} height={16} />
+						<Image src="/images/legal-service/arrow-right.png" alt="Professionals" width={16} height={16} />
 					</span>
 					<span>Firms</span>
 				</div>

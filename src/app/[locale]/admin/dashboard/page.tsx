@@ -80,7 +80,7 @@ export default function Dashboard() {
 												{dashboard_box.lawyer_count}
 											</p>
 											<LinkButton color="#fff" height={0}>
-												Active Lawyers
+												Active Professionals
 											</LinkButton>
 										</div>
 									</Link>
