@@ -30,7 +30,10 @@ export default function Blog({blog}: Props) {
 					<ImageComponent
 						className="mb-2 d-lg-block float-left"
 						src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${blog.image}`}
-						placeholderImgUrl={process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`}
+						// placeholderImgUrl={process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`}
+						placeholderImgUrl={
+							process.env.NEXT_PUBLIC_BASE_URL + `/images/624x351.png`
+						}
 						alt={blog.image_alt_text}
 						height={350}
 						width={350}
@@ -38,7 +41,10 @@ export default function Blog({blog}: Props) {
 				) : (
 					<ImageComponent
 						className="mb-2 d-lg-block float-left"
-						placeholderImgUrl={process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`}
+						// placeholderImgUrl={process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`}
+						placeholderImgUrl={
+							process.env.NEXT_PUBLIC_BASE_URL + `/images/624x351.png`
+						}
 						alt={blog.image_alt_text}
 						height={350}
 						width={350}

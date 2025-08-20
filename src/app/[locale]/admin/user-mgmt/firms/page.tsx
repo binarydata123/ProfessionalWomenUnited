@@ -700,7 +700,7 @@ export default function lawyers() {
 												aria-labelledby="dropdownMenu2"
 											>
 												<li className="active">
-													<Link href={`/find-a-lawyer/${lawyerdata.slug}`} target="_blank">
+													<Link href={`/find-a-professional/${lawyerdata.slug}`} target="_blank">
 														<p
 															style={{ cursor: 'pointer', fontSize: '15px', color: '#000' }}
 														>

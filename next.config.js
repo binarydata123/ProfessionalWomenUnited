@@ -10,7 +10,7 @@ module.exports = withNextIntl({
 	cache: false,
 	assetPrefix: isProd ? 'https://professional-women.ai-developer.site/' : 'http://localhost:3000/',
 	images: {
-		domains: ['localhost', 'connectlegal.ae','professional-women.ai-developer.site','pro-women.api.ai-developer.site', 'api.connectlegal.ae', 'connect-legal-api.test'] // Add your local domain(s) here
+		domains: ['localhost','professional-women.ai-developer.site','pro-women.api.ai-developer.site'] // Add your local domain(s) here
 	},
 	webpack: (config, {buildId, dev, isServer, defaultLoaders, webpack}) => {
 		config.plugins.push(
@@ -47,6 +47,11 @@ module.exports = withNextIntl({
 			{
 				source: '/ar/find-a-lawyer/:path*',
 				destination: '/en/find-a-lawyer/:path*',
+				permanent: true
+			},
+			{
+				source: '/ar/find-a-professional/:path*',
+				destination: '/en/find-a-professional/:path*',
 				permanent: true
 			},
 			{

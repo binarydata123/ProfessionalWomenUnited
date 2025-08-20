@@ -192,7 +192,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 					<div className="col-md-9 col-7">
 						<div className="row m-center">
 							<div className="col-md-2 col-4 pr-0 big-screen-w">
-								<Link href={`/find-a-lawyer/${lawyerdata.slug}`}>
+								<Link href={`/find-a-professional/${lawyerdata.slug}`}>
 									<img
 										// src="/images/user-popup.png"
 										src={getAdminImageSrc130x130(lawyerdata.profile_image, lawyerdata.gender)}
@@ -204,7 +204,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 								</Link>
 							</div>
 							<div className="col-md-10 col-8 position-relative">
-								<Link href={`/find-a-lawyer/${lawyerdata.slug}`}>
+								<Link href={`/find-a-professional/${lawyerdata.slug}`}>
 									<p className="font-large social-link weight-bold">{lawyerdata.full_name}</p>
 								</Link>
 								<div className="d-none d-lg-block">
@@ -313,22 +313,22 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 							{selectedLawyerId === lawyerdata.id && (
 								<div className="mt-3">
 									<FacebookShareButton
-										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${lawyerdata.slug}`}
+										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${lawyerdata.slug}`}
 									>
 										<FacebookIcon size={32} round className="m-2" />
 									</FacebookShareButton>
 									<RedditShareButton
-										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${lawyerdata.slug}`}
+										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${lawyerdata.slug}`}
 									>
 										<RedditIcon size={32} round className="m-2" />
 									</RedditShareButton>
 									<WhatsappShareButton
-										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${lawyerdata.slug}`}
+										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${lawyerdata.slug}`}
 									>
 										<WhatsappIcon size={32} round className="m-2" />
 									</WhatsappShareButton>
 									<LinkedinShareButton
-										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${lawyerdata.slug}`}
+										url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${lawyerdata.slug}`}
 									>
 										<LinkedinIcon size={32} round className="m-2" />
 									</LinkedinShareButton>
@@ -336,13 +336,13 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 							)}
 						</ul>
 						<div className="d-none d-lg-block">
-							<Link href={`/find-a-lawyer/${lawyerdata.slug}/make-an-inquiry`}>
+							<Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
 								<button className="btn-primary mt-1 mb-2">Make An Inquiry </button>
 							</Link>
 							<p className="mt-2 m-center">
 								<Link
 									className="boysenberry font-small weight-semi-bold"
-									href={`/find-a-lawyer/${lawyerdata.slug}`}
+									href={`/find-a-professional/${lawyerdata.slug}`}
 								>
 									View Profile{' '}
 									<button className="btn-mini danger-btn border-none icon-rotate">
@@ -400,13 +400,13 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 					</div>
 				</div>
 				<div className="d-block d-lg-none">
-					<Link href={`/find-a-lawyer/${lawyerdata.slug}/make-an-inquiry`}>
+					<Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
 						<button className="btn-primary  w-100 mt-1 mb-2">Make An Inquiry </button>
 					</Link>
 					<p className="mt-2 m-center">
 						<Link
 							className="boysenberry font-small weight-semi-bold"
-							href={`/find-a-lawyer/${lawyerdata.slug}`}
+							href={`/find-a-professional/${lawyerdata.slug}`}
 						>
 							View Profile{' '}
 							<button className="btn-mini danger-btn border-none icon-rotate">

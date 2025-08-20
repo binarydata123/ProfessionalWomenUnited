@@ -180,12 +180,12 @@ export default function LawyerStepTwo() {
 		if (!formData.designation) {
 			newErrors.designation = 'Designation is required';
 		}
-		if (!selectedLawFirmId) {
-			newErrors.firm_id = 'Law firm is required';
-		}
-		if (!formData.jurisdiction_id) {
-			newErrors.jurisdiction_id = 'Jurisdiction is required';
-		}
+		// if (!selectedLawFirmId) {
+		// 	newErrors.firm_id = 'Law firm is required';
+		// }
+		// if (!formData.jurisdiction_id) {
+		// 	newErrors.jurisdiction_id = 'Jurisdiction is required';
+		// }
 		if (!formData.service_id) {
 			newErrors.service_id = 'Service is required';
 		}
@@ -433,7 +433,7 @@ export default function LawyerStepTwo() {
 											)}
 										</div>
 									</div>
-									<div className="col-md-12">
+									{/* <div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
 												Jurisdiction*
@@ -464,7 +464,7 @@ export default function LawyerStepTwo() {
 												</small>
 											)}
 										</div>
-									</div>
+									</div> */}
 									<div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">

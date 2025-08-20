@@ -40,6 +40,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Page() {
 	const data: any = await getData();
+
+	console.log(data,'da32423423ta')
 	return (
 		<>
 			<Firm allfirm={data.firm} />

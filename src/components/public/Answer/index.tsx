@@ -248,7 +248,7 @@ export default function Answer({ answer, Key, loginUser }: Props) {
                     }
                   </div>
                   <div className="btn-group-right d-none d-lg-block">
-                    <Link href={`/find-a-lawyer/${answer.response_slug}`}>
+                    <Link href={`/find-a-professional/${answer.response_slug}`}>
                       <PrimaryButton>View Profile</PrimaryButton>
                     </Link>
                     <Link href={`/contact-us`}>
@@ -260,7 +260,7 @@ export default function Answer({ answer, Key, loginUser }: Props) {
                 </div>
                 <div className="btn-group-right d-block d-lg-none d-flex justify-content-between align-items-center">
                   <div className="w-50 w-style">
-                    <Link href={`/find-a-lawyer/${answer.response_name}`}>
+                    <Link href={`/find-a-professional/${answer.response_name}`}>
                       <PrimaryButton>View Profile</PrimaryButton>
                     </Link>
                   </div>

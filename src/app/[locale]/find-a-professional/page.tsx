@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: meta.data.find_a_lawyer_meta_title
 			? meta.data.find_a_lawyer_meta_title
-			: `Find a lawyer | ${process.env.NEXT_APP_NAME}`,
+			: `Find a Professional | ${process.env.NEXT_APP_NAME}`,
 		description: meta.data.find_a_lawyer_meta_description
 			? meta.data.find_a_lawyer_meta_description
 			: `${process.env.NEXT_APP_NAME}`,
@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			title: meta.data.find_a_lawyer_meta_title
 				? meta.data.find_a_lawyer_meta_title
-				: `Find a lawyer | ${process.env.NEXT_APP_NAME}`,
+				: `Find a Professional | ${process.env.NEXT_APP_NAME}`,
 			description: meta.data.find_a_lawyer_meta_description
 				? meta.data.find_a_lawyer_meta_description
 				: `${process.env.NEXT_APP_NAME}`,

@@ -152,7 +152,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgba(198, 238, 226, 1)'}}>
+										style={{color: 'rgb(249,242,239)'}}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
 											style={{marginRight: '10px', color: '#fff'}}>
@@ -169,7 +169,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgba(198, 238, 226, 1)'}}>
+										style={{color: 'rgb(249,242,239)'}}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
 											style={{marginRight: '10px', color: '#fff'}}>
@@ -187,7 +187,7 @@ export default function BestLawyersDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{color: 'rgba(198, 238, 226, 1)'}}>
+										style={{color: 'rgb(249,242,239)'}}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
 											style={{marginRight: '10px', color: '#fff'}}>

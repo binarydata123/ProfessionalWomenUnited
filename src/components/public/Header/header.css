@@ -258,19 +258,19 @@ ul.list-mega li a {
 }
 /* .county-set {
 	max-width: 260px;
-	border: 1px solid rgba(198, 238, 226, 1);
+	border: 1px solid rgb(249,242,239);
 	background-color: rgba(252, 252, 252, 1);
 	height: 100vh;
 } */
 .county-set {
 	max-width: 260px;
-	border: 1px solid rgba(198, 238, 226, 1);
+	border: 1px solid rgb(249,242,239);
 	background-color: rgba(252, 252, 252, 1);
 	height: 75vh;
 	/* border-radius: 20px 0 0 20px; */
 }
 .county-set .active {
-	background-color: rgba(198, 238, 226, 1);
+	background-color: rgb(249,242,239);
 	color: rgba(9, 63, 56, 1);
 	font-weight: 500;
 	/* border-radius: 20px 0 0 0; */
@@ -313,7 +313,7 @@ a.pop-head-set:hover {
 }
 
 .active-link-mega-menu {
-	color: #208c84 !important;
+	color: #c49073 !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -390,13 +390,13 @@ a.pop-head-set:hover {
 		background-image: url(/images/imgpsh_fullsize_animset.png) !important;
 	}
 	body div#accordionExample div#collapseTwo button.megamenu.megaMenuactive {
-		background: #c6eee2 !important;
+		background: #f9f2ef !important;
 		color: #4f4f4f;
 		border-radius: 0;
 		margin-bottom: 10px;
 	}
 	/* body div#accordionExample div#collapseTwo a.megamenu.megaMenuactive {
-		background: #c6eee2 !important;
+		background: #f9f2ef !important;
 		color: #4f4f4f;
 		border-radius: 0;
 		margin-bottom: 10px;
@@ -470,13 +470,13 @@ a.pop-head-set:hover {
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-		background: #c6eee2;
+		background: #f9f2ef;
 		border-radius: 10px;
 	}
 
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-		background: #c6eee2;
+		background: #f9f2ef;
 	}
 	.set-scrol-menu .d-flex {
 		gap: 6px !important;

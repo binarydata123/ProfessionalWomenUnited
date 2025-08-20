@@ -11,12 +11,12 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Checkout from './Checkout';
 
-// const promiseCheckout = loadStripe(
-// 	"pk_test_FQu4ActGupRmMrkmBpwU26js"
-// );
 const promiseCheckout = loadStripe(
-	"pk_live_51PCFO6A2kvlFiDWuYSDdIulqEf6IacZQRVucRXyoJhICbmN0EGZt1MideQfHQrIwUpGzscJi6dqRv282TCBr05n800YCX6O86V"
+	"pk_test_FQu4ActGupRmMrkmBpwU26js"
 );
+// const promiseCheckout = loadStripe(
+// 	"pk_live_51PCFO6A2kvlFiDWuYSDdIulqEf6IacZQRVucRXyoJhICbmN0EGZt1MideQfHQrIwUpGzscJi6dqRv282TCBr05n800YCX6O86V"
+// );
 
 interface FormData {
 	CardNumber: string;

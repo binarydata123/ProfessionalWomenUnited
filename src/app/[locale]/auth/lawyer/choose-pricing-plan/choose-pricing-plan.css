@@ -4,7 +4,7 @@
 	line-height: 26px;
 	letter-spacing: 0.02em;
 	text-align: left;
-	color: #208c84;
+	color: #000;
 	display: flex;
 	align-items: center;
 }
@@ -102,7 +102,7 @@ li.position-growing {
 	line-height: 44.8px;
 }
 .benefits i {
-	color: #208c84;
+	color: #c49073;
 	font-size: 16px;
 	margin-right: 10px;
 }

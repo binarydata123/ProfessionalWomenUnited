@@ -95,7 +95,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-bold f-20 text-start"
-										style={{ color: 'rgba(198, 238, 226, 1)' }}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span className="font-xxx-large" style={{ marginRight: '10px', color: '#fff' }}>
 											343
 										</span>
@@ -110,7 +110,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-bold f-20 text-start"
-										style={{ color: 'rgba(198, 238, 226, 1)' }}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span className="font-xxx-large" style={{ marginRight: '10px', color: '#fff' }}>
 											3,000
 										</span>
@@ -126,7 +126,7 @@ export default function CarAccidentLawyerDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-bold f-20 text-start"
-										style={{ color: 'rgba(198, 238, 226, 1)' }}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span className="font-xxx-large" style={{ marginRight: '10px', color: '#fff' }}>
 											66%
 										</span>

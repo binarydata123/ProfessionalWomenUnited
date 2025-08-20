@@ -147,7 +147,7 @@ export default function UserDashboard() {
 							{recentlyviewlawyer.length > 0 ? (
 								recentlyviewlawyer.map((laywer: any, index: any) => (
 									<div className="card-notifaction mt-2" key={index}>
-										<Link href={`/find-a-lawyer/${laywer.slug}`}>
+										<Link href={`/find-a-professional/${laywer.slug}`}>
 											<div className="row m-center align-items-center">
 												<div className="col-sm-2 pr-0">
 													<img

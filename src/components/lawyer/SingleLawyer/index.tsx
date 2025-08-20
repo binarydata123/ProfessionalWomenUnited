@@ -166,12 +166,12 @@ export default function SingleLawyer({ slug = '' }: Props) {
 		<>
 			<section className="blog-section start">
 				<div className="container">
-					<div className="text-left-line text-start pt-lg-5 mt-2">
+					<div className="text-left-line text-start pt-lg-5 mt-4">
 						{isLoading ? (
 							<div
 								style={{
 									height: '20px',
-									backgroundColor: 'rgba(198, 238, 226, 1)',
+									backgroundColor: 'rgb(234,212,199)',
 									width: '20%',
 									marginBottom: '10px'
 								}}
@@ -193,7 +193,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 								</li>
 								<li>
 									<Link href="/find-a-lawyer" className="unactive">
-										Find a lawyer
+										Find a professional
 									</Link>
 								</li>
 								<li>
@@ -298,22 +298,22 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														{share && (
 															<div className="mt-3">
 																<FacebookShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${single_lawyer.slug}`}
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
 																>
 																	<FacebookIcon size={32} round className="m-2" />
 																</FacebookShareButton>
 																<RedditShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${single_lawyer.slug}`}
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
 																>
 																	<RedditIcon size={32} round className="m-2" />
 																</RedditShareButton>
 																<WhatsappShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${single_lawyer.slug}`}
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
 																>
 																	<WhatsappIcon size={32} round className="m-2" />
 																</WhatsappShareButton>
 																<LinkedinShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${single_lawyer.slug}`}
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
 																>
 																	<LinkedinIcon size={32} round className="m-2" />
 																</LinkedinShareButton>
@@ -383,7 +383,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div className="col-lg-4 text-end pt-3  d-none d-lg-block">
 													<>
 														<Link
-															href={`/find-a-lawyer/${slug}/make-an-inquiry`}
+															href={`/find-a-professional/${slug}/make-an-inquiry`}
 															className="text-white"
 														>
 															<button className="btn-commn">Make An Inquiry</button>
@@ -397,7 +397,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										<div className="company-detail-btn">
 											{user?.id != lawyer_Id && (
 												<Link
-													href={`/find-a-lawyer/${slug}/make-an-inquiry`}
+													href={`/find-a-professional/${slug}/make-an-inquiry`}
 													className="text-white"
 												>
 													<button className="btn-commn">Make An Inquiry</button>
@@ -422,7 +422,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 							<div
 								style={{
 									height: '30px',
-									backgroundColor: 'rgba(198, 238, 226, 1)',
+									backgroundColor: 'rgb(249,242,239)',
 									width: '6%',
 									marginBottom: '10px',
 									marginRight: '10px'
@@ -451,7 +451,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 							<div
 								style={{
 									height: '30px',
-									backgroundColor: 'rgba(198, 238, 226, 1)',
+									backgroundColor: 'rgb(249,242,239)',
 									width: '8%',
 									marginBottom: '10px',
 									marginRight: '10px'
@@ -480,7 +480,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 							<div
 								style={{
 									height: '30px',
-									backgroundColor: 'rgba(198, 238, 226, 1)',
+									backgroundColor: 'rgb(249,242,239)',
 									width: '6%',
 									marginBottom: '10px'
 								}}
@@ -521,7 +521,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 													<div
 														style={{
 															height: '30px',
-															backgroundColor: 'rgba(198, 238, 226, 1)',
+															backgroundColor: 'rgb(249,242,239)',
 															width: '250px'
 														}}
 													></div>
@@ -536,7 +536,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										<div
 											style={{
 												height: '30px',
-												backgroundColor: 'rgba(198, 238, 226, 1)',
+												backgroundColor: 'rgb(249,242,239)',
 												width: '200px'
 											}}
 										></div>
@@ -567,7 +567,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											className="mt-2"
 											style={{
 												height: '30px',
-												backgroundColor: 'rgba(198, 238, 226, 1)',
+												backgroundColor: 'rgb(249,242,239)',
 												width: '500px'
 											}}
 										></div>
@@ -589,7 +589,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '20px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
 													}}
 												></div>
@@ -603,7 +603,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '20px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
 													}}
 												></div>
@@ -622,7 +622,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											className="mt-2"
 											style={{
 												height: '20px',
-												backgroundColor: 'rgba(198, 238, 226, 1)',
+												backgroundColor: 'rgb(249,242,239)',
 												width: '250px'
 											}}
 										></div>
@@ -640,7 +640,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 													className="mt-2"
 													style={{
 														height: '50px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
 													}}
 												></div>
@@ -668,7 +668,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '20px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '100px'
 													}}
 												></div>
@@ -682,7 +682,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '500px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '100px'
 													}}
 												></div>
@@ -698,7 +698,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '20px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '100px'
 													}}
 												></div>
@@ -726,7 +726,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '20px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '100px'
 													}}
 												></div>
@@ -783,7 +783,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 													className="mt-2"
 													style={{
 														height: '20px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '100px'
 													}}
 												></div>
@@ -855,7 +855,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '50px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
 													}}
 												></div>
@@ -868,7 +868,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div
 													style={{
 														height: '50px',
-														backgroundColor: 'rgba(198, 238, 226, 1)',
+														backgroundColor: 'rgb(249,242,239)',
 														width: '200px',
 														float: 'right'
 													}}
@@ -876,7 +876,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											) : (
 												<>
 													{user?.id != lawyer_Id && (
-														<Link href={`/find-a-lawyer/${slug}/write-a-review`}>
+														<Link href={`/find-a-professional/${slug}/write-a-review`}>
 															<button className="btn-secondary">Write A Review</button>
 														</Link>
 													)}
@@ -958,7 +958,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 								<div
 									style={{
 										height: '400px',
-										backgroundColor: 'rgba(198, 238, 226, 1)',
+										backgroundColor: 'rgb(249,242,239)',
 										width: '400px',
 										borderRadius: '8px'
 									}}
@@ -1102,7 +1102,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										<div className="company-detail-btn">
 											{user?.id != lawyer_Id && (
 												<Link
-													href={`/find-a-lawyer/${slug}/make-an-inquiry`}
+													href={`/find-a-professional/${slug}/make-an-inquiry`}
 													className="text-white"
 												>
 													<button className=" w-100 btn-commn">Make An Inquiry</button>

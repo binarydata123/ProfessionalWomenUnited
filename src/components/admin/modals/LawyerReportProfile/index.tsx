@@ -173,7 +173,7 @@ export default function LawyerProfile(props: any) {
 							<a
 								className="boysenberry font-small weight-semi-bold "
 								target="_blank"
-								href={`/find-a-lawyer/${single_lawyer.slug}`} rel="noreferrer"
+								href={`/find-a-professional/${single_lawyer.slug}`} rel="noreferrer"
 							>
 								View Public Profile <i className="fa-solid fa-angle-right box-right icon-size-10"></i>
 							</a>

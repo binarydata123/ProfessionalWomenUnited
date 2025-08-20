@@ -14,15 +14,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		notFound()
 	}
 	return {
-		title: meta.meta_title ? meta.meta_title : `Find a lawyer | ${process.env.NEXT_APP_NAME}`,
+		title: meta.meta_title ? meta.meta_title : `Find a Professional | ${process.env.NEXT_APP_NAME}`,
 		description: meta.meta_description ? meta.meta_description : `${process.env.NEXT_APP_NAME}`,
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${params.slug}`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${params.slug}`
 		},
 		openGraph: {
-			title: meta.meta_title ? meta.meta_title : `Find a lawyer | ${process.env.NEXT_APP_NAME}`,
+			title: meta.meta_title ? meta.meta_title : `Find a Professional | ${process.env.NEXT_APP_NAME}`,
 			description: meta.meta_description ? meta.meta_description : `${process.env.NEXT_APP_NAME}`,
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-lawyer/${params.slug}`,
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${params.slug}`,
 			siteName: `${process.env.NEXT_APP_NAME}`,
 			images: [
 				{

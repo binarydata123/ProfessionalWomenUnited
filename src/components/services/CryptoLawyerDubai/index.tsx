@@ -129,7 +129,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{ color: 'rgba(198, 238, 226, 1)' }}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
 											style={{ marginRight: '10px', color: '#fff' }}>
@@ -146,7 +146,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{ color: 'rgba(198, 238, 226, 1)' }}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
 											style={{ marginRight: '10px', color: '#fff' }}>
@@ -164,7 +164,7 @@ export default function CryptoLawyerDubai() {
 								<div className="col-lg-11 col-9 p-lg-0">
 									<p
 										className="weight-semi-bold f-20 text-start"
-										style={{ color: 'rgba(198, 238, 226, 1)' }}>
+										style={{ color: 'rgb(249,242,239)' }}>
 										<span
 											className="font-xxx-large weight-bold fontfamSet"
 											style={{ marginRight: '10px', color: '#fff' }}>
@@ -176,7 +176,7 @@ export default function CryptoLawyerDubai() {
 							</div>
 							{/* <p
 								className="weight-semi-bold f-20 text-start"
-								style={{ color: 'rgba(198, 238, 226, 1)' }}>
+								style={{ color: 'rgb(249,242,239)' }}>
 								Crypto lawyers in Dubai expertly navigate the legal complexities of cryptocurrency crimes, ensuring comprehensive legal support for those affected.
 							</p> */}
 						</div>

@@ -10,7 +10,7 @@
 
 .card-inquiries.active {
 	border: 1px solid var(--green-light);
-	background: #c6eee266;
+	background: #f9f2ef66;
 	border-radius: 8px;
 }
 

@@ -100,7 +100,7 @@ export default function Page() {
 								>
 									<ul>
 										<li>
-											<Link href={'/find-a-lawyer/test-lawyer'} target="_blank">
+											<Link href={'/find-a-professional/test-lawyer'} target="_blank">
 												View Public Profile
 											</Link>
 										</li>

@@ -122,7 +122,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 							</li>
 							<li>
 								<Link href="#" className="unactive">
-									Find a lawyer
+									Find a professional
 								</Link>
 							</li>
 							<li>

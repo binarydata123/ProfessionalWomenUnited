@@ -153,7 +153,7 @@ export default function Overview() {
 							{topcontributor.length > 0 ? (
 								topcontributor.map((contributor: any, index: any) => (
 									<div className="card-notifaction pad-sp mt-2">
-										<Link href={`/find-a-lawyer/${contributor.slug}`}>
+										<Link href={`/find-a-professional/${contributor.slug}`}>
 											<div className="row align-items-center">
 												<div className="col-2 text-end">
 													<p className="font-small weight-bold text-dark text-end">

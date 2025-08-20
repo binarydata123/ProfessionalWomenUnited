@@ -72,7 +72,7 @@ export default function LawyerCard({
 	return (
 		<div className="lawyer-card-wrapper" key={Key}>
 			<div className="testimonial">
-				<Link href={`/find-a-lawyer/${lawyer?.slug}`}>
+				<Link href={`/find-a-professional/${lawyer?.slug}`}>
 					<div className="pic pic-box1 position-relative">
 						<div className="portfolioDisc">
 							{ContinueButton && (
@@ -100,8 +100,18 @@ export default function LawyerCard({
 								</div>
 							)}
 						</div>
-						<div className="lawyer-img-set-mobile" style={{
-							backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer?.profile_image}`,
+						<div 
+						// className="lawyer-img-set-mobile"
+						className={
+							lawyer?.profile_image ? "lawyer-img-set-mobile" : "lawyer-dummy-image"
+						  }
+						 style={{
+							// backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer?.profile_image}`,
+							backgroundImage: `url(${
+								lawyer?.profile_image
+								  ? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
+								  : "/images/find-A-lawyer/second.png"
+							  })`,
 							backgroundSize: 'contain',
 							backgroundRepeat: 'no-repeat',
 							backgroundPosition: 'center top',
@@ -110,7 +120,7 @@ export default function LawyerCard({
 					</div>
 
 				</Link>
-				<Link href={`/find-a-lawyer/${lawyer?.slug}`}>
+				<Link href={`/find-a-professional/${lawyer?.slug}`}>
 					<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{textDecoration:'none'}}>
 						{lawyer?.full_name}
 						{isOnline}
@@ -260,7 +270,7 @@ export default function LawyerCard({
 						<div className="col-lg-4">
 							<>
 								<Link
-									href={`/find-a-lawyer/${single_lawyer?.slug}/make-an-inquiry`}
+									href={`/find-a-professional/${single_lawyer?.slug}/make-an-inquiry`}
 
 									className="text-white"
 								>

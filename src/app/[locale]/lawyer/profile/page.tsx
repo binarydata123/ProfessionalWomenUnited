@@ -179,7 +179,7 @@ export default function Profile() {
 						<h5 className="font-x-large22 weight-bold green-dark">About</h5>
 					</div>
 					<div className="col-6 text-right">
-						<Link target="_blank" href={`/find-a-lawyer/${lawyerDetails?.slug}`}>
+						<Link target="_blank" href={`/find-a-professional/${lawyerDetails?.slug}`}>
 							<LinkButton>View Public Profile</LinkButton>
 						</Link>
 					</div>

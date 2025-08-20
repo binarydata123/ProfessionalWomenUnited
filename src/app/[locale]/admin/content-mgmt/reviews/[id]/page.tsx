@@ -268,7 +268,7 @@ export default function Page({ params }: { params: { id: string } }) {
 				<div className="col-4 text-right">
 					<p>
 						<Link
-							href={`/find-a-lawyer/${single_lawyer.slug}`}
+							href={`/find-a-professional/${single_lawyer.slug}`}
 							className="font-small weight-semi-bold mt-1 boysenberry text-center"
 						>
 							View Public Profile <i className="fa-solid fa-angle-right box-right icon-size-10"></i>

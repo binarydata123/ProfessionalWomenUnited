@@ -336,10 +336,10 @@ h6 {
 /* Small Primary Button */
 
 .btn-primary-small-true {
-	border: 1px solid #208c84;
+	border: 1px solid #c49073;
 	padding: 8px 20px 8px 20px;
 	border-radius: 4px;
-	background: #208c84;
+	background: #c49073;
 	font-weight: 600;
 	color: #fff;
 	line-height: 25.6px;
@@ -448,7 +448,7 @@ h6 {
 /* Tertiary Button */
 .btn-tertiary-true {
 	font-weight: 600;
-	color: #208c84;
+	color: #c49073;
 	line-height: 25.6px;
 	font-size: 16px;
 	background-color: #fff0;
@@ -515,7 +515,7 @@ h6 {
 }
 
 .fild-form.focused .field-des {
-	border: 1px solid #c6eee2;
+	border: 1px solid #f9f2ef;
 }
 
 .fild-form.focused .field-des::placeholder {

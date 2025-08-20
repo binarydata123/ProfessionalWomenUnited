@@ -144,7 +144,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 		<>
 			<section className="blog-section start">
 				<div className="container">
-					<div className="text-left-line text-start pt-lg-5 mt-2">
+					<div className="text-left-line text-start pt-lg-5 mt-5">
 						<ul>
 							<li>
 								<Link href="/" className="unactive">
@@ -160,8 +160,8 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 								/>
 							</li>
 							<li>
-								<Link href="/find-a-lawyer" className="unactive">
-									Find a lawyer
+								<Link href="/find-a-professional" className="unactive">
+									Find a professional
 								</Link>
 							</li>
 							<li>
@@ -173,7 +173,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 								/>
 							</li>
 							<li>
-								<Link href={`/find-a-lawyer/${lawyer.slug}`} className="unactive">
+								<Link href={`/find-a-professional/${lawyer.slug}`} className="unactive">
 									{lawyer.full_name}
 								</Link>
 							</li>
@@ -216,7 +216,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											error={errors.message}
 											onChange={handleTextAreaChange}
 										/>
-										<button className="btn-commn w-100 mt-5" type="submit">
+										<button className="btn-commn w-100 mt-5 mb-5" type="submit">
 											<span className="text-white">Submit</span>
 										</button>
 									</form>
@@ -280,7 +280,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											error={errors.message}
 											placeholder="Briefly share your legal issue here..."
 										/>
-										<button type="submit" className="btn-commn w-100 mt-5">
+										<button type="submit" className="btn-commn w-100 mt-5 mb-5">
 											Submit
 										</button>
 									</form>
@@ -322,7 +322,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											<div className="row">
 												<div className="col-12">
 													<div className="data-profile-user">
-														<Link href={`/find-a-lawyer/${slug}`} target="_blank">
+														<Link href={`/find-a-professional/${slug}`} target="_blank">
 															<h3>{lawyer.full_name}</h3>
 														</Link>
 													</div>

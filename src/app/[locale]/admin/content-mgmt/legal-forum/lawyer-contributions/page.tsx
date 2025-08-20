@@ -208,7 +208,7 @@ export default function Page() {
 									}
 								>
 									<ul>
-										<Link href={`/find-a-lawyer/${rowData.slug}`} target="_blank">
+										<Link href={`/find-a-professional/${rowData.slug}`} target="_blank">
 											<li>View Public Profile</li>
 										</Link>
 										<li>

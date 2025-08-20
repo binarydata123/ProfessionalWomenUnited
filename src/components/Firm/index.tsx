@@ -14,6 +14,8 @@ interface Props {
 }
 
 export default function Page({ allfirm }: Props) {
+
+	console.log(allfirm,'allfirm')
 	const [currentPage, setCurrentPage] = useState(1);
 	const [searchTerm, setSearchTerm] = useState('');
 	// const [totalPages, setTotallawyers] = useState(0);
@@ -127,16 +129,6 @@ export default function Page({ allfirm }: Props) {
 							<h5>No matching record found!</h5>
 						</div>
 					)}
-
-					{/* <div className="col-lg-12 d-flex justify-content-end py-4">
-						{totalPages > 1 && (
-							<Pagination
-								currentPage={currentPage}
-								totalPages={totalPages}
-							// handlePageChange={handlePageChange}
-							/>
-						)}
-					</div> */}
 				</div>
 			</div>
 

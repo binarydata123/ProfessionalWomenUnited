@@ -184,7 +184,7 @@ ul.rating-location li i {
 }
 
 .bottom-content .inner-content p {
-	color: rgba(198, 238, 226, 1);
+	color: rgb(249,242,239);
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-light);
 }

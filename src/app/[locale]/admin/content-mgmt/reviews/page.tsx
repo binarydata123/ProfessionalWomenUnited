@@ -223,7 +223,7 @@ export default function lawyers() {
 								>
 									<ul>
 										<li>
-											<Link href={`/find-a-lawyer/${rowData.slug}`}>View Profile</Link>
+											<Link href={`/find-a-professional/${rowData.slug}`}>View Profile</Link>
 										</li>
 										<li
 											onClick={() => {

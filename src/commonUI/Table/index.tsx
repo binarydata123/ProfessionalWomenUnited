@@ -31,21 +31,21 @@ export default function Table({ className, children, columns, data }: Props) {
 						<tr className="w-100">
 							<td colSpan={columns.length}>
 								<Placeholder as="p" animation="glow">
-									<Placeholder xs={12} style={{ height: '50px', backgroundColor: '#c6eee2' }} />
+									<Placeholder xs={12} style={{ height: '50px', backgroundColor: '#f9f2ef' }} />
 								</Placeholder>
 							</td>
 						</tr>
 						<tr className="w-100">
 							<td colSpan={columns.length}>
 								<Placeholder as="p" animation="glow">
-									<Placeholder xs={12} style={{ height: '50px', backgroundColor: '#c6eee2' }} />
+									<Placeholder xs={12} style={{ height: '50px', backgroundColor: '#f9f2ef' }} />
 								</Placeholder>
 							</td>
 						</tr>
 						<tr className="w-100">
 							<td colSpan={columns.length}>
 								<Placeholder as="p" animation="glow">
-									<Placeholder xs={12} style={{ height: '50px', backgroundColor: '#c6eee2' }} />
+									<Placeholder xs={12} style={{ height: '50px', backgroundColor: '#f9f2ef' }} />
 								</Placeholder>
 							</td>
 						</tr>

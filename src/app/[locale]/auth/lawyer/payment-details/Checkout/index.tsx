@@ -92,7 +92,7 @@ export default function Checkout() {
                                         plan_amount +
                                         ' AED will be charge monthly',
                                     showConfirmButton: true,
-                                    confirmButtonColor: '#208c84'
+                                    confirmButtonColor: '#c49073'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
                                     router.push('/auth/lawyer/verify-otp');
@@ -106,7 +106,7 @@ export default function Checkout() {
                                         plan_amount +
                                         ' AED for yearly plan has been succesfuly done',
                                     showConfirmButton: true,
-                                    confirmButtonColor: '#208c84'
+                                    confirmButtonColor: '#c49073'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
                                     router.push('/auth/lawyer/verify-otp');

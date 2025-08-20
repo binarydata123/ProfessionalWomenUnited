@@ -45,7 +45,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 											className="w-100"
 											src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${latestBlogData?.image}`}
 											placeholderImgUrl={
-												process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`
+												process.env.NEXT_PUBLIC_BASE_URL + `/images/624x351.png`
 											}
 											alt={latestBlogData?.image_alt_text}
 											height={350}
@@ -57,7 +57,8 @@ export default function LatestBlog({ latestBlog }: Props) {
 											className="w-100"
 											src={`${process.env.NEXT_PUBLIC_BASE_URL}/images/624x351.png`}
 											placeholderImgUrl={
-												process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`
+												// process.env.NEXT_PUBLIC_IMAGE_URL + `/images/default/1920x1080.png`
+												process.env.NEXT_PUBLIC_BASE_URL + `/images/624x351.png`
 											}
 											alt={latestBlogData?.image_alt_text}
 											height={350}
@@ -74,7 +75,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 									<Placeholder as={'p'} animation="glow" className="p-0 mb-2">
 										<Placeholder
 											className="w-25"
-											style={{ height: '30px', backgroundColor: '#c6eee2' }}
+											style={{ height: '30px', backgroundColor: '#f9f2ef' }}
 										/>
 									</Placeholder>
 								) : (
@@ -91,7 +92,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 									<Placeholder as={'p'} animation="glow">
 										<Placeholder
 											className="w-75"
-											style={{ height: '70px', backgroundColor: '#c6eee2' }}
+											style={{ height: '70px', backgroundColor: '#f9f2ef' }}
 										/>
 									</Placeholder>
 								) : (
@@ -108,7 +109,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 									<Placeholder as={'p'} animation="glow">
 										<Placeholder
 											className="w-100"
-											style={{ height: '90px', marginTop: '30px', backgroundColor: '#c6eee2' }}
+											style={{ height: '90px', marginTop: '30px', backgroundColor: '#f9f2ef' }}
 										/>
 									</Placeholder>
 								) : (
@@ -123,7 +124,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 									<Placeholder as={'p'} animation="glow">
 										<Placeholder
 											className="w-20"
-											style={{ marginTop: '15px', backgroundColor: '#c6eee2' }}
+											style={{ marginTop: '15px', backgroundColor: '#f9f2ef' }}
 										/>
 									</Placeholder>
 								) : (
@@ -138,7 +139,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 									<Placeholder as={'p'} animation="glow">
 										<Placeholder
 											className="w-35"
-											style={{ marginTop: '15px', backgroundColor: '#c6eee2' }}
+											style={{ marginTop: '15px', backgroundColor: '#f9f2ef' }}
 										/>
 									</Placeholder>
 								) : (

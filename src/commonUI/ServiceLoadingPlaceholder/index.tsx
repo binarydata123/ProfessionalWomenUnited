@@ -8,7 +8,7 @@ export default function ServiceLoadingPlaceholder() {
 					style={{
 						height: '45px',
 						width: '100%',
-						backgroundColor: '#c6eee266',
+						backgroundColor: '#f9f2ef66',
 						padding: '20px',
 						borderRadius: '8px'
 					}}

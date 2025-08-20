@@ -45,8 +45,8 @@ html {
 	--text-sonic-silver: #4f4f4f;
 	--bg-transperent: #fff0;
 	--color-bg: #062824;
-	--color-bg-user: #c6eee226;
-	--color-btn-testi: #c6eee233;
+	--color-bg-user: #f9f2ef26;
+	--color-btn-testi: #f9f2ef;
 	--color-light: #747474;
 	--color-red: #d73f3f;
 	--color-black-gray: #c490731a;
@@ -570,9 +570,9 @@ button:hover {
 }
 #add-commn-id .card-inquiries.card-add {
 	padding: 15px;
-	border: 1px solid #c6eee2;
+	border: 1px solid #f9f2ef;
 	border-radius: 8px;
-	background: #c6eee266;
+	background: #f9f2ef66;
 }
 #add-commn-id .left-content span {
 	font-size: 14px;
@@ -1146,8 +1146,8 @@ ul.list-12 li a svg {
   background: #c2efe1;
 } */
 .bg-card-white:hover {
-	border: 1px solid #c6eee2;
-	background: #c6eee266;
+	border: 1px solid #f9f2ef;
+	background: #f9f2ef66;
 }
 /* .card-inquiries:hover {
     background: #bcfde8;
@@ -1162,7 +1162,7 @@ ul.list-12 li a svg {
 }
 .card-notifaction:hover {
 	border: 1px solid #ebfff9;
-	background: #c6eee266;
+	background: #f9f2ef66;
 }
 .link-button {
 	transition: 0.6s;

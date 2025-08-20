@@ -231,7 +231,7 @@ export default function LegalIssueLawyers({
 					</div>
 
 				</Link>
-				<Link href={`/find-a-lawyer/${lawyer?.slug}`}>
+				<Link href={`/find-a-professional/${lawyer?.slug}`}>
 					<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						{lawyer?.full_name}
 						{isOnline}
@@ -381,7 +381,7 @@ export default function LegalIssueLawyers({
 						<div className="col-lg-4">
 							<>
 								<Link
-									href={`/find-a-lawyer/${single_lawyer?.slug}/make-an-inquiry`}
+									href={`/find-a-professional/${single_lawyer?.slug}/make-an-inquiry`}
 
 									className="text-white"
 								>

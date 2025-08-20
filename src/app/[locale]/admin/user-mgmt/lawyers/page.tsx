@@ -287,7 +287,7 @@ export default function lawyers() {
 								<DropDown align={'end'} label={<i className="fa-solid fa-ellipsis"></i>}>
 									<ul>
 										<li>
-											<Link href={`/find-a-lawyer/${rowData.slug}`} target="_blank">
+											<Link href={`/find-a-professional/${rowData.slug}`} target="_blank">
 												View Public Profile
 											</Link>
 										</li>

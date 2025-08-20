@@ -439,7 +439,7 @@ a.unactive {
 	background: url('/images/Blogs/img.jpg') no-repeat center;
 	background-size: cover;
 	padding: 16px 24px;
-	border: 1px solid rgba(198, 238, 226, 1);
+	border: 1px solid rgb(249,242,239);
 	border-radius: 8px;
 	width: 300px;
 	margin-top: 22%;
@@ -581,8 +581,8 @@ span.border.border-radius-1.banner-arrow-btn.border-color {
 }
 
 i.fa-brands.fa-x-twitter {
-	color: #208c84;
-	border: 2px solid #208c84;
+	color: #c49073;
+	border: 2px solid #c49073;
 	padding: 1px;
 	border-radius: 6px;
 	font-size: 15px;

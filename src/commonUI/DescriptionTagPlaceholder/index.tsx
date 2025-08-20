@@ -5,7 +5,7 @@ export default function DescriptionTagPlaceholder() {
 			<div
 				style={{
 					height: '20px',
-					backgroundColor: 'rgba(198, 238, 226, 1)',
+					backgroundColor: 'rgb(249,242,239)',
 					width: '100%',
 					marginBottom: '10px'
 				}}

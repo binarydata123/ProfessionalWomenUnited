@@ -83,7 +83,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 							<div
 								style={{
 									height: '20px',
-									backgroundColor: 'rgba(198, 238, 226, 1)',
+									backgroundColor: 'rgb(249,242,239)',
 									width: '370px'
 								}}
 							></div>
@@ -114,7 +114,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									<div
 										style={{
 											height: '20px',
-											backgroundColor: 'rgba(198, 238, 226, 1)',
+											backgroundColor: 'rgb(249,242,239)',
 											width: '50px',
 											marginTop: '10px'
 										}}
@@ -128,7 +128,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									<div
 										style={{
 											height: '60px',
-											backgroundColor: 'rgba(198, 238, 226, 1)',
+											backgroundColor: 'rgb(249,242,239)',
 											width: '70%',
 											marginTop: '30px'
 										}}
@@ -152,7 +152,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								className="mt-2"
 								style={{
 									height: '20px',
-									backgroundColor: 'rgba(198, 238, 226, 1)',
+									backgroundColor: 'rgb(249,242,239)',
 									width: '25%'
 								}}
 							></div>
@@ -203,7 +203,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									<div
 										style={{
 											height: '665px',
-											backgroundColor: 'rgba(198, 238, 226, 1)',
+											backgroundColor: 'rgb(249,242,239)',
 											width: '100%',
 											marginBottom: '10px',
 											borderRadius: '16px'
@@ -278,7 +278,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								<div
 									style={{
 										height: '300px',
-										backgroundColor: 'rgba(198, 238, 226, 1)',
+										backgroundColor: 'rgb(249,242,239)',
 										width: '300px',
 										borderRadius: '10px'
 									}}

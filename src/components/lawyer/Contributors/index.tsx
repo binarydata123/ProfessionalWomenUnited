@@ -13,7 +13,7 @@ interface Props {
 export default function Contributors({ index = 0, item = 0 }: Props) {
 	return (
 		<div className="card-notifaction mt-2">
-			<Link href={`/find-a-lawyer/${item.slug}`}>
+			<Link href={`/find-a-professional/${item.slug}`}>
 				<div className="row align-items-center">
 					<div className="col-2">
 						<p className="font-small weight-bold text-dark text-end">#{index + 1}</p>

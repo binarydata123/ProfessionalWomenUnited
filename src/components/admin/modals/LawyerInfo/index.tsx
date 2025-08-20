@@ -38,7 +38,7 @@ export default function LawyerInfo(props: any) {
 						<a
 							className="boysenberry font-small weight-semi-bold "
 							target="_blank"
-							href={`/find-a-lawyer/${lawyer_info.slug}`} rel="noreferrer"
+							href={`/find-a-professional/${lawyer_info.slug}`} rel="noreferrer"
 						>
 							View Public Profile <i className="fa-solid fa-angle-right box-right icon-size-10"></i>
 						</a>

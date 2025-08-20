@@ -120,7 +120,7 @@ span.border.border-radius-1.banner-arrow-btn {
 .legal-service.active {
 	border-radius: 16px;
 	border: 1px solid var(--green-mid-1, #c49073);
-	background: var(--green-light, #c6eee2);
+	background: var(--green-light, #f9f2ef);
 	box-shadow: 0px 0px 12px 0px rgba(196,144,115, 0.4);
 }
 

@@ -70,13 +70,13 @@ export default function LegalForumQuestions({questionsData, slug = ''}: Props) {
 						<div className="row align-items-center">
 							<div className="col-lg-6">
 								<div className="gotalegalquestion">
-									<h4>Don’t face legal issues alone - Find a lawyer today!</h4>
+									<h4>Don’t face legal issues alone - Find a professional today!</h4>
 									<h5>Talk to a business attorney.</h5>
 								</div>
 							</div>
 							<div className="col-lg-6 text-lg-end">
 								<div className="gotalegalquestion">
-									<Link href={'/find-a-lawyer'}>
+									<Link href={'/find-a-professional'}>
 										<button className="btn-commn text-capitalize">Find A {slug} Lawyer</button>
 									</Link>
 								</div>

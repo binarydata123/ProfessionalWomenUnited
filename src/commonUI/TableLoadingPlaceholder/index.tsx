@@ -7,7 +7,7 @@ export default function TableLoadingPlaceholder() {
 				style={{
 					height: '50px',
 					width: '100%',
-					backgroundColor: '#c6eee266',
+					backgroundColor: '#f9f2ef66',
 					padding: '20px',
 					borderRadius: '8px'
 				}}

@@ -143,7 +143,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                             <div
                                 style={{
                                     height: '20px',
-                                    backgroundColor: 'rgba(198, 238, 226, 1)',
+                                    backgroundColor: 'rgb(249,242,239)',
                                     width: '20%',
                                     marginBottom: '10px'
                                 }}
@@ -344,7 +344,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                         <div className="company-detail-btn">
                                             {user?.id != lawyer_Id && (
                                                 <Link
-                                                    href={`/find-a-lawyer/${slug}/make-an-inquiry`}
+                                                    href={`/find-a-professional/${slug}/make-an-inquiry`}
                                                     className="text-white"
                                                 >
                                                     <button className="btn-commn">Our Lawyers</button>

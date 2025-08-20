@@ -18,7 +18,7 @@ export default function ReviewsAverage({average = 0, totalReviews = 0, ratingsBy
 					<div
 						style={{
 							height: '120px',
-							backgroundColor: 'rgba(198, 238, 226, 1)',
+							backgroundColor: 'rgb(249,242,239)',
 							width: '100%',
 							marginBottom: '10px',
 							borderRadius: '8px'
@@ -38,7 +38,7 @@ export default function ReviewsAverage({average = 0, totalReviews = 0, ratingsBy
 					<div
 						style={{
 							height: '200px',
-							backgroundColor: 'rgba(198, 238, 226, 1)',
+							backgroundColor: 'rgb(249,242,239)',
 							width: '100%',
 							borderRadius: '10px'
 						}}

@@ -31,11 +31,11 @@
 </linearGradient>
 <radialGradient id="paint5_radial_1999_65061" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(36.7202 43.9967) rotate(90) scale(0.785773 1.83347)">
 <stop offset="0.046875" stop-color="white"/>
-<stop offset="1" stop-color="#C6EEE2"/>
+<stop offset="1" stop-color="#f9f2ef"/>
 </radialGradient>
 <radialGradient id="paint6_radial_1999_65061" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(58.7202 39.5455) rotate(90) scale(0.785773 1.83347)">
 <stop offset="0.046875" stop-color="white"/>
-<stop offset="1" stop-color="#C6EEE2"/>
+<stop offset="1" stop-color="#f9f2ef"/>
 </radialGradient>
 </defs>
 </svg>

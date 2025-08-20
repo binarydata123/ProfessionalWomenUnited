@@ -23,7 +23,8 @@ a.unactive {
 
 .profile-data {
 	border: 1px solid var(--green-light);
-	background-color: #f3fbf9;
+	/* background-color: #f3fbf9; */
+	background-color: #f9f2ef;
 	border-radius: 8px;
 	padding: 16px;
 	margin: 16px 0px;
