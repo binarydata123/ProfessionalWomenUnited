@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import CriminalLawyers from '@/components/services/Criminal Professionals';
+import CriminalLawyers from '@/components/services/CriminalLawyers';
 export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: 'Criminal Lawyer in Abu Dhabi | Professional Women United',

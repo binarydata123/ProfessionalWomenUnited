@@ -6,7 +6,7 @@ import DropDown from '@/commonUI/DropDown';
 import FormInput from '@/commonUI/FormInput';
 import Popup from '@/commonUI/Popup';
 import LawyerCard from '@/components/lawyer/LawyerCard';
-import './find-a-professional.css';
+import './find-a-lawyer.css';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
