@@ -355,7 +355,7 @@ export default function Dashboard() {
 								height={300}
 								image="/images/inquiry-image.png"
 								text="You don’t have any messages."
-								buttonText="Find A lawyer"
+								buttonText="Find A Professional"
 								link="/find-a-lawyer"
 							/>
 						)}
@@ -462,7 +462,7 @@ export default function Dashboard() {
 								height={300}
 								image="/images/inquiry-image.png"
 								text="You don’t have any messages."
-								buttonText="Find A lawyer"
+								buttonText="Find A Professional"
 								link="/find-a-lawyer"
 							/>
 						)}

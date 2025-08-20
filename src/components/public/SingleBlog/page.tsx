@@ -216,7 +216,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									<h4>Connect with lawyers & seek expert legal advice</h4>
 									<p>Check out how we can offer this service to you.</p>
 									<Link href={'/find-a-lawyer'}>
-										<button className="btn-commn bg-color">Find A Lawyer</button>
+										<button className="btn-commn bg-color">Find A Professional</button>
 									</Link>
 								</div>
 							</section>
@@ -372,10 +372,10 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 				<section className="connect-with-lawyes-popup text-center" >
 					<div className="connect-title">
 						<h4 className='green-med-pop text-center need-advice-txt' >Need Legal Advice?</h4>
-						<p className='text-white text-center pop-dis'>Connect with top lawyers in the UAE and get the expert help you need.</p>
+						<p className='text-white text-center pop-dis'>Connect with top professionals in the UAE and get the expert help you need.</p>
 						<Link href={'/find-a-lawyer'} >
 							<button className="btn-get-free btn-commn mx-auto m-w-full">
-								Find A Lawyer</button>
+								Find A Professional</button>
 						</Link>
 					</div>
 				</section>
@@ -383,3 +383,4 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 		</>
 	);
 }
+

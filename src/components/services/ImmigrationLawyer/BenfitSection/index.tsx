@@ -20,7 +20,7 @@ export default function BenfitSection() {
                             <div className="mt-4">
                                 <Link href={'/find-a-lawyer'}>
                                     <button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
-                                        <span className="text-white"> Find a Lawyer </span>
+                                        <span className="text-white"> Find A Professional </span>
                                     </button>
                                 </Link>
                             </div>

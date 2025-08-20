@@ -21,7 +21,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<Link href="/find-a-lawyer" target="blank">
-									Find A Lawyer
+									Find A Professional
 								</Link>
 							</li>
 							<li>

@@ -157,7 +157,7 @@ export default function StatistcsSection() {
                                             <Link
                                                 href={'/auth/create-profile/?role=lawyer'}
                                                 style={{ color: 'white' }}>
-                                                Find a Lawyer
+                                                Find A Professional
                                             </Link>
                                         </span>
                                     </button>

@@ -232,7 +232,7 @@ export default function page() {
 										height={300}
 										image="/images/cant-find.svg"
 										text="Seems like you haven't found a lawyer."
-										buttonText="Find A Lawyer"
+										buttonText="Find A Professional"
 										link="/find-a-lawyer"
 									/>
 								)}
@@ -253,7 +253,7 @@ export default function page() {
 										height={300}
 										image="/images/cant-find.svg"
 										text="Seems like you haven't found a lawyer."
-										buttonText="Find A Lawyer"
+										buttonText="Find A Professional"
 										link="/find-a-lawyer"
 									/>
 								)}

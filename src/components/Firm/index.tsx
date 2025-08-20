@@ -15,7 +15,6 @@ interface Props {
 
 export default function Page({ allfirm }: Props) {
 
-	console.log(allfirm,'allfirm')
 	const [currentPage, setCurrentPage] = useState(1);
 	const [searchTerm, setSearchTerm] = useState('');
 	// const [totalPages, setTotallawyers] = useState(0);
@@ -76,7 +75,7 @@ export default function Page({ allfirm }: Props) {
 								<li>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="find a lawyer right arrow"
+										alt="Find A Professional right arrow"
 										width={15}
 										height={15}
 									/>

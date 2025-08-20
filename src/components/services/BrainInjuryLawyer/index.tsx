@@ -57,7 +57,7 @@ export default function BrainInjuryLawyer() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find a Lawyer</span>
+								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -108,7 +108,7 @@ export default function BrainInjuryLawyer() {
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
 										<Link href="/find-a-lawyer" className="findlawyertext">
-											Find a Lawyer
+											Find A Professional
 										</Link>
 									</span>
 								</button>
@@ -326,7 +326,7 @@ export default function BrainInjuryLawyer() {
 												<Link
 													href={'/auth/create-profile/?role=lawyer'}
 													style={{ color: 'white' }}>
-													Find a Lawyer
+													Find A Professional
 												</Link>
 											</span>
 										</button>
@@ -703,7 +703,7 @@ export default function BrainInjuryLawyer() {
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
 										<span className="text-white set-lawyer-icon">
 											<Link href="/find-a-lawyer" style={{ color: 'white' }}>
-												Find a Lawyer
+												Find A Professional
 											</Link>{' '}
 											<span className="border-btn-lawyer">
 												<ChevronRightIcon width={20} color={'#fff'} />
@@ -872,7 +872,7 @@ export default function BrainInjuryLawyer() {
 								<div className="mt-4">
 									<Link href={'/find-a-lawyer'}>
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 set-law-btn-2">
-											<span className="text-white"> Find a Lawyer </span>
+											<span className="text-white"> Find A Professional </span>
 										</button>
 									</Link>
 								</div>

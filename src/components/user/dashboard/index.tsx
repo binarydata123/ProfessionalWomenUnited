@@ -50,7 +50,7 @@ export default function UserDashboard() {
 					</div>
 					<div className="col-lg-4 col-md-12 text-right tab-left">
 						<Link href="/find-a-lawyer">
-							<DefaultButton className=" mt-3">Find A Lawyer </DefaultButton>
+							<DefaultButton className=" mt-3">Find A Professional </DefaultButton>
 						</Link>
 					</div>
 				</div>

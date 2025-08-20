@@ -10,7 +10,7 @@ export default function EmptyState() {
 					<p className="mt-3 mb-3">
 						Connect with lawyers or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
 					</p>
-					<DefaultButton className="mt-3">Find A Lawyer</DefaultButton>
+					<DefaultButton className="mt-3">Find A Professional</DefaultButton>
 				</div>
 			</div>
 			<div className="bottom-content mt-5">

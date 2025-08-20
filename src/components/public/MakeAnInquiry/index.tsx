@@ -298,7 +298,11 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 										<div className="col-3">
 											<div className="profile-user">
 												<Image
-													src={getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)}
+													// src={getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)}
+													src={
+														getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender) 
+														|| "/images/female-lawyer-180x180.png"
+													  }
 													alt={lawyer.full_name}
 													width={180}
 													height={180}

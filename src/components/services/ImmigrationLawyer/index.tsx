@@ -60,7 +60,7 @@ export default function ImmigrationLawyer() {
 									/>
 								</span>
 
-								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find a Lawyer</span>
+								<span style={{ color: 'rgba(9, 63, 56, 1)' }}>Find A Professional</span>
 							</div>
 						</section>
 					</div>
@@ -110,7 +110,7 @@ export default function ImmigrationLawyer() {
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
 										<Link href="/find-a-lawyer" className="findlawyertext">
-											Find a Lawyer
+											Find A Professional
 										</Link>
 									</span>
 								</button>

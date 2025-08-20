@@ -212,7 +212,7 @@ export default function HireSection() {
                                 <button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue half-button">
                                     <span className="text-white set-lawyer-icon">
                                         <Link href="/find-a-lawyer" style={{ color: 'white' }}>
-                                            Find a Lawyer
+                                            Find A Professional
                                         </Link>{' '}
                                         <span className="border-btn-lawyer">
                                             <ChevronRightIcon width={20} color={'#fff'} />

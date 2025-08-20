@@ -211,6 +211,8 @@ export function formatDateLegalDate(dateStr) {
 
 export function getAdminImageSrc306x200(profile_image, gender) {
 	const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
+	
+
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
@@ -222,17 +224,19 @@ export function getAdminImageSrc306x200(profile_image, gender) {
 
 export function getAdminImageSrc180x180(profile_image, gender) {
 	const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
+	const frontendurl = process.env.NEXT_PUBLIC_BASE_URL;
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else {
-		return `${baseUrl}/images/profile/${profile_image}`;
+		return `${frontendurl}/images/female-lawyer-180x180.png`;
 	}
 }
 
 export function getAdminImageSrc80x80(profile_image, gender) {
 	const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
+	
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {

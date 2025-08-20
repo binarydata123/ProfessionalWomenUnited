@@ -230,7 +230,7 @@ export default function Page({ filterlawyer }: Props) {
 							<li>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="find a lawyer right arrow"
+									alt="Find A Professional right arrow"
 									width={15}
 									height={15}
 								/>
