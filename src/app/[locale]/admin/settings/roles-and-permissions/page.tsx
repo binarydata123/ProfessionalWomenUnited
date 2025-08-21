@@ -68,7 +68,7 @@ export default function Page() {
 		if (role == 'enduser') {
 			router.push(`/admin/settings/roles-and-permissions/edit-enduser/${id}`);
 		} else {
-			router.push(`/admin/settings/roles-and-permissions/edit-lawyer/${id}`);
+			router.push(`/admin/settings/roles-and-permissions/edit-professional/${id}`);
 		}
 	};
 
@@ -259,7 +259,7 @@ export default function Page() {
 						</Link>
 					</div>
 					<div className="col-sm-6 col-md-6 col-lg-2">
-						<Link href={'/admin/settings/roles-and-permissions/add-new-lawyer'}>
+						<Link href={'/admin/settings/roles-and-permissions/add-new-professional'}>
 							<DefaultButton height={55} showIcon={false} className="w-100 mt-1">
 								+ Professional
 							</DefaultButton>

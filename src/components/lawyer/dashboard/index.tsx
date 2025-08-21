@@ -203,7 +203,7 @@ export default function LawyerDashboard() {
 									height={50}
 									className="w-100 mt-2 border"
 									background="#fff"
-									color="#208C84"
+									color="#c49073"
 								>
 									Go to Legal Community
 								</DefaultButton>
@@ -214,11 +214,11 @@ export default function LawyerDashboard() {
 					<div className="col-lg-12 col-xl-4 col-md-12">
 						<div className="recent-reviews h-100 p-0 border-0">
 							<div className="welcome position-relative">
-								<h3>
+								<h3 style={{ color: '#fff' }}>
 									Welcome to <br />
 									Professional Women United!
 								</h3>
-								<p>
+								<p style={{ color: '#fff' }}>
 									Connect with Professionals or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
 								</p>
 								<Link href={'/lawyer/profile/edit'}>
@@ -252,7 +252,7 @@ export default function LawyerDashboard() {
 										height={50}
 										className="w-100 mt-4 border-color"
 										background="#fff"
-										color="#208C84"
+										color="#c49073"
 									>
 										Go to Legal Community
 									</DefaultButton>

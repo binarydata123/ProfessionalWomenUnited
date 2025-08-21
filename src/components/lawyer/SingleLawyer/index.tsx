@@ -279,7 +279,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																		onClick={() =>
 																			handleSaveLawyer(single_lawyer.id)
 																		}
-																		color="#208C84"
+																		color="#c49073"
 																		width={20}
 																	/>
 																) : (
@@ -288,7 +288,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																		onClick={() =>
 																			handleSaveLawyer(single_lawyer.id)
 																		}
-																		color="#208C84"
+																		color="#c49073"
 																		width={20}
 																	/>
 																)}

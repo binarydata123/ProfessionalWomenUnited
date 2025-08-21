@@ -6,8 +6,8 @@ export default function EmptyState() {
 		<div className="empty-state-wrapper">
 			<div className="top-banner-box p-4 d-flex align-items-center">
 				<div className="inner-content">
-					<h1 className="">Welcome to Professional Women United!</h1>
-					<p className="mt-3 mb-3">
+					<h1 className="" style={{ color: '#fff' }}>Welcome to Professional Women United!</h1>
+					<p className="mt-3 mb-3" style={{ color: '#fff' }}>
 						Connect with Professionals or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
 					</p>
 					<DefaultButton className="mt-3">Find A Professional</DefaultButton>

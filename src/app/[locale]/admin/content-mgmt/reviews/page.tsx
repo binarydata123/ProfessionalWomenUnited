@@ -185,7 +185,7 @@ export default function lawyers() {
 
 							<td data-th="Rating">
 								<p className="font-small weight-medium social-link d-flex">
-									<StarIcon width={20} color={'#208C84'} />
+									<StarIcon width={20} color={'#c49073'} />
 									<b style={{ marginTop: '4px' }}>
 										{rowData?.avg_rating ? rowData.avg_rating.split('(')[0] : ''}
 									</b>

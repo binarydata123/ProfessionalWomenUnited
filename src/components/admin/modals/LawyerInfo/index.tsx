@@ -112,12 +112,12 @@ export default function LawyerInfo(props: any) {
 				</p>
 			)}
 
-			{lawyer_info.jurisdiction_name && (
+			{/* {lawyer_info.jurisdiction_name && (
 				<p className="weight-medium font-medium green-medium-2 mt-3">
 					<Image src="/images/map.png" alt="location" width={20} height={20} /> Legal Jurisdiction:{' '}
 					<span className="weight-light font-small color-light">{lawyer_info.jurisdiction_name}</span>
 				</p>
-			)}
+			)} */}
 
 			{lawyer_info.specializ_name && (
 				<>

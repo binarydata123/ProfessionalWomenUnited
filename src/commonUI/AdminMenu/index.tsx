@@ -30,8 +30,8 @@ export default function AdminMenu() {
 				<ul className="dropdown-menu-list menu-border">
 					<li>
 						<Link
-							className={`dropdown-item ${pathname.includes('user-mgmt/lawyers') ? 'active' : ''}`}
-							href="/admin/user-mgmt/lawyers"
+							className={`dropdown-item ${pathname.includes('user-mgmt/professionals') ? 'active' : ''}`}
+							href="/admin/user-mgmt/professionals"
 						>
 							Professionals
 						</Link>
@@ -216,8 +216,8 @@ export default function AdminMenu() {
 // 				<ul className={`dropdown-menu-list menu-border ${taggleUserMgmt ? 'd-none' : ''}`}>
 // 					<li>
 // 						<Link
-// 							className={`dropdown-item ${pathname.includes('user-mgmt/lawyers') ? 'active' : ''}`}
-// 							href="/admin/user-mgmt/lawyers"
+// 							className={`dropdown-item ${pathname.includes('user-mgmt/professionals') ? 'active' : ''}`}
+// 							href="/admin/user-mgmt/professionals"
 // 						>
 // 							Professionals
 // 						</Link>

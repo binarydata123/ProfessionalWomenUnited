@@ -3,18 +3,18 @@
 		padding: 12px 24px 12px 24px;
 		border-radius: 4px;
 		font-weight: 600;
-		color: #BE8363;
+		color: #be8363;
 		line-height: 25.6px;
 		font-size: 16px;
 		letter-spacing: 0px;
 		transition: 0.5s;
 		background: #fff;
-		border: 1px solid #BE8363;
+		border: 1px solid #be8363;
 	}
 
 	.btn-secondary:hover {
-		border: 1px solid #ad3e83;
-		color: #ad3e83;
+		border: 1px solid #fff;
+		color: #fff;
 	}
 
 	.btn-secondary:focus {

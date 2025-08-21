@@ -346,10 +346,10 @@ export default function Page() {
 			newErrors.bio = 'Bio is required';
 			handleFocus(bioRef);
 		}
-		if (!formData.jurisdiction) {
-			newErrors.jurisdiction = 'Jurisdiction is required';
-			handleFocus(jurisdictionRef);
-		}
+		// if (!formData.jurisdiction) {
+		// 	newErrors.jurisdiction = 'Jurisdiction is required';
+		// 	handleFocus(jurisdictionRef);
+		// }
 		if (!formData.primary_practice_area) {
 			newErrors.primary_practice_area = 'Practice area is required';
 			handleFocus(primaryPracticeRef);
@@ -845,7 +845,7 @@ export default function Page() {
 							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Company Name
 							</label>
-							<select
+							{/* <select
 								className="form-fild w-100"
 								value={formData.firm_id}
 								onChange={(e) => setFormData({ ...formData, firm_id: e.target.value })}
@@ -856,7 +856,7 @@ export default function Page() {
 										{firm.firm_name}
 									</option>
 								))}
-							</select>
+							</select> */}
 							{/* {errors.firm_id && (
 								<small className="error-message text-danger d-block">{errors.firm_id}</small>
 							)} */}
@@ -890,7 +890,7 @@ export default function Page() {
 								Tell us about your legal expertise
 							</p>
 
-							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+							{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Select Jurisdiction
 							</label>
 							<select
@@ -908,7 +908,7 @@ export default function Page() {
 							</select>
 							{errors.jurisdiction && (
 								<small className="error-message text-danger d-block">{errors.jurisdiction}</small>
-							)}
+							)} */}
 							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Primary Practice Area
 							</label>

@@ -110,12 +110,12 @@ export default function LawyerInfo(props: any) {
 					<p className="weight-medium font-medium green-medium-2 mt-3">License Number:</p>
 					<p className="weight-light font-small color-light">{lawyer_info.license_number}</p>
 				</div>
-				<div className="col-sm-5">
+				{/* <div className="col-sm-5">
 					<p className="weight-medium font-medium green-medium-2 mt-3">Legal Jurisdiction:</p>
 					{lawyer_info.phone_number && (
 						<p className="weight-light font-small color-light">{lawyer_info.jurisdiction_name}</p>
 					)}
-				</div>
+				</div> */}
 			</div>
 
 			{lawyer_info?.acquired && currentYear - lawyer_info?.acquired > 0 && (

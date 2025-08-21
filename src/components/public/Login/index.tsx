@@ -51,10 +51,10 @@ export default function Login() {
 					Cookies.set('session_token', token);
 					if (res.data.user.role == 'lawyer') {
 						if (res.data.user.profile_status == 'legal-step') {
-							router.push('/auth/lawyer/step-2');
+							router.push('/auth/professional/step-2');
 						}
 						if (res.data.user.profile_status == 'payment-step') {
-							router.push('/auth/lawyer/choose-pricing-plan');
+							router.push('/auth/professional/choose-pricing-plan');
 						}
 
 						if (res.data.user.profile_status == 'email-verification-step') {
@@ -132,7 +132,7 @@ export default function Login() {
 						setIsLoading(false);
 						if (res.user.role == 'lawyer') {
 							if (res.user.profile_status == 'legal-step') {
-								router.push('/auth/lawyer/step-2');
+								router.push('/auth/professional/step-2');
 							}
 							if (res.user.profile_status == 'completed') {
 								if (res.user.two_factor_auth == 'yes') {
@@ -187,7 +187,7 @@ export default function Login() {
 				if (res.status == true) {
 					toast.success(res.message);
 					setTimeout(() => {
-						router.push('/auth/lawyer/verify-otp');
+						router.push('/auth/professional/verify-otp');
 					}, 1000);
 				} else {
 					setIsLoading(false);

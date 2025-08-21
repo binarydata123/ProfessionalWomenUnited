@@ -441,7 +441,7 @@ export default function Page({ params }: { params: { id: string } }) {
 					Post from:{' '}
 					<a
 						href="#"
-						style={{ color: '#208C84' }}
+						style={{ color: '#c49073' }}
 						className="text-capitalize"
 						onClick={() => handleViewProfile(formData.member_id)}
 					>

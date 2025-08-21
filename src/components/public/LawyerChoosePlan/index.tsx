@@ -71,7 +71,7 @@ export default function LawyerChoosePlan() {
             window.sessionStorage.setItem('temp_plan_amount', tempPlanAmount || '');
             window.sessionStorage.setItem('temp_plan_type', isMonthly);
 
-            router.push('/auth/lawyer/payment-details');
+            router.push('/auth/professional/payment-details');
         } else {
             router.push('/auth/login');
         }
@@ -92,7 +92,7 @@ export default function LawyerChoosePlan() {
             <section className="pricing-part-payment">
 
                 <div className="auth-page-wrapper" id="stepTwo">
-                    <Link href="/auth/lawyer/step-2" className="backtobtn">
+                    <Link href="/auth/professional/step-2" className="backtobtn">
                         <ArrowSmallLeftIcon width={20} />
                         Back
                     </Link>

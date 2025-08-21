@@ -275,7 +275,7 @@ export default function LawyerProfile(props: any) {
 								)
 							}
 						>
-							<CheckIcon width={20} color={'#208C84'} className="mx-2 text-white" />
+							<CheckIcon width={20} color={'#c49073'} className="mx-2 text-white" />
 							Approve
 						</button>
 					</div>

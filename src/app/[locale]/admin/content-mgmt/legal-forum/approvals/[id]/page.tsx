@@ -421,7 +421,7 @@ export default function Page({ params }: { params: { id: string } }) {
 				{' '}
 				<strong>
 					Post from:{' '}
-					<a href="#" style={{ color: '#208C84' }}>
+					<a href="#" style={{ color: '#c49073' }}>
 						{formData.full_name}
 					</a>{' '}
 				</strong>{' '}

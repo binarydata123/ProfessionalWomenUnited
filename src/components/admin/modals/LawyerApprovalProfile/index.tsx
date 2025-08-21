@@ -176,7 +176,7 @@ export default function LawyerProfile(props: any) {
 							className="btn btn-approve w-100 save-pad text-white"
 							onClick={e => changeLawyerStatus(single_lawyer?.id, 'active')}
 						>
-							<CheckIcon width={20} color={'#208C84'} className="mx-2 text-white" />
+							<CheckIcon width={20} color={'#c49073'} className="mx-2 text-white" />
 							Approve
 						</button>
 					</div>

@@ -525,16 +525,16 @@ table.rwd-table tr th {
 	font-weight: var(--weight-bold) !important;
 }
 .monthly {
-	background: #5d96a71f;
+	background: #c49073;
 	padding: 0px 8px;
 	border: none;
 	font-size: var(--font-x-small);
 	border-radius: 16px;
-	color: #166379;
+	color: #fff;
 	font-weight: var(--weight-semi-bold);
 }
 .icon-btn {
-	background: #BE836314;
+	background: #be836314;
 	padding: 3px 6px;
 	border-radius: 4px;
 	border: none;
@@ -608,7 +608,7 @@ table.rwd-table tr th {
 }
 
 .bg-208C8414 {
-	background: #208c8414;
+	background: #c4907314;
 	padding: 4px 6px;
 	border-radius: 4px;
 	margin-right: 4px;
@@ -733,7 +733,7 @@ li.rev span {
 .danger-btn {
 	border: 1px solid var(--boysenberry);
 	color: var(--boysenberry);
-	background: #BE83631a;
+	background: #be83631a;
 }
 .span-1E827B1F {
 	background: #02142d1f;

@@ -23,6 +23,9 @@ import UserMenu from '@/commonUI/UserMenu';
 import LawyerMenu from '@/commonUI/LawyerMenu';
 import AuthContext from '@/context/AuthContext';
 import { formatTime } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { MdDashboard } from 'react-icons/md';
+import { IoMdSettings } from "react-icons/io";
+import { TbHelpSquareFilled } from "react-icons/tb";
 
 export default function Header() {
 	const { user, logout } = useContext(AuthContext)
@@ -440,7 +443,7 @@ export default function Header() {
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
 							>
-								<ChevronDownIcon width={20} color={'#208C84'} />
+								<ChevronDownIcon width={20} color={'#c49073'} />
 							</button>
 							<ul className="dropdown-menu header-dropdown" aria-labelledby="dropdownMenu2">
 								<li>
@@ -471,7 +474,9 @@ export default function Header() {
 									{/* <Link href={`${isDashboardPage ? `/` : `/${user_role}/dashboard`}`}> */}
 									<Link href={`${isDashboardPage ? `/` : `/`}`}>
 
-										<Image src="/images/left-menu-1.png" alt="left-menu-1" width={18} height={18} />
+										{/* <Image src="/images/left-menu-1.png" alt="left-menu-1" width={18} height={18} /> */}
+										<MdDashboard color={'#c49073'} size={18} />
+
 										&nbsp; {isDashboardPage ? 'Go to Home' : 'Go to Dashboard'}
 									</Link>
 								</li>
@@ -489,14 +494,21 @@ export default function Header() {
 											}
 										})()}
 									>
-										<Image src="/images/left-menu-5.png" alt="left-menu-5" width={18} height={18} />{' '}
+										{/* <Image src="/images/left-menu-5.png" alt="left-menu-5" width={18} height={18} /> */}
+										<IoMdSettings color={'#c49073'} size={18} />
+
+										{' '}
+
 										&nbsp; Settings
 									</Link>
 								</li>
 
 								<li>
 									<Link href="/contact-us">
-										<Image src="/images/left-menu-6.png" alt="left-menu-6" width={18} height={18} />{' '}
+										{/* <Image src="/images/left-menu-6.png" alt="left-menu-6" width={18} height={18} /> */}
+										<TbHelpSquareFilled color={'#c49073'} size={18} />
+
+										{' '}
 										&nbsp; Help
 									</Link>
 								</li>

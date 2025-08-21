@@ -318,14 +318,14 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 								<form onSubmit={handleReviewSubmit}>
 									<StarRating
 										className="write-a-review-rating-box"
-										label={'Select a rating for your lawyer*'}
+										label={'Select a rating for your Professional*'}
 										error={errors.stars}
 										initialRating={reviewData.stars}
 										onRatingChange={(newRating: any) =>
 											setreviewData({ ...reviewData, stars: newRating })
 										}
 									/>
-									<p>Did you hire or just consult this lawyer?*</p>
+									<p>Did you hire or just consult this Professional?*</p>
 
 									<div className="d-flex">
 										<div className="form-check">

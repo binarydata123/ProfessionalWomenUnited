@@ -16,7 +16,7 @@ export default function CountCard({
 	href = '/',
 	countColor = '#fff',
 	linkText,
-	linkColor = '#c49073',
+	linkColor = '#fff',
 	count = 0,
 	backgroundColor,
 	backgroundImage
@@ -31,7 +31,7 @@ export default function CountCard({
 						backgroundColor: `${backgroundColor}`
 					}}
 				>
-					<p className="font-large weight-bold" style={{color: `${countColor}`}}>
+					<p className="font-large weight-bold" style={{ color: `${countColor}` }}>
 						{count}
 					</p>
 					<LinkButton className="hover-comf" color={linkColor}>

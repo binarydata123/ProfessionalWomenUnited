@@ -17,6 +17,7 @@ import Pagination from '@/commonUI/Pagination';
 import Image from 'next/image';
 import AuthContext from '@/context/AuthContext';
 import { formatDateToDDMMYYYYMM } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { CiSearch } from "react-icons/ci";
 
 export default function lawyers() {
 	const { user } = useContext(AuthContext)
@@ -165,6 +166,7 @@ export default function lawyers() {
 								alt="cdd"
 								className="magnify-search"
 							/>
+
 						</div>
 					</div>
 					<div className="col-sm-6 col-md-6 col-lg-3">
