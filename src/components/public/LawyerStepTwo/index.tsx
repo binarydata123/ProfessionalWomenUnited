@@ -242,16 +242,16 @@ export default function LawyerStepTwo() {
 							if (res.status == true) {
 								SetAdminSetting(res.data);
 								if (res.data.payment_membership === 'false') {
-									router.push('/auth/lawyer/verify-otp');
+									router.push('/auth/professional/verify-otp');
 									Cookies.set('membership', 'false')
 								} else {
-									router.push('/auth/lawyer/choose-pricing-plan');
+									router.push('/auth/professional/choose-pricing-plan');
 									Cookies.set('membership', 'true')
 								}
 							}
 
-							// router.push('/auth/lawyer/choose-pricing-plan');
-							// router.push('/auth/lawyer/verify-otp');
+							// router.push('/auth/professional/choose-pricing-plan');
+							// router.push('/auth/professional/verify-otp');
 						}, 1000);
 					} else {
 						toast.error(res.message);

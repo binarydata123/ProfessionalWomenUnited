@@ -241,7 +241,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                                         onClick={() =>
                                                                             handleSavefirm(single_firm.id)
                                                                         }
-                                                                        color="#208C84"
+                                                                        color="#c49073"
                                                                         width={20}
                                                                     />
                                                                 ) : (
@@ -250,7 +250,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                                         onClick={() =>
                                                                             handleSavefirm(single_firm.id)
                                                                         }
-                                                                        color="#208C84"
+                                                                        color="#c49073"
                                                                         width={20}
                                                                     />
                                                                 )}

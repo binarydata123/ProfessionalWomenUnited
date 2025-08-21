@@ -147,10 +147,10 @@ h6 {
 /* Small Primary Button */
 
 .btn-primary-small {
-	border: 1px solid #BE8363;
+	border: 1px solid #be8363;
 	padding: 8px 20px 8px 20px;
 	border-radius: 4px;
-	background: #BE8363;
+	background: #be8363;
 	font-weight: 600;
 	color: #fff;
 	line-height: 25.6px;
@@ -259,7 +259,7 @@ h6 {
 /* Tertiary Button */
 .btn-tertiary {
 	font-weight: 600;
-	color: #BE8363;
+	color: #be8363;
 	line-height: 25.6px;
 	font-size: 16px;
 	background-color: #fff0;
@@ -268,7 +268,7 @@ h6 {
 }
 
 .btn-tertiary:hover {
-	color: #ad3e83;
+	color: #fff;
 }
 
 .btn-tertiary:focus {

@@ -261,7 +261,7 @@ export default function LegalIssueLawyers({
 					<span>
 						<StarIcon
 							width={20}
-							color={`${lawyer?.avg_rating_and_reviews ? '#208C84' : ''}`}
+							color={`${lawyer?.avg_rating_and_reviews ? '#c49073' : ''}`}
 							style={{ marginRight: '5px', height: '30px' }}
 						/>
 					</span>
@@ -332,7 +332,7 @@ export default function LegalIssueLawyers({
 
 								<p className="stong-text m-0">
 									<span>
-										<StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+										<StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
 									</span>
 									{single_lawyer?.avg_rating_and_reviews ? (
 										<>
@@ -394,10 +394,10 @@ export default function LegalIssueLawyers({
 					<div className="detail-fil">
 						<div className="About-detail">
 							<h3>About {single_lawyer?.full_name}</h3>
-							<p className="mb-3">
+							{/* <p className="mb-3">
 								<Image src="/images/map.png" alt="map icon image" width={20} height={20} />
 								Legal Jurisdiction: <span>{single_lawyer?.jurisdiction_name}</span>
-							</p>
+							</p> */}
 						</div>
 
 						<div className="more-detail">

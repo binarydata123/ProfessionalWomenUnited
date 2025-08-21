@@ -180,7 +180,8 @@ export default function Page({ params }: { params: { id: string } }) {
 								</p>
 								{single_lawyer?.designation && (
 									<p className="font-small  weight-semi-bold social-link">
-										{single_lawyer?.designation} at {single_lawyer?.company_name}
+										{single_lawyer?.designation}
+										{/* at {single_lawyer?.company_name} */}
 									</p>
 								)}
 								<ul className="rating-location">

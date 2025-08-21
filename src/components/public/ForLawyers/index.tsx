@@ -136,7 +136,7 @@ export default function Page() {
 								<button className="btn-get-free btn-commn ml-2 d-none d-lg-block">
 									<span className="text-white">
 										<Link
-											href="/auth/lawyer/choose-pricing-plan"
+											href="/auth/professional/choose-pricing-plan"
 											style={{ color: 'rgba(196,144,115)' }}
 										>
 											View Pricing Plans

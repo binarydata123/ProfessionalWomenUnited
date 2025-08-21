@@ -122,7 +122,7 @@ export default function UpgradeAccount(props: any) {
 					</div>
 				</div>
 			) : (
-				<p className="modal-title f-18 weight-bold mt-2 green-dark">No Plan Purchased By Laywer</p>
+				<p className="modal-title f-18 weight-bold mt-2 green-dark">No Plan Purchased By Professional</p>
 			)}
 
 			<div className="row">

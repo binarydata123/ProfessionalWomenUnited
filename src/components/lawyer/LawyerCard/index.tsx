@@ -223,7 +223,7 @@ export default function LawyerCard({
 
 								<p className="stong-text m-0">
 									<span>
-										<StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+										<StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
 									</span>
 									{single_lawyer?.avg_rating_and_reviews ? (
 										<>

@@ -74,7 +74,7 @@ export default function Dashboard() {
 						<div className="col-lg-12 col-md-12">
 							<div className="row">
 								<div className="col-sm-4 mb-3">
-									<Link href={'/admin/user-mgmt/lawyers'}>
+									<Link href={'/admin/user-mgmt/professionals'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
 												{dashboard_box.lawyer_count}
@@ -101,7 +101,7 @@ export default function Dashboard() {
 									<Link href={'/admin/support'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.forum_count_all || 0}
+												{dashboard_box.support_count_all || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Support
@@ -113,7 +113,7 @@ export default function Dashboard() {
 									<Link href={'/admin/settings/global-parameters/authors'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.forum_count_pending}
+												{dashboard_box.author_count_all}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Authors
@@ -194,7 +194,7 @@ export default function Dashboard() {
 									</RecentBox>
 								</div>
 								<div className="col-sm-3 mt-4">
-									<Link href={'/admin/settings/roles-and-permissions/add-new-lawyer'}>
+									<Link href={'/admin/settings/roles-and-permissions/add-new-professional'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<LinkButton color="#fff" height={0}>
 												Create Profile

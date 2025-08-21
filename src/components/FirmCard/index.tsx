@@ -171,7 +171,7 @@ export default function FirmCard({
 
                         <p className="stong-text m-0">
                             <span>
-                                <StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+                                <StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
                             </span>
 
 
@@ -203,10 +203,10 @@ export default function FirmCard({
                     <div className="detail-fil">
                         <div className="About-detail">
                             <h3>About {single_firm?.full_name}</h3>
-                            <p className="mb-3">
+                            {/* <p className="mb-3">
                                 <Image src="/images/map.png" alt="map icon image" width={20} height={20} />
                                 Legal Jurisdiction: <span>{single_firm?.jurisdiction_name}</span>
-                            </p>
+                            </p> */}
                         </div>
 
                         <div className="more-detail">

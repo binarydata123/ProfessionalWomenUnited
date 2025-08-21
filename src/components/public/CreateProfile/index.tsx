@@ -72,7 +72,7 @@ export default function CreateProfile() {
 						} else {
 							// toast.success(res.message);
 
-							router.push('/auth/lawyer/step-2');
+							router.push('/auth/professional/step-2');
 
 						}
 					} else {
@@ -130,7 +130,7 @@ export default function CreateProfile() {
 						} else {
 							const token = res.data.token;
 							Cookies.set('session_token', token);
-							window.location.href = '/auth/lawyer/step-2';
+							window.location.href = '/auth/professional/step-2';
 						}
 					}
 				})

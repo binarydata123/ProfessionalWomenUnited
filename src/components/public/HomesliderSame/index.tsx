@@ -64,7 +64,7 @@ export default function HomesliderSame() {
 										<span>
 											<StarIcon
 												width={20}
-												color="#208C84"
+												color="#c49073"
 												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
@@ -97,7 +97,7 @@ export default function HomesliderSame() {
 										<span>
 											<StarIcon
 												width={20}
-												color="#208C84"
+												color="#c49073"
 												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
@@ -130,7 +130,7 @@ export default function HomesliderSame() {
 										<span>
 											<StarIcon
 												width={20}
-												color="#208C84"
+												color="#c49073"
 												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
@@ -163,7 +163,7 @@ export default function HomesliderSame() {
 										<span>
 											<StarIcon
 												width={20}
-												color="#208C84"
+												color="#c49073"
 												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>
@@ -196,7 +196,7 @@ export default function HomesliderSame() {
 										<span>
 											<StarIcon
 												width={20}
-												color="#208C84"
+												color="#c49073"
 												style={{ marginRight: '5px', height: '30px' }}
 											/>{' '}
 										</span>

@@ -59,7 +59,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                     const data = response.data;
                     if (data.status == true) {
                         if (data.user.signupComplete === false && data.user.role === 'lawyer') {
-                            router.push('/auth/lawyer/step-2')
+                            router.push('/auth/professional/step-2')
                         }
                         if (data.user.role === 'enduser' && data.user.otp) {
                             router.push('/auth/two-factor-authentication')

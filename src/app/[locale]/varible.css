@@ -634,10 +634,10 @@ ul.dash-add {
 	background: #fff0 !important;
 }
 .count-card-wrapper.add-none .link-button:hover span.link-button-icon svg {
-	background: #ad3e83 !important;
+	background: #c49073 !important;
 }
 .count-card-wrapper.add-none .link-button:hover {
-	color: #ad3e83 !important;
+	color: #fff !important;
 }
 .pr-0 {
 	padding-right: 0 !important;
@@ -1161,17 +1161,17 @@ ul.list-12 li a svg {
 	line-height: 18px !important;
 }
 .card-notifaction:hover {
-	border: 1px solid #ebfff9;
+	border: 1px solid #e7d3c7;
 	background: #f9f2ef66;
 }
 .link-button {
 	transition: 0.6s;
 }
 .link-button:hover {
-	color: #fff !important;
+	color: rgb(190, 131, 99) !important;
 }
 .link-button:hover span.link-button-icon svg {
-	background: #fff;
+	background: #c49073;
 	color: #fff;
 }
 #dropdownMenuButton1.bg-white {

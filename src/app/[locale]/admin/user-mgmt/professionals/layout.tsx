@@ -1,11 +1,11 @@
 'use client';
-import React, {useState} from 'react';
-import {usePathname} from 'next/navigation';
+import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import './lawyer.css';
 import Image from 'next/image';
 
-export default function LawyersLayout({children}: {children: React.ReactNode}) {
+export default function LawyersLayout({ children }: { children: React.ReactNode }) {
 	const pathname = usePathname();
 
 	return (
@@ -74,16 +74,16 @@ export default function LawyersLayout({children}: {children: React.ReactNode}) {
 			<h4 className="font-xx-large social-link weight-semi-bold mb-3 p-0 pt-4">Professionals</h4>
 			<div className="nav-tab use-lawyer p-set p-0 border-0">
 				<ul className="border-bottom">
-					<li className={pathname === '/admin/user-mgmt/lawyers' ? 'active' : ''}>
-						<Link aria-current="page" href="/admin/user-mgmt/lawyers">
+					<li className={pathname === '/admin/user-mgmt/professionals' ? 'active' : ''}>
+						<Link aria-current="page" href="/admin/user-mgmt/professionals">
 							Active
 						</Link>
 					</li>
-					<li className={pathname === '/admin/user-mgmt/lawyers/approvals' ? 'active' : ''}>
-						<Link href="/admin/user-mgmt/lawyers/approvals">Approvals</Link>
+					<li className={pathname === '/admin/user-mgmt/professionals/approvals' ? 'active' : ''}>
+						<Link href="/admin/user-mgmt/professionals/approvals">Approvals</Link>
 					</li>
-					<li className={pathname === '/admin/user-mgmt/lawyers/report-center' ? 'active' : ''}>
-						<Link href="/admin/user-mgmt/lawyers/report-center">Report Center</Link>
+					<li className={pathname === '/admin/user-mgmt/professionals/report-center' ? 'active' : ''}>
+						<Link href="/admin/user-mgmt/professionals/report-center">Report Center</Link>
 					</li>
 				</ul>
 			</div>

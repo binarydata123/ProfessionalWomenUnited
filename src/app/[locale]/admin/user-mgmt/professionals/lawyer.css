@@ -26,7 +26,7 @@
 }
 
 .table-action-button {
-	background: #BE836314;
+	background: #be836314;
 	padding: 0px 5px;
 	margin-right: 2px;
 }
@@ -90,7 +90,7 @@
 
 .plan-btn {
 	color: var(--green-medium-2);
-	background-color: #5d96a71f;
+	background-color: #c49073;
 }
 
 .table-status-btn {
@@ -285,12 +285,12 @@ table.rwd-table tr th {
 	font-weight: var(--weight-bold) !important;
 }
 .monthly {
-	background: #5d96a71f;
+	background: #c49073;
 	padding: 0px 8px;
 	border: none;
 	font-size: var(--font-x-small);
 	border-radius: 16px;
-	color: #166379;
+	color: #fff;
 	font-weight: var(--weight-semi-bold);
 }
 
@@ -321,7 +321,6 @@ table.rwd-table tr th {
 	}
 }
 
-
-.report-view-user-model{
+.report-view-user-model {
 	background-color: rgba(0, 0, 0, 0.48);
 }

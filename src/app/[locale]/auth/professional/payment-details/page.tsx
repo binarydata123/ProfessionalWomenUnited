@@ -51,7 +51,7 @@ export default function stepTwo() {
 	return (
 		<>
 			<div className="auth-page-wrapper" id="stepTwo">
-				<Link href="/auth/lawyer/choose-pricing-plan" className="backtobtn">
+				<Link href="/auth/professional/choose-pricing-plan" className="backtobtn">
 					<ArrowSmallLeftIcon width={20} />
 					Back
 				</Link>

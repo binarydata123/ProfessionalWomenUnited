@@ -20,7 +20,7 @@
 }
 
 li.position-growing {
-	background: #208c8414;
+	background: #c4907314;
 	padding: 3px 22px;
 	border-radius: 13px;
 	font-size: var(--font-small);
@@ -269,7 +269,7 @@ button.btn-get-free.btn-commn.ml-2 {
 	background-color: var(--green-medium-1);
 	border-radius: 30px;
 	right: 8px;
-	box-shadow: rgba(196,144,115);
+	box-shadow: rgba(196, 144, 115);
 	animation: blink 1s ease infinite;
 }
 @keyframes blink {

@@ -47,7 +47,7 @@ export default function LawyersList() {
 						</div>
 						<p className="stong-text">
 							<span>
-								<StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+								<StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
 							</span>
 							<span>
 								<strong>4.0</strong>
@@ -97,7 +97,7 @@ export default function LawyersList() {
 						</div>
 						<p className="stong-text">
 							<span>
-								<StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+								<StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
 							</span>
 							<span>
 								<strong>4.0</strong>
@@ -143,7 +143,7 @@ export default function LawyersList() {
 						</div>
 						<p className="stong-text">
 							<span>
-								<StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+								<StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
 							</span>
 							<span>
 								<strong>4.0</strong>
@@ -189,7 +189,7 @@ export default function LawyersList() {
 						</div>
 						<p className="stong-text">
 							<span>
-								<StarIcon width={20} color="#208C84" style={{ marginRight: '5px', height: '30px' }} />
+								<StarIcon width={20} color="#c49073" style={{ marginRight: '5px', height: '30px' }} />
 							</span>
 							<span>
 								<strong>4.0</strong>

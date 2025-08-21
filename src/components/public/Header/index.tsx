@@ -404,7 +404,7 @@ export default function Header({ locale }: any) {
 															id="dropdownMenu2"
 															data-bs-toggle="dropdown"
 															aria-expanded="false">
-															<ChevronDownIcon width={20} color={'#208C84'} />
+															<ChevronDownIcon width={20} color={'#c49073'} />
 														</button>
 														<ul
 															className="dropdown-menu header-dropdown shadow-lg"

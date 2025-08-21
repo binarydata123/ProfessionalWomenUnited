@@ -7,7 +7,7 @@ export default function ChatTranscript(props: any) {
 
 	useEffect(() => {
 		// Calculate the height based on the number of items in inquiryData
-		const itemHeight = 50; // You can adjust this based on your design
+		const itemHeight = 120; // You can adjust this based on your design
 		const itemCount = props.inquiryData ? props.inquiryData.length : 0;
 		const totalHeight = itemHeight * itemCount;
 
@@ -35,7 +35,7 @@ export default function ChatTranscript(props: any) {
 				props.inquiryData.map((message: any, index: number) => (
 					<>
 						<div className="row mt-3" key={index}>
-							<div className="col-sm-3 text-right">
+							<div className="col-sm-3 text-left">
 								<p className="social-link font-small weight-bold ">{message.inquiry_by}:</p>
 								<p className="social-link font-xx-small weight-bold ">
 									{formatInquiryDate(message.created_at)}

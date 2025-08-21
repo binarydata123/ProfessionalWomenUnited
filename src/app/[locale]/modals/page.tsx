@@ -415,7 +415,7 @@ export default function popup() {
 													<span>(10 reviews)</span>
 												</li>
 											</ul>
-											<button className="btn-mini success-btn mr-1 mb-2">Business Law</button>
+											<button className="btn-mini success-btn mr-1 mb-2">Business Professional</button>
 											<button className="btn-mini danger-btn mr-1 mb-2">
 												Licensed for 9 years
 											</button>
@@ -632,7 +632,7 @@ export default function popup() {
 													<span>(10 reviews)</span>
 												</li>
 											</ul>
-											<button className="btn-mini success-btn mr-1 mb-2">Business Law</button>
+											<button className="btn-mini success-btn mr-1 mb-2">Business Profession</button>
 											<button className="btn-mini danger-btn mr-1  mb-2">
 												Licensed for 9 years
 											</button>
@@ -874,7 +874,7 @@ export default function popup() {
 													<span>(10 reviews)</span>
 												</li>
 											</ul>
-											<button className="btn-mini success-btn mr-1 mb-2">Business Law</button>
+											<button className="btn-mini success-btn mr-1 mb-2">Business Profession</button>
 											<button className="btn-mini danger-btn mr-1 mb-2">
 												Licensed for 9 years
 											</button>
@@ -1083,7 +1083,7 @@ export default function popup() {
 													<span>(10 reviews)</span>
 												</li>
 											</ul>
-											<button className="btn-mini success-btn mr-1 mb-2">Business Law</button>
+											<button className="btn-mini success-btn mr-1 mb-2">Business Profession</button>
 											<button className="btn-mini danger-btn mr-1 mb-2">
 												Licensed for 9 years
 											</button>
@@ -1245,7 +1245,7 @@ export default function popup() {
 												<span>(10 reviews)</span>
 											</li>
 										</ul>
-										<button className="btn-mini success-btn mr-1 mb-2">Business Law</button>
+										<button className="btn-mini success-btn mr-1 mb-2">Business Profession</button>
 										<button className="btn-mini danger-btn mr-1 mb-2">Licensed for 9 years</button>
 										<button className="btn-mini danger-btn ">Free Consultation: 30 mins</button>
 									</div>
@@ -1601,7 +1601,7 @@ export default function popup() {
 
 								<div className="row mt-3">
 									<div className="col-sm-3 text-right">
-										<p className="social-link font-small weight-bold ">Lawyer Name:</p>
+										<p className="social-link font-small weight-bold ">Professional Name:</p>
 										<p className="social-link font-xx-small weight-bold ">July 23, 8:00AM</p>
 									</div>
 									<div className="col-sm-9">
@@ -1636,7 +1636,7 @@ export default function popup() {
 
 								<div className="row mt-3">
 									<div className="col-sm-3 text-right">
-										<p className="social-link font-small weight-bold ">Lawyer Name:</p>
+										<p className="social-link font-small weight-bold ">Professional Name:</p>
 										<p className="social-link font-xx-small weight-bold ">July 23, 8:00AM</p>
 									</div>
 									<div className="col-sm-9">

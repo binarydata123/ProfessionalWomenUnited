@@ -1,5 +1,5 @@
 import React from 'react';
-import {ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 // import "./toastr.css"
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,6 +17,8 @@ export default function ToastrContainer() {
 				draggable
 				pauseOnHover
 				theme="colored"
+				toastStyle={{ backgroundColor: "#c49073", color: "#fff" }}
+
 			/>
 		</div>
 	);

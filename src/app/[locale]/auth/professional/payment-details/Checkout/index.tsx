@@ -95,7 +95,7 @@ export default function Checkout() {
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
-                                    router.push('/auth/lawyer/verify-otp');
+                                    router.push('/auth/professional/verify-otp');
                                 });
                             } else {
                                 Swal.fire({
@@ -109,7 +109,7 @@ export default function Checkout() {
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
-                                    router.push('/auth/lawyer/verify-otp');
+                                    router.push('/auth/professional/verify-otp');
                                 });
                             }
                         } else {

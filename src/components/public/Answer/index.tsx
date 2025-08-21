@@ -236,7 +236,7 @@ export default function Answer({ answer, Key, loginUser }: Props) {
                         <span>
                           <StarIcon
                             width={20}
-                            color="#208C84"
+                            color="#c49073"
                             style={{ marginRight: '5px', height: '30px' }}
                           />
                         </span>

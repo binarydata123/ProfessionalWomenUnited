@@ -206,14 +206,14 @@ export default function Profile() {
 					)}
 				</p>
 
-				<p className="text-sonic-silver d-flex align-items-center">
+				{/* <p className="text-sonic-silver d-flex align-items-center">
 					<Link href="" className="green-medium-2  font-medium d-flex align-items-center">
 						<img width={27} src={'/icon/map.svg'} alt={'xyz'} />{' '}
 						<span className="mx-2">Legal Jurisdiction:-</span>
 					</Link>{' '}
-					{/* {lawyerDetails?.jurisdiction_name || ' '} */}
+					{lawyerDetails?.jurisdiction_name || ' '}
 					{lawyerDetails?.jurisdiction_name ? lawyerDetails.jurisdiction_name.split(',')[0] : ' '}
-				</p>
+				</p> */}
 
 				<p className="font-medium  weight-medium text-sonic-silver mt-2"> Specializes In: </p>
 				<p className="font-small  weight-light text-sonic-silver">{lawyerDetails?.specializ_name || '-'}</p>
