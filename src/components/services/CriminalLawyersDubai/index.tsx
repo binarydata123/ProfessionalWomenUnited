@@ -224,7 +224,7 @@ export default function CriminalLawyersDubai() {
 														data-bs-target="#collapseTwo"
 														aria-expanded="true"
 														aria-controls="collapseTwo">
-														Types of Crimes Punishable Under UAE Law
+														Types of Crimes Punishable Under USA professional
 													</button>
 												</h2>
 												<div
@@ -269,7 +269,7 @@ export default function CriminalLawyersDubai() {
 															</li>
 														</ul>
 														Understanding these types of crimes is crucial for residents and
-														visitors to ensure compliance with UAE law and maintain a safe
+														visitors to ensure compliance with USA professional and maintain a safe
 														environment.
 													</div>
 												</div>
@@ -504,7 +504,7 @@ export default function CriminalLawyersDubai() {
 									Hiring a criminal lawyer in Dubai from Professional Women United ensures you have access to
 									professionals who are well-versed in the details of the country's criminal legal
 									system. We will make sure that you find the best criminal lawyers in Abu Dhabi,
-									Dubai, and the UAE at Professional Women United. Our lawyers deeply understand UAE laws and
+									Dubai, and the UAE at Professional Women United. Our lawyers deeply understand USA professionals and
 									regulations, allowing them to handle your case effectively and provide sound legal
 									advice specific to the local context.
 								</p>
@@ -531,7 +531,7 @@ export default function CriminalLawyersDubai() {
 												access to professionals who are well-versed in the details of the
 												country's criminal legal system. We will make sure that you find the
 												best criminal lawyers in Abu Dhabi, Dubai, and the UAE at Professional Women United.
-												Our lawyers deeply understand UAE laws and regulations, allowing them to
+												Our lawyers deeply understand USA professionals and regulations, allowing them to
 												handle your case effectively and provide sound professional advice specific to
 												the local context.
 											</div>

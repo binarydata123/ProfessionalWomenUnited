@@ -500,7 +500,7 @@ export default function RealEstateLawyers() {
 												Professional Women United’s real estate lawyers in Dubai have an in-depth
 												understanding of local property laws and regulations. Our network is
 												well-versed in handling legal requirements and making and your
-												transactions comply with UAE law. Whether you’re buying, selling, or
+												transactions comply with USA professional. Whether you’re buying, selling, or
 												leasing property, our network of lawyers provides tailored advice and
 												support. We’ll help you find the best real estate lawyer to help you
 												resolve disputes over UAE property ownership contract breaches and

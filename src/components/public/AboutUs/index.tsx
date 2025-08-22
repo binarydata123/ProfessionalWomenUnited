@@ -276,7 +276,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												If you are a professional proficient in UAE law, all you have to do is go to
+												If you are a professional proficient in USA professional, all you have to do is go to
 												our “For Professionals” section and create your Professional Women United account.
 												Creating a{' '}
 												<Link className="underlineClass" href="/find-a-professional">

@@ -52,7 +52,7 @@ export default function Blog({ blog }: Props) {
 				)}
 			</Link>
 			<Link href={`/legal-services/banking`}>
-				<span className="law-btn">{blog.service_name || blog.services.name} Profession</span>
+				<span className="law-btn">{blog?.service_name || blog?.services?.name || 'Women'} Profession</span>
 			</Link>
 			<Link href={`/blogs/${blog.slug}`}>
 				<h5>{blog.title && blog.title.length > 50 ? blog.title.substring(0, 50) + '...' : blog.title}</h5>
