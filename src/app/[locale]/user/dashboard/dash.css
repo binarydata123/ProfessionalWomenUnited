@@ -265,7 +265,7 @@ ul.rating-location li i {
 	border: solid 1px var(--anti-flash-white);
 }
 .form-fild-des label:hover input ~ .checkmark {
-	background-color: #f7f7f7;
+	background-color: #c49073;
 }
 
 .form-fild-des label input:checked ~ .checkmark {

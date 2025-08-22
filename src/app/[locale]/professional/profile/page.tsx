@@ -130,7 +130,7 @@ export default function Profile() {
 					<div className="col-sm-4 col-6 mb-3">
 						<CountCard
 							countColor={'#c49073'}
-							href="/lawyer/profile"
+							href="/professional/profile"
 							linkColor="#BE8363"
 							backgroundImage="/images/white-dash-card-1.JPG"
 							linkText="Profile Views"
@@ -140,7 +140,7 @@ export default function Profile() {
 					<div className="col-sm-4 col-6 mb-3">
 						<CountCard
 							countColor={'#c49073'}
-							href="/lawyer/profile/reviews"
+							href="/professional/profile/reviews"
 							linkColor="#BE8363"
 							backgroundImage="/images/white-dash-card-2.JPG"
 							linkText="Reviews"
@@ -150,7 +150,7 @@ export default function Profile() {
 					<div className="col-sm-4 col-12">
 						<CountCard
 							countColor={'#c49073'}
-							href="/lawyer/inquiries"
+							href="/professional/inquiries"
 							linkColor="#BE8363"
 							backgroundImage="/images/white-dash-card-3.JPG"
 							linkText="Inquiries"

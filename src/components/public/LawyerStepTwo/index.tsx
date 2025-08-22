@@ -109,7 +109,7 @@ export default function LawyerStepTwo() {
 		getAllJurisdictionsData();
 		getAllServicesData();
 		if (user) {
-			if (user?.role == 'lawyer') {
+			if (user?.role == 'professional') {
 				user?.role ? setUserId(user?.id) : setUserId('');
 				getSingleUserDetailsData(user?.id);
 			} else {

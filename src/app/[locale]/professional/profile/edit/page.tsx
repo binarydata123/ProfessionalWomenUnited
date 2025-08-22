@@ -118,7 +118,7 @@ export default function Page() {
 	const [profileimagecheck, setPofileImageCheck] = useState(false);
 	const [deleteImagePopop, setdeleteImagePopop] = useState(false);
 	const [allfirmName, setAllfirmName] = useState([]);
-
+	console.log(user?.id, 'userrr')
 	useEffect(() => {
 		user?.id ? setUserId(user?.id) : setUserId('');
 
@@ -299,9 +299,15 @@ export default function Page() {
 		if (!formData.first_name) {
 			newErrors.first_name = 'First name is required';
 			handleFocus(firstNameRef);
+		} else if (formData.first_name.length > 50) {
+			newErrors.first_name = 'First name cannot be more than 50 characters';
+			handleFocus(firstNameRef);
 		}
 		if (!formData.last_name) {
 			newErrors.last_name = 'Last name is required';
+			handleFocus(lastNameRef);
+		} else if (formData.last_name.length > 50) {
+			newErrors.last_name = 'Last name cannot be more than 50 characters';
 			handleFocus(lastNameRef);
 		}
 		if (!formData.email) {
@@ -842,9 +848,9 @@ export default function Page() {
 							{errors.designation && (
 								<small className="error-message text-danger d-block">{errors.designation}</small>
 							)}
-							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+							{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Company Name
-							</label>
+							</label> */}
 							{/* <select
 								className="form-fild w-100"
 								value={formData.firm_id}
@@ -887,7 +893,7 @@ export default function Page() {
 								Practice Area{' '}
 							</h5>
 							<p className="font-small  weight-light text-sonic-silver">
-								Tell us about your legal expertise
+								Tell us about your professional expertise
 							</p>
 
 							{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
@@ -960,12 +966,19 @@ export default function Page() {
 									onChange={handleInputChange}
 								/>
 								{/* <i className="fa-solid fa-magnifying-glass"></i> */}
-								<Image
+								{/* <Image
 									src="/images/search-normal.svg"
 									alt="search icon"
 									width={20}
 									height={20}
-									className="c"
+									className="fa-solid fa-magnifying-glass"
+								/> */}
+								<Image
+									src="/images/search-normal.svg"
+									alt="search-normal"
+									className="magnify-search"
+									width={20}
+									height={20}
 								/>
 							</div>
 

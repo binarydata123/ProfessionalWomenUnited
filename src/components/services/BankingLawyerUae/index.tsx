@@ -747,7 +747,7 @@ export default function BankingLawyerUae() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -1005,7 +1005,7 @@ export default function BankingLawyerUae() {
 												<div className="accordion-body border-0 text-white">
 													When selecting a banking lawyer in Dubai, account for their
 													expertise in banking and finance law, experience handling similar
-													cases or transactions, reputation in the legal community, and
+													cases or transactions, reputation in the professional community, and
 													familiarity with local regulations and customs.
 												</div>
 											</div>
@@ -1079,7 +1079,7 @@ export default function BankingLawyerUae() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1105,7 +1105,7 @@ export default function BankingLawyerUae() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

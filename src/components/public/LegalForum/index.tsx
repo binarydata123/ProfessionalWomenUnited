@@ -34,8 +34,8 @@ export default function LegalForum({ serviceData, blogsData, tagsData, TotalQues
 						</div>
 						<div className="col-lg-6 text-lg-end">
 							<div className="gotalegalquestion p-0 m-0">
-								<Link href={'/ask-a-lawyer'} className="btn-commn">
-									Ask A Lawyer
+								<Link href={'/find-a-professional'} className="btn-commn">
+									Ask A Professional
 								</Link>
 							</div>
 						</div>

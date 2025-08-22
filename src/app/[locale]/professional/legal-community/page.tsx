@@ -70,7 +70,7 @@ export default function Overview() {
 								<CountCard
 									count={questionAnswersCount}
 									linkText="Questions Answered"
-									href="/lawyer/legal-community/contribution"
+									href="/professional/legal-community/contribution"
 									backgroundImage="/images/bg-question.jpg"
 								/>
 							</div>

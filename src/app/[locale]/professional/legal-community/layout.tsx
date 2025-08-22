@@ -34,21 +34,21 @@ export default function LegalCommunityLayout({ children }: { children: React.Rea
 				<div className="height-h class-add">
 					<div id="sticky">
 						<h4 className="font-xx-large social-link mb-3 weight-semi-bold pt-md-5 mt-3">
-							Legal Community
+							professional community
 						</h4>
 						<div className="row mb-1">
 							<div className="col-sm-12">
 								<div className="nav-tab p-set">
 									<ul>
-										<li className={pathname === '/lawyer/legal-community' ? 'active' : ''}>
-											<Link href="/lawyer/legal-community">Overview</Link>
+										<li className={pathname === '/professional/legal-community' ? 'active' : ''}>
+											<Link href="/professional/legal-community">Overview</Link>
 										</li>
 										<li
 											className={
-												pathname === '/lawyer/legal-community/contribution' ? 'active' : ''
+												pathname === '/professional/legal-community/contribution' ? 'active' : ''
 											}
 										>
-											<Link href="/lawyer/legal-community/contribution">
+											<Link href="/professional/legal-community/contribution">
 												Contributions ({formattedCount})
 											</Link>
 										</li>

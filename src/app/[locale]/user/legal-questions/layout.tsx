@@ -38,7 +38,7 @@ export default function LegalCommunityLayout({ children }: { children: React.Rea
 		<div>
 			<div className="right-body pb-0">
 				<div id="sticky">
-					<h4 className="font-xx-large social-link weight-semi-bold">Legal Questions</h4>
+					<h4 className="font-xx-large social-link weight-semi-bold">Professional Questions</h4>
 					<div className="nav-tab p-set mb-1 d-flex justify-content-between">
 						<ul>
 							<li className={`${pathname === '/user/legal-questions' ? 'active' : ''}`}>

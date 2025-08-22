@@ -77,7 +77,7 @@ export default function Dashboard() {
 									<Link href={'/admin/user-mgmt/professionals'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.lawyer_count}
+												{dashboard_box.lawyer_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Active Professionals
@@ -89,7 +89,7 @@ export default function Dashboard() {
 									<Link href={'/admin/user-mgmt/users'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.enduser_count}
+												{dashboard_box.enduser_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Individuals
@@ -113,7 +113,7 @@ export default function Dashboard() {
 									<Link href={'/admin/settings/global-parameters/authors'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.author_count_all}
+												{dashboard_box.author_count_all || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Authors
@@ -125,7 +125,7 @@ export default function Dashboard() {
 									<Link href={'/admin/user-mgmt/inquiries'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.total_inquiry_count}
+												{dashboard_box.total_inquiry_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Inquiries
@@ -137,7 +137,7 @@ export default function Dashboard() {
 									<Link href={'/admin/content-mgmt/blogs'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.blog_count}
+												{dashboard_box.blog_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Blogs Posted

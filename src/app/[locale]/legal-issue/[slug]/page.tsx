@@ -7,14 +7,14 @@ import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
 	return {
-		title: 'Legal Issues - Professional Women United',
-		description: 'Explore legal issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for your legal concerns.',
+		title: 'professional issues - Professional Women United',
+		description: 'Explore professional issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for your legal concerns.',
 		alternates: {
 			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/legal-issue/${params.slug}`
 		},
 		openGraph: {
-			title: 'Legal Issues - Professional Women United',
-			description: 'Explore legal issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for your legal concerns.',
+			title: 'professional issues - Professional Women United',
+			description: 'Explore professional issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for your legal concerns.',
 			url: `${process.env.NEXT_PUBLIC_BASE_URL}/legal-issue/${params.slug}`,
 			siteName: `${process.env.NEXT_APP_NAME}`,
 			images: [

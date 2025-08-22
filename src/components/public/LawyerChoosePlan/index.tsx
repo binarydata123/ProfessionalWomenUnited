@@ -37,7 +37,7 @@ export default function LawyerChoosePlan() {
     useEffect(() => {
         getAllMemberShipPlanData();
         if (user) {
-            if (user?.id && user?.role == 'lawyer') {
+            if (user?.id && user?.role == 'professional') {
                 getAllMemberShipPlanData();
             }
             else {
@@ -135,7 +135,7 @@ export default function LawyerChoosePlan() {
                                                 height={50}
                                             />
                                             <h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-                                                {/* {isMonthly == 'monthly' ? 'Solo Lawyer Plan' : ' Solo Lawyer Plan'} */}
+                                                {/* {isMonthly == 'monthly' ? 'Solo Professional Plan' : ' Solo Professional Plan'} */}
                                                 Solo Plan
                                             </h5>
                                         </div>

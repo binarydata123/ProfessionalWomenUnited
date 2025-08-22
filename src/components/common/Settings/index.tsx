@@ -35,7 +35,7 @@ export default function Settings() {
 		const isValid = validateForm();
 		if (isValid) {
 			try {
-				const res = await changePassword(user_id, newPassword);
+				const res = await changePassword(user?.id, newPassword);
 				if (res.success == true) {
 					toast.success('password updated successfully');
 				}
@@ -134,7 +134,7 @@ export default function Settings() {
 
 	return (
 		<div>
-			<div className="right-body">
+			<div className="right-body mt-2">
 				<h4 className="font-xx-large social-link  weight-semi-bold">Settings</h4>
 			</div>
 			<hr className="hr-line mt-0" />
@@ -212,7 +212,7 @@ export default function Settings() {
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Privacy Policy</p>
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Terms of Use</p>
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Community Guidelines</p>
-				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Legal Information</p>
+				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Professional Information</p>
 
 				<div className="mt-5">
 					<p className="font-small color-light mb-2 weight-medium">Notifications</p>
@@ -286,7 +286,7 @@ export default function Settings() {
 						<div className="col-sm-10 col-9">
 							<p className="font-large social-link weight-semi-bold m-font-18   ">Message from Clients</p>
 							<p className="font-small  weight-medium text-sonic-silver w-100">
-								Opt-in to receive messages from legal firms about potential career opportunities.
+								Opt-in to receive messages from Professional about potential career opportunities.
 							</p>
 						</div>
 						<div className="col-sm-2 col-3 text-right">

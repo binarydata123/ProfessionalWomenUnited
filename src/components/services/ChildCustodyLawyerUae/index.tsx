@@ -652,7 +652,7 @@ export default function CivilLawyer() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						{t('What_Do_Clients')}
@@ -906,7 +906,7 @@ export default function CivilLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -932,7 +932,7 @@ export default function CivilLawyer() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

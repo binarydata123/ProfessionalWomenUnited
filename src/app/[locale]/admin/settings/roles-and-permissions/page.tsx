@@ -223,7 +223,7 @@ export default function Page() {
 						>
 							<option value={''}>User</option>
 							<option value={'enduser'}>Individual</option>
-							<option value={'lawyer'}>Professional</option>
+							<option value={'professional'}>Professional</option>
 						</select>
 					</div>
 
@@ -305,7 +305,7 @@ export default function Page() {
 							<td data-th="User">
 								<p className="font-small weight-light social-link text-primary">
 									{' '}
-									{rowData.role == 'enduser' ? 'Individual' : 'Lawyer'}
+									{rowData.role == 'enduser' ? 'Individual' : 'Professional'}
 								</p>
 							</td>
 

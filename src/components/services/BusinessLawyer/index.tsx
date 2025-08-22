@@ -89,7 +89,7 @@ export default function BusinessLawyer() {
 												acquisitions, and dispute resolution.
 												<br />
 												Our business lawyers at Professional Women United will help your businesses navigate
-												complex legal issues, minimize risks, and achieve objectives while
+												complex professional issues, minimize risks, and achieve objectives while
 												ensuring compliance with relevant laws and regulations.
 											</>
 										) : (
@@ -111,7 +111,7 @@ export default function BusinessLawyer() {
 										resolution.
 										<br />
 										Our business lawyers at Professional Women United will help your businesses navigate complex
-										legal issues, minimize risks, and achieve objectives while ensuring compliance
+										professional issues, minimize risks, and achieve objectives while ensuring compliance
 										with relevant laws and regulations.
 									</>
 								)}
@@ -324,7 +324,7 @@ export default function BusinessLawyer() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											Contract disputes are among the most common legal issues in business,
+											Contract disputes are among the most common professional issues in business,
 											arising when parties disagree over the interpretation or fulfillment of
 											contractual obligations. These disputes can involve breaches of contract,
 											failure to deliver goods or services, or disagreements over payment terms.
@@ -763,7 +763,7 @@ export default function BusinessLawyer() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-xxx-large weight-bold social-link">
 						What Do clients
@@ -774,12 +774,12 @@ export default function BusinessLawyer() {
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-paddings color-frequent set-top-mrgin-mbl">
 						Clients most frequently search for knowledgeable legal representation and clarity when seeking
-						legal information. They often look for experienced lawyers who can provide expert guidance on
+						Professional Information. They often look for experienced lawyers who can provide expert guidance on
 						various legal matters relevant to their specific needs, ensuring they receive clear and
 						comprehensive advice to address their concerns effectively.
 					</p>
 					<h5 className="mt-4" style={{ color: '#4F4F4F' }}>
-						Select the legal issue you face and connect with a legal expert.
+						Select the professional issue you face and connect with a legal expert.
 					</h5>
 					<ul className="pt-3 class-add">
 						<li>
@@ -1035,7 +1035,7 @@ export default function BusinessLawyer() {
 												aria-labelledby="headingFive"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													If you need urgent legal help, please contact our office as soon as
+													If you need urgent professional help, please contact our office as soon as
 													possible. Our team is available to provide prompt professional advice and
 													support, helping you address any urgent legal matters or emergencies
 													efficiently. We prioritize responsiveness and are committed to
@@ -1089,7 +1089,7 @@ export default function BusinessLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1115,7 +1115,7 @@ export default function BusinessLawyer() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

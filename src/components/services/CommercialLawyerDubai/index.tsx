@@ -279,7 +279,7 @@ export default function CommercialLawyerDubai() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											Legal issues related to employment, such as wrongful termination,
+											professional issues related to employment, such as wrongful termination,
 											discrimination, or wage disputes, can disrupt business operations.
 											Commercial lawyers offer guidance on employment laws, draft contracts, and
 											handle disputes to guarantee the fair treatment of employees and compliance
@@ -711,7 +711,7 @@ export default function CommercialLawyerDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-xxx-large weight-bold social-link">
 						What Do clients
@@ -721,12 +721,12 @@ export default function CommercialLawyerDubai() {
 						</span>
 					</h3>
 					<p className="font-medium weight-light social-link mt-3">
-						Those seeking legal information on commercial law are primarily concerned with finding expert
+						Those seeking Professional Information on commercial law are primarily concerned with finding expert
 						legal representation to navigate complex business transactions and ensure compliance with
 						regulations.
 					</p>
 					<h5 className="mt-4" style={{ color: '#4F4F4F' }}>
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</h5>
 					<ul className="pt-3 class-add">
 						<li>
@@ -779,7 +779,7 @@ export default function CommercialLawyerDubai() {
 										and negotiation tactics, commercial lawyers help businesses secure favorable
 										terms and avoid potential disputes down the line. Be it drafting a new agreement
 										or reviewing existing contracts, businesses rely on the guidance of commercial
-										lawyers to overcome legal issues effectively.
+										lawyers to overcome professional issues effectively.
 									</div>
 								</div>
 								<div className="col-lg-12">
@@ -1011,7 +1011,7 @@ export default function CommercialLawyerDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1037,7 +1037,7 @@ export default function CommercialLawyerDubai() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

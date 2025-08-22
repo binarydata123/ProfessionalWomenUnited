@@ -13,7 +13,7 @@ export default function StatistcsSection() {
                         </h2>
                         <div className="accordion-body border-0 text-white">
                             The Federal Law No. 6 of 1973 outlines the legal provisions for the entry, residence,
-                            and deportation of foreigners in the United Arab Emirates. It provides clear guidelines
+                            and deportation of foreigners in the United States of America. It provides clear guidelines
                             on the requirements for entry, the responsibilities of transport operators, and the
                             issuance of visas and permits.
                         </div>

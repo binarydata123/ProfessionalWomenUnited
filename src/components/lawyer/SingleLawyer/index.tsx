@@ -266,7 +266,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															src="/images/profile/fluent_share-16-filled.png"
 															width={25}
 															height={25}
-															alt="share lawyer profile"
+															alt="share professional profile"
 															style={{ cursor: 'pointer' }}
 															onClick={() => setshare(!share)}
 														/>
@@ -341,8 +341,8 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															</p>
 														)}
 
-														<div className="atypebtn mt-2">
-															{single_lawyer?.service_name &&
+														<div className="mt-2">
+															{/* {single_lawyer?.service_name &&
 																single_lawyer.service_name
 																	.split(',')
 																	.map((service: any, index: any) => (
@@ -353,9 +353,24 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																		>
 																			{service}
 																		</Link>
+																	))} */}
+
+															{single_lawyer?.service_name &&
+																single_lawyer.service_name
+																	.split(',')
+																	.map((service: any, index: any) => (
+																		<Link
+																			href="JavaScript:void(0)"
+																			className="mb-2"
+																			key={index}
+																		>
+																			<button className="primary-true-green mb-2 mr-1">
+																				{service}
+																			</button>
+																		</Link>
 																	))}
 
-															{single_lawyer?.acquired ? (
+															{/* {single_lawyer?.acquired ? (
 																currentYear - single_lawyer?.acquired > 0 && (
 																	<Link
 																		href="JavaScript:void(0)"
@@ -376,7 +391,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																	Free Consultation:{' '}
 																	{single_lawyer?.consultation_duration}
 																</Link>
-															)}
+															)} */}
 														</div>
 													</div>
 												</div>

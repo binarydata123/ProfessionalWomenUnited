@@ -41,7 +41,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 									</Navbar.Toggle>
 									<Navbar.Collapse id="navbarScroll">
 										<form className="d-flex justify-content-end p-2 btn-header" role="search">
-											<Link className="btn btn-outline-success btn-lawyer" href="/for-lawyers">
+											<Link className="btn btn-outline-success btn-lawyer" href="/auth/choose-profile">
 												For Professionals
 											</Link>
 											<Link
@@ -60,7 +60,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 								className="d-flex justify-content-end text-right p-2 btn-header d-none d-md-block"
 								role="search"
 							>
-								<Link className="btn btn-outline-success btn-lawyer" href="/">
+								<Link className="btn btn-outline-success btn-lawyer" href="/auth/choose-profile">
 									For Professionals
 								</Link>
 								<Link className="btn btn-outline-success btn-login set-ar-log" href="/auth/login">

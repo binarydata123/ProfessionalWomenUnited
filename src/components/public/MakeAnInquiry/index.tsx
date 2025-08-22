@@ -12,7 +12,7 @@ import FormInput from '@/commonUI/FormInput';
 import Popup from '@/commonUI/Popup';
 import FormTextarea from '@/commonUI/FormTextArea';
 import AuthContext from '@/context/AuthContext';
-import { getAdminImageSrc180x180 } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { getAdminImageSrc180x180, getAdminImageSrc80x80 } from '@/app/[locale]/commonfunctions/commonfunctions';
 
 interface FormData {
 	firstName: string;
@@ -211,7 +211,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											required
 											label={'Your Message'}
 											maxLength={1000}
-											placeholder="Briefly share your legal issue here..."
+											placeholder="Briefly share your professional issue here..."
 											value={message}
 											error={errors.message}
 											onChange={handleTextAreaChange}
@@ -278,7 +278,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											onChange={handleFormChange}
 											required
 											error={errors.message}
-											placeholder="Briefly share your legal issue here..."
+											placeholder="Briefly share your professional issue here..."
 										/>
 										<button type="submit" className="btn-commn w-100 mt-5 mb-5">
 											Submit
@@ -298,11 +298,11 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 										<div className="col-3">
 											<div className="profile-user">
 												<Image
-													// src={getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)}
-													src={
-														getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)
-														|| "/images/female-lawyer-180x180.png"
-													}
+													src={getAdminImageSrc80x80(lawyer?.profile_image, lawyer.gender)}
+													// src={
+													// 	getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)
+													// 	|| "/images/female-lawyer-180x180.png"
+													// }
 													alt={lawyer.full_name}
 													width={180}
 													height={180}
@@ -399,7 +399,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 						Your Inquiry was submitted.
 					</h5>
 					<p className="font-medium social-link weight-light text-center mb-3">
-						This lawyer typically responds in 48 hours. Go to your dashboard to see updates.{' '}
+						This professional typically responds in 48 hours. Go to your dashboard to see updates.{' '}
 					</p>
 
 					{user && user?.role === 'enduser' && (

@@ -15,7 +15,7 @@ import LaywerRecent from '@/components/user/LaywerRecent';
 import { toast } from 'react-toastify';
 import Pagination from '@/commonUI/Pagination';
 import Popup from '@/commonUI/Popup';
-import LawyerSaved from '@/components/user/LawyerSaved';
+import LawyerSaved from '@/components/user/professionalsSaved';
 import AuthContext from '@/context/AuthContext';
 
 export default function page() {
@@ -110,7 +110,7 @@ export default function page() {
 		try {
 			const response = await lawyerdeleteByUser(data);
 			if (response.message == true) {
-				toast.success('Lawyer remove successfully');
+				toast.success('Professional remove successfully');
 			}
 			handleSaveLayer(lawyer_id);
 			getAllLawyerData(user_id);
@@ -128,7 +128,7 @@ export default function page() {
 		try {
 			const response = await lawyerdeleteByUser(data);
 			if (response.message == true) {
-				toast.success('Lawyer remove successfully');
+				toast.success('Professional remove successfully');
 			}
 			getCheckSavedLawyer(user_id, id);
 			getAllLawyerData(user_id);
@@ -172,7 +172,7 @@ export default function page() {
 			const response = await lawyerReportByUser(data);
 
 			if (response.status === true) {
-				toast.success('Lawyer successfully reported');
+				toast.success('Professional successfully reported');
 				setreportSubmitPopup(false);
 				setCheckReport(true);
 				setreportSubmitPopup(false);

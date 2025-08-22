@@ -496,7 +496,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 									<p>To ensure the integrity of our reviews, please follow these guidelines:</p>
 									<p>Be specific</p>
 									<p>
-										Clearly explain the actions taken or not taken by the lawyer in your case. We
+										Clearly explain the actions taken or not taken by the professional in your case. We
 										only accept reviews from those who have contacted, consulted with, or hired the
 										attorney.
 									</p>

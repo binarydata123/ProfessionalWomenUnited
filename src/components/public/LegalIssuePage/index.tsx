@@ -72,7 +72,7 @@ export default function LegalIssuePage() {
                                     rows={6}
                                     label={
                                         <div className="d-flex justify-content-between align-items-center">
-                                            Your Legal Issue
+                                            Your professional issue
                                             <div>
                                                 <p
                                                     className="mb-1 cursor-pointer float-end"
@@ -86,13 +86,13 @@ export default function LegalIssuePage() {
                                     disabled={!legalIssueEdit}
                                     error={errors.issue}
                                     onChange={e => setlegalIssue(e.target.value)}
-                                    placeholder="Describe your legal issue..."
+                                    placeholder="Describe your professional issue..."
                                     value={legalIssue}
                                     maxLength={500}
                                 />
                             </div>
                             <div className="pt-3" id="edit-connect">
-                                <h5 className="pb-lg-3 pt-3 pt-lg-0">What is your legal issue about?</h5>
+                                <h5 className="pb-lg-3 pt-3 pt-lg-0">What is your professional issue about?</h5>
                                 <div>
                                     <div className="dropdown" style={{ width: '250px' }}>
                                         <button

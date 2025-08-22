@@ -146,8 +146,8 @@ export const inquieryWithoutLoginValidation = data => {
 
 	if (!contactNumber) {
 		errors.contactNumber = 'Contact number is required';
-	} else if (!/^\d+$/.test(data.contactNumber.trim())) {
-		errors.contactNumber = 'Only numbers are allowed';
+	} else if (!/^[+()\-\s\d]+$/.test(data.contactNumber.trim())) {
+		errors.contactNumber = 'Only numbers, spaces, +, (), and - are allowed';
 	}
 
 	if (!message) {

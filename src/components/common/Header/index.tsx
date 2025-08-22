@@ -245,7 +245,7 @@ export default function Header() {
 	const profileImageSrc = user?.profile_image
 		? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${user?.profile_image}`
 		: user?.gender == 'male' || user?.gender == 'other'
-			? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-243.png`
+			? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-242.png`
 			: `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-242.png`;
 
 	return (
@@ -375,8 +375,8 @@ export default function Header() {
 								{/* <Link
                   href={`${usePathname().includes('/admin')
                     ? '/admin'
-                    : usePathname().includes('/lawyer')
-                      ? '/lawyer'
+                    : usePathname().includes('/professional')
+                      ? '/professional'
                       : usePathname().includes('/user')
                         ? '/user'
                         : ''
@@ -391,8 +391,8 @@ export default function Header() {
 								<Link
 									href={`${usePathname().includes('/admin')
 										? '/admin'
-										: usePathname().includes('/lawyer')
-											? '/lawyer'
+										: usePathname().includes('/professional')
+											? '/professional'
 											: '/user'
 										}/notifications`}
 									className="green-medium-2 font-medium weight-bold"
@@ -487,8 +487,8 @@ export default function Header() {
 										href={(() => {
 											if (user?.role === 'admin') {
 												return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
-											} else if (user?.role === 'lawyer') {
-												return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/profile-settings`;
+											} else if (user?.role === 'professional') {
+												return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
 											} else {
 												return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 											}
@@ -720,36 +720,39 @@ export default function Header() {
 												<ul>
 													<li className="w-normal">
 														<Link href={`/${role}/dashboard`}>
-															<Image
+															{/* <Image
 																src="/images/left-menu-1.png"
 																alt="left-menu-1"
 																width={18}
 																height={18}
-															/>
+															/> */}
+															<MdDashboard color={'#c49073'} size={18} />
 															&nbsp; Go to Dashboard
 														</Link>
 													</li>
 
 													<li>
 														<Link href={`/${role}/profile-settings`}>
-															<Image
+															{/* <Image
 																src="/images/left-menu-5.png"
 																alt="left-menu-5"
 																width={18}
 																height={18}
-															/>{' '}
+															/> */}
+															<IoMdSettings color={'#c49073'} size={18} />{' '}
 															&nbsp; Settings
 														</Link>
 													</li>
 
 													<li>
 														<Link href="#">
-															<Image
+															{/* <Image
 																src="/images/left-menu-6.png"
 																alt="left-menu-6"
 																width={18}
 																height={18}
-															/>{' '}
+															/> */}
+															<TbHelpSquareFilled color={'#c49073'} size={18} />{' '}
 															&nbsp; Help
 														</Link>
 													</li>
@@ -776,7 +779,7 @@ export default function Header() {
 						<ul className="left-menu">
 							{user_role === 'enduser' && <UserMenu closeMenu={closeMenu} />}
 							{user_role === 'admin' && <AdminMenu />}
-							{user_role === 'lawyer' && <LawyerMenu closeMenu={closeMenu} />}
+							{user_role === 'professional' && <LawyerMenu closeMenu={closeMenu} />}
 						</ul>
 					</div>
 				</nav>

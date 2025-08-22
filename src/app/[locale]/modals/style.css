@@ -52,10 +52,10 @@
 	width: 28px;
 	background-color: var(--text-white);
 	border-radius: 30px;
-	border: solid 1px var(--anti-flash-white);
+	border: solid 1px #c49073;
 }
 .form-fild-des label:hover input ~ .checkmark {
-	background-color: #f7f7f7;
+	background-color: #c49073;
 }
 
 .form-fild-des label input:checked ~ .checkmark {
@@ -72,7 +72,7 @@
 .form-fild-des label .checkmark:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 31px;
 	left: 4.8px;
 	top: 4.3px;
@@ -124,7 +124,7 @@
 	font-weight: var(--weight-semi-bold) !important;
 	font-size: var(--font-small) !important;
 	line-height: var(--line-height-small) !important;
-	color: #BE8363 !important;
+	color: #be8363 !important;
 	border: solid 1px var(--boysenberry) !important;
 	padding: 12px 24px;
 }
@@ -197,7 +197,7 @@ ul.rating-location li i {
 .danger-btn {
 	border: 1px solid var(--boysenberry);
 	color: var(--boysenberry);
-	background: #BE83631a;
+	background: #be83631a;
 }
 .sub-span {
 	font-size: 12px;

@@ -30,8 +30,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/ar/lawyer/:path*',
-				destination: '/en/lawyer/:path*',
+				source: '/ar/professional/:path*',
+				destination: '/en/professional/:path*',
 				permanent: true
 			},
 			{

@@ -1679,9 +1679,9 @@ div#tabs-viwe-buton button:nth-child(2) {
 	left: 0px;
 	height: 28px;
 	width: 28px;
-	background-color: var(--text-white);
+	background-color: #fff;
 	border-radius: 30px;
-	border: solid 1px var(--anti-flash-white);
+	border: solid 1px #c49073;
 }
 .checkmark.squere {
 	position: absolute;
@@ -1696,13 +1696,13 @@ div#tabs-viwe-buton button:nth-child(2) {
 .form-fild-des label .checkmark.squere:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 4px;
 	left: 0px;
 	top: 0px;
 }
 .form-fild-des label:hover input ~ .checkmark {
-	background-color: #f7f7f7;
+	background-color: #c49073;
 }
 
 .form-fild-des label input:checked ~ .checkmark {
@@ -1719,7 +1719,7 @@ div#tabs-viwe-buton button:nth-child(2) {
 .form-fild-des label .checkmark:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 31px;
 	left: 4.8px;
 	top: 4.3px;

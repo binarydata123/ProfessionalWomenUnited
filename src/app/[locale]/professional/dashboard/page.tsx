@@ -52,24 +52,23 @@ export default function Dashboard() {
 					<div className="row">
 						<div className="col-lg-12 col-xl-6">
 							<h2 className="font-smaller weight-bold social-link">
-								{/* Hello  */}
-								<span className="green-medium-2"> {capitalizeFirstWord(username)},</span>
+								Hello
+								<span className="green-medium-2"> {capitalizeFirstWord(username)}</span>
 							</h2>
-							<p className="text-sonic-silver font-medium weight-medium">
+							{/* <p className="text-sonic-silver font-medium weight-medium">
 								In the last 30 days you had...
-							</p>
+							</p> */}
 						</div>
 						<div className="col-lg-12 col-xl-6">
 							<div className="row justify-content-end">
 								<div className="col-sm-9 col-7">
-									<p className="green-dark  font-x-small weight-medium mt-3">
+									{/* <p className="green-dark  font-x-small weight-medium mt-3">
 										Subscribed to{' '}
 										<span className="green-medium-2 weight-bold text-capitalize">
 											{' '}
 											{planname}
-											{/* Firm Focus Plan */}
 										</span>
-									</p>
+									</p> */}
 									<div className="pag-box mt-2">
 										<div className="pag-box mt-2">
 											<div className="g-pag-box"></div>

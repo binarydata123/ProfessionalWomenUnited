@@ -49,7 +49,7 @@ export default function Login() {
 				if (res.status == true) {
 					const token = res.data.token;
 					Cookies.set('session_token', token);
-					if (res.data.user.role == 'lawyer') {
+					if (res.data.user.role == 'professional') {
 						if (res.data.user.profile_status == 'legal-step') {
 							router.push('/auth/professional/step-2');
 						}
@@ -72,7 +72,7 @@ export default function Login() {
 								router.push('/auth/two-factor-authentication');
 							} else {
 								Cookies.set('two_step_auth', 'true');
-								router.push('/lawyer/dashboard');
+								router.push('/professional/dashboard');
 							}
 						}
 					}
@@ -130,7 +130,7 @@ export default function Login() {
 				.then((res: any) => {
 					if (res) {
 						setIsLoading(false);
-						if (res.user.role == 'lawyer') {
+						if (res.user.role == 'professional') {
 							if (res.user.profile_status == 'legal-step') {
 								router.push('/auth/professional/step-2');
 							}

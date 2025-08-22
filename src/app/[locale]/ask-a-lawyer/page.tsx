@@ -4,15 +4,15 @@ import AskAlawyer from '@/components/public/AskAlawyer';
 import '../legal-issue/legal-Issue-description-flow.css';
 
 export const metadata: Metadata = {
-	title: 'Ask a Lawyer - Professional Women United',
+	title: 'Ask a Professional - Professional Women United',
 	description: 'Get professional advice and answers to your questions from experienced lawyers on Professional Women United. Ask a lawyer today!',
 	alternates: {
-		canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/ask-a-lawyer`
+		canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional`
 	},
 	openGraph: {
-		title: 'Ask a Lawyer - Professional Women United',
+		title: 'Ask a Professional - Professional Women United',
 		description: 'Get professional advice and answers to your questions from experienced lawyers on Professional Women United. Ask a lawyer today!',
-		url: `${process.env.NEXT_PUBLIC_BASE_URL}/ask-a-lawyer`,
+		url: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional`,
 		siteName: `${process.env.NEXT_APP_NAME}`,
 		images: [
 			{

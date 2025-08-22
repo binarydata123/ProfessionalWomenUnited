@@ -87,7 +87,7 @@ export default function ConstructionLawyerUae() {
 												At Professional Women United, our construction lawyers leverage their expertise and
 												experience to provide comprehensive professional services tailored to our
 												clients' needs. We work closely with individuals, contractors,
-												developers, and other stakeholders to handle complex legal issues,
+												developers, and other stakeholders to handle complex professional issues,
 												resolve disputes, and guarantee compliance with construction laws and
 												regulations.
 											</>
@@ -110,7 +110,7 @@ export default function ConstructionLawyerUae() {
 										At Professional Women United, our construction lawyers leverage their expertise and
 										experience to provide comprehensive professional services tailored to our clients'
 										needs. We work closely with individuals, contractors, developers, and other
-										stakeholders to handle complex legal issues, resolve disputes, and guarantee
+										stakeholders to handle complex professional issues, resolve disputes, and guarantee
 										compliance with construction laws and regulations.
 									</>
 								)}
@@ -649,7 +649,7 @@ export default function ConstructionLawyerUae() {
 												the heart of our practice is a commitment to client satisfaction. We go
 												above and beyond to make sure that our clients receive the highest level
 												of service and representation. From providing timely professional advice to
-												offering practical solutions to complex legal issues, we are dedicated
+												offering practical solutions to complex professional issues, we are dedicated
 												to achieving the best possible outcomes for our clients and exceeding
 												their expectations. When you choose a top Dubai construction lawyer from
 												Professional Women United, your legal matters are in good hands.
@@ -777,7 +777,7 @@ export default function ConstructionLawyerUae() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -791,7 +791,7 @@ export default function ConstructionLawyerUae() {
 						matters. They seek guidance on navigating contracts, resolving disputes, guaranteeing regulatory
 						compliance, and understanding their rights and obligations.
 						<br />
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -863,7 +863,7 @@ export default function ConstructionLawyerUae() {
 										<div className="text-start Discover-lawyer" />
 										Construction lawyers offer invaluable assistance in resolving conflicts through
 										negotiation, mediation, arbitration, or litigation. They provide strategic
-										guidance, legal representation, and advocacy for dealing with legal issues and
+										guidance, legal representation, and advocacy for dealing with professional issues and
 										achieving the best client outcomes. By exploring alternative dispute resolution
 										methods and pursuing cost-effective solutions, lawyers help minimize disruptions
 										to project timelines and reduce financial risks for all parties involved
@@ -931,7 +931,7 @@ export default function ConstructionLawyerUae() {
 													data-bs-target="#collapseOne"
 													aria-expanded="true"
 													aria-controls="collapseOne">
-													What legal issues can arise during a construction project?
+													What professional issues can arise during a construction project?
 												</button>
 											</h2>
 											<div
@@ -940,7 +940,7 @@ export default function ConstructionLawyerUae() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Legal issues in construction projects are multifaceted, encompassing
+													professional issues in construction projects are multifaceted, encompassing
 													contractual disputes over scope changes, delays, and payment terms.
 													Regulatory compliance issues may arise as a result of failure to
 													obtain permits or adhere to building codes. Payment disputes between
@@ -950,7 +950,7 @@ export default function ConstructionLawyerUae() {
 													Construction defect claims may arise from design flaws, faulty
 													artistry, or materials defects. Insurance coverage disputes and bond
 													claims are common and affect project finances and liability.
-													Understanding and addressing these legal issues is essential for
+													Understanding and addressing these professional issues is essential for
 													successful project management.
 												</div>
 											</div>
@@ -1132,7 +1132,7 @@ export default function ConstructionLawyerUae() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1158,7 +1158,7 @@ export default function ConstructionLawyerUae() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

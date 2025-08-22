@@ -334,7 +334,7 @@ export default function Page() {
 															className="w-64"
 														/>
 														<h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-															{isMonthly == 'monthly' ? 'Solo Lawyer Plan' : ' Solo Lawyer Plan'}
+															{isMonthly == 'monthly' ? 'Solo Professional Plan' : ' Solo Professional Plan'}
 														</h5>
 													</div>
 													<div className="col-sm-6 text-right tab-left">
@@ -449,7 +449,7 @@ export default function Page() {
 															className="w-64"
 														/>
 														<h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-															{isMonthly == 'monthly' ? 'Firm Focus Plan' : ' Solo Lawyer Plan'}
+															{isMonthly == 'monthly' ? 'Firm Focus Plan' : ' Solo Professional Plan'}
 														</h5>
 													</div>
 													<div className="col-sm-6 text-right tab-left">
@@ -484,7 +484,7 @@ export default function Page() {
 														<i className="fa-solid fa-check"></i> Dedicated Support{' '}
 													</p>
 													<p className="font-small weight-medium social-link mt-2">
-														<i className="fa-solid fa-check"></i> Unlimited Lawyer Profiles{' '}
+														<i className="fa-solid fa-check"></i> Unlimited Professional Profiles{' '}
 													</p>
 												</div>
 

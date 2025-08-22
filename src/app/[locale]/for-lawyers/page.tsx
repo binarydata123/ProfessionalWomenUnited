@@ -8,21 +8,21 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: meta.data.for_lawyers_meta_title
 			? meta.data.for_lawyers_meta_title
-			: `For A Lawyer | ${process.env.NEXT_APP_NAME}`,
+			: `For A Professional | ${process.env.NEXT_APP_NAME}`,
 		description: meta.data.for_lawyers_meta_description
 			? meta.data.for_lawyers_meta_description
 			: `${process.env.NEXT_APP_NAME}`,
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/for-lawyers`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional`
 		},
 		openGraph: {
 			title: meta.data.for_lawyers_meta_title
 				? meta.data.for_lawyers_meta_title
-				: `For A Lawyer | ${process.env.NEXT_APP_NAME}`,
+				: `For A Professional | ${process.env.NEXT_APP_NAME}`,
 			description: meta.data.for_lawyers_meta_description
 				? meta.data.for_lawyers_meta_description
 				: `${process.env.NEXT_APP_NAME}`,
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/for-lawyers`,
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional`,
 			siteName: `${process.env.NEXT_APP_NAME}`,
 			images: [
 				{

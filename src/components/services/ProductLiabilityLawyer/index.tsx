@@ -133,7 +133,7 @@ export default function ProductLiabilityLawyer() {
 									<span className="green-med-col">in the USA</span>
 								</h2>
 								<p className="weight-light font-medium text-white mt-3">
-									Corporate law in the United Arab Emirates (UAE) underwent significant changes with
+									Corporate law in the United States of America (UAE) underwent significant changes with
 									the issuance of Federal Law By Decree No. 32 of 2021 on Commercial Companies,
 									replacing the Existing Law. Key amendments, effective January 2, 2022, focus on
 									strengthening foreign ownership principles, corporate governance, and minority
@@ -761,7 +761,7 @@ export default function ProductLiabilityLawyer() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -775,7 +775,7 @@ export default function ProductLiabilityLawyer() {
 						a priority. They look for assistance in understanding their rights, determining liability, and
 						pursuing compensation for injuries or damages caused by defective products.
 						<br />
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -1062,7 +1062,7 @@ export default function ProductLiabilityLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1088,7 +1088,7 @@ export default function ProductLiabilityLawyer() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

@@ -80,7 +80,7 @@ export function getLawyerImageSrc70x70(profile_image, gender) {
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
-		return `${baseUrl}/images/default/group-243.png`;
+		return `${baseUrl}/images/default/group-242.png`;
 	} else {
 		return `${baseUrl}/images/default/group-242.png`;
 	}
@@ -211,7 +211,6 @@ export function formatDateLegalDate(dateStr) {
 
 export function getAdminImageSrc306x200(profile_image, gender) {
 	const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
-	
 
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
@@ -229,18 +228,17 @@ export function getAdminImageSrc180x180(profile_image, gender) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
 		return `${baseUrl}/images/profile/${profile_image}`;
-	} else {
-		return `${frontendurl}/images/female-lawyer-180x180.png`;
 	}
+	return `${frontendurl}/images/female-lawyer-180x180.png`;
 }
 
 export function getAdminImageSrc80x80(profile_image, gender) {
 	const baseUrl = process.env.NEXT_PUBLIC_IMAGE_URL;
-	
+
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
-		return `${baseUrl}/images/default/male-lawyer-80x80.png`;
+		return `${baseUrl}/images/default/female-lawyer-80x80.png`;
 	} else {
 		return `${baseUrl}/images/default/female-lawyer-80x80.png`;
 	}
@@ -251,7 +249,7 @@ export function getLawyerImageSrc180x180(profile_image, gender) {
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
-		return `${baseUrl}/images/default/male-lawyer-180x180.png`;
+		return `${baseUrl}/images/default/female-lawyer-180x180.png`;
 	} else {
 		return `${baseUrl}/images/default/female-lawyer-180x180.png`;
 	}

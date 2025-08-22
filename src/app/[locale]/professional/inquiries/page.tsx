@@ -149,7 +149,7 @@ export default function Page() {
 							height={300}
 							image="/images/inquiry-image.png"
 							text="You don’t have any inquiries."
-							link="/lawyer/profile/edit"
+							link="/professional/profile/edit"
 							buttonText="Update your Profile"
 						/>
 					) : (

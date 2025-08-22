@@ -130,7 +130,7 @@ export default function Page({ params }: { params: { id: number } }) {
 		try {
 			const response = await SaveInquiriesByLawyer(user_id, inqId, saveMessage);
 			if (response) {
-				// router.push('/lawyer/inquiries');
+				// router.push('/professional/inquiries');
 			}
 		} catch (error) {
 			console.error('Error saving messages:', error);
@@ -171,6 +171,7 @@ export default function Page({ params }: { params: { id: number } }) {
 	const fetchMessages = async (user_id: any, inqId: number) => {
 		try {
 			const response = await getmessagesByInquiry(user_id, inqId);
+			console.log(response.data, 'fgdfgdfg')
 			setMessages(response.data);
 			setInquiryByUserId(response.data[0].by_id);
 			const inqSavedStatus = response.inqSavedStatus[0].inqSavedStatus;
@@ -257,26 +258,26 @@ export default function Page({ params }: { params: { id: number } }) {
 	};
 
 	const profileImageSrc =
-		messages.length > 0
+		messages?.length > 0
 			? messages[0].inquiry_by_image_name
 				? '/images/profile/' + messages[0].inquiry_by_image_name
 				: messages[0].inquiry_by_gender === 'male'
-					? '/images/default/group-243.png'
+					? '/images/default/group-242.png'
 					: messages[0].inquiry_by_gender === 'female'
 						? '/images/default/group-242.png'
-						: '/images/default/group-243.png'
+						: '/images/default/group-242.png'
 			: '';
 
 	return (
 		<>
 			<div className="single-inquiry-wrapper pt-5 mt-3">
 				<div className="right-body">
-					<Link href={'/lawyer/inquiries'} className="one-step-back-button">
+					<Link href={'/professional/inquiries'} className="one-step-back-button">
 						<ChevronLeftIcon width={20} /> Inbox
 					</Link>
 					<div className="client-info d-lg-flex justify-content-between">
 						<div className="left-info d-lg-flex align-items-center gap-2">
-							{messages.length > 0 ? (
+							{/* {messages?.length > 0 ? (
 								<Image
 									src={process.env.NEXT_PUBLIC_IMAGE_URL + profileImageSrc}
 									alt="single-inquiry"
@@ -285,7 +286,7 @@ export default function Page({ params }: { params: { id: number } }) {
 								/>
 							) : (
 								<Image src={'/images/profile-circle.png'} alt="single-inquiry" width={40} height={40} />
-							)}
+							)} */}
 							<h4 className="py-3">{messages.length > 0 ? messages[0].inquiry_by : 'Client Name'}</h4>
 						</div>
 						<div className="right-info-btn d-flex align-items-center gap-2">

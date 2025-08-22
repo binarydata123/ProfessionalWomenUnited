@@ -43,8 +43,8 @@ export default function UserDashboard() {
 			<div className="legal-issues">
 				<div className="row align-items-center py-3">
 					<div className="col-lg-8 col-md-12">
-						<h3 className="green-dark weight-semi-bold font-xx-large">Don’t face legal issues alone!</h3>
-						<p className="green-dark weight-light font-x-small">
+						<h3 className="green-dark weight-semi-bold font-xx-large text-white">Don’t face professional issues alone!</h3>
+						<p className="green-dark weight-light font-x-small text-white">
 							Our experienced team is here to help you every step of the way.{' '}
 						</p>
 					</div>
@@ -105,7 +105,7 @@ export default function UserDashboard() {
 											<div className="left-bottom-bg inner-content p-3">
 												<h2>GOT A PROFESSIONAL QUESTION?</h2>
 												<p className="mt-3">
-													Contribute to our legal community & grow your reach by sharing your
+													Contribute to our professional community & grow your reach by sharing your
 													expertise.{' '}
 												</p>
 												<Link href="/find-a-professional">
@@ -135,7 +135,7 @@ export default function UserDashboard() {
 								<div className="col-4 text-right">
 									<p>
 										<Link
-											href="/user/lawyers"
+											href="/user/professionals"
 											className="boysenberry font-x-small weight-semi-bold "
 										>
 											View All <LinkButton />
@@ -200,7 +200,7 @@ export default function UserDashboard() {
 											<div className="right-bottom-bg p-3">
 												<h2>Get Expert Advice for Free</h2>
 												<p className="mt-3">
-													Contribute to our legal community & grow your reach by sharing your
+													Contribute to our professional community & grow your reach by sharing your
 													expertise.{' '}
 												</p>
 												<Link href="/legal-forum">
@@ -209,7 +209,7 @@ export default function UserDashboard() {
 														color="rgba(32, 140, 132, 1)"
 														background="#fff"
 													>
-														Visit Legal Forum
+														Visit Professional Forum
 													</DefaultButton>
 												</Link>
 											</div>

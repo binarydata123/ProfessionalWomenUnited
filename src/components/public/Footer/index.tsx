@@ -25,7 +25,7 @@ export default function Footer() {
 	useEffect(() => {
 		if (
 			pathname.includes('/auth') ||
-			pathname.includes('/lawyer') ||
+			pathname.includes('/professional') ||
 			pathname.includes('/admin') ||
 			pathname.includes('/user')
 		) {

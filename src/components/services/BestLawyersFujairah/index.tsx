@@ -300,7 +300,7 @@ export default function BestLawyersFujairah() {
 											{t('What_Sets_the_Best_Lawyers')}
 										</>
 									) : (
-										'The best lawyers in Dubai are known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a deep understanding of local laws and regulations, allowing them to handle complex legal issues with precision.'
+										'The best lawyers in Dubai are known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a deep understanding of local laws and regulations, allowing them to handle complex professional issues with precision.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -377,7 +377,7 @@ export default function BestLawyersFujairah() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						{t('What_Do_Clients')}
@@ -704,7 +704,7 @@ export default function BestLawyersFujairah() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -730,7 +730,7 @@ export default function BestLawyersFujairah() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

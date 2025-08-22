@@ -73,7 +73,7 @@ export default async function Page() {
 		},
 		{
 			name: "Financial Services",
-			image: "Jessica-Ramirez.jpg",
+			image: "women.png",
 			slug: "financial-services",
 			tags: [
 				{ tag_id: 9, tag_name: "Tax Preparation" },

@@ -780,7 +780,7 @@ export default function RealEstateLawyers() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -790,11 +790,11 @@ export default function RealEstateLawyers() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Individuals seeking legal information on investment and real estate often look for knowledgeable
+						Individuals seeking Professional Information on investment and real estate often look for knowledgeable
 						legal representation and clarity in navigating the complex laws and regulations surrounding
 						these matters, all of which our real estate lawyers guarantee.
 						<br />
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -849,7 +849,7 @@ export default function RealEstateLawyers() {
 										transactions comply with all legal and regulatory requirements. They keep you
 										informed about the latest laws and standards, helping you navigate local and
 										international regulations confidently. Their knowledge helps avoid costly errors
-										and legal issues, protecting your investments and interests.
+										and professional issues, protecting your investments and interests.
 									</div>
 								</div>
 								<div className="col-lg-12">
@@ -1040,7 +1040,7 @@ export default function RealEstateLawyers() {
 												<div className="accordion-body border-0 text-white">
 													Real estate lawyers carry out due diligence by examining property
 													records, titles, and other relevant documents to confirm ownership
-													and identify potential legal issues. This thorough investigation
+													and identify potential professional issues. This thorough investigation
 													helps prevent future complications and ensures a smooth transaction.
 												</div>
 											</div>
@@ -1093,7 +1093,7 @@ export default function RealEstateLawyers() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1119,7 +1119,7 @@ export default function RealEstateLawyers() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

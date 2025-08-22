@@ -35,7 +35,7 @@ Advice for Free"
 								</p>
 								<Link href={'/legal-forum'}>
 									<button className="w-40 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-										<span className="text-white"> Visit Legal Forum </span>
+										<span className="text-white"> Visit Professional Forum </span>
 										<span className="border border-radius-1 banner-arrow-btn">
 											<ChevronRightIcon width={20} color={'#fff'} />
 										</span>

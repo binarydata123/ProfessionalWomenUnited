@@ -98,7 +98,7 @@ export default function ContactUs() {
 												className="form-check-input"
 												type="radio"
 												name="user_is"
-												value={'lawyer'}
+												value={'professional'}
 												id="inlineRadio1"
 												defaultValue="option1"
 												onChange={handleInputChange}

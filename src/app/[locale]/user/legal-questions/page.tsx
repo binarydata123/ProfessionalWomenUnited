@@ -78,7 +78,7 @@ export default function Overview() {
 						<p>
 							{' '}
 							<Link href="/find-a-professional" className="green-medium-1 font-small-12 weight-semi-bold">
-								Ask A Lawyer <ArrowIcons />
+								Ask A Professional <ArrowIcons />
 							</Link>
 						</p>
 					</div>

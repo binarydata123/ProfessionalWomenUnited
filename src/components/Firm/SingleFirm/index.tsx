@@ -228,7 +228,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                             src="/images/profile/fluent_share-16-filled.png"
                                                             width={25}
                                                             height={25}
-                                                            alt="share lawyer profile"
+                                                            alt="share professional profile"
                                                             style={{ cursor: 'pointer' }}
                                                             onClick={() => setshare(!share)}
                                                         />
@@ -289,7 +289,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                     <div className="company-detail">
                                                         {single_firm?.member_count > 0 ? (
                                                             // <p>{single_firm?.member_count} Professionals Online</p>
-                                                            <p>{single_firm?.member_count} {single_firm?.member_count == 1 ? 'Lawyer Online' : 'Professionals Online'}</p>
+                                                            <p>{single_firm?.member_count} {single_firm?.member_count == 1 ? 'Professional Online' : 'Professionals Online'}</p>
 
                                                         ) : (
                                                             <></>

@@ -52,7 +52,7 @@ export default function reportCenter() {
 			</div>
 
 			<p className="font-small weight-light social-link mt-3 mb-3">
-				Displaying <span className="span-color-dash weight-bold">n</span> lawyers
+				Displaying <span className="span-color-dash weight-bold">n</span> professionals
 			</p>
 			<div className="table-part">
 				<table className="rwd-table">

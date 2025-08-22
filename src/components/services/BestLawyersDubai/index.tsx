@@ -671,7 +671,7 @@ export default function BestLawyersDubai() {
 												clients with top-tier legal representation in Dubai. Our selection of
 												the best lawyers in Dubai has achieved favorable outcomes for numerous
 												clients across a wide range of legal matters, earning a reputation for
-												excellence in the local legal community. When you partner with us,
+												excellence in the local professional community. When you partner with us,
 												you're choosing a trusted ally with a demonstrated history of delivering
 												results.
 											</div>
@@ -748,7 +748,7 @@ export default function BestLawyersDubai() {
 											The best lawyers in Dubai are known for their exceptional legal expertise,
 											extensive experience, and proven track record of success. These legal
 											professionals have a deep understanding of local laws and regulations,
-											allowing them to handle complex legal issues with precision.
+											allowing them to handle complex professional issues with precision.
 											<br />
 											At Professional Women United, we only list the best lawyers in Dubai so that you get
 											personalized and effective legal solutions tailored to your unique needs. Be
@@ -757,7 +757,7 @@ export default function BestLawyersDubai() {
 											relentless pursuit of excellence in their practice.
 										</>
 									) : (
-										'The best lawyers in Dubai are known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a deep understanding of local laws and regulations, allowing them to handle complex legal issues with precision.'
+										'The best lawyers in Dubai are known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a deep understanding of local laws and regulations, allowing them to handle complex professional issues with precision.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -774,7 +774,7 @@ export default function BestLawyersDubai() {
 									The best lawyers in Dubai are known for their exceptional legal expertise, extensive
 									experience, and proven track record of success. These legal professionals have a
 									deep understanding of local laws and regulations, allowing them to handle complex
-									legal issues with precision.
+									professional issues with precision.
 									<br />
 									At Professional Women United, we only list the best lawyers in Dubai so that you get
 									personalized and effective legal solutions tailored to your unique needs. Be it
@@ -841,7 +841,7 @@ export default function BestLawyersDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -856,7 +856,7 @@ export default function BestLawyersDubai() {
 						claims to family law matters like divorce and child custody, employment disputes, real estate
 						issues such as property disputes and tenancy matters, and business law matters.
 						<br />
-						Select the legal issue you&apos;re facing and connect with a legal expert.
+						Select the professional issue you&apos;re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -1144,7 +1144,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingSix"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													You may need to hire a lawyer if you're facing a legal issue that
+													You may need to hire a lawyer if you're facing a professional issue that
 													requires expert guidance, representation, or assistance. Common
 													situations that call for a lawyer include personal injury claims,
 													divorce or family disputes, business transactions, real estate
@@ -1173,7 +1173,7 @@ export default function BestLawyersDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													Before hiring a lawyer in Dubai, account for factors such as their
-													experience, expertise in your specific legal issue, track record of
+													experience, expertise in your specific professional issue, track record of
 													success, communication style, and fees. Take the time to research
 													and meet with potential lawyers to make sure they are the right fit
 													for your case.
@@ -1230,7 +1230,7 @@ export default function BestLawyersDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1256,7 +1256,7 @@ export default function BestLawyersDubai() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

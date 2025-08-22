@@ -109,7 +109,7 @@ export default function LawyerCard({
 								// backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer?.profile_image}`,
 								backgroundImage: `url(${lawyer?.profile_image
 									? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-									: "/images/Jessica-Ramirez.jpg"
+									: "/images/women.png"
 									})`,
 								backgroundSize: 'cover',
 								backgroundRepeat: 'no-repeat',
@@ -191,7 +191,7 @@ export default function LawyerCard({
 										src={
 											lawyer?.profile_image
 												? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-												: '/images/Jessica-Ramirez.jpg'
+												: '/images/women.png'
 										} placeholderImgUrl={
 											process.env.NEXT_PUBLIC_IMAGE_URL +
 											`/images/default/${lawyer.gender == 'female' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'

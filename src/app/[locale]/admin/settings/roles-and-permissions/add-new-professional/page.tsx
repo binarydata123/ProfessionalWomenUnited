@@ -775,7 +775,7 @@ export default function Page() {
 									Practice Area{' '}
 								</h5>
 								<p className="font-small  weight-light text-sonic-silver">
-									Tell us about your legal expertise
+									Tell us about your professional expertise
 								</p>
 
 								{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">

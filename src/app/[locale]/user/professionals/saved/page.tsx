@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import './../lawyer.css';
+import '../lawyer.css';
 import Image from 'next/image';
-import {BookmarkIcon} from '@heroicons/react/20/solid';
+import { BookmarkIcon } from '@heroicons/react/20/solid';
 
 export default function saved() {
 	return (

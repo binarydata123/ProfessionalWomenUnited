@@ -197,7 +197,7 @@ export default function Settings() {
 					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Privacy Policy</p>
 					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Terms of Use</p>
 					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Community Guidelines</p>
-					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Legal Information</p>
+					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Professional Information</p>
 
 					<div className="mt-5">
 						<p className="font-small color-light mb-2 weight-medium">Notifications</p>
@@ -277,7 +277,7 @@ export default function Settings() {
 									Message from Clients
 								</p>
 								<p className="font-small  weight-medium text-sonic-silver w-100">
-									Opt-in to receive messages from legal firms about potential career opportunities.
+									Opt-in to receive messages from Professional about potential career opportunities.
 
 
 								</p>

@@ -97,7 +97,7 @@ export default function Page({ allfirm }: Props) {
 						<div className="filter-btn">
 							<h3 className="social-link mobile-m-0 ">
 								Explore trusted {' '}
-								<span className="green-medium-2 ">Legal Firms</span>
+								<span className="green-medium-2 ">Professional</span>
 							</h3>
 						</div>
 					</div>

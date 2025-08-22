@@ -97,9 +97,9 @@ const OTPInputGroup = () => {
 						}, 1000);
 					}
 
-					if (user?.role == 'lawyer') {
+					if (user?.role == 'professional') {
 						setTimeout(() => {
-							router.push('/lawyer/dashboard');
+							router.push('/professional/dashboard');
 						}, 1000);
 					}
 

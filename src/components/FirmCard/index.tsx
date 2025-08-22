@@ -92,7 +92,7 @@ export default function FirmCard({
                     </h3>
                     <p className="description">
                         {/* {firms?.member_count > 0 ? `${firms?.member_count} Professionals Online` : ''} */}
-                        <span>{firms?.member_count > 0 ? `${firms?.member_count} ${firms?.member_count == 1 ? 'Lawyer Online' : 'Professionals Online'}` : ''}</span>
+                        <span>{firms?.member_count > 0 ? `${firms?.member_count} ${firms?.member_count == 1 ? 'Professional Online' : 'Professionals Online'}` : ''}</span>
                     </p>
 
                 </Link>

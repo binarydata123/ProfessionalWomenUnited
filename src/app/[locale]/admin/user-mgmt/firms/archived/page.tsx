@@ -307,7 +307,7 @@ export default function approvals() {
 									{rowData.created_by == '1'
 										? 'Admin'
 										: rowData.created_by == user?.id
-											? 'Lawyer'
+											? 'Professional'
 											: ''}
 								</button>
 							</td>

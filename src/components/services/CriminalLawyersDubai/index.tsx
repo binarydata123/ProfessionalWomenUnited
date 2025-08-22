@@ -178,7 +178,7 @@ export default function CriminalLawyersDubai() {
 													aria-labelledby="headingOne"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-														The United Arab Emirates (UAE) has a robust legal system
+														The United States of America (UAE) has a robust legal system
 														governing criminal activities within its borders, based on
 														Islamic Sharia law, civil law principles, and customary law.
 														Understanding this overview is essential for residents and
@@ -293,7 +293,7 @@ export default function CriminalLawyersDubai() {
 													aria-labelledby="headingThree"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-														The United Arab Emirates (UAE) upholds a well-established legal
+														The United States of America (UAE) upholds a well-established legal
 														framework that safeguards defendants' rights throughout criminal
 														proceedings. Governed by Federal Law No. 35 of 1992, the UAE
 														Penal Code outlines the criminal procedure and rights afforded
@@ -791,7 +791,7 @@ export default function CriminalLawyersDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -801,11 +801,11 @@ export default function CriminalLawyersDubai() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Individuals seeking legal information on criminal law are typically concerned with finding
+						Individuals seeking Professional Information on criminal law are typically concerned with finding
 						knowledgeable legal representation and clarity regarding their legal options. Our criminal
 						lawyers at Professional Women United will provide expert guidance and advocate effectively on your behalf.
 						<br />
-						Select the legal issue that you face and connect with a legal expert.
+						Select the professional issue that you face and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -926,7 +926,7 @@ export default function CriminalLawyersDubai() {
 										Before forming a defense strategy, criminal lawyers carry out a thorough
 										analysis of their clients' cases and investigate the circumstances surrounding
 										the alleged offense. They review evidence, interview witnesses, and identify
-										legal issues or procedural errors that could benefit their clients' defense. By
+										professional issues or procedural errors that could benefit their clients' defense. By
 										carefully preparing cases, they make sure that their clients receive a fair
 										trial and are equipped to challenge the prosecution's arguments effectively.{' '}
 									</div>
@@ -1103,7 +1103,7 @@ export default function CriminalLawyersDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1129,7 +1129,7 @@ export default function CriminalLawyersDubai() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

@@ -110,7 +110,7 @@ export default function LawyerDashboard() {
 	};
 
 	useEffect(() => {
-		if (user?.id && user?.role === 'lawyer') {
+		if (user?.id && user?.role === 'professional') {
 			Promise.all([getProfileView({ memberId: user?.id }), getInqueryView({ memberId: user?.id })])
 				.then(([profileData, inqueryData]) => {
 					const profileCount = profileData.view_count;
@@ -135,7 +135,7 @@ export default function LawyerDashboard() {
 									backgroundImage="/images/Profile-dash.jpg"
 									count={profileViews}
 									linkText={'Profile Views'}
-									href={'/lawyer/profile'}
+									href={'/professional/profile'}
 								/>
 							</div>
 
@@ -144,13 +144,13 @@ export default function LawyerDashboard() {
 									backgroundImage="/images/Profile-dash2.jpg"
 									count={inqueryViews}
 									linkText={'Inquiries'}
-									href={'/lawyer/inquiries'}
+									href={'/professional/inquiries'}
 								/>
 							</div>
 						</div>
 						{acquired !== null && acquired !== '' ? (
 							<div className="">
-								<RecentBox className="mt-2" title="Recent Reviews" href="/lawyer/profile/reviews">
+								<RecentBox className="mt-2" title="Recent Reviews" href="/professional/profile/reviews">
 									<RecentReviews />
 								</RecentBox>
 							</div>
@@ -173,7 +173,7 @@ export default function LawyerDashboard() {
 											<p>You don’t have any reviews.</p>
 										</div>
 										<div>
-											<Link href={'/lawyer/profile/edit'}>
+											<Link href={'/professional/profile/edit'}>
 												<DefaultButton
 													height={50}
 													className="w-100"
@@ -198,14 +198,14 @@ export default function LawyerDashboard() {
 							{topContributors && topContributors?.length > 0 && topContributors?.map((item, index) => (
 								<Contributors index={index} item={item} />
 							))}
-							<Link href={'/lawyer/legal-community'}>
+							<Link href={'/professional/dashboard'}>
 								<DefaultButton
 									height={50}
 									className="w-100 mt-2 border"
 									background="#fff"
 									color="#c49073"
 								>
-									Go to Legal Community
+									Go to Professional Community
 								</DefaultButton>
 							</Link>
 						</div>
@@ -219,9 +219,9 @@ export default function LawyerDashboard() {
 									Professional Women United!
 								</h3>
 								<p style={{ color: '#fff' }}>
-									Connect with Professionals or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
+									Connect with Professionals or professional consultants through our platform and get the professional help you need within the United States of America.
 								</p>
-								<Link href={'/lawyer/profile/edit'}>
+								<Link href={'/professional/profile/edit'}>
 									<button className="w-100 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 mt-4">
 										<span>Update Profile</span>
 										<span className="banner-arrow-btn" onClick={toggleTopContributors}>
@@ -246,15 +246,15 @@ export default function LawyerDashboard() {
 							</div>
 							<div className="recent-reviews position-relative mt-3" id="find-clients">
 								<h5 className="">Find clients easily...</h5>
-								<p>Contribute to our legal community & grow your reach by sharing your expertise.</p>
-								<Link href={'/lawyer/legal-community'}>
+								<p>Contribute to our professional community & grow your reach by sharing your expertise.</p>
+								<Link href={'/professional/dashboard'}>
 									<DefaultButton
 										height={50}
 										className="w-100 mt-4 border-color"
 										background="#fff"
 										color="#c49073"
 									>
-										Go to Legal Community
+										Go to Professional Community
 									</DefaultButton>
 								</Link>
 								<Image
@@ -271,7 +271,7 @@ export default function LawyerDashboard() {
 			</div>
 			{acquired !== null && acquired !== '' ? (
 				<div className="">
-					<RecentBox className="mt-2" title="Recent Inquiries" href="/lawyer/inquiries">
+					<RecentBox className="mt-2" title="Recent Inquiries" href="/professional/inquiries">
 						{inboxInquiries.map((item, index) => (
 							<Inquiries
 								index={index}
@@ -292,7 +292,7 @@ export default function LawyerDashboard() {
 							<p>You don’t have any inquiries.</p>
 						</div>
 						<div>
-							<Link href={'/lawyer/profile/edit'}>
+							<Link href={'/professional/profile/edit'}>
 								<DefaultButton height={50} className="w-100" background="#fff" color="#BE8363">
 									Update your Profile
 								</DefaultButton>

@@ -66,7 +66,7 @@ export default function RecentReviews() {
 					<ImagePlaceholder
 						buttonText="Update your Profile"
 						text="You don’t have any reviews."
-						link="/lawyer/profile/edit"
+						link="/professional/profile/edit"
 						height={250}
 						image={'/images/review-placeholder.png'}
 					/>

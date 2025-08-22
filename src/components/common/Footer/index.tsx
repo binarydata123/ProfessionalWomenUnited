@@ -50,7 +50,7 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link href="/for-lawyers" target="blank">
+								<Link href="/auth/choose-profile" target="blank">
 									For Professionals
 								</Link>
 							</li>

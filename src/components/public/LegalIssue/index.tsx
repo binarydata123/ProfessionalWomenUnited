@@ -12,7 +12,7 @@ export default function LegalIssue({ tags }: Props) {
 			<section id="legal-issues" className="legal-issues mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h1 className="text-black">
 						What do clients {' '}
@@ -20,7 +20,7 @@ export default function LegalIssue({ tags }: Props) {
 							more frequently <br /> searched for?{' '}
 						</span>
 					</h1>
-					<h5>Select the legal issue that you face and connect with a legal expert.</h5>
+					<h5>Select the professional issue that you face and connect with a legal expert.</h5>
 					<ul className="pt-3">
 						{tags &&
 							tags.map((tag: any, index: number) => (

@@ -112,8 +112,8 @@ export default function Page({ params }: { params: { id: string } }) {
 							</div>
 							<div className="col-lg-2 col-md-3">
 								<label className="social-link font-small weight-medium w-100 mt-2">
-									<input type="checkbox" checked={support_ticket.member_type == 'lawyer'} disabled />
-									<span className="checkmark"></span>Lawyer
+									<input type="checkbox" checked={support_ticket.member_type == 'professional'} disabled />
+									<span className="checkmark"></span>Professional
 								</label>
 							</div>
 							<div className="col-lg-2 col-md-3">

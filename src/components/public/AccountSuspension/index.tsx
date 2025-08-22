@@ -16,7 +16,7 @@ export default function AccountSuspension() {
 	const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
 	const [errors, seterrors]: any = useState({});
 	const initialData = {
-		member_type: 'lawyer',
+		member_type: 'professional',
 		name: '',
 		email: '',
 		message: ''
@@ -115,11 +115,11 @@ export default function AccountSuspension() {
 												type="radio"
 												name="flexRadioDefault5"
 												id="flexRadioDefault5"
-												checked={formData.member_type === 'lawyer' ? true : false}
-												onClick={() => setformData({ ...formData, member_type: 'lawyer' })}
+												checked={formData.member_type === 'professional' ? true : false}
+												onClick={() => setformData({ ...formData, member_type: 'professional' })}
 											/>
 											<label className="form-check-label pt-0" htmlFor="flexRadioDefault5">
-												Lawyer
+												Professional
 											</label>
 										</div>
 										<div className="form-check" style={{ marginLeft: '20px' }}>

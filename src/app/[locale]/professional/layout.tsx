@@ -6,7 +6,7 @@ import Header from '@/components/common/Header';
 import Sidebar from '@/components/common/Sidebar';
 import '../layout.css';
 export default function LowyerLayout({ children }: { children: React.ReactNode }) {
-	const role = 'lawyer';
+	const role = 'professional';
 	const pathname = usePathname();
 	const isDynamicInquiryPath = /\/lawyer\/inquiries\/\d+/.test(pathname);
 	return (

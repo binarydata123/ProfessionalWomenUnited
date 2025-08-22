@@ -706,7 +706,7 @@ export default function UberAccidentLawyerDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -717,11 +717,11 @@ export default function UberAccidentLawyerDubai() {
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-paddings color-frequent set-top-mrgin-mbl">
 						Clients most frequently search for knowledgeable legal representation to guide them through the
-						complexities of their legal issues, seeking clarity and understanding about their rights and
+						complexities of their professional issues, seeking clarity and understanding about their rights and
 						options. They prioritize finding experienced Uber accident lawyers who can offer strategic
 						advice and effective solutions tailored to their needs.
 						<br />
-						Select the legal issue you face and connect with a legal expert.
+						Select the professional issue you face and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -1045,7 +1045,7 @@ export default function UberAccidentLawyerDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1071,7 +1071,7 @@ export default function UberAccidentLawyerDubai() {
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

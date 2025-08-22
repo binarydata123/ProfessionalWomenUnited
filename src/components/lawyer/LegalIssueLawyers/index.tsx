@@ -486,7 +486,7 @@ export default function LegalIssueLawyers({
 						Your Inquiry was submitted.
 					</h5>
 					<p className="font-medium social-link weight-light text-center mb-3">
-						This lawyer typically responds in 48 hours. Go to your dashboard to see updates.{' '}
+						This professional typically responds in 48 hours. Go to your dashboard to see updates.{' '}
 					</p>
 
 					{user && user?.role === 'enduser' && (

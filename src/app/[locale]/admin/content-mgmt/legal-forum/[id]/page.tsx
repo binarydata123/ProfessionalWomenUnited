@@ -694,7 +694,7 @@ export default function Page({ params }: { params: { id: string } }) {
 			</form>
 
 			<hr />
-			<h4 className="social-link manrope weight-bold weight-medium mt-4">Lawyer Responses</h4>
+			<h4 className="social-link manrope weight-bold weight-medium mt-4">Professional Responses</h4>
 			{alllegalResponse.length > 0 ? (
 				alllegalResponse.map((response, index) => (
 					<div key={index}>

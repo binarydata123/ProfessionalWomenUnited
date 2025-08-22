@@ -76,7 +76,7 @@ export default function Header({ locale }: any) {
 	const profileImageSrc = user?.profile_image
 		? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${user?.profile_image}`
 		: user?.gender == 'male' || user?.gender == 'other'
-			? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-243.png`
+			? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-242.png`
 			: `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-242.png`;
 
 
@@ -191,8 +191,8 @@ export default function Header({ locale }: any) {
 																		href={(() => {
 																			if (user?.role === 'admin') {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-																			} else if (user?.role === 'lawyer') {
-																				return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/dashboard`;
+																			} else if (user?.role === 'professional') {
+																				return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 																			} else {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																			}
@@ -212,8 +212,8 @@ export default function Header({ locale }: any) {
 																		href={(() => {
 																			if (user?.role === 'admin') {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
-																			} else if (user?.role === 'lawyer') {
-																				return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/profile-settings`;
+																			} else if (user?.role === 'professional') {
+																				return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
 																			} else {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																			}
@@ -345,8 +345,8 @@ export default function Header({ locale }: any) {
 												href={(() => {
 													if (user?.role === 'admin') {
 														return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-													} else if (user?.role === 'lawyer') {
-														return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/dashboard`;
+													} else if (user?.role === 'professional') {
+														return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 													} else {
 														return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 													}
@@ -357,7 +357,7 @@ export default function Header({ locale }: any) {
 											</Link>
 										) : (
 											<Link
-												href='/'
+												href='/auth/choose-profile'
 												className='btn btn-outline-success btn-lawyer hide-btn w-100 text-center set-bt'
 												type="submit">
 												For Professionals
@@ -435,8 +435,8 @@ export default function Header({ locale }: any) {
 																	href={(() => {
 																		if (user?.role === 'admin') {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-																		} else if (user?.role === 'lawyer') {
-																			return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/dashboard`;
+																		} else if (user?.role === 'professional') {
+																			return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 																		} else {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																		}
@@ -456,8 +456,8 @@ export default function Header({ locale }: any) {
 																	href={(() => {
 																		if (user?.role === 'admin') {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
-																		} else if (user?.role === 'lawyer') {
-																			return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/profile-settings`;
+																		} else if (user?.role === 'professional') {
+																			return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
 																		} else {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																		}

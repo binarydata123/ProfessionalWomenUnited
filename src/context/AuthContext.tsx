@@ -58,7 +58,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                 .then((response) => {
                     const data = response.data;
                     if (data.status == true) {
-                        if (data.user.signupComplete === false && data.user.role === 'lawyer') {
+                        if (data.user.signupComplete === false && data.user.role === 'professional') {
                             router.push('/auth/professional/step-2')
                         }
                         if (data.user.role === 'enduser' && data.user.otp) {
@@ -86,7 +86,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
             };
         } else {
             setUser(undefined);
-            if (pathname.includes('/admin/') || pathname.includes('/lawyer/') || pathname.includes('/user/')) {
+            if (pathname.includes('/admin/') || pathname.includes('/professional/') || pathname.includes('/user/')) {
                 toast.error('You are not logged in or your session has expired. Please log in again to access this page.');
                 router.push('/auth/login');
             }
@@ -141,7 +141,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                 <div className="header-container">
                     {pathname.includes('/auth/') ||
                         pathname.includes('/admin') ||
-                        pathname.includes('/lawyer/') ||
+                        pathname.includes('/professional/') ||
                         pathname.includes('/user') ? null : (
                         <Header locale={locale} />
                     )}
@@ -152,7 +152,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                 <div className="footer-container footerpos">
                     {pathname.includes('/auth/') ||
                         pathname.includes('/admin') ||
-                        pathname.includes('/lawyer/') ||
+                        pathname.includes('/professional/') ||
                         pathname.includes('/user') ? null : (
                         <Footer />
                     )}
