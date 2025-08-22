@@ -15,7 +15,7 @@ import LaywerRecent from '@/components/user/LaywerRecent';
 import { toast } from 'react-toastify';
 import Pagination from '@/commonUI/Pagination';
 import Popup from '@/commonUI/Popup';
-import LawyerSaved from '@/components/user/professionalsSaved';
+import LawyerSaved from '@/components/user/LawyerSaved';
 import AuthContext from '@/context/AuthContext';
 
 export default function page() {
