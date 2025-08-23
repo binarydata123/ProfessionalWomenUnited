@@ -401,7 +401,7 @@ a.drop-a .dropdown {
 }
 
 .line-hr {
-	background: var(--anti-flash-white);
+	background: #e2bca8;
 	height: 1px;
 	border: none;
 	opacity: 1;
