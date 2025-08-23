@@ -43,7 +43,7 @@ export default async function Page() {
 					<div className="text-center mt-5">
 						<h1>
 							{' '}
-							Legal <span>Insights</span>{' '}
+							Professional <span>Insights</span>{' '}
 						</h1>
 						<p>
 							"Professional Insights" is a concise, thought-provoking platform that provides readers with
