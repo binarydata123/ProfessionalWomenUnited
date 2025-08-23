@@ -35,6 +35,17 @@ interface Message {
 	type: any;
 }
 
+interface UserData {
+	email: string;
+	full_name: string;
+	gender: string;
+	location_name: string;
+	phone_number: string;
+	profile_image: string;
+	profile_image_alt_text: string;
+}
+
+
 export default function Page({ params }: { params: { id: number } }) {
 	const { user } = useContext(AuthContext)
 	const messageListRef = useRef<HTMLDivElement | null>(null);
