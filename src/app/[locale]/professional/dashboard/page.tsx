@@ -69,11 +69,11 @@ export default function Dashboard() {
 											{planname}
 										</span>
 									</p> */}
-									<div className="pag-box mt-2">
+									{/* <div className="pag-box mt-2">
 										<div className="pag-box mt-2">
 											<div className="g-pag-box"></div>
 										</div>
-									</div>
+									</div> */}
 								</div>
 
 								{/* <div className="col-sm-3 col-5 text-right">
