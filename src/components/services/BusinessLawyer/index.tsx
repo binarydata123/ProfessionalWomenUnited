@@ -283,7 +283,7 @@ export default function BusinessLawyer() {
 							<div className="about-btn-two mt-lg-5 mt-5 ">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue mb-3 ">
 									<span className="text-white">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+										<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>

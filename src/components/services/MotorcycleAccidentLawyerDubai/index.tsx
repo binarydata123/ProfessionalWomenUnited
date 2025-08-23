@@ -267,7 +267,7 @@ export default function MotorcycleAccidentLawyerDubai() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>

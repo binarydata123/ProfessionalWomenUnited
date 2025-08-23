@@ -327,10 +327,10 @@ export default function LawyerStepTwo() {
 					<div className="">
 						<div className="main-login">
 							<h1>
-								<span>A bit about your</span> legal career
+								<span>A bit about your</span> professional career
 							</h1>
 							<p className="p-text-label">
-								Please share information about your legal career with us. This will help clients reach
+								Please share information about your professional career with us. This will help clients reach
 								you easily.
 							</p>
 							<form className="commanclassall" id="paymentform" onSubmit={handleSubmit}>

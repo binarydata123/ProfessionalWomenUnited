@@ -142,7 +142,7 @@ export default function AboutUs() {
 									>
 										<button className="btn-get-free btn-commn  w-100-percentue">
 											<span className="text-white">
-												<Link href="/auth/create-profile/?role=lawyer" style={{ color: 'white' }}>
+												<Link href="/auth/create-profile/?role=professional" style={{ color: 'white' }}>
 													Join As Professional
 												</Link>
 											</span>
@@ -237,7 +237,7 @@ export default function AboutUs() {
 										is the space were you can find users looking for professional advice in real time. Make
 										the most out of your expertise and find the ideal clients to support here.
 									</p>
-									<Link href="/auth/create-profile/?role=lawyer">
+									<Link href="/auth/create-profile/?role=professional">
 										<button className="btn-commn">Join As Professional</button>
 									</Link>
 								</div>

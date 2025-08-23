@@ -124,7 +124,7 @@ export default function Page() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+										<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 											Join Us
 										</Link>
 									</span>
