@@ -74,7 +74,7 @@ export default function HomesliderSame() {
 										<span>(10 reviews) </span>
 									</p>
 									<div>
-										<button>Family Law</button>
+										<button>Family Professional</button>
 									</div>
 								</div>
 								<div className="testimonial">
@@ -173,7 +173,7 @@ export default function HomesliderSame() {
 										<span>(10 reviews) </span>
 									</p>
 									<div>
-										<button>Family Law</button>
+										<button>Family Professional</button>
 									</div>
 								</div>
 								<div className="testimonial">
@@ -206,7 +206,7 @@ export default function HomesliderSame() {
 										<span>(10 reviews) </span>
 									</p>
 									<div>
-										<button>Family Law</button>
+										<button>Family Professional</button>
 									</div>
 								</div>
 							</Slider>

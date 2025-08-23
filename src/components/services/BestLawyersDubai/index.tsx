@@ -78,7 +78,7 @@ export default function BestLawyersDubai() {
 												<br />
 												Our intuitive interface and detailed selection process ensure that you
 												can easily locate the best lawyer in Dubai for your specific legal
-												needs. Whether you need legal assistance with family law, corporate
+												needs. Whether you need legal assistance with Family Professional, corporate
 												matters, or real estate issues, our platform offers the expertise you
 												require.
 											</>
@@ -100,7 +100,7 @@ export default function BestLawyersDubai() {
 										<br />
 										Our intuitive interface and detailed selection process ensure that you can
 										easily locate the best lawyer in Dubai for your specific legal needs. Whether
-										you need legal assistance with family law, corporate matters, or real estate
+										you need legal assistance with Family Professional, corporate matters, or real estate
 										issues, our platform offers the expertise you require.
 									</>
 								)}
@@ -587,7 +587,7 @@ export default function BestLawyersDubai() {
 											<div className="accordion-body border-0">
 												We offer an extensive network of the best lawyers in Dubai, allowing you
 												to access a diverse pool of expertise and experience. Whether you need
-												help with family law, corporate matters, or intellectual property
+												help with Family Professional, corporate matters, or intellectual property
 												issues, our platform connects you with lawyers in Dubai who specialize
 												in your specific area of need. You can expect to receive comprehensive
 												support for your legal matters.
@@ -853,7 +853,7 @@ export default function BestLawyersDubai() {
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Clients normally search for expert legal representation to address their concerns and get
 						clarity on legal matters. They seek guidance on various issues ranging from personal injury
-						claims to family law matters like divorce and child custody, employment disputes, real estate
+						claims to Family Professional matters like divorce and child custody, employment disputes, real estate
 						issues such as property disputes and tenancy matters, and business law matters.
 						<br />
 						Select the professional issue you&apos;re facing and connect with a legal expert.
@@ -863,7 +863,7 @@ export default function BestLawyersDubai() {
 							<Link href="#">Personal Injury Claims</Link>
 						</li>
 						<li>
-							<Link href="#">Family Law (Divorce, Child Custody)</Link>
+							<Link href="#">Family Professional (Divorce, Child Custody)</Link>
 						</li>
 						<li>
 							<Link href="#">Employment Law</Link>
@@ -1032,7 +1032,7 @@ export default function BestLawyersDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													Professional Women United offers expertise across a wide range of legal areas,
-													including family law, corporate matters, real estate issues,
+													including Family Professional, corporate matters, real estate issues,
 													intellectual property, and more. Whether you&apos;re dealing with
 													personal injury claims, employment disputes, property disputes, or
 													contractual matters, our platform connects you with the lawyers who

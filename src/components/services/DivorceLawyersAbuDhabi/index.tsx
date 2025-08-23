@@ -573,7 +573,7 @@ export default function DivorceLawyersAbuDhabi() {
 											{t('The_divorce_lawyers_in_Abu_Dhabi ')}
 										</>
 									) : (
-										'At Professional Women United, we only list the top divorce lawyers in Abu Dhabi. They are distinguished by their extensive expertise in family law, strong negotiation skills, and personalized approach to each case. Our attorneys possess a deep understanding of local legal nuances and have a proven track record of achieving favorable outcomes for clients.'
+										'At Professional Women United, we only list the top divorce lawyers in Abu Dhabi. They are distinguished by their extensive expertise in Family Professional, strong negotiation skills, and personalized approach to each case. Our attorneys possess a deep understanding of local legal nuances and have a proven track record of achieving favorable outcomes for clients.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

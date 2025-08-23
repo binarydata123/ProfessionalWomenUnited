@@ -399,7 +399,7 @@ export default function MegaMenuAjman({ onclose }: any) {
 														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
-													Family Law
+													Family Professional
 												</h6>
 											</div>
 										</div>

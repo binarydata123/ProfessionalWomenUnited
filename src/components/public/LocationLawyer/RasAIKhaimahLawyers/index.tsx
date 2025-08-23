@@ -462,7 +462,7 @@ export default function RasAIKhaimahLawyers({ onclose }: any) {
 											/>
 										</div>
 										<div className="col-10 p-0">
-											<h6 className="set-menu-head">Family Law</h6>
+											<h6 className="set-menu-head">Family Professional</h6>
 										</div>
 									</div>
 									<li>
@@ -474,7 +474,7 @@ export default function RasAIKhaimahLawyers({ onclose }: any) {
 											}`}
 											onMouseEnter={() => handleMouseEnter('family')}
 											onMouseLeave={handleMouseLeave}>
-											Family Lawyer
+											Family Professionalyer
 										</Link>
 									</li>
 									<li>

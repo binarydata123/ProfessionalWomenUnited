@@ -146,7 +146,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Professionals in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it family law, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
+												Professionals in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it Family Professional, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
 											</div>
 										</div>
 									</div>
@@ -212,7 +212,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Professional Women United offers comprehensive legal support across a wide range of practice areas in Umm Al Quwain. From family law and real estate matters to business transactions and civil litigation, our platform connects you with lawyers who specialize in various areas of law, providing comprehensive assistance for your diverse legal needs. Whether you need advice, representation, or help with legal documentation, the attorneys on our platform are equipped to handle all aspects of your case with professionalism and expertise.
+												Professional Women United offers comprehensive legal support across a wide range of practice areas in Umm Al Quwain. From Family Professional and real estate matters to business transactions and civil litigation, our platform connects you with lawyers who specialize in various areas of law, providing comprehensive assistance for your diverse legal needs. Whether you need advice, representation, or help with legal documentation, the attorneys on our platform are equipped to handle all aspects of your case with professionalism and expertise.
 											</div>
 										</div>
 									</div>
@@ -395,7 +395,7 @@ export default function BestLawyersUmmAlQuwain() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Clients often look for Professional Information to find knowledgeable representation and clarity on matters of law. Whether you’re dealing with personal injury claims, family law matters, employment disputes, or real estate issues, we connect you with Professional experts who can provide tailored guidance.
+						Clients often look for Professional Information to find knowledgeable representation and clarity on matters of law. Whether you’re dealing with personal injury claims, Family Professional matters, employment disputes, or real estate issues, we connect you with Professional experts who can provide tailored guidance.
 						<br />
 						Select the professional issue you&apos;re facing and connect with a legal expert.
 					</p>
@@ -404,7 +404,7 @@ export default function BestLawyersUmmAlQuwain() {
 							<Link href="#">Personal Injury Claims</Link>
 						</li>
 						<li>
-							<Link href="#">Family Law (Divorce, Child Custody)</Link>
+							<Link href="#">Family Professional (Divorce, Child Custody)</Link>
 						</li>
 						<li>
 							<Link href="#">Employment Law</Link>
@@ -544,7 +544,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Professional Women United’s network of attorneys can help with a wide range of legal matters, including family law, real estate transactions, business disputes, employment issues, and more. Our platform connects you with lawyers in Umm Al Quwain who specialize in various practice areas, ensuring comprehensive support for your diverse legal needs.
+													Professional Women United’s network of attorneys can help with a wide range of legal matters, including Family Professional, real estate transactions, business disputes, employment issues, and more. Our platform connects you with lawyers in Umm Al Quwain who specialize in various practice areas, ensuring comprehensive support for your diverse legal needs.
 												</div>
 											</div>
 										</div>

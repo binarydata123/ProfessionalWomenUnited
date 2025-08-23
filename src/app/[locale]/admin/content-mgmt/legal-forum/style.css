@@ -203,7 +203,7 @@ select.form-fild {
 .rwd-table tr {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
-	background-color: #f5f9fc;
+	background-color: #f9f2ef;
 }
 
 .rwd-table tr:nth-child(odd):not(:first-child) {

@@ -65,7 +65,7 @@ export default async function Page() {
 			image: "Belashia-Wallace.jpg",
 			slug: "legal-services",
 			tags: [
-				{ tag_id: 5, tag_name: "Family Law & Divorce" },
+				{ tag_id: 5, tag_name: "Family Professional & Divorce" },
 				{ tag_id: 6, tag_name: "Personal Injury Claims" },
 				{ tag_id: 7, tag_name: "Criminal Defense" },
 				{ tag_id: 8, tag_name: "Real Estate Law" },
@@ -138,7 +138,7 @@ export default async function Page() {
 		{
 			id: 4,
 			name: "Jessica Thompson",
-			specialty: "Family Law Attorney",
+			specialty: "Family Professional Attorney",
 			city: "Chicago",
 			state: "IL",
 			image: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=400",

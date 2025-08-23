@@ -79,7 +79,7 @@ export default function DivorceLawyer() {
 												{t('At_Connect_Legal')}
 											</>
 										) : (
-											'A divorce lawyer, or family law attorney, is a legal professional who specializes in representing individuals going through the divorce or separation process. They have expertise in various aspects of family law, including property division, child custody and support, spousal support (alimony), and other related matters.'
+											'A divorce lawyer, or Family Professional attorney, is a legal professional who specializes in representing individuals going through the divorce or separation process. They have expertise in various aspects of Family Professional, including property division, child custody and support, spousal support (alimony), and other related matters.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

@@ -79,7 +79,7 @@ export default function FamilyLawyers() {
 												{t('Connect_Legal_has')}
 											</>
 										) : (
-											'A family lawyer is a legal professional who specializes in handling legal matters related to family relationships. These may include issues such as divorce, child custody and support, adoption, paternity, domestic violence, property division, prenuptial agreements, and guardianship.											'
+											'A Family Professionalyer is a legal professional who specializes in handling legal matters related to family relationships. These may include issues such as divorce, child custody and support, adoption, paternity, domestic violence, property division, prenuptial agreements, and guardianship.											'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -593,7 +593,7 @@ export default function FamilyLawyers() {
 											{t('These_top_talents ')}
 										</>
 									) : (
-										'At Professional Women United, we connect you with some of the top family lawyers in Abu Dhabi, known for their exceptional legal expertise, comprehensive knowledge of UAE family law, and commitment to client satisfaction.'
+										'At Professional Women United, we connect you with some of the top Family Professionalyers in Abu Dhabi, known for their exceptional legal expertise, comprehensive knowledge of UAE Family Professional, and commitment to client satisfaction.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

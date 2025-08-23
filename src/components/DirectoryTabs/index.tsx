@@ -5,9 +5,9 @@ import { useState, useEffect } from 'react';
 
 const professionals = [
   'Gynecologist',
-  'Dentist', 
+  'Dentist',
   'Pediatrician',
-  'Family Law Attorney',
+  'Family Professional Attorney',
   'Personal Injury Attorney',
   'Criminal Defense Attorney',
   'Real Estate Agent',
@@ -57,7 +57,7 @@ const DirectoryTabs = () => {
       <div className="container">
         {/* Header Section */}
         <div className="text-center mb-5">
-          <h1 className="display-4 fw-bold mb-3 text-[#1B3067]" style={{fontSize:'48px'}}> Professional <span className="highlight" style={{color:'#BE8363'}}>Directory</span></h1>
+          <h1 className="display-4 fw-bold mb-3 text-[#1B3067]" style={{ fontSize: '48px' }}> Professional <span className="highlight" style={{ color: '#BE8363' }}>Directory</span></h1>
           <p className="lead text-gray-600">
             Find professionals and explore cities across the United States
           </p>
@@ -65,25 +65,25 @@ const DirectoryTabs = () => {
 
         {/* Tab Navigation */}
         <div className="d-flex justify-content-center"> {/* Add this wrapper div */}
-  <ul className="nav nav-tabs mb-4" id="directoryTabs" role="tablist">
-    <li className="nav-item" role="presentation">
-      <button
-        className={`nav-link ${currentTab === 'professionals' ? 'active' : ''}`}
-        onClick={() => setCurrentTab('professionals')}
-      >
-        <i className="fas fa-user me-2"></i>Search by Professionals
-      </button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button
-        className={`nav-link ${currentTab === 'cities' ? 'active' : ''}`}
-        onClick={() => setCurrentTab('cities')}
-      >
-        <i className="fas fa-map-marker-alt me-2"></i>Search by USA Cities
-      </button>
-    </li>
-  </ul>
-</div>
+          <ul className="nav nav-tabs mb-4" id="directoryTabs" role="tablist">
+            <li className="nav-item" role="presentation">
+              <button
+                className={`nav-link ${currentTab === 'professionals' ? 'active' : ''}`}
+                onClick={() => setCurrentTab('professionals')}
+              >
+                <i className="fas fa-user me-2"></i>Search by Professionals
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className={`nav-link ${currentTab === 'cities' ? 'active' : ''}`}
+                onClick={() => setCurrentTab('cities')}
+              >
+                <i className="fas fa-map-marker-alt me-2"></i>Search by USA Cities
+              </button>
+            </li>
+          </ul>
+        </div>
 
         {/* Search Bar */}
         <div className="search-container mb-5">
@@ -107,7 +107,7 @@ const DirectoryTabs = () => {
               <i className="fas fa-users me-2 text-[#BE8363]" style={{ fontSize: '1.5rem' }}></i>
               <h2 className="section-title mb-0">Professional Services</h2>
             </div> */}
-            
+
             {filteredProfessionals.length === 0 ? (
               <div className="no-results">
                 <i className="fas fa-search mb-3 text-gray-300" style={{ fontSize: '3rem' }}></i>

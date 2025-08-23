@@ -400,7 +400,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 														color: 'rgba(196,144,115)',
 														fontWeight: '700'
 													}}>
-													Family Law
+													Family Professional
 												</h6>
 											</div>
 										</div>

@@ -74,7 +74,7 @@ export default function BestLawyersSharjah() {
 												Professional Women United is your go-to destination for connecting with the best
 												lawyers Sharjah has to offer. We specialize in linking clients with the
 												finest legal minds in the region, ready to handle a wide range of legal
-												matters. Whether you require expert advice on family law, assistance
+												matters. Whether you require expert advice on Family Professional, assistance
 												with commercial contracts, or representation in property disputes, our
 												platform will help you access the best legal expertise in Sharjah in a
 												couple of clicks.
@@ -94,7 +94,7 @@ export default function BestLawyersSharjah() {
 										Professional Women United is your go-to destination for connecting with the best lawyers
 										Sharjah has to offer. We specialize in linking clients with the finest legal
 										minds in the region, ready to handle a wide range of legal matters. Whether you
-										require expert advice on family law, assistance with commercial contracts, or
+										require expert advice on Family Professional, assistance with commercial contracts, or
 										representation in property disputes, our platform will help you access the best
 										legal expertise in Sharjah in a couple of clicks.
 									</>
@@ -847,7 +847,7 @@ export default function BestLawyersSharjah() {
 						Clients typically seek Professional Information with a primary focus on finding knowledgeable
 						representation and clarification on their legal concerns.
 						<br />
-						Whether you&apos;re dealing with personal injury claims, family law matters, employment
+						Whether you&apos;re dealing with personal injury claims, Family Professional matters, employment
 						disputes, or real estate issues, we help you connect with Professional experts who can provide guidance
 						tailored to your specific needs.
 						<br />
@@ -858,7 +858,7 @@ export default function BestLawyersSharjah() {
 							<Link href="#">Personal Injury Claims</Link>
 						</li>
 						<li>
-							<Link href="#">Family Law (Divorce, Child Custody)</Link>
+							<Link href="#">Family Professional (Divorce, Child Custody)</Link>
 						</li>
 						<li>
 							<Link href="#">Employment Law</Link>

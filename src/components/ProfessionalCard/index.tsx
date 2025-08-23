@@ -63,7 +63,7 @@ const professionalsData: Professional[] = [
   {
     id: 4,
     name: "Jessica Thompson",
-    specialty: "Family Law Attorney",
+    specialty: "Family Professional Attorney",
     city: "Chicago",
     state: "IL",
     image:
@@ -151,7 +151,7 @@ const specialties = [
   "Gynecologist",
   "Dentist",
   "Pediatrician",
-  "Family Law Attorney",
+  "Family Professional Attorney",
   "Personal Injury Attorney",
   "Criminal Defense Attorney",
   "Real Estate Agent",

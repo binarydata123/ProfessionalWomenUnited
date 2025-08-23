@@ -55,7 +55,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
@@ -105,7 +105,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
@@ -151,7 +151,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
@@ -197,7 +197,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
