@@ -82,7 +82,7 @@ span.border.border-radius-1.banner-arrow-btn {
 }
 
 #contect-main .form-check-input:checked[type='radio'] {
-	background: var(--green-medium-1);
+	background: #c49073;
 }
 
 #contect-main .form-check-input {

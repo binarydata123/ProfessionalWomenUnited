@@ -472,8 +472,8 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 						</div>
 
 						<div className="col-lg-4 mt-3 d-none d-lg-block">
-							<div className={`connect-legal-review  ${isSticky ? 'sticky-profile' : ''}`}>
-								<div className="connect-legal-review-class">
+							<div className={`professional-women-review  ${isSticky ? 'sticky-profile' : ''}`}>
+								<div className="professional-women-review-class">
 									<div className="row">
 										<div className="col-lg-8">
 											<div className="legal-review d-none d-lg-block">

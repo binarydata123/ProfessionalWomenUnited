@@ -192,13 +192,21 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								)}
 
 								{blog.image && !isLoading ? (
-									<Image
+									<img
 										className="w-100 mb-4 responsive-img"
-										src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${blog.image}`}
-										alt={blog.image_alt_text}
+										src={
+											blog?.image
+												? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${blog.image}`
+												: '/images/homebanner.webp'
+										}
+										alt={blog?.image_alt_text || 'Blog Image'}
 										height={665}
 										width={1920}
+										onError={(e) => {
+											e.currentTarget.src = '/images/homebanner.webp';
+										}}
 									/>
+
 								) : (
 									<div
 										style={{
@@ -287,7 +295,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								<div className={`profile-data profile-d-change ${isSticky ? 'sticky-profile' : ''}`}>
 									<div className={`left-bar-image ccc `}>
 										<h6 style={{ color: '#fff' }}>GOT A PROFESSIONAL QUESTION?</h6>
-										<p>Post a question for free on our Legal Forum</p>
+										<p>Post a question for free on our Professional Forum</p>
 										<Link href="/find-a-professional">
 											<button className="w-100 btn-get-free btn-commn bg-color d-flex align-items-center justify-content-center gap-2 mt-5">
 												<span>Ask A Question</span>

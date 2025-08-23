@@ -12,7 +12,7 @@ export default function LegalQuetion() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/get-a.png"
-									alt="Join Our Legal Forum and Get Expert
+									alt="Join Our Professional Forum and Get Expert
 Advice for Free"
 									height={370}
 									width={620}
@@ -24,7 +24,7 @@ Advice for Free"
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>

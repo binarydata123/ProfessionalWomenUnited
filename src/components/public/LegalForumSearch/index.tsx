@@ -57,7 +57,7 @@ export default function LegalForumSearch({ slug = '' }: Props) {
 					<span>
 						<Image src="/images/legal-service/arrow-right.png" alt="arrow-right" width={16} height={16} />
 					</span>
-					<span>Legal Forum</span>
+					<span>Professional Forum</span>
 				</div>
 				<div className="legal-text needlawyer-text">
 					<h1>
@@ -92,10 +92,10 @@ export default function LegalForumSearch({ slug = '' }: Props) {
 									<li key={index}>
 										<Link
 											href={`/legal-forum/${item.name
-													? item.service_slug
-													: item.tag_name
-														? `${item.tag_slug}?tag_id=${item.tag_id}`
-														: `${item.service_slug}/${item.slug}`
+												? item.service_slug
+												: item.tag_name
+													? `${item.tag_slug}?tag_id=${item.tag_id}`
+													: `${item.service_slug}/${item.slug}`
 												}`}
 										>
 											{item.name || item.title || item.tag_name + ` (${item.service_name})`}

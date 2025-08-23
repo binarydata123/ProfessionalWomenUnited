@@ -121,7 +121,7 @@ export default function Footer() {
 								<li>
 									<a
 										target="_blank"
-										href="https://www.linkedin.com/company/connect-legal-uae/"
+										href="https://www.linkedin.com/company/professional-women-uae/"
 										aria-label="LinkedIn Company Page"
 										rel="noreferrer">
 										<FaLinkedin style={{ color: '#fff' }} />

@@ -130,16 +130,16 @@ export default function Page({ params }: { params: { id: string } }) {
 			setDesc(res.data.description);
 
 			if (res.data.image) {
-				setBannerImagePreview(`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${res.data.image}`);
+				setBannerImagePreview(`${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${res.data.image}`);
 			}
 			if (res.data.desktop_ad_pic) {
 				setDesktopImagePreview(
-					`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${res.data.desktop_ad_pic}`
+					`${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${res.data.desktop_ad_pic}`
 				);
 			}
 			if (res.data.mobile_ad_pic) {
 				setMobileImagePreview(
-					`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${res.data.mobile_ad_pic}`
+					`${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${res.data.mobile_ad_pic}`
 				);
 			}
 		}

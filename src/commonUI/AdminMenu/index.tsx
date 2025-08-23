@@ -71,7 +71,7 @@ export default function AdminMenu() {
 							className={`dropdown-item ${pathname.includes('content-mgmt/legal-forum') ? 'active' : ''}`}
 							href="/admin/content-mgmt/legal-forum"
 						>
-							Legal Forum
+							Professional Forum
 						</Link>
 					</li> */}
 					<li>
@@ -259,7 +259,7 @@ export default function AdminMenu() {
 // 							className={`dropdown-item ${pathname.includes('content-mgmt/legal-forum') ? 'active' : ''}`}
 // 							href="/admin/content-mgmt/legal-forum"
 // 						>
-// 							Legal Forum
+// 							Professional Forum
 // 						</Link>
 // 					</li>
 // 					<li>

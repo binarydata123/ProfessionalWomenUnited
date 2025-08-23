@@ -81,7 +81,7 @@ export default function Contribution() {
 							.map((item, index) => <Post index={index} item={item} />)
 					) : (
 						<ImagePlaceholder
-							buttonText="Go to Legal Forum"
+							buttonText="Go to Professional Forum"
 							text="You don’t have any contributions."
 							image={'/images/review-placeholder.png'}
 							height={320}

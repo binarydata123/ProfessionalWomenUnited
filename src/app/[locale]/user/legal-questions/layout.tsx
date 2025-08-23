@@ -61,7 +61,7 @@ export default function LegalCommunityLayout({ children }: { children: React.Rea
 						<ImagePlaceholder
 							height={400}
 							image={'/images/review-placeholder.png'}
-							buttonText="Go to Legal Forum"
+							buttonText="Go to Professional Forum"
 							text="You don’t have any contributions."
 						/>
 					)}

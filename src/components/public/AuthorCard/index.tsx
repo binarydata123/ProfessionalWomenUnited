@@ -18,7 +18,7 @@ export default function AuthorCard({ Author }: AuthorProps) {
                             width={292}
                             height={191}
                             src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${Author.profile_image ?
-                                `/connect-Legal/Blogs/${Author.profile_image}`
+                                `/professional-women/Blogs/${Author.profile_image}`
                                 :
                                 `images/default/${Author.gender == 'male'
                                     ? 'male-lawyer-306x200.png'

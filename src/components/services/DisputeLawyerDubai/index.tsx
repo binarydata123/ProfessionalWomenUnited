@@ -53,7 +53,7 @@ export default function DisputeLawyerDubai() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -1006,7 +1006,7 @@ export default function DisputeLawyerDubai() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>

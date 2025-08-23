@@ -31,7 +31,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<Link href="/legal-forum" target="blank">
-									Legal Forum
+									Professional Forum
 								</Link>
 							</li>
 							<li>

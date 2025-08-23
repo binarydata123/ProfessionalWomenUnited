@@ -128,13 +128,13 @@ a.unactive {
 	text-align: left;
 	color: var(--green-medium-2);
 }
-.connect-legal-review {
+.professional-women-review {
 	border: 1px solid var(--green-light);
 	border-radius: 8px;
 	position: sticky;
 	top: 0;
 }
-.connect-legal-review-class {
+.professional-women-review-class {
 	padding: 10px;
 	background-color: #f9f2ef;
 }

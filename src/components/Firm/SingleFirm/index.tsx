@@ -130,7 +130,7 @@ export default function SingleFirm({ slug = '' }: Props) {
     });
     const [showAllLawyers, setShowAllLawyers] = useState(false);
     const imageUrl = single_firm?.image
-        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${single_firm.image}`
+        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${single_firm.image}`
         : `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/1920x1080.png`;
 
     return (
@@ -204,7 +204,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                     style={{ borderRadius: '10px' }}
                                                 />
                                                 {/* <div style={{
-                                                    backgroundImage: `url(${single_firm?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${single_firm?.image}` : "/images/firm/test.png"})`,
+                                                    backgroundImage: `url(${single_firm?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${single_firm?.image}` : "/images/firm/test.png"})`,
                                                     backgroundSize: 'cover',
                                                     backgroundRepeat: 'no-repeat',
                                                     backgroundPosition: 'center',

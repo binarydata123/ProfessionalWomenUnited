@@ -50,7 +50,7 @@ export default function FirmCard({
     }
 
     const imageUrl = firms?.image
-        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${firms.image}`
+        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${firms.image}`
         : `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/1920x1080.png`;
     return (
         <div className="lawyer-card-wrapper" >
@@ -62,7 +62,7 @@ export default function FirmCard({
                         <div className="portfolioDisc_data">
                             {/* <ImageComponent
                                 className="w-130 m-img-fixed"
-                                src={firms?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${firms?.image}` : "/images/firm/test.png"}
+                                src={firms?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${firms?.image}` : "/images/firm/test.png"}
                                 alt={single_firm?.firm_name}
                                 height={100}
                                 width={100}

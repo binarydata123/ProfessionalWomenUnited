@@ -118,7 +118,7 @@ export default function page() {
             designation: designation,
             image: image
         });
-        setProfileImagePreview(`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${image}`)
+        setProfileImagePreview(`${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${image}`)
         setaddNewService(true);
     };
 

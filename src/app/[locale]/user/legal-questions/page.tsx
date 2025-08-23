@@ -89,7 +89,7 @@ export default function Overview() {
 						<p>
 							{' '}
 							<Link href="/legal-forum" className="green-medium-1 font-small-12 weight-semi-bold">
-								Go to Legal Forum <ArrowIcons />
+								Go to Professional Forum <ArrowIcons />
 							</Link>
 						</p>
 					</div>

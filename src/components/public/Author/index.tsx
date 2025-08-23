@@ -36,7 +36,7 @@ export default function Author({ authors }: AuthorProps) {
                                     width={220}
                                     height={220}
                                     alt=''
-                                    src={'/connect-Legal/Blogs/Frame 427324573.png'}
+                                    src={'/professional-women/Blogs/Frame 427324573.png'}
                                 />
                             </div>
                         </div>

@@ -52,7 +52,7 @@ export default function LegalForumLayout({ children }: { children: React.ReactNo
 				<li>
 					<Link href="#" className="active">
 						{' '}
-						Legal Forum
+						Professional Forum
 					</Link>
 				</li>
 			</ul>
@@ -66,12 +66,12 @@ export default function LegalForumLayout({ children }: { children: React.ReactNo
 					</span>
 					<span>Content Mgmt.</span>
 					<span>
-						<Image src="/images/legal-service/arrow-right.png" alt="Legal Forum" width={16} height={16} />
+						<Image src="/images/legal-service/arrow-right.png" alt="Professional Forum" width={16} height={16} />
 					</span>
-					<span>Legal Forum</span>
+					<span>Professional Forum</span>
 				</div>
 			</section>
-			<h4 className="font-xx-large social-link weight-semi-bold mb-3 p-0 pt-4">Legal Forum</h4>
+			<h4 className="font-xx-large social-link weight-semi-bold mb-3 p-0 pt-4">Professional Forum</h4>
 			<div className="nav-tab use-lawyer p-set p-0 border-0">
 				<ul className="border-bottom">
 					<li className={pathname === '/admin/content-mgmt/legal-forum' ? 'active' : ''}>

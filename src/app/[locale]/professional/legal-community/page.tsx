@@ -77,7 +77,7 @@ export default function Overview() {
 							<div className="col-6">
 								<CountCard
 									count={'What’s New?'}
-									linkText="Go to Legal Forum"
+									linkText="Go to Professional Forum"
 									href="/legal-forum"
 									backgroundImage="/images/Profile-dash4.JPG"
 								/>

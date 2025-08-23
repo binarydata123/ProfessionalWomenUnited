@@ -96,16 +96,16 @@ export default function SingleQuestion({
 							<span>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="Legal Forum"
+									alt="Professional Forum"
 									width={16}
 									height={16}
 								/>
 							</span>
-							<span>Legal Forum</span>
+							<span>Professional Forum</span>
 							<span>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="Legal Forum"
+									alt="Professional Forum"
 									width={16}
 									height={16}
 								/>
@@ -116,7 +116,7 @@ export default function SingleQuestion({
 							<span>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="Legal Forum"
+									alt="Professional Forum"
 									width={16}
 									height={16}
 								/>

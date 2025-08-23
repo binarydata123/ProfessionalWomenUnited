@@ -262,7 +262,7 @@ export default function Page() {
 			const matchedFirm = firmDetails.find((firm: FormData) => firm.id === firmId);
 			if (matchedFirm) {
 				const imageUrl = matchedFirm.image
-					? process.env.NEXT_PUBLIC_IMAGE_URL + '/connect-Legal/Blogs/' + matchedFirm.image
+					? process.env.NEXT_PUBLIC_IMAGE_URL + '/professional-women/Blogs/' + matchedFirm.image
 					: '/images/profile-circle.png';
 				setImagePreview(imageUrl);
 
