@@ -15,7 +15,8 @@ import {
 	reportInquiriesByLawyer,
 	unReportInquiriesByLawyer,
 	markReadInquiry,
-	sendInquiryResponse
+	sendInquiryResponse,
+	getUserDetailByInquiry
 } from '../../../../../../lib/lawyerapi';
 import {
 	formatDateTime,
@@ -52,7 +53,8 @@ export default function Page({ params }: { params: { id: number } }) {
 	const [attachmentURL, setAttachmentURL] = useState<string | null>(null);
 	const [thumbnailURL, setThumbnailURL] = useState<string | null>(null);
 	const [attachmentIcon, setAttachmentIcon] = useState<React.ReactNode | null>(null);
-
+	const [viewProfile, setviewProfile] = useState(false);
+	const [userData, setUserData] = useState<UserData | null>(null); // Add userData state
 	const inqId = params.id;
 
 	useEffect(() => {
@@ -62,6 +64,29 @@ export default function Page({ params }: { params: { id: number } }) {
 		fetchMessages(user?.id, inqId);
 		handleReadInquiry(user?.id, inqId);
 	}, []);
+
+	// Add the handleViewProfile function
+	const handleViewProfile = async (memberId: number) => {
+		const data = {
+			user_id: user_id,
+			memberId: memberId
+		};
+		try {
+			const response = await getUserDetailByInquiry(data);
+			if (response.status === true) {
+				setUserData(response.data);
+				setviewProfile(true);
+			}
+		} catch (error) {
+			console.error('Error fetching user profile:', error);
+		}
+	};
+	useEffect(() => {
+		if (inquiryByUserId) {
+			handleViewProfile(parseInt(inquiryByUserId));
+		}
+	}, [inquiryByUserId]);
+
 
 	useEffect(() => {
 		if (messageListRef.current) {
@@ -287,8 +312,12 @@ export default function Page({ params }: { params: { id: number } }) {
 							) : (
 								<Image src={'/images/profile-circle.png'} alt="single-inquiry" width={40} height={40} />
 							)} */}
-							<h4 className="py-3">{messages.length > 0 ? messages[0].inquiry_by : 'Client Name'}</h4>
+							<h4 className="py-3">{messages?.length > 0 ? messages[0].inquiry_by : 'Client Name'}</h4>
+
 						</div>
+
+
+
 						<div className="right-info-btn d-flex align-items-center gap-2">
 							<p
 								className="info-btn d-flex gap-2 align-items-center"
@@ -312,11 +341,31 @@ export default function Page({ params }: { params: { id: number } }) {
 							</p>
 						</div>
 					</div>
+					{viewProfile && userData && (
+						<div className="user-profile-details">
+							<div className="d-flex align-items-center mb-2">
+								<span className="text-muted me-2">Email:</span>
+								<span>{userData.email}</span>
+							</div>
+							<div className="d-flex align-items-center mb-2">
+								<span className="text-muted me-2">Location:</span>
+								<span>{userData.location_name}</span>
+							</div>
+							<div className="d-flex align-items-center mb-2">
+								<span className="text-muted me-2">Phone:</span>
+								<span>{userData.phone_number}</span>
+							</div>
+							{/* <p>Email: {userData.email}</p>
+							<p>Location: {userData.location_name}</p>
+							<p>Phone: {userData.phone_number}</p> */}
+							{/* <p>Gender: {userData.gender}</p> */}
+						</div>
+					)}
 				</div>
 				<hr />
 				<div className="inquiry-message-box right-body">
 					<div className="message-list" ref={messageListRef}>
-						{messages.map((message, index) => (
+						{messages?.map((message, index) => (
 							<div
 								className={`inquiry-message-item ${message.inquiry_by === userName ? 'active' : ''
 									} mt-3`}

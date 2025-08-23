@@ -103,7 +103,8 @@ export default function LawyerProfile(props: any) {
 					{single_lawyer?.designation && (
 						<div>
 							<span className="font-small weight-semi-bold social-link">
-								{single_lawyer?.designation} at {single_lawyer?.company_name}
+								{single_lawyer?.designation}
+								{/* at {single_lawyer?.company_name} */}
 							</span>
 						</div>
 					)}

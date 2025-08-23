@@ -131,11 +131,11 @@ export default function LawyerCard({
 						? lawyer.designation.slice(0, 30) + '...'
 						: lawyer?.designation} {' '}
 
-					{lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
+					{/* {lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
 						<span className="location-move-set">
 							at {' '} <Link href={`/firms/${lawyer?.firm_slug}`}>{lawyer.firm_name}</Link>
 						</span>
-					) : ""}
+					) : ""} */}
 
 				</p>
 

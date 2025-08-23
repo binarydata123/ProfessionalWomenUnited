@@ -62,7 +62,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 				setCheckSaveLawyer(false);
 			}
 		} catch (error) {
-			console.error('Error fetching check saved lawyer data:', error);
+			console.error('Error fetching check saved professional data:', error);
 		}
 	};
 
@@ -210,7 +210,8 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 								</Link>
 								<div className="d-none d-lg-block">
 									<p className="font-small weight-semi-bold social-link">
-										{lawyerdata.service_name} at {lawyerdata.company_name}
+										{lawyerdata.service_name}
+										{/* at {lawyerdata.company_name} */}
 									</p>
 									<ul className="rating-location py-1 m-0">
 										{lawyerdata.location_name ? (
@@ -224,7 +225,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 										</li>
 									</ul>
 									<button className="btn-mini success-btn mr-1 mb-2">
-										{`${lawyerdata.service_name} Law`}
+										{`${lawyerdata.service_name}`}
 									</button>
 									<button className="btn-mini danger-btn mr-1 mb-2">
 										Licensed for {lawyerdata.license_for_years} Years
@@ -376,7 +377,8 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 								<div className="accordion-body border-0">
 									<div className="">
 										<p className="font-small weight-semi-bold social-link">
-											{lawyerdata.service_name} at {lawyerdata.company_name}
+											{lawyerdata.service_name}
+											{/* at {lawyerdata.company_name} */}
 										</p>
 										<ul className="rating-location py-1 m-0">
 											<li className="loc">

@@ -243,19 +243,21 @@ export default function lawyers() {
 									</span>
 								</OverlayTrigger>
 								<br />
-								<OverlayTrigger
+								{/* <OverlayTrigger
 									placement="top"
 									delay={{ show: 250, hide: 400 }}
-									overlay={<Tooltip className="in" id="tooltip-top" > {rowData.company_name} </Tooltip>}>
+									overlay={<Tooltip className="in" id="tooltip-top" >
+										{rowData.company_name}
+									</Tooltip>}>
 									<span className="font-x-small text-sonic-silver weight-light" >
-										{/* {rowData.company_name && rowData.company_name.length > 30
+										{rowData.company_name && rowData.company_name.length > 30
 											? rowData.company_name.substring(0, 30) + '...'
-											: rowData.company_name} */}
+											: rowData.company_name}
 
 										{rowData.firm_name && rowData.firm_name.length > 30
 											? rowData.firm_name.substring(0, 30) + '...'
 											: rowData.firm_name}
-									</span></OverlayTrigger>
+									</span></OverlayTrigger> */}
 							</td>
 							<td data-th="Plan">
 

@@ -16,18 +16,28 @@ export default function UserDashboard() {
 	const [recentlyviewlawyer, setRecentlyViewlawyer]: any = useState([]);
 
 	useEffect(() => {
-		getAllPostData(user?.id, 5);
+		// getAllPostData(user?.id, 5);
+		getAllPostData(5);
 		getAllRecentlylawyer(user?.id, 3);
 	}, []);
 
-	const getAllPostData = async (user_id: any, count: any) => {
+	// const getAllPostData = async (user_id: any, count: any) => {
+	// 	try {
+	// 		const postData = await getAllPostsByCount({ memberId: user_id, count });
+	// 		setAllPosts(postData.posts);
+	// 	} catch (error) {
+	// 		console.error('Error fetching reviews:', error);
+	// 	}
+	// };
+	const getAllPostData = async (count: any) => {
 		try {
-			const postData = await getAllPostsByCount({ memberId: user_id, count });
+			const postData = await getAllPostsByCount({ count });
 			setAllPosts(postData.posts);
 		} catch (error) {
-			console.error('Error fetching reviews:', error);
+			console.error("Error fetching posts:", error);
 		}
 	};
+
 
 	const getAllRecentlylawyer = async (user_id: any, count: any) => {
 		try {
@@ -43,8 +53,8 @@ export default function UserDashboard() {
 			<div className="legal-issues">
 				<div className="row align-items-center py-3">
 					<div className="col-lg-8 col-md-12">
-						<h3 className="green-dark weight-semi-bold font-xx-large text-white">Don’t face professional issues alone!</h3>
-						<p className="green-dark weight-light font-x-small text-white">
+						<h3 className="weight-semi-bold font-xx-large" style={{ color: '#fff' }}>Don’t face professional issues alone!</h3>
+						<p className="weight-light font-x-small" style={{ color: '#fff' }}>
 							Our experienced team is here to help you every step of the way.{' '}
 						</p>
 					</div>
@@ -56,7 +66,7 @@ export default function UserDashboard() {
 				</div>
 			</div>
 
-			<div className="row">
+			<div className="row mt-5">
 				<div className="col-lg-6 col-md-12">
 					<div className="dashboard-recently">
 						<div className="recent-reviews mt-1">
@@ -67,7 +77,7 @@ export default function UserDashboard() {
 								<div className="col-4 text-right">
 									<p>
 										<Link
-											href="/user/legal-questions/posts"
+											href="/blogs"
 											className="boysenberry font-x-small weight-semi-bold "
 										>
 											View All <LinkButton />
@@ -78,14 +88,14 @@ export default function UserDashboard() {
 							{allpost?.length > 0 ? (
 								allpost.map((post: any, index: any) => (
 									<div className="card-notifaction mt-2">
-										<Link href={`/legal-forum/${post.service_slug}/${post.slug}`}>
+										<Link href={`/blogs/${post.slug}`} target='_blank'>
 											<div className="row align-items-center">
 												<div className="col-10">
 													<p className="text-sonic-silver weight-semi-bold font-small-12">
 														Posted on {formatDateMonthDayYear(post.created_at)}
 													</p>
 													<p className="social-link weight-semi-bold font-x-small">
-														{post.question}
+														{post.title}
 													</p>
 												</div>
 												<div className="col-2 text-right pt-1 right-arrow-icon">
@@ -111,7 +121,7 @@ export default function UserDashboard() {
 												<Link href="/find-a-professional">
 													<DefaultButton
 														className="w-100"
-														color="rgba(196,144,115, 1)"
+														color="#fff"
 														background="rgba(196,144,115)"
 													>
 														Ask A Professional
@@ -168,8 +178,8 @@ export default function UserDashboard() {
 													</p>
 													<p className="font-small weight-semi-bold social-link">
 														{laywer.designation}{' '}
-														{laywer.company_name && <span style={{ color: 'gray' }}>at</span>}{' '}
-														{laywer.company_name}
+														{/* {laywer.company_name && <span style={{ color: 'gray' }}>at</span>}{' '}
+														{laywer.company_name} */}
 													</p>
 
 													<ul className="rating-location">
@@ -203,10 +213,10 @@ export default function UserDashboard() {
 													Contribute to our professional community & grow your reach by sharing your
 													expertise.{' '}
 												</p>
-												<Link href="/legal-forum">
+												<Link href="/user/professionals">
 													<DefaultButton
 														className="w-100"
-														color="rgba(32, 140, 132, 1)"
+														color="#000"
 														background="#fff"
 													>
 														Visit Professional Forum

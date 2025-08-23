@@ -150,7 +150,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 			memberId: user?.id,
 			lawyerId: id
 		}).then(res => {
-			if (res.data == 'Saved lawyer successfully.') {
+			if (res.data == 'saved professional successfully.') {
 				setbookmark(true);
 			} else {
 				setbookmark(false);
@@ -329,11 +329,11 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														{single_lawyer?.designation && (
 															<span style={{ fontWeight: '600', fontSize: '20px' }}>{single_lawyer?.designation}</span>
 														)}{' '}
-														{single_lawyer?.firm_name && single_lawyer.firm_name.length > 0 ? (
+														{/* {single_lawyer?.firm_name && single_lawyer.firm_name.length > 0 ? (
 															<span className="location-move-set">
 																at {' '} <Link href={`/firms/${single_lawyer?.firm_slug}`}>{single_lawyer.firm_name}</Link>
 															</span>
-														) : ""}
+														) : ""} */}
 														{single_lawyer?.location_name && (
 															<p>
 																<MapPinIcon width={20} height={20} />{' '}
@@ -1029,11 +1029,11 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																{single_lawyer?.designation}
 															</span>
 														)}{' '}
-														{single_lawyer?.firm_name && single_lawyer.firm_name.length > 0 ? (
+														{/* {single_lawyer?.firm_name && single_lawyer.firm_name.length > 0 ? (
 															<span className="location-move-set">
 																at {' '} <Link href={`/firms/${single_lawyer?.firm_slug}`}>{single_lawyer.firm_name}</Link>
 															</span>
-														) : ""}
+														) : ""} */}
 
 														{single_lawyer?.location_name && (
 															<p>

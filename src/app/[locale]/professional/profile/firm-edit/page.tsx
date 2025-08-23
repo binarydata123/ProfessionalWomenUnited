@@ -171,9 +171,9 @@ export default function Page() {
 	}
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
-		if (!formData.firm_name) {
-			newErrors.firm_name = 'Firm name is required';
-		}
+		// if (!formData.firm_name) {
+		// 	newErrors.firm_name = 'Firm name is required';
+		// }
 		if (!formData.country_id) {
 			newErrors.country_id = 'Location is required';
 		}
@@ -421,9 +421,9 @@ export default function Page() {
 							value={formData.firm_name}
 							onChange={e => setFormData({ ...formData, firm_name: e.target.value })}
 						/>
-						{errors.firm_name && (
+						{/* {errors.firm_name && (
 							<small className="error-message text-danger d-block">{errors.firm_name}</small>
-						)}
+						)} */}
 						<br />
 						<div className="row  mt-2">
 							<div className="col-sm-8">

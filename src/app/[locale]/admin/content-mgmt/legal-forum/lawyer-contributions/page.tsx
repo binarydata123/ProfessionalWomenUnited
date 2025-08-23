@@ -172,7 +172,9 @@ export default function Page() {
 								<OverlayTrigger
 									placement="top"
 									delay={{ show: 250, hide: 400 }}
-									overlay={<Tooltip id="tooltip-top" className="in custom-tooltip-class text-capitalize">{rowData.designation} <br /> {rowData.company_name}</Tooltip>}>
+									overlay={<Tooltip id="tooltip-top" className="in custom-tooltip-class text-capitalize">{rowData.designation} <br />
+										{/* {rowData.company_name} */}
+									</Tooltip>}>
 									<span
 										className="font-small weight-medium social-link text-primary text-capitalize"
 									>
@@ -182,11 +184,11 @@ export default function Page() {
 									</span>
 								</OverlayTrigger>
 
-								<p className="font-x-small text-sonic-silver weight-light">
+								{/* <p className="font-x-small text-sonic-silver weight-light">
 									{rowData.company_name && rowData.company_name > 50
 										? rowData.company_name.substring(0, 50) + '...'
 										: rowData.company_name}
-								</p>
+								</p> */}
 							</td>
 
 							<td data-th="Contributions">

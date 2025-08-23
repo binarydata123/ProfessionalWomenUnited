@@ -191,11 +191,11 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 													<p>
 														{lawyer.designation}
 
-														{lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
+														{/* {lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
 															<span className="location-move-set">
 																at {' '} <Link href={`/firms/${lawyer?.firm_slug}`} style={{ color: '#02142d', fontSize: '14px', fontWeight: '600' }}>{lawyer.firm_name}</Link>
 															</span>
-														) : ""}
+														) : ""} */}
 													</p>
 													<p>
 														<MapPinIcon

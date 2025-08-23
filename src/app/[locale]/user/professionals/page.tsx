@@ -90,7 +90,7 @@ export default function page() {
 				setCheckSaveLawyer(savedValue);
 			}
 		} catch (error) {
-			console.error('Error fetching check saved lawyer data:', error);
+			console.error('Error fetching check saved professional data:', error);
 		}
 	};
 
@@ -231,7 +231,7 @@ export default function page() {
 									<ImagePlaceholder
 										height={300}
 										image="/images/cant-find.svg"
-										text="Seems like you haven't found a lawyer."
+										text="Seems like you haven't found a professional.."
 										buttonText="Find A Professional"
 										link="/find-a-professional"
 									/>
@@ -252,7 +252,7 @@ export default function page() {
 									<ImagePlaceholder
 										height={300}
 										image="/images/cant-find.svg"
-										text="Seems like you haven't found a lawyer."
+										text="Seems like you haven't found a professional.."
 										buttonText="Find A Professional"
 										link="/find-a-professional"
 									/>
