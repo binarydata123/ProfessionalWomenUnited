@@ -182,7 +182,7 @@ export default function CriminalLawyersDubai() {
 														governing criminal activities within its borders, based on
 														Islamic Sharia law, civil law principles, and customary law.
 														Understanding this overview is essential for residents and
-														visitors to avoid legal troubles. The UAE emphasizes equality
+														visitors to avoid professional advisorss. The UAE emphasizes equality
 														before the law, with strict penalties for criminal activities to
 														maintain public order and safety.
 														<ul className="custom-bullets mt-3 mb-3">
@@ -668,7 +668,7 @@ export default function CriminalLawyersDubai() {
 												exceed our clients' expectations by providing responsive communication,
 												transparent guidance, and aggressive advocacy. Our commitment to client
 												satisfaction has earned us numerous positive reviews and referrals,
-												which show our client's trust and confidence in our legal team.
+												which show our client's trust and confidence in Our professional team.
 											</div>
 										</div>
 									</div>
@@ -996,7 +996,7 @@ export default function CriminalLawyersDubai() {
 												<div className="accordion-body border-0 text-white">
 													A criminal lawyer can provide valuable assistance if you're charged
 													with a crime. They will assess the details of your case, explain
-													your legal options, and develop a defense strategy tailored to your
+													yOur professional options, and develop a defense strategy tailored to your
 													specific circumstances. Whether through negotiation or litigation,
 													they will advocate fiercely on your behalf to achieve the best
 													possible outcome for your case.

@@ -832,7 +832,7 @@ export default function BrainInjuryLawyer() {
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Clients frequently seek knowledgeable legal representation and clarity when seeking information
 						on brain injury cases. At Professional Women United, we ensure that your traumatic brain injury lawyer
-						understands the complexities of your situation and can provide clear guidance on your legal
+						understands the complexities of your situation and can provide clear guidance on yOur professional
 						options.
 						<br />
 						Select the professional issue you face and connect with a legal expert.
@@ -941,7 +941,7 @@ export default function BrainInjuryLawyer() {
 										valuable testimony and evidence to support your case. Whether it's determining
 										the long-term effects of a traumatic brain injury or establishing causation in a
 										medical malpractice claim, having access to qualified medical experts
-										strengthens your legal position and increases your chances of success in court.
+										strengthens yOur professional position and increases your chances of success in court.
 									</div>
 								</div>
 							</div>

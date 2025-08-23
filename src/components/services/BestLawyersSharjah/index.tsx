@@ -583,7 +583,7 @@ export default function BestLawyersSharjah() {
 												The lawyers we connect you with bring invaluable local insight to the
 												table. They have a deep understanding of Sharjah&apos;s legal landscape,
 												including local regulations, customs, and practices. This local
-												knowledge gives you a strategic advantage in your legal proceedings,
+												knowledge gives you a strategic advantage in yOur professional proceedings,
 												with the guarantee that your lawyer in Sharjah can deal with the local
 												legal system effectively on your behalf.
 											</div>
@@ -1049,7 +1049,7 @@ export default function BestLawyersSharjah() {
 												<div className="accordion-body border-0 text-white">
 													Hiring a motorcycle injury lawyer can significantly benefit your
 													case if you&apos;ve been injured in a motorcycle accident. They can
-													help you understand your legal rights, gather evidence to support
+													help you understand yOur professional rights, gather evidence to support
 													your claim and negotiate with insurance companies on your behalf to
 													ensure you receive fair compensation for your injuries.
 												</div>
@@ -1104,7 +1104,7 @@ export default function BestLawyersSharjah() {
 													During your initial consultation with a motorcycle accident lawyer,
 													you can expect to discuss the details of your case, including the
 													circumstances surrounding the accident and your injuries. The lawyer
-													will assess the strength of your case, explain your legal options,
+													will assess the strength of your case, explain yOur professional options,
 													and outline the potential outcomes and next steps in pursuing your
 													claim.
 												</div>

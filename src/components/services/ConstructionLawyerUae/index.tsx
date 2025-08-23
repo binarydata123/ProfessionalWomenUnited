@@ -652,7 +652,7 @@ export default function ConstructionLawyerUae() {
 												offering practical solutions to complex professional issues, we are dedicated
 												to achieving the best possible outcomes for our clients and exceeding
 												their expectations. When you choose a top Dubai construction lawyer from
-												Professional Women United, your legal matters are in good hands.
+												Professional Women United, yOur professional matters are in good hands.
 											</div>
 										</div>
 									</div>

@@ -69,7 +69,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Designation">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Plan">
@@ -95,7 +95,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -122,7 +122,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -149,7 +149,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -176,7 +176,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -203,7 +203,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -230,7 +230,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -257,7 +257,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -283,34 +283,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
-								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
-							</td>
-							<td data-th="Invoice Number">
-								<button className="monthly">Monthly</button>
-							</td>
-							<td data-th="Invoice Date">
-								<p className="font-x-small social-link weight-medium">23.01.23</p>
-							</td>
-							<td data-th="Due Date " className="text-right ">
-								<button className="icon-btn">
-									<i className="fa-regular fa-eye"></i>
-								</button>
-								<button className="icon-btn">
-									<i className="fa-regular fa-message"></i>
-								</button>
-								<button className="icon-btn">
-									<i className="fa-solid fa-ellipsis"></i>
-								</button>
-							</td>
-						</tr>
-
-						<tr>
-							<td data-th="Supplier Code">
-								<p className="font-small weight-light social-link"> Lawyer Name</p>
-							</td>
-							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -337,7 +310,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -364,7 +337,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -391,7 +364,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -418,7 +391,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -445,7 +418,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -472,7 +445,7 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">
@@ -499,7 +472,34 @@ export default function reportCenter() {
 								<p className="font-small weight-light social-link"> Lawyer Name</p>
 							</td>
 							<td data-th="Supplier Name">
-								<p className="font-small weight-medium social-link">Legal consultant</p>
+								<p className="font-small weight-medium social-link">professional consultant</p>
+								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
+							</td>
+							<td data-th="Invoice Number">
+								<button className="monthly">Monthly</button>
+							</td>
+							<td data-th="Invoice Date">
+								<p className="font-x-small social-link weight-medium">23.01.23</p>
+							</td>
+							<td data-th="Due Date " className="text-right ">
+								<button className="icon-btn">
+									<i className="fa-regular fa-eye"></i>
+								</button>
+								<button className="icon-btn">
+									<i className="fa-regular fa-message"></i>
+								</button>
+								<button className="icon-btn">
+									<i className="fa-solid fa-ellipsis"></i>
+								</button>
+							</td>
+						</tr>
+
+						<tr>
+							<td data-th="Supplier Code">
+								<p className="font-small weight-light social-link"> Lawyer Name</p>
+							</td>
+							<td data-th="Supplier Name">
+								<p className="font-small weight-medium social-link">professional consultant</p>
 								<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 							</td>
 							<td data-th="Invoice Number">

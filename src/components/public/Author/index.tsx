@@ -27,7 +27,7 @@ export default function Author({ authors }: AuthorProps) {
                             <div className="author-left-content">
                                 <p className='top-text'>Meet our expert authors</p>
                                 <h1 className='heading mt-3'>Our Authors</h1>
-                                <h2 className='bottom-text mt-2'>Explore the diverse perspectives and expertise of our esteemed authors. Each brings a wealth of knowledge to our legal blog, providing insights and guidance on a variety of legal topics.</h2>
+                                <h2 className='bottom-text mt-2'>Explore the diverse perspectives and expertise of our esteemed authors. Each brings a wealth of knowledge to Our professional blog, providing insights and guidance on a variety of legal topics.</h2>
                             </div>
                         </div>
                         <div className="col-sm-5">

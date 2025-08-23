@@ -202,10 +202,10 @@ export default function AboutUs() {
 									<p>
 										Are you looking for a{' '}
 										<Link className="underlineClass" href="/">
-											legal consultant in Dubai{' '}
+											professional consultant in Usa{' '}
 										</Link>
 										to help you with your case? Professional Women United is the ideal place to find it. Our
-										legal advisors can give you the support you need to go through any type of legal
+										professional advisors can give you the support you need to go through any type of professional
 										trouble you may be having. Find the perfect professional with our help!
 									</p>
 									<Link href={'/find-a-professional'}>
@@ -407,7 +407,7 @@ export default function AboutUs() {
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-7 d-none d-lg-block">
-								<img src="/images/section -image.svg" alt="questions-part" />
+								<img src="/images/section-image.svg" alt="questions-part" />
 							</div>
 							<div className="col-lg-5 text-right">
 								<div className="still">

@@ -67,9 +67,10 @@ export default function ContactUs() {
 
 		if (!message) {
 			errors.message = t('errMessage');
-		} else if (/[^a-zA-Z]/.test(message)) {
-			errors.message = 'Message should only contain letters';
 		}
+		// else if (/[^a-zA-Z]/.test(message)) {
+		// 	errors.message = 'Message should only contain letters';
+		// }
 		return errors;
 	};
 
@@ -155,7 +156,7 @@ export default function ContactUs() {
 										maxLength={1000}
 										value={contactUsData.message}
 										placeholder={t('let_us_know')} />
-									<p className="mt-4 set-term-use">{t('terms_of_use')}</p>
+									{/* <p className="mt-4 set-term-use">{t('terms_of_use')}</p> */}
 									<div>
 										<button
 											type="submit"

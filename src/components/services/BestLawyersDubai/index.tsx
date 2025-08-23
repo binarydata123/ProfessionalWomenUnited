@@ -590,7 +590,7 @@ export default function BestLawyersDubai() {
 												help with Family Professional, corporate matters, or intellectual property
 												issues, our platform connects you with lawyers in Dubai who specialize
 												in your specific area of need. You can expect to receive comprehensive
-												support for your legal matters.
+												support for yOur professional matters.
 											</div>
 										</div>
 									</div>
@@ -645,7 +645,7 @@ export default function BestLawyersDubai() {
 												trustworthiness. When you hire a lawyer in Dubai through Professional Women United
 												in Dubai, you can rest assured that you're working with a legal
 												professional who prioritizes your interests and operates with utmost
-												integrity, giving you peace of mind throughout your legal proceedings.
+												integrity, giving you peace of mind throughout yOur professional proceedings.
 											</div>
 										</div>
 									</div>

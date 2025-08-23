@@ -5,13 +5,13 @@ import LegalIssuePage from '@/components/public/LegalIssuePage';
 
 export const metadata: Metadata = {
 	title: 'professional issues - Professional Women United',
-	description: 'Explore professional issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for your legal concerns.',
+	description: 'Explore professional issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for yOur professional concerns.',
 	alternates: {
 		canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/legal-issue`
 	},
 	openGraph: {
 		title: 'professional issues - Professional Women United',
-		description: 'Explore professional issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for your legal concerns.',
+		description: 'Explore professional issues on Professional Women United. Find information and resources on a variety of legal topics. Get guidance and support for yOur professional concerns.',
 		url: `${process.env.NEXT_PUBLIC_BASE_URL}/legal-issue`,
 		siteName: `${process.env.NEXT_APP_NAME}`,
 		images: [

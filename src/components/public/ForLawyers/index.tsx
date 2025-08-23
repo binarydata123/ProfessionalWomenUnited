@@ -159,7 +159,7 @@ export default function Page() {
 			<section className="why-join">
 				<div className="container">
 					<p className="font-x-small text-white weight-bold mb-2">WHY JOIN US?</p>
-					<h2 className="font-smaller weight-bold text-white mb-5">Grow your legal practice with ease.</h2>
+					<h2 className="font-smaller weight-bold text-white mb-5">Grow yOur professional practice with ease.</h2>
 					<div className="row mt-5">
 						<div className="col-lg-4 col-md-4">
 							<div className="box-acc">
@@ -273,7 +273,7 @@ export default function Page() {
 								<span className="green-dark">meet your needs</span>
 							</h2>
 							<p className="font-medium weight-medium text-sonic-silver mt-2">
-								Join our platform and grow your legal practice with our flexible pricing options.
+								Join our platform and grow yOur professional practice with our flexible pricing options.
 							</p>
 						</div>
 						<div className="col-lg-4" id="nav-tab" role="tablist">
@@ -672,7 +672,7 @@ export default function Page() {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-7 d-none d-lg-block">
-							<img src="/images/section -image.svg" alt=" Still have questions?" />
+							<img src="/images/section-image.svg" alt=" Still have questions?" />
 						</div>
 						<div className="col-lg-5 text-right">
 							<div className="still">

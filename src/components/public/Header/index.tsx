@@ -8,6 +8,9 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { getAllServices, updateLastSeen } from '../../../../lib/frontendapi';
 import AuthContext from '@/context/AuthContext';
 import { useTranslations } from 'next-intl';
+import { MdDashboard } from 'react-icons/md';
+import { IoMdSettings } from 'react-icons/io';
+import { TbHelpSquareFilled } from 'react-icons/tb';
 
 export default function Header({ locale }: any) {
 	const t = useTranslations('menupage');
@@ -197,12 +200,13 @@ export default function Header({ locale }: any) {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																			}
 																		})()}>
-																		<Image
+																		{/* <Image
 																			src="/images/left-menu-1.png"
 																			alt="left-menu-1"
 																			width={18}
 																			height={18}
-																		/>
+																		/> */}
+																		<MdDashboard color={'#c49073'} size={18} />
 																		&nbsp; {t('goToDashboard')}
 																	</Link>
 																</li>
@@ -218,24 +222,27 @@ export default function Header({ locale }: any) {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																			}
 																		})()}>
-																		<Image
+																		{/* <Image
 																			src="/images/left-menu-5.png"
 																			alt="left-menu-1"
 																			width={18}
 																			height={18}
-																		/>
+																		/> */}
+																		<IoMdSettings color={'#c49073'} size={18} />
 																		&nbsp; {t('settings')}
 																	</Link>
 																</li>
 
 																<li>
 																	<Link href="#" style={{ color: '#1F1F1F' }}>
-																		<Image
+																		{/* <Image
 																			src="/images/left-menu-6.png"
 																			alt="left-menu-6"
 																			width={18}
 																			height={18}
-																		/>
+																		/> */}
+																		<TbHelpSquareFilled color={'#c49073'} size={18} />{' '}
+
 																		&nbsp; {t('help')}
 																	</Link>
 																</li>
@@ -441,12 +448,14 @@ export default function Header({ locale }: any) {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																		}
 																	})()}>
-																	<Image
+																	{/* <Image
 																		src="/images/left-menu-1.png"
 																		alt="left-menu-1"
 																		width={18}
 																		height={18}
-																	/>
+																	/> */}
+																	<MdDashboard color={'#c49073'} size={18} />
+
 																	&nbsp; {t('goToDashboard')}
 																</Link>
 															</li>
@@ -462,24 +471,28 @@ export default function Header({ locale }: any) {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																		}
 																	})()}>
-																	<Image
+																	{/* <Image
 																		src="/images/left-menu-5.png"
 																		alt="left-menu-1"
 																		width={18}
 																		height={18}
-																	/>
+																	/> */}
+																	<IoMdSettings color={'#c49073'} size={18} />{' '}
+
 																	&nbsp; {t('settings')}
 																</Link>
 															</li>
 
 															<li>
 																<Link href="/contact-us">
-																	<Image
+																	{/* <Image
 																		src="/images/left-menu-6.png"
 																		alt="left-menu-6"
 																		width={18}
 																		height={18}
-																	/>
+																	/> */}
+																	<TbHelpSquareFilled color={'#c49073'} size={18} />{' '}
+
 																	&nbsp; {t('help')}
 																</Link>
 															</li>

@@ -530,7 +530,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                 <div className="container" >
                     <div className="needlawyer-text-firm" >
                         <h2 className="text-start Discover-lawyer" style={{ color: '#c49073' }} >
-                            {lawyers.length ? 'Our Legal Team' : ''}
+                            {lawyers.length ? 'Our professional Team' : ''}
                         </h2>
                     </div>
                     <div className="row mt-4">

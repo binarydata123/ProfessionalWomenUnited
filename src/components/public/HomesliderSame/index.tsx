@@ -58,7 +58,7 @@ export default function HomesliderSame() {
 									</div>
 									<h3 className="testimonial-title">Avi Hassan</h3>
 									<p className="description">
-										Legal Consultant <span>at</span> Company Name
+										professional consultant <span>at</span> Company Name
 									</p>
 									<p className="stong-text">
 										<span>
@@ -91,7 +91,7 @@ export default function HomesliderSame() {
 									</div>
 									<h3 className="testimonial-title">Avi Hassan</h3>
 									<p className="description">
-										Legal Consultant <span>at</span> Company Name
+										professional consultant <span>at</span> Company Name
 									</p>
 									<p className="stong-text">
 										<span>
@@ -124,7 +124,7 @@ export default function HomesliderSame() {
 									</div>
 									<h3 className="testimonial-title">Avi Hassan</h3>
 									<p className="description">
-										Legal Consultant <span>at</span> Company Name
+										professional consultant <span>at</span> Company Name
 									</p>
 									<p className="stong-text">
 										<span>
@@ -157,7 +157,7 @@ export default function HomesliderSame() {
 									</div>
 									<h3 className="testimonial-title">Avi Hassan</h3>
 									<p className="description">
-										Legal Consultant <span>at</span> Company Name
+										professional consultant <span>at</span> Company Name
 									</p>
 									<p className="stong-text">
 										<span>
@@ -190,7 +190,7 @@ export default function HomesliderSame() {
 									</div>
 									<h3 className="testimonial-title">Avi Hassan</h3>
 									<p className="description">
-										Legal Consultant <span>at</span> Company Name
+										professional consultant <span>at</span> Company Name
 									</p>
 									<p className="stong-text">
 										<span>

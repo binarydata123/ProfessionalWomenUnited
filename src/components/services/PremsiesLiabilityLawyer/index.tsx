@@ -607,7 +607,7 @@ export default function PremsiesLiabilityLawyer() {
 												exceed our clients' expectations by providing responsive communication,
 												transparent guidance, and aggressive advocacy. Our commitment to client
 												satisfaction has earned us numerous positive reviews and referrals,
-												which show our client&apos;s trust and confidence in our legal team.
+												which show our client&apos;s trust and confidence in Our professional team.
 											</div>
 										</div>
 									</div> */}

@@ -158,7 +158,7 @@ export default function approvals() {
 
 		Swal.fire({
 			title: 'Are you sure?',
-			text: 'To change the lawyer status',
+			text: 'To change the professional status',
 			icon: 'warning',
 			showCancelButton: true,
 			confirmButtonColor: '#02142d',

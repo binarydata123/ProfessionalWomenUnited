@@ -74,7 +74,7 @@ export default function LabourLawyer() {
 										{showFullText ? (
 											<>{t('A_labour_lawyer_specialises')}</>
 										) : (
-											'A labour lawyer specializes in matters related to employment law, representing both employees and employers in matters such as contracts, disputes, and workplace rights. At Professional Women United, you’re able to connect with experienced labour lawyers who can provide comprehensive legal support tailored to your needs. They offer expert guidance on employment agreements, termination disputes, and regulatory compliance. The attorneys on our platform make sure your legal rights and interests are protected in negotiations, mediation, and litigation.'
+											'A labour lawyer specializes in matters related to employment law, representing both employees and employers in matters such as contracts, disputes, and workplace rights. At Professional Women United, you’re able to connect with experienced labour lawyers who can provide comprehensive legal support tailored to your needs. They offer expert guidance on employment agreements, termination disputes, and regulatory compliance. The attorneys on our platform make sure yOur professional rights and interests are protected in negotiations, mediation, and litigation.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">

@@ -820,7 +820,7 @@ export default function BicycleAccidentLawyerDubai() {
 										</div>
 										<div className="text-start Discover-lawyer" />A bicycle accident lawyer can
 										provide invaluable expertise and guidance tailored to your specific case. By
-										specializing in bicycle accident cases, our legal team in Dubai offers
+										specializing in bicycle accident cases, Our professional team in Dubai offers
 										comprehensive advice on navigating the legal process and protecting your rights.
 										Our bicycle accident lawyers analyze the circumstances of your accident, assess
 										liability, and provide strategic recommendations to pursue maximum compensation.
@@ -966,7 +966,7 @@ export default function BicycleAccidentLawyerDubai() {
 													attention for any injuries, document the accident scene, gather
 													contact information from witnesses, and report the accident to the
 													authorities. You should consult a bicycle accident lawyer to
-													understand your legal rights and options.
+													understand yOur professional rights and options.
 												</div>
 											</div>
 										</div>
