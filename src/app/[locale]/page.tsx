@@ -280,8 +280,9 @@ export default async function Page() {
 									)} */}
 									<ProfessionalCard />
 									<div className="text-end all-btn">
-										{/* <Link href="/find-a-professional"> */}
-										<button>{t('view_all')}</button>
+										<Link href="/find-a-professional">
+											<button>{t('view_all')}</button>
+										</Link>
 									</div>
 								</div>
 							</div>

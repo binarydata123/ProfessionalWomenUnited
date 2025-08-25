@@ -2,6 +2,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getAllCountries } from '../../../lib/frontendapi';
 
 const professionals = [
   'Gynecologist',
@@ -15,61 +16,93 @@ const professionals = [
   'Accountant'
 ];
 
-const topUSCities = [
-  'New York, NY', 'Los Angeles, CA', 'Chicago, IL', 'Houston, TX', 'Phoenix, AZ',
-  'Philadelphia, PA', 'San Antonio, TX', 'San Diego, CA', 'Dallas, TX', 'San Jose, CA',
-  'Austin, TX', 'Jacksonville, FL', 'Fort Worth, TX', 'Columbus, OH', 'San Francisco, CA',
-  'Charlotte, NC', 'Indianapolis, IN', 'Seattle, WA', 'Denver, CO', 'Washington, DC',
-  'Boston, MA', 'El Paso, TX', 'Detroit, MI', 'Nashville, TN', 'Portland, OR',
-  'Memphis, TN', 'Oklahoma City, OK', 'Las Vegas, NV', 'Louisville, KY', 'Baltimore, MD',
-  'Milwaukee, WI', 'Albuquerque, NM', 'Tucson, AZ', 'Fresno, CA', 'Sacramento, CA',
-  'Kansas City, MO', 'Long Beach, CA', 'Mesa, AZ', 'Atlanta, GA', 'Colorado Springs, CO',
-  'Raleigh, NC', 'Omaha, NE', 'Miami, FL', 'Oakland, CA', 'Minneapolis, MN',
-  'Tulsa, OK', 'Cleveland, OH', 'Wichita, KS', 'Arlington, TX', 'New Orleans, LA',
-  'Bakersfield, CA', 'Tampa, FL', 'Honolulu, HI', 'Aurora, CO', 'Anaheim, CA',
-  'Santa Ana, CA', 'St. Louis, MO', 'Riverside, CA', 'Corpus Christi, TX', 'Lexington, KY',
-  'Pittsburgh, PA', 'Anchorage, AK'
-];
+
 
 
 const DirectoryTabs = () => {
   const [currentTab, setCurrentTab] = useState<'professionals' | 'cities'>('professionals');
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredCities, setFilteredCities] = useState(topUSCities);
+  // const [filteredCities, setFilteredCities] = useState(topUSCities);
   const [filteredProfessionals, setFilteredProfessionals] = useState(professionals);
+  const [filteredCities, setFilteredCities] = useState<string[]>([]);
+  const [allCities, setAllCities] = useState<string[]>([]);
+  const [loadingCities, setLoadingCities] = useState(false);
+
+
+
+
+  useEffect(() => {
+    if (currentTab === 'cities') {
+      fetchCities();
+    }
+  }, [currentTab]);
+
+  const fetchCities = async () => {
+    setLoadingCities(true);
+    try {
+      const res: any = await getAllCountries(); // API call
+      if (res.status && res.data) {
+        // API returns data array
+        const cityNames = res.data.slice(0, 200).map((c: any) => `${c.name}`);
+        setAllCities(cityNames);
+        setFilteredCities(cityNames);
+      } else {
+        setAllCities([]);
+        setFilteredCities([]);
+      }
+    } catch (err) {
+      console.error('Cities API error', err);
+      setAllCities([]);
+      setFilteredCities([]);
+    } finally {
+      setLoadingCities(false);
+    }
+  };
+
 
   useEffect(() => {
     if (currentTab === 'professionals') {
-      const filtered = professionals.filter(professional =>
-        professional.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = professionals.filter(p =>
+        p.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredProfessionals(filtered);
     } else {
-      const filtered = topUSCities.filter(city =>
-        city.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = allCities.filter(c =>
+        c.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredCities(filtered);
     }
-  }, [searchTerm, currentTab]);
+  }, [searchTerm, currentTab, allCities]);
 
   return (
     <section className="directory-container py-5 bg-white"> {/* Added bg-white */}
       <div className="container">
         {/* Header Section */}
-        <div className="text-center mb-5">
-          <h1 className="display-4 fw-bold mb-3 text-[#1B3067]" style={{ fontSize: '48px' }}> Professional <span className="highlight" style={{ color: '#BE8363' }}>Directory</span></h1>
-          <p className="lead text-gray-600">
+        <div className="text-center mb-5 px-3">
+          <h1
+            className="fw-bold mb-3 text-[#1B3067]"
+            style={{ fontSize: 'clamp(28px, 5vw, 48px)' }} // responsive font size
+          >
+            Professional <span className="highlight" style={{ color: '#BE8363' }}>Directory</span>
+          </h1>
+          <p className="lead text-gray-600 text-sm md:text-base">
             Find professionals and explore cities across the United States
           </p>
         </div>
 
         {/* Tab Navigation */}
-        <div className="d-flex justify-content-center"> {/* Add this wrapper div */}
-          <ul className="nav nav-tabs mb-4" id="directoryTabs" role="tablist">
+        <div className="d-flex justify-content-center">
+          <ul
+            className="nav nav-tabs mb-4 d-flex justify-content-center flex-wrap gap-2 w-100"
+            id="directoryTabs"
+            role="tablist"
+            style={{ maxWidth: "400px" }} // ✅ keeps it centered & not stretched full width
+          >
             <li className="nav-item" role="presentation">
               <button
                 className={`nav-link ${currentTab === 'professionals' ? 'active' : ''}`}
                 onClick={() => setCurrentTab('professionals')}
+                style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
               >
                 <i className="fas fa-user me-2"></i>Search by Professionals
               </button>
@@ -78,12 +111,14 @@ const DirectoryTabs = () => {
               <button
                 className={`nav-link ${currentTab === 'cities' ? 'active' : ''}`}
                 onClick={() => setCurrentTab('cities')}
+                style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
               >
                 <i className="fas fa-map-marker-alt me-2"></i>Search by USA Cities
               </button>
             </li>
           </ul>
         </div>
+
 
         {/* Search Bar */}
         <div className="search-container mb-5">
@@ -103,10 +138,7 @@ const DirectoryTabs = () => {
         <div className="tab-content">
           {/* Professionals Tab */}
           <div className={`tab-pane ${currentTab === 'professionals' ? 'show active' : 'fade'}`}>
-            {/* <div className="d-flex align-items-center mb-4">
-              <i className="fas fa-users me-2 text-[#BE8363]" style={{ fontSize: '1.5rem' }}></i>
-              <h2 className="section-title mb-0">Professional Services</h2>
-            </div> */}
+
 
             {filteredProfessionals.length === 0 ? (
               <div className="no-results">
@@ -137,9 +169,14 @@ const DirectoryTabs = () => {
               <h2 className="section-title mb-0">Top US Cities</h2>
               <span className="badge-count">{filteredCities.length} cities</span>
             </div>
-
-            {filteredCities.length === 0 ? (
-              <div className="no-results">
+            {loadingCities ? (
+              <div className="text-center py-5">
+                <div className="spinner-border text-primary" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            ) : filteredCities.length === 0 ? (
+              <div className="no-results text-center">
                 <i className="fas fa-search mb-3 text-gray-300" style={{ fontSize: '3rem' }}></i>
                 <p className="text-gray-500">No cities found matching your search.</p>
               </div>
@@ -161,6 +198,30 @@ const DirectoryTabs = () => {
                 ))}
               </div>
             )}
+
+            {/* {filteredCities.length === 0 ? (
+              <div className="no-results">
+                <i className="fas fa-search mb-3 text-gray-300" style={{ fontSize: '3rem' }}></i>
+                <p className="text-gray-500">No cities found matching your search.</p>
+              </div>
+            ) : (
+              <div className="row g-3">
+                {filteredCities.map((city, index) => (
+                  <div key={index} className="col-md-6 col-lg-3">
+                    <div className="city-card">
+                      <div className="d-flex align-items-center">
+                        <div className="city-icon">
+                          <i className="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div>
+                          <h6 className="text-[#1B3067] font-semibold m-0">{city}</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )} */}
           </div>
         </div>
       </div>

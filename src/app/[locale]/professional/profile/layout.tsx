@@ -51,7 +51,7 @@ export default function ProfileLayout({ children }: { children: React.ReactNode 
 													<Link
 														className="dropdown-item"
 														href="/professional/profile/edit#practice-area">
-														Practice Area
+														Profession
 													</Link>
 												</li>
 												<li>

@@ -226,7 +226,7 @@ export default function Page() {
 		// 	newErrors.jurisdiction = 'Jurisdiction is required';
 		// }
 		if (!formData.primary_practice_area) {
-			newErrors.primary_practice_area = 'Practice area is required';
+			newErrors.primary_practice_area = 'Profession is required';
 		}
 
 		if (isFreeConsultationChecked) {
@@ -328,7 +328,7 @@ export default function Page() {
 				practice_areas: newPracticeAreas
 			});
 		} else {
-			toast.error('Maximum 3 practice area can be added.');
+			toast.error('Maximum 3 Profession can be added.');
 		}
 	}
 
@@ -353,7 +353,7 @@ export default function Page() {
 	const practiceAreaInputs = formData.practice_areas.map((area, index) => (
 		<div key={index}>
 			<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 d-flex justify-content-between">
-				Practice Area {index + 1}
+				Profession {index + 1}
 				<span className="remove-spcl log-red" onClick={() => removePracticeArea(index)}>
 					Remove
 				</span>
@@ -364,7 +364,7 @@ export default function Page() {
 				name=""
 				onChange={e => handlePracticeAreaChange(index, e.target.value)}
 			>
-				<option value="">Select Practice Area</option>
+				<option value="">Select Profession</option>
 				{allservices.map((services: any) => (
 					<option key={services.id} value={services.id}>
 						{services.name}
@@ -772,7 +772,7 @@ export default function Page() {
 						<div className="col-md-6 col-lg-12 col-xl-6">
 							<div className="profile-picture">
 								<h5 className="font-x-large22 weight-bold green-dark" id="practice-area">
-									Practice Area{' '}
+									Profession{' '}
 								</h5>
 								<p className="font-small  weight-light text-sonic-silver">
 									Tell us about your professional expertise
@@ -797,7 +797,7 @@ export default function Page() {
 									<small className="error-message text-danger d-block">{errors.jurisdiction}</small>
 								)} */}
 								<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
-									Primary Practice Area
+									Primary Profession
 								</label>
 								<select
 									className="form-fild  w-100"
@@ -809,7 +809,7 @@ export default function Page() {
 										})
 									}
 								>
-									<option value="">Select Practice Area</option>
+									<option value="">Select Profession</option>
 									{allservices.map((services: any) => (
 										<option key={services.id} value={services.id}>
 											{services.name}
@@ -829,7 +829,7 @@ export default function Page() {
 										onClick={addPracticeArea}
 										className="font-small weight-semi-bold green-medium-2 "
 									>
-										<i className="fa-solid fa-square-plus"></i> Add Practice Area{' '}
+										<i className="fa-solid fa-square-plus"></i> Add Profession{' '}
 									</a>
 								</p>
 
@@ -1066,7 +1066,7 @@ export default function Page() {
 									onChange={e => setFormData({ ...formData, plan: e.target.value })}
 								>
 									<option value="">Choose Plan Type</option>
-									<option value={'monthly'}>Monthly Plan</option>
+									<option value={'one-time'}>Monthly Plan</option>
 									<option value={'quarterly'}>Quarterly Plan</option>
 								</select>
 							</div>

@@ -24,16 +24,16 @@ export default function Footer() {
 									Find A Professional
 								</Link>
 							</li>
-							<li>
-								<Link href="/legal-services/banking" target="blank">
+							{/* <li>
+								<Link href="/find-a-professional" target="blank">
 									professional services
 								</Link>
 							</li>
 							<li>
-								<Link href="/legal-forum" target="blank">
+								<Link href="/find-a-professionalm" target="blank">
 									Professional Forum
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<Link href="/blogs" target="blank">
 									Insights

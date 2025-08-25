@@ -282,8 +282,8 @@ export default function Page({ filterlawyer }: Props) {
 					<ul>
 						<AccordionUI flush={true}>
 							<li>
-								<AccordionItem title="Practice Area" Key={'1'}>
-									<FormInput name="search" placeholder={'Search practice area'} />
+								<AccordionItem title="Profession" Key={'1'}>
+									<FormInput name="search" placeholder={'Search Profession'} />
 									<ul className="service-list-group mt-1">
 										<li
 											className={`d-flex justify-content-between filter-items ${filterData.p_service_name === null && 'active'
@@ -364,7 +364,7 @@ export default function Page({ filterlawyer }: Props) {
 									</ul>
 								</AccordionItem>
 							</li>
-							<li>
+							{/* <li>
 								<AccordionItem title="Years of Experience" Key={'2'}>
 									<ul className="service-list-group mt-1">
 										{experience &&
@@ -392,7 +392,7 @@ export default function Page({ filterlawyer }: Props) {
 											))}
 									</ul>
 								</AccordionItem>
-							</li>
+							</li> */}
 							{/* <li>
 								<AccordionItem title="Jurisdiction" Key={'3'}>
 									<ul className="service-list-group mt-1">
@@ -423,7 +423,7 @@ export default function Page({ filterlawyer }: Props) {
 									</ul>
 								</AccordionItem>
 							</li> */}
-							<li>
+							{/* <li>
 								<AccordionItem title="Gender" Key={'4'}>
 									<ul className="service-list-group mt-2">
 										<li
@@ -456,7 +456,7 @@ export default function Page({ filterlawyer }: Props) {
 										</li>
 									</ul>
 								</AccordionItem>
-							</li>
+							</li> */}
 						</AccordionUI>
 					</ul>
 

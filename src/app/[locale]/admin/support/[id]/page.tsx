@@ -99,16 +99,16 @@ export default function Page({ params }: { params: { id: string } }) {
 			<div className="row">
 				<div className="col-sm-7">
 					<button className="btn-tertiary left-icon mt-3 mb-3">
-						<Link href={`/admin/support`}>
+						<Link href={`/admin/support`} style={{ color: '#000' }}>
 							{' '}
-							<i className="fa-solid fa-arrow-left-long"></i> Back
+							<i className="fa-solid fa-arrow-left-long" style={{ color: '#000' }}></i> Back
 						</Link>
 					</button>
 
 					<div className="form-fild-des">
 						<div className="row mt-2">
 							<div className="col-sm-12">
-								<p className="text-sonic-silver weight-medium font-small mb-2">I’m a*</p>
+								<p className="text-sonic-silver weight-medium font-small mb-2" >I’m a*</p>
 							</div>
 							<div className="col-lg-2 col-md-3">
 								<label className="social-link font-small weight-medium w-100 mt-2">

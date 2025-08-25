@@ -171,7 +171,7 @@ export default function Create() {
 			newErrors.author_id = 'Please select author';
 		}
 		if (!formData.service_id) {
-			newErrors.service_id = 'Service is required';
+			newErrors.service_id = 'Profession is required';
 		}
 
 		if (!formData.slug) {

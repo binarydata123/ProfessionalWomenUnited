@@ -162,7 +162,7 @@ export default function Page({ params }: { params: { id: string } }) {
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
 		if (!formData.service_id) {
-			newErrors.service_id = 'Service is required';
+			newErrors.service_id = 'Profession is required';
 		}
 		setErrors(newErrors);
 		return Object.keys(newErrors).length === 0;
@@ -521,7 +521,7 @@ export default function Page({ params }: { params: { id: string } }) {
 				<div className="row mt-3">
 					<div className="col-lg-6">
 						<h4 className="social-link manrope weight-bold weight-medium pb-4">Tags</h4>
-						<label className="social-link font-small weight-medium w-100 mt-2 pb-2">Legal Service</label>
+						<label className="social-link font-small weight-medium w-100 mt-2 pb-2">Professional Service</label>
 
 						<select
 							className="form-fild  w-100"

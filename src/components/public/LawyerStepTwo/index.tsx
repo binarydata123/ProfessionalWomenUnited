@@ -187,7 +187,7 @@ export default function LawyerStepTwo() {
 		// 	newErrors.jurisdiction_id = 'Jurisdiction is required';
 		// }
 		if (!formData.service_id) {
-			newErrors.service_id = 'Service is required';
+			newErrors.service_id = 'Profession is required';
 		}
 		if (!formData.phone_number) {
 			newErrors.phone_number = 'Phone number is required';
@@ -469,7 +469,7 @@ export default function LawyerStepTwo() {
 									<div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
-												Practice Area*
+												Profession
 											</label>
 											<div className="select-wrapper">
 												<select
@@ -482,7 +482,7 @@ export default function LawyerStepTwo() {
 														})
 													}
 												>
-													<option value="">Select Practice Area</option>
+													<option value="">Select Profession</option>
 													{allservices.map((services: any) => (
 														<option key={services.id} value={services.id}>
 															{services.name}
@@ -507,6 +507,8 @@ export default function LawyerStepTwo() {
 												inputClass="form-control"
 												value={formData.phone_number}
 												country={"us"}
+												// onlyCountries={['us']}
+												//  countryCodeEditable={false} 
 												onChange={value => setFormData({ ...formData, phone_number: value })}
 											/>
 											{errors.phone_number && (

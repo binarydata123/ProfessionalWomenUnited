@@ -41,7 +41,7 @@ export default function LegalIssuePage() {
             return;
         }
         if (!legalIssueService) {
-            seterrors({ service: 'Service is required.' });
+            seterrors({ service: 'Profession is required.' });
             return;
         }
         window.sessionStorage.setItem('legal_issue', legalIssue);

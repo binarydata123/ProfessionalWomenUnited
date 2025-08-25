@@ -17,7 +17,7 @@ button.modal-ok-button.text-white.mt-2.mx-2 {
 	line-height: 26px;
 	letter-spacing: 0.02em;
 	text-align: center;
-	color: #BE8363 !important;
+	color: #be8363 !important;
 	border: none !important;
 }
 
@@ -70,5 +70,5 @@ div#contained-modal-title-vcenter {
 }
 
 h4.green-med-pop {
-	color: #c49073 !important;
+	color: #ffff !important;
 }

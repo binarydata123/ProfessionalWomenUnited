@@ -227,7 +227,7 @@ export default function Page({ params }: { params: { id: string } }) {
 			newErrors.author_id = 'Author is required';
 		}
 		if (!formData.service_id) {
-			newErrors.service_id = 'Service is required';
+			newErrors.service_id = 'Profession is required';
 		}
 
 		// if (!formData.description || formData.description === "<p><br></p>") {

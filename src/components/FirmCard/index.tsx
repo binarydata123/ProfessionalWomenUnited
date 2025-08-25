@@ -115,8 +115,8 @@ export default function FirmCard({
                 </span> */}
                 <span className="btn-family-more">
                     {firms?.services && (
-                        <Link href={`/legal-services/${firms?.service_slug?.split(',')[0]}`}>
-                            <button> {firms?.services?.split(',')[0]} Law</button>
+                        <Link href='/find-a-professional'>
+                            <button> {firms?.services?.split(',')[0]}</button>
                         </Link>
                     )}
                 </span>

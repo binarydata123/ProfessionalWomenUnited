@@ -147,7 +147,7 @@ button.navbar-toggler span {
 .navbar-toggler {
 	padding: 0;
 	border: none;
-	background-color: var(--bg-transperent);
+	background-color: #c49073;
 }
 
 .navbar-toggler.collapsed:focus {
@@ -409,7 +409,7 @@ a.pop-head-set:hover {
 		padding-left: 10px;
 	}
 	.navbar-nav li.nav-item:nth-child(2) {
-		padding-left: 50px;
+		padding-left: 10px;
 	}
 	.navbar-nav li.nav-item:nth-child(3) {
 		padding-left: 10px;

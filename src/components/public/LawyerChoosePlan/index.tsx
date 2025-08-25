@@ -25,7 +25,7 @@ interface MembershipPlan {
 export default function LawyerChoosePlan() {
     const router = useRouter();
     const { user } = useContext(AuthContext)
-    const [isMonthly, setIsMonthly] = useState('monthly');
+    const [isMonthly, setIsMonthly] = useState('one-time');
     const [membershipPlan, setMembershipPlan] = useState<MembershipPlan | null>(null);
     const [selectedPlan, setSelectedPlan] = useState('individuals');
 
@@ -61,7 +61,7 @@ export default function LawyerChoosePlan() {
         if (user) {
             let tempPlanAmount;
 
-            if (isMonthly === 'monthly') {
+            if (isMonthly === 'one-time') {
                 tempPlanAmount = membershipPlan?.monthly_amount;
             } else {
                 tempPlanAmount = membershipPlan?.yearly_amount;
@@ -82,7 +82,7 @@ export default function LawyerChoosePlan() {
     const handleMonthlyPlanToggle = () => {
         const newPlan = plan === 'yes' ? 'no' : 'yes';
         setPlan(newPlan);
-        setIsMonthly(newPlan === 'yes' ? 'yearly' : 'monthly');
+        setIsMonthly(newPlan === 'yes' ? 'yearly' : 'one-time');
     };
 
 
@@ -103,23 +103,8 @@ export default function LawyerChoosePlan() {
                             </h1>
                             <p className="mb-3 mt-2">
                                 Choose a plan that works for you.
-                                {/* We also offer FREE 1 month trial to Professional experts on our{' '}
-                                <br /> platform. */}
                             </p>
-                            {/* <div className="btn-group-893168">
-                                <button
-                                    className={`weight-semi-bold font-small common_plan mx-2 ${selectedPlan === 'individuals' ? 'active_plan' : 'inactive_plan'}`}
-                                    onClick={() => handlePlanSelection('individuals')}
-                                >
-                                    For Individuals
-                                </button>
-                                <button
-                                    className={`weight-semi-bold font-small common_plan mx-2 ${selectedPlan === 'firms' ? 'active_plan' : 'inactive_plan'}`}
-                                    onClick={() => handlePlanSelection('firms')}
-                                >
-                                    For Firms
-                                </button>
-                            </div> */}
+
                         </div>
                     </div>
                     {selectedPlan === 'individuals' && (
@@ -135,12 +120,11 @@ export default function LawyerChoosePlan() {
                                                 height={50}
                                             />
                                             <h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-                                                {/* {isMonthly == 'monthly' ? 'Solo Professional Plan' : ' Solo Professional Plan'} */}
                                                 Solo Plan
                                             </h5>
                                         </div>
                                         <div className="col-sm-6 text-right tab-left">
-                                            {isMonthly == 'monthly' ? (
+                                            {isMonthly == 'one-time' ? (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
                                                     USD{' '}
                                                     <span className="text-xx-50">
@@ -161,7 +145,7 @@ export default function LawyerChoosePlan() {
                                             )}
                                         </div>
                                     </div>
-                                    <div className='row'>
+                                    {/* <div className='row'>
                                         <div className='col-md-6 d-flex'>
 
                                         </div>
@@ -185,10 +169,10 @@ export default function LawyerChoosePlan() {
                                             </p>
                                         </div>
 
-                                    </div>
+                                    </div> */}
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'monthly' &&
+                                        {isMonthly == 'one-time' &&
                                             membershipPlan &&
                                             membershipPlan.monthly_desc.split(',').map((desc, index) => (
                                                 <p key={index} className="font-small weight-medium social-link mt-3">
@@ -212,11 +196,11 @@ export default function LawyerChoosePlan() {
                                         >
                                             <span className="">
                                                 {' '}
-                                                {/* {isMonthly == 'monthly'
+                                                {/* {isMonthly == 'one-time'
                                                     ? ' Start 1 Month Free Trial'
                                                     : `Pay ${membershipPlan && membershipPlan.yearly_amount}`} */}
                                                 {user ? (
-                                                    isMonthly === 'monthly'
+                                                    isMonthly === 'one-time'
                                                         ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
                                                         : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`
                                                 ) : (
@@ -263,7 +247,7 @@ export default function LawyerChoosePlan() {
                                     </div>
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'monthly' &&
+                                        {isMonthly == 'one-time' &&
                                             membershipPlan &&
                                             membershipPlan.monthly_desc.split(',').map((desc, index) => (
                                                 <p key={index} className="font-small weight-medium social-link mt-3">

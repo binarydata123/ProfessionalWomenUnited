@@ -279,8 +279,8 @@ export default function LegalIssueLawyers({
 
 				<div className="btn-family-more">
 					{lawyer?.service_name && (
-						<Link href={`/legal-services/${lawyer?.service_slug}`}>
-							<button> {lawyer?.service_name.split(',')[0]} Law</button>
+						<Link href='/find-a-professional'>
+							<button> {lawyer?.service_name.split(',')[0]}</button>
 						</Link>
 					)}
 					<span className="view-more-btn" onClick={() => handleSingleLawyerDetails(lawyer.id)}>

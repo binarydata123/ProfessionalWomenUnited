@@ -51,7 +51,7 @@ export default function Blog({ blog }: Props) {
 					/>
 				)}
 			</Link>
-			<Link href={`/legal-services/banking`}>
+			<Link href='/find-a-professional'>
 				<span className="law-btn">{blog?.service_name || blog?.services?.name || 'Women'} Profession</span>
 			</Link>
 			<Link href={`/blogs/${blog.slug}`}>

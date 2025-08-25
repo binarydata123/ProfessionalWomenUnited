@@ -333,10 +333,10 @@ export default function AboutUs() {
 										>
 											<div className="accordion-body border-0">
 												Usually, clients select the professional they want according to the{' '}
-												<Link className="underlineClass" href="/legal-services/banking">
+												<Link className="underlineClass" href="/find-a-professional">
 													professional services
 												</Link>{' '}
-												they need, their location, language, practice area, and other
+												they need, their location, language, Profession, and other
 												characteristics.
 											</div>
 										</div>

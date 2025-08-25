@@ -124,7 +124,7 @@ export default function Page() {
 				service: newPracticeAreas
 			});
 		} else {
-			toast.error('Maximum 3 practice area can be added.');
+			toast.error('Maximum 3 Profession can be added.');
 		}
 	}
 
@@ -139,7 +139,7 @@ export default function Page() {
 	const practiceAreaInputs = formData.service.map((area, index) => (
 		<div key={index}>
 			<label className="font-small weight-medium text-sonic-silver w-100 mt-4 d-flex justify-content-between">
-				Practice Area {index + 1}
+				Profession {index + 1}
 				<span className="remove-spcl log-red" onClick={() => removePracticeArea(index)}>
 					Remove
 				</span>
@@ -148,7 +148,7 @@ export default function Page() {
 				className="form-fild w-100"
 				value={area} // Set value based on formData.service at current index
 				onChange={e => handlePracticeAreaChange(index, e.target.value)}>
-				<option value="">Select Practice Area</option>
+				<option value="">Select Profession</option>
 				{allservices.map((services: any) => (
 					<option key={services.id} value={services.id}>
 						{services.name}
@@ -514,7 +514,7 @@ export default function Page() {
 						<div className="row mt-2">
 							<div className="col-sm-8">
 								<label className="font-small  weight-medium text-sonic-silver w-100 mb-2">
-									Primary Practice Area
+									Primary Profession
 								</label>
 							</div>
 						</div>
@@ -527,7 +527,7 @@ export default function Page() {
 									service_id: [e.target.value]
 								})
 							}>
-							<option value="">Select Practice Area</option>
+							<option value="">Select Profession</option>
 							{allservices.map((services: any) => (
 								<option key={services.id} value={services.id}>
 									{services.name}
@@ -541,7 +541,7 @@ export default function Page() {
 								href="#"
 								onClick={addPracticeArea}
 								className="font-small weight-semi-bold green-medium-2 ">
-								<i className="fa-solid fa-square-plus"></i> Add Practice Area{' '}
+								<i className="fa-solid fa-square-plus"></i> Add Profession{' '}
 							</a>
 						</p>
 

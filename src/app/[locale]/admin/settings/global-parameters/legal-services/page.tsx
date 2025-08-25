@@ -335,7 +335,7 @@ export default function lawyers() {
 				>
 					{(rowData, index) => (
 						<tr key={index}>
-							<td data-th="Legal Service">
+							<td data-th="Professional Service">
 								<p className="font-small weight-light social-link text-capitalize" title="View Profile">
 									{rowData.name && rowData.name.length > 20
 										? rowData.name.substring(0, 20) + '...'

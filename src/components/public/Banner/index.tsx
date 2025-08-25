@@ -10,27 +10,7 @@ export default function Banner() {
 
 	return (
 		<div className='bg-color-blue'>
-			{/* <section id="banner-section" className="banner-wrapper">
-				<div className="container">
-					<div className="row">
-						<div className="col-md-8">
-							<div className="banner-text-left">
-								<h1 className="rtlHead">
-									Find Top Women Professionals Nationwide
-								</h1>
-								<p className="rtlPera">
-								Connect with award-winning women professionals through our platform and find the top-rated experts you need across the United States.
-								</p>
-							</div>
-						</div>
-						<div className="col-md-4">
-						
-						</div>
-					</div>
 
-				
-				</div>
-			</section> */}
 			<section className="hero-banner">
 				<div className="overlay"></div>
 				<div className="container top-ban">

@@ -104,7 +104,7 @@ export default function Checkout() {
                                     text:
                                         'Your payment of amount ' +
                                         plan_amount +
-                                        ' USD for yearly plan has been succesfuly done',
+                                        ' USD for registration has been successfully completed.',
                                     showConfirmButton: true,
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {

@@ -202,8 +202,9 @@ export default function lawyers() {
 							onChange={e => handleChange('plan', e.target.value, user_id)}
 						>
 							<option value={''}>Select Plan</option>
-							<option value={'monthly'}>Monthly</option>
-							<option value={'Gold plan (yearly)'}>Yearly</option>
+							<option value={'one-time'}>One Time</option>
+							{/* <option value={'monthly'}>Monthly</option>
+							<option value={'Gold plan (yearly)'}>Yearly</option> */}
 							<option value={'Not purchased'}>Not Purchased</option>
 						</select>
 					</div>
