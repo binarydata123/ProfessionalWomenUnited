@@ -32,7 +32,7 @@ interface Props {
 	slug?: string;
 }
 
-export default function SingleLawyer({ slug = '' }: Props) {
+export default function SingleProfession({ slug = '' }: Props) {
 	const { user } = useContext(AuthContext)
 	const [isSticky, setIsSticky] = useState(false);
 	const [loginUser, setloginUser]: any = useState([]);

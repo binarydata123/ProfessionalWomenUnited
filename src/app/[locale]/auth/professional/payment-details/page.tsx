@@ -67,7 +67,7 @@ export default function stepTwo() {
 								{plan_type == 'monthly'
 									// ? 'Start your FREE 1 month trial on our platform.'
 									? ''
-									: 'Start your yearly plan on our platform.'}
+									: 'Start your plan on our platform.'}
 							</p>
 							<div className="payment-detail">
 								<h6>Payment Due</h6>

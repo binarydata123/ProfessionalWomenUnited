@@ -42,8 +42,8 @@ export default function Dashboard() {
 	const itemsPerPage = 10;
 	const startIndex = (currentPage - 1) * itemsPerPage;
 	const endIndex = startIndex + itemsPerPage;
-	const currentInquires = allinquires.slice(startIndex, endIndex);
-	const totalPages = Math.ceil(allinquires.length / itemsPerPage);
+	const currentInquires = allinquires?.slice(startIndex, endIndex);
+	const totalPages = Math.ceil(allinquires?.length / itemsPerPage);
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);
 	};
@@ -74,7 +74,7 @@ export default function Dashboard() {
 
 	useEffect(() => {
 		const defaultSaveMessages: Record<number, boolean> = {};
-		allinquires.forEach((inquiry: any) => {
+		allinquires?.forEach((inquiry: any) => {
 			defaultSaveMessages[inquiry.inquiry_id] = inquiry.inquiry_saved === 1;
 		});
 
@@ -222,7 +222,7 @@ export default function Dashboard() {
 								<ul className="pb-2 pb-lg-0">
 									<li className={`${showInboxMessage ? 'active' : ''}`}>
 										<Link onClick={e => toggleMessages('inbox')} href="">
-											Inbox ({allinquires.length})
+											Inbox ({allinquires?.length})
 										</Link>
 									</li>
 									<li className={`${!showInboxMessage ? 'active' : ''}`}>
@@ -237,8 +237,8 @@ export default function Dashboard() {
 				</div>
 				{showInboxMessage ? (
 					<div>
-						{currentInquires.length > 0 ? (
-							currentInquires.map((inquiry: any, index: any) => (
+						{currentInquires?.length > 0 ? (
+							currentInquires?.map((inquiry: any, index: any) => (
 								<div
 									className={`card-inquiries mt-3 ${inquiry.status === 'unseen' || inquiry.inquiry_status === 'unseen'
 										? 'active'
@@ -471,7 +471,7 @@ export default function Dashboard() {
 
 				{showInboxMessage ? (
 					<div className="text-right mt-5 m-none">
-						{currentInquires.length > 10 && (
+						{currentInquires?.length > 10 && (
 							<Pagination
 								currentPage={currentPage}
 								totalPages={totalPages}

@@ -131,7 +131,7 @@ export default function LawyerChoosePlan() {
                                                         {membershipPlan && membershipPlan.monthly_amount}
 
                                                     </span>
-                                                    /month
+                                                    {/* /month */}
                                                 </h6>
                                             ) : (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">

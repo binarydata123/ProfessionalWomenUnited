@@ -9,7 +9,7 @@ import SendMessage from '@/components/admin/modals/SendMessage';
 import ReportAccount from '@/components/admin/modals/ReportAccount';
 import EyeButton from '@/commonUI/TableActionButtons/EyeButton';
 import MessageButton from '@/commonUI/TableActionButtons/MessageButton';
-import { getAllLawyersFilteredForAdmin } from '../../../../../../lib/adminapi';
+import { getAllLawyersFilteredForAdmin, importMembers } from '../../../../../../lib/adminapi';
 import { getAllCountries, getSingleLawyerDetails } from '../../../../../../lib/frontendapi';
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -18,6 +18,8 @@ import Image from 'next/image';
 import AuthContext from '@/context/AuthContext';
 import { formatDateToDDMMYYYYMM } from '@/app/[locale]/commonfunctions/commonfunctions';
 import { CiSearch } from "react-icons/ci";
+import DefaultButton from '@/commonUI/DefaultButton';
+import ExcelUploadComponent from '@/components/admin/modals/ExcelUploadComponent';
 
 export default function lawyers() {
 	const { user } = useContext(AuthContext)
@@ -118,6 +120,8 @@ export default function lawyers() {
 		}
 	};
 
+
+
 	const handleSingleLawyerDetails = async (id: any, plan: any) => {
 		try {
 			const res = await getSingleLawyerDetails(id);
@@ -145,7 +149,17 @@ export default function lawyers() {
 		setSendMessage(false);
 		handleChange('status', 'active', user_id);
 	};
-
+	const refreshLawyersData = () => {
+		const data = {
+			name: name,
+			location: location,
+			gender: gender,
+			plan: plan,
+			status: status,
+			user_id: user_id
+		};
+		getAllLawyersFilteredForAdminData(data);
+	};
 	return (
 		<div>
 			<div className="form-part mt-2">
@@ -183,7 +197,7 @@ export default function lawyers() {
 							))}
 						</select>
 					</div>
-					<div className="col-sm-6 col-md-6 col-lg-3">
+					{/* <div className="col-sm-6 col-md-6 col-lg-3">
 						<select
 							className="form-fild  w-100"
 							value={gender}
@@ -194,7 +208,7 @@ export default function lawyers() {
 							<option value={'female'}>Female</option>
 							<option value={'other'}>Other</option>
 						</select>
-					</div>
+					</div> */}
 					<div className="col-sm-6 col-md-6 col-lg-3">
 						<select
 							className="form-fild  w-100"
@@ -207,6 +221,19 @@ export default function lawyers() {
 							<option value={'Gold plan (yearly)'}>Yearly</option> */}
 							<option value={'Not purchased'}>Not Purchased</option>
 						</select>
+					</div>
+					<div className="col-sm-6 col-md-6 col-lg-2">
+						<ExcelUploadComponent onImportSuccess={refreshLawyersData} />
+						{/* <Link href='' onClick={(e) => e.preventDefault()}>
+							<DefaultButton
+								height={55}
+								showIcon={false}
+								className="w-100 mt-1"
+								onClick={handleUpload}
+							>
+								+ Import Excel Data
+							</DefaultButton>
+						</Link> */}
 					</div>
 				</div>
 			</div>
@@ -315,11 +342,13 @@ export default function lawyers() {
 				</Table>
 			</div>
 
-			{currentLawyer.length > 0 && (
-				<div className="text-right mt-5 m-none float-end">
-					<Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
-				</div>
-			)}
+			{
+				currentLawyer.length > 0 && (
+					<div className="text-right mt-5 m-none float-end">
+						<Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
+					</div>
+				)
+			}
 
 			<Popup
 				show={viewProfile}
@@ -356,6 +385,6 @@ export default function lawyers() {
 			>
 				<ReportAccount lawyerId={lawyer_id} closeReportPopup={closeReportPopup} />
 			</Popup>
-		</div>
+		</div >
 	);
 }

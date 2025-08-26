@@ -9,6 +9,7 @@ import AuthContext from '@/context/AuthContext';
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import './style.css';
 import { ArrowSmallLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
+import Cookies from 'js-cookie';
 
 interface FormData {
     CardNumber: string;
@@ -50,7 +51,7 @@ export default function Checkout() {
                     setPlanAmount(temp_plan_amount);
                     setUserId(user?.id);
                     setUserEmail(user?.email || '');
-                    setUserName(user?.name || '');
+                    setUserName(user?.first_name || '');
                 }
             }
         }
@@ -112,6 +113,9 @@ export default function Checkout() {
                                     router.push('/auth/professional/verify-otp');
                                 });
                             }
+
+                            // Cookies.remove('session_token', token);
+                            // Cookies.remove('userId', userId);
                         } else {
                             toast.error(res.message);
                             setIsLoading(false);

@@ -38,14 +38,14 @@ const OTPInputGroup = () => {
 			} else {
 				setUserId(user?.id || '');
 				setUserEmail(user?.email || '');
-				setUserName(user?.name || '');
+				setUserName(user?.first_name || '');
 			}
 		} else {
 			setUserId(user?.id || '');
 			setUserEmail(user?.email || '');
-			setUserName(user?.name || '');
+			setUserName(user?.first_name || '');
 		}
-	}, []);
+	}, [user]);
 
 
 	const [inputValues, setInputValues] = useState({
@@ -127,6 +127,9 @@ const OTPInputGroup = () => {
 				if (err.response) {
 					toast.error('An error occurred during registration');
 				}
+			})
+			.finally(() => {
+				setIsLoadingTwo(false);
 			});
 	};
 

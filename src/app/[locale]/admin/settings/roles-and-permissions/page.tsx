@@ -7,6 +7,7 @@ import EyeButton from '@/commonUI/TableActionButtons/EyeButton';
 import {
 	getAllUserAndLaywerFilteredForAdmin,
 	getSingleUserDetailByAdmin,
+	importMembers,
 	updateLawerStatus
 } from '../../../../../../lib/adminapi';
 import Pagination from '@/commonUI/Pagination';
@@ -53,6 +54,7 @@ export default function Page() {
 	const endIndex = startIndex + itemsPerPage;
 	const currentLawyer = filter_users.slice(startIndex, endIndex);
 	const totalPages = Math.ceil(filter_users.length / itemsPerPage);
+
 
 	useEffect(() => {
 		if (user)
@@ -251,6 +253,7 @@ export default function Page() {
 							<option value={'DESC'}>Newest</option>
 						</select>
 					</div>
+
 					<div className="col-sm-6 col-md-6 col-lg-2">
 						<Link href={'/admin/settings/roles-and-permissions/add-new-enduser'}>
 							<DefaultButton height={55} showIcon={false} className="w-100 mt-1">
