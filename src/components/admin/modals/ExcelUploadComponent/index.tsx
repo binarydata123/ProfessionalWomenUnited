@@ -8,7 +8,7 @@ interface ExcelUploadComponentProps {
     onImportSuccess?: () => void; // Function to call after successful import
 }
 const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) => {
-    const [file, setFile] = useState(null);
+    const [file, setFile] = useState<File | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isUploading, setIsUploading] = useState(false);
     const [uploadSuccess, setUploadSuccess] = useState(false);
@@ -38,12 +38,13 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
 
         } catch (err) {
             console.error(err);
-            alert('Upload failed');
+            // alert('Upload failed');
+            toast.error('Upload failed');
             setIsUploading(false);
         }
     };
 
-    const handleFileChange = (e) => {
+    const handleFileChange = (e: any) => {
         const selectedFile = e.target.files[0];
         setFile(selectedFile);
     };
@@ -144,7 +145,13 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                                 Selected file: {file.name}
                                             </p>
                                             <button
-                                                onClick={() => document.getElementById('fileInput').click()}
+                                                // onClick={() => document.getElementById('fileInput').click()}
+                                                onClick={() => {
+                                                    const fileInput = document.getElementById('fileInput') as HTMLInputElement | null;
+                                                    if (fileInput) {
+                                                        fileInput.click();
+                                                    }
+                                                }}
                                                 disabled={isUploading}
                                                 style={{
                                                     padding: '0.5rem 1rem',
@@ -163,7 +170,13 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                                 Drag & drop your Excel file here or
                                             </p>
                                             <button
-                                                onClick={() => document.getElementById('fileInput').click()}
+                                                // onClick={() => document.getElementById('fileInput').click()}
+                                                onClick={() => {
+                                                    const fileInput = document.getElementById('fileInput') as HTMLInputElement | null;
+                                                    if (fileInput) {
+                                                        fileInput.click();
+                                                    }
+                                                }}
                                                 disabled={isUploading}
                                                 style={{
                                                     padding: '0.75rem 1.5rem',
@@ -187,11 +200,11 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                     showIcon={false}
                                     className="w-100"
                                     onClick={handleUpload}
-                                    disabled={!file || isUploading}
-                                    style={{
-                                        opacity: (!file || isUploading) ? 0.6 : 1,
-                                        cursor: (!file || isUploading) ? 'not-allowed' : 'pointer'
-                                    }}
+                                // disabled={!file || isUploading}
+                                // style={{
+                                //     opacity: (!file || isUploading) ? 0.6 : 1,
+                                //     cursor: (!file || isUploading) ? 'not-allowed' : 'pointer'
+                                // }}
                                 >
                                     {isUploading ? (
                                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
