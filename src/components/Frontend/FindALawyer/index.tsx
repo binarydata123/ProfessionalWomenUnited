@@ -281,7 +281,9 @@ export default function Page({ filterlawyer }: Props) {
 					{lawyers?.length > 0 ? (
 						lawyers?.map((item: any, index: any) => (
 							<div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4" key={index}>
-								<LawyerCard lawyer={item} />
+								{/* <LawyerCard lawyer={item} /> */}
+								<LawyerCard lawyer={item} Key={index} />
+
 							</div>
 						))
 					) : (
