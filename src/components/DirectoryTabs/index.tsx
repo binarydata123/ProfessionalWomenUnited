@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { getAllCountries } from '../../../lib/frontendapi';
+import { useRouter } from 'next/navigation';
 
 const professionals = [
   'Gynecologist',
@@ -20,6 +21,8 @@ const professionals = [
 
 
 const DirectoryTabs = () => {
+  const router = useRouter();
+
   const [currentTab, setCurrentTab] = useState<'professionals' | 'cities'>('professionals');
   const [searchTerm, setSearchTerm] = useState('');
   // const [filteredCities, setFilteredCities] = useState(topUSCities);
@@ -28,7 +31,13 @@ const DirectoryTabs = () => {
   const [allCities, setAllCities] = useState<string[]>([]);
   const [loadingCities, setLoadingCities] = useState(false);
 
+  const handleSelectProfessional = (professional: string) => {
+    router.push(`/find-a-professional?service=${encodeURIComponent(professional)}`);
+  };
 
+  const handleSelectCity = (city: string) => {
+    router.push(`/find-a-professional?city=${encodeURIComponent(city)}`);
+  };
 
 
   useEffect(() => {
@@ -148,7 +157,11 @@ const DirectoryTabs = () => {
             ) : (
               <div className="row g-4">
                 {filteredProfessionals.map((professional, index) => (
-                  <div key={index} className="col-md-6 col-lg-4">
+                  <div key={index} className="col-md-6 col-lg-4"
+
+                    onClick={() => handleSelectProfessional(professional)} // ✅ redirect
+                    style={{ cursor: "pointer" }}
+                  >
                     <div className="professional-card">
                       <div className="professional-icon">
                         <i className="fas fa-user text-white"></i>
@@ -183,7 +196,10 @@ const DirectoryTabs = () => {
             ) : (
               <div className="row g-3">
                 {filteredCities.map((city, index) => (
-                  <div key={index} className="col-md-6 col-lg-3">
+                  <div key={index} className="col-md-6 col-lg-3"
+                    onClick={() => handleSelectCity(city)} // ✅ redirect
+                    style={{ cursor: "pointer" }}
+                  >
                     <div className="city-card">
                       <div className="d-flex align-items-center">
                         <div className="city-icon">
@@ -198,30 +214,6 @@ const DirectoryTabs = () => {
                 ))}
               </div>
             )}
-
-            {/* {filteredCities.length === 0 ? (
-              <div className="no-results">
-                <i className="fas fa-search mb-3 text-gray-300" style={{ fontSize: '3rem' }}></i>
-                <p className="text-gray-500">No cities found matching your search.</p>
-              </div>
-            ) : (
-              <div className="row g-3">
-                {filteredCities.map((city, index) => (
-                  <div key={index} className="col-md-6 col-lg-3">
-                    <div className="city-card">
-                      <div className="d-flex align-items-center">
-                        <div className="city-icon">
-                          <i className="fas fa-map-marker-alt text-white"></i>
-                        </div>
-                        <div>
-                          <h6 className="text-[#1B3067] font-semibold m-0">{city}</h6>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )} */}
           </div>
         </div>
       </div>

@@ -45,6 +45,10 @@ interface FormData {
 	free_consultation_duration: string;
 	profile_image: string;
 	firm_id: string;
+	address: string;
+	salutation: string;
+	zip: string;
+	website_link: string;
 }
 
 interface Specialization {
@@ -64,6 +68,9 @@ export default function Page() {
 	const statusRef = useRef(null);
 	const designationRef = useRef(null);
 	const companyNameRef = useRef(null);
+	const addressRef = useRef(null);
+	const zipRef = useRef(null);
+	const websiteRef = useRef(null);
 	const bioRef = useRef(null);
 	const jurisdictionRef = useRef(null);
 	const primaryPracticeRef = useRef(null);
@@ -95,7 +102,11 @@ export default function Page() {
 		},
 		free_consultation_duration: '',
 		profile_image: '',
-		firm_id: ''
+		firm_id: '',
+		address: '',
+		salutation: '',
+		zip: '',
+		website_link: ''
 	});
 
 	const { user } = useContext(AuthContext)
@@ -118,7 +129,6 @@ export default function Page() {
 	const [profileimagecheck, setPofileImageCheck] = useState(false);
 	const [deleteImagePopop, setdeleteImagePopop] = useState(false);
 	const [allfirmName, setAllfirmName] = useState([]);
-	console.log(user?.id, 'userrr')
 	useEffect(() => {
 		user?.id ? setUserId(user?.id) : setUserId('');
 
@@ -237,6 +247,9 @@ export default function Page() {
 					email: res.data.email,
 					phone_number: res.data.phone_number,
 					gender: res.data.gender,
+					address: res.data.address,
+					zip: res.data.zip,
+					website_link: res.data.website_link,
 					linkedin_url: res.data.linkedin_url || '',
 					license_number: res.data.license_number,
 					acquired: res.data.acquired,
@@ -317,10 +330,10 @@ export default function Page() {
 			newErrors.phone_number = 'Phone number is required';
 			handleFocus(phoneNumberRef);
 		}
-		if (!formData.gender) {
-			newErrors.gender = 'Gender is required';
-			handleFocus(genderRef);
-		}
+		// if (!formData.gender) {
+		// 	newErrors.gender = 'Gender is required';
+		// 	handleFocus(genderRef);
+		// }
 		if (!formData.location) {
 			newErrors.location = 'Location is required';
 			handleFocus(locationRef);
@@ -394,7 +407,11 @@ export default function Page() {
 				last_name: formData.last_name,
 				email: formData.email,
 				phone_number: formData.phone_number,
-				gender: formData.gender,
+				// gender: formData.gender,
+				gender: 'female',
+				address: formData.address,
+				zip: formData.zip,
+				website_link: formData.website_link,
 				location: formData.location,
 				linkedin_url: formData.linkedin_url,
 				license_number: formData.license_number,
@@ -664,7 +681,7 @@ export default function Page() {
 							<label className="font-small  weight-medium text-sonic-silver w-100">First Name</label>
 							<input
 								type="text"
-								placeholder="Sara"
+								placeholder="Dr. Sara"
 								className="form-fild  w-100"
 								value={formData.first_name}
 								onChange={e => setFormData({ ...formData, first_name: e.target.value })}
@@ -714,20 +731,18 @@ export default function Page() {
 							<div className="row">
 								<div className="col-sm-6 col-6">
 									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
-										Gender
+										Address
 									</label>
-									<select
+									<input
+										type="text"
+										placeholder="Address"
 										className="form-fild  w-100"
-										value={formData.gender}
-										onChange={e => setFormData({ ...formData, gender: e.target.value })}
-										ref={genderRef}
-									>
-										<option value="female">Female</option>
-										<option value="male">Male</option>
-										<option value="other">Other</option>
-									</select>
-									{errors.gender && (
-										<small className="error-message text-danger d-block">{errors.gender}</small>
+										value={formData.address}
+										onChange={e => setFormData({ ...formData, address: e.target.value })}
+										ref={addressRef}
+									/>
+									{errors.address && (
+										<small className="error-message text-danger d-block">{errors.address}</small>
 									)}
 								</div>
 								<div className="col-sm-6 col-6">
@@ -750,6 +765,40 @@ export default function Page() {
 									{errors.location && (
 										<small className="error-message text-danger d-block">{errors.location}</small>
 									)}
+								</div>
+							</div>
+
+							<div className="row">
+								<div className="col-sm-6 col-6">
+									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+										Zip Code
+									</label>
+									<input
+										type="text"
+										placeholder="Zip Code"
+										className="form-fild  w-100"
+										value={formData.zip}
+										onChange={e => setFormData({ ...formData, zip: e.target.value })}
+										ref={zipRef}
+									/>
+									{/* {errors.zip && (
+										<small className="error-message text-danger d-block">{errors.zip}</small>
+									)} */}
+								</div>
+								<div className="col-sm-6 col-6">
+									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+										Website Link
+									</label>
+									<input
+										type="text"
+										placeholder="https://website.com"
+										className="form-fild  w-100"
+										value={formData.website_link}
+										onChange={e => setFormData({ ...formData, website_link: e.target.value })}
+									/>
+									{/* {errors.website && (
+										<small className="error-message text-danger d-block">{errors.website}</small>
+									)} */}
 								</div>
 							</div>
 
@@ -848,21 +897,18 @@ export default function Page() {
 							{errors.designation && (
 								<small className="error-message text-danger d-block">{errors.designation}</small>
 							)}
-							{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Company Name
-							</label> */}
-							{/* <select
-								className="form-fild w-100"
-								value={formData.firm_id}
-								onChange={(e) => setFormData({ ...formData, firm_id: e.target.value })}
-							>
-								<option value="">Select Company</option>
-								{allfirmName.map((firm: any) => (
-									<option key={firm.id} value={firm.id}>
-										{firm.firm_name}
-									</option>
-								))}
-							</select> */}
+							</label>
+							<input
+								type="text"
+								placeholder="Business Attorney"
+								className="form-fild  w-100"
+								value={formData.company_name}
+								onChange={e => setFormData({ ...formData, company_name: e.target.value })}
+								ref={companyNameRef}
+								maxLength={30}
+							/>
 							{/* {errors.firm_id && (
 								<small className="error-message text-danger d-block">{errors.firm_id}</small>
 							)} */}

@@ -54,11 +54,11 @@ export default function ProfileLayout({ children }: { children: React.ReactNode 
 														Profession
 													</Link>
 												</li>
-												<li>
+												{/* <li>
 													<Link className="dropdown-item" href="/professional/profile/edit#rates">
 														Rates
 													</Link>
-												</li>
+												</li> */}
 											</ul>
 										</li>
 										<li className={pathname === '/professional/profile/reviews' ? 'active' : ''}>

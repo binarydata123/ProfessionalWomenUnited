@@ -439,7 +439,7 @@ export default function SingleProfession({ slug = '' }: Props) {
 							</>
 						)}
 
-						{isLoading ? (
+						{/* {isLoading ? (
 							<div
 								style={{
 									height: '30px',
@@ -465,7 +465,7 @@ export default function SingleProfession({ slug = '' }: Props) {
 									</button>
 								</li>
 							</>
-						)}
+						)} */}
 					</ul>
 				</div>
 				<hr />

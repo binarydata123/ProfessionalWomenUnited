@@ -94,8 +94,8 @@ export default function LawyerCard({
 									<Image
 										src="/images/contact/blink.svg"
 										alt="lawyer is new or not blink image"
-										width={25}
-										height={25}
+										width={20}
+										height={20}
 									/>
 								</div>
 							)}
@@ -121,7 +121,10 @@ export default function LawyerCard({
 				</Link>
 				<Link href={`/find-a-professional/${lawyer?.slug}`}>
 					<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ textDecoration: 'none' }}>
-						{lawyer?.full_name}
+						{/* {lawyer?.full_name} */}
+						{lawyer?.full_name
+							?.toLowerCase()
+							.replace(/\b\w/g, (char: string) => char.toUpperCase())}
 						{isOnline}
 					</h3>
 				</Link>
@@ -282,62 +285,68 @@ export default function LawyerCard({
 						</div>
 					</div>
 
-					<div className="detail-fil">
-						<div className="About-detail">
-							<h3>About {single_lawyer?.full_name}</h3>
-							{/* <p className="mb-3">
+					{single_lawyer?.bio ? (
+						<div className="detail-fil">
+							<div className="About-detail">
+								<h3>About {single_lawyer?.full_name
+									?.toLowerCase()
+									.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h3>
+								{/* <p className="mb-3">
 								<Image src="/images/map.png" alt="map icon image" width={20} height={20} />
 								Legal Jurisdiction: <span>{single_lawyer?.jurisdiction_name}</span>
 							</p> */}
+							</div>
+
+							<div className="more-detail">
+								{single_lawyer?.specializ_name && (
+									<>
+										<strong>Specializes In:</strong>
+										<p>{single_lawyer?.specializ_name}</p>
+									</>
+								)}
+								{single_lawyer?.bio && (
+									<>
+										<strong>Bio:</strong>
+
+										{single_lawyer.bio.length > 150 ? (
+											<>
+												{showMore ? (
+													<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
+												) : (
+													<div dangerouslySetInnerHTML={{ __html: `${single_lawyer.bio.slice(0, 150)}${single_lawyer.bio.length > 150 ? '...' : ''}` }} />
+												)}
+											</>
+										) : (
+											<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
+										)}
+									</>
+								)}
+
+
+
+								{single_lawyer?.hourly_rate_range && (
+									<>
+										<h3 className="pb-0">Cost</h3>
+										<p>Hourly Rates</p>
+										<div className="body-font-text text-capitalize">
+											{single_lawyer?.hourly_rate_range}
+										</div>
+									</>
+								)}
+
+								{single_lawyer?.payment_method && (
+									<>
+										<p>Payment Methods</p>
+										<div className="body-font-text text-capitalize">
+											{single_lawyer?.payment_method}
+										</div>
+									</>
+								)}
+							</div>
 						</div>
-
-						<div className="more-detail">
-							{single_lawyer?.specializ_name && (
-								<>
-									<strong>Specializes In:</strong>
-									<p>{single_lawyer?.specializ_name}</p>
-								</>
-							)}
-							{single_lawyer?.bio && (
-								<>
-									<strong>Bio:</strong>
-
-									{single_lawyer.bio.length > 150 ? (
-										<>
-											{showMore ? (
-												<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
-											) : (
-												<div dangerouslySetInnerHTML={{ __html: `${single_lawyer.bio.slice(0, 150)}${single_lawyer.bio.length > 150 ? '...' : ''}` }} />
-											)}
-										</>
-									) : (
-										<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
-									)}
-								</>
-							)}
-
-
-
-							{/* {single_lawyer?.hourly_rate_range && (
-								<>
-									<h3 className="pb-0">Cost</h3>
-									<p>Hourly Rates</p>
-									<div className="body-font-text text-capitalize">
-										{single_lawyer?.hourly_rate_range}
-									</div>
-								</>
-							)}
-
-							{single_lawyer?.payment_method && (
-								<>
-									<p>Payment Methods</p>
-									<div className="body-font-text text-capitalize">
-										{single_lawyer?.payment_method}
-									</div>
-								</>
-							)} */}
-						</div>
-					</div>
+					) : (
+						<></>
+					)}
 				</div>
 			</Popup>
 		</div>

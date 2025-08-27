@@ -42,6 +42,10 @@ interface FormData {
 	password: string;
 	plan: string;
 	firm_id: string;
+	address: string;
+	salutation: string;
+	zip: string;
+	website_link: string;
 }
 
 interface Specialization {
@@ -80,7 +84,11 @@ export default function Page() {
 		profile_image: '',
 		password: '',
 		plan: '',
-		firm_id: ''
+		firm_id: '',
+		address: '',
+		salutation: '',
+		zip: '',
+		website_link: ''
 	});
 
 	const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -102,7 +110,7 @@ export default function Page() {
 	const [userGender, setuserGender] = useState('');
 	const [showPassword, setShowPassword] = useState(false);
 	const router = useRouter();
-
+	console.log(user?.id, 'dfd')
 	useEffect(() => {
 		if (user)
 			user?.id ? setUserId(user?.id) : setUserId('');
@@ -196,9 +204,9 @@ export default function Page() {
 		if (!formData.phone_number) {
 			newErrors.phone_number = 'Phone number is required';
 		}
-		if (!formData.gender) {
-			newErrors.gender = 'Gender is required';
-		}
+		// if (!formData.gender) {
+		// 	newErrors.gender = 'Gender is required';
+		// }
 		if (!formData.location) {
 			newErrors.location = 'Location is required';
 		}
@@ -257,13 +265,16 @@ export default function Page() {
 		const isValid = validateForm();
 		if (isValid) {
 			const data = {
-				user_id: user_id,
+				user_id: user?.id,
 				first_name: formData.first_name,
 				last_name: formData.last_name,
 				email: formData.email,
 				password: formData.password,
 				phone_number: formData.phone_number,
-				gender: formData.gender,
+				gender: 'female',
+				address: formData.address,
+				zip: formData.zip,
+				website_link: formData.website_link,
 				location: formData.location,
 				linkedin_url: formData.linkedin_url,
 				license_number: formData.license_number,
@@ -307,10 +318,10 @@ export default function Page() {
 						if (errors.email) {
 							toast.error(errors.email[0]);
 						} else {
-							toast.error('An error occurred while creating a new lawyer');
+							toast.error('An error occurred while creating a new professional');
 						}
 					} else {
-						toast.error('An error occurred during while creating a new lawyer');
+						toast.error('An error occurred during while creating a new professional');
 					}
 					setIsLoading(false);
 				});
@@ -499,7 +510,7 @@ export default function Page() {
 								</label>
 								<input
 									type="text"
-									placeholder="Sara"
+									placeholder="Dr. Sara"
 									className="form-fild  w-100"
 									value={formData.first_name}
 									onChange={e => setFormData({ ...formData, first_name: e.target.value })}
@@ -577,21 +588,18 @@ export default function Page() {
 								)}
 								<div className="row">
 									<div className="col-sm-6 col-6">
-										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
-											Gender
+										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+											Address
 										</label>
-										<select
+										<input
+											type="text"
+											placeholder="Address"
 											className="form-fild  w-100"
-											value={formData.gender}
-											onChange={e => setFormData({ ...formData, gender: e.target.value })}
-										>
-											<option value="">Select Gender</option>
-											<option value="female">Female</option>
-											<option value="male">Male</option>
-											<option value="other">Other</option>
-										</select>
-										{errors.gender && (
-											<small className="error-message text-danger d-block">{errors.gender}</small>
+											value={formData.address}
+											onChange={e => setFormData({ ...formData, address: e.target.value })}
+										/>
+										{errors.address && (
+											<small className="error-message text-danger d-block">{errors.address}</small>
 										)}
 									</div>
 									<div className="col-sm-6 col-6">
@@ -615,6 +623,38 @@ export default function Page() {
 												{errors.location}
 											</small>
 										)}
+									</div>
+								</div>
+								<div className="row">
+									<div className="col-sm-6 col-6">
+										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+											Zip Code
+										</label>
+										<input
+											type="text"
+											placeholder="Zip Code"
+											className="form-fild  w-100"
+											value={formData.zip}
+											onChange={e => setFormData({ ...formData, zip: e.target.value })}
+										/>
+										{/* {errors.zip && (
+										<small className="error-message text-danger d-block">{errors.zip}</small>
+									)} */}
+									</div>
+									<div className="col-sm-6 col-6">
+										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+											Website Link
+										</label>
+										<input
+											type="text"
+											placeholder="https://website.com"
+											className="form-fild  w-100"
+											value={formData.website_link}
+											onChange={e => setFormData({ ...formData, website_link: e.target.value })}
+										/>
+										{/* {errors.website && (
+										<small className="error-message text-danger d-block">{errors.website}</small>
+									)} */}
 									</div>
 								</div>
 
@@ -723,26 +763,17 @@ export default function Page() {
 											{errors.designation}
 										</small>
 									)}
-									{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
+									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 										Company Name
 									</label>
-									<select
-										className="form-fild w-100"
-										value={formData.firm_id}
-										onChange={(e) => setFormData({ ...formData, firm_id: e.target.value })}
-									>
-										<option value="">Select Category</option>
-										{allfirmName.map((firm: any) => (
-											<option key={firm.id} value={firm.id}>
-												{firm.firm_name}
-											</option>
-										))}
-									</select> */}
-									{/* {errors.firm_id && (
-										<small className="error-message text-danger d-block">
-											{errors.firm_id}
-										</small>
-									)} */}
+									<input
+										type="text"
+										placeholder="Business Attorney"
+										className="form-fild  w-100"
+										value={formData.company_name}
+										onChange={e => setFormData({ ...formData, company_name: e.target.value })}
+										maxLength={30}
+									/>
 									<label className="font-small weight-medium text-sonic-silver w-100 mt-4 pb-2">
 										Bio
 									</label>
@@ -1066,8 +1097,8 @@ export default function Page() {
 									onChange={e => setFormData({ ...formData, plan: e.target.value })}
 								>
 									<option value="">Choose Plan Type</option>
-									<option value={'one-time'}>Monthly Plan</option>
-									<option value={'quarterly'}>Quarterly Plan</option>
+									<option value={'one-time'}>Yearly Plan</option>
+									{/* <option value={'quarterly'}>Quarterly Plan</option> */}
 								</select>
 							</div>
 						</div>

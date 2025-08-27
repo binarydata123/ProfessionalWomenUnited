@@ -450,7 +450,7 @@ img.arrow-change {
 	line-height: var(--line-height-high-rise);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
-	color: rgba(30, 130, 123, 1);
+	color: rgb(196,144,115);
 }
 .About-detail p span {
 	color: rgba(79, 79, 79, 1);
@@ -490,7 +490,7 @@ img.arrow-change {
 	line-height: var(--line-height-small-medium);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
-	color: rgba(30, 130, 123, 1);
+	color: rgb(196,144,115);
 }
 .more-detail a {
 	font-size: var(--font-x-small);
@@ -498,7 +498,7 @@ img.arrow-change {
 	line-height: var(--line-height-xs-small);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
-	color: rgba(30, 130, 123, 1);
+	color: rgb(196,144,115);
 	padding: 16px 0px;
 	display: block;
 }

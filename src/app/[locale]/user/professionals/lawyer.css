@@ -208,7 +208,7 @@ ul.rating-location li i {
 .danger-btn {
 	border: 1px solid var(--boysenberry);
 	color: var(--boysenberry);
-	background: #BE83631a;
+	background: #be83631a;
 }
 .sub-span {
 	font-size: 12px;
@@ -216,7 +216,7 @@ ul.rating-location li i {
 	font-weight: var(--weight-semi-bold);
 	border: 1px solid var(--green-medium-2);
 	color: var(--green-medium-2);
-	background: #02142d1f;
+	background: #f9f2ef;
 	border-radius: 16px;
 	padding: 0px 10px;
 	position: relative;

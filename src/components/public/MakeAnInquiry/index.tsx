@@ -55,7 +55,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 			setMessage(issue);
 			setFormData({ ...formData, message: issue });
 		}
-	}, []);
+	}, [user]);
 
 	const handleSingleLawyerDetails = async (id: any) => {
 		try {
@@ -200,7 +200,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 							{isLoggedIn ? (
 								<div className="making-inquery">
 									<div className="d-none d-lg-block">
-										<h4>Make An Inquiry to {lawyer.first_name}</h4>
+										<h4>Make An Inquiry to {lawyer?.first_name
+											?.toLowerCase()
+											.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h4>
 										<p>Please fill out the form below and state the nature of your query.</p>
 									</div>
 									<form className="" onSubmit={handleSubmit}>
@@ -224,7 +226,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 							) : (
 								<div className="making-inquery">
 									<div className="d-none d-lg-block">
-										<h4>Make An Inquiry to {lawyer.first_name}</h4>
+										<h4>Make An Inquiry to {lawyer?.first_name
+											?.toLowerCase()
+											.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h4>
 										<p>Please fill out the form below and state the nature of your query.</p>
 									</div>
 									<form className="" onSubmit={handleSubmit}>
@@ -290,7 +294,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 						<div className="col-lg-5 order-lg-0 order-first">
 							<div className="">
 								<div className="d-block d-lg-none making-inquery">
-									<h4>Make An Inquiry to {lawyer.first_name}</h4>
+									<h4>Make An Inquiry to {lawyer?.first_name
+										?.toLowerCase()
+										.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h4>
 									<p>Please fill out the form below and state the nature of your query.</p>
 								</div>
 								<div className="profile-data">
@@ -327,7 +333,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 												<div className="col-12">
 													<div className="data-profile-user">
 														<Link href={`/find-a-professional/${slug}`} target="_blank">
-															<h3>{lawyer.full_name}</h3>
+															<h3>{lawyer?.full_name
+																?.toLowerCase()
+																.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h3>
 														</Link>
 													</div>
 												</div>

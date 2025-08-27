@@ -419,7 +419,7 @@ export default function popup() {
 											<button className="btn-mini danger-btn mr-1 mb-2">
 												Licensed for 9 years
 											</button>
-											<button className="btn-mini danger-btn">Free Consultation: 30 mins</button>
+											{/* <button className="btn-mini danger-btn">Free Consultation: 30 mins</button> */}
 										</div>
 									</div>
 

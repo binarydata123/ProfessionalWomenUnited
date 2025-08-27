@@ -12,7 +12,41 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isUploading, setIsUploading] = useState(false);
     const [uploadSuccess, setUploadSuccess] = useState(false);
+    const [resData, setResData] = useState<any>(null);
 
+    // const handleUpload = async () => {
+    //     if (!file) {
+    //         toast.error('Please select a file first');
+    //         return;
+    //     }
+    //     setIsUploading(true);
+    //     try {
+    //         const res = await importMembers(file);
+    //         console.log(res, 'ddg')
+    //         toast.success(res.message);
+    //         // Show success message
+    //         setUploadSuccess(true);
+
+    //         if (onImportSuccess) {
+    //             onImportSuccess();
+    //         }
+
+    //         // Close modal after 2 seconds
+    //         setTimeout(() => {
+    //             setIsModalOpen(false);
+    //             setUploadSuccess(false);
+    //             setFile(null);
+    //             setIsUploading(false);
+    //         }, 2000);
+
+    //     } catch (err) {
+    //         console.error(err);
+    //         // alert('Upload failed');
+    //         toast.error('Upload failed');
+    //         setIsUploading(false);
+
+    //     }
+    // };
     const handleUpload = async () => {
         if (!file) {
             toast.error('Please select a file first');
@@ -21,28 +55,41 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
         setIsUploading(true);
         try {
             const res = await importMembers(file);
-            // Show success message
-            setUploadSuccess(true);
+            console.log(res, 'ddg');
+            setResData(res);
+
+            if (res.duplicates.length > 0) {
+                toast.warn(`Already exist: ${res.duplicates.join(', ')}`);
+            }
+
+            if (res.inserted.length > 0) {
+                toast.success(`Imported new: ${res.inserted.join(', ')}`);
+                setUploadSuccess(true); // success popup for inserted
+            } else if (res.duplicates.length === 0) {
+                // case: no inserted + no duplicates = empty file
+                setUploadSuccess(true);
+            }
 
             if (onImportSuccess) {
                 onImportSuccess();
             }
 
-            // Close modal after 2 seconds
             setTimeout(() => {
                 setIsModalOpen(false);
                 setUploadSuccess(false);
                 setFile(null);
                 setIsUploading(false);
+                setResData(null);
             }, 2000);
 
         } catch (err) {
             console.error(err);
-            // alert('Upload failed');
             toast.error('Upload failed');
             setIsUploading(false);
         }
     };
+
+
 
     const handleFileChange = (e: any) => {
         const selectedFile = e.target.files[0];
@@ -230,23 +277,34 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                 </div>
                             </div>
                         ) : (
-                            /* Success Message */
-                            <div style={{ textAlign: 'center', padding: '2rem' }}>
-                                <div style={{
-                                    fontSize: '3rem',
-                                    color: '#4CAF50',
-                                    marginBottom: '1rem'
-                                }}>
-                                    ✓
+
+                            resData?.inserted?.length > 0 ? (
+                                // ✅ Success popup (data inserted)
+                                <div style={{ textAlign: 'center', padding: '2rem' }}>
+                                    <div style={{ fontSize: '3rem', color: '#4CAF50', marginBottom: '1rem' }}>✓</div>
+                                    <h3 style={{ color: '#4CAF50', marginBottom: '1rem' }}>
+                                        Data Uploaded Successfully!
+                                    </h3>
+                                    <p style={{ color: '#666' }}>
+                                        Your Excel data has been imported successfully.
+                                    </p>
                                 </div>
-                                <h3 style={{ color: '#4CAF50', marginBottom: '1rem' }}>
-                                    Data Uploaded Successfully!
-                                </h3>
-                                <p style={{ color: '#666' }}>
-                                    Your Excel data has been imported successfully.
-                                </p>
-                            </div>
+                            ) : (
+                                // ⚠️ Empty file popup (no inserted + no duplicates)
+                                <div style={{ textAlign: 'center', padding: '2rem' }}>
+                                    <div style={{ fontSize: '3rem', color: '#4CAF50', marginBottom: '1rem' }}>✓</div>
+                                    <h3 style={{ color: '#4CAF50', marginBottom: '1rem' }}>
+                                        Data Uploaded Successfully!
+                                    </h3>
+                                    <p style={{ color: '#666' }}>
+                                        Your Excel data has been imported successfully.
+                                    </p>
+                                </div>
+                            )
+
+
                         )}
+
                     </div>
                 </div>
             )}

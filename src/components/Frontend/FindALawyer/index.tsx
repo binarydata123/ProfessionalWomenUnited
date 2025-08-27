@@ -31,78 +31,86 @@ interface Props {
 
 export default function Page({ filterlawyer }: Props) {
 	const router = useRouter();
-	const [lawyers, setlawyers]: any = useState(filterlawyer);
-	const [filterPopup, setfilterPopup] = useState(false);
-	const [services, setservices]: any = useState([]);
+	const searchParams = useSearchParams();
+	const [lawyers, setLawyers]: any = useState(filterlawyer || []);
+	const [filterPopup, setFilterPopup] = useState(false);
+	const [services, setServices]: any = useState([]);
 	const [countries, setCountries]: any = useState([]);
-	const [experience, setexperience]: any = useState([]);
-	const [jurisdication, setjurisdication]: any = useState([]);
-	const [sort, setsort]: any = useState('');
+	const [experience, setExperience]: any = useState([]);
+	const [jurisdication, setJurisdication]: any = useState([]);
+	const [sort, setSort]: any = useState('');
 	const [currentPage, setCurrentPage] = useState(1);
 
+	// Get URL parameters
+	const serviceParam = searchParams.get("service");
+	const cityParam = searchParams.get("city");
+	// const countryParam = searchParams.get('country');
+
+	// Initialize filter data with URL parameters if they exist
 	const initialData = {
-		p_service_name: null,
-		p_country_name: null,
+		p_service_name: serviceParam || null,
+		p_country_name: cityParam || null,
 		p_country_slug: null,
 		p_experience_name: null,
 		p_jurisdiction_name: null,
 		p_gender: null,
 		sort: null
 	};
-	const searchParams = useSearchParams();
-	const country = searchParams.get('country');
 
-	const [filterData, setfilterData]: any = useState(initialData);
-	const [totalPages, setTotallawyers] = useState(0);
+	const [filterData, setFilterData]: any = useState(initialData);
+	const [totalPages, setTotalPages] = useState(0);
 	const itemsPerPage = 16;
-	const startIndex = (currentPage - 1) * itemsPerPage;
-	const endIndex = startIndex + itemsPerPage;
-
 
 	const handleServices = () => {
 		getAllServices().then(res => {
-			setservices(res.data);
+			setServices(res.data);
 		});
 	};
+
 	const handleCountries = () => {
 		getAllCountries().then(res => {
 			setCountries(res.data);
 		});
 	};
 
-	const handleLawyers = (data: {}) => {
+
+	const handleLawyers = (data: any, page: number = currentPage) => {
 		getAllLawyersOrFilter(data).then(res => {
-			let filteredLawyers;
-			if (country) {
-				filteredLawyers = res.data.filter((lawyer: any) => lawyer.location_slug === country);
-			} else {
-				filteredLawyers = res.data;
-			}
-			setlawyers(filteredLawyers?.slice((currentPage - 1) * itemsPerPage, ((currentPage - 1) * itemsPerPage) + itemsPerPage));
-			setfilterPopup(false);
-			setfilterData(data);
-			setTotallawyers(Math.ceil(filteredLawyers.length / itemsPerPage));
+			let filteredLawyers = res.data;
+
+			// // Apply city filter if city parameter exists
+			// if (cityParam) {
+			// 	filteredLawyers = filteredLawyers.filter((lawyer: any) =>
+			// 		lawyer.location_name?.toLowerCase() === cityParam.toLowerCase() ||
+			// 		lawyer.location_slug?.toLowerCase() === cityParam.toLowerCase()
+			// 	);
+			// }
+
+			setLawyers(filteredLawyers?.slice((page - 1) * itemsPerPage, ((page - 1) * itemsPerPage) + itemsPerPage));
+			setFilterPopup(false);
+			setFilterData(data);
+			setTotalPages(Math.ceil(filteredLawyers.length / itemsPerPage));
 		});
 	};
 
-
 	const handleSort = (sort: any) => {
-		setfilterData({ ...filterData, sort: sort });
-		setsort(sort);
-		handleLawyers(filterData);
+		const newFilterData = { ...filterData, sort: sort };
+		setFilterData(newFilterData);
+		setSort(sort);
+		handleLawyers(newFilterData);
 		setCurrentPage(1);
 	};
 
 	const handleExperience = () => {
 		getExperience().then(res => {
-			setexperience(res.data);
+			setExperience(res.data);
 		});
 	};
 
 	const handleSearchLawyer = (e: any) => {
 		if (e.target.value.length > 2) {
 			getLawyersDataByName({ name: e.target.value }).then(res => {
-				setlawyers(res.data);
+				setLawyers(res.data);
 			});
 		} else {
 			handleLawyers(filterData);
@@ -111,22 +119,48 @@ export default function Page({ filterlawyer }: Props) {
 
 	const handleJurisdication = () => {
 		getJurisdication().then(res => {
-			setjurisdication(res.data);
+			setJurisdication(res.data);
 		});
 	};
 
+	// useEffect(() => {
+	// 	// Initialize with URL parameters on component mount
+	// 	handleServices();
+	// 	handleCountries();
+	// 	handleExperience();
+	// 	handleJurisdication();
+
+	// 	// If we have service parameter in URL, apply the filter
+	// 	if (serviceParam || cityParam) {
+	// 		handleLawyers(initialData, 1);
+	// 	} else {
+	// 		handleLawyers(filterData, currentPage);
+	// 	}
+	// }, [serviceParam, cityParam]); // Add dependencies to re-run when URL params change
 	useEffect(() => {
-		handleLawyers(currentPage);
-		handleLawyers(filterData);
 		handleServices();
 		handleCountries();
 		handleExperience();
 		handleJurisdication();
-	}, [sort, currentPage]);
+
+		// Create initial filter data that includes URL parameters
+		const initialFilterData = {
+			p_service_name: serviceParam || null,
+			p_country_name: cityParam || null, // This will handle city filtering through the API
+			p_country_slug: null,
+			p_experience_name: null,
+			p_jurisdiction_name: null,
+			p_gender: null,
+			sort: null
+		};
+
+		handleLawyers(initialFilterData, 1);
+		setFilterData(initialFilterData);
+	}, [serviceParam, cityParam]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);
-		handleLawyers(newPage)
+		handleLawyers(filterData, newPage);
 	};
 
 	return (
@@ -152,7 +186,7 @@ export default function Page({ filterlawyer }: Props) {
 						<div className="col-lg-3 col-md-3 col-sm-12">
 							<div className="filter-btn">
 								<DefaultButton
-									onClick={() => setfilterPopup(true)}
+									onClick={() => setFilterPopup(true)}
 									background="#fff"
 									color="#c49073"
 									height={48}
@@ -246,16 +280,13 @@ export default function Page({ filterlawyer }: Props) {
 				<div className="row">
 					{lawyers?.length > 0 ? (
 						lawyers?.map((item: any, index: any) => (
-							<div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
-								<LawyerCard lawyer={item} Key={index} />
+							<div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4" key={index}>
+								<LawyerCard lawyer={item} />
 							</div>
 						))
 					) : (
 						<div className="no-record">
 							<h5>No matching record found!</h5>
-							{/* <PrimaryButton className="mt-3" onClick={() => handleLawyers(initialData)}>
-								View all professionals
-							</PrimaryButton> */}
 						</div>
 					)}
 
@@ -270,13 +301,15 @@ export default function Page({ filterlawyer }: Props) {
 					</div>
 				</div>
 			</div>
+
+			{/* Filter Popup */}
 			<Popup
 				show={filterPopup}
 				size="sm"
 				title="Filter"
 				footer={false}
-				onCancel={() => setfilterPopup(false)}
-				onOk={() => setfilterPopup(false)}
+				onCancel={() => setFilterPopup(false)}
+				onOk={() => setFilterPopup(false)}
 			>
 				<div className="mt-2 mb-2 set-accordian">
 					<ul>
@@ -288,7 +321,7 @@ export default function Page({ filterlawyer }: Props) {
 										<li
 											className={`d-flex justify-content-between filter-items ${filterData.p_service_name === null && 'active'
 												}`}
-											onClick={e => setfilterData({ ...filterData, p_service_name: null })}
+											onClick={e => setFilterData({ ...filterData, p_service_name: null })}
 										>
 											<p>All</p>
 											{filterData.p_service_name === null && (
@@ -301,8 +334,9 @@ export default function Page({ filterlawyer }: Props) {
 													className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_service_name === item.name && 'active'
 														}`}
 													onClick={e =>
-														setfilterData({ ...filterData, p_service_name: item.name })
+														setFilterData({ ...filterData, p_service_name: item.name })
 													}
+													key={index}
 												>
 													<p>{item.name}</p>
 													{filterData.p_service_name === item.name && (
@@ -329,7 +363,7 @@ export default function Page({ filterlawyer }: Props) {
 										<li
 											className={`d-flex justify-content-between filter-items ${filterData.p_country_name === null && 'active'
 												}`}
-											onClick={e => setfilterData({ ...filterData, p_country_name: null })}
+											onClick={e => setFilterData({ ...filterData, p_country_name: null })}
 										>
 											<p>All</p>
 											{filterData.p_country_name === null && (
@@ -342,8 +376,9 @@ export default function Page({ filterlawyer }: Props) {
 													className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_country_name === item.name && 'active'
 														}`}
 													onClick={e =>
-														setfilterData({ ...filterData, p_country_name: item.name })
+														setFilterData({ ...filterData, p_country_name: item.name })
 													}
+													key={index}
 												>
 													<p>{item.name}</p>
 													{filterData.p_country_name === item.name && (
@@ -364,99 +399,6 @@ export default function Page({ filterlawyer }: Props) {
 									</ul>
 								</AccordionItem>
 							</li>
-							{/* <li>
-								<AccordionItem title="Years of Experience" Key={'2'}>
-									<ul className="service-list-group mt-1">
-										{experience &&
-											experience.map((item: any, index: number) => (
-												<li
-													className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_experience_name === item.experience && 'active'
-														}`}
-													onClick={e =>
-														setfilterData({
-															...filterData,
-															p_experience_name: item.experience
-														})
-													}
-												>
-													<p>{item.experience}</p>
-													{filterData.p_experience_name === item.experience && (
-														<CheckIcon
-															color={'#02142d'}
-															className=""
-															height={20}
-															width={20}
-														/>
-													)}
-												</li>
-											))}
-									</ul>
-								</AccordionItem>
-							</li> */}
-							{/* <li>
-								<AccordionItem title="Jurisdiction" Key={'3'}>
-									<ul className="service-list-group mt-1">
-										{jurisdication &&
-											jurisdication.map((item: any, index: number) => (
-												<li
-													className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_jurisdiction_name === item.jurisdiction_name &&
-														'active'
-														}`}
-													onClick={e =>
-														setfilterData({
-															...filterData,
-															p_jurisdiction_name: item.jurisdiction_name
-														})
-													}
-												>
-													<p>{item.jurisdiction_name}</p>
-													{filterData.p_jurisdiction_name === item.jurisdiction_name && (
-														<CheckIcon
-															color={'#02142d'}
-															className=""
-															height={20}
-															width={20}
-														/>
-													)}
-												</li>
-											))}
-									</ul>
-								</AccordionItem>
-							</li> */}
-							{/* <li>
-								<AccordionItem title="Gender" Key={'4'}>
-									<ul className="service-list-group mt-2">
-										<li
-											className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_gender === null && 'active'
-												}`}
-											onClick={e => setfilterData({ ...filterData, p_gender: 'All' })}
-										>
-											<p>All</p>
-										</li>
-										<li
-											className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_gender === 'male' && 'active'
-												}`}
-											onClick={e => setfilterData({ ...filterData, p_gender: 'male' })}
-										>
-											<p>Male</p>
-										</li>
-										<li
-											className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_gender === 'female' && 'active'
-												}`}
-											onClick={e => setfilterData({ ...filterData, p_gender: 'Female' })}
-										>
-											<p>Female</p>
-										</li>
-										<li
-											className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_gender === 'others' && 'active'
-												}`}
-											onClick={e => setfilterData({ ...filterData, p_gender: 'others' })}
-										>
-											<p>Others</p>
-										</li>
-									</ul>
-								</AccordionItem>
-							</li> */}
 						</AccordionUI>
 					</ul>
 
@@ -469,7 +411,20 @@ export default function Page({ filterlawyer }: Props) {
 						Show results
 					</DefaultButton>
 
-					<button onClick={() => handleLawyers(initialData)} className="w-100 mt-2 clear-btn">
+					<button onClick={() => {
+						const clearedData = {
+							p_service_name: null,
+							p_country_name: null,
+							p_country_slug: null,
+							p_experience_name: null,
+							p_jurisdiction_name: null,
+							p_gender: null,
+							sort: null
+						};
+						setFilterData(clearedData);
+						handleLawyers(clearedData);
+						router.push('/find-a-professional');
+					}} className="w-100 mt-2 clear-btn">
 						Clear Filters
 					</button>
 				</div>

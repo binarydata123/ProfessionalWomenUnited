@@ -57,10 +57,6 @@ export default function ProfessionalCard() {
     }
   };
 
-  // const viewProfile = (id: number) => {
-  //   const prof = members.find((p) => p.id === id);
-  //   alert(`Viewing profile for ${prof?.name}`);
-  // };
 
   const capitalize = (str: string) => {
     if (!str) return "";
@@ -118,7 +114,7 @@ export default function ProfessionalCard() {
 
               </div>            </div>
           ) : members.length > 0 ? (
-            members.map((prof) => (
+            members.slice(0, 6).map((prof) => (
               <div key={prof.id} className="professional-card">
                 <div className="card-image">
                   <ImageComponent
@@ -147,11 +143,6 @@ export default function ProfessionalCard() {
                     </div>
                   </div>
                   <div className="action-buttons">
-
-                    {/* <button className="btn-secondary" onClick={() => viewProfile(prof.id)}>
-
-                      View Profile
-                    </button> */}
                     <Link
                       href={`/find-a-professional/${prof.slug}`}
                       className="btn-secondary"
@@ -164,7 +155,7 @@ export default function ProfessionalCard() {
               </div>
             ))
           ) : (
-            <div className="no-results">
+            <div className="no-results text-center">
               <p className="text-center">Not Found</p>
             </div>
           )}

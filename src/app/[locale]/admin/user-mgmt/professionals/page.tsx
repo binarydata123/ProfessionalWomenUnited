@@ -253,9 +253,14 @@ export default function lawyers() {
 									overlay={<Tooltip className="in" id="tooltip-top" > {rowData.full_name} </Tooltip>}>
 									<span onClick={() => handleSingleLawyerDetails(rowData?.id, rowData?.plan_name)}
 										style={{ cursor: 'pointer' }}>
-										{rowData.full_name && rowData.full_name.length > 50
+										{/* {rowData.full_name && rowData.full_name.length > 50
 											? rowData.full_name.substring(0, 50) + '...'
-											: rowData.full_name}
+											: rowData.full_name} */}
+										{rowData.full_name && rowData.full_name.length > 50
+											? rowData.full_name
+												.substring(0, 50)
+												.replace(/\b\w/g, (char: string) => char.toUpperCase()) + '...'
+											: rowData.full_name.replace(/\b\w/g, (char: string) => char.toUpperCase())}
 									</span>
 								</OverlayTrigger>
 							</td>
