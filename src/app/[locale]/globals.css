@@ -1952,3 +1952,11 @@ div#tabs-viwe-buton button:nth-child(2) {
 	padding: '50px';
 	height: none;
 }
+
+.register-page-link-back {
+	margin-top: 3px !important;
+	display: block;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 500;
+}

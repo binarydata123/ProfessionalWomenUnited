@@ -2,6 +2,7 @@
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { Tooltip } from "react-tooltip";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useRouter } from 'next/navigation';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -34,7 +35,24 @@ const getColor = (count: number) => {
   return "#f8f9fa"; // no highlight
 };
 
-export const MapChart = () => {
+interface MapChartProps {
+  onStateClick?: (stateName: string) => void;
+}
+
+export const MapChart = ({ onStateClick }: MapChartProps) => {
+
+  const router = useRouter();
+
+  const handleStateClick = (stateName: string) => {
+    if (onStateClick) {
+      onStateClick(stateName);
+    } else {
+      // Default behavior: navigate to find-a-professional with state parameter
+      router.push(`/find-a-professional?state=${encodeURIComponent(stateName)}`);
+    }
+  };
+
+
   return (
     <div className="container mt-1">
       <h3 className="card-title fw-bold text-dark text-center">
@@ -59,12 +77,14 @@ export const MapChart = () => {
                         key={geo.rsmKey}
                         geography={geo}
                         style={{
-                          default: { fill: fillColor, outline: "none" },
-                          hover: { fill: "#F53", outline: "none" },
-                          pressed: { fill: "#E42", outline: "none" },
+                          default: { fill: fillColor, outline: "none", cursor: "pointer" },
+                          hover: { fill: "#F53", outline: "none", cursor: "pointer" },
+                          pressed: { fill: "#E42", outline: "none", cursor: "pointer" },
                         }}
                         data-tooltip-id="state-tooltip"
-                        data-tooltip-content={stateName} // 👉 sirf state name
+                        data-tooltip-content={stateName}
+                        onClick={() => handleStateClick(stateName)}
+
                       />
                     );
                   })

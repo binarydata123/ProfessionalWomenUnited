@@ -14,39 +14,7 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
     const [uploadSuccess, setUploadSuccess] = useState(false);
     const [resData, setResData] = useState<any>(null);
 
-    // const handleUpload = async () => {
-    //     if (!file) {
-    //         toast.error('Please select a file first');
-    //         return;
-    //     }
-    //     setIsUploading(true);
-    //     try {
-    //         const res = await importMembers(file);
-    //         console.log(res, 'ddg')
-    //         toast.success(res.message);
-    //         // Show success message
-    //         setUploadSuccess(true);
 
-    //         if (onImportSuccess) {
-    //             onImportSuccess();
-    //         }
-
-    //         // Close modal after 2 seconds
-    //         setTimeout(() => {
-    //             setIsModalOpen(false);
-    //             setUploadSuccess(false);
-    //             setFile(null);
-    //             setIsUploading(false);
-    //         }, 2000);
-
-    //     } catch (err) {
-    //         console.error(err);
-    //         // alert('Upload failed');
-    //         toast.error('Upload failed');
-    //         setIsUploading(false);
-
-    //     }
-    // };
     const handleUpload = async () => {
         if (!file) {
             toast.error('Please select a file first');

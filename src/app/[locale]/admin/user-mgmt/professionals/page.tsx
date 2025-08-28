@@ -197,18 +197,6 @@ export default function lawyers() {
 							))}
 						</select>
 					</div>
-					{/* <div className="col-sm-6 col-md-6 col-lg-3">
-						<select
-							className="form-fild  w-100"
-							value={gender}
-							onChange={e => handleChange('gender', e.target.value, user_id)}
-						>
-							<option value={''}>Select Gender</option>
-							<option value={'male'}>Male</option>
-							<option value={'female'}>Female</option>
-							<option value={'other'}>Other</option>
-						</select>
-					</div> */}
 					<div className="col-sm-6 col-md-6 col-lg-3">
 						<select
 							className="form-fild  w-100"
@@ -222,18 +210,9 @@ export default function lawyers() {
 							<option value={'Not purchased'}>Not Purchased</option>
 						</select>
 					</div>
-					<div className="col-sm-6 col-md-6 col-lg-2">
+					<div className="col-sm-6 col-md-6 col-lg-3">
 						<ExcelUploadComponent onImportSuccess={refreshLawyersData} />
-						{/* <Link href='' onClick={(e) => e.preventDefault()}>
-							<DefaultButton
-								height={55}
-								showIcon={false}
-								className="w-100 mt-1"
-								onClick={handleUpload}
-							>
-								+ Import Excel Data
-							</DefaultButton>
-						</Link> */}
+
 					</div>
 				</div>
 			</div>

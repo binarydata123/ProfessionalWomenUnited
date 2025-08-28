@@ -21,7 +21,7 @@ export default function AuthorCard({ Author }: AuthorProps) {
                                 `/professional-women/Blogs/${Author.profile_image}`
                                 :
                                 `images/default/${Author.gender == 'male'
-                                    ? 'male-lawyer-306x200.png'
+                                    ? 'female-lawyer-306x200.png'
                                     : 'female-lawyer-306x200.png'}`
                                 }`}
                             alt=''

@@ -157,7 +157,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 												}
 												placeholderImgUrl={
 													lawyer.gender === 'male' || 'other'
-														? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/male-lawyer-306x200.png`
+														? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/female-lawyer-306x200.png`
 														: `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/female-lawyer-306x200.png`
 												}
 												alt="profile-user"

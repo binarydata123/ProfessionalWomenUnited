@@ -231,7 +231,7 @@ export default function SingleProfession({ slug = '' }: Props) {
 													)}
 													placeholderImgUrl={
 														process.env.NEXT_PUBLIC_IMAGE_URL +
-														`/images/default/${single_lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+														`/images/default/${single_lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
 														}`
 													}
 													alt="user-popup"
@@ -815,7 +815,7 @@ export default function SingleProfession({ slug = '' }: Props) {
 															)}
 															placeholderImgUrl={
 																process.env.NEXT_PUBLIC_IMAGE_URL +
-																`/images/default/${single_lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+																`/images/default/${single_lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
 																}`
 															}
 															alt={single_lawyer.full_name}

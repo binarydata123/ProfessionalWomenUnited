@@ -142,7 +142,7 @@ export default function FirmCard({
                                 src={getAdminImageSrc306x200(firms?.profile_image, firms.gender)}
                                 placeholderImgUrl={
                                     process.env.NEXT_PUBLIC_IMAGE_URL +
-                                    `/images/default/${firms.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+                                    `/images/default/${firms.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
                                     }`
                                 }
                                 alt="user-popup"

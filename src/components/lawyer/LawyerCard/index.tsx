@@ -47,17 +47,17 @@ export default function LawyerCard({
 		}
 	};
 
-	const handleIsOnline = (id: any = lawyer.id) => {
-		checkUserOnline({ user_id: id }).then(res => {
-			const sec = parseInt(res.data);
-			if (sec < 120) {
-				setisOnline(true);
-			}
-		});
-	};
+	// const handleIsOnline = (id: any = lawyer.id) => {
+	// 	checkUserOnline({ user_id: id }).then(res => {
+	// 		const sec = parseInt(res.data);
+	// 		if (sec < 120) {
+	// 			setisOnline(true);
+	// 		}
+	// 	});
+	// };
 
 	useEffect(() => {
-		handleIsOnline(lawyer.id);
+		// handleIsOnline(lawyer.id);
 		if (lawyer) {
 			setisLoading(false);
 		}
@@ -67,7 +67,7 @@ export default function LawyerCard({
 		return <LawyerLoadingPlaceholder />;
 	}
 
-	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
+	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
 
 	return (
 		<div className="lawyer-card-wrapper" key={Key}>
@@ -94,8 +94,8 @@ export default function LawyerCard({
 									<Image
 										src="/images/contact/blink.svg"
 										alt="lawyer is new or not blink image"
-										width={20}
-										height={20}
+										width={10}
+										height={10}
 									/>
 								</div>
 							)}
@@ -149,23 +149,22 @@ export default function LawyerCard({
 					</div>
 				)}
 				<p className="stong-text">
-					<span>
-						<StarIcon
-							width={20}
-							color={`${lawyer?.avg_rating_and_reviews ? '#c49073' : ''}`}
-							style={{ marginRight: '5px', height: '30px' }}
-						/>
-					</span>
 					{lawyer?.avg_rating_and_reviews ? (
-						<>
+						<span style={{ display: 'flex', alignItems: 'center' }}>
+							<StarIcon
+								width={20}
+								color="#c49073"
+								style={{ marginRight: '5px', height: '30px' }}
+							/>
 							<span>
 								<strong>{lawyer.avg_rating_and_reviews.split('(')[0]}</strong>
 							</span>
 							<span>({lawyer.avg_rating_and_reviews.split('(')[1]})</span>
-						</>
+						</span>
 					) : (
-						<span>Review not available</span>
+						<span></span>
 					)}
+
 				</p>
 
 				<div className="btn-family-more">
@@ -197,7 +196,7 @@ export default function LawyerCard({
 												: '/images/women.png'
 										} placeholderImgUrl={
 											process.env.NEXT_PUBLIC_IMAGE_URL +
-											`/images/default/${lawyer.gender == 'female' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+											`/images/default/${lawyer.gender == 'female' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
 											}`
 										}
 										alt="user-popup"
