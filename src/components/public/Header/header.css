@@ -105,7 +105,7 @@ button.navbar-toggler {
 	position: absolute;
 	width: 30px;
 	height: 3px;
-	background: #c49073;
+	background: #fff;
 	border-radius: var(--border-redius-10);
 	transition: 0.5s;
 }

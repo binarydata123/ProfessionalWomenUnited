@@ -17,7 +17,8 @@ import {
 	getExperience,
 	getJurisdication,
 	getLawyersDataByName,
-	getAllCountries
+	getAllCountries,
+	getCitiesByState
 } from '../../../../lib/frontendapi';
 import PrimaryButton from '@/commonUI/PrimaryButton';
 import Pagination from '@/commonUI/Pagination';
@@ -40,10 +41,13 @@ export default function Page({ filterlawyer }: Props) {
 	const [jurisdication, setJurisdication]: any = useState([]);
 	const [sort, setSort]: any = useState('');
 	const [currentPage, setCurrentPage] = useState(1);
+	const [cities, setCities]: any = useState([]);
+	const [selectedState, setSelectedState] = useState(''); // Track selected state
 
 	// Get URL parameters
 	const serviceParam = searchParams.get("service");
 	const cityParam = searchParams.get("city");
+	const stateParam = searchParams.get("state");
 	// const countryParam = searchParams.get('country');
 
 	// Initialize filter data with URL parameters if they exist
@@ -54,12 +58,13 @@ export default function Page({ filterlawyer }: Props) {
 		p_experience_name: null,
 		p_jurisdiction_name: null,
 		p_gender: null,
+		p_state_name: stateParam || null,
 		sort: null
 	};
 
 	const [filterData, setFilterData]: any = useState(initialData);
 	const [totalPages, setTotalPages] = useState(0);
-	const itemsPerPage = 16;
+	const itemsPerPage = 12;
 
 	const handleServices = () => {
 		getAllServices().then(res => {
@@ -74,30 +79,53 @@ export default function Page({ filterlawyer }: Props) {
 	};
 
 
-	const handleLawyers = (data: any, page: number = currentPage) => {
-		getAllLawyersOrFilter(data).then(res => {
-			let filteredLawyers = res.data;
+	// const handleLawyers = (data: any, page: number = currentPage) => {
+	// 	getAllLawyersOrFilter(data).then(res => {
+	// 		let filteredLawyers = res.data;
 
-			// // Apply city filter if city parameter exists
-			// if (cityParam) {
-			// 	filteredLawyers = filteredLawyers.filter((lawyer: any) =>
-			// 		lawyer.location_name?.toLowerCase() === cityParam.toLowerCase() ||
-			// 		lawyer.location_slug?.toLowerCase() === cityParam.toLowerCase()
-			// 	);
-			// }
 
-			setLawyers(filteredLawyers?.slice((page - 1) * itemsPerPage, ((page - 1) * itemsPerPage) + itemsPerPage));
+	// 		setLawyers(filteredLawyers?.slice((page - 1) * itemsPerPage, ((page - 1) * itemsPerPage) + itemsPerPage));
+	// 		setFilterPopup(false);
+	// 		setFilterData(data);
+	// 		setTotalPages(Math.ceil(filteredLawyers.length / itemsPerPage));
+	// 	});
+	// };
+	const handleLawyers = (data: any, page: number = 1) => {
+		const requestData = {
+			...data,
+			page: page,
+			per_page: itemsPerPage
+		};
+
+		getAllLawyersOrFilter(requestData).then(res => {
+			setLawyers(res.data);
 			setFilterPopup(false);
 			setFilterData(data);
-			setTotalPages(Math.ceil(filteredLawyers.length / itemsPerPage));
+
+			// Set pagination info from backend
+			if (res.pagination) {
+				setTotalPages(res.pagination.last_page);
+				setCurrentPage(res.pagination.current_page);
+			} else {
+				// Fallback for non-paginated responses
+				setTotalPages(1);
+				setCurrentPage(1);
+			}
 		});
 	};
 
+	// const handleSort = (sort: any) => {
+	// 	const newFilterData = { ...filterData, sort: sort };
+	// 	setFilterData(newFilterData);
+	// 	setSort(sort);
+	// 	handleLawyers(newFilterData);
+	// 	setCurrentPage(1);
+	// };
 	const handleSort = (sort: any) => {
 		const newFilterData = { ...filterData, sort: sort };
 		setFilterData(newFilterData);
 		setSort(sort);
-		handleLawyers(newFilterData);
+		handleLawyers(newFilterData, 1); // Reset to page 1 when sorting
 		setCurrentPage(1);
 	};
 
@@ -107,15 +135,28 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
+	// const handleSearchLawyer = (e: any) => {
+	// 	if (e.target.value.length > 2) {
+	// 		getLawyersDataByName({ name: e.target.value }).then(res => {
+	// 			setLawyers(res.data);
+	// 		});
+	// 	} else {
+	// 		handleLawyers(filterData);
+	// 	}
+	// };
 	const handleSearchLawyer = (e: any) => {
 		if (e.target.value.length > 2) {
 			getLawyersDataByName({ name: e.target.value }).then(res => {
 				setLawyers(res.data);
+				// Reset pagination for search results
+				setCurrentPage(1);
+				setTotalPages(1);
 			});
 		} else {
-			handleLawyers(filterData);
+			handleLawyers(filterData, 1); // Reset to page 1 when clearing search
 		}
 	};
+
 
 	const handleJurisdication = () => {
 		getJurisdication().then(res => {
@@ -123,25 +164,18 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
-	// useEffect(() => {
-	// 	// Initialize with URL parameters on component mount
-	// 	handleServices();
-	// 	handleCountries();
-	// 	handleExperience();
-	// 	handleJurisdication();
-
-	// 	// If we have service parameter in URL, apply the filter
-	// 	if (serviceParam || cityParam) {
-	// 		handleLawyers(initialData, 1);
-	// 	} else {
-	// 		handleLawyers(filterData, currentPage);
-	// 	}
-	// }, [serviceParam, cityParam]); // Add dependencies to re-run when URL params change
 	useEffect(() => {
 		handleServices();
 		handleCountries();
 		handleExperience();
 		handleJurisdication();
+
+		if (stateParam) {
+			setSelectedState(stateParam);
+			getCitiesByState(stateParam).then(res => {
+				setCities(res.data);
+			});
+		}
 
 		// Create initial filter data that includes URL parameters
 		const initialFilterData = {
@@ -151,12 +185,14 @@ export default function Page({ filterlawyer }: Props) {
 			p_experience_name: null,
 			p_jurisdiction_name: null,
 			p_gender: null,
-			sort: null
+			sort: null,
+			p_state_name: stateParam || null,
+
 		};
 
 		handleLawyers(initialFilterData, 1);
 		setFilterData(initialFilterData);
-	}, [serviceParam, cityParam]);
+	}, [serviceParam, cityParam, stateParam]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);

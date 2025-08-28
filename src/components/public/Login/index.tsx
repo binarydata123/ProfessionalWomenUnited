@@ -274,6 +274,13 @@ export default function Login() {
 								>
 									{!isLoading ? 'Continue' : 'Please wait...'}
 								</button>
+								<Link
+									href="/"
+									className="register-page-link-back"
+									style={{ color: '#c49073', marginTop: '1' }}
+								>
+									Back to Home
+								</Link>
 								{/* <button
 									type="button"
 									className="btn btn-outline-dark d-flex align-items-center gap-1 justify-content-center  mt-3 w-100"

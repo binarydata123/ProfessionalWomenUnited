@@ -215,7 +215,7 @@ export function getAdminImageSrc306x200(profile_image, gender) {
 	if (profile_image) {
 		return `${baseUrl}/images/profile/${profile_image}`;
 	} else if (gender === 'male' || gender === 'other') {
-		return `${baseUrl}/images/default/male-lawyer-306x200.png`;
+		return `${baseUrl}/images/default/female-lawyer-306x200.png`;
 	} else {
 		return `${baseUrl}/images/default/female-lawyer-306x200.png`;
 	}

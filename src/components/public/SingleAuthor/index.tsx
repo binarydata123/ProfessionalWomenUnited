@@ -72,7 +72,7 @@ export default function SingleAuthor({ Author }: SingleAuthorProps) {
                                     `/professional-women/Blogs/${Author.author.profile_image}`
                                     :
                                     `images/default/${Author.author.gender == 'male'
-                                        ? 'male-lawyer-306x200.png'
+                                        ? 'female-lawyer-306x200.png'
                                         : 'female-lawyer-306x200.png'}`
                                     }`}
                                 alt=''

@@ -137,7 +137,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 		setMessage('');
 	};
 
-	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
+	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
 
 
 	return (

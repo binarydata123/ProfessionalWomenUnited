@@ -104,7 +104,7 @@ export default function LegalIssueLawyers({
 		return <LawyerLoadingPlaceholder />;
 	}
 
-	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
+	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
 
 	const handleSubmit = async (event: any) => {
 		event.preventDefault();
@@ -303,7 +303,7 @@ export default function LegalIssueLawyers({
 										src={getAdminImageSrc306x200(lawyer?.profile_image, lawyer.gender)}
 										placeholderImgUrl={
 											process.env.NEXT_PUBLIC_IMAGE_URL +
-											`/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+											`/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
 											}`
 										}
 										alt="user-popup"
