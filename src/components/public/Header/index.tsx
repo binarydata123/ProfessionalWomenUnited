@@ -147,7 +147,7 @@ export default function Header({ locale }: any) {
 														<div className="row align-items-center">
 															<div className="col-sm-2 col-4 w-12">
 																<Image
-																	src={user?.role !== 'admin' ? profileImageSrc : 'https://pro-women.api.ai-developer.site/images/favicon.png'}
+																	src={user?.role !== 'admin' ? profileImageSrc : 'https://api.professionalwomenunited.com/images/favicon.png'}
 																	alt="user-img2"
 																	width={42}
 																	height={42}
@@ -392,7 +392,7 @@ export default function Header({ locale }: any) {
 														)
 															: <p style={{ marginTop: '7px' }}>
 																<Image
-																	src="https://pro-women.api.ai-developer.site/images/favicon.png"
+																	src="https://api.professionalwomenunited.com/images/favicon.png"
 																	alt="user-img"
 																	width={30}
 																	height={30}
