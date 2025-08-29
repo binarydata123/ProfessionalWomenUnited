@@ -56,7 +56,7 @@ export default async function Page() {
 
 					<DirectoryTabs />
 
-					<section >
+					{/* <section >
 						<div className="container">
 
 							<div className="row">
@@ -71,7 +71,7 @@ export default async function Page() {
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> */}
 
 					<section id="needlawyer">
 						<div className="row">

@@ -292,13 +292,13 @@ span.border-radius-1.banner-arrow-btn {
 	margin-left: 10px;
 }
 .btn-family-more .view-more-btn {
-	font-size: var(--font-small);
+	font-size: 14px;
 	font-weight: var(--weight-semi-bold);
 	line-height: var(--line-height-small);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
 	color: var(--boysenberry);
-	margin-left: 10px;
+	margin-left: 5px;
 	cursor: pointer;
 }
 .location-move {
@@ -308,7 +308,7 @@ span.border-radius-1.banner-arrow-btn {
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
 	color: var(--green-medium-2);
-	padding: 10px 0px;
+	padding: 6px 0px;
 	display: flex;
 	align-items: center;
 }
@@ -534,7 +534,7 @@ img.arrow-change {
 }
 
 .freeconsultation_new.bg-change img {
-	width: 20px !important;
+	width: 18px !important;
 	float: right;
 }
 

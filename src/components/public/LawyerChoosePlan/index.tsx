@@ -25,7 +25,7 @@ interface MembershipPlan {
 export default function LawyerChoosePlan() {
     const router = useRouter();
     const { user } = useContext(AuthContext)
-    const [isMonthly, setIsMonthly] = useState('one-time');
+    const [isMonthly, setIsMonthly] = useState('yearly');
     const [membershipPlan, setMembershipPlan] = useState<MembershipPlan | null>(null);
     const [selectedPlan, setSelectedPlan] = useState('individuals');
 
@@ -61,8 +61,8 @@ export default function LawyerChoosePlan() {
         if (user) {
             let tempPlanAmount;
 
-            if (isMonthly === 'one-time') {
-                tempPlanAmount = membershipPlan?.monthly_amount;
+            if (isMonthly === 'yearly') {
+                tempPlanAmount = membershipPlan?.yearly_amount;
             } else {
                 tempPlanAmount = membershipPlan?.yearly_amount;
             }
@@ -82,7 +82,7 @@ export default function LawyerChoosePlan() {
     const handleMonthlyPlanToggle = () => {
         const newPlan = plan === 'yes' ? 'no' : 'yes';
         setPlan(newPlan);
-        setIsMonthly(newPlan === 'yes' ? 'yearly' : 'one-time');
+        setIsMonthly(newPlan === 'yes' ? 'yearly' : 'yearly');
     };
 
 
@@ -124,14 +124,14 @@ export default function LawyerChoosePlan() {
                                             </h5>
                                         </div>
                                         <div className="col-sm-6 text-right tab-left">
-                                            {isMonthly == 'one-time' ? (
+                                            {isMonthly == 'yearly' ? (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
                                                     USD{' '}
                                                     <span className="text-xx-50">
                                                         {membershipPlan && membershipPlan.monthly_amount}
 
                                                     </span>
-                                                    {/* /month */}
+                                                    /yearly
                                                 </h6>
                                             ) : (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
@@ -172,7 +172,7 @@ export default function LawyerChoosePlan() {
                                     </div> */}
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'one-time' &&
+                                        {isMonthly == 'yearly' &&
                                             membershipPlan &&
                                             membershipPlan.monthly_desc.split(',').map((desc, index) => (
                                                 <p key={index} className="font-small weight-medium social-link mt-3">
@@ -200,7 +200,7 @@ export default function LawyerChoosePlan() {
                                                     ? ' Start 1 Month Free Trial'
                                                     : `Pay ${membershipPlan && membershipPlan.yearly_amount}`} */}
                                                 {user ? (
-                                                    isMonthly === 'one-time'
+                                                    isMonthly === 'yearly'
                                                         ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
                                                         : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`
                                                 ) : (
@@ -247,7 +247,7 @@ export default function LawyerChoosePlan() {
                                     </div>
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'one-time' &&
+                                        {isMonthly == 'yearly' &&
                                             membershipPlan &&
                                             membershipPlan.monthly_desc.split(',').map((desc, index) => (
                                                 <p key={index} className="font-small weight-medium social-link mt-3">

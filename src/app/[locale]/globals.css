@@ -453,7 +453,7 @@ section#our-blogs img {
 }
 
 .testimonial button {
-	font-size: var(--font-x-small);
+	font-size: 12px;
 	font-weight: var(--weight-medium);
 	line-height: var(--line-height-xs-small);
 	letter-spacing: var(--letter-spacing-02);
@@ -462,7 +462,7 @@ section#our-blogs img {
 	background-color: var(--color-btn-testi);
 	color: var(--green-medium-2);
 	border-radius: 4px;
-	margin-top: 10px;
+	margin-top: 5px;
 	padding: 2px 6px;
 	transition: 0.5s ease;
 }
