@@ -385,7 +385,7 @@ export default function Page() {
 
 													</div>
 												</div>
-												<div className="benefits mt-4">
+												{/* <div className="benefits mt-4">
 													<p className="font-medium weight-semi-bold social-link">Benefits:</p>
 													<p className="font-small weight-medium social-link mt-3">
 														<i className="fa-solid fa-check"></i> Enhanced Profile Visibility
@@ -405,7 +405,7 @@ export default function Page() {
 													<p className="font-small weight-medium social-link mt-2">
 														<i className="fa-solid fa-xmark"></i> Dedicated Support{' '}
 													</p>
-												</div>
+												</div> */}
 
 												<div className="text-center mt-4">
 													<button className=" w-100 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
@@ -463,7 +463,7 @@ export default function Page() {
 														</div>
 													</div>
 												</div>
-												<div className="benefits mt-4">
+												{/* <div className="benefits mt-4">
 													<p className="font-medium weight-semi-bold social-link">Benefits:</p>
 													<p className="font-small weight-medium social-link mt-3">
 														<i className="fa-solid fa-check"></i> Enhanced Profile Visibility
@@ -486,7 +486,7 @@ export default function Page() {
 													<p className="font-small weight-medium social-link mt-2">
 														<i className="fa-solid fa-check"></i> Unlimited Professional Profiles{' '}
 													</p>
-												</div>
+												</div> */}
 
 												<div className="text-center mt-4">
 													<button className=" w-100 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">

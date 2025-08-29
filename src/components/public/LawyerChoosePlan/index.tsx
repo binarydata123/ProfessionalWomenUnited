@@ -172,13 +172,13 @@ export default function LawyerChoosePlan() {
                                     </div> */}
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'yearly' &&
+                                        {/* {isMonthly == 'yearly' &&
                                             membershipPlan &&
                                             membershipPlan.monthly_desc.split(',').map((desc, index) => (
                                                 <p key={index} className="font-small weight-medium social-link mt-3">
                                                     <i className="fa-solid fa-check"></i> {desc.trim()}
                                                 </p>
-                                            ))}
+                                            ))} */}
 
                                         {isMonthly == 'yearly' &&
                                             membershipPlan &&
