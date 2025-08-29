@@ -279,7 +279,7 @@ div#navbarSupportedContent {
 	padding: 6px 0;
 }
 .navbar-toggler {
-	background: #c49073;
+	background: #c49073 !important;
 	border: none;
 }
 .navbar-light .navbar-toggler-icon {

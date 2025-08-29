@@ -669,7 +669,7 @@ export default function Header() {
 											<div className="d-flex align-items-center">
 												<div className="img-class">
 													<Image
-														src={user?.role !== 'admin' ? profileImageSrc : 'https://api.professionalwomenunited.com/images/favicon.png'}
+														src={user?.role !== 'admin' ? profileImageSrc : '/favicon.png'}
 														alt="user-img2"
 														width={42}
 														height={42}

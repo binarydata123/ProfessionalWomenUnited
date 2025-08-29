@@ -1,7 +1,7 @@
 'use client';
 import React, { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { MapPinIcon } from '@heroicons/react/20/solid';
+import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
 import { StarIcon } from '@heroicons/react/24/solid';
 import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs';
 import Image from 'next/image';
@@ -210,7 +210,9 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									/>
 								</li>
 								<li>
-									<Link href="JavaScript:void(0)">{single_lawyer?.full_name}</Link>
+									<Link href="JavaScript:void(0)">{single_lawyer?.full_name
+										?.toLowerCase()
+										.replace(/\b\w/g, (char: string) => char.toUpperCase())}</Link>
 								</li>
 							</ul>
 						)}
@@ -337,6 +339,26 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																{single_lawyer?.location_name}
 															</p>
 														)}
+
+														{/* Phone Number and Email Section */}
+														{/* <div className="contact-info mt-3">
+															{single_lawyer?.phone_number && (
+																<p className="mb-1">
+																	<PhoneIcon width={18} height={18} className="me-2 text-muted" />
+																	<a href={`tel:${single_lawyer.phone_number}`} className="text-decoration-none text-dark">
+																		{single_lawyer.phone_number}
+																	</a>
+																</p>
+															)}
+															{single_lawyer?.email && (
+																<p className="mb-1">
+																	<EnvelopeIcon width={18} height={18} className="me-2 text-muted" />
+																	<a href={`mailto:${single_lawyer.email}`} className="text-decoration-none text-dark">
+																		{single_lawyer.email}
+																	</a>
+																</p>
+															)}
+														</div> */}
 
 														<div className="mt-2">
 															{single_lawyer?.service_name &&
@@ -556,6 +578,36 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										</div>
 									)}
 
+									{/* Contact Information in About Section */}
+									{(single_lawyer?.is_show_phone_number || single_lawyer?.is_show_email) && (
+										<div className="contact-details-card mt-4 p-3 rounded" style={{ backgroundColor: '#f8f9fa' }}>
+											<h6 className="font-medium weight-semi-bold mb-3">Contact Information</h6>
+											<div className="row">
+												{single_lawyer?.is_show_phone_number && single_lawyer?.phone_number && (
+													<div className="col-md-6 mb-2">
+														<div className="d-flex align-items-center">
+															<PhoneIcon width={18} height={18} className="me-2 text-muted" />
+															<span className="font-small">Phone:</span>
+														</div>
+														<a href={`tel:${single_lawyer.phone_number}`} className="font-small weight-semi-bold text-dark text-decoration-none">
+															{single_lawyer.phone_number}
+														</a>
+													</div>
+												)}
+												{single_lawyer?.is_show_email && single_lawyer?.email && (
+													<div className="col-md-6 mb-2">
+														<div className="d-flex align-items-center">
+															<EnvelopeIcon width={18} height={18} className="me-2 text-muted" />
+															<span className="font-small">Email:</span>
+														</div>
+														<a href={`mailto:${single_lawyer.email}`} className="font-small weight-semi-bold text-dark text-decoration-none">
+															{single_lawyer.email}
+														</a>
+													</div>
+												)}
+											</div>
+										</div>
+									)}
 									{single_lawyer?.specializ_name && (
 										<>
 											{isLoading ? (
@@ -642,7 +694,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									{single_lawyer?.acquired && currentYear - single_lawyer?.acquired > 0 && (
 										<p className="font-medium  weight-medium text-sonic-silver mt-3">
 											{' '}
-											Licensed for 9 years:{' '}
+											Licensed for {currentYear - single_lawyer?.acquired} years:{' '}
 										</p>
 									)}
 
@@ -896,6 +948,26 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																{single_lawyer?.location_name}
 															</p>
 														)}
+
+														{/* Contact Info in Sidebar */}
+														{/* <div className="contact-info-sidebar mt-2">
+															{single_lawyer?.phone_number && (
+																<p className="mb-1">
+																	<PhoneIcon width={16} height={16} className="me-2 text-muted" />
+																	<a href={`tel:${single_lawyer.phone_number}`} className="text-decoration-none text-dark small">
+																		{single_lawyer.phone_number}
+																	</a>
+																</p>
+															)}
+															{single_lawyer?.email && (
+																<p className="mb-2">
+																	<EnvelopeIcon width={16} height={16} className="me-2 text-muted" />
+																	<a href={`mailto:${single_lawyer.email}`} className="text-decoration-none text-dark small">
+																		{single_lawyer.email}
+																	</a>
+																</p>
+															)}
+														</div> */}
 
 														<p className="cursor-pointer">
 															<Link

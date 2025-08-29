@@ -10,7 +10,7 @@ module.exports = withNextIntl({
 	cache: false,
 	assetPrefix: isProd ? 'https://professionalwomenunited.com/' : 'http://localhost:5000/',
 	images: {
-		domains: ['localhost','professionalwomenunited.com', 'api.professionalwomenunited.com'] // Add your local domain(s) here
+		domains: ['localhost', 'professionalwomenunited.com', 'api.professionalwomenunited.com'] // Add your local domain(s) here
 	},
 	webpack: (config, {buildId, dev, isServer, defaultLoaders, webpack}) => {
 		config.plugins.push(
