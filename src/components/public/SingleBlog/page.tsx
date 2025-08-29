@@ -238,7 +238,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								<ul className="d-flex align-items-center">
 									<li>
 										<LinkedinShareButton
-											url={`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`}
+											url={`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`}
 										>
 											<Image
 												width={24}
@@ -250,14 +250,14 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									</li>
 									<li className="m-0">
 										<TwitterShareButton
-											url={`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`}
+											url={`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`}
 										>
 											<i className="fa-brands fa-x-twitter m-0"></i>
 										</TwitterShareButton>
 									</li>
 									<li>
 										<FacebookShareButton
-											url={`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`}
+											url={`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`}
 										>
 											<Image width={24} height={24} src="/images/Blogs/facebook.png" alt="icon" />
 										</FacebookShareButton>
@@ -265,7 +265,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									<li>
 										<a
 											onClick={() =>
-												copyToClipboard(`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`)
+												copyToClipboard(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`)
 											}
 											role="button"
 											title="copy blog url"

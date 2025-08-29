@@ -406,7 +406,7 @@ export default function Header({ locale }: any) {
 													<div className="dropdown ">
 														<button
 															className="btn btn-secondary dropdown-toggle mt-2"
-															style={{ background: '#fff' }}
+															style={{ background: '#c49073' }}
 															type="button"
 															id="dropdownMenu2"
 															data-bs-toggle="dropdown"

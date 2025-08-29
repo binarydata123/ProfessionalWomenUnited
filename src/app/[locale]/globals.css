@@ -1230,7 +1230,7 @@ select.form-fild {
 		margin-top: 14px;
 	}
 	.find-a-lawyer-wrapper .search-filter-area {
-		padding-top: 90px;
+		/* padding-top: 90px; */
 	}
 	.atypebtn p:first-child,
 	.atypebtn p:nth-child(2),

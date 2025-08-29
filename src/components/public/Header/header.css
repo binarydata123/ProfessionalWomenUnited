@@ -97,7 +97,7 @@ button.navbar-toggler {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	right: 18px;
+	right: 10px;
 	overflow: hidden;
 }
 
@@ -147,7 +147,7 @@ button.navbar-toggler span {
 .navbar-toggler {
 	padding: 0;
 	border: none;
-	background-color: #c49073;
+	background-color: #c49073 !important;
 }
 
 .navbar-toggler.collapsed:focus {

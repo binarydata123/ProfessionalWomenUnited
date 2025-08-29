@@ -64,7 +64,7 @@ export default function Page({ filterlawyer }: Props) {
 
 	const [filterData, setFilterData]: any = useState(initialData);
 	const [totalPages, setTotalPages] = useState(0);
-	const itemsPerPage = 12;
+	const itemsPerPage = 20;
 
 	const handleServices = () => {
 		getAllServices().then(res => {

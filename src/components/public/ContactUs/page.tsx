@@ -203,7 +203,7 @@ export default function ContactUs() {
 							<h5>{t('talk_to_us')}</h5>
 							<a href="tel:+97143316688">
 								{' '}
-								<p>+159654894564</p>
+								<p>479-321-3654</p>
 							</a>
 						</div>
 					</div>
@@ -213,7 +213,7 @@ export default function ContactUs() {
 							<h5>{t('visit_us')}</h5>
 							<a href="https://goo.gl/maps/7hfKjBNd8t5vuLej8" target="blank">
 								{' '}
-								<p>804, City Tower 2, willaim Road, USA</p>
+								<p>1407 NE Beta Lane, Bentonville, AR 72712</p>
 							</a>
 						</div>
 					</div>
