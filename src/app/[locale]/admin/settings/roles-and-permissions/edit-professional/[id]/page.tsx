@@ -1219,8 +1219,8 @@ export default function Page({ params }: { params: { id: string } }) {
 									onChange={e => setFormData({ ...formData, plan: e.target.value })}
 								>
 									<option value="">Choose Plan Type</option>
-									<option value={'one-time'}>Monthly Plan</option>
-									<option value={'quarterly'}>Quarterly Plan</option>
+									<option value={'yearly'}>Monthly Plan</option>
+									{/* <option value={'quarterly'}>Quarterly Plan</option> */}
 								</select>
 							</div>
 						</div>

@@ -1097,7 +1097,7 @@ export default function Page() {
 									onChange={e => setFormData({ ...formData, plan: e.target.value })}
 								>
 									<option value="">Choose Plan Type</option>
-									<option value={'one-time'}>Yearly Plan</option>
+									<option value={'yearly'}>Yearly Plan</option>
 									{/* <option value={'quarterly'}>Quarterly Plan</option> */}
 								</select>
 							</div>

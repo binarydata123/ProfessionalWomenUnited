@@ -135,8 +135,8 @@ export default function UpgradeAccount(props: any) {
 							onChange={e => setFormData({ ...formData, plan: e.target.value })}
 						>
 							<option value="">Choose Plan Type</option>
-							<option value={'one-time'}>Monthly Plan</option>
-							<option value={'quarterly'}>Quarterly Plan</option>
+							<option value={'yearly'}>Yearly Plan</option>
+							{/* <option value={'quarterly'}>Quarterly Plan</option> */}
 						</select>
 						{errors.plan && <small className="error-message text-danger d-block">{errors.plan}</small>}
 						<button

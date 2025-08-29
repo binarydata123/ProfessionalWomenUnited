@@ -318,7 +318,7 @@ span.border-radius-1.banner-arrow-btn {
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
 	color: var(--green-medium-2);
-	padding: 10px 0px;
+	padding: 6px 0px;
 	display: flex;
 	align-items: center;
 }

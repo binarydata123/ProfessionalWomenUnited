@@ -8,7 +8,7 @@ import Popup from '@/commonUI/Popup';
 import LawyerCard from '@/components/lawyer/LawyerCard';
 import './find-a-lawyer.css';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
-import { CheckIcon } from '@heroicons/react/24/solid';
+import { CheckIcon, XMarkIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -18,7 +18,9 @@ import {
 	getJurisdication,
 	getLawyersDataByName,
 	getAllCountries,
-	getCitiesByState
+	getCitiesByState,
+	getAllCities,
+	getAllProfessions, getAllStates
 } from '../../../../lib/frontendapi';
 import PrimaryButton from '@/commonUI/PrimaryButton';
 import Pagination from '@/commonUI/Pagination';
@@ -42,13 +44,19 @@ export default function Page({ filterlawyer }: Props) {
 	const [sort, setSort]: any = useState('');
 	const [currentPage, setCurrentPage] = useState(1);
 	const [cities, setCities]: any = useState([]);
-	const [selectedState, setSelectedState] = useState(''); // Track selected state
+	const [states, setStates]: any = useState([]);
+	const [selectedState, setSelectedState] = useState('');
+
+	// State for search functionality
+	const [stateSearchTerm, setStateSearchTerm] = useState('');
+	const [citySearchTerm, setCitySearchTerm] = useState('');
+	const [showAllStates, setShowAllStates] = useState(false);
+	const [showAllCities, setShowAllCities] = useState(false);
 
 	// Get URL parameters
 	const serviceParam = searchParams.get("service");
 	const cityParam = searchParams.get("city");
 	const stateParam = searchParams.get("state");
-	// const countryParam = searchParams.get('country');
 
 	// Initialize filter data with URL parameters if they exist
 	const initialData = {
@@ -63,13 +71,27 @@ export default function Page({ filterlawyer }: Props) {
 	};
 
 	const [filterData, setFilterData]: any = useState(initialData);
+	const [appliedFilters, setAppliedFilters] = useState({
+		states: stateParam ? [stateParam] : [],
+		cities: cityParam ? [cityParam] : [],
+		professions: serviceParam ? [serviceParam] : []
+	});
 	const [totalPages, setTotalPages] = useState(0);
-	const itemsPerPage = 20;
+	const itemsPerPage = 15;
 
 	const handleServices = () => {
 		getAllServices().then(res => {
 			setServices(res.data);
 		});
+	};
+	const handleStates = async () => {
+		const data = await getAllStates();
+		setStates(data || []);
+	};
+
+	const handleCities = async () => {
+		const data = await getAllCities();
+		setCities(data || []);
 	};
 
 	const handleCountries = () => {
@@ -78,18 +100,6 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
-
-	// const handleLawyers = (data: any, page: number = currentPage) => {
-	// 	getAllLawyersOrFilter(data).then(res => {
-	// 		let filteredLawyers = res.data;
-
-
-	// 		setLawyers(filteredLawyers?.slice((page - 1) * itemsPerPage, ((page - 1) * itemsPerPage) + itemsPerPage));
-	// 		setFilterPopup(false);
-	// 		setFilterData(data);
-	// 		setTotalPages(Math.ceil(filteredLawyers.length / itemsPerPage));
-	// 	});
-	// };
 	const handleLawyers = (data: any, page: number = 1) => {
 		const requestData = {
 			...data,
@@ -100,7 +110,6 @@ export default function Page({ filterlawyer }: Props) {
 		getAllLawyersOrFilter(requestData).then(res => {
 			setLawyers(res.data);
 			setFilterPopup(false);
-			setFilterData(data);
 
 			// Set pagination info from backend
 			if (res.pagination) {
@@ -114,18 +123,11 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
-	// const handleSort = (sort: any) => {
-	// 	const newFilterData = { ...filterData, sort: sort };
-	// 	setFilterData(newFilterData);
-	// 	setSort(sort);
-	// 	handleLawyers(newFilterData);
-	// 	setCurrentPage(1);
-	// };
 	const handleSort = (sort: any) => {
 		const newFilterData = { ...filterData, sort: sort };
 		setFilterData(newFilterData);
 		setSort(sort);
-		handleLawyers(newFilterData, 1); // Reset to page 1 when sorting
+		handleLawyers(newFilterData, 1);
 		setCurrentPage(1);
 	};
 
@@ -135,28 +137,17 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
-	// const handleSearchLawyer = (e: any) => {
-	// 	if (e.target.value.length > 2) {
-	// 		getLawyersDataByName({ name: e.target.value }).then(res => {
-	// 			setLawyers(res.data);
-	// 		});
-	// 	} else {
-	// 		handleLawyers(filterData);
-	// 	}
-	// };
 	const handleSearchLawyer = (e: any) => {
 		if (e.target.value.length > 2) {
 			getLawyersDataByName({ name: e.target.value }).then(res => {
 				setLawyers(res.data);
-				// Reset pagination for search results
 				setCurrentPage(1);
 				setTotalPages(1);
 			});
 		} else {
-			handleLawyers(filterData, 1); // Reset to page 1 when clearing search
+			handleLawyers(filterData, 1);
 		}
 	};
-
 
 	const handleJurisdication = () => {
 		getJurisdication().then(res => {
@@ -164,11 +155,77 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
+	const applyFilters = () => {
+		const newFilterData = {
+			...filterData,
+			p_service_name: appliedFilters.professions.length > 0 ? appliedFilters.professions.join(',') : null,
+			p_state_name: appliedFilters.states.length > 0 ? appliedFilters.states.join(',') : null,
+			p_country_name: appliedFilters.cities.length > 0 ? appliedFilters.cities.join(',') : null
+		};
+
+		setFilterData(newFilterData);
+		handleLawyers(newFilterData, 1);
+	};
+
+	const clearFilters = () => {
+		const clearedData = {
+			p_service_name: null,
+			p_country_name: null,
+			p_country_slug: null,
+			p_experience_name: null,
+			p_jurisdiction_name: null,
+			p_gender: null,
+			p_state_name: null,
+			sort: null
+		};
+
+		setAppliedFilters({
+			states: [],
+			cities: [],
+			professions: []
+		});
+
+		setFilterData(clearedData);
+		handleLawyers(clearedData);
+		router.push('/find-a-professional');
+	};
+
+	const removeFilter = (type: string, value: string) => {
+		let newAppliedFilters = { ...appliedFilters };
+
+		if (type === 'state') {
+			newAppliedFilters.states = appliedFilters.states.filter(state => state !== value);
+			// If removing a state, also remove any cities from that state
+			const citiesToRemove = cities
+				.filter((city: any) => city.state === value)
+				.map((city: any) => city.name);
+			newAppliedFilters.cities = appliedFilters.cities.filter(city => !citiesToRemove.includes(city));
+		} else if (type === 'city') {
+			newAppliedFilters.cities = appliedFilters.cities.filter(city => city !== value);
+		} else if (type === 'profession') {
+			newAppliedFilters.professions = appliedFilters.professions.filter(prof => prof !== value);
+		}
+
+		setAppliedFilters(newAppliedFilters);
+
+		const newFilterData = {
+			...filterData,
+			p_service_name: newAppliedFilters.professions.length > 0 ? newAppliedFilters.professions.join(',') : null,
+			p_state_name: newAppliedFilters.states.length > 0 ? newAppliedFilters.states.join(',') : null,
+			p_country_name: newAppliedFilters.cities.length > 0 ? newAppliedFilters.cities.join(',') : null
+		};
+
+		setFilterData(newFilterData);
+		handleLawyers(newFilterData, 1);
+	};
+
 	useEffect(() => {
 		handleServices();
 		handleCountries();
 		handleExperience();
 		handleJurisdication();
+		handleStates();
+		handleCities();
 
 		if (stateParam) {
 			setSelectedState(stateParam);
@@ -177,21 +234,24 @@ export default function Page({ filterlawyer }: Props) {
 			});
 		}
 
-		// Create initial filter data that includes URL parameters
 		const initialFilterData = {
 			p_service_name: serviceParam || null,
-			p_country_name: cityParam || null, // This will handle city filtering through the API
+			p_country_name: cityParam || null,
 			p_country_slug: null,
 			p_experience_name: null,
 			p_jurisdiction_name: null,
 			p_gender: null,
 			sort: null,
 			p_state_name: stateParam || null,
-
 		};
 
 		handleLawyers(initialFilterData, 1);
 		setFilterData(initialFilterData);
+		setAppliedFilters({
+			states: stateParam ? [stateParam] : [],
+			cities: cityParam ? [cityParam] : [],
+			professions: serviceParam ? [serviceParam] : []
+		});
 	}, [serviceParam, cityParam, stateParam]);
 
 	const handlePageChange = (newPage: any) => {
@@ -199,16 +259,58 @@ export default function Page({ filterlawyer }: Props) {
 		handleLawyers(filterData, newPage);
 	};
 
+	// Filter cities based on selected states
+	const filteredCities = cities.filter((city: any) =>
+		appliedFilters.states.length === 0 || appliedFilters.states.includes(city.state)
+	);
+
+	// Handle checkbox changes
+	const handleCheckboxChange = (type: string, value: string, checked: boolean) => {
+		setAppliedFilters(prev => {
+			const currentValues = prev[type as keyof typeof prev] as string[];
+
+			if (checked) {
+				// Add the value
+				return {
+					...prev,
+					[type]: [...currentValues, value]
+				};
+			} else {
+				// Remove the value
+				return {
+					...prev,
+					[type]: currentValues.filter(item => item !== value)
+				};
+			}
+		});
+	};
+
+	// Filter states based on search term
+	const filteredStates = states.filter((state: any) =>
+		state.state.toLowerCase().includes(stateSearchTerm.toLowerCase())
+	);
+
+	// Filter cities based on search term
+	const filteredCitiesBySearch = filteredCities.filter((city: any) =>
+		city.name.toLowerCase().includes(citySearchTerm.toLowerCase())
+	);
+
+	// Get limited states for display (10 by default, or all if showAllStates is true)
+	const displayedStates = showAllStates ? filteredStates : filteredStates.slice(0, 10);
+
+	// Get limited cities for display (10 by default, or all if showAllCities is true)
+	const displayedCities = showAllCities ? filteredCitiesBySearch : filteredCitiesBySearch.slice(0, 10);
+
 	return (
-		<div className="find-a-lawyer-wrapper">
-			<div className="search-filter-area ">
-				<div className="container">
+		<div className="find-a-lawyer-wrapper full-width-page">
+			<div className="search-filter-area">
+				<div className="container-full">
 					<div className="row">
-						<div className="col-lg-9 col-md-9 col-sm-12 mb-2">
+						<div className="col-lg-10 col-md-10 col-sm-12 mb-2">
 							<div className="icon-fild icon-g class-add">
 								<input
 									type="text"
-									placeholder="Search for a professional"
+									placeholder="Search by name"
 									className="form-fild find-a-lawyer-input w-100 sp-right"
 									onChange={e => handleSearchLawyer(e)}
 								/>
@@ -219,9 +321,9 @@ export default function Page({ filterlawyer }: Props) {
 								/>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-12">
+						<div className="col-lg-2 col-md-2 col-sm-12">
 							<div className="filter-btn">
-								<DefaultButton
+								{/* <DefaultButton
 									onClick={() => setFilterPopup(true)}
 									background="#fff"
 									color="#c49073"
@@ -237,7 +339,7 @@ export default function Page({ filterlawyer }: Props) {
 										width="20"
 										height="20"
 									/>
-								</DefaultButton>
+								</DefaultButton> */}
 								<DropDown
 									label={
 										<DefaultButton
@@ -290,57 +392,238 @@ export default function Page({ filterlawyer }: Props) {
 				</div>
 			</div>
 
-			<div className="container">
-				<div className="row">
-					<div className="col-sm-12 mt-2 mb-2">
-						<ul className="list-12 mb-3">
-							<li>
-								<Link href="/">Home</Link>
-							</li>
-							<li>
-								<Image
-									src="/images/legal-service/arrow-right.png"
-									alt="Find A Professional right arrow"
-									width={15}
-									height={15}
-								/>
-							</li>
-							<li>
-								<Link href="/find-a-professional" >
-									<h1 className="active">Find a professional</h1>
-								</Link>
-							</li>
-						</ul>
+			{/* Applied Filters Bar */}
+			{(appliedFilters.states.length > 0 || appliedFilters.cities.length > 0 || appliedFilters.professions.length > 0) && (
+				<div className="applied-filters-bar">
+					<div className="container-full">
+						<div className="d-flex align-items-center flex-wrap">
+							<span className="filter-label">Applied Filters:</span>
+							{appliedFilters.states.map(state => (
+								<div key={state} className="applied-filter-item">
+									<span>State: {state}</span>
+									<button onClick={() => removeFilter('state', state)}>
+										<XMarkIcon width={14} height={14} />
+									</button>
+								</div>
+							))}
+							{appliedFilters.cities.map(city => (
+								<div key={city} className="applied-filter-item">
+									<span>City: {city}</span>
+									<button onClick={() => removeFilter('city', city)}>
+										<XMarkIcon width={14} height={14} />
+									</button>
+								</div>
+							))}
+							{appliedFilters.professions.map(prof => (
+								<div key={prof} className="applied-filter-item">
+									<span>Profession: {prof}</span>
+									<button onClick={() => removeFilter('profession', prof)}>
+										<XMarkIcon width={14} height={14} />
+									</button>
+								</div>
+							))}
+							<button className="clear-all-btn" onClick={clearFilters}>
+								Clear All
+							</button>
+						</div>
 					</div>
 				</div>
-				<div className="row">
-					{lawyers?.length > 0 ? (
-						lawyers?.map((item: any, index: any) => (
-							<div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4" key={index}>
-								{/* <LawyerCard lawyer={item} /> */}
-								<LawyerCard lawyer={item} Key={index} />
+			)}
 
-							</div>
-						))
-					) : (
-						<div className="no-record">
-							<h5>No matching record found!</h5>
+			<div className="container-full main-content-area">
+				<div className="grid-container">
+					{/* Sidebar Filter */}
+					<div className="filter-sidebar">
+						<div className="sidebar-header">
+							<h3>Filters</h3>
 						</div>
-					)}
 
-					<div className="col-lg-12 d-flex justify-content-end py-4">
-						{totalPages > 1 && (
-							<Pagination
-								currentPage={currentPage}
-								totalPages={totalPages}
-								handlePageChange={handlePageChange}
-							/>
-						)}
+						<div className="sidebar-content">
+							{/* State Filter */}
+							<div className="filter-section">
+								<h4 className="filter-title">State</h4>
+								<div className="filter-search">
+									<input
+										type="text"
+										placeholder="Search states..."
+										value={stateSearchTerm}
+										onChange={(e) => setStateSearchTerm(e.target.value)}
+										className="filter-search-input"
+									/>
+								</div>
+								<div className="filter-options">
+									{displayedStates.length > 0 ? (
+										displayedStates.map((state: any) => (
+											<div key={state.id} className="filter-option">
+												<input
+													type="checkbox"
+													id={`state-${state.id}`}
+													name="state"
+													checked={appliedFilters.states.includes(state.state)}
+													onChange={(e) =>
+														handleCheckboxChange('states', state.state, e.target.checked)
+													}
+												/>
+												<label htmlFor={`state-${state.id}`}>{state.state}</label>
+											</div>
+										))
+									) : (
+										<div className="no-results">No states found</div>
+									)}
+								</div>
+								{filteredStates.length > 10 && (
+									<button
+										className="show-more-less-btn"
+										onClick={() => setShowAllStates(!showAllStates)}
+									>
+										{showAllStates ? (
+											<>
+												<span>Show Less</span>
+												<ChevronUpIcon width={14} height={14} />
+											</>
+										) : (
+											<>
+												<span>Show More ({filteredStates.length - 10})</span>
+												<ChevronDownIcon width={14} height={14} />
+											</>
+										)}
+									</button>
+								)}
+							</div>
+
+							{/* City Filter */}
+							<div className="filter-section">
+								<h4 className="filter-title">City</h4>
+								<div className="filter-search">
+									<input
+										type="text"
+										placeholder="Search cities..."
+										value={citySearchTerm}
+										onChange={(e) => setCitySearchTerm(e.target.value)}
+										className="filter-search-input"
+									/>
+								</div>
+								<div className="filter-options">
+									{displayedCities.length > 0 ? (
+										displayedCities.map((city: any) => (
+											<div key={city.id} className="filter-option">
+												<input
+													type="checkbox"
+													id={`city-${city.id}`}
+													name="city"
+													checked={appliedFilters.cities.includes(city.name)}
+													onChange={(e) =>
+														handleCheckboxChange('cities', city.name, e.target.checked)
+													}
+												/>
+												<label htmlFor={`city-${city.id}`}>{city.name}</label>
+											</div>
+										))
+									) : (
+										<div className="no-results">No cities found</div>
+									)}
+								</div>
+								{filteredCitiesBySearch.length > 10 && (
+									<button
+										className="show-more-less-btn"
+										onClick={() => setShowAllCities(!showAllCities)}
+									>
+										{showAllCities ? (
+											<>
+												<span>Show Less</span>
+												<ChevronUpIcon width={14} height={14} />
+											</>
+										) : (
+											<>
+												<span>Show More ({filteredCitiesBySearch.length - 10})</span>
+												<ChevronDownIcon width={14} height={14} />
+											</>
+										)}
+									</button>
+								)}
+							</div>
+
+							{/* Profession Filter */}
+							<div className="filter-section">
+								<h4 className="filter-title">Profession</h4>
+								<div className="filter-options">
+									{services.map((service: any) => (
+										<div key={service.id} className="filter-option">
+											<input
+												type="checkbox"
+												id={`profession-${service.id}`}
+												name="profession"
+												checked={appliedFilters.professions.includes(service.name)}
+												onChange={(e) => handleCheckboxChange('professions', service.name, e.target.checked)}
+											/>
+											<label htmlFor={`profession-${service.id}`}>{service.name}</label>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+
+						<div className="sidebar-footer">
+							<button className="apply-filters-btn" onClick={applyFilters}>
+								Apply Filters
+							</button>
+							<button className="clear-filters-btn" onClick={clearFilters}>
+								Clear All
+							</button>
+						</div>
+					</div>
+
+					{/* Main Content */}
+					<div className="lawyers-grid">
+						<div className="breadcrumb-section">
+							<ul className="list-12 mb-3">
+								<li>
+									<Link href="/">Home</Link>
+								</li>
+								<li>
+									<Image
+										src="/images/legal-service/arrow-right.png"
+										alt="Find A Professional right arrow"
+										width={15}
+										height={15}
+									/>
+								</li>
+								<li>
+									<Link href="/find-a-professional" >
+										<h1 className="active">Find a professional</h1>
+									</Link>
+								</li>
+							</ul>
+						</div>
+
+						<div className="lawyers-container">
+							{lawyers?.length > 0 ? (
+								lawyers?.map((item: any, index: any) => (
+									<div className="lawyer-card-item" key={index}>
+										<LawyerCard lawyer={item} Key={index} />
+									</div>
+								))
+							) : (
+								<div className="no-record">
+									<h5>No matching record found!</h5>
+								</div>
+							)}
+						</div>
+
+						<div className="pagination-section">
+							{totalPages > 1 && (
+								<Pagination
+									currentPage={currentPage}
+									totalPages={totalPages}
+									handlePageChange={handlePageChange}
+								/>
+							)}
+						</div>
 					</div>
 				</div>
 			</div>
 
-			{/* Filter Popup */}
+			{/* Filter Popup (keeping the original as backup) */}
 			<Popup
 				show={filterPopup}
 				size="sm"
@@ -353,87 +636,105 @@ export default function Page({ filterlawyer }: Props) {
 					<ul>
 						<AccordionUI flush={true}>
 							<li>
-								<AccordionItem title="Profession" Key={'1'}>
-									<FormInput name="search" placeholder={'Search Profession'} />
+								<AccordionItem title="State" Key={'1'}>
+									<div className="filter-search">
+										<input
+											type="text"
+											placeholder="Search states..."
+											value={stateSearchTerm}
+											onChange={(e) => setStateSearchTerm(e.target.value)}
+											className="filter-search-input"
+										/>
+									</div>
 									<ul className="service-list-group mt-1">
-										<li
-											className={`d-flex justify-content-between filter-items ${filterData.p_service_name === null && 'active'
-												}`}
-											onClick={e => setFilterData({ ...filterData, p_service_name: null })}
-										>
-											<p>All</p>
-											{filterData.p_service_name === null && (
-												<CheckIcon color={'#02142d'} className="" height={20} width={20} />
-											)}
-										</li>
-										{services ? (
-											services.map((item: any, index: number) => (
-												<li
-													className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_service_name === item.name && 'active'
-														}`}
-													onClick={e =>
-														setFilterData({ ...filterData, p_service_name: item.name })
-													}
-													key={index}
-												>
-													<p>{item.name}</p>
-													{filterData.p_service_name === item.name && (
-														<CheckIcon
-															color={'#02142d'}
-															className=""
-															height={20}
-															width={20}
-														/>
-													)}
-												</li>
-											))
-										) : (
-											<center>
-												<h4>No record found!!</h4>
-											</center>
+										{filteredStates.map((state: any) => (
+											<li
+												className={`d-flex justify-content-between filter-items mt-1 ${appliedFilters.states.includes(state.state) && 'active'
+													}`}
+												onClick={() => handleCheckboxChange('states', state.state, !appliedFilters.states.includes(state.state))}
+												key={state.id}
+											>
+												<p>{state.state}</p>
+												{appliedFilters.states.includes(state.state) && (
+													<CheckIcon
+														color={'#02142d'}
+														className=""
+														height={20}
+														width={20}
+													/>
+												)}
+											</li>
+										))}
+										{filteredStates.length === 0 && (
+											<li className="filter-note">No states found</li>
 										)}
 									</ul>
 								</AccordionItem>
 							</li>
 							<li>
-								<AccordionItem title="Location" Key={'5'}>
+								<AccordionItem title="City" Key={'2'}>
+									<div className="filter-search">
+										<input
+											type="text"
+											placeholder="Search cities..."
+											value={citySearchTerm}
+											onChange={(e) => setCitySearchTerm(e.target.value)}
+											className="filter-search-input"
+										/>
+									</div>
 									<ul className="service-list-group mt-1">
-										<li
-											className={`d-flex justify-content-between filter-items ${filterData.p_country_name === null && 'active'
-												}`}
-											onClick={e => setFilterData({ ...filterData, p_country_name: null })}
-										>
-											<p>All</p>
-											{filterData.p_country_name === null && (
-												<CheckIcon color={'#02142d'} className="" height={20} width={20} />
-											)}
-										</li>
-										{countries ? (
-											countries.map((item: any, index: number) => (
-												<li
-													className={`d-flex justify-content-between filter-items mt-1 ${filterData.p_country_name === item.name && 'active'
-														}`}
-													onClick={e =>
-														setFilterData({ ...filterData, p_country_name: item.name })
+										{filteredCitiesBySearch.map((city: any) => (
+											<li
+												className={`d-flex justify-content-between filter-items mt-1 ${appliedFilters.cities.includes(city.name) && 'active'
+													}`}
+												onClick={() => {
+													if (appliedFilters.states.length > 0) {
+														handleCheckboxChange('cities', city.name, !appliedFilters.cities.includes(city.name))
 													}
-													key={index}
-												>
-													<p>{item.name}</p>
-													{filterData.p_country_name === item.name && (
-														<CheckIcon
-															color={'#02142d'}
-															className=""
-															height={20}
-															width={20}
-														/>
-													)}
-												</li>
-											))
-										) : (
-											<center>
-												<h4>No record found!!</h4>
-											</center>
+												}}
+												key={city.id}
+											>
+												<p>{city.name}</p>
+												{appliedFilters.cities.includes(city.name) && (
+													<CheckIcon
+														color={'#02142d'}
+														className=""
+														height={20}
+														width={20}
+													/>
+												)}
+											</li>
+										))}
+										{appliedFilters.states.length === 0 && (
+											<li className="filter-note">Select a state first</li>
 										)}
+										{appliedFilters.states.length > 0 && filteredCitiesBySearch.length === 0 && (
+											<li className="filter-note">No cities found</li>
+										)}
+									</ul>
+								</AccordionItem>
+							</li>
+							<li>
+								<AccordionItem title="Profession" Key={'3'}>
+									<ul className="service-list-group mt-1">
+										{services.map((service: any) => (
+											<li
+												className={`d-flex justify-content-between filter-items mt-1 ${appliedFilters.professions.includes(service.name) && 'active'
+													}`}
+												onClick={() => handleCheckboxChange('professions', service.name, !appliedFilters.professions.includes(service.name))}
+												key={service.id}
+											>
+												<p>{service.name}</p>
+												{appliedFilters.professions.includes(service.name) && (
+													<CheckIcon
+														color={'#02142d'}
+														className=""
+														height={20}
+														width={20}
+													/>
+												)}
+											</li>
+										))}
 									</ul>
 								</AccordionItem>
 							</li>
@@ -441,7 +742,7 @@ export default function Page({ filterlawyer }: Props) {
 					</ul>
 
 					<DefaultButton
-						onClick={() => handleLawyers(filterData)}
+						onClick={applyFilters}
 						className="w-100 mt-4"
 						showIcon={false}
 						background={'#c49073'}
@@ -449,20 +750,7 @@ export default function Page({ filterlawyer }: Props) {
 						Show results
 					</DefaultButton>
 
-					<button onClick={() => {
-						const clearedData = {
-							p_service_name: null,
-							p_country_name: null,
-							p_country_slug: null,
-							p_experience_name: null,
-							p_jurisdiction_name: null,
-							p_gender: null,
-							sort: null
-						};
-						setFilterData(clearedData);
-						handleLawyers(clearedData);
-						router.push('/find-a-professional');
-					}} className="w-100 mt-2 clear-btn">
+					<button onClick={clearFilters} className="w-100 mt-2 clear-btn">
 						Clear Filters
 					</button>
 				</div>

@@ -129,18 +129,12 @@ export default function LawyerCard({
 					</h3>
 				</Link>
 
-				<p className="description">
+				<span className="description">
 					{lawyer?.designation && lawyer.designation.length > 30
 						? lawyer.designation.slice(0, 30) + '...'
 						: lawyer?.designation} {' '}
 
-					{/* {lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
-						<span className="location-move-set">
-							at {' '} <Link href={`/firms/${lawyer?.firm_slug}`}>{lawyer.firm_name}</Link>
-						</span>
-					) : ""} */}
-
-				</p>
+				</span>
 
 				{showLocation && (
 					<div className="location-move">

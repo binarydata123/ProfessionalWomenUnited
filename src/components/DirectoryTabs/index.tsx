@@ -113,7 +113,7 @@ const DirectoryTabs = () => {
                 onClick={() => setCurrentTab('professionals')}
                 style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
               >
-                <i className="fas fa-user me-2"></i>Search by Professionals
+                <i className="fas fa-user me-2"></i>Search by Professions
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -136,7 +136,7 @@ const DirectoryTabs = () => {
             <input
               type="text"
               className="form-control search-input"
-              placeholder={currentTab === 'professionals' ? 'Search professionals...' : 'Search cities...'}
+              placeholder={currentTab === 'professionals' ? 'Search profession...' : 'Search cities...'}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -158,16 +158,18 @@ const DirectoryTabs = () => {
               <div className="row g-4">
                 {filteredProfessionals.map((professional, index) => (
                   <div key={index} className="col-md-6 col-lg-4"
-
-                    onClick={() => handleSelectProfessional(professional)} // ✅ redirect
+                    onClick={() => handleSelectProfessional(professional)}
                     style={{ cursor: "pointer" }}
                   >
                     <div className="professional-card">
-                      <div className="professional-icon">
-                        <i className="fas fa-user text-white"></i>
+                      <div className="d-flex align-items-center">
+                        <div className="professional-icon">
+                          <i className="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                          <h6 className="text-[#1B3067] font-semibold m-0">{professional}</h6>
+                        </div>
                       </div>
-                      <h5 className="text-[#1B3067] font-semibold">{professional}</h5>
-                      <p className="text-gray-500 mb-0">Professional Services</p>
                     </div>
                   </div>
                 ))}
@@ -221,8 +223,8 @@ const DirectoryTabs = () => {
       <style jsx>{`
         .professional-card {
           background: white;
-          border-radius: 12px;
-          padding: 1.5rem;
+          border-radius: 8px;
+          padding: 1rem;
           border: 1px solid #e9ecef;
           transition: all 0.3s ease;
           cursor: pointer;
@@ -230,20 +232,20 @@ const DirectoryTabs = () => {
         }
 
         .professional-card:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+          transform: translateY(-1px);
+          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
           border-color: #BE8363;
         }
 
         .professional-icon {
-          width: 60px;
-          height: 60px;
+          width: 40px;
+          height: 40px;
           background-color: #BE8363;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-bottom: 1rem;
+          margin-right: 0.75rem;
         }
 
         .city-card {
@@ -276,7 +278,7 @@ const DirectoryTabs = () => {
         .section-title {
           color: #1B3067;
           font-weight: 600;
-          margin-bottom: 2rem;
+          margin-bottom: 0;
         }
 
         .no-results {
@@ -304,17 +306,16 @@ const DirectoryTabs = () => {
         }
 
         .nav-tabs .nav-link:hover {
-  color: #BE8363;
-  background-color: transparent;
-}
+          color: #BE8363;
+          background-color: transparent;
+        }
 
         .nav-tabs .nav-link.active {
-  color: #BE8363; /* Active text ka color */
-  font-weight: 600;
-  border-bottom: 3px solid #BE8363; /* optional underline highlight */
-  background-color: transparent; /* background same rahe */
-}
-
+          color: #BE8363;
+          font-weight: 600;
+          border-bottom: 3px solid #BE8363;
+          background-color: transparent;
+        }
 
         .search-container {
           max-width: 400px;

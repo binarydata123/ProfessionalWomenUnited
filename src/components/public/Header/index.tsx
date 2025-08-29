@@ -367,7 +367,7 @@ export default function Header({ locale }: any) {
 												href='/auth/choose-profile'
 												className='btn btn-outline-success btn-lawyer hide-btn w-100 text-center set-bt'
 												type="submit">
-												For Professionals
+												Registration for Invitees
 											</Link>
 										)}
 										{user?.id ? (
