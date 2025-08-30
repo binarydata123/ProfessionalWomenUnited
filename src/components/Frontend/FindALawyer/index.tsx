@@ -3,11 +3,9 @@ import { useState, useEffect } from 'react';
 import AccordionUI from '@/commonUI/Accordion';
 import DefaultButton from '@/commonUI/DefaultButton';
 import DropDown from '@/commonUI/DropDown';
-import FormInput from '@/commonUI/FormInput';
 import Popup from '@/commonUI/Popup';
 import LawyerCard from '@/components/lawyer/LawyerCard';
 import './find-a-lawyer.css';
-import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { CheckIcon, XMarkIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -22,7 +20,6 @@ import {
 	getAllCities,
 	getAllProfessions, getAllStates
 } from '../../../../lib/frontendapi';
-import PrimaryButton from '@/commonUI/PrimaryButton';
 import Pagination from '@/commonUI/Pagination';
 import AccordionItem from '@/commonUI/AccordionItem';
 import { useRouter } from 'next/navigation';
@@ -51,6 +48,8 @@ export default function Page({ filterlawyer }: Props) {
 	const [stateSearchTerm, setStateSearchTerm] = useState('');
 	const [citySearchTerm, setCitySearchTerm] = useState('');
 	const [showAllStates, setShowAllStates] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
+	const [showFilters, setShowFilters] = useState(false);
 	const [showAllCities, setShowAllCities] = useState(false);
 
 	// Get URL parameters
@@ -301,8 +300,21 @@ export default function Page({ filterlawyer }: Props) {
 	// Get limited cities for display (10 by default, or all if showAllCities is true)
 	const displayedCities = showAllCities ? filteredCitiesBySearch : filteredCitiesBySearch.slice(0, 10);
 
+	// Check screen size on mount and resize
+	useEffect(() => {
+		const checkScreenSize = () => {
+			setIsMobile(window.innerWidth < 992);
+		};
+
+		checkScreenSize();
+		window.addEventListener('resize', checkScreenSize);
+
+		return () => window.removeEventListener('resize', checkScreenSize);
+	}, []);
+
 	return (
 		<div className="find-a-lawyer-wrapper full-width-page">
+
 			<div className="search-filter-area">
 				<div className="container-full">
 					<div className="row">
@@ -322,24 +334,8 @@ export default function Page({ filterlawyer }: Props) {
 							</div>
 						</div>
 						<div className="col-lg-2 col-md-2 col-sm-12">
-							<div className="filter-btn">
-								{/* <DefaultButton
-									onClick={() => setFilterPopup(true)}
-									background="#fff"
-									color="#c49073"
-									height={48}
-									className="max-width-126 w-100"
-									showIcon={false}
-								>
-									Filter
-									<Image
-										src="/images/FOR-LAWYERS-PAGE/candle-2.png"
-										style={{ marginLeft: '10px' }}
-										alt="find-a-lawyer-filter-image"
-										width="20"
-										height="20"
-									/>
-								</DefaultButton> */}
+							{/* <div className="filter-btn"> */}
+							{!isMobile && (
 								<DropDown
 									label={
 										<DefaultButton
@@ -386,9 +382,79 @@ export default function Page({ filterlawyer }: Props) {
 										{filterData.sort === 'newest' && <CheckIcon width={20} color={'#02142d'} />}
 									</div>
 								</DropDown>
-							</div>
+							)}
+							{/* </div> */}
 						</div>
 					</div>
+					{/* Mobile Filter and Sort Row */}
+					{isMobile && (
+						<div className="filter-btn mobile-filter-row">
+							<DefaultButton
+								onClick={() => setShowFilters(!showFilters)}
+								background="#fff"
+								color="#c49073"
+								height={48}
+								className="max-width-126 w-100"
+								showIcon={false}
+							>
+								Filter
+								<Image
+									src="/images/FOR-LAWYERS-PAGE/candle-2.png"
+									style={{ marginLeft: '10px' }}
+									alt="find-a-lawyer-filter-image"
+									width="20"
+									height="20"
+								/>
+							</DefaultButton>
+							<DropDown
+								label={
+									<DefaultButton
+										background="#fff"
+										color="#c49073"
+										height={48}
+										className="max-width-115"
+										showIcon={false}
+									>
+										Sort
+										<Image
+											src="/images/FOR-LAWYERS-PAGE/sort.png"
+											style={{ paddingLeft: '10px' }}
+											alt="find-a-lawyer-sort-image"
+											width="30"
+											height="20"
+										/>
+									</DefaultButton>
+								}
+							>
+								<div
+									className={`d-flex justify-content-between cursor-pointer ${filterData.sort === null && 'active'
+										}`}
+								>
+									<p className="font-weight-400 font-14" onClick={() => handleSort(null)}>
+										None
+									</p>
+									{filterData.sort === null && <CheckIcon width={20} color={'#02142d'} />}
+								</div>
+								<div
+									className={`d-flex justify-content-between cursor-pointer ${filterData.sort === 'highest' && 'active'
+										}`}
+									onClick={() => handleSort('highest')}
+								>
+									<p className=" font-weight-400 font-14">Highest Rated</p>
+									{filterData.sort === 'highest' && <CheckIcon width={20} color={'#02142d'} />}
+								</div>
+								<div
+									className={`d-flex justify-content-between cursor-pointer ${filterData.sort === 'newest' && 'active'
+										}`}
+									onClick={() => handleSort('newest')}
+								>
+									<p className=" font-weight-400 font-14">Newest</p>
+									{filterData.sort === 'newest' && <CheckIcon width={20} color={'#02142d'} />}
+								</div>
+							</DropDown>
+
+						</div>
+					)}
 				</div>
 			</div>
 
@@ -433,7 +499,7 @@ export default function Page({ filterlawyer }: Props) {
 			<div className="container-full main-content-area">
 				<div className="grid-container">
 					{/* Sidebar Filter */}
-					<div className="filter-sidebar">
+					<div className={`filter-sidebar ${isMobile ? (showFilters ? 'mobile-visible' : 'mobile-hidden') : ''}`}>
 						<div className="sidebar-header">
 							<h3>Filters</h3>
 						</div>

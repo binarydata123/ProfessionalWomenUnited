@@ -1,67 +1,142 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import { importMembers } from '../../../../../lib/adminapi';
 import DefaultButton from '@/commonUI/DefaultButton';
 import { toast } from 'react-toastify';
 
 interface ExcelUploadComponentProps {
-    onImportSuccess?: () => void; // Function to call after successful import
+    onImportSuccess?: () => void;
 }
+
 const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) => {
     const [file, setFile] = useState<File | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isUploading, setIsUploading] = useState(false);
     const [uploadSuccess, setUploadSuccess] = useState(false);
-    const [resData, setResData] = useState<any>(null);
-
+    const [progressPercent, setProgressPercent] = useState(0);
+    const [currentStatus, setCurrentStatus] = useState('');
 
     const handleUpload = async () => {
         if (!file) {
             toast.error('Please select a file first');
             return;
         }
+
+        // Check file extension
+        const fileName = file.name.toLowerCase();
+        const allowedExtensions = ['.xlsx', '.xls', '.csv'];
+        const isValidExtension = allowedExtensions.some(ext => fileName.endsWith(ext));
+
+        if (!isValidExtension) {
+            toast.error('Please select Excel (.xlsx, .xls) or CSV file');
+            return;
+        }
+
+        if (file.size > 5 * 1024 * 1024) {
+            toast.error('File is too large. Maximum size is 5MB.');
+            return;
+        }
+
         setIsUploading(true);
+        setProgressPercent(0);
+        setCurrentStatus('Validating file...');
+
         try {
+            setCurrentStatus('Checking file content...');
+
             const res = await importMembers(file);
-            console.log(res, 'ddg');
-            setResData(res);
 
-            if (res.duplicates.length > 0) {
-                toast.warn(`Already exist: ${res.duplicates.join(', ')}`);
+            if (res.error) {
+                toast.error(res.error);
+                setIsUploading(false);
+                return;
             }
 
-            if (res.inserted.length > 0) {
-                toast.success(`Imported new: ${res.inserted.join(', ')}`);
-                setUploadSuccess(true); // success popup for inserted
-            } else if (res.duplicates.length === 0) {
-                // case: no inserted + no duplicates = empty file
-                setUploadSuccess(true);
-            }
+            setCurrentStatus('Processing data...');
+            setProgressPercent(30);
 
-            if (onImportSuccess) {
-                onImportSuccess();
-            }
+            const progressInterval = setInterval(() => {
+                setProgressPercent(prev => {
+                    if (prev >= 90) {
+                        clearInterval(progressInterval);
+                        return prev;
+                    }
+                    return prev + 10;
+                });
+            }, 300);
 
             setTimeout(() => {
-                setIsModalOpen(false);
-                setUploadSuccess(false);
-                setFile(null);
-                setIsUploading(false);
-                setResData(null);
+                clearInterval(progressInterval);
+                setProgressPercent(100);
+                setCurrentStatus('Processing complete!');
+
+                if (res.duplicates && res.duplicates.length > 0) {
+                    toast.warn(`${res.duplicates.length} duplicates found`);
+                }
+
+                if (res.inserted && res.inserted > 0) {
+                    toast.success(`Imported ${res.inserted} new members successfully`);
+                    setUploadSuccess(true);
+                } else if (!res.duplicates || res.duplicates.length === 0) {
+                    toast.info('No new members found to import');
+                    setUploadSuccess(true);
+                }
+
+                if (onImportSuccess) {
+                    onImportSuccess();
+                }
+
+                setTimeout(() => {
+                    setIsModalOpen(false);
+                    setUploadSuccess(false);
+                    setFile(null);
+                    setIsUploading(false);
+                    setProgressPercent(0);
+                }, 3000);
+
             }, 2000);
 
-        } catch (err) {
-            console.error(err);
-            toast.error('Upload failed');
+        } catch (err: any) {
+            console.error('Upload error:', err);
+
             setIsUploading(false);
+            setProgressPercent(0);
+
+            if (err.response && err.response.data) {
+                const errorData = err.response.data;
+
+                if (errorData.errors && errorData.errors.file) {
+                    toast.error(errorData.errors.file[0]);
+                } else if (errorData.error) {
+                    toast.error(errorData.error);
+                } else if (errorData.message) {
+                    toast.error(errorData.message);
+                } else {
+                    toast.error('Upload failed: Unknown error');
+                }
+            } else if (err.message) {
+                toast.error(err.message);
+            } else {
+                toast.error('Upload failed. Please try again.');
+            }
         }
     };
 
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0];
+        if (selectedFile) {
+            // Check file type
+            const fileName = selectedFile.name.toLowerCase();
+            const allowedExtensions = ['.xlsx', '.xls', '.csv'];
+            const isValidExtension = allowedExtensions.some(ext => fileName.endsWith(ext));
 
+            if (!isValidExtension) {
+                toast.error('Please select Excel (.xlsx, .xls) or CSV file');
+                return;
+            }
 
-    const handleFileChange = (e: any) => {
-        const selectedFile = e.target.files[0];
-        setFile(selectedFile);
+            setFile(selectedFile);
+        }
     };
 
     const closeModal = () => {
@@ -69,12 +144,12 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
             setIsModalOpen(false);
             setFile(null);
             setUploadSuccess(false);
+            setProgressPercent(0);
         }
     };
 
     return (
         <div>
-            {/* Trigger Button */}
             <Link href='' onClick={(e) => e.preventDefault()}>
                 <DefaultButton
                     height={55}
@@ -86,7 +161,6 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                 </DefaultButton>
             </Link>
 
-            {/* Upload Modal */}
             {isModalOpen && (
                 <div className="modal-backdrop" style={{
                     position: 'fixed',
@@ -109,7 +183,7 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                         boxShadow: '0 10px 25px rgba(0, 0, 0, 0.2)'
                     }}>
                         {/* Close Button */}
-                        {!isUploading && (
+                        {!isUploading && !uploadSuccess && (
                             <button
                                 onClick={closeModal}
                                 style={{
@@ -126,12 +200,10 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                             </button>
                         )}
 
-                        {/* Modal Header */}
                         <h2 style={{ marginBottom: '1.5rem', color: '#333' }}>
                             Import Excel Data
                         </h2>
 
-                        {/* Upload Area */}
                         {!uploadSuccess ? (
                             <div>
                                 <div
@@ -160,13 +232,7 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                                 Selected file: {file.name}
                                             </p>
                                             <button
-                                                // onClick={() => document.getElementById('fileInput').click()}
-                                                onClick={() => {
-                                                    const fileInput = document.getElementById('fileInput') as HTMLInputElement | null;
-                                                    if (fileInput) {
-                                                        fileInput.click();
-                                                    }
-                                                }}
+                                                onClick={() => document.getElementById('fileInput')?.click()}
                                                 disabled={isUploading}
                                                 style={{
                                                     padding: '0.5rem 1rem',
@@ -185,13 +251,7 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                                 Drag & drop your Excel file here or
                                             </p>
                                             <button
-                                                // onClick={() => document.getElementById('fileInput').click()}
-                                                onClick={() => {
-                                                    const fileInput = document.getElementById('fileInput') as HTMLInputElement | null;
-                                                    if (fileInput) {
-                                                        fileInput.click();
-                                                    }
-                                                }}
+                                                onClick={() => document.getElementById('fileInput')?.click()}
                                                 disabled={isUploading}
                                                 style={{
                                                     padding: '0.75rem 1.5rem',
@@ -209,21 +269,46 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                     )}
                                 </div>
 
-                                {/* Upload Button */}
+                                {/* Progress Bar */}
+                                {isUploading && progressPercent > 0 && (
+                                    <div style={{ margin: '1.5rem 0' }}>
+                                        <div style={{
+                                            width: '100%',
+                                            height: '8px',
+                                            backgroundColor: '#e0e0e0',
+                                            borderRadius: '4px',
+                                            overflow: 'hidden',
+                                            marginBottom: '0.5rem'
+                                        }}>
+                                            <div style={{
+                                                height: '100%',
+                                                backgroundColor: '#4CAF50',
+                                                width: `${progressPercent}%`,
+                                                transition: 'width 0.3s ease',
+                                                borderRadius: '4px'
+                                            }} />
+                                        </div>
+                                        <p style={{
+                                            margin: '0.5rem 0',
+                                            fontSize: '0.9rem',
+                                            color: '#666',
+                                            textAlign: 'center'
+                                        }}>
+                                            {currentStatus} ({progressPercent}%)
+                                        </p>
+                                    </div>
+                                )}
+
                                 <DefaultButton
                                     height={50}
                                     showIcon={false}
                                     className="w-100"
                                     onClick={handleUpload}
                                 // disabled={!file || isUploading}
-                                // style={{
-                                //     opacity: (!file || isUploading) ? 0.6 : 1,
-                                //     cursor: (!file || isUploading) ? 'not-allowed' : 'pointer'
-                                // }}
                                 >
                                     {isUploading ? (
                                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                            <div className="spinner" style={{
+                                            <div style={{
                                                 width: '20px',
                                                 height: '20px',
                                                 border: '2px solid #f3f3f3',
@@ -232,63 +317,59 @@ const ExcelUploadComponent = ({ onImportSuccess }: ExcelUploadComponentProps) =>
                                                 animation: 'spin 1s linear infinite',
                                                 marginRight: '10px'
                                             }}></div>
-                                            Uploading...
+                                            {isUploading ? 'Uploading...' : 'Processing...'}
                                         </div>
                                     ) : (
                                         'Upload File'
                                     )}
                                 </DefaultButton>
 
-                                {/* Instructions */}
-                                <div style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#666' }}>
+                                <div style={{
+                                    marginTop: '1rem',
+                                    fontSize: '0.9rem',
+                                    color: '#666'
+                                }}>
                                     <p>Supported formats: .xlsx, .xls, .csv</p>
+                                    <p>Maximum 100 rows allowed</p>
+                                    <p>Maximum file size: 5MB</p>
                                 </div>
                             </div>
                         ) : (
-
-                            resData?.inserted?.length > 0 ? (
-                                // ✅ Success popup (data inserted)
-                                <div style={{ textAlign: 'center', padding: '2rem' }}>
-                                    <div style={{ fontSize: '3rem', color: '#4CAF50', marginBottom: '1rem' }}>✓</div>
-                                    <h3 style={{ color: '#4CAF50', marginBottom: '1rem' }}>
-                                        Data Uploaded Successfully!
-                                    </h3>
-                                    <p style={{ color: '#666' }}>
-                                        Your Excel data has been imported successfully.
-                                    </p>
-                                </div>
-                            ) : (
-                                // ⚠️ Empty file popup (no inserted + no duplicates)
-                                <div style={{ textAlign: 'center', padding: '2rem' }}>
-                                    <div style={{ fontSize: '3rem', color: '#4CAF50', marginBottom: '1rem' }}>✓</div>
-                                    <h3 style={{ color: '#4CAF50', marginBottom: '1rem' }}>
-                                        Data Uploaded Successfully!
-                                    </h3>
-                                    <p style={{ color: '#666' }}>
-                                        Your Excel data has been imported successfully.
-                                    </p>
-                                </div>
-                            )
-
-
+                            <div style={{
+                                textAlign: 'center',
+                                padding: '2rem'
+                            }}>
+                                <div style={{
+                                    fontSize: '3rem',
+                                    color: '#4CAF50',
+                                    marginBottom: '1rem'
+                                }}>✓</div>
+                                <h3 style={{
+                                    color: '#4CAF50',
+                                    marginBottom: '1rem'
+                                }}>
+                                    Data Uploaded Successfully!
+                                </h3>
+                                <p style={{ color: '#666' }}>
+                                    Your Excel data has been imported successfully.
+                                </p>
+                            </div>
                         )}
-
                     </div>
                 </div>
             )}
 
-            {/* Add spinner animation */}
             <style jsx>{`
-        @keyframes spin {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        
-        .upload-area:hover {
-          background-color: #fed7aa !important;
-          transition: background-color 0.3s ease;
-        }
-      `}</style>
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+                
+                .upload-area:hover {
+                    background-color: #fed7aa !important;
+                    transition: background-color 0.3s ease;
+                }
+            `}</style>
         </div>
     );
 };

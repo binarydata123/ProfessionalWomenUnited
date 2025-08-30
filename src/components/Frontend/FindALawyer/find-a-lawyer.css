@@ -577,3 +577,378 @@ ul.list-12 li a h1.active {
 	font-weight: 600;
 	color: #333;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.filter-sidebar {
+		position: static;
+		margin-bottom: 20px;
+		transition: all 0.3s ease;
+	}
+
+	.filter-sidebar.mobile-hidden {
+		display: none;
+	}
+
+	.filter-sidebar.mobile-visible {
+		display: block;
+	}
+
+	.mobile-filter-row {
+		margin-top: 15px;
+		display: flex;
+		gap: 10px;
+	}
+
+	.lawyers-container {
+		grid-template-columns: 1fr;
+		gap: 15px;
+		padding: 0 10px;
+	}
+
+	.applied-filters-bar {
+		padding: 12px 15px;
+	}
+
+	.applied-filter-item {
+		margin-right: 8px;
+		margin-bottom: 6px;
+		padding: 5px 10px;
+		font-size: 13px;
+	}
+
+	.filter-label {
+		margin-right: 10px;
+		font-size: 13px;
+	}
+
+	.clear-all-btn {
+		font-size: 13px;
+	}
+
+	/* Adjust filter sidebar for mobile */
+	.filter-sidebar {
+		padding: 15px;
+		margin: 0 15px 20px;
+		border-radius: 8px;
+	}
+
+	.filter-options {
+		max-height: 200px;
+		overflow-y: auto;
+	}
+
+	/* Search and filter button adjustments */
+	.search-filter-area .row {
+		flex-direction: column;
+	}
+
+	.search-filter-area .col-lg-10,
+	.search-filter-area .col-md-10,
+	.search-filter-area .col-sm-12 {
+		margin-bottom: 15px;
+		padding: 0 15px;
+	}
+
+	.filter-btn {
+		justify-content: center;
+		float: none;
+		padding: 0 15px;
+	}
+
+	/* Professional card padding adjustments */
+	.lawyer-card-item {
+		padding: 10px;
+	}
+
+	.breadcrumb-section {
+		padding: 0 15px;
+	}
+
+	.pagination-section {
+		padding: 0 15px;
+	}
+
+	/* Map view adjustments if you have a map */
+	.map-container {
+		padding: 0 15px;
+		margin: 0 0 20px;
+	}
+}
+
+/* Very small mobile devices */
+@media (max-width: 480px) {
+	.applied-filters-bar .d-flex {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.filter-label {
+		margin-bottom: 10px;
+	}
+
+	.applied-filter-item {
+		margin-bottom: 8px;
+	}
+
+	.clear-all-btn {
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	.sidebar-footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.apply-filters-btn,
+	.clear-filters-btn {
+		margin-bottom: 10px;
+	}
+
+	.mobile-filter-row {
+		flex-direction: row;
+		padding: 0 15px;
+		margin-top: 15px;
+		gap: 10px;
+	}
+
+	.mobile-filter-row .col-6 {
+		padding: 0 5px;
+	}
+
+	/* Professional card adjustments for very small screens */
+	.lawyer-card-item {
+		margin-bottom: 15px;
+	}
+
+	.lawyers-container {
+		padding: 0 5px;
+	}
+}
+
+/* Ensure desktop view remains unchanged */
+@media (min-width: 992px) {
+	.mobile-filter-row {
+		display: none;
+	}
+
+	.filter-sidebar.mobile-hidden {
+		display: block;
+	}
+}
+
+/* Additional padding adjustments for mobile */
+@media (max-width: 767px) {
+	.find-a-lawyer-wrapper {
+		padding: 0;
+	}
+
+	.main-content-area {
+		padding: 10px 0;
+	}
+
+	.search-filter-area {
+		padding: 15px 0;
+	}
+
+	/* Adjust the search input for mobile */
+	.icon-fild.icon-g.class-add .form-fild {
+		padding: 12px 15px 12px 45px;
+		font-size: 16px;
+	}
+
+	.class-add input::placeholder {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+/* Fix for filter buttons on mobile */
+button.default-button.w-100 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Ensure proper spacing in mobile view */
+.mobile-filter-row {
+	margin-bottom: 15px;
+}
+
+/* Fix for mobile view issues */
+@media (max-width: 991px) {
+	.lawyers-container {
+		padding: 0 0px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.lawyer-card-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.testimonial {
+		width: 100%;
+		margin: 0;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+	/* Ensure images don't overflow */
+	.lawyer-img-set-mobile,
+	.lawyer-dummy-image {
+		width: 100%;
+		height: 250px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	/* Fix button alignment */
+	.btn-family-more {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	/* Ensure text doesn't overflow */
+	.testimonial-title {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+
+	/* Fix filter button positioning */
+	.filter-btn {
+		float: none;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin: 15px 0;
+	}
+
+	/* Ensure grid layout works properly on mobile */
+	.grid-container {
+		display: block;
+		width: 100%;
+	}
+
+	.filter-sidebar {
+		position: static;
+		width: 100%;
+		margin: 0 auto 20px;
+		box-sizing: border-box;
+	}
+
+	.main-content-area {
+		width: 100%;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+	.lawyer-card-wrapper {
+		padding: 10px;
+	}
+
+	.testimonial {
+		padding: 0px;
+	}
+
+	.lawyer-img-set-mobile,
+	.lawyer-dummy-image {
+		height: 200px;
+	}
+
+	/* Fix text sizing for very small screens */
+	.testimonial-title {
+		font-size: 18px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+
+	/* Adjust button sizes */
+	.btn-family-more button {
+		width: 100%;
+		text-align: center;
+	}
+
+	.view-more-btn {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Ensure all elements stay within their containers */
+.lawyer-card-item {
+	overflow: hidden;
+}
+
+/* Fix for any elements that might be positioned absolutely */
+.pic-box1 {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolioDisc {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.portfolioDisc_data {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+}
+
+/* Make sure the popup modal works correctly on mobile */
+#modal-body-style {
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+/* Fix for the applied filters bar on mobile */
+.applied-filters-bar {
+	flex-wrap: wrap;
+}
+
+.applied-filter-item {
+	margin-bottom: 8px;
+}
+
+/* Ensure proper spacing in all views */
+.find-a-lawyer-wrapper {
+	box-sizing: border-box;
+}
+
+/* Fix for any floating elements */
+.d-flex.gap-3 {
+	float: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media (max-width: 991px) {
+	.d-flex.gap-3 {
+		justify-content: center;
+		margin-top: 15px;
+	}
+}

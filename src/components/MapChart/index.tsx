@@ -158,8 +158,8 @@ export const MapChart = ({ onStateClick }: MapChartProps) => {
   };
 
   return (
-    <div className="container mt-1">
-      <h3 className="text-center no-global-h2">
+    <div className="container">
+      <h3 className="text-center no-global-h2 responsive-heading">
         We recognize and connect you with <span className="highlight" style={{ color: '#BE8363' }}>award-winning women experts across the U.S.</span>
       </h3>
 

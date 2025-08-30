@@ -47,15 +47,6 @@ export default function LawyerCard({
 		}
 	};
 
-	// const handleIsOnline = (id: any = lawyer.id) => {
-	// 	checkUserOnline({ user_id: id }).then(res => {
-	// 		const sec = parseInt(res.data);
-	// 		if (sec < 120) {
-	// 			setisOnline(true);
-	// 		}
-	// 	});
-	// };
-
 	useEffect(() => {
 		// handleIsOnline(lawyer.id);
 		if (lawyer) {

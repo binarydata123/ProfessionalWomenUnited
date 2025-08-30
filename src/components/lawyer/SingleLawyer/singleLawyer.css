@@ -53,6 +53,9 @@
 		z-index: 999;
 		padding: 23px 0px;
 	}
+	.text-left-line.text-start.pt-lg-5.fix-mob.mt-4 {
+		margin-top: 40px !important;
+	}
 }
 
 .location-move-set a {

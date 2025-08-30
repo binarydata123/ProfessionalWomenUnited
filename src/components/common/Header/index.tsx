@@ -534,7 +534,7 @@ export default function Header() {
 							width={150}
 							height={150}
 							layout="responsive"
-							className="logos"
+							className="logos-data"
 						/>
 					</Link>
 					<button

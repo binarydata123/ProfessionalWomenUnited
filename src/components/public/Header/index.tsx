@@ -190,7 +190,7 @@ export default function Header({ locale }: any) {
 														<div className="top-header-light">
 															<ul>
 																<li className="w-normal">
-																	<Link
+																	<Link style={{ color: '#000' }}
 																		href={(() => {
 																			if (user?.role === 'admin') {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
@@ -200,19 +200,14 @@ export default function Header({ locale }: any) {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																			}
 																		})()}>
-																		{/* <Image
-																			src="/images/left-menu-1.png"
-																			alt="left-menu-1"
-																			width={18}
-																			height={18}
-																		/> */}
+
 																		<MdDashboard color={'#c49073'} size={18} />
 																		&nbsp; {t('goToDashboard')}
 																	</Link>
 																</li>
 
 																<li>
-																	<Link
+																	<Link style={{ color: '#000' }}
 																		href={(() => {
 																			if (user?.role === 'admin') {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;

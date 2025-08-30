@@ -9,7 +9,7 @@
 }
 .legal-sights .active_pagination a {
 	border: 0px !important;
-	background: rgba(196,144,115, 0.32);
+	background: rgba(196, 144, 115, 0.32);
 	border-radius: 12px !important;
 }
 .legal-sights li.active_pagination.page-item a {

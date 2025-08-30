@@ -354,6 +354,9 @@ section#our-blogs img {
 	.w-35 {
 		width: 100% !important;
 	}
+	img.logos-data {
+		width: 50% !important;
+	}
 }
 
 @media (min-width: 1366px) {
@@ -774,7 +777,7 @@ ul.dropdown-menu.shadow-lg li {
 /* find a lawywer */
 
 .find-a-lawyer-wrapper .search-filter-area {
-	background-color: var(--green-dark);
+	background-color: #02142d;
 	display: flex;
 	align-items: center;
 	padding-top: 120px;
@@ -1760,7 +1763,7 @@ div#tabs-viwe-buton button:nth-child(2) {
 	}
 	.accordion-body.my-drop-class li a {
 		padding: 0 !important;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 500;
 		line-height: 26px;
 		letter-spacing: 0.02em;
