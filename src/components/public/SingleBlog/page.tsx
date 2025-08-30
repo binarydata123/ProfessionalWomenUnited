@@ -355,7 +355,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 						)}
 					</div>
 					<div className="col-lg-3 col-12 d-block d-md-none">
-						<div className="text-center pt-5">
+						<div className="text-center pt-5 mb-5">
 							<Link
 								href={'/blogs'}
 								className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 blog-all-btn"
