@@ -73,18 +73,18 @@ export default async function Page() {
 						</div>
 					</section> */}
 
-					<section id="needlawyer">
-						<div className="row">
+					{/* <section id="needlawyer"> */}
+					<div className="row">
 
-							<div className="col-md-12">
-								<div className="needlawyer-text pt-lg-0 pt-4 hover">
+						<div className="col-md-12">
+							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 
-									<MapChart />
-								</div>
+								<MapChart />
 							</div>
 						</div>
-						{/* </div> */}
-					</section>
+					</div>
+					{/* </div> */}
+					{/* </section> */}
 				</div>
 				<UpperFooter />
 			</div>

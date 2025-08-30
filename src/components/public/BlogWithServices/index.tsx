@@ -94,7 +94,7 @@ export default function BlogWithServices({ blogData, serviceData }: Props) {
 				<div className="container">
 					<div className="text--lg-center explore-blogs-title">
 						<h3>Explore Blogs</h3>
-						<ul className="all-type-of d-flex gap-2">
+						<ul className="all-type-of d-flex flex-nowrap gap-2">
 							<li
 								onClick={() => handleBlogByService(null, 0)}
 								className={`m-0 ${!activeServices && 'first-active'}`}>
@@ -109,7 +109,24 @@ export default function BlogWithServices({ blogData, serviceData }: Props) {
 										nav={false}
 										dots={false}
 										loop={false}
-										startPosition={startPosition}>
+										startPosition={startPosition}
+										responsive={[
+											{
+												breakpoint: 767,
+												settings: {
+													slidesToShow: 3,
+													slidesToScroll: 1,
+												}
+											},
+											{
+												breakpoint: 480,
+												settings: {
+													slidesToShow: 2,
+													slidesToScroll: 1,
+												}
+											}
+										]}
+									>
 										{services.map((item: any, index: any) => (
 											<li
 												className={`m-0 ${activeServices === item.id && 'first-active'}`}

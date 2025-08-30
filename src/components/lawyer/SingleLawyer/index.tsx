@@ -171,7 +171,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 		<>
 			<section className="blog-section start">
 				<div className="container">
-					<div className="text-left-line text-start pt-lg-5 mt-4">
+					<div className="text-left-line text-start pt-lg-5 fix-mob mt-4">
 						{isLoading ? (
 							<div
 								style={{
@@ -340,26 +340,6 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															</p>
 														)}
 
-														{/* Phone Number and Email Section */}
-														{/* <div className="contact-info mt-3">
-															{single_lawyer?.phone_number && (
-																<p className="mb-1">
-																	<PhoneIcon width={18} height={18} className="me-2 text-muted" />
-																	<a href={`tel:${single_lawyer.phone_number}`} className="text-decoration-none text-dark">
-																		{single_lawyer.phone_number}
-																	</a>
-																</p>
-															)}
-															{single_lawyer?.email && (
-																<p className="mb-1">
-																	<EnvelopeIcon width={18} height={18} className="me-2 text-muted" />
-																	<a href={`mailto:${single_lawyer.email}`} className="text-decoration-none text-dark">
-																		{single_lawyer.email}
-																	</a>
-																</p>
-															)}
-														</div> */}
-
 														<div className="mt-2">
 															{single_lawyer?.service_name &&
 																single_lawyer.service_name
@@ -481,6 +461,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									backgroundColor: 'rgb(249,242,239)',
 									width: '6%',
 									marginBottom: '10px'
+									// marginRight: '10px'
 								}}
 							></div>
 						) : (
@@ -492,7 +473,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									>
 										<Link
 											href="#pills-contact-tab3"
-											style={{ color: '#1F1F1F' }}
+											style={{ color: '#1F1F1F', marginLeft: '10px' }}
 											onClick={e => scrollToBottom(e)}
 										>
 											Rates
@@ -948,27 +929,6 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																{single_lawyer?.location_name}
 															</p>
 														)}
-
-														{/* Contact Info in Sidebar */}
-														{/* <div className="contact-info-sidebar mt-2">
-															{single_lawyer?.phone_number && (
-																<p className="mb-1">
-																	<PhoneIcon width={16} height={16} className="me-2 text-muted" />
-																	<a href={`tel:${single_lawyer.phone_number}`} className="text-decoration-none text-dark small">
-																		{single_lawyer.phone_number}
-																	</a>
-																</p>
-															)}
-															{single_lawyer?.email && (
-																<p className="mb-2">
-																	<EnvelopeIcon width={16} height={16} className="me-2 text-muted" />
-																	<a href={`mailto:${single_lawyer.email}`} className="text-decoration-none text-dark small">
-																		{single_lawyer.email}
-																	</a>
-																</p>
-															)}
-														</div> */}
-
 														<p className="cursor-pointer">
 															<Link
 																href="#pills-contact-tab2"

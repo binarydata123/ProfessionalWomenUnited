@@ -240,7 +240,7 @@ const DirectoryTabs = () => {
         .professional-icon {
           width: 40px;
           height: 40px;
-          background-color: #BE8363;
+          background-color: #02142d;
           border-radius: 50%;
           display: flex;
           align-items: center;

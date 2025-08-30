@@ -575,3 +575,123 @@ img.arrow-change {
 	height: 190px;
 	border-radius: 10px;
 }
+
+/* Add these styles to your existing CSS */
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+	.lawyer-card-wrapper {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.testimonial {
+		padding: 15px;
+	}
+
+	.pic.pic-box1 {
+		width: 100%;
+		height: auto;
+	}
+
+	.lawyer-img-set-mobile,
+	.lawyer-dummy-image {
+		height: 250px !important;
+	}
+
+	.portfolioDisc {
+		width: 100% !important;
+		margin-top: 250px !important;
+	}
+
+	.pic:hover .portfolioDisc {
+		margin-top: 190px !important;
+	}
+
+	.testimonial-title {
+		font-size: 18px;
+		margin-top: 15px;
+	}
+
+	.description {
+		font-size: 14px;
+	}
+
+	.btn-family-more {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.btn-family-more button {
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-family-more .view-more-btn {
+		margin-left: 0;
+		text-align: center;
+		display: block;
+	}
+
+	/* Modal responsive styles */
+	#modal-body-style .row.align-items-center.g-3 {
+		flex-direction: column;
+	}
+
+	#modal-body-style .col-md-8,
+	#modal-body-style .col-lg-4 {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	#modal-body-style .btn-commn {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.detail-fil h3 {
+		font-size: 20px;
+		line-height: 1.3;
+	}
+
+	.more-detail strong,
+	.more-detail p {
+		font-size: 14px;
+	}
+
+	.body-font-text {
+		font-size: 16px;
+	}
+}
+
+/* Tablet Responsive Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.lawyer-img-set-mobile,
+	.lawyer-dummy-image {
+		height: 220px !important;
+	}
+
+	.portfolioDisc {
+		margin-top: 220px !important;
+	}
+
+	.pic:hover .portfolioDisc {
+		margin-top: 160px !important;
+	}
+}
+
+/* Ensure desktop view remains unchanged */
+@media (min-width: 1025px) {
+	.lawyer-img-set-mobile,
+	.lawyer-dummy-image {
+		height: 190px !important;
+	}
+
+	.portfolioDisc {
+		margin-top: 190px !important;
+	}
+
+	.pic:hover .portfolioDisc {
+		margin-top: 130px !important;
+	}
+}
