@@ -15,7 +15,7 @@ import Checkout from './Checkout';
 // 	"pk_test_FQu4ActGupRmMrkmBpwU26js"
 // );
 const promiseCheckout = loadStripe(
-	"pk_live_51S0FGg2FZFlKmRbDVsYwwCwPjHmtqPlsTCqE94Z0rHadQfVrpmO8MdfsrxvbLMNsctBsVWaURsJku8q9U9YFaZ5800NFH6wfO1"
+	"pk_test_51S0FGtC09jkN15npilm1aaOPbG3IVeoydFpR1Yf2mwuPBa3B1nEljO5sI2eCY10KmeqW4EeWYTPrEOy0FZHacjjk00AqTvBKAX"
 );
 
 interface FormData {

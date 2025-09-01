@@ -21,6 +21,7 @@ import AuthContext from '@/context/AuthContext';
 import Cookies from 'js-cookie';
 import Popup from '@/commonUI/Popup';
 import AddFirmLawyer from '@/components/lawyer/Popup/AddFirmLawyer';
+import { PatternFormat } from "react-number-format";
 
 
 interface FormData {
@@ -503,13 +504,24 @@ export default function LawyerStepTwo() {
 											<label htmlFor="exampleInputEmail1" className="pb-2 pt-2">
 												Contact Number*
 											</label>
-											<ReactPhoneInput
+											{/* <ReactPhoneInput
 												inputClass="form-control"
 												value={formData.phone_number}
 												country={"us"}
 												onChange={value => setFormData({ ...formData, phone_number: value })}
+											/> */}
+											<PatternFormat
+												className="form-control"
+												format="(###) ###-####"
+												mask="_"
+												allowEmptyFormatting={false}
+												value={formData.phone_number}
+												onValueChange={(values) => {
+													setFormData({ ...formData, phone_number: values.value });
+													// values.value gives plain digits like "2125551234"
+													// values.formattedValue gives "(212) 555-1234"
+												}}
 											/>
-
 
 											{errors.phone_number && (
 												<small className="error-message text-danger">
