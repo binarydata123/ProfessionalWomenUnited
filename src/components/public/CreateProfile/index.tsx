@@ -10,6 +10,7 @@ import { userregister, googleRegister } from '../../../../lib/frontendapi';
 import { signIn, useSession } from 'next-auth/react';
 import { toast } from 'react-toastify';
 import Cookies from 'js-cookie';
+import './style.css';
 
 
 interface FormData {
@@ -173,12 +174,6 @@ export default function CreateProfile() {
 				<div className="row">
 					<div className="">
 						<div className="main-login">
-							{/* <h1>
-								<span>Tell us a bit</span> about you
-							</h1>
-							<p className="p-text-label">
-								Please share your basic information with us. This will help clients reach you easily.
-							</p> */}
 							{redirectlegalIssue ? (
 								<>
 									<h1>

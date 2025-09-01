@@ -20,7 +20,7 @@ interface OTPInputProps {
 
 const OTPInputGroup = () => {
 	const router = useRouter();
-	const { user } = useContext(AuthContext)
+	const { user, setUser } = useContext(AuthContext)
 	const [isLoading, setIsLoading] = useState(false);
 	const [isLoadingTwo, setIsLoadingTwo] = useState(false);
 	const [redirectUrl, setredirectUrl]: any = useState(null);
@@ -81,34 +81,32 @@ const OTPInputGroup = () => {
 			.then(res => {
 				if (res.status == true) {
 					const { token, user } = res.data;
-					Cookies.set('session_token', token)
-					toast.success(res.message);
+					Cookies.set('session_token', token);
 					Cookies.set('two_step_auth', 'true');
-					if (redirectUrl) {
-						setTimeout(() => {
-							router.push(redirectUrl);
-						});
+					setUser(user);
+
+					// 🔹 Check payment again after 2FA
+					const isPaymentPending = window.sessionStorage.getItem('payment_pending') === 'true';
+					if (isPaymentPending) {
+						router.push('/auth/professional/payment-details');
 						return;
 					}
 
-					if (user?.role == 'enduser') {
-						setTimeout(() => {
-							router.push('/user/dashboard');
-						}, 1000);
+					// 🔹 Normal redirects
+					if (redirectUrl) {
+						router.push(redirectUrl);
+						return;
 					}
 
-					if (user?.role == 'professional') {
-						setTimeout(() => {
-							router.push('/professional/dashboard');
-						}, 1000);
+					if (user?.role === 'enduser') {
+						router.push('/user/dashboard');
+					} else if (user?.role === 'professional') {
+						router.push('/professional/dashboard');
+					} else if (user?.role === 'admin') {
+						router.push('/admin/dashboard');
 					}
-
-					if (user?.role == 'admin') {
-						setTimeout(() => {
-							router.push('/admin/dashboard');
-						}, 1000);
-					}
-				} else {
+				}
+				else {
 					toast.error(res.message);
 					setIsLoading(false);
 				}

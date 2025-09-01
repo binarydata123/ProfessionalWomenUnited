@@ -222,7 +222,7 @@ export default function lawyers() {
 			</p>
 
 			<div className="table-part">
-				<Table columns={['Name', 'Designation', 'Plan', 'Last Online', 'Actions']} data={currentLawyer}>
+				<Table columns={['Name', 'Plan', 'Last Online', 'Actions']} data={currentLawyer}>
 					{(rowData, index) => (
 						<tr key={index}>
 							<td data-th="Name">
@@ -243,7 +243,7 @@ export default function lawyers() {
 									</span>
 								</OverlayTrigger>
 							</td>
-							<td data-th="Designation">
+							{/* <td data-th="Designation">
 								<OverlayTrigger
 									placement="top"
 									delay={{ show: 250, hide: 400 }}
@@ -255,22 +255,8 @@ export default function lawyers() {
 									</span>
 								</OverlayTrigger>
 								<br />
-								{/* <OverlayTrigger
-									placement="top"
-									delay={{ show: 250, hide: 400 }}
-									overlay={<Tooltip className="in" id="tooltip-top" >
-										{rowData.company_name}
-									</Tooltip>}>
-									<span className="font-x-small text-sonic-silver weight-light" >
-										{rowData.company_name && rowData.company_name.length > 30
-											? rowData.company_name.substring(0, 30) + '...'
-											: rowData.company_name}
-
-										{rowData.firm_name && rowData.firm_name.length > 30
-											? rowData.firm_name.substring(0, 30) + '...'
-											: rowData.firm_name}
-									</span></OverlayTrigger> */}
-							</td>
+								
+							</td> */}
 							<td data-th="Plan">
 
 								<button className="monthly">
