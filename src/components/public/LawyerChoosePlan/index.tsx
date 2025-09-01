@@ -28,23 +28,40 @@ export default function LawyerChoosePlan() {
     const [isMonthly, setIsMonthly] = useState('yearly');
     const [membershipPlan, setMembershipPlan] = useState<MembershipPlan | null>(null);
     const [selectedPlan, setSelectedPlan] = useState('individuals');
-
+    const [loading, setLoading] = useState(false);
     const handlePlanSelection = (plan: string) => {
         setSelectedPlan(plan === selectedPlan ? '' : plan);
     };
+    console.log(user, 'user')
 
-
+    // useEffect(() => {
+    //     getAllMemberShipPlanData();
+    //     if (user) {
+    //         if (user?.id && user?.role == 'professional') {
+    //             getAllMemberShipPlanData();
+    //         }
+    //         else {
+    //             router.push('/auth/login');
+    //         }
+    //     }
+    // }, [user]);
     useEffect(() => {
-        getAllMemberShipPlanData();
-        if (user) {
-            if (user?.id && user?.role == 'professional') {
-                getAllMemberShipPlanData();
-            }
-            else {
-                router.push('/auth/login');
-            }
+        if (user === undefined) {
+            return;
         }
-    }, []);
+
+        if (!user) {
+            router.push('/auth/login343');
+            return;
+        }
+
+        if (user?.id && user?.role === 'professional') {
+            getAllMemberShipPlanData();
+        } else {
+            router.push('/auth/login555');
+        }
+    }, [user]);
+
 
     const getAllMemberShipPlanData = async () => {
         try {
@@ -59,6 +76,7 @@ export default function LawyerChoosePlan() {
 
     const handlePriceSet = () => {
         if (user) {
+            setLoading(true);
             let tempPlanAmount;
 
             if (isMonthly === 'yearly') {
@@ -73,7 +91,7 @@ export default function LawyerChoosePlan() {
 
             router.push('/auth/professional/payment-details');
         } else {
-            router.push('/auth/login');
+            router.push('/auth/logindfdgf');
         }
     };
 
@@ -145,40 +163,9 @@ export default function LawyerChoosePlan() {
                                             )}
                                         </div>
                                     </div>
-                                    {/* <div className='row'>
-                                        <div className='col-md-6 d-flex'>
-
-                                        </div>
-                                        <div className='col-md-6 d-flex'>
-                                            <p className="font-small weight-medium social-link mt-2"> MONTHLY
-                                            </p>
-                                            <div className="switch-btn mt-2">
-                                                <label className="switch ">
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={plan === 'yes'}
-                                                        onChange={handleMonthlyPlanToggle}
-
-                                                    />
-                                                    <span className="slider round"></span>
-                                                </label>
-                                            </div>
-                                            <p className="font-small weight-medium social-link mt-2" style={{ paddingLeft: '10px' }}> YEARLY
-                                            </p>
-                                            <p className="font-small weight-medium social-link mt-2 set-flat-offer"> Flat 25% off
-                                            </p>
-                                        </div>
-
-                                    </div> */}
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {/* {isMonthly == 'yearly' &&
-                                            membershipPlan &&
-                                            membershipPlan.monthly_desc.split(',').map((desc, index) => (
-                                                <p key={index} className="font-small weight-medium social-link mt-3">
-                                                    <i className="fa-solid fa-check"></i> {desc.trim()}
-                                                </p>
-                                            ))} */}
+
 
                                         {isMonthly == 'yearly' &&
                                             membershipPlan &&
@@ -196,10 +183,18 @@ export default function LawyerChoosePlan() {
                                         >
                                             <span className="">
                                                 {' '}
-                                                {/* {isMonthly == 'one-time'
-                                                    ? ' Start 1 Month Free Trial'
-                                                    : `Pay ${membershipPlan && membershipPlan.yearly_amount}`} */}
-                                                {user ? (
+                                                {/* {user ? (
+                                                    isMonthly === 'yearly'
+                                                        ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
+                                                        : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`
+                                                ) : (
+                                                    <Link href="/auth/login" style={{ color: 'white' }}>
+                                                        Login
+                                                    </Link>
+                                                )} */}
+                                                {loading ? (
+                                                    <>Processing...</> // 👈 loading text
+                                                ) : user ? (
                                                     isMonthly === 'yearly'
                                                         ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
                                                         : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`
