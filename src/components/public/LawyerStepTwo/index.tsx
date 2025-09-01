@@ -177,9 +177,9 @@ export default function LawyerStepTwo() {
 		// if (!formData.license_number) {
 		// 	newErrors.license_number = 'License number is required';
 		// }
-		if (!formData.designation) {
-			newErrors.designation = 'Designation is required';
-		}
+		// if (!formData.designation) {
+		// 	newErrors.designation = 'Designation is required';
+		// }
 		// if (!selectedLawFirmId) {
 		// 	newErrors.firm_id = 'Law firm is required';
 		// }
@@ -336,7 +336,7 @@ export default function LawyerStepTwo() {
 							<form className="commanclassall" id="paymentform" onSubmit={handleSubmit}>
 								<div className="row">
 									<div className="col-md-12">
-										<div className="form-group">
+										{/* <div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2">
 												License Number
 											</label>
@@ -352,14 +352,14 @@ export default function LawyerStepTwo() {
 													})
 												}
 											/>
-											{/* {errors.license_number && (
+											{errors.license_number && (
 												<small className="error-message text-danger d-block">
 													{errors.license_number}
 												</small>
-											)} */}
-										</div>
+											)}
+										</div> */}
 									</div>
-									<div className="col-md-12">
+									{/* <div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
 												Designation*
@@ -383,7 +383,7 @@ export default function LawyerStepTwo() {
 												</small>
 											)}
 										</div>
-									</div>
+									</div> */}
 									{/* <div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
@@ -507,10 +507,12 @@ export default function LawyerStepTwo() {
 												inputClass="form-control"
 												value={formData.phone_number}
 												country={"us"}
-												// onlyCountries={['us']}
-												//  countryCodeEditable={false} 
+												onlyCountries={["us"]}
+												disableDropdown={true}
+												countryCodeEditable={false}
 												onChange={value => setFormData({ ...formData, phone_number: value })}
 											/>
+
 											{errors.phone_number && (
 												<small className="error-message text-danger">
 													{errors.phone_number}
