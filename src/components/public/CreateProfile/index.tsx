@@ -136,10 +136,20 @@ export default function CreateProfile() {
 					}
 				})
 				.catch(err => {
-					if (err.response && err.response.data && err.response.data.errors) {
-						const errors = err.response.data.errors;
-						if (errors.email) {
-							toast.error(errors.email[0]);
+					const response = err.response?.data;
+
+					if (response) {
+						if (response.errors) {
+							// Validation errors
+							const errors = response.errors;
+							if (errors.email) {
+								toast.error(errors.email[0]);
+							} else {
+								toast.error('An error occurred during registration');
+							}
+						} else if (response.message) {
+							// General error message from backend
+							toast.error(response.message);
 						} else {
 							toast.error('An error occurred during registration');
 						}
@@ -147,6 +157,7 @@ export default function CreateProfile() {
 						toast.error('An error occurred during registration');
 					}
 				})
+
 				.finally(() => {
 					setTimeout(() => {
 						setIsLoading(false);
