@@ -58,7 +58,14 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                 .then((response) => {
                     const data = response.data;
                     if (data.status == true) {
+                        const isPaymentPending = data.payment_status === 'pending';
+
+                        if (isPaymentPending) {
+                            window.sessionStorage.setItem('payment_pending', 'true');
+                        }
+
                         if (data.user.signupComplete === false && data.user.role === 'professional') {
+                            // router.push('/auth/professional/step-2')
                             router.push('/auth/professional/step-2')
                         }
                         if (data.user.role === 'enduser' && data.user.otp) {
@@ -88,30 +95,84 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
             setUser(undefined);
             if (pathname.includes('/admin/') || pathname.includes('/professional/') || pathname.includes('/user/')) {
                 toast.error('You are not logged in or your session has expired. Please log in again to access this page.');
-                router.push('/auth/login');
+                router.push('/auth/login12');
             }
         }
     }, []);
 
 
+    // const login = async (email: string, password: string) => {
+    //     const response = await api.post('/login', { email, password });
+    //     if (response.data.status == false) {
+    //         toast.error(response.data.message)
+    //         return;
+    //     }
+
+    //     if (response.data.status == true) {
+    //         const { token, user, payment_status } = response.data.data;
+
+    //         axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+    //         Cookies.set('session_token', token);
+    //         Cookies.set('email', email);
+    //         window.sessionStorage.setItem('email', email);
+    //         setUser(user);
+
+    //         // ✅ Payment pending check
+    //         if (payment_status === 'pending') {
+    //             window.sessionStorage.setItem('payment_pending', 'true');
+    //         } else {
+    //             window.sessionStorage.removeItem('payment_pending');
+    //         }
+
+    //         if (user?.two_factor_auth === "yes") {
+    //             toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+    //         }
+
+    //         return response.data.data;
+    //     }
+    // };
     const login = async (email: string, password: string) => {
         const response = await api.post('/login', { email, password });
         if (response.data.status == false) {
-            toast.error(response.data.message)
+            toast.error(response.data.message);
+            return;
         }
 
         if (response.data.status == true) {
-            const { token, user } = response.data.data;
+            const { token, user, payment_status } = response.data.data;
+
             axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+            Cookies.set('session_token', token);
             Cookies.set('email', email);
-            window.sessionStorage.setItem('email', email)
+            window.sessionStorage.setItem('email', email);
             setUser(user);
-            if (user?.two_factor_auth == "yes") {
-                toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.')
+
+            // if (payment_status === 'pending') {
+            //     window.sessionStorage.setItem('payment_pending', 'true');
+            // } else {
+            //     window.sessionStorage.removeItem('payment_pending');
+            // }
+            // if (user?.two_factor_auth === "yes") {
+            //     toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+            // }
+            if (payment_status === 'pending') {
+                window.sessionStorage.setItem('payment_pending', 'true');
+                toast.error('Please complete payment');
+            } else {
+                window.sessionStorage.removeItem('payment_pending');
+
+                if (user?.two_factor_auth === "yes") {
+                    toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+                } else {
+                    toast.success('User logged in successfully.');
+                }
             }
+
+
             return response.data.data;
         }
     };
+
 
     const logout = async (): Promise<void> => {
         const token = Cookies.get("session_token")

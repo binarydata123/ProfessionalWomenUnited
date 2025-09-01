@@ -338,10 +338,10 @@ export default function Page() {
 			newErrors.location = 'Location is required';
 			handleFocus(locationRef);
 		}
-		if (!formData.license_number) {
-			newErrors.license_number = 'License number is required';
-			handleFocus(licenseNumberRef);
-		}
+		// if (!formData.license_number) {
+		// 	newErrors.license_number = 'License number is required';
+		// 	handleFocus(licenseNumberRef);
+		// }
 		if (!formData.acquired) {
 			newErrors.acquired = 'Acquired is required';
 			handleFocus(acquiredRef);
@@ -353,10 +353,10 @@ export default function Page() {
 			newErrors.status = 'Status is required';
 			handleFocus(statusRef);
 		}
-		if (!formData.designation) {
-			newErrors.designation = 'Designation is required';
-			handleFocus(designationRef);
-		}
+		// if (!formData.designation) {
+		// 	newErrors.designation = 'Designation is required';
+		// 	handleFocus(designationRef);
+		// }
 		// if (!formData.firm_id) {
 		// 	newErrors.firm_id = 'Company name is required';
 		// 	handleFocus(companyNameRef);
@@ -826,7 +826,7 @@ export default function Page() {
 							</p>
 						</div>
 						<div className="col-md-6 col-lg-12 col-xl-6">
-							<label className="font-small  weight-medium text-sonic-silver w-100">License Number</label>
+							{/* <label className="font-small  weight-medium text-sonic-silver w-100">License Number</label>
 							<input
 								type="text"
 								placeholder="4365VD"
@@ -838,7 +838,7 @@ export default function Page() {
 							/>
 							{errors.license_number && (
 								<small className="error-message text-danger d-block">{errors.license_number}</small>
-							)}
+							)} */}
 							<div className="row">
 								<div className="col-sm-6 col-6">
 									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
@@ -882,7 +882,7 @@ export default function Page() {
 								</div>
 							</div>
 
-							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+							{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Designation
 							</label>
 							<input
@@ -896,7 +896,7 @@ export default function Page() {
 							/>
 							{errors.designation && (
 								<small className="error-message text-danger d-block">{errors.designation}</small>
-							)}
+							)} */}
 							<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 								Company Name
 							</label>

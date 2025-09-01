@@ -124,57 +124,46 @@ export default function Login() {
 	function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault();
 		const isValid = validateForm();
-		if (isValid) {
-			setIsLoading(true);
-			login(formData.email, formData.password)
-				.then((res: any) => {
-					if (res) {
-						setIsLoading(false);
-						if (res.user.role == 'professional') {
-							if (res.user.profile_status == 'legal-step') {
-								router.push('/auth/professional/step-2');
-							}
-							if (res.user.profile_status == 'completed') {
-								if (res.user.two_factor_auth == 'yes') {
-									Cookies.set('two_step_auth', 'false');
-									router.push('/auth/two-factor-authentication');
-								} else {
-									router.push('/auth/two-factor-authentication');
-								}
-							}
-						} else {
-							if (res.user.role === 'enduser') {
-								if (res.user.two_factor_auth === 'yes') {
-									Cookies.set('two_step_auth', 'false');
-									router.push('/auth/two-factor-authentication');
-								} else {
-									router.push('/auth/two-factor-authentication');
-								}
-							} else if (res.user.role === 'admin') {
-								if (res.user.two_factor_auth === 'yes') {
-									Cookies.set('two_step_auth', 'false');
-									router.push('/auth/two-factor-authentication');
-								} else {
-									router.push('/auth/two-factor-authentication');
-								}
-							} else if (res.account === 'suspended') {
-								router.push('/account-suspended');
-							} else {
-								toast.error(res.message);
-							}
-						}
+		if (!isValid) return;
+
+		setIsLoading(true);
+		login(formData.email, formData.password)
+			.then((res: any) => {
+				setIsLoading(false);
+				if (!res) return;
+
+				// 🔹 Step 1: Payment check
+				const isPaymentPending = window.sessionStorage.getItem('payment_pending') === 'true';
+				if (isPaymentPending) {
+					router.push('/auth/professional/choose-pricing-plan');
+					return;
+				}
+
+				// 🔹 Step 2: Two-Factor Auth / Role-based flow
+				if (res.user.role === 'professional') {
+					if (res.user.profile_status === 'professional-step') {
+						router.push('/auth/professional/step-2');
+					} else if (res.user.profile_status === 'completed') {
+						router.push('/auth/two-factor-authentication');
 					}
-				})
-				.catch(err => {
-					throw err;
-				})
-				.finally(() => {
-					setTimeout(() => {
-						setIsLoading(false);
-					}, 1000);
-				});
-		}
+				} else if (res.user.role === 'enduser' || res.user.role === 'admin') {
+					router.push('/auth/two-factor-authentication');
+				} else if (res.account === 'suspended') {
+					router.push('/account-suspended');
+				} else {
+					toast.error(res.message);
+				}
+			})
+			.catch(err => {
+				console.log(err);
+			})
+			.finally(() => setIsLoading(false));
 	}
+
+
+
+
+
 	const handleResendEmailVerifyOtpSubmit = (user_id: any, user_name: any, user_email: any) => {
 		setIsLoading(true);
 		const data = {

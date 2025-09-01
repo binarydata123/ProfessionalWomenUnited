@@ -221,9 +221,9 @@ export default function Page() {
 		if (!formData.status) {
 			newErrors.status = 'Status is required';
 		}
-		if (!formData.designation) {
-			newErrors.designation = 'Designation is required';
-		}
+		// if (!formData.designation) {
+		// 	newErrors.designation = 'Designation is required';
+		// }
 		// if (!formData.firm_id) {
 		// 	newErrors.firm_id = 'Company name is required';
 		// }
@@ -687,7 +687,7 @@ export default function Page() {
 							</div>
 							<div className="col-md-6 col-lg-12 col-xl-6">
 								<div className="profile-picture">
-									<label className="font-small  weight-medium text-sonic-silver w-100 pb-2">
+									{/* <label className="font-small  weight-medium text-sonic-silver w-100 pb-2">
 										License Number
 									</label>
 									<input
@@ -701,7 +701,7 @@ export default function Page() {
 										<small className="error-message text-danger d-block">
 											{errors.license_number}
 										</small>
-									)}
+									)} */}
 									<div className="row">
 										<div className="col-sm-6 col-6">
 											<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
@@ -748,7 +748,7 @@ export default function Page() {
 										</div>
 									</div>
 
-									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
+									{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
 										Designation
 									</label>
 									<input
@@ -762,7 +762,7 @@ export default function Page() {
 										<small className="error-message text-danger d-block">
 											{errors.designation}
 										</small>
-									)}
+									)} */}
 									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 										Company Name
 									</label>
