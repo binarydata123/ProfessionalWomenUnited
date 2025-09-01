@@ -29,8 +29,8 @@ const OTPInputGroup = () => {
 
 	useEffect(() => {
 		if (user?.two_factor_auth === 'no' && !submittedRef.current) { // Check if OTP has not been submitted yet
-			handleSubmit();
 			submittedRef.current = true; // Mark OTP as submitted to prevent further submissions
+			handleSubmit();
 		}
 	}, [user?.two_factor_auth]);
 
@@ -160,7 +160,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input1"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[0] : inputValues.input1}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[0] : inputValues.input1}
 								onValueChange={handleInputChange}
 								previousId={null}
 								handleSubmit={handleSubmit}
@@ -170,7 +170,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input2"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[1] : inputValues.input2}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[1] : inputValues.input2}
 								onValueChange={handleInputChange}
 								previousId="input1"
 								handleSubmit={handleSubmit}
@@ -180,7 +180,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input3"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[2] : inputValues.input3}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[2] : inputValues.input3}
 								onValueChange={handleInputChange}
 								previousId="input2"
 								handleSubmit={handleSubmit}
@@ -192,7 +192,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input4"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[3] : inputValues.input4}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[3] : inputValues.input4}
 								onValueChange={handleInputChange}
 								previousId="input3"
 								handleSubmit={handleSubmit}
@@ -202,7 +202,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input5"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[4] : inputValues.input5}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[4] : inputValues.input5}
 								onValueChange={handleInputChange}
 								previousId="input4"
 								handleSubmit={handleSubmit}
@@ -212,7 +212,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input6"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[5] : inputValues.input6}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[5] : inputValues.input6}
 								onValueChange={handleInputChange}
 								previousId="input5"
 								handleSubmit={handleSubmit}
