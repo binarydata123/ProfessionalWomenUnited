@@ -120,7 +120,7 @@ export default function LawyerChoosePlan() {
                                                 height={50}
                                             />
                                             <h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-                                                Solo Plan
+                                                Annual Membership
                                             </h5>
                                         </div>
                                         <div className="col-sm-6 text-right tab-left">
@@ -131,7 +131,7 @@ export default function LawyerChoosePlan() {
                                                         {membershipPlan && membershipPlan.monthly_amount}
 
                                                     </span>
-                                                    /yearly
+                                                    /year
                                                 </h6>
                                             ) : (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
@@ -140,7 +140,7 @@ export default function LawyerChoosePlan() {
                                                         {membershipPlan && membershipPlan.yearly_amount}
 
                                                     </span>
-                                                    /yearly
+                                                    /year
                                                 </h6>
                                             )}
                                         </div>

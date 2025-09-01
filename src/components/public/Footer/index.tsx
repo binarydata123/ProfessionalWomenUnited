@@ -106,14 +106,14 @@ export default function Footer() {
 						<div className="">
 							<ul className="social-icon-link list-unstyled" >
 								<li>
-									<a target="_blank" href="https://www.facebook.com/connectlegaluae" rel="noreferrer">
+									<a target="_blank" href="https://www.facebook.com" rel="noreferrer">
 										<FaFacebookF style={{ color: '#fff' }} />
 									</a>
 								</li>
 								<li>
 									<a
 										target="_blank"
-										href="https://www.instagram.com/connectlegaluae/"
+										href="https://www.instagram.com/"
 										rel="noreferrer">
 										<FaInstagram style={{ color: '#fff' }} />
 									</a>
