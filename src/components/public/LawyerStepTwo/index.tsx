@@ -507,11 +507,9 @@ export default function LawyerStepTwo() {
 												inputClass="form-control"
 												value={formData.phone_number}
 												country={"us"}
-												onlyCountries={["us"]}
-												disableDropdown={true}
-												countryCodeEditable={false}
 												onChange={value => setFormData({ ...formData, phone_number: value })}
 											/>
+
 
 											{errors.phone_number && (
 												<small className="error-message text-danger">
