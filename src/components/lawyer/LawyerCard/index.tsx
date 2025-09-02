@@ -120,12 +120,12 @@ export default function LawyerCard({
 					</h3>
 				</Link>
 
-				<span className="description">
+				{/* <span className="description">
 					{lawyer?.designation && lawyer.designation.length > 30
 						? lawyer.designation.slice(0, 30) + '...'
 						: lawyer?.designation} {' '}
 
-				</span>
+				</span> */}
 
 				{showLocation && (
 					<div className="location-move">
@@ -147,15 +147,13 @@ export default function LawyerCard({
 							<span>({lawyer.avg_rating_and_reviews.split('(')[1]})</span>
 						</span>
 					) : (
-						<span></span>
+						<span>Review not available</span>
 					)}
 
 				</p>
 
 				<div className="btn-family-more">
 					{lawyer?.service_name && (
-						// <Link href={`/legal-services/${lawyer?.service_slug}`}>
-						// </Link>
 						<button> {lawyer?.service_name.split(',')[0]} Profession</button>
 					)}
 					<span className="view-more-btn" onClick={() => handleSingleLawyerDetails(lawyer.id)}>
@@ -194,7 +192,7 @@ export default function LawyerCard({
 								<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal">
 									{single_lawyer?.full_name}
 								</h3>
-								{single_lawyer?.designation && <p className="description py-3">{single_lawyer?.designation}</p>}
+								{/* {single_lawyer?.designation && <p className="description py-3">{single_lawyer?.designation}</p>} */}
 								{single_lawyer?.location_name && (
 									<div className="location-move p-0">
 										<Image

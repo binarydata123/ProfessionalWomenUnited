@@ -745,7 +745,7 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/contact@connectlegal.ae',
+				source: '/contact@professionalwomen.com',
 				destination: '/contact-us',
 				permanent: true
 			},

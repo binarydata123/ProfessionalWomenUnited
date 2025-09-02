@@ -324,12 +324,12 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												<div className="col-lg-8">
 													<div className="company-detail">
 
-														{single_lawyer?.designation && (
+														{/* {single_lawyer?.designation && (
 															<span style={{ fontWeight: '600', fontSize: '20px' }}>{single_lawyer?.designation}</span>
-														)}{' '}
+														)}{' '} */}
 														{single_lawyer?.company_name && (
 															<span className="profile-d-change1" style={{ fontWeight: '400', fontSize: '16px' }}>
-																({single_lawyer?.company_name})
+																{single_lawyer?.company_name}
 															</span>
 														)}{' '}
 
@@ -518,50 +518,55 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											style={{
 												height: '30px',
 												backgroundColor: 'rgb(249,242,239)',
-												width: '200px'
+												width: '200px',
 											}}
 										></div>
 									) : (
-										<div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+										<div className="row">
 											{single_lawyer?.linkedin_url && (
-												<a
-													href={single_lawyer?.linkedin_url}
-													target="_blank"
-													className="green-medium-2 font-medium flex items-center gap-2"
-													rel="noreferrer"
-												>
-													<Image
-														src="/images/Blogs/iconoir_linkedin.svg"
-														alt="linkedin"
-														width={20}
-														height={20}
-													/>{' '}
-													LinkedIn
-												</a>
+												<div className="col-12 col-lg-12 mb-3">
+													<a
+														href={single_lawyer?.linkedin_url}
+														target="_blank"
+														className="green-medium-2 font-medium d-flex align-items-center gap-2"
+														rel="noreferrer"
+													>
+														<Image
+															src="/images/Blogs/iconoir_linkedin.svg"
+															alt="linkedin"
+															width={20}
+															height={20}
+														/>
+														LinkedIn: {single_lawyer?.linkedin_url}
+													</a>
+												</div>
 											)}
 
 											{single_lawyer?.website_link && (
-												<a
-													href={single_lawyer?.website_link}
-													target="_blank"
-													className="green-medium-2 font-medium flex items-center gap-2"
-													rel="noreferrer"
-												>
-													<Image
-														src="/images/Blogs/link-square.png"
-														alt="website"
-														width={20}
-														height={20}
-													/>{' '}
-													Website
-												</a>
+												<div className="col-12 col-lg-12 mb-3">
+													<a
+														href={single_lawyer?.website_link}
+														target="_blank"
+														className="green-medium-2 font-medium d-flex align-items-center gap-2"
+														rel="noreferrer"
+													>
+														<Image
+															src="/images/Blogs/link-square.png"
+															alt="website"
+															width={20}
+															height={20}
+														/>
+														Website: {single_lawyer?.website_link}
+													</a>
+												</div>
 											)}
 										</div>
 									)}
 
+
 									{/* Contact Information in About Section */}
 									{(single_lawyer?.is_show_phone_number || single_lawyer?.is_show_email) && (
-										<div className="contact-details-card mt-4 p-3 rounded" style={{ backgroundColor: '#f8f9fa' }}>
+										<div className="contact-details-card mt-1 p-3 rounded" style={{ backgroundColor: '#f8f9fa' }}>
 											<h6 className="font-medium weight-semi-bold mb-3">Contact Information</h6>
 											<div className="row">
 												{single_lawyer?.is_show_phone_number && single_lawyer?.phone_number && (
@@ -912,14 +917,14 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											<div className="row">
 												<div className="col-lg-12">
 													<div className="company-detail">
-														{single_lawyer?.designation && (
+														{/* {single_lawyer?.designation && (
 															<span className="profile-d-change1" style={{ fontWeight: '600', fontSize: '20px' }}>
 																{single_lawyer?.designation}
 															</span>
-														)}{' '}
+														)}{' '} */}
 														{single_lawyer?.company_name && (
 															<span className="profile-d-change1" style={{ fontWeight: '400', fontSize: '16px' }}>
-																({single_lawyer?.company_name})
+																{single_lawyer?.company_name}
 															</span>
 														)}{' '}
 

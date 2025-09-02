@@ -216,8 +216,8 @@ export default function CreateProfile() {
 											<input
 												type="text"
 												className="form-control"
-												placeholder="E.g. Dr. First Name"
-												maxLength={50}
+												placeholder="Please enter name"
+												maxLength={40}
 												value={formData.firstName}
 												onChange={e => setFormData({ ...formData, firstName: e.target.value })}
 											/>
@@ -235,7 +235,7 @@ export default function CreateProfile() {
 												type="text"
 												className="form-control"
 												placeholder="Last Name"
-												maxLength={50}
+												maxLength={40}
 												value={formData.lastName}
 												onChange={e => setFormData({ ...formData, lastName: e.target.value })}
 											/>

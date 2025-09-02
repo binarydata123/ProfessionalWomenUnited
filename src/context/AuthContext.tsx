@@ -155,20 +155,43 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
             // if (user?.two_factor_auth === "yes") {
             //     toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
             // }
-            if (payment_status === 'pending') {
-                window.sessionStorage.setItem('payment_pending', 'true');
-                toast.error('Please complete payment');
+
+            // min
+            // if (payment_status === 'pending') {
+            //     window.sessionStorage.setItem('payment_pending', 'true');
+            //     toast.error('Please complete payment');
+            // } else {
+            //     window.sessionStorage.removeItem('payment_pending');
+
+            //     if (user?.two_factor_auth === "yes") {
+            //         toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+            //     } else {
+            //         toast.success('User logged in successfully.');
+            //     }
+            // }
+
+
+            // 🔹 Payment check ONLY for professional
+            if (user?.role === "professional") {
+                if (payment_status === 'pending') {
+                    window.sessionStorage.setItem('payment_pending', 'true');
+                    toast.error('Please complete your payment.');
+                } else {
+                    window.sessionStorage.removeItem('payment_pending');
+                    if (user?.two_factor_auth === "yes") {
+                        toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+                    } else {
+                        toast.success('User logged in successfully.');
+                    }
+                }
             } else {
                 window.sessionStorage.removeItem('payment_pending');
-
                 if (user?.two_factor_auth === "yes") {
                     toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
                 } else {
                     toast.success('User logged in successfully.');
                 }
             }
-
-
             return response.data.data;
         }
     };
@@ -181,6 +204,8 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
             setUser(undefined);
             Cookies.remove('session_token');
             window.sessionStorage.removeItem('token')
+            window.sessionStorage.removeItem('temp_user_role')
+            window.sessionStorage.removeItem('payment_pending')
             toast.success(res.data.message)
             router.push('/auth/login')
         } else {

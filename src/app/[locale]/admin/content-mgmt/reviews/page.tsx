@@ -150,7 +150,7 @@ export default function lawyers() {
 
 			<div className="table-part mt-3">
 				<Table
-					columns={['Name', 'Designation', 'Rating', 'Reported', 'Created On', 'Actions']}
+					columns={['Name', 'Rating', 'Reported', 'Created On', 'Actions']}
 					data={currentLawyer}
 				>
 					{(rowData, index) => (
@@ -166,11 +166,11 @@ export default function lawyers() {
 									</span>
 								</OverlayTrigger>
 							</td>
-							<td data-th="Designation">
+							{/* <td data-th="Designation">
 								<OverlayTrigger
 									placement="top"
 									overlay={<Tooltip id="tooltip-top" className="in custom-tooltip-class text-capitalize">{rowData.designation} <br />
-										{/* {rowData.company_name} */}
+										{rowData.company_name}
 									</Tooltip>}>
 									<span className="font-small weight-medium social-link" title={rowData.designation}>
 										{rowData.designation && rowData.designation.length > 30
@@ -178,12 +178,12 @@ export default function lawyers() {
 											: rowData.designation}
 									</span>
 								</OverlayTrigger>
-								{/* <p className="font-x-small text-sonic-silver weight-light">
+								<p className="font-x-small text-sonic-silver weight-light">
 									{rowData.company_name && rowData.company_name.length > 30
 										? rowData.company_name.substring(0, 30) + '...'
 										: rowData.company_name}
-								</p> */}
-							</td>
+								</p>
+							</td> */}
 
 							<td data-th="Rating">
 								<p className="font-small weight-medium social-link d-flex">

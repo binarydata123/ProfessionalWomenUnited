@@ -44,7 +44,7 @@ export default function stepTwo() {
 				// 	setPlanAmount(temp_plan_amount);
 				// }
 				if (!user?.id || user?.role === 'enduser') {
-					router.push('/auth/login'); // Only if user is invalid
+					router.push('/auth/login');
 				} else if (!temp_plan_type || !temp_plan_amount) {
 					router.push('/auth/professional/choose-pricing-plan'); // Take back to plan selection instead of login
 				} else {

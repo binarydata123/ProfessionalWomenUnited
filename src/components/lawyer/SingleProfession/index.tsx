@@ -315,9 +315,9 @@ export default function SingleProfession({ slug = '' }: Props) {
 												<div className="col-lg-8">
 													<div className="company-detail">
 
-														{single_lawyer?.designation && (
+														{/* {single_lawyer?.designation && (
 															<span style={{ fontWeight: '600', fontSize: '20px' }}>{single_lawyer?.designation}</span>
-														)}{' '}
+														)}{' '} */}
 														{single_lawyer?.location_name && (
 															<p>
 																<MapPinIcon width={20} height={20} />{' '}
@@ -835,11 +835,11 @@ export default function SingleProfession({ slug = '' }: Props) {
 											<div className="row">
 												<div className="col-lg-12">
 													<div className="company-detail">
-														{single_lawyer?.designation && (
+														{/* {single_lawyer?.designation && (
 															<span className="profile-d-change1" style={{ fontWeight: '600', fontSize: '20px' }}>
 																{single_lawyer?.designation}
 															</span>
-														)}{' '}
+														)}{' '} */}
 
 														{single_lawyer?.location_name && (
 															<p>
