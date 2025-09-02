@@ -238,7 +238,7 @@ export default function approvals() {
 			</p>
 
 			<div className="table-part">
-				<Table columns={['Applied On', 'Name', 'Designation', 'Status', 'Actions']} data={currentLawyer}>
+				<Table columns={['Applied On', 'Name', 'Status', 'Actions']} data={currentLawyer}>
 					{(rowData, index) => (
 						<tr key={index}>
 							<td data-th="Applied On">
@@ -263,12 +263,12 @@ export default function approvals() {
 									</span>
 								</OverlayTrigger>
 							</td>
-							<td data-th="Designation">
+							{/* <td data-th="Designation">
 								<OverlayTrigger
 									placement="top"
 									delay={{ show: 250, hide: 400 }}
 									overlay={<Tooltip id="tooltip-top" className="in custom-tooltip-class"> {rowData.designation} <br />3
-										{/* {rowData.company_name}  */}
+										{rowData.company_name} 
 									</Tooltip>}>
 									<span className="font-small weight-medium social-link">
 										{rowData.designation && rowData.designation.length > 30
@@ -276,12 +276,12 @@ export default function approvals() {
 											: rowData.designation}
 									</span>
 								</OverlayTrigger>
-								{/* <p className="font-x-small text-sonic-silver weight-light" >
+								<p className="font-x-small text-sonic-silver weight-light" >
 									{rowData.company_name && rowData.company_name.length > 30
 										? rowData.company_name.substring(0, 30) + '...'
 										: rowData.company_name}
-								</p> */}
-							</td>
+								</p>
+							</td> */}
 							<td data-th="Status">
 								{rowData.status == 'active' ? (
 									<button

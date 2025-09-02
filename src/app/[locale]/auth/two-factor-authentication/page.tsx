@@ -86,10 +86,14 @@ const OTPInputGroup = () => {
 					setUser(user);
 
 					// 🔹 Check payment again after 2FA
-					const isPaymentPending = window.sessionStorage.getItem('payment_pending') === 'true';
-					if (isPaymentPending) {
-						router.push('/auth/professional/payment-details');
-						return;
+					// 🔹 Payment check ONLY for professional role
+					if (user?.role === "professional") {
+						const isPaymentPending =
+							window.sessionStorage.getItem("payment_pending") === "true";
+						if (isPaymentPending) {
+							router.push("/auth/professional/payment-details");
+							return;
+						}
 					}
 
 					// 🔹 Normal redirects

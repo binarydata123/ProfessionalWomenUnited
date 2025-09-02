@@ -920,10 +920,10 @@ button.default-button.w-100 {
 }
 
 /* Make sure the popup modal works correctly on mobile */
-#modal-body-style {
+/* #modal-body-style {
 	max-height: 80vh;
 	overflow-y: auto;
-}
+} */
 
 /* Fix for the applied filters bar on mobile */
 .applied-filters-bar {

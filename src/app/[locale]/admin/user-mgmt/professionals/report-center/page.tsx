@@ -262,7 +262,7 @@ export default function reportCenter() {
 
 			<div className="table-part">
 				<Table
-					columns={['Name', 'Designation', 'Plan', 'Report By', 'Report Status', 'Actions']}
+					columns={['Name', 'Plan', 'Report By', 'Report Status', 'Actions']}
 					data={currentLawyer}
 				>
 					{(rowData, index) => (
@@ -279,12 +279,12 @@ export default function reportCenter() {
 									</span>
 								</OverlayTrigger>
 							</td>
-							<td data-th="Designation">
+							{/* <td data-th="Designation">
 								<OverlayTrigger
 									placement="top"
 									delay={{ show: 250, hide: 400 }}
 									overlay={<Tooltip id="tooltip-top" className="in custom-tooltip-class">{rowData.designation} <br />
-										{/* {rowData.company_name} */}
+										{rowData.company_name}
 									</Tooltip>}>
 									<span className="font-small weight-medium social-link">
 										{rowData.designation && rowData.designation.length > 30
@@ -292,12 +292,12 @@ export default function reportCenter() {
 											: rowData.designation}
 									</span>
 								</OverlayTrigger>
-								{/* <p className="font-x-small text-sonic-silver weight-light">
+								<p className="font-x-small text-sonic-silver weight-light">
 									{rowData.company_name && rowData.company_name.length > 30
 										? rowData.company_name.substring(0, 30) + '...'
 										: rowData.company_name}
-								</p> */}
-							</td>
+								</p>
+							</td> */}
 							<td data-th="Plan">
 								<button className="monthly">
 									{rowData.plan_name == 'monthly'

@@ -211,7 +211,7 @@ export default function LawyerStepTwo() {
 		if (isValid) {
 			const id = Cookies.get("userId")
 			const data = {
-				user_id: id,
+				user_id: id || user?.id,
 				license_number: formData.license_number,
 				designation: formData.designation,
 				law_firm_name: formData.law_firm_name,

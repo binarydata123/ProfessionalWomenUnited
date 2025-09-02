@@ -434,15 +434,33 @@ export default function Header({ locale }: any) {
 
 															<li className="">
 																<Link
+																	// href={(() => {
+																	// 	if (user?.role === 'admin') {
+																	// 		return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
+																	// 	} else if (user?.role === 'professional') {
+																	// 		return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
+																	// 	} else {
+																	// 		return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
+																	// 	}
+																	// })()}
+
 																	href={(() => {
-																		if (user?.role === 'admin') {
+																		if (typeof window !== "undefined") {
+																			const paymentPending = sessionStorage.getItem("payment_pending");
+																			if (paymentPending === "true") {
+																				return "/auth/professional/choose-pricing-plan";
+																			}
+																		}
+
+																		if (user?.role === "admin") {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-																		} else if (user?.role === 'professional') {
+																		} else if (user?.role === "professional") {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 																		} else {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																		}
-																	})()}>
+																	})()}
+																>
 																	{/* <Image
 																		src="/images/left-menu-1.png"
 																		alt="left-menu-1"
@@ -457,15 +475,32 @@ export default function Header({ locale }: any) {
 
 															<li>
 																<Link
+																	// href={(() => {
+																	// 	if (user?.role === 'admin') {
+																	// 		return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
+																	// 	} else if (user?.role === 'professional') {
+																	// 		return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
+																	// 	} else {
+																	// 		return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
+																	// 	}
+																	// })()}
 																	href={(() => {
-																		if (user?.role === 'admin') {
+																		if (typeof window !== "undefined") {
+																			const paymentPending = sessionStorage.getItem("payment_pending");
+																			if (paymentPending === "true") {
+																				return "/auth/professional/choose-pricing-plan";
+																			}
+																		}
+																		if (user?.role === "admin") {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
-																		} else if (user?.role === 'professional') {
+																		} else if (user?.role === "professional") {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
 																		} else {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																		}
-																	})()}>
+																	})()}
+
+																>
 																	{/* <Image
 																		src="/images/left-menu-5.png"
 																		alt="left-menu-1"

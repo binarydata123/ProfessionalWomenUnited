@@ -133,9 +133,16 @@ export default function Login() {
 				if (!res) return;
 
 				// 🔹 Step 1: Payment check
-				const isPaymentPending = window.sessionStorage.getItem('payment_pending') === 'true';
-				if (isPaymentPending) {
-					router.push('/auth/professional/choose-pricing-plan');
+				if (res.user.role === "professional") {
+					const isPaymentPending =
+						window.sessionStorage.getItem("payment_pending") === "true";
+					if (isPaymentPending) {
+						router.push("/auth/professional/choose-pricing-plan");
+						return;
+					}
+				}
+				if (res.next_step === 'email-verification-step') {
+					router.push('/auth/professional/verify-otp');
 					return;
 				}
 

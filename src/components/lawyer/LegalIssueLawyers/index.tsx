@@ -238,7 +238,7 @@ export default function LegalIssueLawyers({
 					</h3>
 				</Link>
 
-				<p className="description">
+				{/* <p className="description">
 					{lawyer?.designation && lawyer.designation.length > 30
 						? lawyer.designation.slice(0, 30) + '...'
 						: lawyer?.designation} {' '}
@@ -249,7 +249,7 @@ export default function LegalIssueLawyers({
 						</span>
 					) : ""}
 
-				</p>
+				</p> */}
 
 				{showLocation && (
 					<div className="location-move">
@@ -316,7 +316,7 @@ export default function LegalIssueLawyers({
 								<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal">
 									{single_lawyer?.full_name}
 								</h3>
-								{single_lawyer?.designation && <p className="description py-3">{single_lawyer?.designation}</p>}
+								{/* {single_lawyer?.designation && <p className="description py-3">{single_lawyer?.designation}</p>} */}
 								{single_lawyer?.location_name && (
 									<div className="location-move p-0">
 										<Image
