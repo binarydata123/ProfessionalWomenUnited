@@ -96,6 +96,8 @@ export default function Checkout() {
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
+                                    // window.sessionStorage.setItem('payment_pending', 'false');
+                                    window.sessionStorage.setItem('payment_pending', JSON.stringify(false));
                                     router.push('/auth/professional/verify-otp');
                                 });
                             } else {
@@ -110,12 +112,11 @@ export default function Checkout() {
                                     confirmButtonColor: '#c49073'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
+                                    window.sessionStorage.setItem('payment_pending', 'false');
+                                    // window.sessionStorage.setItem('payment_pending', JSON.stringify(false)); 
                                     router.push('/auth/professional/verify-otp');
                                 });
                             }
-
-                            // Cookies.remove('session_token', token);
-                            // Cookies.remove('userId', userId);
                         } else {
                             toast.error(res.message);
                             setIsLoading(false);

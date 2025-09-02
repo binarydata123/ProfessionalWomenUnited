@@ -186,7 +186,7 @@ export default function ContactUs() {
 						<div className="contact-box">
 							<Image
 								src="/images/contact/sms.png"
-								alt="contact@connectlegal.com"
+								alt="contact@professionalwomen.com"
 								width={40}
 								height={40}
 							/>

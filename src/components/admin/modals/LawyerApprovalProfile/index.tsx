@@ -76,10 +76,10 @@ export default function LawyerProfile(props: any) {
 
 					{single_lawyer?.designation && (
 						<div>
-							<span className="font-small weight-semi-bold social-link">
+							{/* <span className="font-small weight-semi-bold social-link">
 								{single_lawyer?.designation}
-								{/* at {single_lawyer?.company_name} */}
-							</span>
+								at {single_lawyer?.company_name}
+							</span> */}
 							{single_lawyer.status === 'active' ? (
 								<button
 									className="monthly mx-2"
