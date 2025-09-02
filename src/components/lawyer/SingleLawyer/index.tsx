@@ -545,7 +545,13 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											{single_lawyer?.website_link && (
 												<div className="col-12 col-lg-12 mb-3">
 													<a
-														href={single_lawyer?.website_link}
+														// href={single_lawyer?.website_link}
+														href={
+															single_lawyer.website_link.startsWith('http://') ||
+																single_lawyer.website_link.startsWith('https://')
+																? single_lawyer.website_link
+																: `https://${single_lawyer.website_link}`
+														}
 														target="_blank"
 														className="green-medium-2 font-medium d-flex align-items-center gap-2"
 														rel="noreferrer"
