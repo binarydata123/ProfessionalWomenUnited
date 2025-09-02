@@ -53,7 +53,9 @@ export default function Dashboard() {
 			if (res.status == true) {
 				setUserName(res.data.first_name);
 
-				if (res.data.payment_status === "cancelled") {
+				// if (res.data.payment_status === "cancelled") {
+				if (res.data.subscription_expiry_date === null) {
+
 					setPlanName('');
 					setPlanDayleft('');
 				} else {
