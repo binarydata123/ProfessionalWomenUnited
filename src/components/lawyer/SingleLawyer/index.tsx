@@ -167,6 +167,13 @@ export default function SingleLawyer({ slug = '' }: Props) {
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	};
 
+	const handleApiNull = (value: any): string | null => {
+		if (value === null || value === undefined || value === 'null' || value === 'undefined' || value === '') {
+			return null;
+		}
+		return value;
+	};
+
 	return (
 		<>
 			<section className="blog-section start">
@@ -523,7 +530,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										></div>
 									) : (
 										<div className="row">
-											{single_lawyer?.linkedin_url && (
+											{handleApiNull(single_lawyer?.linkedin_url) && (
 												<div className="col-12 col-lg-12 mb-3">
 													<a
 														href={single_lawyer?.linkedin_url}
@@ -634,52 +641,40 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											)}
 										</>
 									)}
-									{single_lawyer?.bio && (
+									{handleApiNull(single_lawyer?.bio) && (
 										<>
-											{isLoading ? (
-												<div
-													style={{
-														height: '20px',
-														backgroundColor: 'rgb(249,242,239)',
-														width: '100px'
-													}}
-												></div>
+											<p className="font-medium weight-medium text-sonic-silver mt-2">
+												Bio:
+											</p>
+											{single_lawyer.bio.length > 500 ? (
+												<>
+													{showMore ? (
+														<>
+															<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
+															<a
+																href="JavaScript:void(0)"
+																onClick={toggleShowMore}
+																className="green-medium-2 font-x-small weight-semi-bold"
+															>
+																Show Less
+															</a>
+														</>
+													) : (
+														<>
+															<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio.substring(0, 500) }} />
+															<a
+																href="JavaScript:void(0)"
+																onClick={toggleShowMore}
+																className="green-medium-2 font-x-small weight-semi-bold"
+															>
+																Show More
+															</a>
+														</>
+													)}
+												</>
 											) : (
-												<p className="font-medium  weight-medium text-sonic-silver mt-2">
-													Bio:
-												</p>
+												<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
 											)}
-											{
-												single_lawyer.bio.length > 500 ? (
-													<>
-														{showMore ? (
-															<>
-																<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
-																<a
-																	href="JavaScript:void(0)"
-																	onClick={toggleShowMore}
-																	className="green-medium-2 font-x-small weight-semi-bold"
-																>
-																	Show Less
-																</a>
-															</>
-														) : (
-															<>
-																<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio.substring(0, 500) }} />
-																<a
-																	href="JavaScript:void(0)"
-																	onClick={toggleShowMore}
-																	className="green-medium-2 font-x-small weight-semi-bold"
-																>
-																	Show More
-																</a>
-															</>
-														)}
-													</>
-												) : (
-													<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
-												)
-											}
 										</>
 									)}
 
@@ -835,15 +830,15 @@ export default function SingleLawyer({ slug = '' }: Props) {
 								</div>
 
 								<div id="pills-contact-tab3" className="mt-3">
-									{(single_lawyer?.consultation_duration ||
-										single_lawyer?.hourly_rate_range ||
-										single_lawyer?.payment_method) && (
+									{(handleApiNull(single_lawyer?.consultation_duration) ||
+										handleApiNull(single_lawyer?.hourly_rate_range) ||
+										handleApiNull(single_lawyer?.payment_method)) && (
 											<h5 className="font-xx-large weight-semi-bold green-dark">Rates</h5>
 										)}
 
-									{single_lawyer?.consultation_duration && (
+									{handleApiNull(single_lawyer?.consultation_duration) && (
 										<>
-											<p className="font-small  weight-light text-sonic-silver mt-2">
+											<p className="font-small weight-light text-sonic-silver mt-2">
 												Consultation
 											</p>
 											<p className="font-large weight-bold green-medium-2 text-capitalize">
@@ -852,9 +847,10 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										</>
 									)}
 
-									{single_lawyer?.hourly_rate_range && (
+
+									{handleApiNull(single_lawyer?.hourly_rate_range) && (
 										<>
-											<p className="font-small  weight-light text-sonic-silver mt-2">
+											<p className="font-small weight-light text-sonic-silver mt-2">
 												Hourly Rates
 											</p>
 											<p className="font-large weight-bold green-medium-2 text-capitalize">
@@ -863,9 +859,9 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										</>
 									)}
 
-									{single_lawyer?.payment_method && (
+									{handleApiNull(single_lawyer?.payment_method) && (
 										<>
-											<p className="font-small  weight-light text-sonic-silver mt-2">
+											<p className="font-small weight-light text-sonic-silver mt-2">
 												Payment Methods
 											</p>
 											<p className="font-large weight-bold green-medium-2 text-capitalize">
