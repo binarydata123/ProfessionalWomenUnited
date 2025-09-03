@@ -553,7 +553,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                             <>
                                 {lawyers.slice(0, showAllLawyers ? lawyers.length : 4).map((item: any, index: any) => (
                                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
-                                        <LawyerCard lawyer={item} Key={index} />
+                                        <LawyerCard lawyer={item} />
                                     </div>
                                 ))}
                                 {lawyers.length > 4 && !showAllLawyers && (
