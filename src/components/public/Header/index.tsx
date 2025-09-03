@@ -361,6 +361,7 @@ export default function Header({ locale }: any) {
 											<Link
 												href='/auth/choose-profile'
 												className='btn btn-outline-success btn-lawyer hide-btn w-100 text-center set-bt'
+												style={{ backgroundColor: '#c3221b !important' }}
 												type="submit">
 												Registration for Invitees
 											</Link>
