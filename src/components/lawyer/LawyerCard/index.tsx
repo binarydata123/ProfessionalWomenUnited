@@ -91,13 +91,21 @@ export default function ProfessionalCard({
 					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<div
 							className="professional-image"
+							// style={{
+							// 	backgroundImage: `url(${lawyer?.profile_image
+							// 		? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${lawyer.profile_image}`
+							// 		: lawyer?.gender === 'male'
+							// 			? '/images/female-vectors-blank-profile.png'
+							// 			: '/images/female-vectors-blank-profile.png'
+							// 		})`
+							// }}
 							style={{
-								backgroundImage: `url(${lawyer?.profile_image
-									? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${lawyer.profile_image}`
-									: lawyer?.gender === 'male'
+								backgroundImage: `url("${lawyer?.profile_image
+									? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${encodeURIComponent(lawyer.profile_image)}`
+									: lawyer?.gender === 'female'
 										? '/images/female-vectors-blank-profile.png'
 										: '/images/female-vectors-blank-profile.png'
-									})`
+									}")`
 							}}
 
 						>
