@@ -666,7 +666,7 @@ export default function Page({ filterlawyer }: Props) {
 							{lawyers?.length > 0 ? (
 								lawyers?.map((item: any, index: any) => (
 									<div className="lawyer-card-item" key={index}>
-										<ProfessionalCard lawyer={item} />
+										<ProfessionalCard lawyer={item} Key={index} />
 									</div>
 								))
 							) : (
