@@ -15,7 +15,7 @@ import { useRouter } from 'next/navigation';
 
 interface Props {
 	lawyer?: any;
-	key: any;
+	// key: any;
 	showLocation?: boolean;
 	ContinueButton?: boolean;
 	ShowLoader?: boolean;
@@ -23,7 +23,6 @@ interface Props {
 
 export default function ProfessionalCard({
 	lawyer,
-	key,
 	showLocation = true,
 	ContinueButton = false,
 	ShowLoader = true
@@ -86,25 +85,25 @@ export default function ProfessionalCard({
 
 	return (
 		<>
-			<div className="professional-card" key={key}>
+			<div className="professional-card" >
 				<div className="professional-image-container">
 					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<div
 							className="professional-image"
-							// style={{
-							// 	backgroundImage: `url(${lawyer?.profile_image
-							// 		? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-							// 		: lawyer.gender === 'male' ? '/images/male-professional.png' : '/images/female-professional.png'
-							// 		})`
-							// }}
 							style={{
 								backgroundImage: `url(${lawyer?.profile_image
 									? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-									: lawyer?.gender === 'male'
-										? '/images/female-vectors-blank-profile.png'
-										: '/images/female-vectors-blank-profile.png'
+									: lawyer.gender === 'male' ? '/images/male-professional.png' : '/images/female-professional.png'
 									})`
 							}}
+						// style={{
+						// 	backgroundImage: `url(${lawyer?.profile_image
+						// 		? `${process.env.NEXT_PUBLIC_API_URL}/images/profile/${lawyer.profile_image}`
+						// 		: lawyer?.gender === 'male'
+						// 			? '/images/female-vectors-blank-profile.png'
+						// 			: '/images/female-vectors-blank-profile.png'
+						// 		})`
+						// }}
 
 						>
 							{lawyer?.is_new == 1 && (
