@@ -90,20 +90,20 @@ export default function ProfessionalCard({
 					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<div
 							className="professional-image"
-							// style={{
-							// 	backgroundImage: `url(${lawyer?.profile_image
-							// 		? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-							// 		: lawyer.gender === 'male' ? '/images/male-professional.png' : '/images/female-professional.png'
-							// 		})`
-							// }}
 							style={{
 								backgroundImage: `url(${lawyer?.profile_image
-									? `${process.env.NEXT_PUBLIC_API_URL}/images/profile/${lawyer.profile_image}`
-									: lawyer?.gender === 'male'
-										? '/images/female-vectors-blank-profile.png'
-										: '/images/female-vectors-blank-profile.png'
+									? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
+									: lawyer.gender === 'male' ? '/images/male-professional.png' : '/images/female-professional.png'
 									})`
 							}}
+						// style={{
+						// 	backgroundImage: `url(${lawyer?.profile_image
+						// 		? `${process.env.NEXT_PUBLIC_API_URL}/images/profile/${lawyer.profile_image}`
+						// 		: lawyer?.gender === 'male'
+						// 			? '/images/female-vectors-blank-profile.png'
+						// 			: '/images/female-vectors-blank-profile.png'
+						// 		})`
+						// }}
 
 						>
 							{lawyer?.is_new == 1 && (
