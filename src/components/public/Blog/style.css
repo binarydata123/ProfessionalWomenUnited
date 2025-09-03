@@ -20,7 +20,7 @@
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
 	color: #fff;
-	background-color: var(--green-light);
+	background-color: #c3221b;
 	border-radius: 8px;
 	padding: 4px 8px;
 	width: fit-content;

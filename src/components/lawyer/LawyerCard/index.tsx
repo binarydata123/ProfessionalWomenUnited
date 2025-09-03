@@ -91,12 +91,6 @@ export default function ProfessionalCard({
 					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<div
 							className="professional-image"
-							// style={{
-							// 	backgroundImage: `url(${lawyer?.profile_image
-							// 		? `${process.env.NEXT_PUBLIC_BASE_URL}/images/${lawyer.profile_image}`
-							// 		: lawyer.gender === 'male' ? '/images/male-professional.png' : '/images/female-professional.png'
-							// 		})`
-							// }}
 							style={{
 								backgroundImage: `url(${lawyer?.profile_image
 									? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${lawyer.profile_image}`
@@ -134,7 +128,7 @@ export default function ProfessionalCard({
 				</div>
 
 				<div className="professional-info ">
-					<Link href={`/ find - a - professional / ${lawyer?.slug}`}>
+					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<h3 className="professional-name">
 							{lawyer?.full_name?.toLowerCase().replace(/\b\w/g, (char: string) => char.toUpperCase())}
 						</h3>
@@ -188,10 +182,7 @@ export default function ProfessionalCard({
 
 					<div className="professional-actions">
 						<Link
-							href={`/find-a-professional/${lawyer?.slug}/make-an-inquiry`}
-
-							className="text-white"
-						>
+							href={`/find-a-professional/${lawyer?.slug}/make-an-inquiry`} className="text-white">
 							<button className="contact-button">
 								<FaEnvelope className="button-icon" />
 								Contact Me
