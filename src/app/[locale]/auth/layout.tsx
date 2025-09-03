@@ -42,7 +42,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 									</div>
 									<Navbar.Collapse id="navbarScroll">
 										<form className="d-flex mobile-auth-buttons" role="search">
-											<Link className="btn btn-outline-success btn-lawyer" href="/auth/choose-profile">
+											<Link className="btn btn-outline-success btn-lawyer" href="/auth/choose-profile" style={{ backgroundColor: '#c3221b !important' }}>
 												Registration for Invitees
 											</Link>
 											<Link className="btn btn-outline-success btn-login" href="/auth/login">
@@ -56,7 +56,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
 
 						<div className="p-lg-0 geust-layout-content-box bg-light">
 							<form className="d-flex justify-content-end text-right p-2 btn-header d-none d-md-flex" role="search">
-								<Link className="btn btn-outline-success btn-lawyer" href="/auth/choose-profile">
+								<Link className="btn btn-outline-success btn-lawyer" href="/auth/choose-profile" style={{ backgroundColor: '#c3221b !important' }}>
 									Registration for Invitees
 								</Link>
 								<Link className="btn btn-outline-success btn-login set-ar-log" href="/auth/login">
