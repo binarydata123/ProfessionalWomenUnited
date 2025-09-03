@@ -98,11 +98,11 @@
 .all-type-of li {
 	display: inline-block;
 	border-radius: 100px;
-	border: 1px solid var(--green-medium-2);
+	border: 1px solid #153060;
 	padding: 10px 20px;
 	transition: all 0.3s;
 	margin-left: 15px;
-	color: #c49073;
+	color: #153060;
 	cursor: pointer;
 }
 
@@ -120,8 +120,8 @@
 }
 
 li.first-active {
-	color: var(--green-dark);
-	background-color: #c4907352;
+	color: #fff;
+	background-color: #153060;
 	border: 1px solid var(--color-black-gray);
 	height: -webkit-fill-available;
 }

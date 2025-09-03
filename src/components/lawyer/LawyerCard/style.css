@@ -471,6 +471,9 @@
 }
 
 /* Tablet adjustments */
+/* ... existing CSS code ... */
+
+/* Tablet adjustments */
 @media (max-width: 768px) {
 	.professional-card {
 		max-width: 100%;
@@ -489,19 +492,21 @@
 	}
 
 	.location-rating-row {
-		flex-direction: column;
-		align-items: flex-start;
+		flex-direction: row; /* Changed from column to row */
+		align-items: center;
+		justify-content: space-between;
 		gap: 8px;
 	}
 
 	.direct-line {
-		flex-direction: column;
-		align-items: flex-start;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 		gap: 6px;
 	}
 
 	.professional-actions {
-		flex-direction: column;
+		flex-direction: row; /* Changed from column to row */
 	}
 
 	.contact-button,
@@ -556,7 +561,7 @@
 	}
 
 	.phone-number {
-		font-size: 12px;
+		font-size: 16px;
 	}
 
 	.contact-button,
@@ -564,7 +569,22 @@
 		font-size: 13px;
 		padding: 8px 12px;
 	}
+
+	/* Ensure location and rating stay in one row on mobile */
+	.location-rating-row {
+		flex-wrap: nowrap;
+	}
+
+	/* Ensure buttons stay in one row on mobile */
+	.professional-actions {
+		flex-wrap: nowrap;
+	}
+
+	.professional-actions a {
+		min-width: auto;
+	}
 }
+
 .clickable-phone {
 	cursor: pointer;
 }

@@ -310,11 +310,11 @@ export default function Page({ params }: { params: { id: string } }) {
 		// if (!formData.license_number) {
 		// 	newErrors.license_number = 'License number is required';
 		// }
-		if (!formData.acquired) {
-			newErrors.acquired = 'Acquired is required';
-		} else if (!/^\d{4}$/.test(formData.acquired)) {
-			newErrors.acquired = 'Enter a valid year';
-		}
+		// if (!formData.acquired) {
+		// 	newErrors.acquired = 'Acquired is required';
+		// } else if (!/^\d{4}$/.test(formData.acquired)) {
+		// 	newErrors.acquired = 'Enter a valid year';
+		// }
 		if (!formData.status) {
 			newErrors.status = 'Status is required';
 		}
@@ -324,9 +324,9 @@ export default function Page({ params }: { params: { id: string } }) {
 		// if (!formData.firm_id) {
 		// 	newErrors.firm_id = 'Company name is required';
 		// }
-		if (!formData.bio) {
-			newErrors.bio = 'Bio is required';
-		}
+		// if (!formData.bio) {
+		// 	newErrors.bio = 'Bio is required';
+		// }
 		// if (!formData.jurisdiction) {
 		// 	newErrors.jurisdiction = 'Jurisdiction is required';
 		// }
@@ -334,23 +334,23 @@ export default function Page({ params }: { params: { id: string } }) {
 			newErrors.primary_practice_area = 'Profession is required';
 		}
 
-		if (isFreeConsultationChecked) {
-			if (!formData.hourly_rate) {
-				newErrors.hourly_rate = 'hourly rate is required';
-			} else if (!/^\d+$/.test(formData.hourly_rate)) {
-				newErrors.hourly_rate = 'Hourly rate must be a number';
-			}
-			if (
-				!formData.paymentMethods.cash &&
-				!formData.paymentMethods.bankTransfer &&
-				!formData.paymentMethods.cheque
-			) {
-				newErrors.paymentMethods = 'Select at least one payment method';
-			}
-			if (!formData.free_consultation_duration) {
-				newErrors.free_consultation_duration = 'Consultation duration is required';
-			}
-		}
+		// if (isFreeConsultationChecked) {
+		// 	if (!formData.hourly_rate) {
+		// 		newErrors.hourly_rate = 'hourly rate is required';
+		// 	} else if (!/^\d+$/.test(formData.hourly_rate)) {
+		// 		newErrors.hourly_rate = 'Hourly rate must be a number';
+		// 	}
+		// 	if (
+		// 		!formData.paymentMethods.cash &&
+		// 		!formData.paymentMethods.bankTransfer &&
+		// 		!formData.paymentMethods.cheque
+		// 	) {
+		// 		newErrors.paymentMethods = 'Select at least one payment method';
+		// 	}
+		// 	if (!formData.free_consultation_duration) {
+		// 		newErrors.free_consultation_duration = 'Consultation duration is required';
+		// 	}
+		// }
 
 		setErrors(newErrors);
 		return Object.keys(newErrors).length === 0;
@@ -818,11 +818,11 @@ export default function Page({ params }: { params: { id: string } }) {
 												}}
 												maxLength={4}
 											/>
-											{errors.acquired && (
+											{/* {errors.acquired && (
 												<small className="error-message text-danger d-block">
 													{errors.acquired}
 												</small>
-											)}
+											)} */}
 										</div>
 										<div className="col-sm-6 col-6">
 											<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
@@ -889,9 +889,9 @@ export default function Page({ params }: { params: { id: string } }) {
 										value={formData.bio && formData.bio}
 										onChange={handleDescriptionChange}
 									/>
-									{errors.bio && (
+									{/* {errors.bio && (
 										<small className="error-message text-danger d-block">{errors.bio}</small>
-									)}
+									)} */}
 								</div>
 							</div>
 						</div>
@@ -1106,11 +1106,11 @@ export default function Page({ params }: { params: { id: string } }) {
 											value={formData.hourly_rate}
 											onChange={e => setFormData({ ...formData, hourly_rate: e.target.value })}
 										/>
-										{errors.hourly_rate && (
+										{/* {errors.hourly_rate && (
 											<small className="error-message text-danger d-block">
 												{errors.hourly_rate}
 											</small>
-										)}
+										)} */}
 
 										<div className="form-fild-des mt-4">
 											<div className="row mt-2">
@@ -1183,11 +1183,11 @@ export default function Page({ params }: { params: { id: string } }) {
 													</label>
 												</div>
 											</div>
-											{errors.paymentMethods && (
+											{/* {errors.paymentMethods && (
 												<small className="error-message text-danger d-block">
 													{errors.paymentMethods}
 												</small>
-											)}
+											)} */}
 										</div>
 									</div>
 								)}
