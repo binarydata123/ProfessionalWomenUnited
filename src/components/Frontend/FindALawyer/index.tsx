@@ -4,7 +4,7 @@ import AccordionUI from '@/commonUI/Accordion';
 import DefaultButton from '@/commonUI/DefaultButton';
 import DropDown from '@/commonUI/DropDown';
 import Popup from '@/commonUI/Popup';
-import LawyerCard from '@/components/lawyer/LawyerCard';
+import ProfessionalCard from '@/components/lawyer/LawyerCard';
 import './find-a-lawyer.css';
 import { CheckIcon, XMarkIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
@@ -666,7 +666,7 @@ export default function Page({ filterlawyer }: Props) {
 							{lawyers?.length > 0 ? (
 								lawyers?.map((item: any, index: any) => (
 									<div className="lawyer-card-item" key={index}>
-										<LawyerCard lawyer={item} Key={index} />
+										<ProfessionalCard lawyer={item} Key={index} />
 									</div>
 								))
 							) : (
