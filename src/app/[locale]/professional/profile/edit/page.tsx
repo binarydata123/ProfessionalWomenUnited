@@ -17,6 +17,7 @@ import AuthContext from '@/context/AuthContext';
 import Cookies from 'js-cookie';
 import dynamic from 'next/dynamic';
 import { getLawyerImageSrc70x70 } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { useRouter } from 'next/navigation';
 
 const TextEditor = dynamic(() => import('../../../../../commonUI/TextEditor'), {
 	ssr: false
@@ -110,6 +111,7 @@ export default function Page() {
 	});
 
 	const { user } = useContext(AuthContext)
+	const router = useRouter();
 	const [errors, setErrors] = useState<{ [key: string]: string }>({});
 	const [user_id, setUserId] = useState('');
 	const [allcountries, setCountries] = useState([]);
@@ -140,7 +142,7 @@ export default function Page() {
 		hnadleGetAllSpecialization(user?.id);
 		getAllLawyerMemberPracticeData(user?.id);
 		getfirmsNameData();
-	}, []);
+	}, [user?.id]);
 
 	const getAllLawyerMemberPracticeData = async (user_id: any) => {
 		try {
@@ -455,6 +457,7 @@ export default function Page() {
 							Cookies.set('profile_image', res.updated_image);
 						}
 						window.location.reload();
+						// router.push('/professional/profile')
 					} else {
 						toast.error(res.message);
 					}
