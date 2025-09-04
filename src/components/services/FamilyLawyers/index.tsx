@@ -593,7 +593,7 @@ export default function FamilyLawyers() {
 											{t('These_top_talents ')}
 										</>
 									) : (
-										'At Professional Women United, we connect you with some of the top Family Professionalyers in Abu Dhabi, known for their exceptional legal expertise, comprehensive knowledge of UAE Family Professional, and commitment to client satisfaction.'
+										'At Professional Women United, we connect you with some of the top Family Professionalyers in Abu Dhabi, known for their exceptional legal expertise, comprehensive knowledge of USA Family Professional, and commitment to client satisfaction.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -974,11 +974,11 @@ export default function FamilyLawyers() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

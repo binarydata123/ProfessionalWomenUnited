@@ -4,17 +4,17 @@ import PremsiesLiabilityLawyer from '@/components/services/PremsiesLiabilityLawy
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Premises Liability Lawyer in UAE – Professional Women United',
+		title: 'Premises Liability Lawyer in USA – Professional Women United',
 		description:
-			'Address premises liability issues with a premises liability lawyer in UAE. Professional Women United can help you navigate yOur professional rights and options.',
+			'Address premises liability issues with a premises liability lawyer in USA. Professional Women United can help you navigate yOur professional rights and options.',
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/premises-liability-lawyer-uae`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/premises-liability-lawyer-usa`
 		},
 		openGraph: {
-			title: 'Premises Liability Lawyer in UAE – Professional Women United',
+			title: 'Premises Liability Lawyer in USA – Professional Women United',
 			description:
-				'Address premises liability issues with a premises liability lawyer in UAE. Professional Women United can help you navigate yOur professional rights and options.',
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/premises-liability-lawyer-uae`,
+				'Address premises liability issues with a premises liability lawyer in USA. Professional Women United can help you navigate yOur professional rights and options.',
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/premises-liability-lawyer-usa`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [
 				{

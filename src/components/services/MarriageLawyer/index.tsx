@@ -118,7 +118,7 @@ export default function MarriageLawyer() {
 						<div className="col-lg-12 col-xl-12 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">{t('Marriage_Laws')} </span>{' '}
-								<span className="green-med-col">{t('UAE')}</span>
+								<span className="green-med-col">{t('USA')}</span>
 							</h2>
 							<div className="accordion-body border-0 text-white">{t('Marriage_laws_in_the_United')}</div>
 						</div>
@@ -915,11 +915,11 @@ export default function MarriageLawyer() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

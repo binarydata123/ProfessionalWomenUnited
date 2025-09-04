@@ -165,7 +165,7 @@ export default function Faq() {
                                             <div className="accordion-body border-0 text-white">
                                                 An immigration lawyer can provide expert advice on the visa and
                                                 residency application process, help prepare and review
-                                                documentation, assist with appeals, and ensure compliance with UAE
+                                                documentation, assist with appeals, and ensure compliance with USA
                                                 immigration laws. This can increase your chances of a successful
                                                 application.
                                             </div>

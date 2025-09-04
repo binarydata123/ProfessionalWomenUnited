@@ -8,7 +8,7 @@
 	line-height: var(--custom-line-height);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
-	color: var(--green-medium-2);
+	color: #153060;
 }
 a.unactive {
 	font-size: var(--font-xx-small);
@@ -27,22 +27,22 @@ a.unactive {
 	margin: 16px 0px;
 }
 .data-profile-user h3 {
-	font-size: var(--font-xxx-large);
+	font-size: 32px;
 	font-weight: var(--weight-bold);
 	line-height: var(--line-height-medium);
 	letter-spacing: 0em;
 	text-align: left;
 	color: var(--social-link);
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 }
 .company-detail p:nth-child(1) {
-	font-size: var(--font-large);
+	font-size: 16px;
 	font-weight: var(--weight-semi-bold);
 	line-height: var(--line-height-small-medium);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
 	color: var(--social-link);
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 .company-detail p span {
 	font-size: var(--font-small);

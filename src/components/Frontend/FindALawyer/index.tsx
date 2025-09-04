@@ -164,6 +164,11 @@ export default function Page({ filterlawyer }: Props) {
 
 		setFilterData(newFilterData);
 		handleLawyers(newFilterData, 1);
+
+		// Close the filter sidebar on mobile after applying filters
+		if (isMobile) {
+			setShowFilters(false);
+		}
 	};
 
 	const clearFilters = () => {

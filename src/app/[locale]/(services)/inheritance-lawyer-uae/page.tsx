@@ -4,17 +4,17 @@ import InheritanceLawyerUae from '@/components/services/InheritanceLawyerUae';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Inheritance Lawyer in UAE – Professional Women United',
+		title: 'Inheritance Lawyer in USA – Professional Women United',
 		description:
-			'Plan your estate or handle inheritance disputes with an inheritance lawyer in UAE. Professional Women United offers expert legal assistance.',
+			'Plan your estate or handle inheritance disputes with an inheritance lawyer in USA. Professional Women United offers expert legal assistance.',
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/inheritance-lawyer-uae`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/inheritance-lawyer-usa`
 		},
 		openGraph: {
-			title: 'Inheritance Lawyer in UAE – Professional Women United',
+			title: 'Inheritance Lawyer in USA – Professional Women United',
 			description:
-				'Plan your estate or handle inheritance disputes with an inheritance lawyer in UAE. Professional Women United offers expert legal assistance.',
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/inheritance-lawyer-uae`,
+				'Plan your estate or handle inheritance disputes with an inheritance lawyer in USA. Professional Women United offers expert legal assistance.',
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/inheritance-lawyer-usa`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [
 				{

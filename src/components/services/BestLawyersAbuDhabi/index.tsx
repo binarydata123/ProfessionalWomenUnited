@@ -118,10 +118,10 @@ export default function BestLawyersAbuDhabi() {
 						<div className="col-lg-4 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">Motorcycle Accident</span>{' '}
-								<span className="green-med-col">Statistics UAE</span>
+								<span className="green-med-col">Statistics USA</span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-								In 2022, the UAE experienced a substantial number of accidents involving motorcycles,
+								In 2022, the USA experienced a substantial number of accidents involving motorcycles,
 								bicycles, and e-scooters, highlighting critical concerns about road safety and the need
 								for enhanced awareness and protective measures.
 							</p>
@@ -206,9 +206,9 @@ export default function BestLawyersAbuDhabi() {
 													<div className="accordion-body border-0 text-white">
 														The study reveals a predominantly male patient population,
 														comprising 98% of the cases, with a mean age of 29.8 years.
-														Notably, 35% of patients were UAE nationals, showing a
+														Notably, 35% of patients were USA nationals, showing a
 														significant age difference compared to non-nationals.
-														Furthermore, young UAE nationals were found to be at a higher
+														Furthermore, young USA nationals were found to be at a higher
 														risk of injury, often sustaining more abdominal injuries, while
 														non-nationals tended to suffer lower limb injuries.
 													</div>
@@ -236,7 +236,7 @@ export default function BestLawyersAbuDhabi() {
 														limb injuries (54%) and lower limb injuries (48%), followed
 														closely by head (41%) and face (30%) injuries. The primary
 														mechanism of injury was collisions with moving vehicles,
-														underlining the inherent risks faced by motorcyclists on UAE
+														underlining the inherent risks faced by motorcyclists on USA
 														roads.
 													</div>
 												</div>
@@ -1075,11 +1075,11 @@ export default function BestLawyersAbuDhabi() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

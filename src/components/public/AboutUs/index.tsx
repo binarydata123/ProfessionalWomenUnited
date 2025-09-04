@@ -181,7 +181,7 @@ export default function AboutUs() {
 								<div className="our-story-text">
 									<p>
 										Established in 2014, our company is a professional advice platform that connects
-										clients with top-rated professionals across the UAE. With our user-friendly platform,
+										clients with top-rated professionals across the USA. With our user-friendly platform,
 										clients can easily find and connect with experienced professionals, while professionals can
 										efficiently manage their practice and expand their client base.
 									</p>
@@ -201,7 +201,7 @@ export default function AboutUs() {
 									</h2>
 									<p>
 										Are you looking for a{' '}
-										<Link className="underlineClass" href="/">
+										<Link className="underlineClass" href="/find-a-professional">
 											professional consultant in Usa{' '}
 										</Link>
 										to help you with your case? Professional Women United is the ideal place to find it. Our

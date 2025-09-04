@@ -534,7 +534,7 @@
 }
 
 /* Mobile adjustments */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 	.professional-image-container {
 		height: 180px;
 	}
@@ -545,6 +545,76 @@
 
 	.professional-title {
 		font-size: 13px;
+	}
+
+	.professional-location,
+	.professional-rating {
+		font-size: 13px;
+	}
+
+	.professional-description {
+		font-size: 13px;
+	}
+
+	.direct-line {
+		font-size: 11px;
+	}
+
+	.phone-number {
+		font-size: 16px;
+	}
+
+	.contact-button,
+	.profile-button {
+		font-size: 13px;
+		padding: 8px 12px;
+	}
+
+	.location-rating-row {
+		flex-wrap: nowrap;
+	}
+
+	.professional-actions {
+		flex-wrap: nowrap;
+	}
+
+	.professional-actions a {
+		min-width: auto;
+	}
+} */
+/* Mobile adjustments */
+@media (max-width: 480px) {
+	.professional-info {
+		padding: 12px;
+	}
+
+	/* Create a container for name and title to keep them in one row */
+	.name-title-container {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 8px;
+		gap: 8px;
+		justify-content: space-between;
+	}
+
+	.professional-name {
+		font-size: 16px;
+		margin: 0; /* Remove default margins */
+		display: inline; /* Change to inline for better flow */
+	}
+
+	.professional-title {
+		font-size: 11px;
+		padding: 3px 8px;
+		margin: 0; /* Remove default margins */
+		display: inline-block; /* Keep as inline-block */
+		white-space: nowrap; /* Prevent text wrapping */
+	}
+
+	/* Other existing mobile styles... */
+	.professional-image-container {
+		height: 180px;
 	}
 
 	.professional-location,
@@ -584,7 +654,6 @@
 		min-width: auto;
 	}
 }
-
 .clickable-phone {
 	cursor: pointer;
 }

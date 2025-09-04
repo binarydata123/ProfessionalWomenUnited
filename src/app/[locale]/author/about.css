@@ -15,13 +15,13 @@
 .author-left-content .heading {
 	font-size: 56px;
 	font-weight: 700;
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 
 .author-left-content .bottom-text {
 	font-size: 16px;
 	font-weight: 400;
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 
 .author-card-wrapper .author-name {
@@ -39,19 +39,19 @@
 .single-author-wrapper .post {
 	font-size: 20px;
 	font-weight: 400;
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 
 .single-author-wrapper .about-author {
 	font-size: 16px;
 	font-weight: 400;
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 
 .single-author-wrapper .about-author-bottom {
 	font-size: 18px;
 	font-weight: 500;
-	color: #1F1F1F;
+	color: #1f1f1f;
 }
 
 .single-author-wrapper .author-write-about {
@@ -71,14 +71,14 @@
 }
 
 ul.list-12 li a h1 {
-    color: var(--Chinese-silver);
-    font-weight: var(--weight-bold);
-    font-size: 12px;
-    line-height: var(--custom-line-height);
+	color: var(--Chinese-silver);
+	font-weight: var(--weight-bold);
+	font-size: 12px;
+	line-height: var(--custom-line-height);
 }
 
 ul.list-12 li a h1.active {
-    color: var(--green-medium-2);
+	color: #153060;
 }
 
 .multiline-ellipsis {

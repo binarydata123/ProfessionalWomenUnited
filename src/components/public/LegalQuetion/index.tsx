@@ -30,7 +30,7 @@ Advice for Free"
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, Today! or chat with a
-									lawyer online for free in Dubai and across UAE now, We work on a wide range of legal
+									lawyer online for free in Dubai and across USA now, We work on a wide range of legal
 									matters. Our professional services.
 								</p>
 								<Link href={'/legal-forum'}>
