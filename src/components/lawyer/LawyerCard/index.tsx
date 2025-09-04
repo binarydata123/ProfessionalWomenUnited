@@ -90,7 +90,8 @@ export default function ProfessionalCard({
 				<div className="professional-image-container">
 					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<div
-							className="professional-image"
+							// className="professional-image"
+							className={lawyer?.profile_image ? "professional-image" : "professional-image-dummy"}
 							style={{
 								backgroundImage: `url("${lawyer?.profile_image
 									? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${encodeURIComponent(lawyer.profile_image)}`
