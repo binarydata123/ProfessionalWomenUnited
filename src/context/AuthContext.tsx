@@ -95,7 +95,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
             setUser(undefined);
             if (pathname.includes('/admin/') || pathname.includes('/professional/') || pathname.includes('/user/')) {
                 toast.error('You are not logged in or your session has expired. Please log in again to access this page.');
-                router.push('/auth/login12');
+                router.push('/auth/login');
             }
         }
     }, []);
