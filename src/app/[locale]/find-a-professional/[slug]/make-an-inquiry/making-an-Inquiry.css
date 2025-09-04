@@ -8,7 +8,7 @@
 	line-height: var(--custom-line-height);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
-	color: var(--green-medium-2);
+	color: #153060;
 }
 a.unactive {
 	font-size: var(--font-xx-small);
@@ -80,7 +80,7 @@ a.unactive {
 	line-height: 45px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: var(--green-dark);
+	color: #153060;
 	padding: 34px 0px 10px 0px;
 }
 .making-inquery p {
@@ -141,7 +141,7 @@ a.unactive {
 .atypebtn p:nth-child(3) {
 	border: 1px solid var(--boysenberry);
 	border-radius: 4px;
-	background-color: #BE83631a;
+	background-color: #be83631a;
 	font-size: var(--font-x-small);
 	font-weight: var(--weight-medium);
 	line-height: var(--line-height-xs-small);

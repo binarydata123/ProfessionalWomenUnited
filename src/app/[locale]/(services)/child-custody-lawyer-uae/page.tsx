@@ -4,17 +4,17 @@ import ChildCustodyLawyerUae from '@/components/services/ChildCustodyLawyerUae';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Child Custody Lawyer in UAE – Professional Women United',
+		title: 'Child Custody Lawyer in USA – Professional Women United',
 		description:
-			'Secure the best possible outcome for child custody with a child custody lawyer in UAE. Contact Professional Women United for specialized legal support.',
+			'Secure the best possible outcome for child custody with a child custody lawyer in USA. Contact Professional Women United for specialized legal support.',
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/child-custody-lawyer-uae`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/child-custody-lawyer-usa`
 		},
 		openGraph: {
-			title: 'Child Custody Lawyer in UAE – Professional Women United',
+			title: 'Child Custody Lawyer in USA – Professional Women United',
 			description:
-				'Secure the best possible outcome for child custody with a child custody lawyer in UAE. Contact Professional Women United for specialized legal support.',
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/child-custody-lawyer-uae`,
+				'Secure the best possible outcome for child custody with a child custody lawyer in USA. Contact Professional Women United for specialized legal support.',
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/child-custody-lawyer-usa`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [
 				{

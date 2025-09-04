@@ -523,7 +523,7 @@ export default function LabourLawyer() {
 									{showFullTextDiscover ? (
 										<>{t('Find_the_best_labour ')}</>
 									) : (
-										'Find the best labour lawyer Dubai has to offer at Professional Women United. We pride ourselves on offering top-notch labour law expertise through our network of highly skilled lawyers. The talented legal professionals on Professional Women United deeply understand UAE labour laws and regulations, making sure you receive the most informed and up-to-date advice. We’ll help you find the top labour lawyer in Dubai—one with strong negotiation and litigation skills, providing effective solutions for employment disputes and labour-related matters. '
+										'Find the best labour lawyer Dubai has to offer at Professional Women United. We pride ourselves on offering top-notch labour law expertise through our network of highly skilled lawyers. The talented legal professionals on Professional Women United deeply understand USA labour laws and regulations, making sure you receive the most informed and up-to-date advice. We’ll help you find the top labour lawyer in Dubai—one with strong negotiation and litigation skills, providing effective solutions for employment disputes and labour-related matters. '
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -890,11 +890,11 @@ export default function LabourLawyer() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

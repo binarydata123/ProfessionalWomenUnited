@@ -79,7 +79,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</div>
 										<li>
 											<Link
-												href="/banking-lawyer-uae"
+												href="/banking-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={handleLinkClick}>
 												{t('Banking_Lawyer')}
@@ -92,7 +92,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/bankruptcy-lawyer-uae"
+												href="/bankruptcy-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												{t('Bankruptcy_Lawyer')}
@@ -175,7 +175,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/construction-accidents-lawyer-uae"
+												href="/construction-accidents-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												{t('Construction_Accident_Lawyer')}
@@ -222,7 +222,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/inheritance-lawyer-uae"
+												href="/inheritance-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												{t('Inheritance_Lawyer')}
@@ -326,7 +326,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/premises-liability-lawyer-uae"
+												href="/premises-liability-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												{t('Premises_Liability_Lawyer')}
@@ -350,7 +350,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/hospital-negligence-lawyer-uae"
+												href="/hospital-negligence-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												{t('Hospital_Negligence_Lawyer')}
@@ -422,7 +422,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/child-custody-lawyer-uae"
+												href="/child-custody-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												{t('Child_Custody_Lawyer')}
@@ -523,7 +523,7 @@ export default function MegaMenuDubaiMobile({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/bankruptcy-lawyer-uae"
+												href="/bankruptcy-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												{t('Bankruptcy_Lawyer')}

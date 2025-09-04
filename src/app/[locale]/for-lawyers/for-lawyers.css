@@ -256,7 +256,7 @@ button.btn-get-free.btn-commn.ml-2 {
 	background-color: var(--green-medium-1);
 	border-radius: 30px;
 	right: 8px;
-	box-shadow: rgba(196,144,115);
+	box-shadow: rgba(196, 144, 115);
 	animation: blink 1s ease infinite;
 }
 @keyframes blink {

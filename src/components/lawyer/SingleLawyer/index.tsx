@@ -722,16 +722,15 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																	</p>
 																</div>
 															)}
-															{single_lawyer?.address && (
+															{handleApiNull(single_lawyer?.address) && (
 																<div className="col-lg-3 col-md-6 col-6 mb-2 mt-2">
-																	<p className="font-x-small text-sonic-silver weight-light">
-																		Address
-																	</p>
-																	<p className="font-medium  weight-medium text-sonic-silver mt-2">
-																		{single_lawyer?.address}
+																	<p className="font-x-small text-sonic-silver weight-light">Address</p>
+																	<p className="font-medium weight-medium text-sonic-silver mt-2">
+																		{handleApiNull(single_lawyer?.address)}
 																	</p>
 																</div>
 															)}
+
 
 															{single_lawyer?.status == 'active' && (
 																<div className="col-lg-3 col-md-6 col-6 mb-2 mt-2">
@@ -991,16 +990,14 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																		</button>
 																	</Link>
 																)}
-															{single_lawyer?.consultation_duration && (
+															{handleApiNull(single_lawyer?.consultation_duration) && (
 																<Link href="JavaScript:void(0)" className="mb-2">
 																	<button className="btn-primary-red">
-																		Free Consultation:{' '}
-																		{single_lawyer?.consultation_duration
-																			? single_lawyer?.consultation_duration
-																			: 'No'}
+																		Free Consultation: {handleApiNull(single_lawyer?.consultation_duration) || 'No'}
 																	</button>
 																</Link>
 															)}
+
 														</div>
 													</div>
 												</div>

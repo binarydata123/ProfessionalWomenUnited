@@ -138,7 +138,12 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 	};
 
 	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
-
+	const handleApiNull = (value: any): string | null => {
+		if (value === null || value === undefined || value === 'null' || value === 'undefined' || value === '') {
+			return null;
+		}
+		return value;
+	};
 
 	return (
 		<>
@@ -379,11 +384,12 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 																	<p>Licensed for {lawyer.license_for_years} years</p>
 																)}
 															</div>
-															{lawyer.consultation_duration && (
+															{handleApiNull(lawyer?.consultation_duration) && (
 																<p className="m-0">
-																	Free Consultation: {lawyer.consultation_duration}
+																	Free Consultation: {handleApiNull(lawyer?.consultation_duration)}
 																</p>
 															)}
+
 														</div>
 													</div>
 												</div>

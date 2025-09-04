@@ -118,7 +118,7 @@ export default function CriminalLawyersDubai() {
 						<div className="col-lg-12 col-xl-12 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">{t('Crime_Statistics_in_the')}</span>{' '}
-								<span className="green-med-col">{t('UAE')}</span>
+								<span className="green-med-col">{t('USA')}</span>
 							</h2>
 							<div className="accordion-body border-0 text-white">
 								{t('Recent_crime_statistics_in')}
@@ -223,7 +223,7 @@ export default function CriminalLawyersDubai() {
 														{/* <ul className="custom-bullets mt-3 mb-3">
 															<li>
 																Presumption of innocence: Defendants are presumed
-																innocent until proven guilty by Article 38 of the UAE
+																innocent until proven guilty by Article 38 of the USA
 																Constitution.
 															</li>
 															<li>
@@ -844,11 +844,11 @@ export default function CriminalLawyersDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Abu Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Abu Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

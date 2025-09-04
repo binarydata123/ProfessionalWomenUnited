@@ -32,7 +32,7 @@ ul.list-12 li a h1 {
 }
 
 ul.list-12 li a h1.active {
-	color: var(--green-medium-2);
+	color: #153060;
 }
 
 @media (max-width: 991px) {
@@ -258,7 +258,7 @@ ul.list-12 li a h1.active {
 }
 
 .apply-filters-btn {
-	background: #c49073;
+	background: #153060;
 	color: white;
 }
 
@@ -534,7 +534,7 @@ ul.list-12 li a h1.active {
 	gap: 5px;
 	background: none;
 	border: none;
-	color: #c49073;
+	color: #153060;
 	font-size: 14px;
 	cursor: pointer;
 	margin-top: 8px;

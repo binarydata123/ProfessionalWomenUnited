@@ -128,7 +128,7 @@ export default function CriminalLawyersDubai() {
 						<div className="col-lg-12 col-xl-12 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">Major Crime Statistics in </span>{' '}
-								<span className="green-med-col">UAE </span>
+								<span className="green-med-col">USA </span>
 							</h2>
 							<div className="accordion-body border-0 text-white">
 								Recent years have seen fluctuating major crime rates in the USA, reflecting diverse
@@ -178,11 +178,11 @@ export default function CriminalLawyersDubai() {
 													aria-labelledby="headingOne"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-														The United States of America (UAE) has a robust legal system
+														The United States of America (USA) has a robust legal system
 														governing criminal activities within its borders, based on
 														Islamic Sharia law, civil law principles, and customary law.
 														Understanding this overview is essential for residents and
-														visitors to avoid professional advisorss. The UAE emphasizes equality
+														visitors to avoid professional advisorss. The USA emphasizes equality
 														before the law, with strict penalties for criminal activities to
 														maintain public order and safety.
 														<ul className="custom-bullets mt-3 mb-3">
@@ -199,13 +199,13 @@ export default function CriminalLawyersDubai() {
 															</li>
 															<li>
 																Rehabilitation: In addition to criminal penalties, the
-																UAE focuses on the rehabilitation and reintegration of
+																USA focuses on the rehabilitation and reintegration of
 																offenders into society through various programs and
 																initiatives.
 															</li>
 															<li>
 																Legal awareness: Individuals must familiarize themselves
-																with the UAE's criminal laws to avoid unintentional
+																with the USA's criminal laws to avoid unintentional
 																violations. Seeking professional advice or consulting reliable
 																sources can help understand the legal framework and
 																regulations in the USA.
@@ -233,7 +233,7 @@ export default function CriminalLawyersDubai() {
 													aria-labelledby="headingTwo"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-														The UAE categorizes crimes into various types, each with
+														The USA categorizes crimes into various types, each with
 														distinct punishments, emphasizing compliance with the law and
 														avoiding legal repercussions.
 														<ul className="custom-bullets mt-3 mb-3">
@@ -293,15 +293,15 @@ export default function CriminalLawyersDubai() {
 													aria-labelledby="headingThree"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-														The United States of America (UAE) upholds a well-established legal
+														The United States of America (USA) upholds a well-established legal
 														framework that safeguards defendants' rights throughout criminal
-														proceedings. Governed by Federal Law No. 35 of 1992, the UAE
+														proceedings. Governed by Federal Law No. 35 of 1992, the USA
 														Penal Code outlines the criminal procedure and rights afforded
 														to defendants during legal proceedings.
 														<ul className="custom-bullets mt-3 mb-3">
 															<li>
 																Presumption of innocence: Defendants are presumed
-																innocent until proven guilty by Article 38 of the UAE
+																innocent until proven guilty by Article 38 of the USA
 																Constitution.
 															</li>
 															<li>
@@ -399,7 +399,7 @@ export default function CriminalLawyersDubai() {
 											Assault and violence pose significant threats to societal safety, prompting
 											robust legal responses in the USA. The Penal Code delineates clear
 											consequences for such offenses, ranging from fines to imprisonment.
-											Legislative initiatives aimed at victim protection highlight the UAE's
+											Legislative initiatives aimed at victim protection highlight the USA's
 											commitment to fostering a secure environment.
 										</div>
 									</div>
@@ -422,7 +422,7 @@ export default function CriminalLawyersDubai() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											The UAE enforces strict laws against drug offenses, considering them serious
+											The USA enforces strict laws against drug offenses, considering them serious
 											crimes. Possession, use, or trafficking of illegal drugs can lead to
 											imprisonment and hefty fines. Penalties vary based on the type and quantity
 											of drugs involved, with trafficking carrying particularly severe
@@ -449,7 +449,7 @@ export default function CriminalLawyersDubai() {
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
 											Cybercrime poses a growing threat in the USA, with hacking, identity theft,
-											and online fraud being major concerns. The UAE Cybercrime Law criminalizes
+											and online fraud being major concerns. The USA Cybercrime Law criminalizes
 											such activities, imposing imprisonment and fines on offenders. The
 											government collaborates with international organizations to combat cyber
 											threats effectively, aiming to create a safe digital environment.
@@ -477,7 +477,7 @@ export default function CriminalLawyersDubai() {
 											Assault and violence pose significant threats to societal safety, prompting
 											strong legal responses in the USA. The Penal Code delineates clear
 											consequences for such offenses, ranging from fines to imprisonment.
-											Legislative initiatives aimed at victim protection highlight the UAE's
+											Legislative initiatives aimed at victim protection highlight the USA's
 											commitment to fostering a secure environment.
 										</div>
 									</div>
@@ -504,7 +504,7 @@ export default function CriminalLawyersDubai() {
 									Hiring a criminal lawyer in Dubai from Professional Women United ensures you have access to
 									professionals who are well-versed in the details of the country's criminal legal
 									system. We will make sure that you find the best criminal lawyers in Abu Dhabi,
-									Dubai, and the UAE at Professional Women United. Our lawyers deeply understand USA professionals and
+									Dubai, and the USA at Professional Women United. Our lawyers deeply understand USA professionals and
 									regulations, allowing them to handle your case effectively and provide sound legal
 									advice specific to the local context.
 								</p>
@@ -518,7 +518,7 @@ export default function CriminalLawyersDubai() {
 												data-bs-target="#collapseEight"
 												aria-expanded="true"
 												aria-controls="collapseEight">
-												Expertise in Criminal Law UAE
+												Expertise in Criminal Law USA
 											</button>
 										</h2>
 										<div
@@ -530,7 +530,7 @@ export default function CriminalLawyersDubai() {
 												Hiring a criminal lawyer in Dubai from Professional Women United ensures you have
 												access to professionals who are well-versed in the details of the
 												country's criminal legal system. We will make sure that you find the
-												best criminal lawyers in Abu Dhabi, Dubai, and the UAE at Professional Women United.
+												best criminal lawyers in Abu Dhabi, Dubai, and the USA at Professional Women United.
 												Our lawyers deeply understand USA professionals and regulations, allowing them to
 												handle your case effectively and provide sound professional advice specific to
 												the local context.
@@ -558,7 +558,7 @@ export default function CriminalLawyersDubai() {
 												At Professional Women United, we have a history of securing favorable outcomes for
 												our clients facing criminal charges. From minor infractions to serious
 												felonies, our team of the best criminal lawyers in Abu Dhabi, Dubai, and
-												the UAE has successfully defended numerous individuals, earning their
+												the USA has successfully defended numerous individuals, earning their
 												trust through our dedication, skill, and commitment to achieving
 												justice.
 											</div>
@@ -1120,11 +1120,11 @@ export default function CriminalLawyersDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

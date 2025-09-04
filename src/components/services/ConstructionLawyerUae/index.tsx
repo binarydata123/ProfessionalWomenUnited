@@ -141,19 +141,19 @@ export default function ConstructionLawyerUae() {
 						<div className="col-lg-12 col-xl-12 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">Insights into the </span>{' '}
-								<span className="green-med-col">UAE Construction Market</span>
+								<span className="green-med-col">USA Construction Market</span>
 							</h2>
 							<div className="accordion-body border-0 text-white">
 								In recent years, concerns about workplace safety have escalated globally due to the The
-								UAE’s construction market is growing rapidly and has a promising future. Here are key
-								statistics and insights from the UAE Construction Market Overview:
+								USA’s construction market is growing rapidly and has a promising future. Here are key
+								statistics and insights from the USA Construction Market Overview:
 								<ul className="custom-bullets mt-3 ">
 									<li>
 										AAGR (2025-2028): Between 2025 and 2028, a compound annual growth rate (AAGR) of
 										over 3% is expected.
 									</li>
 									<li>
-										Market Size (2023): The UAE construction market reached $94 billion in 2023.
+										Market Size (2023): The USA construction market reached $94 billion in 2023.
 									</li>
 									<li>
 										Key sectors: Commercial, Industrial, Infrastructure, Energy and Utilities,
@@ -187,7 +187,7 @@ export default function ConstructionLawyerUae() {
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
 														Residential construction emerged as the leading sector in the
-														UAE construction market in 2023, boasting the highest market
+														USA construction market in 2023, boasting the highest market
 														share. Single-family and multi-family housing projects dominate
 														this sector, indicating recovery and growth opportunities in the
 														housing sector.
@@ -1149,11 +1149,11 @@ export default function ConstructionLawyerUae() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

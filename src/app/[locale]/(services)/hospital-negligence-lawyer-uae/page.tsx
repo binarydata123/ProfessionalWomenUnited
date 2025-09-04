@@ -4,15 +4,15 @@ import HospitalNegligenceLawyer from '@/components/services/HospitalNegligenceLa
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: "Hospital Negligence Lawyer in UAE – Professional Women United",
-		description: "For cases of hospital negligence, a hospital negligence lawyer in UAE can assist you. Contact Professional Women United for professional legal support.",
+		title: "Hospital Negligence Lawyer in USA – Professional Women United",
+		description: "For cases of hospital negligence, a hospital negligence lawyer in USA can assist you. Contact Professional Women United for professional legal support.",
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/hospital-negligence-lawyer-uae`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/hospital-negligence-lawyer-usa`
 		},
 		openGraph: {
-			title: "Hospital Negligence Lawyer in UAE – Professional Women United",
-			description: "For cases of hospital negligence, a hospital negligence lawyer in UAE can assist you. Contact Professional Women United for professional legal support.",
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/hospital-negligence-lawyer-uae`,
+			title: "Hospital Negligence Lawyer in USA – Professional Women United",
+			description: "For cases of hospital negligence, a hospital negligence lawyer in USA can assist you. Contact Professional Women United for professional legal support.",
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/hospital-negligence-lawyer-usa`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [
 				{

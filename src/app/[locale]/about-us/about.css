@@ -1,7 +1,7 @@
 .about-banner {
 	padding: 96px 0;
 	position: relative;
-	height: 900px;
+	height: 800px;
 }
 
 .lawyers-online-img li {
@@ -337,7 +337,7 @@ button.btn-get-free.btn-commn.ml-2 {
 	background-color: var(--green-medium-1);
 	border-radius: 30px;
 	right: 8px;
-	box-shadow: rgba(196,144,115);
+	box-shadow: rgba(196, 144, 115);
 	animation: blink 1s ease infinite;
 }
 @keyframes blink {
@@ -404,7 +404,7 @@ button.bg-893168.weight-semi-bold.font-small.icon-big.mt-4.transtion {
 	transition: all 0.5s;
 }
 button.bg-893168.weight-semi-bold.font-small.icon-big.mt-4.transtion:hover {
-	background: #9c477a;
+	background: #c49073;
 	transform: translateY(-2px);
 }
 
@@ -421,4 +421,3 @@ button.bg-893168.weight-semi-bold.font-small.icon-big.mt-4.transtion:hover {
 		width: 100%;
 	}
 }
-

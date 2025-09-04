@@ -91,14 +91,6 @@ export default function ProfessionalCard({
 					<Link href={`/find-a-professional/${lawyer?.slug}`}>
 						<div
 							className="professional-image"
-							// style={{
-							// 	backgroundImage: `url(${lawyer?.profile_image
-							// 		? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${lawyer.profile_image}`
-							// 		: lawyer?.gender === 'male'
-							// 			? '/images/female-vectors-blank-profile.png'
-							// 			: '/images/female-vectors-blank-profile.png'
-							// 		})`
-							// }}
 							style={{
 								backgroundImage: `url("${lawyer?.profile_image
 									? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${encodeURIComponent(lawyer.profile_image)}`
@@ -136,12 +128,14 @@ export default function ProfessionalCard({
 				</div>
 
 				<div className="professional-info ">
-					<Link href={`/find-a-professional/${lawyer?.slug}`}>
-						<h3 className="professional-name">
-							{lawyer?.full_name?.toLowerCase().replace(/\b\w/g, (char: string) => char.toUpperCase())}
-						</h3>
-					</Link>
-					<p className="professional-title">{primaryService}</p>
+					<div className="name-title-container">
+						<Link href={`/find-a-professional/${lawyer?.slug}`}>
+							<h3 className="professional-name">
+								{lawyer?.full_name?.toLowerCase().replace(/\b\w/g, (char: string) => char.toUpperCase())}
+							</h3>
+						</Link>
+						<p className="professional-title">{primaryService}</p>
+					</div>
 
 					<div className="location-rating-row">
 						{showLocation && lawyer?.location_name && (

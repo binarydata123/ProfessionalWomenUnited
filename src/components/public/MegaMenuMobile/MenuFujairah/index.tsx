@@ -92,7 +92,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/bankruptcy-lawyer-uae"
+												href="/bankruptcy-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												Bankrupcty Lawyer
@@ -175,7 +175,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/construction-accidents-lawyer-uae"
+												href="/construction-accidents-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												Construction Accident Lawyer
@@ -222,7 +222,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/inheritance-lawyer-uae"
+												href="/inheritance-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												Inheritance Lawyer
@@ -326,7 +326,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/premises-liability-lawyer-uae"
+												href="/premises-liability-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												Premsies Liability Lawyer
@@ -350,7 +350,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/hospital-negligence-lawyer-uae"
+												href="/hospital-negligence-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												Hospital Negligence Lawyer
@@ -422,7 +422,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/child-custody-lawyer-uae"
+												href="/child-custody-lawyer-usa"
 												onClick={onclose}
 												className="set-color-sub-menus">
 												Child Custody Lawyer
@@ -523,7 +523,7 @@ export default function MegaMenuFujairah({ onclose }: any) {
 										</li>
 										<li>
 											<Link
-												href="/bankruptcy-lawyer-uae"
+												href="/bankruptcy-lawyer-usa"
 												className="set-color-sub-menus"
 												onClick={onclose}>
 												Bankrupcty Lawyer

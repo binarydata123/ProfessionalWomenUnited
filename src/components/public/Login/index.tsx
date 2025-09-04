@@ -273,7 +273,7 @@ export default function Login() {
 								<Link
 									href="/"
 									className="register-page-link-back"
-									style={{ color: '#c49073', marginTop: '1' }}
+									style={{ color: '#153060', marginTop: '1' }}
 								>
 									Back to Home
 								</Link>
@@ -286,7 +286,7 @@ export default function Login() {
 								</button> */}
 								<p className="mt-4 text-center register-page-link">
 									Dont have an account?
-									<Link href="/auth/choose-profile" style={{ color: '#c49073' }}> Create an account</Link>
+									<Link href="/auth/choose-profile" style={{ color: '#153060' }}> Create an account</Link>
 								</p>
 							</form>
 						</div>
