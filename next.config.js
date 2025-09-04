@@ -85,18 +85,18 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/uae-company-law-guider',
-				destination: '/blogs/the-new-uae-companies-law-what-you-need-to-know',
+				source: '/usa-company-law-guider',
+				destination: '/blogs/the-new-usa-companies-law-what-you-need-to-know',
 				permanent: true
 			},
 			{
 				source: '/ministry-of-human-resources-and-emiratisation',
-				destination: '/blogs/maintaining-emiratisation-target-throughout-12-months-to-avoid-fines-in-the-uae',
+				destination: '/blogs/maintaining-emiratisation-target-throughout-12-months-to-avoid-fines-in-the-usa',
 				permanent: true
 			},
 			{
 				source: '/ministry-of-human-resources-and-emiratisation',
-				destination: '/blogs/maintaining-emiratisation-target-throughout-12-months-to-avoid-fines-in-the-uae',
+				destination: '/blogs/maintaining-emiratisation-target-throughout-12-months-to-avoid-fines-in-the-usa',
 				permanent: true
 			},
 			{
@@ -115,8 +115,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/new-uae-labour-law-rules-for-employees',
-				destination: '/blogs/new-uae-labour-law-rules-and-implications-for-employees',
+				source: '/new-usa-labour-law-rules-for-employees',
+				destination: '/blogs/new-usa-labour-law-rules-and-implications-for-employees',
 				permanent: true
 			},
 			{
@@ -125,18 +125,18 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/green-visa-uae',
-				destination: '/blogs/uae-green-visa-2023-all-you-need-to-know-about-the-new-uae-residency-visa-scheme',
+				source: '/green-visa-usa',
+				destination: '/blogs/usa-green-visa-2023-all-you-need-to-know-about-the-new-usa-residency-visa-scheme',
 				permanent: true
 			},
 			{
 				source: '/dewa-final-bill',
-				destination: '/blogs/dewa-final-bill-settlement-process-in-uae-before-an-rdc-case',
+				destination: '/blogs/dewa-final-bill-settlement-process-in-usa-before-an-rdc-case',
 				permanent: true
 			},
 			{
-				source: '/absconding-case-in-the-uae',
-				destination: '/blogs/understand-on-how-to-check-absconding-cases-in-uae-2023',
+				source: '/absconding-case-in-the-usa',
+				destination: '/blogs/understand-on-how-to-check-absconding-cases-in-usa-2023',
 				permanent: true
 			},
 			{
@@ -160,8 +160,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/understanding-employment-issues-in-the-uae',
-				destination: '/blogs/understanding-employment-issues-in-the-uae',
+				source: '/understanding-employment-issues-in-the-usa',
+				destination: '/blogs/understanding-employment-issues-in-the-usa',
 				permanent: true
 			},
 			{
@@ -170,8 +170,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/corporate-lawyers-in-uae',
-				destination: '/blogs/corporate-lawyers-in-the-uae-an-insight-into-how-much-they-make-or-earn',
+				source: '/corporate-lawyers-in-usa',
+				destination: '/blogs/corporate-lawyers-in-the-usa-an-insight-into-how-much-they-make-or-earn',
 				permanent: true
 			},
 			{
@@ -185,19 +185,19 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/uae-labour-law-what-is-covid-19-pandemic-redundancy',
-				destination: '/blogs/uae-labour-law-what-is-covid-19-pandemic-redundancy',
+				source: '/usa-labour-law-what-is-covid-19-pandemic-redundancy',
+				destination: '/blogs/usa-labour-law-what-is-covid-19-pandemic-redundancy',
 				permanent: true
 			},
 			{
-				source: '/article-121-uae-labour-law',
+				source: '/article-121-usa-labour-law',
 				destination:
-					'/blogs/article-121-uae-labour-law-talks-about-the-termination-notice-period-of-the-employee',
+					'/blogs/article-121-usa-labour-law-talks-about-the-termination-notice-period-of-the-employee',
 				permanent: true
 			},
 			{
-				source: '/know-more-about-leave-salary-calculation-in-the-uae',
-				destination: '/blogs/know-more-about-leave-salary-calculation-in-the-uae',
+				source: '/know-more-about-leave-salary-calculation-in-the-usa',
+				destination: '/blogs/know-more-about-leave-salary-calculation-in-the-usa',
 				permanent: true
 			},
 			{
@@ -213,28 +213,28 @@ module.exports = withNextIntl({
 			},
 			{
 				source: '/gulf-salary-premium',
-				destination: '/blogs/gulf-salary-premium-make-sure-to-be-aware-of-job-offers-scam-in-uae',
+				destination: '/blogs/gulf-salary-premium-make-sure-to-be-aware-of-job-offers-scam-in-usa',
 				permanent: true
 			},
 			{
-				source: '/new-uae-labour-law-in-2022-every-single-thing-you-need-to-know',
-				destination: '/blogs/what-is-new-in-the-uae-labour-law-in-2022',
+				source: '/new-usa-labour-law-in-2022-every-single-thing-you-need-to-know',
+				destination: '/blogs/what-is-new-in-the-usa-labour-law-in-2022',
 				permanent: true
 			},
 			{
 				source: '/employment-labour-contracts-in-private-firms',
-				destination: '/blogs/the-most-important-features-of-employment-contracts-in-the-uae',
+				destination: '/blogs/the-most-important-features-of-employment-contracts-in-the-usa',
 				permanent: true
 			},
 			{
-				source: '/article-121-uae-labour-law-2',
+				source: '/article-121-usa-labour-law-2',
 				destination:
-					'/blogs/article-121-uae-labour-law-talks-about-the-termination-of-contract-and-notice-period-of-the-employee',
+					'/blogs/article-121-usa-labour-law-talks-about-the-termination-of-contract-and-notice-period-of-the-employee',
 				permanent: true
 			},
 			{
-				source: '/carrying-and-money-laundering-in-the-uae-banking-cash-in-contemporary-regulation',
-				destination: '/blogs/carrying-and-money-laundering-in-the-uae-banking-cash-in-contemporary-regulation',
+				source: '/carrying-and-money-laundering-in-the-usa-banking-cash-in-contemporary-regulation',
+				destination: '/blogs/carrying-and-money-laundering-in-the-usa-banking-cash-in-contemporary-regulation',
 				permanent: true
 			},
 			{
@@ -248,33 +248,33 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/freelance-visa-permit-dubai-uae-cost-qualification-guider',
+				source: '/freelance-visa-permit-dubai-usa-cost-qualification-guider',
 				destination: '/blogs/do-you-need-a-freelance-visa-we-show-you-how-to-get-it-in-dubai',
 				permanent: true
 			},
 			{
-				source: '/deportation-in-the-uae-all-you-must-know-and-how-to-seek-our-lawyers-assistance',
-				destination: '/blogs/deportation-in-the-uae-all-you-must-know-and-how-to-seek-our-lawyers-assistance',
+				source: '/deportation-in-the-usa-all-you-must-know-and-how-to-seek-our-lawyers-assistance',
+				destination: '/blogs/deportation-in-the-usa-all-you-must-know-and-how-to-seek-our-lawyers-assistance',
 				permanent: true
 			},
 			{
-				source: '/ministry-of-labour-mol-importance-in-uae',
-				destination: '/blogs/mol-uae-all-you-need-to-know-about-this-entity',
+				source: '/ministry-of-labour-mol-importance-in-usa',
+				destination: '/blogs/mol-usa-all-you-need-to-know-about-this-entity',
 				permanent: true
 			},
 			{
-				source: '/how-to-remove-an-absconding-case-in-the-uae',
-				destination: '/blogs/learn-and-understand-on-how-to-remove-an-absconding-case-in-the-uae',
+				source: '/how-to-remove-an-absconding-case-in-the-usa',
+				destination: '/blogs/learn-and-understand-on-how-to-remove-an-absconding-case-in-the-usa',
 				permanent: true
 			},
 			{
-				source: '/how-to-remove-an-absconding-case-in-the-uae',
-				destination: '/blogs/learn-and-understand-on-how-to-remove-an-absconding-case-in-the-uae',
+				source: '/how-to-remove-an-absconding-case-in-the-usa',
+				destination: '/blogs/learn-and-understand-on-how-to-remove-an-absconding-case-in-the-usa',
 				permanent: true
 			},
 			{
-				source: '/uae-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
-				destination: '/blogs/uae-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
+				source: '/usa-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
+				destination: '/blogs/usa-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
 				permanent: true
 			},
 			{
@@ -288,7 +288,7 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/check-and-validify-dubai-visa-status-uae-online',
+				source: '/check-and-validify-dubai-visa-status-usa-online',
 				destination: '/blogs/the-ultimate-guide-for-a-dubai-visa-status-check',
 				permanent: true
 			},
@@ -299,27 +299,27 @@ module.exports = withNextIntl({
 			},
 			{
 				source: '/what-is-establishment-immigration-card-and-how-to-attain-in-dubai',
-				destination: '/blogs/establishment-card-uae-how-to-obtain-one-and-why-is-it-so-important',
+				destination: '/blogs/establishment-card-usa-how-to-obtain-one-and-why-is-it-so-important',
 				permanent: true
 			},
 			{
-				source: '/beware-of-the-grace-period-after-a-visa-cancellation-in-the-uae-avoid-fines',
-				destination: '/blogs/beware-of-the-grace-period-after-a-visa-cancellation-in-the-uae-avoid-fines',
+				source: '/beware-of-the-grace-period-after-a-visa-cancellation-in-the-usa-avoid-fines',
+				destination: '/blogs/beware-of-the-grace-period-after-a-visa-cancellation-in-the-usa-avoid-fines',
 				permanent: true
 			},
 			{
-				source: '/how-to-check-overstay-fine-in-uae-online-guider',
-				destination: '/blogs/how-to-check-overstay-fine-in-uae',
+				source: '/how-to-check-overstay-fine-in-usa-online-guider',
+				destination: '/blogs/how-to-check-overstay-fine-in-usa',
 				permanent: true
 			},
 			{
-				source: '/can-i-resign-after-6-months-in-limited-contract-uae',
-				destination: '/blogs/major-legal-update-can-i-resign-after-6-months-in-limited-contract-in-uae',
+				source: '/can-i-resign-after-6-months-in-limited-contract-usa',
+				destination: '/blogs/major-legal-update-can-i-resign-after-6-months-in-limited-contract-in-usa',
 				permanent: true
 			},
 			{
-				source: '/new-cheque-bounce-in-the-uae',
-				destination: '/blogs/understanding-cheque-bounce-in-the-uae-2023-laws-and-regulations',
+				source: '/new-cheque-bounce-in-the-usa',
+				destination: '/blogs/understanding-cheque-bounce-in-the-usa-2023-laws-and-regulations',
 				permanent: true
 			},
 			{
@@ -339,28 +339,28 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/no-objection-letter-from-a-sponsor-to-work-in-the-uae',
-				destination: '/blogs/sample-of-noc-no-objection-letter-from-a-sponsor-to-work-in-the-uae',
+				source: '/no-objection-letter-from-a-sponsor-to-work-in-the-usa',
+				destination: '/blogs/sample-of-noc-no-objection-letter-from-a-sponsor-to-work-in-the-usa',
 				permanent: true
 			},
 			{
-				source: '/unlimited-contract-resignation-uae',
-				destination: '/blogs/learn-about-the-unlimited-contract-resignation-process-in-the-uae',
+				source: '/unlimited-contract-resignation-usa',
+				destination: '/blogs/learn-about-the-unlimited-contract-resignation-process-in-the-usa',
 				permanent: true
 			},
 			{
-				source: '/uae-bounced-cheque-law-cheque-bounce-is-no-longer-an-offense',
-				destination: '/blogs/uae-bounced-cheque-law-cheque-bounce-is-no-longer-an-offense',
+				source: '/usa-bounced-cheque-law-cheque-bounce-is-no-longer-an-offense',
+				destination: '/blogs/usa-bounced-cheque-law-cheque-bounce-is-no-longer-an-offense',
 				permanent: true
 			},
 			{
-				source: '/immigration-ban-in-uae',
-				destination: '/blogs/how-to-check-immigration-ban-online-in-uae-and-how-to-remove-it',
+				source: '/immigration-ban-in-usa',
+				destination: '/blogs/how-to-check-immigration-ban-online-in-usa-and-how-to-remove-it',
 				permanent: true
 			},
 			{
-				source: '/new-vat-law-in-uae',
-				destination: '/blogs/new-uae-vat-rules-2022-business-exemptions-and-registration-for-5-tax-explained',
+				source: '/new-vat-law-in-usa',
+				destination: '/blogs/new-usa-vat-rules-2022-business-exemptions-and-registration-for-5-tax-explained',
 				permanent: true
 			},
 			{
@@ -369,8 +369,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/uae-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
-				destination: '/blogs/uae-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
+				source: '/usa-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
+				destination: '/blogs/usa-gratuity-law-how-is-it-calculated-in-accordance-with-the-latest-law',
 				permanent: true
 			},
 			{
@@ -384,38 +384,38 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/divorce-procedure-in-uae-for-indians-expats',
+				source: '/divorce-procedure-in-usa-for-indians-expats',
 				destination: '/blogs/steps-to-divorce-in-the-united-arab-emirates-if-you-are-married-in-india',
 				permanent: true
 			},
 			{
-				source: '/end-of-service-benefit-uae-for-foreign-workers',
-				destination: '/blogs/end-of-service-benefit-uae',
+				source: '/end-of-service-benefit-usa-for-foreign-workers',
+				destination: '/blogs/end-of-service-benefit-usa',
 				permanent: true
 			},
 			{
-				source: '/new-labour-law-in-uae-2022-for-government-and-private-sector',
-				destination: '/blogs/a-practical-guide-to-the-new-labour-law-in-uae-2022',
+				source: '/new-labour-law-in-usa-2022-for-government-and-private-sector',
+				destination: '/blogs/a-practical-guide-to-the-new-labour-law-in-usa-2022',
 				permanent: true
 			},
 			{
-				source: '/corporate-lawyers-an-overview-of-law-firms-in-the-uae',
-				destination: '/blogs/corporate-lawyers-an-overview-of-law-firms-in-the-uae',
+				source: '/corporate-lawyers-an-overview-of-law-firms-in-the-usa',
+				destination: '/blogs/corporate-lawyers-an-overview-of-law-firms-in-the-usa',
 				permanent: true
 			},
 			{
-				source: '/abortion-in-uae-dubai-pill',
-				destination: '/blogs/is-abortion-lawful-in-uae',
+				source: '/abortion-in-usa-dubai-pill',
+				destination: '/blogs/is-abortion-lawful-in-usa',
 				permanent: true
 			},
 			{
-				source: '/topmost-typing-center-dubai-uae-for-documentation-services',
+				source: '/topmost-typing-center-dubai-usa-for-documentation-services',
 				destination: '/blogs/an-easy-guide-to-typing-services-in-dubai-in-2023',
 				permanent: true
 			},
 			{
-				source: '/employment-lawyers-a-guide-to-finding-the-best-lawyers-in-the-uae',
-				destination: '/blogs/employment-lawyers-a-guide-to-finding-the-best-lawyers-in-the-uae',
+				source: '/employment-lawyers-a-guide-to-finding-the-best-lawyers-in-the-usa',
+				destination: '/blogs/employment-lawyers-a-guide-to-finding-the-best-lawyers-in-the-usa',
 				permanent: true
 			},
 			{
@@ -424,8 +424,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/how-to-check-vpn-fine-in-uae',
-				destination: '/blogs/how-to-check-vpn-fine-in-uae',
+				source: '/how-to-check-vpn-fine-in-usa',
+				destination: '/blogs/how-to-check-vpn-fine-in-usa',
 				permanent: true
 			},
 			{
@@ -435,21 +435,21 @@ module.exports = withNextIntl({
 			},
 			{
 				source: '/how-to-complete-dubai-marriage-certificate-attestation',
-				destination: '/blogs/how-to-certify-vouch-witness-attest-marriage-certificate-for-uae',
+				destination: '/blogs/how-to-certify-vouch-witness-attest-marriage-certificate-for-usa',
 				permanent: true
 			},
 			{
-				source: '/an-overview-of-employment-lawyers-in-dubai-and-the-uae',
-				destination: '/blogs/an-overview-of-employment-lawyers-in-dubai-and-the-uae',
+				source: '/an-overview-of-employment-lawyers-in-dubai-and-the-usa',
+				destination: '/blogs/an-overview-of-employment-lawyers-in-dubai-and-the-usa',
 				permanent: true
 			},
 			{
-				source: '/employer-delaying-visa-cancellation-a-common-issue-for-uae-residence-visa-holders',
-				destination: '/blogs/employer-delaying-visa-cancellation-a-common-issue-for-uae-residence-visa-holders',
+				source: '/employer-delaying-visa-cancellation-a-common-issue-for-usa-residence-visa-holders',
+				destination: '/blogs/employer-delaying-visa-cancellation-a-common-issue-for-usa-residence-visa-holders',
 				permanent: true
 			},
 			{
-				source: '/e-signature-card-in-dubai-uae',
+				source: '/e-signature-card-in-dubai-usa',
 				destination: '/blogs/how-to-obtain-e-signature-card-in-dubai',
 				permanent: true
 			},
@@ -464,7 +464,7 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/pornography-laws-dubai-uae-what-you-need-to-know',
+				source: '/pornography-laws-dubai-usa-what-you-need-to-know',
 				destination: '/blogs/pornography-laws-dubai-what-you-need-to-know',
 				permanent: true
 			},
@@ -479,7 +479,7 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/why-banks-ask-for-employment-salary-certificate-uae-format',
+				source: '/why-banks-ask-for-employment-salary-certificate-usa-format',
 				destination: '/blogs/salary-certificate-everything-you-need-to-know',
 				permanent: true
 			},
@@ -489,8 +489,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/how-to-check-visa-status-file-validity-uae-using-passport-number',
-				destination: '/blogs/find-uae-visa-status-validity-using-your-passport-also-online',
+				source: '/how-to-check-visa-status-file-validity-usa-using-passport-number',
+				destination: '/blogs/find-usa-visa-status-validity-using-your-passport-also-online',
 				permanent: true
 			},
 			{
@@ -499,8 +499,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/franchise-in-uae',
-				destination: '/blogs/how-to-set-up-a-franchise-in-uae',
+				source: '/franchise-in-usa',
+				destination: '/blogs/how-to-set-up-a-franchise-in-usa',
 				permanent: true
 			},
 			{
@@ -514,8 +514,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/introduction-of-corporate-tax-uae-in-2023',
-				destination: '/blogs/introduction-of-corporate-tax-uae-in-2023',
+				source: '/introduction-of-corporate-tax-usa-in-2023',
+				destination: '/blogs/introduction-of-corporate-tax-usa-in-2023',
 				permanent: true
 			},
 			{
@@ -524,8 +524,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/employment-visa-uae',
-				destination: '/blogs/new-employment-work-visa-condition-in-uae-how-to-avail-permit',
+				source: '/employment-visa-usa',
+				destination: '/blogs/new-employment-work-visa-condition-in-usa-how-to-avail-permit',
 				permanent: true
 			},
 			{
@@ -534,8 +534,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/ica-smart-services-in-uae-for-visa-status-check-perfect-guider',
-				destination: '/blogs/how-to-use-ica-smart-services-in-the-uae',
+				source: '/ica-smart-services-in-usa-for-visa-status-check-perfect-guider',
+				destination: '/blogs/how-to-use-ica-smart-services-in-the-usa',
 				permanent: true
 			},
 			{
@@ -544,13 +544,13 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/why-banks-ask-for-employment-salary-certificate-uae-format',
+				source: '/why-banks-ask-for-employment-salary-certificate-usa-format',
 				destination: '/blogs/salary-certificate-everything-you-need-to-know',
 				permanent: true
 			},
 			{
-				source: '/how-to-check-visa-status-file-validity-uae-using-passport-number',
-				destination: '/blogs/find-uae-visa-status-validity-using-your-passport-also-online',
+				source: '/how-to-check-visa-status-file-validity-usa-using-passport-number',
+				destination: '/blogs/find-usa-visa-status-validity-using-your-passport-also-online',
 				permanent: true
 			},
 			{
@@ -559,8 +559,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/franchise-in-uae',
-				destination: '/blogs/how-to-set-up-a-franchise-in-uae',
+				source: '/franchise-in-usa',
+				destination: '/blogs/how-to-set-up-a-franchise-in-usa',
 				permanent: true
 			},
 			{
@@ -569,8 +569,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/uae-unemployment-insurance-scheme-guidebook',
-				destination: '/blogs/uae-unemployment-insurance-now-compulsory-how-you-can-get-USD20-000-a-month',
+				source: '/usa-unemployment-insurance-scheme-guidebook',
+				destination: '/blogs/usa-unemployment-insurance-now-compulsory-how-you-can-get-USD20-000-a-month',
 				permanent: true
 			},
 			{
@@ -579,8 +579,8 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/how-to-find-labour-contract-online-in-uae-using-internet',
-				destination: '/blogs/everything-you-need-to-know-about-a-labour-contract-uae',
+				source: '/how-to-find-labour-contract-online-in-usa-using-internet',
+				destination: '/blogs/everything-you-need-to-know-about-a-labour-contract-usa',
 				permanent: true
 			},
 			{
@@ -605,13 +605,13 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/mohre-gratuity-end-of-service-calculator-in-dubai-uae-using-internet',
-				destination: '/blogs/mohre-gratuity-end-of-service-calculator-in-dubai-uae-using-internet',
+				source: '/mohre-gratuity-end-of-service-calculator-in-dubai-usa-using-internet',
+				destination: '/blogs/mohre-gratuity-end-of-service-calculator-in-dubai-usa-using-internet',
 				permanent: true
 			},
 			{
-				source: '/how-to-discover-emirates-unified-or-uid-number-uae-abu-dhabi',
-				destination: '/blogs/easily-get-your-unified-number-uae-online-in-2023',
+				source: '/how-to-discover-emirates-unified-or-uid-number-usa-abu-dhabi',
+				destination: '/blogs/easily-get-your-unified-number-usa-online-in-2023',
 				permanent: true
 			},
 			{
@@ -620,13 +620,13 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/cybercrime-in-uae',
-				destination: '/blogs/new-cyber-law-in-uae',
+				source: '/cybercrime-in-usa',
+				destination: '/blogs/new-cyber-law-in-usa',
 				permanent: true
 			},
 			{
-				source: '/how-to-draft-a-resignation-letter-in-uae-with-samples',
-				destination: '/blogs/drafting-a-resignation-letter-in-the-uae-with-samples-perfect-guider',
+				source: '/how-to-draft-a-resignation-letter-in-usa-with-samples',
+				destination: '/blogs/drafting-a-resignation-letter-in-the-usa-with-samples-perfect-guider',
 				permanent: true
 			},
 			{
@@ -730,7 +730,7 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/blogs/blogs/mol-uae-all-you-need-to-know-about-this-entity',
+				source: '/blogs/blogs/mol-usa-all-you-need-to-know-about-this-entity',
 				destination: '/blogs',
 				permanent: true
 			},
@@ -740,7 +740,7 @@ module.exports = withNextIntl({
 				permanent: true
 			},
 			{
-				source: '/blogs/end-of-service-benefit-uae',
+				source: '/blogs/end-of-service-benefit-usa',
 				destination: '/blogs',
 				permanent: true
 			},

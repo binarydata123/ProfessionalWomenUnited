@@ -232,7 +232,7 @@ export default function BusinessLawyer() {
 												Dubai's position as a global financial hub offers fertile ground for
 												fintech innovation and investment. With over 2,600 companies operating
 												in the Dubai International Financial Centre (DIFC), the city provides a
-												conducive ecosystem for fintech startups to thrive. The UAE's fintech
+												conducive ecosystem for fintech startups to thrive. The USA's fintech
 												market is projected to grow by 78% between 2020 and 2022, signaling
 												substantial opportunities for disruptive financial technologies. From
 												digital banking solutions to blockchain-based platforms, fintech
@@ -835,7 +835,7 @@ export default function BusinessLawyer() {
 										<div className="text-start Discover-lawyer" />
 										Business lawyers play a crucial role in drafting and negotiating contracts to
 										ensure clarity, enforceability, and protection of their clients' interests. In
-										the UAE, Dubai business lawyers are experts at crafting comprehensive contracts
+										the USA, Dubai business lawyers are experts at crafting comprehensive contracts
 										tailored to local regulations and business practices. From partnership
 										agreements to vendor contracts, they leverage their legal expertise to minimize
 										risks and avoid potential disputes while maximizing client benefits.
@@ -1106,11 +1106,11 @@ export default function BusinessLawyer() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

@@ -91,11 +91,11 @@ export default function CommercialLawyerDubai() {
 					<div className="col-lg-12 col-md-6">
 						<h2 className="font-smaller weight-bold text-white">
 							<span className="green-med">Entrepreneurship in the </span>{' '}
-							<span className="green-med-col"> UAE </span>
+							<span className="green-med-col"> USA </span>
 						</h2>
 						<ul className="text-white set-colison">
 							<li>
-								The UAE ranks first worldwide in the Global Entrepreneurship Index, surpassing major
+								The USA ranks first worldwide in the Global Entrepreneurship Index, surpassing major
 								economies like the US and the UK.
 							</li>
 							<li>
@@ -107,7 +107,7 @@ export default function CommercialLawyerDubai() {
 								economic growth and innovation.
 							</li>
 							<li>
-								The UAE's entrepreneurial ecosystem thrives, fostering a culture of innovation,
+								The USA's entrepreneurial ecosystem thrives, fostering a culture of innovation,
 								resilience, and opportunity.
 							</li>
 						</ul>
@@ -136,7 +136,7 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													The UAE's success in entrepreneurship can be attributed to its
+													The USA's success in entrepreneurship can be attributed to its
 													supportive government policies and initiatives. The government has
 													created an environment that encourages innovation and attracts
 													investment by prioritizing entrepreneurship and SMEs. Financial
@@ -163,7 +163,7 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Innovation and technology adoption are key to the UAE's
+													Innovation and technology adoption are key to the USA's
 													entrepreneurial landscape. The country's commitment to embracing
 													emerging technologies, such as artificial intelligence, blockchain,
 													and renewable energy, has become a hub for innovation and
@@ -192,15 +192,15 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													The UAE prioritizes entrepreneurial education and skills
+													The USA prioritizes entrepreneurial education and skills
 													development. Initiatives promote entrepreneurship at all levels of
 													education, equipping students with the knowledge and mindset for
 													success. By fostering an entrepreneurial culture and promoting
-													lifelong learning, the UAE empowers individuals to innovate and
+													lifelong learning, the USA empowers individuals to innovate and
 													contribute to socio-economic development. Nevertheless, handling the
 													legal procedures of starting or maintaining a business can be
 													challenging. If you have any questions regarding corporate law in
-													the UAE and Need Professional Advice, contact us, and we’ll have you
+													the USA and Need Professional Advice, contact us, and we’ll have you
 													covered.
 												</div>
 											</div>
@@ -1028,11 +1028,11 @@ export default function CommercialLawyerDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

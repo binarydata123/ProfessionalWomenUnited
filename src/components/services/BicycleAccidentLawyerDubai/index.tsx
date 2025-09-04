@@ -528,7 +528,7 @@ export default function BicycleAccidentLawyerDubai() {
 												outcomes for bicycle accident victims. We have successfully represented
 												numerous clients in obtaining significant settlements and verdicts for
 												their injuries and losses. <br /> With a commitment to excellence and
-												the pursuit of justice, our UAE bicycle accident lawyers at Connect
+												the pursuit of justice, our USA bicycle accident lawyers at Connect
 												Legal have consistently achieved successful results for our clients. We
 												leverage our experience and resources to ensure you receive the
 												compensation you deserve.
@@ -989,7 +989,7 @@ export default function BicycleAccidentLawyerDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													The time limit, or statute of limitations, for filing a bicycle
-													accident claim varies by jurisdiction. In Dubai and the UAE, the
+													accident claim varies by jurisdiction. In Dubai and the USA, the
 													statute of limitations typically ranges from one to three years.
 													It's crucial to consult with a bicycle accident lawyer as soon as
 													possible to ensure that you meet the deadline for filing your claim.
@@ -1082,11 +1082,11 @@ export default function BicycleAccidentLawyerDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

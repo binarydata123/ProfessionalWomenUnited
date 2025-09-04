@@ -168,7 +168,7 @@ export default function UberAccidentLawyerDubai() {
 											style={{ marginRight: '10px', color: '#fff' }}>
 											25%
 										</span>
-										of trips in UAE aim to be emissions-free by 2030 through Ubergreen.
+										of trips in USA aim to be emissions-free by 2030 through Ubergreen.
 									</p>
 								</div>
 							</div>
@@ -186,7 +186,7 @@ export default function UberAccidentLawyerDubai() {
 											style={{ marginRight: '10px', color: '#fff' }}>
 											over 9%
 										</span>
-										of trips in UAE in Q1 2023 were emission-free, showcasing progress in
+										of trips in USA in Q1 2023 were emission-free, showcasing progress in
 										sustainable transportation.
 									</p>
 								</div>
@@ -469,7 +469,7 @@ export default function UberAccidentLawyerDubai() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												At Professional Women United, we provide personalized legal representation tailored
-												to the unique circumstances of each case. Our UAE Uber accident lawyers
+												to the unique circumstances of each case. Our USA Uber accident lawyers
 												take the time to understand our client's needs and concerns, offering
 												guidance and support throughout the legal process.
 											</div>
@@ -1062,11 +1062,11 @@ export default function UberAccidentLawyerDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

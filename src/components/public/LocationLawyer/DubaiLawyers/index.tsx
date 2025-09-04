@@ -79,7 +79,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</div>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/banking-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/banking-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'banking' ? 'active-link-mega-menu' : ''
 												}`}
@@ -99,7 +99,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/bankruptcy-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/bankruptcy-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'bankruptcy' ? 'active-link-mega-menu' : ''
 												}`}
@@ -185,7 +185,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/construction-accidents-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/construction-accidents-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'constAccident' ? 'active-link-mega-menu' : ''
 												}`}
@@ -232,7 +232,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/inheritance-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/inheritance-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'inheritence' ? 'active-link-mega-menu' : ''
 												}`}
@@ -352,7 +352,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/premises-liability-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/premises-liability-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'premsieslawyer' ? 'active-link-mega-menu' : ''
 												}`}
@@ -385,7 +385,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/hospital-negligence-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/hospital-negligence-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'hospital' ? 'active-link-mega-menu' : ''
 												}`}
@@ -471,7 +471,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/child-custody-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/child-custody-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'childcustody' ? 'active-link-mega-menu' : ''
 												}`}
@@ -573,7 +573,7 @@ export default function DubaiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href={`${locale !== 'en' ? `/${locale}` : ''}/bankruptcy-lawyer-uae`}
+											href={`${locale !== 'en' ? `/${locale}` : ''}/bankruptcy-lawyer-usa`}
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'bankruptcyfinance' ? 'active-link-mega-menu' : ''
 												}`}

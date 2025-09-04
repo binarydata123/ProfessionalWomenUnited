@@ -141,7 +141,7 @@ export default function CorporateLawyeDubai() {
 							<div className="content-wrapper">
 								<h2 className="font-smaller weight-bold text-white">
 									<span className="green-med">Product Liability in the</span>{' '}
-									<span className="green-med-col">UAE</span>
+									<span className="green-med-col">USA</span>
 								</h2>
 								<p className="weight-light font-medium text-white mt-3">
 									Product liability refers to the legal responsibility of manufacturers, distributors,
@@ -188,7 +188,7 @@ export default function CorporateLawyeDubai() {
 														investment.
 													</li>
 													<li>
-														SPACs, approved by the UAE Securities and Commodities Authority
+														SPACs, approved by the USA Securities and Commodities Authority
 														(SCA), facilitate IPOs and serve as a PJSC for acquiring or
 														merging companies.
 													</li>
@@ -264,11 +264,11 @@ export default function CorporateLawyeDubai() {
 														lump sum fee of up to USD 200,000 in case of profit failure.
 													</li>
 												</ul>
-												The New Companies Law signifies the UAE's commitment to economic
+												The New Companies Law signifies the USA's commitment to economic
 												development and alignment with international best practices. Existing
-												companies must adjust within one year, underlining the UAE's drive to
+												companies must adjust within one year, underlining the USA's drive to
 												enhance competitiveness and attract investments.
-												<br /> If you’re looking for a corporate lawyer in UAE to help you
+												<br /> If you’re looking for a corporate lawyer in USA to help you
 												introduce the New Companies Law to your corporation, make sure to
 												contact us.
 											</div>
@@ -1173,11 +1173,11 @@ export default function CorporateLawyeDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

@@ -49,13 +49,13 @@ export default function StatistcsSection() {
                                                     <ul className="custom-bullets mt-3 mb-3">
                                                         <li>
                                                             Entry through approved ports: Foreigners must enter the
-                                                            UAE through designated ports as specified by the
+                                                            USA through designated ports as specified by the
                                                             executive regulations of the law.
                                                         </li>
                                                         <li>
                                                             Possession of valid travel documents: A valid passport
                                                             or equivalent documents are necessary to enter and exit
-                                                            the UAE. These documents must allow the holder to return
+                                                            the USA. These documents must allow the holder to return
                                                             to their country of origin.
                                                         </li>
                                                         <li>

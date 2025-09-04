@@ -4,17 +4,17 @@ import BankingLawyerUae from '@/components/services/BankingLawyerUae';
 
 export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: 'Banking Lawyer in UAE – Professional Women United',
+		title: 'Banking Lawyer in USA – Professional Women United',
 		description:
-			'Navigate your banking professional issues with a banking lawyer in UAE. Professional Women United offers expert advice and support.',
+			'Navigate your banking professional issues with a banking lawyer in USA. Professional Women United offers expert advice and support.',
 		alternates: {
-			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/banking-lawyer-uae`
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/banking-lawyer-usa`
 		},
 		openGraph: {
-			title: 'Banking Lawyer in UAE – Professional Women United',
+			title: 'Banking Lawyer in USA – Professional Women United',
 			description:
-				'Navigate your banking professional issues with a banking lawyer in UAE. Professional Women United offers expert advice and support.',
-			url: `${process.env.NEXT_PUBLIC_BASE_URL}/banking-lawyer-uae`,
+				'Navigate your banking professional issues with a banking lawyer in USA. Professional Women United offers expert advice and support.',
+			url: `${process.env.NEXT_PUBLIC_BASE_URL}/banking-lawyer-usa`,
 			siteName: process.env.NEXT_APP_NAME,
 			images: [
 				{

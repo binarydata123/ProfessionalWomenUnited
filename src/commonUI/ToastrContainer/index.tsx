@@ -17,7 +17,7 @@ export default function ToastrContainer() {
 				draggable
 				pauseOnHover
 				theme="colored"
-				toastStyle={{ backgroundColor: "#c49073", color: "#fff" }}
+				toastStyle={{ backgroundColor: "#153060", color: "#fff" }}
 
 			/>
 		</div>

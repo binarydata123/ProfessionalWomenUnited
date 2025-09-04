@@ -739,7 +739,7 @@ export default function BrainInjuryLawyer() {
 											of legal expertise, compassion, and dedication to client advocacy. They have
 											extensive experience handling complex brain injury cases and a track record
 											of successful outcomes for their clients. You can trust that you're working
-											with the best brain injury lawyers in UAE who will prioritize your needs and
+											with the best brain injury lawyers in USA who will prioritize your needs and
 											strive for the best results.
 										</>
 									) : (
@@ -758,7 +758,7 @@ export default function BrainInjuryLawyer() {
 									expertise, compassion, and dedication to client advocacy. They have extensive
 									experience handling complex brain injury cases and a track record of successful
 									outcomes for their clients. You can trust that you're working with the best brain
-									injury lawyers in UAE who will prioritize your needs and strive for the best
+									injury lawyers in USA who will prioritize your needs and strive for the best
 									results.
 								</>
 							)}
@@ -1126,11 +1126,11 @@ export default function BrainInjuryLawyer() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

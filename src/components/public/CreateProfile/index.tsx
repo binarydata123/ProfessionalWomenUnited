@@ -318,7 +318,7 @@ export default function CreateProfile() {
 								</button> */}
 								<p className="mt-4 text-center register-page-link">
 									Already have an account?
-									<Link href="/auth/login" style={{ color: '#c49073' }}> Log in</Link>
+									<Link href="/auth/login" style={{ color: '#153060' }}> Log in</Link>
 								</p>
 							</form>
 						</div>

@@ -300,7 +300,7 @@ export default function EmploymentLawyerDubai() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											<Link href="https://www.thenationalnews.com/uae/2022/06/20/uaes-new-labour-law-explained-all-you-need-to-know-about-the-2022-changes/?gad_source=1&gbraid=0AAAAACc0MA_xyWnsRVh9WZOedYCklfBMm&gclid=CjwKCAjwuJ2xBhA3EiwAMVjkVH3QaTSX_M0kCBoUmltOgsQJ0H9ITX-4Mv5QJmTn_WLM_FdBGdFVSxoCTikQAvD_BwE" target='_blank'></Link>
+											<Link href="https://www.thenationalnews.com/usa/2022/06/20/uaes-new-labour-law-explained-all-you-need-to-know-about-the-2022-changes/?gad_source=1&gbraid=0AAAAACc0MA_xyWnsRVh9WZOedYCklfBMm&gclid=CjwKCAjwuJ2xBhA3EiwAMVjkVH3QaTSX_M0kCBoUmltOgsQJ0H9ITX-4Mv5QJmTn_WLM_FdBGdFVSxoCTikQAvD_BwE" target='_blank'></Link>
 											{t("The_new_UAE_Labor_Law_imposes")}
 										</div>
 									</div>
@@ -895,11 +895,11 @@ export default function EmploymentLawyerDubai() {
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}

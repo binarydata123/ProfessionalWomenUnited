@@ -93,7 +93,7 @@ export default function Checkout() {
                                         plan_amount +
                                         ' USD will be charge monthly',
                                     showConfirmButton: true,
-                                    confirmButtonColor: '#c49073'
+                                    confirmButtonColor: '#153060'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
                                     // window.sessionStorage.setItem('payment_pending', 'false');
@@ -109,7 +109,7 @@ export default function Checkout() {
                                         plan_amount +
                                         ' USD for registration has been successfully completed.',
                                     showConfirmButton: true,
-                                    confirmButtonColor: '#c49073'
+                                    confirmButtonColor: '#153060'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
                                     window.sessionStorage.setItem('payment_pending', 'false');
