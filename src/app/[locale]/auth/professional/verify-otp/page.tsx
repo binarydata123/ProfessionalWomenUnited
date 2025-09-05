@@ -28,24 +28,43 @@ const OTPInputGroup = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [isLoadingTwo, setIsLoadingTwo] = useState(false);
 
-	useEffect(() => {
-		const memberplan = Cookies.get('membership');
+	// useEffect(() => {
+	// 	const memberplan = Cookies.get('membership');
 
-		const payment_status = window.sessionStorage.getItem('payment_status');
-		if (memberplan === 'true') {
-			if (payment_status !== 'paid') {
-				router.push('/auth/login');
-			} else {
-				setUserId(user?.id || '');
-				setUserEmail(user?.email || '');
-				setUserName(user?.first_name || '');
+	// 	const payment_status = window.sessionStorage.getItem('payment_status');
+	// 	if (memberplan === 'true') {
+	// 		if (payment_status !== 'paid') {
+	// 			router.push('/auth/login');
+	// 		} else {
+	// 			setUserId(user?.id || '');
+	// 			setUserEmail(user?.email || '');
+	// 			setUserName(user?.first_name || '');
+	// 		}
+	// 	} else {
+	// 		setUserId(user?.id || '');
+	// 		setUserEmail(user?.email || '');
+	// 		setUserName(user?.first_name || '');
+	// 	}
+	// }, [user]);
+	useEffect(() => {
+		const memberplan = Cookies.get("membership");
+		const payment_status = window.sessionStorage.getItem("payment_status");
+
+		const userId = Cookies.get("userId");
+		const userEmail = Cookies.get("email");
+		const userName = Cookies.get("first_name");
+
+		if (memberplan === "true") {
+			if (payment_status !== "paid") {
+				router.push("/auth/login");
+				return;
 			}
-		} else {
-			setUserId(user?.id || '');
-			setUserEmail(user?.email || '');
-			setUserName(user?.first_name || '');
 		}
-	}, [user]);
+		setUserId(userId || "");
+		setUserEmail(userEmail || "");
+		setUserName(userName || "");
+	}, []);
+
 
 
 	const [inputValues, setInputValues] = useState({
@@ -78,7 +97,7 @@ const OTPInputGroup = () => {
 			const otp = Object.values(inputValues).join('');
 
 			const data = {
-				user_id: user_id,
+				user_id: user_id || Cookies.get("userId"),
 				user_name: user_name,
 				user_email: user_email,
 				otp: otp
@@ -109,7 +128,7 @@ const OTPInputGroup = () => {
 	const handleResendEmailVerifyOtpSubmit = () => {
 		setIsLoadingTwo(true);
 		const data = {
-			user_id: user_id,
+			user_id: user_id || Cookies.get("userId"),
 			user_name: user_name,
 			user_email: user_email
 		};

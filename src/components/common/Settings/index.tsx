@@ -6,9 +6,10 @@ import Link from 'next/link';
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
 import { EyeSlashIcon, EyeIcon } from '@heroicons/react/20/solid';
-import { changePassword, getNotificationSettings, updateNotificationSettings } from '../../../../lib/lawyerapi';
+import { cancelPlanSubscription, changePassword, getNotificationSettings, updateNotificationSettings, updatetwofactorSettings } from '../../../../lib/lawyerapi';
 import { signOut } from 'next-auth/react';
 import AuthContext from '@/context/AuthContext';
+import { getSingleUserDetails } from '../../../../lib/frontendapi';
 
 export default function Settings() {
 	const { user, logout } = useContext(AuthContext)
@@ -21,15 +22,25 @@ export default function Settings() {
 	const [announcement, setAnnouncement] = useState('');
 	const [messageFromClient, setMessageFromClient] = useState('');
 	const [recommendation, setRecommendation] = useState('');
+	const [twoFactorAuth, setTwoFactorAuth] = useState(false);
 
 	const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 	const [showNewPassword, setShowNewPassword] = useState(false);
 
-	useEffect(() => {
-		user?.id ? setUserId(user?.id) : setUserId('');
+	const [planname, setPlanName] = useState('');
+	const [plandayleft, setPlanDayleft] = useState<any>('');
+	const [loading, setLoading] = useState(false);
+	const [showCancelModal, setShowCancelModal] = useState(false);
+	const [subscriptionStatus, setSubscriptionStatus] = useState('');
+	const [subscriptionEndDate, setSubscriptionEndDate] = useState('');
 
-		handleGetSettings(user?.id);
-	}, []);
+	useEffect(() => {
+		if (user?.id) {
+			setUserId(user.id);
+			handleGetSettings(user.id);
+			getSingleUserDetailsData(user.id);
+		}
+	}, [user]);
 
 	const handleUpdatePassword = async (user_id: any, newPassword: string) => {
 		const isValid = validateForm();
@@ -132,14 +143,148 @@ export default function Settings() {
 		return Object.keys(newErrors).length === 0;
 	}
 
+	const calculateDaysLeft = (targetDate: string) => {
+		const today = new Date();
+		const target = new Date(targetDate);
+		const timeDiff = Number(target) - Number(today);
+		const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+		return daysLeft;
+	};
+
+	const getSingleUserDetailsData = async (id: any) => {
+		try {
+			const res = await getSingleUserDetails(id);
+			console.log('User details response:', res); // Debug log
+
+			if (res.status == true) {
+				// Set subscription status from the response
+				setSubscriptionStatus(res.data.payment_status);
+				console.log('Payment status:', res.data.payment_status); // Debug log
+
+				// Set subscription end date if available
+				if (res.data.subscription_expiry_date) {
+					setSubscriptionEndDate(res.data.subscription_expiry_date);
+				}
+
+				// Set 2FA status
+				if (res.data.two_factor_auth) {
+					setTwoFactorAuth(res.data.two_factor_auth === 'yes');
+				}
+				// Set plan information - FIXED LOGIC
+				// Check if there's a plan name and it's not "Not purchased"
+				if (res.plan_name && res.plan_name !== "Not purchased") {
+					setPlanName(res.plan_name);
+					if (res.data.subscription_expiry_date) {
+						const daysLeft = calculateDaysLeft(res.data.subscription_expiry_date);
+						setPlanDayleft(daysLeft);
+					}
+				} else {
+					setPlanName('');
+					setPlanDayleft('');
+				}
+			}
+		} catch (err) {
+			console.log(err);
+		}
+	};
+
+	const handleCancelClick = () => {
+		setShowCancelModal(true);
+	};
+
+
+	const handleCancelSubscription = async () => {
+		try {
+			setLoading(true);
+			setShowCancelModal(false);
+			const res = await cancelPlanSubscription({ user_id: user?.id });
+			if (res.status === true) {
+				toast.success('Subscription cancelled successfully');
+				// Refresh the user data to update the status
+				getSingleUserDetailsData(user?.id);
+			} else {
+				toast.error(res.message || 'Failed to cancel subscription');
+			}
+		} catch (err) {
+			toast.error('Something went wrong while cancelling');
+			console.error(err);
+		} finally {
+			setLoading(false);
+		}
+	};
+	const formatDate = (dateString: string) => {
+		const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+		return new Date(dateString).toLocaleDateString(undefined, options);
+	};
+
+	const handleTwoFactorToggle = async () => {
+		try {
+			const newTwoFactorStatus = !twoFactorAuth;
+			setTwoFactorAuth(newTwoFactorStatus);
+
+			const res = await updatetwofactorSettings(user_id, newTwoFactorStatus);
+
+			if (res.status === true) {
+				toast.success(`Two-factor authentication ${newTwoFactorStatus ? 'enabled' : 'disabled'} successfully`);
+			} else {
+				// Revert if API call fails
+				setTwoFactorAuth(!newTwoFactorStatus);
+				toast.error('Failed to update two-factor authentication settings');
+			}
+		} catch (err) {
+			console.log(err);
+			// Revert on error
+			setTwoFactorAuth(!twoFactorAuth);
+			toast.error('Something went wrong while updating two-factor authentication');
+		}
+	};
+
 	return (
 		<div>
+			{showCancelModal && (
+				<div className="modal-overlay">
+					<div className="modal-content">
+						<div className="modal-header">
+							<h3>Cancel Subscription</h3>
+							<button
+								className="modal-close"
+								onClick={() => setShowCancelModal(false)}
+							>
+								&times;
+							</button>
+						</div>
+						<div className="modal-body">
+							<p>Are you sure you want to cancel your {planname} subscription?</p>
+							<p>You'll still have access to premium features for the remaining {plandayleft} days.</p>
+						</div>
+						<div className="modal-footer">
+							<button
+								className="btn btn-outline-secondary text-center btn-lawyer"
+								onClick={() => setShowCancelModal(false)}
+								style={{ minWidth: '140px' }}
+							>
+								Keep Subscription
+							</button>
+							<button
+								className="btn btn-outline-danger text-center btn-lawyer"
+								onClick={handleCancelSubscription}
+								disabled={loading}
+								style={{ minWidth: '140px' }}
+							>
+								{loading ? 'Cancelling...' : 'Yes, Cancel Subscription'}
+							</button>
+						</div>
+					</div>
+				</div>
+			)}
+
 			<div className="right-body mt-2">
 				<h4 className="font-xx-large social-link  weight-semi-bold">Settings</h4>
 			</div>
 			<hr className="hr-line mt-0" />
 
 			<div className="right-body pt-0">
+
 				<p className="font-small color-light mb-2 weight-medium">Account</p>
 				<hr className="hr-line mt-0" />
 
@@ -206,6 +351,73 @@ export default function Settings() {
 						</button>
 					</div>
 				</div>
+				{/* Active Subscription Section */}
+				{planname && plandayleft && subscriptionStatus !== 'cancelled' && (
+					<div className="subscription-section mb-5">
+						<p className="font-small color-light mb-2 weight-medium">Subscription</p>
+						<hr className="hr-line mt-0" />
+						<div className="subscription-card p-4 bg-light rounded">
+							<p className="subscription-status font-large">
+								<span className="weight-semi-bold">Subscribed to </span>
+								<span className="plan-name text-success">{planname}</span>
+								<div className="subscription-progress mt-3">
+									<div className="progress-bar-container bg-secondary rounded" style={{ height: '8px' }}>
+										<div
+											className="progress-bar-fill bg-success rounded"
+											style={{
+												height: '100%',
+												width: `${Math.max(5, (30 - plandayleft) / 30 * 100)}%`
+											}}
+										></div>
+									</div>
+									<div className="days-left-text font-small mt-1">
+										({plandayleft} {plandayleft === 1 ? 'day' : 'days'} left)
+									</div>
+								</div>
+							</p>
+
+							<button
+								className="btn btn-outline-danger mt-3"
+								onClick={handleCancelClick}
+								disabled={loading}
+							>
+								{loading ? 'Cancelling...' : 'Cancel Subscription'}
+							</button>
+						</div>
+					</div>
+				)}
+
+				{/* Cancelled Subscription Status */}
+				{subscriptionStatus === 'cancelled' && (
+					<div className="cancelled-subscription-section mb-5">
+						<p className="font-small color-light mb-2 weight-medium">Subscription Status</p>
+						<hr className="hr-line mt-0" />
+						<div className="cancelled-subscription-card p-4 bg-light rounded border-left-cancelled">
+							<div className="d-flex align-items-center">
+								<div className="cancelled-icon mr-3">
+									{/* Using a simple X icon if Font Awesome is not available */}
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="text-danger">
+										<path d="M18.364 5.636l-1.414-1.414L12 10.586 7.05 5.636 5.636 7.05 10.586 12l-4.95 4.95 1.414 1.414L12 13.414l4.95 4.95 1.414-1.414L13.414 12l4.95-4.95z" />
+									</svg>
+								</div>
+								<div>
+									<p className="subscription-status font-large mb-1">
+										<span className="weight-semi-bold"> Subscription Cancelled</span>
+									</p>
+									{subscriptionEndDate ? (
+										<p className="font-small text-muted mb-0">
+											Your subscription will remain active until {formatDate(subscriptionEndDate)}
+										</p>
+									) : (
+										<p className="font-small text-muted mb-0">
+											Your subscription has been cancelled.
+										</p>
+									)}
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
 
 				<p className="font-small color-light mb-2 weight-medium">Privacy</p>
 				<hr className="hr-line mt-0" />
@@ -213,7 +425,40 @@ export default function Settings() {
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Terms of Use</p>
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Community Guidelines</p>
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Professional Information</p>
+				<div className="mt-5">
+					<p className="font-small color-light mb-2 weight-medium">Security</p>
+					<hr className="hr-line mt-0" />
 
+					<div className="row">
+						<div className="col-sm-10 col-9">
+							<p className="font-large social-link weight-semi-bold m-font-18">Two-Factor Authentication</p>
+							<p className="font-small weight-medium text-sonic-silver w-100">
+								Add an extra layer of security to your account. When enabled, you'll need to enter a verification code from your authenticator app when signing in.
+							</p>
+						</div>
+						<div className="col-sm-2 col-3 text-right">
+							<div className="switch-btn mt-2">
+								<label className="switch">
+									<input
+										type="checkbox"
+										checked={twoFactorAuth}
+										onChange={handleTwoFactorToggle}
+									/>
+									<span className="slider round"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					{twoFactorAuth && (
+						<div className="alert alert-info mt-3">
+							<strong>Two-factor authentication is enabled</strong>
+							<p className="mb-0 mt-1 font-small">
+								You'll be prompted for a verification code on your next login.
+							</p>
+						</div>
+					)}
+				</div>
 				<div className="mt-5">
 					<p className="font-small color-light mb-2 weight-medium">Notifications</p>
 					<hr className="hr-line mt-0" />

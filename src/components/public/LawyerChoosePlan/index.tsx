@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AuthContext from '@/context/AuthContext';
 import './style.css';
+import Cookies from "js-cookie";
 
 interface MembershipPlan {
     id: number;
@@ -32,7 +33,6 @@ export default function LawyerChoosePlan() {
     const handlePlanSelection = (plan: string) => {
         setSelectedPlan(plan === selectedPlan ? '' : plan);
     };
-    console.log(user, 'user')
 
     // useEffect(() => {
     //     getAllMemberShipPlanData();
@@ -45,22 +45,38 @@ export default function LawyerChoosePlan() {
     //         }
     //     }
     // }, [user]);
+    // useEffect(() => {
+    //     if (user === undefined) {
+    //         return;
+    //     }
+
+    //     if (!user) {
+    //         router.push('/auth/login');
+    //         return;
+    //     }
+
+    //     if (user?.id && user?.role === 'professional') {
+    //         getAllMemberShipPlanData();
+    //     } else {
+    //         router.push('/auth/login');
+    //     }
+    // }, [user]);
     useEffect(() => {
-        if (user === undefined) {
+        const token = Cookies.get("session_token");
+        const role = window.sessionStorage.getItem("temp_user_role");
+        const userId = Cookies.get("userId");
+
+        if (!token || !userId) {
+            router.push("/auth/login");
             return;
         }
 
-        if (!user) {
-            router.push('/auth/login343');
-            return;
-        }
-
-        if (user?.id && user?.role === 'professional') {
+        if (role === "professional") {
             getAllMemberShipPlanData();
         } else {
-            router.push('/auth/login555');
+            router.push("/auth/login45454");
         }
-    }, [user]);
+    }, []);
 
 
     const getAllMemberShipPlanData = async () => {
@@ -75,7 +91,9 @@ export default function LawyerChoosePlan() {
     };
 
     const handlePriceSet = () => {
-        if (user) {
+        const token = Cookies.get("session_token");
+        const userId = Cookies.get("userId");
+        if (token && userId) {
             setLoading(true);
             let tempPlanAmount;
 
@@ -91,7 +109,7 @@ export default function LawyerChoosePlan() {
 
             router.push('/auth/professional/payment-details');
         } else {
-            router.push('/auth/logindfdgf');
+            router.push('/auth/login');
         }
     };
 
@@ -194,7 +212,7 @@ export default function LawyerChoosePlan() {
                                                 )} */}
                                                 {loading ? (
                                                     <>Processing...</> // 👈 loading text
-                                                ) : user ? (
+                                                ) : Cookies.get("session_token") ? (
                                                     isMonthly === 'yearly'
                                                         ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
                                                         : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`

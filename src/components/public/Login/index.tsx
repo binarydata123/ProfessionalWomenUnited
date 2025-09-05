@@ -35,76 +35,11 @@ export default function Login() {
 
 	useEffect(() => {
 		if (session) {
-			SocialData(session.user, 'google');
+			// SocialData(session.user, 'google');
 		}
 	}, [session]);
 
-	const SocialData = (user: any, type: any) => {
-		const data = {
-			first_name: user.name,
-			email: user.email
-		};
-		googleLogin(data)
-			.then(res => {
-				if (res.status == true) {
-					const token = res.data.token;
-					Cookies.set('session_token', token);
-					if (res.data.user.role == 'professional') {
-						if (res.data.user.profile_status == 'legal-step') {
-							router.push('/auth/professional/step-2');
-						}
-						if (res.data.user.profile_status == 'payment-step') {
-							router.push('/auth/professional/choose-pricing-plan');
-						}
 
-						if (res.data.user.profile_status == 'email-verification-step') {
-							window.sessionStorage.setItem('payment_status', 'paid');
-							handleResendEmailVerifyOtpSubmit(
-								res.data.user.id,
-								res.data.user.first_name,
-								res.data.user.email
-							);
-						}
-
-						if (res.data.user.profile_status == 'completed') {
-							if (res.data.user.two_factor_auth == 'yes') {
-								Cookies.set('two_step_auth', 'false');
-								router.push('/auth/two-factor-authentication');
-							} else {
-								Cookies.set('two_step_auth', 'true');
-								router.push('/professional/dashboard');
-							}
-						}
-					}
-					if (res.data.user.role == 'enduser') {
-						if (res.data.user.two_factor_auth == 'yes') {
-							Cookies.set('two_step_auth', 'false');
-							router.push('/auth/two-factor-authentication');
-						} else {
-							Cookies.set('two_step_auth', 'true');
-							router.push('/user/dashboard');
-						}
-					}
-					if (res.data.user.role == 'admin') {
-						if (res.data.user.two_factor_auth == 'yes') {
-							Cookies.set('two_step_auth', 'false');
-							router.push('/auth/two-factor-authentication');
-						} else {
-							Cookies.set('two_step_auth', 'true');
-							router.push('/admin/dashboard');
-
-						}
-					}
-				} else {
-					toast.error(res.message);
-
-					if (res.type == 'google') {
-						signOut({ redirect: false }).then();
-					}
-				}
-			})
-			.catch(error => { });
-	};
 
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
@@ -131,7 +66,7 @@ export default function Login() {
 			.then((res: any) => {
 				setIsLoading(false);
 				if (!res) return;
-
+				// Cookies.set('two_factor_auth', res.user.two_factor_auth)
 				// 🔹 Step 1: Payment check
 				if (res.user.role === "professional") {
 					const isPaymentPending =
@@ -151,10 +86,24 @@ export default function Login() {
 					if (res.user.profile_status === 'professional-step') {
 						router.push('/auth/professional/step-2');
 					} else if (res.user.profile_status === 'completed') {
-						router.push('/auth/two-factor-authentication');
+						// Check if two-factor is enabled
+						if (res.user.two_factor_auth === "yes") {
+							router.push('/auth/two-factor-authentication');
+						} else {
+							router.push('/professional/dashboard'); // Redirect directly to dashboard
+						}
 					}
 				} else if (res.user.role === 'enduser' || res.user.role === 'admin') {
-					router.push('/auth/two-factor-authentication');
+					// Check if two-factor is enabled
+					if (res.user.two_factor_auth === "yes") {
+						router.push('/auth/two-factor-authentication');
+					} else {
+						if (res.user.role === 'admin') {
+							router.push('/admin/dashboard');
+						} else {
+							router.push('/user/dashboard')
+						}
+					}
 				} else if (res.account === 'suspended') {
 					router.push('/account-suspended');
 				} else {

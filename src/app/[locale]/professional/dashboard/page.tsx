@@ -96,7 +96,7 @@ export default function Dashboard() {
 	return (
 		<div className="lawyer-dashboard-wrapper">
 			{/* Cancel Subscription Confirmation Modal */}
-			{showCancelModal && (
+			{/* {showCancelModal && (
 				<div className="modal-overlay">
 					<div className="modal-content">
 						<div className="modal-header">
@@ -129,7 +129,7 @@ export default function Dashboard() {
 						</div>
 					</div>
 				</div>
-			)}
+			)} */}
 
 			<div className="right-body">
 				<div className="mmm m-top-sp">
@@ -140,7 +140,7 @@ export default function Dashboard() {
 								<span className="green-medium-2"> {capitalizeFirstWord(username)}</span>
 							</h2>
 						</div>
-						{planname && plandayleft && (
+						{/* {planname && plandayleft && (
 							<div className="subscription-section">
 								<div className="subscription-card">
 									<p className="subscription-status">
@@ -178,7 +178,7 @@ export default function Dashboard() {
 									)}
 								</div>
 							</div>
-						)}
+						)} */}
 					</div>
 
 					{showFilledState ? <LawyerDashboard /> : <EmptyState />}

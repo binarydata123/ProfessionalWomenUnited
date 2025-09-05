@@ -66,8 +66,9 @@ const OTPInputGroup = () => {
 			user?.logindate.split("").join("") :
 			Object.values(inputValues).join("");
 
+		const email = Cookies.get('email');
 		const data = {
-			user_email: user?.email,
+			user_email: email,
 			otp: otp
 		};
 
@@ -82,7 +83,7 @@ const OTPInputGroup = () => {
 				if (res.status == true) {
 					const { token, user } = res.data;
 					Cookies.set('session_token', token);
-					Cookies.set('two_step_auth', 'true');
+					// Cookies.set('two_step_auth', 'true');
 					setUser(user);
 
 					// 🔹 Check payment again after 2FA
