@@ -74,8 +74,7 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest mar">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"I've been able to connect with more clients than ever before since joining the
-								platform. It's been a game-changer for my practice."
+								"Joining this community gave me the confidence and network I needed to grow my consultancy. I now collaborate with amazing women leaders across industries."
 							</p>
 						</div>
 						<div className="row">
@@ -84,8 +83,8 @@ const SliderWithProgressBar = () => {
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
-									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Professional, </p>
+									<p className="font-medium weight-semi-bold text-black mt-2">Sarah Thompson</p>
+									<p className="font-small weight-light text-black">Marketing Consultant</p>
 								</div>
 							</div>
 						</div>
@@ -95,8 +94,8 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"I've been able to connect with more clients than ever before since joining the
-								platform. It's been a game-changer for my practice."
+								"I’ve gained not just clients, but lifelong mentors and colleagues. The support I’ve received here has been invaluable for my career growth."
+
 							</p>
 						</div>
 						<div className="row">
@@ -105,8 +104,8 @@ const SliderWithProgressBar = () => {
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
-									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Professional, </p>
+									<p className="font-medium weight-semi-bold text-black mt-2">Elena Martinez</p>
+									<p className="font-small weight-light text-black"> Financial Advisor</p>
 								</div>
 							</div>
 						</div>
@@ -116,8 +115,7 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"I've been able to connect with more clients than ever before since joining the
-								platform. It's been a game-changer for my practice."
+								"The platform has been a safe space to share my journey, learn from peers, and gain visibility for my startup. It’s empowering to be part of such a strong network."
 							</p>
 						</div>
 						<div className="row">
@@ -126,8 +124,8 @@ const SliderWithProgressBar = () => {
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
-									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Professional, </p>
+									<p className="font-medium weight-semi-bold text-black mt-2">Priya Kapoor</p>
+									<p className="font-small weight-light text-black">Tech Entrepreneur </p>
 								</div>
 							</div>
 						</div>
@@ -137,8 +135,7 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"I've been able to connect with more clients than ever before since joining the
-								platform. It's been a game-changer for my practice."
+								"What makes this community unique is the authenticity. Real conversations, real opportunities, and real growth. It’s been a game-changer for me."
 							</p>
 						</div>
 						<div className="row">
@@ -147,8 +144,8 @@ const SliderWithProgressBar = () => {
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
-									<p className="font-medium weight-semi-bold text-black mt-2">John Smith</p>
-									<p className="font-small weight-light text-black">Business Professional, </p>
+									<p className="font-medium weight-semi-bold text-black mt-2">Amanda Brooks</p>
+									<p className="font-small weight-light text-black">Wellness Coach</p>
 								</div>
 							</div>
 						</div>

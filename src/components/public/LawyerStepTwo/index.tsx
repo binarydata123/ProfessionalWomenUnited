@@ -78,10 +78,16 @@ export default function LawyerStepTwo() {
 	const [firmDetails, setFirmDetails] = useState(null);
 
 	useEffect(() => {
+		const userId = Cookies.get('userId')
 		if (user)
-			fetchAdminSettingData(user?.id);
-		fetchFirmDetails()
+			fetchAdminSettingData(user?.id || userId);
 	}, [user]);
+
+	// useEffect(() => {
+	// 	const userId = Cookies.get('userId')
+	// 	alert(userId)
+	// 	fetchAdminSettingData(userId);
+	// }, []);
 
 	const fetchAdminSettingData = async (user_id: any) => {
 		try {
@@ -94,16 +100,7 @@ export default function LawyerStepTwo() {
 		}
 	};
 
-	const fetchFirmDetails = async () => {
-		try {
-			const response = await getAllFirmsData();
-			if (response.status === true) {
-				setFirmDetails(response.data);
-			}
-		} catch (error) {
-			console.error('Error fetching firm details:', error);
-		}
-	};
+
 
 	useEffect(() => {
 		getAllCountriesData();

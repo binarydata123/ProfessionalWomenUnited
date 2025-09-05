@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import './settings.css';
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
-import { changePassword, updateNotificationSettings, getNotificationSettings } from '../../../../../lib/enduserapi';
+import { changePassword, updateNotificationSettings, getNotificationSettings, updatetwofactorSettings, getMemberById } from '../../../../../lib/enduserapi';
 import { EyeSlashIcon, EyeIcon } from '@heroicons/react/20/solid';
 
 import AuthContext from '@/context/AuthContext';
@@ -20,6 +20,8 @@ export default function Settings() {
 	const [recommendation, setRecommendation] = useState('');
 	const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 	const [showNewPassword, setShowNewPassword] = useState(false);
+	const [twoFactorAuth, setTwoFactorAuth] = useState(false);
+
 	const { user } = useContext(AuthContext);
 	useEffect(() => {
 		user?.id ? setUserId(user?.id) : setUserId('');
@@ -120,6 +122,48 @@ export default function Settings() {
 		setErrors(newErrors);
 		return Object.keys(newErrors).length === 0;
 	}
+
+	useEffect(() => {
+		const fetchUser = async () => {
+			try {
+				const response: any = await getMemberById(user_id);
+				if (response?.status === true && response?.data) {
+					if (response.data.two_factor_auth) {
+						setTwoFactorAuth(response.data.two_factor_auth === "yes");
+					}
+				}
+			} catch (error) {
+				console.error("Error fetching user:", error);
+			}
+		};
+
+		if (user_id) {
+			fetchUser();
+		}
+	}, [user_id]);
+
+
+	const handleTwoFactorToggle = async () => {
+		try {
+			const newTwoFactorStatus = !twoFactorAuth;
+			setTwoFactorAuth(newTwoFactorStatus);
+
+			const res = await updatetwofactorSettings(user_id, newTwoFactorStatus);
+
+			if (res.status === true) {
+				toast.success(`Two-factor authentication ${newTwoFactorStatus ? 'enabled' : 'disabled'} successfully`);
+			} else {
+				// Revert if API call fails
+				setTwoFactorAuth(!newTwoFactorStatus);
+				toast.error('Failed to update two-factor authentication settings');
+			}
+		} catch (err) {
+			console.log(err);
+			// Revert on error
+			setTwoFactorAuth(!twoFactorAuth);
+			toast.error('Something went wrong while updating two-factor authentication');
+		}
+	};
 	return (
 		<>
 			<div className="right-body pl-0 mt-5">
@@ -198,7 +242,40 @@ export default function Settings() {
 					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Terms of Use</p>
 					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Community Guidelines</p>
 					<p className="font-large social-link weight-semi-bold m-font-20 mb-3">Professional Information</p>
+					<div className="mt-5">
+						<p className="font-small color-light mb-2 weight-medium">Security</p>
+						<hr className="hr-line mt-0" />
 
+						<div className="row">
+							<div className="col-sm-10 col-9">
+								<p className="font-large social-link weight-semi-bold m-font-18">Two-Factor Authentication</p>
+								<p className="font-small weight-medium text-sonic-silver w-100">
+									Add an extra layer of security to your account. When enabled, you'll need to enter a verification code from your authenticator app when signing in.
+								</p>
+							</div>
+							<div className="col-sm-2 col-3 text-right">
+								<div className="switch-btn mt-2">
+									<label className="switch">
+										<input
+											type="checkbox"
+											checked={twoFactorAuth}
+											onChange={handleTwoFactorToggle}
+										/>
+										<span className="slider round"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						{twoFactorAuth && (
+							<div className="alert alert-info mt-3">
+								<strong>Two-factor authentication is enabled</strong>
+								<p className="mb-0 mt-1 font-small">
+									You'll be prompted for a verification code on your next login.
+								</p>
+							</div>
+						)}
+					</div>
 					<div className="mt-5">
 						<p className="font-small color-light mb-2 weight-medium">Notifications</p>
 						<hr className="hr-line mt-0" />

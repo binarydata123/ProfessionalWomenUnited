@@ -90,11 +90,11 @@ export default function Profile() {
 			<div className="right-body bg-profile">
 				<div className="row">
 					<div className="col-6">
-						<h4 className="font-x-large green-dark weight-bold mt-2">Profile Insights</h4>
+						<h4 className="font-x-large weight-bold mt-2" style={{ color: '#fff' }}>Profile Insights</h4>
 					</div>
 					<div className="col-6 text-right pl-0">
 						<div className="dropdown down-btn">
-							<span className="font-x-small text-sonic-silver weight-bold">Show</span> &nbsp;
+							<span className="font-x-small weight-bold" style={{ color: '#fff' }}>Show</span> &nbsp;
 							<button
 								className="btn btn-secondary dropdown-toggle bg-white"
 								type="button"
@@ -129,9 +129,9 @@ export default function Profile() {
 				<div className="row mt-2">
 					<div className="col-sm-4 col-6 mb-3">
 						<CountCard
-							countColor={'#c49073'}
+							countColor={'#153060'}
 							href="/professional/profile"
-							linkColor="#BE8363"
+							linkColor="#153060"
 							backgroundImage="/images/white-dash-card-1.JPG"
 							linkText="Profile Views"
 							count={profileViewCount}
@@ -139,9 +139,9 @@ export default function Profile() {
 					</div>
 					<div className="col-sm-4 col-6 mb-3">
 						<CountCard
-							countColor={'#c49073'}
+							countColor={'#153060'}
 							href="/professional/profile/reviews"
-							linkColor="#BE8363"
+							linkColor="#153060"
 							backgroundImage="/images/white-dash-card-2.JPG"
 							linkText="Reviews"
 							count={reviewCount}
@@ -149,9 +149,9 @@ export default function Profile() {
 					</div>
 					<div className="col-sm-4 col-12">
 						<CountCard
-							countColor={'#c49073'}
+							countColor={'#153060'}
 							href="/professional/inquiries"
-							linkColor="#BE8363"
+							linkColor="#153060"
 							backgroundImage="/images/white-dash-card-3.JPG"
 							linkText="Inquiries"
 							count={inquiresCount}

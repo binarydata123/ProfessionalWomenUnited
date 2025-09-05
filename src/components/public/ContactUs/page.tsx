@@ -193,7 +193,7 @@ export default function ContactUs() {
 							<h5>{t('write_to_us')}</h5>
 							<a href="mailto:wisuva@mailinator.com">
 								{' '}
-								<p>contact@profesionalwomen.com</p>
+								<p>info@professionalwomenunited.com</p>
 							</a>
 						</div>
 					</div>
@@ -201,7 +201,7 @@ export default function ContactUs() {
 						<div className="contact-box pl-lg-2">
 							<Image src="/images/contact/call-calling.png" alt="contact-number" width={40} height={40} />
 							<h5>{t('talk_to_us')}</h5>
-							<a href="tel:+97143316688">
+							<a href="tel:479-321-3654">
 								{' '}
 								<p>479-321-3654</p>
 							</a>

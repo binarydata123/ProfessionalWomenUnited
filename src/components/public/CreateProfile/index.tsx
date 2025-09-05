@@ -46,45 +46,11 @@ export default function CreateProfile() {
 			user_role ? setRole(user_role) : setRole('');
 		}
 		if (session) {
-			SocialData(session.user, 'google');
+			// SocialData(session.user, 'google');
 		}
 	}, [session]);
 
-	const SocialData = (user: any, type: any) => {
-		const data = {
-			first_name: user.name,
-			email: user.email,
-			role: role
-		};
-		googleRegister(data)
-			.then(res => {
-				if (res.status == true) {
-					const token = res.data.token;
-					Cookies.set('session_token', token);
 
-					if (res.status == true) {
-						const token = res.data.token;
-						Cookies.set('session_token', token);
-						Cookies.set('userId', res.data.user.id);
-						if (role == 'enduser') {
-							toast.success(res.message);
-							Cookies.set('two_step_auth', 'false');
-							router.push('/auth/two-factor-authentication');
-						} else {
-							// toast.success(res.message);
-
-							router.push('/auth/professional/step-2');
-
-						}
-					} else {
-						// toast.error(res.message);
-					}
-				} else {
-					toast.error(res.message);
-				}
-			})
-			.catch(error => { });
-	};
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
 		if (!formData.firstName) {
@@ -124,6 +90,8 @@ export default function CreateProfile() {
 				.then(res => {
 					if (res.status == true) {
 						Cookies.set('userId', res.data.user.id)
+						Cookies.set('email', res.data.user.email)
+						Cookies.set('first_name', res.data.user.first_name)
 						Cookies.remove('legaluserId');
 						if (role == 'enduser') {
 							toast.success(res.message + " please login your account");

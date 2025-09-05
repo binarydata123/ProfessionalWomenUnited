@@ -64,16 +64,31 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                             window.sessionStorage.setItem('payment_pending', 'true');
                         }
 
+                        // if (data.user.signupComplete === false && data.user.role === 'professional') {
+                        //     // router.push('/auth/professional/step-2')
+                        //     router.push('/auth/professional/step-2')
+                        // }
+                        // if (data.user.role === 'enduser' && data.user.otp) {
+                        //     router.push('/auth/two-factor-authentication')
+                        // }
+                        // if (data.user.status != 'deactive' || pathname.includes('/auth/'))
+                        //     setUser(data.user);
                         if (data.user.signupComplete === false && data.user.role === 'professional') {
-                            // router.push('/auth/professional/step-2')
                             router.push('/auth/professional/step-2')
                         }
-                        if (data.user.role === 'enduser' && data.user.otp) {
+                        // Check if two-factor is enabled before redirecting to 2FA page
+                        else if (data.user.role === 'enduser' && data.user.otp && data.user.two_factor_auth === "yes") {
                             router.push('/auth/two-factor-authentication')
                         }
-                        if (data.user.status != 'deactive' || pathname.includes('/auth/'))
+                        // If two-factor is disabled, redirect to dashboard directly
+                        else if (data.user.role === 'enduser' && data.user.two_factor_auth === "no") {
+                            router.push('/dashboard'); // Or your dashboard route
+                        }
+                        else if (data.user.status != 'deactive' || pathname.includes('/auth/')) {
                             setUser(data.user);
-                    } else {
+                        }
+                    }
+                    else {
                         Cookies.remove('session_token');
                         window.sessionStorage.removeItem('token')
                         toast.error(data.message)
@@ -100,11 +115,10 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
         }
     }, []);
 
-
     // const login = async (email: string, password: string) => {
     //     const response = await api.post('/login', { email, password });
     //     if (response.data.status == false) {
-    //         toast.error(response.data.message)
+    //         toast.error(response.data.message);
     //         return;
     //     }
 
@@ -117,20 +131,31 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
     //         window.sessionStorage.setItem('email', email);
     //         setUser(user);
 
-    //         // ✅ Payment pending check
-    //         if (payment_status === 'pending') {
-    //             window.sessionStorage.setItem('payment_pending', 'true');
+    //         // 🔹 Payment check ONLY for professional
+    //         if (user?.role === "professional") {
+    //             if (payment_status === 'pending') {
+    //                 window.sessionStorage.setItem('payment_pending', 'true');
+    //                 toast.error('Please complete your payment.');
+    //             } else {
+    //                 window.sessionStorage.removeItem('payment_pending');
+    //                 if (user?.two_factor_auth === "yes") {
+    //                     toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+    //                 } else {
+    //                     toast.success('User logged in successfully.');
+    //                 }
+    //             }
     //         } else {
     //             window.sessionStorage.removeItem('payment_pending');
+    //             if (user?.two_factor_auth === "yes") {
+    //                 toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
+    //             } else {
+    //                 toast.success('User logged in successfully.');
+    //             }
     //         }
-
-    //         if (user?.two_factor_auth === "yes") {
-    //             toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
-    //         }
-
     //         return response.data.data;
     //     }
     // };
+
     const login = async (email: string, password: string) => {
         const response = await api.post('/login', { email, password });
         if (response.data.status == false) {
@@ -141,35 +166,11 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
         if (response.data.status == true) {
             const { token, user, payment_status } = response.data.data;
 
-            axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-            Cookies.set('session_token', token);
+            // axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+            // Cookies.set('session_token', token);
             Cookies.set('email', email);
             window.sessionStorage.setItem('email', email);
-            setUser(user);
-
-            // if (payment_status === 'pending') {
-            //     window.sessionStorage.setItem('payment_pending', 'true');
-            // } else {
-            //     window.sessionStorage.removeItem('payment_pending');
-            // }
-            // if (user?.two_factor_auth === "yes") {
-            //     toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
-            // }
-
-            // min
-            // if (payment_status === 'pending') {
-            //     window.sessionStorage.setItem('payment_pending', 'true');
-            //     toast.error('Please complete payment');
-            // } else {
-            //     window.sessionStorage.removeItem('payment_pending');
-
-            //     if (user?.two_factor_auth === "yes") {
-            //         toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
-            //     } else {
-            //         toast.success('User logged in successfully.');
-            //     }
-            // }
-
+            // setUser(user);
 
             // 🔹 Payment check ONLY for professional
             if (user?.role === "professional") {
@@ -181,6 +182,9 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                     if (user?.two_factor_auth === "yes") {
                         toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
                     } else {
+                        axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+                        Cookies.set('session_token', token);
+                        setUser(user);
                         toast.success('User logged in successfully.');
                     }
                 }
@@ -189,6 +193,10 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                 if (user?.two_factor_auth === "yes") {
                     toast.success('User logged in successfully. Two-factor authentication code has been sent to your email.');
                 } else {
+                    // Set token only when 2FA = no
+                    axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+                    Cookies.set('session_token', token);
+                    setUser(user);
                     toast.success('User logged in successfully.');
                 }
             }
@@ -196,13 +204,15 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
         }
     };
 
-
     const logout = async (): Promise<void> => {
         const token = Cookies.get("session_token")
         const res = await api.post('/authentication/logout', { token: token });
         if (res.data.status == true) {
             setUser(undefined);
             Cookies.remove('session_token');
+            Cookies.remove('email');
+            Cookies.remove('first_name');
+            Cookies.remove('userId');
             window.sessionStorage.removeItem('token')
             window.sessionStorage.removeItem('temp_user_role')
             window.sessionStorage.removeItem('payment_pending')

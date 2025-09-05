@@ -67,17 +67,16 @@ export default function AboutUs() {
 								<div className="col-12 col-lg-8">
 									<h1 className="font-larger weight-bold social-link mt-5 mobile-m-0 ">
 										{/* Connect{isVisible ? 'ing you to' : ''} */}
-										Connecting you to
+										Connecting You with
 										<br />
 										<span className="green-medium-2 ">
 											{/* Legal {isVisible ? 'experts' : ''}. */}
-											Professional experts
+											Trusted Professionals
 
 										</span>
 									</h1>
 									<p className="weight-bold social-link font-medium mt-4">
-										Something about how Professional Women United provides value to professionals, specifically
-										financialy.
+										At Professional Women United, our mission is simple: to connect individuals and businesses with reliable, experienced professionals who can deliver real results.
 									</p>
 
 									<div className="lawyers-online-img  mt-4 mb-4">
@@ -126,18 +125,18 @@ export default function AboutUs() {
 												250+ Professionals & Growing
 												<div className="blinking"></div>
 											</li>
-											<li>
+											{/* <li>
 												<div className="lawyers-online">
 													<h4 className="d-flex align-items-center gap-1">
 														4700+ <span> Cases Resolved</span>
 													</h4>
 												</div>
-											</li>
+											</li> */}
 										</ul>
 									</div>
 
 									<div
-										className="about-btn-two mt-5"
+										className="about-btn-two mt-2"
 										style={srollcount ? { visibility: 'hidden' } : { visibility: 'visible' }}
 									>
 										<button className="btn-get-free btn-commn  w-100-percentue">
@@ -180,10 +179,11 @@ export default function AboutUs() {
 							<div className="col-lg-6">
 								<div className="our-story-text">
 									<p>
-										Established in 2014, our company is a professional advice platform that connects
+										{/* Established in 2014, our company is a professional advice platform that connects
 										clients with top-rated professionals across the USA. With our user-friendly platform,
 										clients can easily find and connect with experienced professionals, while professionals can
-										efficiently manage their practice and expand their client base.
+										efficiently manage their practice and expand their client base. */}
+										our story- Founded in 2014, Professional Women United was created with a simple vision—to make professional guidance accessible, trustworthy, and impactful. Over the years, we have grown into a community of more than 250 experienced experts, helping over 4,700 clients across the USA achieve clarity, overcome challenges, and move forward with confidence. Our platform serves both sides of the journey: clients gain quick access to top-rated professionals they can rely on, while professionals benefit from tools that help them expand their reach and manage their practice with ease. At Professional Women United, we are more than a platform—we are a network where knowledge meets opportunity and meaningful connections drive real results.
 									</p>
 								</div>
 							</div>
@@ -197,16 +197,17 @@ export default function AboutUs() {
 							<div className="col-lg-6">
 								<div className="find-text">
 									<h2>
-										Find the right <br /> professional...
+										Find the right <br /> Professional...
 									</h2>
 									<p>
-										Are you looking for a{' '}
+										{/* Are you looking for a{' '}
 										<Link className="underlineClass" href="/find-a-professional">
 											professional consultant in Usa{' '}
-										</Link>
-										to help you with your case? Professional Women United is the ideal place to find it. Our
-										professional advisors can give you the support you need to go through any type of professional
-										trouble you may be having. Find the perfect professional with our help!
+										</Link> */}
+										Looking for trusted guidance to move forward with confidence? At Professional Women United, we make it easy to connect with experienced consultants across the USA. Whether you need advice for your business, career, finances, or personal growth, our network of experts is here to support you every step of the way.
+										<br></br>
+										With just a few clicks, you can find the perfect professional who understands your needs and is ready to help you achieve your goals.
+
 									</p>
 									<Link href={'/find-a-professional'}>
 										<button className="btn-commn">Find A Professional</button>
@@ -229,13 +230,15 @@ export default function AboutUs() {
 								<div className="find-text cover-padding">
 									<h2>Or the right client...</h2>
 									<p className="p-0">
-										If you are a professional looking to put your knowledge into practice, this is the
+										{/* If you are a professional looking to put your knowledge into practice, this is the
 										ideal place for you.{' '}
 										<Link className="underlineClass" href="/">
 											Professional Women United
 										</Link>{' '}
 										is the space were you can find users looking for professional advice in real time. Make
-										the most out of your expertise and find the ideal clients to support here.
+										the most out of your expertise and find the ideal clients to support here. */}
+										Ready to put your expertise into action? This is the place to connect directly with people actively looking for professional advice. Showcase your skills, grow your practice, and build meaningful client relationships—all in real time.
+
 									</p>
 									<Link href="/auth/create-profile/?role=professional">
 										<button className="btn-commn">Join As Professional</button>
@@ -276,14 +279,8 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												If you are a professional proficient in USA professional, all you have to do is go to
-												our “For Professionals” section and create your Professional Women United account.
-												Creating a{' '}
-												<Link className="underlineClass" href="/find-a-professional">
-													professional expert
-												</Link>{' '}
-												profile with us only takes a few minutes. And then, you can start
-												providing your support to individuals in need.
+												If you are a professional proficient in your field in the USA, go to our “For Professionals” section and create your Professional Women United account. Setting up a professional expert profile only takes a few minutes. Once your profile is ready, you can start providing support to individuals in need.
+
 											</div>
 										</div>
 									</div>
@@ -307,8 +304,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												The fees will go according to the type of services you require and the
-												professional working with you.
+												Fees may vary depending on the type of consultation or service offered. Professionals are encouraged to review our fee structure when setting up their profile. For more detailed information, you can contact our support team.
 											</div>
 										</div>
 									</div>
@@ -332,12 +328,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												Usually, clients select the professional they want according to the{' '}
-												<Link className="underlineClass" href="/find-a-professional">
-													professional services
-												</Link>{' '}
-												they need, their location, language, Profession, and other
-												characteristics.
+												Client requests are matched based on your expertise, availability, and the specific needs of the client. This ensures that each client receives support from the most suitable professional.
 											</div>
 										</div>
 									</div>
@@ -362,8 +353,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												As a professional, you can go to your profile and easily update your
-												information with just a few clicks.
+												You can update your profile information at any time by logging into your Professional Women United account and navigating to the “Edit Profile” section. Keep your information up to date to ensure clients have the most accurate details about your services.
 											</div>
 										</div>
 									</div>
@@ -388,9 +378,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												When they need to, professionals can cancel consultations with scheduled
-												clients. However, they must not disclose the information they received
-												before the appointment with any other person.
+												If you need to cancel a consultation, please notify the client as soon as possible through the platform. Rescheduling options may be available, and repeated cancellations could affect your professional profile rating.
 											</div>
 										</div>
 									</div>
@@ -413,8 +401,7 @@ export default function AboutUs() {
 								<div className="still">
 									<h3 className="font-xxx-large weight-bold text-white">Still have questions?</h3>
 									<p className="font-medium weight-light text-white mt-3">
-										If you have any additional questions or need assistance with signing up, please
-										don't hesitate to contact our support team. We're always here to help!
+										If you have any additional questions or need assistance with signing up, our support team is here to help. Don’t hesitate to reach out—we’re always happy to assist you!
 									</p>
 									<Link href={'/contact-us'}>
 										<button className="bg-893168 weight-semi-bold font-small icon-big mt-4 transtion">

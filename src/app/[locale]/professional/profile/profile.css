@@ -1,5 +1,6 @@
 .bg-profile {
-	background: var(--green-light);
+	/* background: var(--green-light); */
+	background: #153060;
 }
 
 a.dropdown-item:hover {
