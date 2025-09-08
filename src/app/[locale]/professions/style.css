@@ -1,0 +1,157 @@
+:root {
+	--navy: #02142d;
+	--coral: #d5645f;
+	--tan: #be8363;
+}
+
+.text-navy {
+	color: var(--navy);
+}
+
+.text-coral {
+	color: var(--coral);
+}
+
+.text-tan {
+	color: var(--tan);
+}
+
+.bg-navy {
+	background-color: var(--navy);
+}
+
+.bg-coral {
+	background-color: var(--coral);
+}
+
+.bg-tan {
+	background-color: var(--tan);
+}
+
+.btn-coral {
+	background-color: var(--coral);
+	color: white;
+	border-color: var(--coral);
+}
+
+.btn-coral:hover {
+	background-color: #c25a55;
+	border-color: #c25a55;
+	color: white;
+}
+
+.btn-tan {
+	background-color: var(--tan);
+	color: white;
+	border-color: var(--tan);
+}
+
+.btn-tan:hover {
+	background-color: #a9725a;
+	border-color: #a9725a;
+	color: white;
+}
+
+.border-coral {
+	border-color: var(--coral) !important;
+}
+
+/* Professional card styles */
+.professional-card-data {
+	background: white;
+	border-radius: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	overflow: hidden;
+	height: 100%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.professional-card-data:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+	border-color: var(--coral);
+}
+
+.profile-icon {
+	width: 60px;
+	height: 60px;
+	background: linear-gradient(to bottom right, var(--coral), var(--tan));
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.professional-name {
+	color: var(--navy);
+	font-weight: 600;
+}
+
+.rating {
+	color: #ffc107;
+}
+
+.experience-badge {
+	color: var(--coral);
+	font-weight: 500;
+}
+
+.info-icon {
+	color: var(--tan);
+	width: 16px;
+}
+
+.specialty-badge {
+	background: linear-gradient(to right, rgba(213, 100, 95, 0.1), rgba(190, 131, 99, 0.1));
+	color: var(--navy);
+	border: 1px solid rgba(213, 100, 95, 0.2);
+	border-radius: 20px;
+	padding: 4px 12px;
+	font-size: 0.8rem;
+}
+
+.availability-text {
+	color: var(--coral);
+	font-weight: 500;
+}
+
+.location-text {
+	color: var(--tan);
+}
+
+.page-title {
+	color: var(--navy);
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	font-size: 2.5rem;
+}
+
+/* For other cards in your application */
+.card-hover {
+	transition: all 0.3s ease;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.card-hover:hover {
+	transform: translateY(-8px);
+	box-shadow:
+		0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+	border-color: var(--coral) !important;
+}
+
+.min-vh-100 {
+	min-height: 100vh;
+}
+
+.transition-all {
+	transition: all 0.3s ease;
+}
+
+@media (max-width: 767px) {
+	.show-mobile {
+		margin-top: 20px;
+	}
+}

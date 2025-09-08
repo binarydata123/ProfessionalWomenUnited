@@ -269,25 +269,59 @@ export default function Page({ filterlawyer }: Props) {
 	);
 
 	// Handle checkbox changes
+	// const handleCheckboxChange = (type: string, value: string, checked: boolean) => {
+	// 	setAppliedFilters(prev => {
+	// 		const currentValues = prev[type as keyof typeof prev] as string[];
+
+	// 		if (checked) {
+	// 			// Add the value
+	// 			return {
+	// 				...prev,
+	// 				[type]: [...currentValues, value]
+	// 			};
+	// 		} else {
+	// 			// Remove the value
+	// 			return {
+	// 				...prev,
+	// 				[type]: currentValues.filter(item => item !== value)
+	// 			};
+	// 		}
+	// 	});
+	// };
+	// Replace the handleCheckboxChange function with this:
 	const handleCheckboxChange = (type: string, value: string, checked: boolean) => {
 		setAppliedFilters(prev => {
 			const currentValues = prev[type as keyof typeof prev] as string[];
+			let newValues;
 
 			if (checked) {
-				// Add the value
-				return {
-					...prev,
-					[type]: [...currentValues, value]
-				};
+				newValues = [...currentValues, value];
 			} else {
-				// Remove the value
-				return {
-					...prev,
-					[type]: currentValues.filter(item => item !== value)
-				};
+				newValues = currentValues.filter(item => item !== value);
 			}
+
+			const newFilters = {
+				...prev,
+				[type]: newValues
+			};
+
+			// Automatically apply filters when checkbox changes
+			const newFilterData = {
+				...filterData,
+				p_service_name: newFilters.professions.length > 0 ? newFilters.professions.join(',') : null,
+				p_state_name: newFilters.states.length > 0 ? newFilters.states.join(',') : null,
+				p_country_name: newFilters.cities.length > 0 ? newFilters.cities.join(',') : null
+			};
+
+			setFilterData(newFilterData);
+			handleLawyers(newFilterData, 1);
+
+			return newFilters;
 		});
 	};
+
+	// Remove the applyFilters function since it's no longer needed
+	// Remove the applyFiltersBtn from the sidebar footer
 
 	// Filter states based on search term
 	const filteredStates = states.filter((state: any) =>
