@@ -52,7 +52,8 @@ const DirectoryTabs = () => {
       const res: any = await getAllCountries(); // API call
       if (res.status && res.data) {
         // API returns data array
-        const cityNames = res.data.slice(0, 200).map((c: any) => `${c.name}`);
+        // const cityNames = res.data.slice(0, 200).map((c: any) => `${c.name}`);
+        const cityNames = res.data.map((c: any) => `${c.name}`);
         setAllCities(cityNames);
         setFilteredCities(cityNames);
       } else {
