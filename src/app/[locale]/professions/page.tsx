@@ -4,7 +4,6 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { FaArrowLeft, FaMapMarkerAlt, FaSpinner } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-import { PROFESSIONALS } from '../data/professionalsData';
 import { STATES } from '../data/statesData';
 import ProfessionalCard from '../components/searchbyStates/ProfessionalCard';
 import { getMembersByService } from '../../../../lib/frontendapi';
