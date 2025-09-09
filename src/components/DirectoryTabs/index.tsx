@@ -223,9 +223,9 @@ const DirectoryTabs = () => {
 
       <style jsx>{`
         .professional-card {
-          background: white;
+          background: white ;
           border-radius: 8px;
-          padding: 1rem;
+          padding: 1rem !important;
           border: 1px solid #e9ecef;
           transition: all 0.3s ease;
           cursor: pointer;
