@@ -183,11 +183,11 @@ export default function USStatesPage() {
         <div className="min-vh-100 bg-light py-5">
             <div className="container">
                 <div className="row justify-content-center mt-5">
-                    <div className="col-12 col-xxl-10">
+                    <div className="col-12 col-xxl-10 setmargin-above">
 
                         <Link
                             href='/'
-                            className="flex items-center space-x-2 text-coral hover:text-navy transition-colors duration-200 mb-4"
+                            className="flex items-center space-x-2 text-coral hover:text-navy transition-colors duration-200 mb-4 mt-2"
                         >
                             <IoIosArrowBack className="me-2" />
                             <span>Back</span>
