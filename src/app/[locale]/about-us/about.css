@@ -314,7 +314,8 @@ button.btn-get-free.btn-commn.ml-2 {
 	}
 	.font-larger {
 		font-size: 32px !important;
-		padding-top: 80px;
+		/* padding-top: 80px; */
+		padding-top: 0px;
 		line-height: 48px !important;
 	}
 	.font-smaller {
@@ -419,5 +420,11 @@ button.bg-893168.weight-semi-bold.font-small.icon-big.mt-4.transtion:hover {
 	}
 	.btn-get-free.btn-commn.w-100-percentue {
 		width: 100%;
+	}
+}
+
+@media (min-width: 1700px) {
+	img.banner-img.effect {
+		min-width: 500px;
 	}
 }

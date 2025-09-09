@@ -40,7 +40,7 @@ export default function Profile() {
 		user?.id ? setUserId(user?.id) : setUserId('');
 		fetchProfileOverview(user?.id, selectedValue);
 		fetchProfileDetails(user?.id);
-	}, []);
+	}, [user]);
 
 	const handleDropdownChange = (event: any) => {
 		const selectedValue = event.target.getAttribute('data-value');

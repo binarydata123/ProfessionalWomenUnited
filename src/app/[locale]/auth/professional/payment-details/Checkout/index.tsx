@@ -125,6 +125,8 @@ export default function Checkout() {
                                     window.sessionStorage.setItem('payment_status', 'paid');
                                     // window.sessionStorage.setItem('payment_pending', 'false');
                                     window.sessionStorage.setItem('payment_pending', JSON.stringify(false));
+                                    Cookies.remove('session_token')
+
                                     router.push('/auth/professional/verify-otp');
                                 });
                             } else {
@@ -140,6 +142,7 @@ export default function Checkout() {
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
                                     window.sessionStorage.setItem('payment_pending', 'false');
+                                    Cookies.remove('session_token')
                                     // window.sessionStorage.setItem('payment_pending', JSON.stringify(false)); 
                                     router.push('/auth/professional/verify-otp');
                                 });

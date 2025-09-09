@@ -125,10 +125,13 @@ const OTPInputGroup = () => {
 
 	const handleresendTwoSetpAuthVerifyOtpSubmit = () => {
 		setIsLoadingTwo(true);
+		const email = Cookies.get('email');
+		const id = Cookies.get('userId');
+
 		const data = {
-			user_id: user?.id,
+			user_id: user?.id || id,
 			user_name: user?.username,
-			user_email: user?.email
+			user_email: user?.email || email,
 		};
 		resendTwoSetpAuthVerifyOtp(data)
 			.then(res => {

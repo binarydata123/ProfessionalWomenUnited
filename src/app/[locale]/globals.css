@@ -864,7 +864,7 @@ li {
 }
 
 .nav-tab ul li.active a {
-	border-bottom: 1px solid var(--green-medium-1);
+	border-bottom: 1px solid #153060;
 	color: var(--green-medium-2);
 	font-weight: var(--weight-semi-bold);
 }

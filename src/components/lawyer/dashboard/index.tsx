@@ -122,7 +122,7 @@ export default function LawyerDashboard() {
 					console.error(error);
 				});
 		}
-	}, [router]);
+	}, [user, router]);
 
 	return (
 		<>

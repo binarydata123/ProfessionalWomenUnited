@@ -33,7 +33,7 @@ export default function Page() {
 		fetchInboxInquiries(user?.id, 'index');
 		fetchSavedInquiries(user?.id, 'saved');
 		setIsFetchingData(false);
-	}, []);
+	}, [user]);
 
 	const handleMessageTabs = (message: string) => {
 		fetchSavedInquiries(user_id, 'saved');
