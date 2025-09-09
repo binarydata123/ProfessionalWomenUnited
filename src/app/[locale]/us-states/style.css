@@ -1,6 +1,6 @@
 :root {
 	--navy: #02142d;
-	--coral: #d5645f;
+	--coral: #c3221b;
 	--tan: #be8363;
 }
 
@@ -113,7 +113,9 @@
 	justify-content: center;
 	margin-right: 0.75rem;
 }
-
+.setmargin-above {
+	margin-top: 10px !important;
+}
 @media (max-width: 1200px) {
 	.show-mobile {
 		margin-top: 35px !important;
@@ -126,5 +128,8 @@
 	.lead {
 		font-size: 16px !important;
 		font-weight: 300;
+	}
+	.setmargin-above {
+		margin-top: 30px !important;
 	}
 }

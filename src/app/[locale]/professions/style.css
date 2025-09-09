@@ -1,6 +1,6 @@
 :root {
 	--navy: #02142d;
-	--coral: #d5645f;
+	--coral: #c3221b;
 	--tan: #be8363;
 }
 
@@ -153,5 +153,8 @@
 @media (max-width: 767px) {
 	.show-mobile {
 		margin-top: 20px;
+	}
+	.setmargin-above {
+		margin-top: 55px !important;
 	}
 }

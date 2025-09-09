@@ -1,6 +1,6 @@
 :root {
 	--navy: #02142d;
-	--coral: #d5645f;
+	--coral: #c3221b;
 	--tan: #be8363;
 }
 
@@ -156,5 +156,8 @@
 	}
 	.page-title {
 		font-size: 22px !important;
+	}
+	h1.page-title {
+		margin-top: 15px;
 	}
 }
