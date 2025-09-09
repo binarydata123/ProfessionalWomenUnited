@@ -52,7 +52,7 @@ export default function Page({ params }: { params: { id: string } }) {
 			user?.id ? setUserId(user?.id) : setUserId('');
 		getAllCountriesData();
 		getSingleUserDetailsData(params.id);
-	}, []);
+	}, [user]);
 
 	const getAllCountriesData = async () => {
 		try {

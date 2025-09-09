@@ -106,6 +106,13 @@ const OTPInputGroup = () => {
 			checkEmailVerfiyOTP(data)
 				.then(res => {
 					if (res.status == true) {
+						window.sessionStorage.removeItem('temp_user_role')
+						window.sessionStorage.removeItem('payment_pending')
+						window.sessionStorage.removeItem('payment_status')
+						window.sessionStorage.removeItem('temp_plan_type')
+						window.sessionStorage.removeItem('temp_user_role')
+						window.sessionStorage.removeItem('temp_plan_amount')
+						Cookies.remove('userId')
 						toast.success(res.message);
 						Cookies.remove('session_token');
 						setTimeout(() => {
@@ -135,6 +142,7 @@ const OTPInputGroup = () => {
 		resendEmailVerifyOtp(data)
 			.then(res => {
 				if (res.status == true) {
+
 					toast.success(res.message);
 					setIsLoading(false);
 				} else {

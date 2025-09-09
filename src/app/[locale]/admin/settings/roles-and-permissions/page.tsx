@@ -62,7 +62,7 @@ export default function Page() {
 		if (user)
 			user?.id ? setUserId(user?.id) : setUserId('');
 		handleChange('sort_by', '', user?.id);
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);

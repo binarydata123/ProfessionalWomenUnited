@@ -59,7 +59,7 @@ export default function Page() {
 			user?.id ? setUserId(user?.id) : setUserId('');
 			handleChange('status', '', user?.id);
 		}
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);

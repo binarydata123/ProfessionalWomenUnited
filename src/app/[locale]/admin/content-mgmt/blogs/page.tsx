@@ -40,7 +40,7 @@ export default function blog() {
 			getAllServicesData();
 			handleChange('sort_by', '', user?.id);
 		}
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);

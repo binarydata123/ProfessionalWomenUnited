@@ -74,7 +74,7 @@ export default function LawyerChoosePlan() {
         if (role === "professional") {
             getAllMemberShipPlanData();
         } else {
-            router.push("/auth/login45454");
+            router.push("/auth/login");
         }
     }, []);
 

@@ -99,6 +99,7 @@ export default function CreateProfile() {
 						} else {
 							const token = res.data.token;
 							Cookies.set('session_token', token);
+							Cookies.set('first_name', formData.firstName);
 							window.location.href = '/auth/professional/step-2';
 						}
 					}

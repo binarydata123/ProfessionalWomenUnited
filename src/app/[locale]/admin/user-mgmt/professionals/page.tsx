@@ -56,7 +56,7 @@ export default function lawyers() {
 			getAllCountriesData();
 			handleChange('status', 'active', user?.id);
 		}
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);

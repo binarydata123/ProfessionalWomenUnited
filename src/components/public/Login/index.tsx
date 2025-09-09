@@ -66,6 +66,7 @@ export default function Login() {
 			.then((res: any) => {
 				setIsLoading(false);
 				if (!res) return;
+				Cookies.set("userId", res.user.id, { expires: 1 });
 				// Cookies.set('two_factor_auth', res.user.two_factor_auth)
 				// 🔹 Step 1: Payment check
 				if (res.user.role === "professional") {
