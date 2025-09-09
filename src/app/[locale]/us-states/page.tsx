@@ -8,6 +8,7 @@ import { City } from '../types';
 import './style.css';
 import CityCard from '../components/searchbyStates/CityCard';
 import { getCitiesByState, getAllStates } from '../../../../lib/frontendapi';
+import { IoIosArrowBack } from "react-icons/io";
 
 // Add this helper function to get state abbreviation from name
 const getStateAbbreviation = (stateName: string): string => {
@@ -183,11 +184,20 @@ export default function USStatesPage() {
             <div className="container">
                 <div className="row justify-content-center mt-5">
                     <div className="col-12 col-xxl-10">
+
+                        <Link
+                            href='/'
+                            className="flex items-center space-x-2 text-coral hover:text-navy transition-colors duration-200 mb-4"
+                        >
+                            <IoIosArrowBack className="me-2" />
+                            <span>Back</span>
+                        </Link>
                         {currentState && (
                             <>
                                 <div className="text-center mb-5 mt-3 show-mobile">
-                                    <h2 className="fw-bold text-navy mb-3">Cities in {currentState.state}</h2>
+                                    <h2 className="fw-bold text-navy mb-2">Cities in {currentState.state}</h2>
                                     <p className="lead text-tan">Select a city to find professionals</p>
+
                                 </div>
 
                                 {/* Search bar */}

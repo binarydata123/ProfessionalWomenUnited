@@ -13,7 +13,7 @@ function ChooseProfile() {
             <div className="are-loking">
                 <Link href="/auth/create-profile" onClick={() => handleRoleSelection('professional')}>
                     <h4>Are you a professional woman?</h4>
-                    <p>Get recognized in your city and grow your network.</p>
+                    <p>Did you receive an invitation recognizing you as the best in your city?</p>
                     <div className="d-flex align-items-center gap-2">
                         <span className="same-color-sign">Sign Up Now</span>
                         <span className="~border-radius-1 banner-arrow-btn Sign-btn">

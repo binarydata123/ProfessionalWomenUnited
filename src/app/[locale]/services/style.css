@@ -29,14 +29,14 @@
 }
 
 .btn-coral {
-	background-color: var(--coral);
+	background-color: #c3221b;
 	color: white;
-	border-color: var(--coral);
+	border-color: #c3221b;
 }
 
 .btn-coral:hover {
-	background-color: #c25a55;
-	border-color: #c25a55;
+	background-color: #c3221b;
+	border-color: #c3221b;
 	color: white;
 }
 

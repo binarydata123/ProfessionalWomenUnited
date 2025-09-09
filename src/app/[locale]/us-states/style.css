@@ -29,19 +29,19 @@
 }
 
 .btn-coral {
-	background-color: var(--coral);
+	background-color: #c3221b;
 	color: white;
-	border-color: var(--coral);
+	border-color: #c3221b;
 }
 
 .btn-coral:hover {
-	background-color: #c25a55;
-	border-color: #c25a55;
+	background-color: #c3221b;
+	border-color: #c3221b;
 	color: white;
 }
 
 .border-coral {
-	border-color: var(--coral) !important;
+	border-color: #c3221b !important;
 }
 
 .search-box {
@@ -118,6 +118,9 @@
 	.show-mobile {
 		margin-top: 35px !important;
 	}
+}
+.lead {
+	font-size: 18px !important;
 }
 @media (max-width: 767px) {
 	.lead {
