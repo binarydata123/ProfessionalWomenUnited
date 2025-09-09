@@ -8,6 +8,7 @@ import ServiceCard from '../components/searchbyStates/ServiceCard';
 import './style.css';
 import { useEffect, useState } from 'react';
 import { getAllServices, getProfessionsByCity } from '../../../../lib/frontendapi';
+import { IoIosArrowBack } from 'react-icons/io';
 
 export default function ServicesPage() {
     const searchParams = useSearchParams();
@@ -73,13 +74,13 @@ export default function ServicesPage() {
                     <div className="row justify-content-center">
                         <div className="col-12 col-lg-10 col-xl-8">
                             {/* Back Button */}
-                            {/* <Link
+                            <Link
                                 href={`/us-states?state=${encodeURIComponent(state.name)}`}
                                 className="flex items-center space-x-2 text-coral hover:text-navy transition-colors duration-200 mb-4"
                             >
-                                <FaArrowLeft className="me-2" />
-                                <span>Back to Cities</span>
-                            </Link> */}
+                                <IoIosArrowBack className="me-2" />
+                                <span>Back</span>
+                            </Link>
 
                             {/* Page Title - Updated with Bootstrap styling */}
                             <div className="text-center mb-5">

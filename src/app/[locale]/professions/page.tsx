@@ -8,6 +8,7 @@ import { STATES } from '../data/statesData';
 import ProfessionalCard from '../components/searchbyStates/ProfessionalCard';
 import { getMembersByService } from '../../../../lib/frontendapi';
 import './style.css'
+import { IoIosArrowBack } from 'react-icons/io';
 
 interface Service {
     id: number;
@@ -145,13 +146,13 @@ export default function ProfessionalsPage() {
                 <div className="row justify-content-center">
                     <div className="col-12 mt-5">
                         {/* Back Button */}
-                        {/* <Link
+                        <Link
                             href={`/services?state=${encodeURIComponent(state.name)}&city=${encodeURIComponent(city)}`}
-                            className="text-primary text-decoration-none d-inline-flex align-items-center mb-4"
+                            className="flex items-center space-x-2 text-coral hover:text-navy transition-colors duration-200 mb-4"
                         >
-                            <FaArrowLeft className="me-2" />
-                            <span>Back to Services</span>
-                        </Link> */}
+                            <IoIosArrowBack className="me-2" />
+                            <span>Back</span>
+                        </Link>
 
                         {/* Page Title - Updated with Bootstrap styling */}
                         <div className="text-center mb-5 show-mobile">
