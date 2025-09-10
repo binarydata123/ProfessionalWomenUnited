@@ -643,7 +643,7 @@ export default function Page() {
 											aria-expanded="false"
 											aria-controls="collapseFive"
 										>
-											What happens if I need to cancel a consultation with a client?
+											How do I nominate a professional woman for membership?
 										</button>
 									</h2>
 									<div
@@ -653,9 +653,33 @@ export default function Page() {
 										data-bs-parent="#accordionExample"
 									>
 										<div className="accordion-body border-0">
-											This is the third item's accordion body. It is hidden by default, until the
-											collapse plugin adds the appropriate classes that we use to style each
-											element.
+											Please email all nominations to:&nbsp;
+											<a href="mailto:nominate@professionalwomenunited.com">
+												nominate@professionalwomenunited.com
+											</a>										</div>
+									</div>
+								</div>
+								<div className="accordion-item">
+									<h2 className="accordion-header" id="headingSix">
+										<button
+											className="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseSix"
+											aria-expanded="false"
+											aria-controls="collapseSix"
+										>
+											What are the fees associated with using the platform?
+										</button>
+									</h2>
+									<div
+										id="collapseSix"
+										className="accordion-collapse collapse"
+										aria-labelledby="headingSix"
+										data-bs-parent="#accordionExample"
+									>
+										<div className="accordion-body border-0">
+											We never charge the public for using our platform to find the best woman professionals in their area.
 										</div>
 									</div>
 								</div>
