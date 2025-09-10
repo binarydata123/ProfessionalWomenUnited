@@ -138,7 +138,7 @@ const AuthContextProvider = ({ children, locale }: AuthContextProp) => {
                     setUser(user);
                     toast.error('Please complete your payment.');
 
-                    // Agar Next.js ka router use kar rahe ho
+                    // Agar Next.js 
                     router.push('/auth/professional/choose-pricing-plan');
                     return;
                 } else {

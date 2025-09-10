@@ -183,7 +183,7 @@ export default function AboutUs() {
 										clients with top-rated professionals across the USA. With our user-friendly platform,
 										clients can easily find and connect with experienced professionals, while professionals can
 										efficiently manage their practice and expand their client base. */}
-										our story- Founded in 2014, Professional Women United was created with a simple vision—to make professional guidance accessible, trustworthy, and impactful. Over the years, we have grown into a community of more than 250 experienced experts, helping over 4,700 clients across the USA achieve clarity, overcome challenges, and move forward with confidence. Our platform serves both sides of the journey: clients gain quick access to top-rated professionals they can rely on, while professionals benefit from tools that help them expand their reach and manage their practice with ease. At Professional Women United, we are more than a platform—we are a network where knowledge meets opportunity and meaningful connections drive real results.
+										our story- Founded in 2025, Professional Women United is a new organization with a simple vision—to make it easy for consumers to find expert women professionals in their city. We have already grown into a community of more than 250 experienced experts, helping over 4,700 clients across the USA achieve clarity, overcome challenges, and move forward with confidence. Our platform serves both sides of the journey: clients gain quick access to top-rated professionals they can rely on, while professionals get recognized for being the best in their respective city and profession. They also benefit from tools that help them expand their reach and manage their practice with ease. At Professional Women United, we are more than a platform—we are a network where knowledge meets opportunity and meaningful connections drive real results.
 									</p>
 								</div>
 							</div>
@@ -279,7 +279,7 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												If you are a professional proficient in your field in the USA, go to our “For Professionals” section and create your Professional Women United account. Setting up a professional expert profile only takes a few minutes. Once your profile is ready, you can start providing support to individuals in need.
+												Membership is by invitation only and is strictly reserved for the professional women that have been selected as the best in their respective city and profession. If you have received an invitation then, go to our “For Professionals” section and create your Professional Women United account. Setting up a professional expert profile only takes a few minutes. Once your profile is ready, you can start providing support to individuals in need.
 
 											</div>
 										</div>
@@ -368,7 +368,7 @@ export default function AboutUs() {
 												aria-expanded="false"
 												aria-controls="collapseFive"
 											>
-												What happens if I need to cancel a consultation with a client?
+												How do I nominate a professional woman for membership?
 											</button>
 										</h2>
 										<div
@@ -378,7 +378,33 @@ export default function AboutUs() {
 											data-bs-parent="#accordionExample"
 										>
 											<div className="accordion-body border-0">
-												If you need to cancel a consultation, please notify the client as soon as possible through the platform. Rescheduling options may be available, and repeated cancellations could affect your professional profile rating.
+												Please email all nominations to:&nbsp;
+												<a href="mailto:nominate@professionalwomenunited.com" style={{ color: '#153060' }}>
+													nominate@professionalwomenunited.com
+												</a>											</div>
+										</div>
+									</div>
+									<div className="accordion-item">
+										<h2 className="accordion-header" id="headingSix">
+											<button
+												className="accordion-button collapsed"
+												type="button"
+												data-bs-toggle="collapse"
+												data-bs-target="#collapseSix"
+												aria-expanded="false"
+												aria-controls="collapseSix"
+											>
+												What are the fees associated with using the platform?
+											</button>
+										</h2>
+										<div
+											id="collapseSix"
+											className="accordion-collapse collapse"
+											aria-labelledby="headingSix"
+											data-bs-parent="#accordionExample"
+										>
+											<div className="accordion-body border-0">
+												We never charge the public for using our platform to find the best woman professionals in their area.
 											</div>
 										</div>
 									</div>
