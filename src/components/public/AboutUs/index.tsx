@@ -284,7 +284,7 @@ export default function AboutUs() {
 											</div>
 										</div>
 									</div>
-									<div className="accordion-item">
+									{/* <div className="accordion-item">
 										<h2 className="accordion-header" id="headingTwo">
 											<button
 												className="accordion-button collapsed"
@@ -307,7 +307,7 @@ export default function AboutUs() {
 												Fees may vary depending on the type of consultation or service offered. Professionals are encouraged to review our fee structure when setting up their profile. For more detailed information, you can contact our support team.
 											</div>
 										</div>
-									</div>
+									</div> */}
 									<div className="accordion-item">
 										<h2 className="accordion-header" id="headingThree">
 											<button
