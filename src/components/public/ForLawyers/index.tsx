@@ -553,7 +553,7 @@ export default function Page() {
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								{/* <div className="accordion-item">
 									<h2 className="accordion-header" id="headingTwo">
 										<button
 											className="accordion-button collapsed"
@@ -578,7 +578,7 @@ export default function Page() {
 											element.
 										</div>
 									</div>
-								</div>
+								</div> */}
 								<div className="accordion-item">
 									<h2 className="accordion-header" id="headingThree">
 										<button
@@ -659,7 +659,7 @@ export default function Page() {
 											</a>										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								{/* <div className="accordion-item">
 									<h2 className="accordion-header" id="headingSix">
 										<button
 											className="accordion-button collapsed"
@@ -682,7 +682,7 @@ export default function Page() {
 											We never charge the public for using our platform to find the best woman professionals in their area.
 										</div>
 									</div>
-								</div>
+								</div> */}
 							</div>
 						</div>
 						<div className="col-lg-12 col-xl-5 col-md-12">
