@@ -35,7 +35,7 @@ export default function ChooseProfile() {
 			<div className="main-login chooseProfile top-sp-big">
 				<Link href="/" className="backtobtn mb-5">
 					<ArrowSmallLeftIcon width={20} />
-					Back
+					Back to Home Page
 				</Link>
 				<h1>
 					<span>Join Our </span>Professional Women's Network

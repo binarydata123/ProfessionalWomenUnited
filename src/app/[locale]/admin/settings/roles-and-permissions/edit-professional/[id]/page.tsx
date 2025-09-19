@@ -361,6 +361,10 @@ export default function Page({ params }: { params: { id: string } }) {
 		setIsLoading(true);
 		const isValid = validateForm();
 		if (isValid) {
+			const toNullIfEmpty = (value: any) => {
+				if (value === "" || value === "null") return null;
+				return value;
+			};
 			const data = {
 				id: params.id,
 				user_id: user_id,
@@ -368,19 +372,19 @@ export default function Page({ params }: { params: { id: string } }) {
 				last_name: formData.last_name,
 				phone_number: formData.phone_number,
 				gender: 'female',
-				address: formData.address,
-				zip: formData.zip,
-				website_link: formData.website_link,
+				address: toNullIfEmpty(formData.address),
+				zip: toNullIfEmpty(formData.zip),
+				website_link: toNullIfEmpty(formData.website_link),
 				location: formData.location,
-				linkedin_url: formData.linkedin_url,
-				license_number: formData.license_number,
-				acquired: formData.acquired,
+				linkedin_url: toNullIfEmpty(formData.linkedin_url),
+				license_number: toNullIfEmpty(formData.license_number),
+				acquired: toNullIfEmpty(formData.acquired),
 				status: formData.status,
-				designation: formData.designation,
-				company_name: formData.company_name,
-				firm_id: formData.firm_id,
-				bio: formData.bio,
-				jurisdiction: formData.jurisdiction,
+				designation: toNullIfEmpty(formData.designation),
+				company_name: toNullIfEmpty(formData.company_name),
+				firm_id: toNullIfEmpty(formData.firm_id),
+				bio: toNullIfEmpty(formData.bio),
+				jurisdiction: toNullIfEmpty(formData.jurisdiction),
 				primary_practice_area: formData.primary_practice_area,
 				practice_areas: formData.practice_areas,
 				specialization: formData.selectedSpecializationIds,
@@ -388,9 +392,11 @@ export default function Page({ params }: { params: { id: string } }) {
 					? Object.keys(formData.paymentMethods)
 						.filter(method => formData.paymentMethods[method])
 						.join(', ')
-					: '',
-				free_consultation_duration: isFreeConsultationChecked ? formData.free_consultation_duration : '',
-				hourly_rate: isFreeConsultationChecked ? formData.hourly_rate : '',
+					: null,
+				free_consultation_duration: isFreeConsultationChecked ?
+					toNullIfEmpty(formData.free_consultation_duration) : null,
+				hourly_rate: isFreeConsultationChecked ?
+					toNullIfEmpty(formData.hourly_rate) : null,
 				profile_image: image,
 				plan: formData.plan
 			};
