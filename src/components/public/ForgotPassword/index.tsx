@@ -59,7 +59,7 @@ export default function ForgotPassword() {
                         <div className="main-login">
                             <Link href="/auth/login" className="backtobtn mb-3">
                                 <ArrowSmallLeftIcon width={20} />
-                                Back
+                                Back to Login Page
                             </Link>
                             <h1>
                                 <span>Forgot</span> Password?
@@ -81,9 +81,9 @@ export default function ForgotPassword() {
                                 >
                                     {isLoading ? 'Please wait...' : 'Reset Password'}
                                 </button>
-                                <p className="f-12 text-right forgot register-page-link">
+                                {/* <p className="f-12 text-right forgot register-page-link">
                                     <Link href="/auth/login" style={{ color: '#c49073' }}>Back to Login</Link>
-                                </p>
+                                </p> */}
                             </form>
                         </div>
                     </div>
