@@ -156,7 +156,7 @@ export default function Login() {
 						<div className="main-login top-sp-big">
 							<Link href="/" className="backtobtn mb-3">
 								<ArrowSmallLeftIcon width={20} />
-								Back
+								Back to Home Page
 							</Link>
 							<h1>
 								<span>Welcome</span> Back!
@@ -220,13 +220,13 @@ export default function Login() {
 								>
 									{!isLoading ? 'Continue' : 'Please wait...'}
 								</button>
-								<Link
+								{/* <Link
 									href="/"
 									className="register-page-link-back"
 									style={{ color: '#153060', marginTop: '1' }}
 								>
 									Back to Home
-								</Link>
+								</Link> */}
 								{/* <button
 									type="button"
 									className="btn btn-outline-dark d-flex align-items-center gap-1 justify-content-center  mt-3 w-100"
