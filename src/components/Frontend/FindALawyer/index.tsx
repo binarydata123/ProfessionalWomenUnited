@@ -60,7 +60,9 @@ export default function Page({ filterlawyer }: Props) {
 	// Initialize filter data with URL parameters if they exist
 	const initialData = {
 		p_service_name: serviceParam || null,
-		p_country_name: cityParam || null,
+		// p_country_name: cityParam || null,
+		p_country_name: cityParam ? cityParam.split(',')[0].trim() : null, // Only city name
+
 		p_country_slug: null,
 		p_experience_name: null,
 		p_jurisdiction_name: null,

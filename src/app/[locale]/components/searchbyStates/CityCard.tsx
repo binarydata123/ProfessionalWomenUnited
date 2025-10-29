@@ -9,6 +9,10 @@ interface CityCardProps {
 export default function CityCard({ city, stateName }: CityCardProps) {
     return (
         <a
+            // href={`/services?state=${encodeURIComponent(stateName)}&city=${encodeURIComponent(
+            //     city.name
+            // )}&cityId=${city.id}`}
+            // style={{ color: '#000' }}
             href={`/services?state=${encodeURIComponent(stateName)}&city=${encodeURIComponent(
                 city.name
             )}&cityId=${city.id}`}

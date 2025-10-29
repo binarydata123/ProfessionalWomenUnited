@@ -35,10 +35,13 @@ const DirectoryTabs = () => {
     router.push(`/find-a-professional?service=${encodeURIComponent(professional)}`);
   };
 
+  // const handleSelectCity = (city: string) => {
+  //   router.push(`/find-a-professional?city=${encodeURIComponent(city)}`);
+  // };
   const handleSelectCity = (city: string) => {
+    // Send the full "City, ST" format to match your database
     router.push(`/find-a-professional?city=${encodeURIComponent(city)}`);
   };
-
 
   useEffect(() => {
     if (currentTab === 'cities') {
@@ -49,16 +52,18 @@ const DirectoryTabs = () => {
   const fetchCities = async () => {
     setLoadingCities(true);
     try {
-      const res: any = await getAllCountries(); // API call
+      const res: any = await getAllCountries();
       if (res.status && res.data) {
-        // API returns data array
-        // const cityNames = res.data.slice(0, 200).map((c: any) => `${c.name}`);
-        const cityNames = res.data.map((c: any) => `${c.name}`);
+        // Format cities as "City, ST" to match your database
+        const cityNames = res.data.map((c: any) => {
+          if (c.state && c.name) {
+            return `${c.name}, ${c.state}`; // Format: "New York, NY"
+          }
+          return c.name;
+        }).filter(Boolean); // Remove any null/undefined values
+
         setAllCities(cityNames);
         setFilteredCities(cityNames);
-      } else {
-        setAllCities([]);
-        setFilteredCities([]);
       }
     } catch (err) {
       console.error('Cities API error', err);
@@ -68,6 +73,7 @@ const DirectoryTabs = () => {
       setLoadingCities(false);
     }
   };
+
 
 
   useEffect(() => {
