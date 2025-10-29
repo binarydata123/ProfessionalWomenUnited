@@ -57,7 +57,7 @@ const DirectoryTabs = () => {
         // Format cities as "City, ST" to match your database
         const cityNames = res.data.map((c: any) => {
           if (c.state && c.name) {
-            return `${c.name}, ${c.state}`; // Format: "New York, NY"
+            return `${c.name}`; // Format: "New York, NY"
           }
           return c.name;
         }).filter(Boolean); // Remove any null/undefined values
