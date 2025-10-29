@@ -121,26 +121,27 @@ interface MapChartProps {
 export const MapChart = ({ onStateClick }: MapChartProps) => {
   const router = useRouter();
 
-  // const handleStateClick = (stateName: string) => {
-  //   const stateAbbr = stateAbbreviations[stateName];
-  //   if (stateAbbr) {
-  //     if (onStateClick) {
-  //       onStateClick(stateName);
-  //     } else {
-  //       // Navigate to the us-states page with the state parameter
-  //       router.push(`/us-states?state=${stateAbbr}`);
-  //     }
-  //   }
-  // };
   const handleStateClick = (stateName: string) => {
-    if (stateAbbreviations[stateName]) {
+    const stateAbbr = stateAbbreviations[stateName];
+    if (stateAbbr) {
       if (onStateClick) {
         onStateClick(stateName);
       } else {
-        router.push(`/us-states?state=${encodeURIComponent(stateName)}`);
+        // Navigate to the us-states page with the state parameter
+        router.push(`/us-states?state=${stateAbbr}`);
       }
     }
   };
+  // const handleStateClick = (stateName: string) => {
+  //   if (stateAbbreviations[stateName]) {
+  //     if (onStateClick) {
+  //       onStateClick(stateName);
+  //     } else {
+  //       router.push(`/us-states?state=${encodeURIComponent(stateName)}`);
+  //     }
+  //   }
+  // };
+
 
 
   return (
