@@ -39,11 +39,18 @@ export default function Page({ filterlawyer }: Props) {
 	const [experience, setExperience]: any = useState([]);
 	const [jurisdication, setJurisdication]: any = useState([]);
 	const [sort, setSort]: any = useState('');
-	const [currentPage, setCurrentPage] = useState(1);
+	// const [currentPage, setCurrentPage] = useState(1);
 	const [cities, setCities]: any = useState([]);
 	const [states, setStates]: any = useState([]);
 	const [selectedState, setSelectedState] = useState('');
-
+	const [currentPage, setCurrentPage] = useState(() => {
+		// Browser se saved page number get karo
+		if (typeof window !== 'undefined') {
+			const savedPage = sessionStorage.getItem('currentLawyerPage');
+			return savedPage ? parseInt(savedPage) : 1;
+		}
+		return 1;
+	});
 	// State for search functionality
 	const [stateSearchTerm, setStateSearchTerm] = useState('');
 	const [citySearchTerm, setCitySearchTerm] = useState('');
@@ -101,6 +108,30 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
+
+
+	// const handleLawyers = (data: any, page: number = 1) => {
+	// 	const requestData = {
+	// 		...data,
+	// 		page: page,
+	// 		per_page: itemsPerPage
+	// 	};
+
+	// 	getAllLawyersOrFilter(requestData).then(res => {
+	// 		setLawyers(res.data);
+	// 		setFilterPopup(false);
+
+	// 		// Set pagination info from backend
+	// 		if (res.pagination) {
+	// 			setTotalPages(res.pagination.last_page);
+	// 			setCurrentPage(res.pagination.current_page);
+	// 		} else {
+	// 			// Fallback for non-paginated responses
+	// 			setTotalPages(1);
+	// 			setCurrentPage(1);
+	// 		}
+	// 	});
+	// };
 	const handleLawyers = (data: any, page: number = 1) => {
 		const requestData = {
 			...data,
@@ -112,17 +143,20 @@ export default function Page({ filterlawyer }: Props) {
 			setLawyers(res.data);
 			setFilterPopup(false);
 
-			// Set pagination info from backend
 			if (res.pagination) {
 				setTotalPages(res.pagination.last_page);
 				setCurrentPage(res.pagination.current_page);
+				// Current page save karo
+				if (typeof window !== 'undefined') {
+					sessionStorage.setItem('currentLawyerPage', res.pagination.current_page.toString());
+				}
 			} else {
-				// Fallback for non-paginated responses
 				setTotalPages(1);
 				setCurrentPage(1);
 			}
 		});
 	};
+
 
 	const handleSort = (sort: any) => {
 		const newFilterData = { ...filterData, sort: sort };
@@ -250,8 +284,11 @@ export default function Page({ filterlawyer }: Props) {
 			sort: null,
 			p_state_name: stateParam || null,
 		};
+		const savedPage = typeof window !== 'undefined' ? sessionStorage.getItem('currentLawyerPage') : null;
+		const pageToLoad = savedPage ? parseInt(savedPage) : 1;
 
-		handleLawyers(initialFilterData, 1);
+		handleLawyers(initialFilterData, pageToLoad);
+		// handleLawyers(initialFilterData, 1);
 		setFilterData(initialFilterData);
 		setAppliedFilters({
 			states: stateParam ? [stateParam] : [],
@@ -260,8 +297,16 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	}, [serviceParam, cityParam, stateParam]);
 
+	// const handlePageChange = (newPage: any) => {
+	// 	setCurrentPage(newPage);
+	// 	handleLawyers(filterData, newPage);
+	// };
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);
+		// Current page ko sessionStorage mein save karo
+		if (typeof window !== 'undefined') {
+			sessionStorage.setItem('currentLawyerPage', newPage.toString());
+		}
 		handleLawyers(filterData, newPage);
 	};
 
