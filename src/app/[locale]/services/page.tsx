@@ -3,7 +3,6 @@
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { FaArrowLeft, FaMapMarkerAlt, FaSpinner } from 'react-icons/fa';
-import { STATES } from '../data/statesData';
 import ServiceCard from '../components/searchbyStates/ServiceCard';
 import './style.css';
 import { useEffect, useState } from 'react';
@@ -78,6 +77,8 @@ export default function ServicesPage() {
 
     // Convert abbreviation to full state name for display
     const stateFullName = stateParam ? getStateNameFromAbbreviation(stateParam) : '';
+    console.log(stateFullName, 'stateFullName')
+    console.log(stateParam, 'stateParam')
 
     useEffect(() => {
         getAllServicesData();
