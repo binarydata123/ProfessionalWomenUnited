@@ -270,6 +270,7 @@ export default function USStatesPage() {
                                                         <CityCard
                                                             city={city}
                                                             stateName={currentState.state}
+
                                                         />
                                                     </div>
                                                 ))}
