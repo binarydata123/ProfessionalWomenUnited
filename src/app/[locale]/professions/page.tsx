@@ -21,7 +21,7 @@ interface Service {
 
 export default function ProfessionalsPage() {
     const searchParams = useSearchParams();
-    const stateParam = searchParams.get('state');
+    const stateParam = searchParams.get('state'); // This is abbreviation (CA)
     const cityParam = searchParams.get('city');
     const serviceIdParam = searchParams.get('service');
 
@@ -30,12 +30,17 @@ export default function ProfessionalsPage() {
     const [error, setError] = useState<string | null>(null);
 
     // Decode URL parameters
-    const stateName = stateParam ? decodeURIComponent(stateParam) : null;
+    const stateAbbreviation = stateParam ? decodeURIComponent(stateParam) : null;
     const city = cityParam ? decodeURIComponent(cityParam) : null;
     const serviceId = serviceIdParam;
+
+    // Find state by abbreviation instead of name
     const state = STATES.find(s =>
-        s.name.toLowerCase() === stateName?.toLowerCase()
+        s.abbreviation.toLowerCase() === stateAbbreviation?.toLowerCase()
     );
+
+    // Get state name for display
+    const stateName = state ? state.name : stateAbbreviation;
 
     // Fetch services on component mount
     useEffect(() => {
@@ -53,8 +58,10 @@ export default function ProfessionalsPage() {
             }
         };
 
-        fetchServices();
-    }, []);
+        if (serviceIdParam && city) {
+            fetchServices();
+        }
+    }, [serviceIdParam, city]);
 
     // Show loading state
     if (loading) {
@@ -89,9 +96,9 @@ export default function ProfessionalsPage() {
     }
 
     // ✅ Validate parameters - Check if required parameters are present
-    if (!stateName || !city || !serviceId || !state) {
+    if (!stateAbbreviation || !city || !serviceId) {
         console.log('Validation failed:', {
-            stateName, city, serviceId, state,
+            stateAbbreviation, city, serviceId,
             availableServices: services
         });
 
@@ -145,9 +152,9 @@ export default function ProfessionalsPage() {
             <div className="container py-5 mt-3">
                 <div className="row justify-content-center">
                     <div className="col-12 mt-5 setmargin-above">
-                        {/* Back Button */}
+                        {/* Back Button - Use state abbreviation in URL */}
                         <Link
-                            href={`/services?state=${encodeURIComponent(state.name)}&city=${encodeURIComponent(city)}`}
+                            href={`/services?state=${encodeURIComponent(stateAbbreviation)}&city=${encodeURIComponent(city)}`}
                             className="flex items-center space-x-2 text-coral hover:text-navy transition-colors duration-200 mb-4"
                         >
                             <IoIosArrowBack className="me-2" />
@@ -157,13 +164,9 @@ export default function ProfessionalsPage() {
                         {/* Page Title - Updated with Bootstrap styling */}
                         <div className="text-center mb-5 show-mobile">
                             <h1 className="page-title fw-bold mb-3">{service.service_name}s in {city}</h1>
-                            {/* <div className="d-flex align-items-center justify-content-center location-text">
-                                <FaMapMarkerAlt className="me-2" />
-                                <span className="resultsLocationText">{city}, {state.name}</span>
-                            </div> */}
                             <div className="d-flex align-items-center justify-content-center location-text">
                                 <FaMapMarkerAlt className="me-2" />
-                                <span className="resultsLocationText">{state.name} → {city} → {service.service_name}</span>
+                                <span className="resultsLocationText">{stateName} → {city} → {service.service_name}</span>
                             </div>
                         </div>
 
@@ -192,15 +195,6 @@ export default function ProfessionalsPage() {
                                 </div>
                             )}
                         </div>
-
-                        {/* Load More Button */}
-                        {/* {services.length > 0 && (
-                            <div className="text-center mt-5">
-                                <button className="btn btn-primary btn-lg px-5 py-3">
-                                    Load More Professionals
-                                </button>
-                            </div>
-                        )} */}
                     </div>
                 </div>
             </div>

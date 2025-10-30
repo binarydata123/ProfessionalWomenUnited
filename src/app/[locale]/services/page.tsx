@@ -154,7 +154,7 @@ export default function ServicesPage() {
                                     <div key={service.id} className="col-12 col-md-6 col-lg-4 fade-in">
                                         <ServiceCard
                                             service={service}
-                                            state={stateFullName} // Pass full name for display
+                                            state={stateParam} // Pass full name for display
                                             city={city}
                                         />
                                     </div>
