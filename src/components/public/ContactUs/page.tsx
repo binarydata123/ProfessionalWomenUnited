@@ -191,7 +191,7 @@ export default function ContactUs() {
 								height={40}
 							/>
 							<h5>{t('write_to_us')}</h5>
-							<a href="mailto:wisuva@mailinator.com">
+							<a href="mailto:info@professionalwomenunited.com">
 								{' '}
 								<p>info@professionalwomenunited.com</p>
 							</a>
@@ -211,7 +211,7 @@ export default function ContactUs() {
 						<div className="contact-box border-none pl-2">
 							<Image src="/images/contact/location.png" alt="contact-address" width={40} height={40} />
 							<h5>{t('visit_us')}</h5>
-							<a href="https://goo.gl/maps/7hfKjBNd8t5vuLej8" target="blank">
+							<a href="https://share.google/3QXIpKY1IvpoBUzro" target="blank">
 								{' '}
 								<p>1407 NE Beta Lane, Bentonville, AR 72712</p>
 							</a>
