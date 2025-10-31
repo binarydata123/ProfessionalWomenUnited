@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -66,20 +66,26 @@ const SliderWithProgressBar = () => {
 	return (
 		<div className="slider-container">
 			<div className="progress-container">
-				<div className="progress" style={{ width: `${progressWidth}%` }} />
-				<div className="progress-shadow" style={{ width: `${progressWidthBelow}%` }} />
+				<div className="progress" style={{width: `${progressWidth}%`}} />
+				<div className="progress-shadow" style={{width: `${progressWidthBelow}%`}} />
 			</div>
 			<Slider ref={sliderRef} {...settings}>
 				<div>
 					<div className="card-box-rest mar">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"Joining this community gave me the confidence and network I needed to grow my consultancy. I now collaborate with amazing women leaders across industries."
+								"Joining this community gave me the confidence and network I needed to grow my
+								consultancy. I now collaborate with amazing women leaders across industries."
 							</p>
 						</div>
 						<div className="row">
 							<div className="col">
-								<img src="/images/user-img.png" alt="user-img" className="w-80 effect" />
+								<img
+									src="/images/user-avatar.png"
+									alt="user-img"
+									className="w-80 effect"
+									style={{borderRadius: '25px'}}
+								/>
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
@@ -94,13 +100,18 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"I’ve gained not just clients, but lifelong mentors and colleagues. The support I’ve received here has been invaluable for my career growth."
-
+								"I’ve gained not just clients, but lifelong mentors and colleagues. The support I’ve
+								received here has been invaluable for my career growth."
 							</p>
 						</div>
 						<div className="row">
 							<div className="col">
-								<img src="/images/user-img.png" alt="user-img" className="w-80 effect" />
+								<img
+									src="/images/user-avatar.png"
+									alt="user-img"
+									className="w-80 effect"
+									style={{borderRadius: '25px'}}
+								/>
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
@@ -115,12 +126,18 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"The platform has been a safe space to share my journey, learn from peers, and gain visibility for my startup. It’s empowering to be part of such a strong network."
+								"The platform has been a safe space to share my journey, learn from peers, and gain
+								visibility for my startup. It’s empowering to be part of such a strong network."
 							</p>
 						</div>
 						<div className="row">
 							<div className="col">
-								<img src="/images/user-img.png" alt="user-img" className="w-80 effect" />
+								<img
+									src="/images/user-avatar.png"
+									alt="user-img"
+									className="w-80 effect"
+									style={{borderRadius: '25px'}}
+								/>
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
@@ -135,12 +152,18 @@ const SliderWithProgressBar = () => {
 					<div className="card-box-rest">
 						<div className="c-h-200">
 							<p className="font-large text-black weight-medium">
-								"What makes this community unique is the authenticity. Real conversations, real opportunities, and real growth. It’s been a game-changer for me."
+								"What makes this community unique is the authenticity. Real conversations, real
+								opportunities, and real growth. It’s been a game-changer for me."
 							</p>
 						</div>
 						<div className="row">
 							<div className="col">
-								<img src="/images/user-img.png" alt="user-img" className="w-80 effect" />
+								<img
+									src="/images/user-avatar.png"
+									alt="user-img"
+									className="w-80 effect"
+									style={{borderRadius: '25px'}}
+								/>
 							</div>
 							<div className="col-sm-10 col-9">
 								<div className="name-location">
