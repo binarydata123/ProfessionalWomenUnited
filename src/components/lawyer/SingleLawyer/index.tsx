@@ -175,7 +175,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 		return value;
 	};
 
-	const embedCode = `<a href="${process.env.NEXT_PUBLIC_BASE_URL}" target="_blank"><img src="${process.env.NEXT_PUBLIC_BASE_URL}/woman-of-the-year-badge.png" alt="Woman of the Year - Professional Women United" width="150" height="auto"/></a>`;
+	const embedCode = `<a href="${process.env.NEXT_PUBLIC_BASE_URL}" target="_blank"><img src="${process.env.NEXT_PUBLIC_BASE_URL}/woman-of-the-year-badge.png" alt="Professional Women United" width="150" height="auto"/></a>`;
 
 	const handleCopy = () => {
 		navigator.clipboard.writeText(embedCode);
@@ -1044,10 +1044,6 @@ export default function SingleLawyer({slug = ''}: Props) {
 												<div className="row">
 													<div className="col-lg-12">
 														<div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-md text-center">
-															{/* <h2 className="text-2xl font-semibold mb-4 text-gray-900">
-																Woman of the Year Badge
-															</h2> */}
-
 															{/* Badge Display */}
 															<div className="flex justify-center mb-6">
 																<img
@@ -1056,25 +1052,21 @@ export default function SingleLawyer({slug = ''}: Props) {
 																	style={{width: '150px', height: 'auto'}}
 																/>
 															</div>
-
 															{/* Embed Instructions */}
 															<p className="text-gray-700 mb-3">
 																Copy the embed code below to display this badge on your
 																website:
 															</p>
-
 															<input
 																readOnly
 																value={embedCode}
 																className="w-full border border-gray-300 rounded-md p-3 font-mono text-sm bg-gray-50 text-gray-800"
-																//rows={5}
 																style={{
 																	width: '100%',
 																	fontFamily: 'monospace',
 																	marginBottom: '10px'
 																}}
 															/>
-
 															<button
 																onClick={handleCopy}
 																className={`copy-btn ${copied ? 'copied' : ''}`}>
