@@ -175,3 +175,25 @@
 		height: 18px;
 	}
 }
+
+/*****31oct25-ni-css*****/
+.copy-btn {
+	background-color: #dc2626; /* red-600 */
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 16px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	width: 100%;
+}
+
+.copy-btn:hover {
+	background-color: #b91c1c; /* red-700 */
+}
+
+.copy-btn.copied {
+	background-color: #16a34a; /* green-600 */
+}
+/*****31oct25-ni-css end*****/
