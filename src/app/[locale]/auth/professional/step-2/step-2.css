@@ -46,3 +46,10 @@
 	display: flex;
 	align-items: center;
 }
+
+/****31oct25-ni-css*****/
+p.location-field-notes {
+	font-size: 11px !important;
+	line-height: 15px !important;
+}
+/****31oct25-ni-css end*****/

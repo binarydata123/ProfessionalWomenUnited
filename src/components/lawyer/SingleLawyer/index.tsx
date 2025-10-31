@@ -1,13 +1,13 @@
 'use client';
-import React, { useContext, useEffect, useState } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Link from 'next/link';
-import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
-import { StarIcon } from '@heroicons/react/24/solid';
-import { BsBookmark, BsFillBookmarkFill } from 'react-icons/bs';
+import {MapPinIcon, PhoneIcon, EnvelopeIcon} from '@heroicons/react/20/solid';
+import {StarIcon} from '@heroicons/react/24/solid';
+import {BsBookmark, BsFillBookmarkFill, BsInputCursorText} from 'react-icons/bs';
 import Image from 'next/image';
 import './singleLawyer.css';
-import { getReviewsAverage, getSingleLawyerDetails, isLawyerSaved, saveLawyer } from '../../../../lib/frontendapi';
-import { insertProfileView } from '../../../../lib/enduserapi';
+import {getReviewsAverage, getSingleLawyerDetails, isLawyerSaved, saveLawyer} from '../../../../lib/frontendapi';
+import {insertProfileView} from '../../../../lib/enduserapi';
 import {
 	FacebookShareButton,
 	FacebookIcon,
@@ -20,11 +20,11 @@ import {
 } from 'next-share';
 import ReviewsAverage from '@/commonUI/ReviewsAverage';
 import Review from '@/components/public/Review';
-import { getAllReviewFrontend } from '../../../../lib/lawyerapi';
+import {getAllReviewFrontend} from '../../../../lib/lawyerapi';
 import LawyerProfileLoadingPlaceholder from '@/commonUI/LawyerProfileLoadingPlaceholder';
 import AuthContext from '@/context/AuthContext';
 import ImageComponent from '@/commonUI/ImageComponent';
-import { getLawyerImageSrc180x180 } from '@/app/[locale]/commonfunctions/commonfunctions';
+import {getLawyerImageSrc180x180} from '@/app/[locale]/commonfunctions/commonfunctions';
 
 const currentYear = new Date().getFullYear();
 
@@ -32,8 +32,8 @@ interface Props {
 	slug?: string;
 }
 
-export default function SingleLawyer({ slug = '' }: Props) {
-	const { user } = useContext(AuthContext)
+export default function SingleLawyer({slug = ''}: Props) {
+	const {user} = useContext(AuthContext);
 	const [isSticky, setIsSticky] = useState(false);
 	const [loginUser, setloginUser]: any = useState([]);
 	const [bookmark, setbookmark] = useState(false);
@@ -48,11 +48,12 @@ export default function SingleLawyer({ slug = '' }: Props) {
 	const [user_Id, setUserId] = useState('');
 	const [lawyer_Id, setlawyersId] = useState('');
 	const [visibleReviews, setvisibleReviews] = useState(3);
+	const [copied, setCopied] = useState(false);
 
 	useEffect(() => {
 		handleSingleLawyerDetails(slug);
 		const handleScroll = () => {
-			if (window.scrollY > 300) {
+			if (window.scrollY > 600) {
 				setIsSticky(true);
 			} else {
 				setActiveTab('about');
@@ -78,7 +79,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 			if (user_Id && lawyer_Id) {
 				try {
 					await insertProfileView(user_Id, lawyer_Id);
-				} catch (error) { }
+				} catch (error) {}
 			}
 		};
 
@@ -103,7 +104,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 
 	const handleAllReviewData = async (user_id: any) => {
 		try {
-			const reviewsData: any = await getAllReviewFrontend({ memberId: user_id });
+			const reviewsData: any = await getAllReviewFrontend({memberId: user_id});
 			setallReviews(reviewsData.allreviews);
 		} catch (error) {
 			console.error('Error fetching reviews:', error);
@@ -163,7 +164,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 	});
 
 	const capitalize = (str: string) => {
-		if (!str) return "";
+		if (!str) return '';
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	};
 
@@ -172,6 +173,14 @@ export default function SingleLawyer({ slug = '' }: Props) {
 			return null;
 		}
 		return value;
+	};
+
+	const embedCode = `<a href="${process.env.NEXT_PUBLIC_BASE_URL}" target="_blank"><img src="${process.env.NEXT_PUBLIC_BASE_URL}/woman-of-the-year-badge.png" alt="Woman of the Year - Professional Women United" width="150" height="auto"/></a>`;
+
+	const handleCopy = () => {
+		navigator.clipboard.writeText(embedCode);
+		setCopied(true);
+		setTimeout(() => setCopied(false), 2000);
 	};
 
 	return (
@@ -186,8 +195,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									backgroundColor: 'rgb(234,212,199)',
 									width: '20%',
 									marginBottom: '10px'
-								}}
-							></div>
+								}}></div>
 						) : (
 							<ul>
 								<li>
@@ -217,9 +225,11 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									/>
 								</li>
 								<li>
-									<Link href="JavaScript:void(0)">{single_lawyer?.full_name
-										?.toLowerCase()
-										.replace(/\b\w/g, (char: string) => char.toUpperCase())}</Link>
+									<Link href="JavaScript:void(0)">
+										{single_lawyer?.full_name
+											?.toLowerCase()
+											.replace(/\b\w/g, (char: string) => char.toUpperCase())}
+									</Link>
 								</li>
 							</ul>
 						)}
@@ -245,14 +255,17 @@ export default function SingleLawyer({ slug = '' }: Props) {
 													)}
 													placeholderImgUrl={
 														process.env.NEXT_PUBLIC_IMAGE_URL +
-														`/images/default/${single_lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+														`/images/default/${
+															single_lawyer.gender == 'male'
+																? 'female-lawyer-306x200.png'
+																: 'female-lawyer-306x200.png'
 														}`
 													}
 													alt="user-popup"
 													className="img-responsive m-img-fixed"
 													width={150}
 													height={150}
-													style={{ borderRadius: '10px' }}
+													style={{borderRadius: '10px'}}
 												/>
 											</div>
 										</div>
@@ -260,9 +273,14 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											<div className="row">
 												<div className="col-6">
 													<div className="data-profile-user">
-														<h2>  {single_lawyer?.full_name
-															?.toLowerCase()
-															.replace(/\b\w/g, (char: string) => char.toUpperCase())} </h2>
+														<h2>
+															{' '}
+															{single_lawyer?.full_name
+																?.toLowerCase()
+																.replace(/\b\w/g, (char: string) =>
+																	char.toUpperCase()
+																)}{' '}
+														</h2>
 													</div>
 												</div>
 												<div className="col-6 text-end">
@@ -272,7 +290,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															width={25}
 															height={25}
 															alt="share professional profile"
-															style={{ cursor: 'pointer' }}
+															style={{cursor: 'pointer'}}
 															onClick={() => setshare(!share)}
 														/>
 
@@ -280,7 +298,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															<>
 																{bookmark ? (
 																	<BsFillBookmarkFill
-																		style={{ cursor: 'pointer' }}
+																		style={{cursor: 'pointer'}}
 																		onClick={() =>
 																			handleSaveLawyer(single_lawyer.id)
 																		}
@@ -289,7 +307,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																	/>
 																) : (
 																	<BsBookmark
-																		style={{ cursor: 'pointer' }}
+																		style={{cursor: 'pointer'}}
 																		onClick={() =>
 																			handleSaveLawyer(single_lawyer.id)
 																		}
@@ -303,23 +321,19 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														{share && (
 															<div className="mt-3">
 																<FacebookShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
-																>
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}>
 																	<FacebookIcon size={32} round className="m-2" />
 																</FacebookShareButton>
 																<RedditShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
-																>
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}>
 																	<RedditIcon size={32} round className="m-2" />
 																</RedditShareButton>
 																<WhatsappShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
-																>
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}>
 																	<WhatsappIcon size={32} round className="m-2" />
 																</WhatsappShareButton>
 																<LinkedinShareButton
-																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}
-																>
+																	url={`${process.env.NEXT_PUBLIC_BASE_URL}/find-a-professional/${single_lawyer.slug}`}>
 																	<LinkedinIcon size={32} round className="m-2" />
 																</LinkedinShareButton>
 															</div>
@@ -330,23 +344,22 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											<div className="row">
 												<div className="col-lg-8">
 													<div className="company-detail">
-
 														{/* {single_lawyer?.designation && (
 															<span style={{ fontWeight: '600', fontSize: '20px' }}>{single_lawyer?.designation}</span>
 														)}{' '} */}
 														{single_lawyer?.company_name && (
-															<span className="profile-d-change1" style={{ fontWeight: '400', fontSize: '16px' }}>
+															<span
+																className="profile-d-change1"
+																style={{fontWeight: '400', fontSize: '16px'}}>
 																{single_lawyer?.company_name}
 															</span>
 														)}{' '}
-
 														{single_lawyer?.location_name && (
 															<p>
 																<MapPinIcon width={20} height={20} />{' '}
 																{single_lawyer?.location_name}
 															</p>
 														)}
-
 														<div className="mt-2">
 															{single_lawyer?.service_name &&
 																single_lawyer.service_name
@@ -355,8 +368,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 																		<Link
 																			href="JavaScript:void(0)"
 																			className="mb-2"
-																			key={index}
-																		>
+																			key={index}>
 																			<button className="primary-true-green mb-2 mr-1">
 																				{service}
 																			</button>
@@ -369,8 +381,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 													<>
 														<Link
 															href={`/find-a-professional/${slug}/make-an-inquiry`}
-															className="text-white"
-														>
+															className="text-white">
 															<button className="btn-commn">Make An Inquiry</button>
 														</Link>
 													</>
@@ -383,8 +394,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											{user?.id != lawyer_Id && (
 												<Link
 													href={`/find-a-professional/${slug}/make-an-inquiry`}
-													className="text-white"
-												>
+													className="text-white">
 													<button className="btn-commn">Make An Inquiry</button>
 												</Link>
 											)}
@@ -400,9 +410,9 @@ export default function SingleLawyer({ slug = '' }: Props) {
 			<section>
 				<div className="container">
 					<ul
-						className={` profile-dataa profile-d-changee nav nav-pills mb-3 mt-4 ${isSticky ? 'sticky-profile' : ''
-							}`}
-					>
+						className={` profile-dataa profile-d-changee nav nav-pills mb-3 mt-4 ${
+							isSticky ? 'sticky-profile' : ''
+						}`}>
 						{isLoading ? (
 							<div
 								style={{
@@ -411,20 +421,17 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									width: '6%',
 									marginBottom: '10px',
 									marginRight: '10px'
-								}}
-							></div>
+								}}></div>
 						) : (
 							<>
 								<li className="nav-item" role="presentation">
 									<button
 										className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
-										onClick={() => handleTabClick('about')}
-									>
+										onClick={() => handleTabClick('about')}>
 										<Link
 											href="#pills-contact-tab1"
-											style={{ color: '#02142d' }}
-											onClick={e => scrollToBottom(e)}
-										>
+											style={{color: '#02142d'}}
+											onClick={e => scrollToBottom(e)}>
 											About
 										</Link>
 									</button>
@@ -440,20 +447,17 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									width: '8%',
 									marginBottom: '10px',
 									marginRight: '10px'
-								}}
-							></div>
+								}}></div>
 						) : (
 							<>
 								<li className="nav-item" role="presentation">
 									<button
 										className={`nav-link ${activeTab === 'Reviews' ? 'active' : ''}`}
-										onClick={() => handleTabClick('Reviews')}
-									>
+										onClick={() => handleTabClick('Reviews')}>
 										<Link
 											href="#pills-contact-tab2"
-											style={{ color: '#1F1F1F', marginLeft: '10px' }}
-											onClick={e => scrollToBottom(e)}
-										>
+											style={{color: '#1F1F1F', marginLeft: '10px'}}
+											onClick={e => scrollToBottom(e)}>
 											Reviews
 										</Link>
 									</button>
@@ -469,20 +473,17 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									width: '6%',
 									marginBottom: '10px'
 									// marginRight: '10px'
-								}}
-							></div>
+								}}></div>
 						) : (
 							<>
 								<li className="nav-item" role="presentation">
 									<button
 										className={`nav-link ${activeTab === 'Rates' ? 'active' : ''}`}
-										onClick={() => handleTabClick('Rates')}
-									>
+										onClick={() => handleTabClick('Rates')}>
 										<Link
 											href="#pills-contact-tab3"
-											style={{ color: '#1F1F1F', marginLeft: '10px' }}
-											onClick={e => scrollToBottom(e)}
-										>
+											style={{color: '#1F1F1F', marginLeft: '10px'}}
+											onClick={e => scrollToBottom(e)}>
 											Rates
 										</Link>
 									</button>
@@ -509,12 +510,14 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															height: '30px',
 															backgroundColor: 'rgb(249,242,239)',
 															width: '250px'
-														}}
-													></div>
+														}}></div>
 												) : (
-													<>About   {single_lawyer?.full_name
-														?.toLowerCase()
-														.replace(/\b\w/g, (char: string) => char.toUpperCase())}</>
+													<>
+														About{' '}
+														{single_lawyer?.full_name
+															?.toLowerCase()
+															.replace(/\b\w/g, (char: string) => char.toUpperCase())}
+													</>
 												)}
 											</h1>
 										</div>
@@ -525,9 +528,8 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											style={{
 												height: '30px',
 												backgroundColor: 'rgb(249,242,239)',
-												width: '200px',
-											}}
-										></div>
+												width: '200px'
+											}}></div>
 									) : (
 										<div className="row">
 											{handleApiNull(single_lawyer?.linkedin_url) && (
@@ -536,8 +538,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														href={single_lawyer?.linkedin_url}
 														target="_blank"
 														className="green-medium-2 font-medium d-flex align-items-center gap-2"
-														rel="noreferrer"
-													>
+														rel="noreferrer">
 														<Image
 															src="/images/Blogs/iconoir_linkedin.svg"
 															alt="linkedin"
@@ -555,14 +556,13 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														// href={single_lawyer?.website_link}
 														href={
 															single_lawyer.website_link.startsWith('http://') ||
-																single_lawyer.website_link.startsWith('https://')
+															single_lawyer.website_link.startsWith('https://')
 																? single_lawyer.website_link
 																: `https://${single_lawyer.website_link}`
 														}
 														target="_blank"
 														className="green-medium-2 font-medium d-flex align-items-center gap-2"
-														rel="noreferrer"
-													>
+														rel="noreferrer">
 														<Image
 															src="/images/Blogs/link-square.png"
 															alt="website"
@@ -576,19 +576,26 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										</div>
 									)}
 
-
 									{/* Contact Information in About Section */}
 									{(single_lawyer?.is_show_phone_number || single_lawyer?.is_show_email) && (
-										<div className="contact-details-card mt-1 p-3 rounded" style={{ backgroundColor: '#f8f9fa' }}>
+										<div
+											className="contact-details-card mt-1 p-3 rounded"
+											style={{backgroundColor: '#f8f9fa'}}>
 											<h6 className="font-medium weight-semi-bold mb-3">Contact Information</h6>
 											<div className="row">
 												{single_lawyer?.is_show_phone_number && single_lawyer?.phone_number && (
 													<div className="col-md-6 mb-2">
 														<div className="d-flex align-items-center">
-															<PhoneIcon width={18} height={18} className="me-2 text-muted" />
+															<PhoneIcon
+																width={18}
+																height={18}
+																className="me-2 text-muted"
+															/>
 															<span className="font-small">Phone:</span>
 														</div>
-														<a href={`tel:${single_lawyer.phone_number}`} className="font-small weight-semi-bold text-dark text-decoration-none">
+														<a
+															href={`tel:${single_lawyer.phone_number}`}
+															className="font-small weight-semi-bold text-dark text-decoration-none">
 															{single_lawyer.phone_number}
 														</a>
 													</div>
@@ -596,10 +603,16 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												{single_lawyer?.is_show_email && single_lawyer?.email && (
 													<div className="col-md-6 mb-2">
 														<div className="d-flex align-items-center">
-															<EnvelopeIcon width={18} height={18} className="me-2 text-muted" />
+															<EnvelopeIcon
+																width={18}
+																height={18}
+																className="me-2 text-muted"
+															/>
 															<span className="font-small">Email:</span>
 														</div>
-														<a href={`mailto:${single_lawyer.email}`} className="font-small weight-semi-bold text-dark text-decoration-none">
+														<a
+															href={`mailto:${single_lawyer.email}`}
+															className="font-small weight-semi-bold text-dark text-decoration-none">
 															{single_lawyer.email}
 														</a>
 													</div>
@@ -615,8 +628,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														height: '20px',
 														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
-													}}
-												></div>
+													}}></div>
 											) : (
 												<p className="font-medium  weight-medium text-sonic-silver mt-2">
 													Specializes In:
@@ -629,8 +641,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														height: '20px',
 														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
-													}}
-												></div>
+													}}></div>
 											) : (
 												<>
 													{' '}
@@ -643,37 +654,39 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									)}
 									{handleApiNull(single_lawyer?.bio) && (
 										<>
-											<p className="font-medium weight-medium text-sonic-silver mt-2">
-												Bio:
-											</p>
+											<p className="font-medium weight-medium text-sonic-silver mt-2">Bio:</p>
 											{single_lawyer.bio.length > 500 ? (
 												<>
 													{showMore ? (
 														<>
-															<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
+															<div
+																dangerouslySetInnerHTML={{__html: single_lawyer.bio}}
+															/>
 															<a
 																href="JavaScript:void(0)"
 																onClick={toggleShowMore}
-																className="green-medium-2 font-x-small weight-semi-bold"
-															>
+																className="green-medium-2 font-x-small weight-semi-bold">
 																Show Less
 															</a>
 														</>
 													) : (
 														<>
-															<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio.substring(0, 500) }} />
+															<div
+																dangerouslySetInnerHTML={{
+																	__html: single_lawyer.bio.substring(0, 500)
+																}}
+															/>
 															<a
 																href="JavaScript:void(0)"
 																onClick={toggleShowMore}
-																className="green-medium-2 font-x-small weight-semi-bold"
-															>
+																className="green-medium-2 font-x-small weight-semi-bold">
 																Show More
 															</a>
 														</>
 													)}
 												</>
 											) : (
-												<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
+												<div dangerouslySetInnerHTML={{__html: single_lawyer.bio}} />
 											)}
 										</>
 									)}
@@ -694,8 +707,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														height: '20px',
 														backgroundColor: 'rgb(249,242,239)',
 														width: '100px'
-													}}
-												></div>
+													}}></div>
 											) : (
 												<>
 													<div className="card-frame card-frame-2 mt-2">
@@ -724,13 +736,14 @@ export default function SingleLawyer({ slug = '' }: Props) {
 															)}
 															{handleApiNull(single_lawyer?.address) && (
 																<div className="col-lg-3 col-md-6 col-6 mb-2 mt-2">
-																	<p className="font-x-small text-sonic-silver weight-light">Address</p>
+																	<p className="font-x-small text-sonic-silver weight-light">
+																		Address
+																	</p>
 																	<p className="font-medium weight-medium text-sonic-silver mt-2">
 																		{handleApiNull(single_lawyer?.address)}
 																	</p>
 																</div>
 															)}
-
 
 															{single_lawyer?.status == 'active' && (
 																<div className="col-lg-3 col-md-6 col-6 mb-2 mt-2">
@@ -775,8 +788,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														height: '50px',
 														backgroundColor: 'rgb(249,242,239)',
 														width: '200px'
-													}}
-												></div>
+													}}></div>
 											) : (
 												<h5 className="font-xx-large weight-semi-bold green-dark">Reviews</h5>
 											)}
@@ -789,8 +801,7 @@ export default function SingleLawyer({ slug = '' }: Props) {
 														backgroundColor: 'rgb(249,242,239)',
 														width: '200px',
 														float: 'right'
-													}}
-												></div>
+													}}></div>
 											) : (
 												<>
 													{user?.id != lawyer_Id && (
@@ -819,9 +830,8 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										<div className="text-center py-4">
 											<p
 												className="read-more-reviews"
-												style={{ cursor: 'pointer' }}
-												onClick={() => setvisibleReviews(visibleReviews + 2)}
-											>
+												style={{cursor: 'pointer'}}
+												onClick={() => setvisibleReviews(visibleReviews + 2)}>
 												Read More Reviews
 											</p>
 										</div>
@@ -832,8 +842,8 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									{(handleApiNull(single_lawyer?.consultation_duration) ||
 										handleApiNull(single_lawyer?.hourly_rate_range) ||
 										handleApiNull(single_lawyer?.payment_method)) && (
-											<h5 className="font-xx-large weight-semi-bold green-dark">Rates</h5>
-										)}
+										<h5 className="font-xx-large weight-semi-bold green-dark">Rates</h5>
+									)}
 
 									{handleApiNull(single_lawyer?.consultation_duration) && (
 										<>
@@ -845,7 +855,6 @@ export default function SingleLawyer({ slug = '' }: Props) {
 											</p>
 										</>
 									)}
-
 
 									{handleApiNull(single_lawyer?.hourly_rate_range) && (
 										<>
@@ -880,143 +889,204 @@ export default function SingleLawyer({ slug = '' }: Props) {
 										backgroundColor: 'rgb(249,242,239)',
 										width: '400px',
 										borderRadius: '8px'
-									}}
-								></div>
+									}}></div>
 							) : (
-								<div className={`profile-data profile-d-change ${isSticky ? 'sticky-profile' : ''}`}>
-									<div className="row">
-										<div className="col-12">
-											<div className="row">
-												<div className="col-12">
-													<div className="profile-user">
-														<ImageComponent
-															src={getLawyerImageSrc180x180(
-																single_lawyer?.profile_image,
-																single_lawyer.gender
-															)}
-															placeholderImgUrl={
-																process.env.NEXT_PUBLIC_IMAGE_URL +
-																`/images/default/${single_lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
-																}`
-															}
-															alt={single_lawyer.full_name}
-															width={110}
-															height={100}
-															className=" m-img-fixed"
-															style={{ borderRadius: '10px' }}
-														/>
-
-
-													</div>
-													<div className="data-profile-user font-sm">
-														<h3>{single_lawyer?.full_name
-															?.toLowerCase()
-															.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h3>
+								<>
+									<div
+										className={`profile-data profile-d-change ${isSticky ? 'sticky-profile' : ''}`}>
+										<div className="row">
+											<div className="col-12">
+												<div className="row">
+													<div className="col-12">
+														<div className="profile-user">
+															<ImageComponent
+																src={getLawyerImageSrc180x180(
+																	single_lawyer?.profile_image,
+																	single_lawyer.gender
+																)}
+																placeholderImgUrl={
+																	process.env.NEXT_PUBLIC_IMAGE_URL +
+																	`/images/default/${
+																		single_lawyer.gender == 'male'
+																			? 'female-lawyer-306x200.png'
+																			: 'female-lawyer-306x200.png'
+																	}`
+																}
+																alt={single_lawyer.full_name}
+																width={110}
+																height={100}
+																className=" m-img-fixed"
+																style={{borderRadius: '10px'}}
+															/>
+														</div>
+														<div className="data-profile-user font-sm">
+															<h3>
+																{single_lawyer?.full_name
+																	?.toLowerCase()
+																	.replace(/\b\w/g, (char: string) =>
+																		char.toUpperCase()
+																	)}
+															</h3>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div className="row">
-												<div className="col-lg-12">
-													<div className="company-detail">
-														{/* {single_lawyer?.designation && (
-															<span className="profile-d-change1" style={{ fontWeight: '600', fontSize: '20px' }}>
-																{single_lawyer?.designation}
-															</span>
-														)}{' '} */}
-														{single_lawyer?.company_name && (
-															<span className="profile-d-change1" style={{ fontWeight: '400', fontSize: '16px' }}>
-																{single_lawyer?.company_name}
-															</span>
-														)}{' '}
-
-														{single_lawyer?.location_name && (
-															<p>
-																<MapPinIcon width={20} height={20} />
-																{single_lawyer?.location_name}
-															</p>
-														)}
-														<p className="cursor-pointer">
-															<Link
-																href="#pills-contact-tab2"
-																style={{ color: '#1F1F1F' }}
-																onClick={e => scrollToBottom(e)}
-															>
-																<StarIcon width={20} height={20} />
-																{single_lawyer?.avg_rating_and_reviews ? (
-																	<>
-																		<strong>
+												<div className="row">
+													<div className="col-lg-12">
+														<div className="company-detail">
+															{/* {single_lawyer?.designation && (
+																<span className="profile-d-change1" style={{ fontWeight: '600', fontSize: '20px' }}>
+																	{single_lawyer?.designation}
+																</span>
+															)}{' '} */}
+															{single_lawyer?.company_name && (
+																<span
+																	className="profile-d-change1"
+																	style={{fontWeight: '400', fontSize: '16px'}}>
+																	{single_lawyer?.company_name}
+																</span>
+															)}{' '}
+															{single_lawyer?.location_name && (
+																<p>
+																	<MapPinIcon width={20} height={20} />
+																	{single_lawyer?.location_name}
+																</p>
+															)}
+															<p className="cursor-pointer">
+																<Link
+																	href="#pills-contact-tab2"
+																	style={{color: '#1F1F1F'}}
+																	onClick={e => scrollToBottom(e)}>
+																	<StarIcon width={20} height={20} />
+																	{single_lawyer?.avg_rating_and_reviews ? (
+																		<>
+																			<strong>
+																				{single_lawyer?.avg_rating_and_reviews
+																					? single_lawyer.avg_rating_and_reviews.split(
+																							'('
+																						)[0]
+																					: ''}
+																			</strong>{' '}
+																			(
 																			{single_lawyer?.avg_rating_and_reviews
 																				? single_lawyer.avg_rating_and_reviews.split(
-																					'('
-																				)[0]
-																				: ''}
-																		</strong>{' '}
-																		(
-																		{single_lawyer?.avg_rating_and_reviews
-																			? single_lawyer.avg_rating_and_reviews.split(
-																				'('
-																			)[1]
-																			: ''}{' '}
-																	</>
-																) : (
-																	<small className="mx-1">Review not available</small>
-																)}
-															</Link>
-														</p>
+																						'('
+																					)[1]
+																				: ''}{' '}
+																		</>
+																	) : (
+																		<small className="mx-1">
+																			Review not available
+																		</small>
+																	)}
+																</Link>
+															</p>
+															<div className="mt-2">
+																{single_lawyer?.service_name &&
+																	single_lawyer.service_name
+																		.split(',')
+																		.map((service: any, index: any) => (
+																			<Link
+																				href="JavaScript:void(0)"
+																				className="mb-2"
+																				key={index}>
+																				<button className="primary-true-green mb-2 mr-1">
+																					{service}
+																				</button>
+																			</Link>
+																		))}
 
-														<div className="mt-2">
-															{single_lawyer?.service_name &&
-																single_lawyer.service_name
-																	.split(',')
-																	.map((service: any, index: any) => (
+																{single_lawyer?.acquired &&
+																	currentYear - single_lawyer?.acquired > 0 && (
 																		<Link
 																			href="JavaScript:void(0)"
-																			className="mb-2"
-																			key={index}
-																		>
-																			<button className="primary-true-green mb-2 mr-1">
-																				{service}
+																			className="mb-2">
+																			<button className="btn-primary-red mb-2 mr-1">
+																				Licensed for{' '}
+																				{currentYear - single_lawyer?.acquired}{' '}
+																				years
 																			</button>
 																		</Link>
-																	))}
-
-															{single_lawyer?.acquired &&
-																currentYear - single_lawyer?.acquired > 0 && (
+																	)}
+																{handleApiNull(
+																	single_lawyer?.consultation_duration
+																) && (
 																	<Link href="JavaScript:void(0)" className="mb-2">
-																		<button className="btn-primary-red mb-2 mr-1">
-																			Licensed for{' '}
-																			{currentYear - single_lawyer?.acquired}{' '}
-																			years
+																		<button className="btn-primary-red">
+																			Free Consultation:{' '}
+																			{handleApiNull(
+																				single_lawyer?.consultation_duration
+																			) || 'No'}
 																		</button>
 																	</Link>
 																)}
-															{handleApiNull(single_lawyer?.consultation_duration) && (
-																<Link href="JavaScript:void(0)" className="mb-2">
-																	<button className="btn-primary-red">
-																		Free Consultation: {handleApiNull(single_lawyer?.consultation_duration) || 'No'}
-																	</button>
-																</Link>
-															)}
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div className="col-lg-12 col-12 text-end pt-3 d-block">
+											<div className="company-detail-btn">
+												{user?.id != lawyer_Id && (
+													<Link
+														href={`/find-a-professional/${slug}/make-an-inquiry`}
+														className="text-white">
+														<button className=" w-100 btn-commn">Make An Inquiry</button>
+													</Link>
+												)}
+											</div>
+										</div>
+									</div>
 
+									<div className={`profile-data profile-d-change`}>
+										<div className="row">
+											<div className="col-12">
+												<div className="row">
+													<div className="col-lg-12">
+														<div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow-md text-center">
+															{/* <h2 className="text-2xl font-semibold mb-4 text-gray-900">
+																Woman of the Year Badge
+															</h2> */}
+
+															{/* Badge Display */}
+															<div className="flex justify-center mb-6">
+																<img
+																	src="/woman-of-the-year-badge.png"
+																	alt="Woman of the Year - Professional Women United"
+																	style={{width: '150px', height: 'auto'}}
+																/>
+															</div>
+
+															{/* Embed Instructions */}
+															<p className="text-gray-700 mb-3">
+																Copy the embed code below to display this badge on your
+																website:
+															</p>
+
+															<input
+																readOnly
+																value={embedCode}
+																className="w-full border border-gray-300 rounded-md p-3 font-mono text-sm bg-gray-50 text-gray-800"
+																//rows={5}
+																style={{
+																	width: '100%',
+																	fontFamily: 'monospace',
+																	marginBottom: '10px'
+																}}
+															/>
+
+															<button
+																onClick={handleCopy}
+																className={`copy-btn ${copied ? 'copied' : ''}`}>
+																{copied ? 'Copied!' : 'Copy Embed Code'}
+															</button>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div className="col-lg-12 col-12 text-end pt-3 d-block">
-										<div className="company-detail-btn">
-											{user?.id != lawyer_Id && (
-												<Link
-													href={`/find-a-professional/${slug}/make-an-inquiry`}
-													className="text-white"
-												>
-													<button className=" w-100 btn-commn">Make An Inquiry</button>
-												</Link>
-											)}
-										</div>
-									</div>
-								</div>
+								</>
 							)}
 						</div>
 					</div>
