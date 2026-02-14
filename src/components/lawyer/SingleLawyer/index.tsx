@@ -367,29 +367,32 @@ export default function SingleLawyer({ slug = '' }: Props) {
 												</div>
 												<div className="col-lg-4 text-end pt-3  d-none d-lg-block">
 													<>
-														<Link
-															href={`/find-a-professional/${slug}/make-an-inquiry`}
-															className="text-white"
+														<a
+															href={`tel:${single_lawyer.phone_number}`}
+															className="btn-commn font-small weight-semi-bold text-white text-decoration-none"
 														>
-															<button className="btn-commn">Make An Inquiry</button>
-														</Link>
+															<PhoneIcon width={18} height={18} className="me-2 text-white" />
+															Call a Specialist
+														</a>
+
 													</>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div className="col-lg-4 text-end pt-3 d-block d-lg-none">
-										<div className="company-detail-btn">
-											{user?.id != lawyer_Id && (
-												<Link
-													href={`/find-a-professional/${slug}/make-an-inquiry`}
-													className="text-white"
-												>
-													<button className="btn-commn">Make An Inquiry</button>
-												</Link>
-											)}
-										</div>
+									<div className="col-12 d-block d-lg-none mt-3">
+										{user?.id != lawyer_Id && (
+											<a
+												href={`tel:${single_lawyer.phone_number}`}
+												className="btn-commn d-flex align-items-center justify-content-center 
+                 w-100 py-3 text-decoration-none text-white"
+											>
+												<PhoneIcon width={18} height={18} className="me-2 text-white" />
+												Call a Specialist
+											</a>
+										)}
 									</div>
+
 								</div>
 							)}
 						</div>
@@ -1007,14 +1010,16 @@ export default function SingleLawyer({ slug = '' }: Props) {
 									<div className="col-lg-12 col-12 text-end pt-3 d-block">
 										<div className="company-detail-btn">
 											{user?.id != lawyer_Id && (
-												<Link
-													href={`/find-a-professional/${slug}/make-an-inquiry`}
-													className="text-white"
+												<a
+													href={`tel:${single_lawyer.phone_number}`}
+													className="btn-commn w-100 d-flex align-items-center justify-content-center py-3 text-white text-decoration-none"
 												>
-													<button className=" w-100 btn-commn">Make An Inquiry</button>
-												</Link>
+													<PhoneIcon width={18} height={18} className="me-2 text-white" />
+													Call a Specialist
+												</a>
 											)}
 										</div>
+
 									</div>
 								</div>
 							)}

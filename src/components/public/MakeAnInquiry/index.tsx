@@ -191,7 +191,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 								/>
 							</li>
 							<li>
-								<Link href={''}>Make an Inquiry</Link>
+								<Link href={''}>Call a Specialist</Link>
 							</li>
 						</ul>
 					</div>
