@@ -184,12 +184,12 @@ export default function ProfessionalCard({
 					</div>
 
 					<div className="professional-actions">
-						<Link
-							href={`/find-a-professional/${lawyer?.slug}/make-an-inquiry`} className="text-white">
+						<a
+							href={`tel:${lawyer.phone_number}`} className="text-white">
 							<button className="contact-button">
 								<FaEnvelope className="button-icon" />
 								Contact Me
-							</button></Link>
+							</button></a>
 						<Link href={`/find-a-professional/${lawyer?.slug}`}>
 							<button
 								className="profile-button"

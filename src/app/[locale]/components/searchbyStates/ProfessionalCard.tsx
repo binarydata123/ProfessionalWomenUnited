@@ -117,11 +117,11 @@ export default function ProfessionalCard({ professional }: ProfessionalCardProps
                 </div>
 
                 <div className="d-flex gap-3">
-                    <Link
-                        href={`/find-a-professional/${professional?.slug}/make-an-inquiry`} className="flex-grow-1">
+                    <a
+                        href={`tel:${professionalData?.phone}`} className="flex-grow-1">
                         <button className="btn btn-coral w-100 py-2">
                             Contact Now
-                        </button></Link>
+                        </button></a>
                     <Link href={`/find-a-professional/${professional?.slug}`} className="flex-grow-1">
                         <button className="btn btn-tan w-100 py-2">
                             View Profile
