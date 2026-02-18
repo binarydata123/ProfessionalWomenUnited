@@ -315,8 +315,10 @@ button.btn-get-free.btn-commn.ml-2 {
 	.font-larger {
 		font-size: 32px !important;
 		/* padding-top: 80px; */
-		padding-top: 0px;
-		line-height: 48px !important;
+		/* padding-top: 0px;
+		line-height: 48px !important; */
+		padding-top: 77px;
+		line-height: 40px !important;
 	}
 	.font-smaller {
 		font-size: 32px !important;
@@ -426,5 +428,6 @@ button.bg-893168.weight-semi-bold.font-small.icon-big.mt-4.transtion:hover {
 @media (min-width: 1700px) {
 	img.banner-img.effect {
 		min-width: 500px;
+		margin-top: 50px;
 	}
 }
