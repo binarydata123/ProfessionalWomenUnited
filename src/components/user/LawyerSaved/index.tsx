@@ -22,6 +22,7 @@ import { toast } from 'react-toastify';
 import Popup from '@/commonUI/Popup';
 import AuthContext from '@/context/AuthContext';
 import { getAdminImageSrc130x130 } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { PhoneIcon } from '@heroicons/react/20/solid';
 
 interface Props {
 	lawyerdata?: any;
@@ -338,9 +339,16 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 							)}
 						</ul>
 						<div className="d-none d-lg-block">
-							<Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
-								<button className="btn-primary mt-1 mb-2">Make An Inquiry </button>
-							</Link>
+							{/* <Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
+								<button className="btn-primary mt-1 mb-2">Make An Inquiry f </button>
+							</Link> */}
+							<a
+								href={`tel:${lawyerdata.phone_number}`}
+								className="btn-primary mt-1 mb-2"
+							>
+								<PhoneIcon width={18} height={18} className="me-2 text-white" />
+								Call a Specialist
+							</a>
 							<p className="mt-2 m-center">
 								<Link
 									className="boysenberry font-small weight-semi-bold"
@@ -403,9 +411,26 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 					</div>
 				</div>
 				<div className="d-block d-lg-none">
-					<Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
-						<button className="btn-primary  w-100 mt-1 mb-2">Make An Inquiry </button>
-					</Link>
+					{/* <Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
+						<button className="btn-primary  w-100 mt-1 mb-2">Make An Inquiry ff </button>
+					</Link> */}
+
+					<a
+						href={`tel:${lawyerdata.phone_number}`}
+						className="btn-primary  w-100 mt-1 mb-2"
+						style={{
+							display: "flex",
+							alignItems: "center",
+							justifyContent: "center",
+							padding: "12px 0",
+							width: "100%",
+							borderRadius: "6px"
+						}}
+					>
+						<PhoneIcon width={18} height={18} style={{ marginRight: "8px" }} />
+						Call a Specialist
+					</a>
+
 					<p className="mt-2 m-center">
 						<Link
 							className="boysenberry font-small weight-semi-bold"
@@ -478,3 +503,4 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 		</>
 	);
 }
+

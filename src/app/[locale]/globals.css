@@ -1969,3 +1969,10 @@ div#tabs-viwe-buton button:nth-child(2) {
 	padding: 12px;
 	border-radius: 10px;
 } */
+
+.abt-womn-pic {
+	border-radius: 12px;
+	height: 750px;
+	width: 100%;
+	/* background-size: auto; */
+}

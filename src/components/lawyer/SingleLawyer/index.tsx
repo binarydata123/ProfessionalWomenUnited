@@ -1,13 +1,13 @@
 'use client';
-import React, {useContext, useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
-import {MapPinIcon, PhoneIcon, EnvelopeIcon} from '@heroicons/react/20/solid';
-import {StarIcon} from '@heroicons/react/24/solid';
-import {BsBookmark, BsFillBookmarkFill, BsInputCursorText} from 'react-icons/bs';
+import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/20/solid';
+import { StarIcon } from '@heroicons/react/24/solid';
+import { BsBookmark, BsFillBookmarkFill, BsInputCursorText } from 'react-icons/bs';
 import Image from 'next/image';
 import './singleLawyer.css';
-import {getReviewsAverage, getSingleLawyerDetails, isLawyerSaved, saveLawyer} from '../../../../lib/frontendapi';
-import {insertProfileView} from '../../../../lib/enduserapi';
+import { getReviewsAverage, getSingleLawyerDetails, isLawyerSaved, saveLawyer } from '../../../../lib/frontendapi';
+import { insertProfileView } from '../../../../lib/enduserapi';
 import {
 	FacebookShareButton,
 	FacebookIcon,
@@ -20,11 +20,11 @@ import {
 } from 'next-share';
 import ReviewsAverage from '@/commonUI/ReviewsAverage';
 import Review from '@/components/public/Review';
-import {getAllReviewFrontend} from '../../../../lib/lawyerapi';
+import { getAllReviewFrontend } from '../../../../lib/lawyerapi';
 import LawyerProfileLoadingPlaceholder from '@/commonUI/LawyerProfileLoadingPlaceholder';
 import AuthContext from '@/context/AuthContext';
 import ImageComponent from '@/commonUI/ImageComponent';
-import {getLawyerImageSrc180x180} from '@/app/[locale]/commonfunctions/commonfunctions';
+import { getLawyerImageSrc180x180 } from '@/app/[locale]/commonfunctions/commonfunctions';
 
 const currentYear = new Date().getFullYear();
 
@@ -32,8 +32,8 @@ interface Props {
 	slug?: string;
 }
 
-export default function SingleLawyer({slug = ''}: Props) {
-	const {user} = useContext(AuthContext);
+export default function SingleLawyer({ slug = '' }: Props) {
+	const { user } = useContext(AuthContext);
 	const [isSticky, setIsSticky] = useState(false);
 	const [loginUser, setloginUser]: any = useState([]);
 	const [bookmark, setbookmark] = useState(false);
@@ -79,7 +79,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 			if (user_Id && lawyer_Id) {
 				try {
 					await insertProfileView(user_Id, lawyer_Id);
-				} catch (error) {}
+				} catch (error) { }
 			}
 		};
 
@@ -104,7 +104,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 
 	const handleAllReviewData = async (user_id: any) => {
 		try {
-			const reviewsData: any = await getAllReviewFrontend({memberId: user_id});
+			const reviewsData: any = await getAllReviewFrontend({ memberId: user_id });
 			setallReviews(reviewsData.allreviews);
 		} catch (error) {
 			console.error('Error fetching reviews:', error);
@@ -255,17 +255,16 @@ export default function SingleLawyer({slug = ''}: Props) {
 													)}
 													placeholderImgUrl={
 														process.env.NEXT_PUBLIC_IMAGE_URL +
-														`/images/default/${
-															single_lawyer.gender == 'male'
-																? 'female-lawyer-306x200.png'
-																: 'female-lawyer-306x200.png'
+														`/images/default/${single_lawyer.gender == 'male'
+															? 'female-lawyer-306x200.png'
+															: 'female-lawyer-306x200.png'
 														}`
 													}
 													alt="user-popup"
 													className="img-responsive m-img-fixed"
 													width={150}
 													height={150}
-													style={{borderRadius: '10px'}}
+													style={{ borderRadius: '10px' }}
 												/>
 											</div>
 										</div>
@@ -290,7 +289,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 															width={25}
 															height={25}
 															alt="share professional profile"
-															style={{cursor: 'pointer'}}
+															style={{ cursor: 'pointer' }}
 															onClick={() => setshare(!share)}
 														/>
 
@@ -298,7 +297,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 															<>
 																{bookmark ? (
 																	<BsFillBookmarkFill
-																		style={{cursor: 'pointer'}}
+																		style={{ cursor: 'pointer' }}
 																		onClick={() =>
 																			handleSaveLawyer(single_lawyer.id)
 																		}
@@ -307,7 +306,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 																	/>
 																) : (
 																	<BsBookmark
-																		style={{cursor: 'pointer'}}
+																		style={{ cursor: 'pointer' }}
 																		onClick={() =>
 																			handleSaveLawyer(single_lawyer.id)
 																		}
@@ -350,7 +349,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 														{single_lawyer?.company_name && (
 															<span
 																className="profile-d-change1"
-																style={{fontWeight: '400', fontSize: '16px'}}>
+																style={{ fontWeight: '400', fontSize: '16px' }}>
 																{single_lawyer?.company_name}
 															</span>
 														)}{' '}
@@ -379,27 +378,32 @@ export default function SingleLawyer({slug = ''}: Props) {
 												</div>
 												<div className="col-lg-4 text-end pt-3  d-none d-lg-block">
 													<>
-														<Link
-															href={`/find-a-professional/${slug}/make-an-inquiry`}
-															className="text-white">
-															<button className="btn-commn">Make An Inquiry</button>
-														</Link>
+														<a
+															href={`tel:${single_lawyer.phone_number}`}
+															className="btn-commn font-small weight-semi-bold text-white text-decoration-none"
+														>
+															<PhoneIcon width={18} height={18} className="me-2 text-white" />
+															Call a Specialist
+														</a>
+
 													</>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div className="col-lg-4 text-end pt-3 d-block d-lg-none">
-										<div className="company-detail-btn">
-											{user?.id != lawyer_Id && (
-												<Link
-													href={`/find-a-professional/${slug}/make-an-inquiry`}
-													className="text-white">
-													<button className="btn-commn">Make An Inquiry</button>
-												</Link>
-											)}
-										</div>
+									<div className="col-12 d-block d-lg-none mt-3">
+										{user?.id != lawyer_Id && (
+											<a
+												href={`tel:${single_lawyer.phone_number}`}
+												className="btn-commn d-flex align-items-center justify-content-center 
+                 w-100 py-3 text-decoration-none text-white"
+											>
+												<PhoneIcon width={18} height={18} className="me-2 text-white" />
+												Call a Specialist
+											</a>
+										)}
 									</div>
+
 								</div>
 							)}
 						</div>
@@ -410,9 +414,8 @@ export default function SingleLawyer({slug = ''}: Props) {
 			<section>
 				<div className="container">
 					<ul
-						className={` profile-dataa profile-d-changee nav nav-pills mb-3 mt-4 ${
-							isSticky ? 'sticky-profile' : ''
-						}`}>
+						className={` profile-dataa profile-d-changee nav nav-pills mb-3 mt-4 ${isSticky ? 'sticky-profile' : ''
+							}`}>
 						{isLoading ? (
 							<div
 								style={{
@@ -430,7 +433,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 										onClick={() => handleTabClick('about')}>
 										<Link
 											href="#pills-contact-tab1"
-											style={{color: '#02142d'}}
+											style={{ color: '#02142d' }}
 											onClick={e => scrollToBottom(e)}>
 											About
 										</Link>
@@ -456,7 +459,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 										onClick={() => handleTabClick('Reviews')}>
 										<Link
 											href="#pills-contact-tab2"
-											style={{color: '#1F1F1F', marginLeft: '10px'}}
+											style={{ color: '#1F1F1F', marginLeft: '10px' }}
 											onClick={e => scrollToBottom(e)}>
 											Reviews
 										</Link>
@@ -482,7 +485,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 										onClick={() => handleTabClick('Rates')}>
 										<Link
 											href="#pills-contact-tab3"
-											style={{color: '#1F1F1F', marginLeft: '10px'}}
+											style={{ color: '#1F1F1F', marginLeft: '10px' }}
 											onClick={e => scrollToBottom(e)}>
 											Rates
 										</Link>
@@ -556,7 +559,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 														// href={single_lawyer?.website_link}
 														href={
 															single_lawyer.website_link.startsWith('http://') ||
-															single_lawyer.website_link.startsWith('https://')
+																single_lawyer.website_link.startsWith('https://')
 																? single_lawyer.website_link
 																: `https://${single_lawyer.website_link}`
 														}
@@ -580,7 +583,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 									{(single_lawyer?.is_show_phone_number || single_lawyer?.is_show_email) && (
 										<div
 											className="contact-details-card mt-1 p-3 rounded"
-											style={{backgroundColor: '#f8f9fa'}}>
+											style={{ backgroundColor: '#f8f9fa' }}>
 											<h6 className="font-medium weight-semi-bold mb-3">Contact Information</h6>
 											<div className="row">
 												{single_lawyer?.is_show_phone_number && single_lawyer?.phone_number && (
@@ -660,7 +663,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 													{showMore ? (
 														<>
 															<div
-																dangerouslySetInnerHTML={{__html: single_lawyer.bio}}
+																dangerouslySetInnerHTML={{ __html: single_lawyer.bio }}
 															/>
 															<a
 																href="JavaScript:void(0)"
@@ -686,7 +689,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 													)}
 												</>
 											) : (
-												<div dangerouslySetInnerHTML={{__html: single_lawyer.bio}} />
+												<div dangerouslySetInnerHTML={{ __html: single_lawyer.bio }} />
 											)}
 										</>
 									)}
@@ -830,7 +833,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 										<div className="text-center py-4">
 											<p
 												className="read-more-reviews"
-												style={{cursor: 'pointer'}}
+												style={{ cursor: 'pointer' }}
 												onClick={() => setvisibleReviews(visibleReviews + 2)}>
 												Read More Reviews
 											</p>
@@ -842,8 +845,8 @@ export default function SingleLawyer({slug = ''}: Props) {
 									{(handleApiNull(single_lawyer?.consultation_duration) ||
 										handleApiNull(single_lawyer?.hourly_rate_range) ||
 										handleApiNull(single_lawyer?.payment_method)) && (
-										<h5 className="font-xx-large weight-semi-bold green-dark">Rates</h5>
-									)}
+											<h5 className="font-xx-large weight-semi-bold green-dark">Rates</h5>
+										)}
 
 									{handleApiNull(single_lawyer?.consultation_duration) && (
 										<>
@@ -906,17 +909,16 @@ export default function SingleLawyer({slug = ''}: Props) {
 																)}
 																placeholderImgUrl={
 																	process.env.NEXT_PUBLIC_IMAGE_URL +
-																	`/images/default/${
-																		single_lawyer.gender == 'male'
-																			? 'female-lawyer-306x200.png'
-																			: 'female-lawyer-306x200.png'
+																	`/images/default/${single_lawyer.gender == 'male'
+																		? 'female-lawyer-306x200.png'
+																		: 'female-lawyer-306x200.png'
 																	}`
 																}
 																alt={single_lawyer.full_name}
 																width={110}
 																height={100}
 																className=" m-img-fixed"
-																style={{borderRadius: '10px'}}
+																style={{ borderRadius: '10px' }}
 															/>
 														</div>
 														<div className="data-profile-user font-sm">
@@ -941,7 +943,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 															{single_lawyer?.company_name && (
 																<span
 																	className="profile-d-change1"
-																	style={{fontWeight: '400', fontSize: '16px'}}>
+																	style={{ fontWeight: '400', fontSize: '16px' }}>
 																	{single_lawyer?.company_name}
 																</span>
 															)}{' '}
@@ -954,7 +956,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 															<p className="cursor-pointer">
 																<Link
 																	href="#pills-contact-tab2"
-																	style={{color: '#1F1F1F'}}
+																	style={{ color: '#1F1F1F' }}
 																	onClick={e => scrollToBottom(e)}>
 																	<StarIcon width={20} height={20} />
 																	{single_lawyer?.avg_rating_and_reviews ? (
@@ -962,15 +964,15 @@ export default function SingleLawyer({slug = ''}: Props) {
 																			<strong>
 																				{single_lawyer?.avg_rating_and_reviews
 																					? single_lawyer.avg_rating_and_reviews.split(
-																							'('
-																						)[0]
+																						'('
+																					)[0]
 																					: ''}
 																			</strong>{' '}
 																			(
 																			{single_lawyer?.avg_rating_and_reviews
 																				? single_lawyer.avg_rating_and_reviews.split(
-																						'('
-																					)[1]
+																					'('
+																				)[1]
 																				: ''}{' '}
 																		</>
 																	) : (
@@ -1010,15 +1012,15 @@ export default function SingleLawyer({slug = ''}: Props) {
 																{handleApiNull(
 																	single_lawyer?.consultation_duration
 																) && (
-																	<Link href="JavaScript:void(0)" className="mb-2">
-																		<button className="btn-primary-red">
-																			Free Consultation:{' '}
-																			{handleApiNull(
-																				single_lawyer?.consultation_duration
-																			) || 'No'}
-																		</button>
-																	</Link>
-																)}
+																		<Link href="JavaScript:void(0)" className="mb-2">
+																			<button className="btn-primary-red">
+																				Free Consultation:{' '}
+																				{handleApiNull(
+																					single_lawyer?.consultation_duration
+																				) || 'No'}
+																			</button>
+																		</Link>
+																	)}
 															</div>
 														</div>
 													</div>
@@ -1028,11 +1030,13 @@ export default function SingleLawyer({slug = ''}: Props) {
 										<div className="col-lg-12 col-12 text-end pt-3 d-block">
 											<div className="company-detail-btn">
 												{user?.id != lawyer_Id && (
-													<Link
-														href={`/find-a-professional/${slug}/make-an-inquiry`}
-														className="text-white">
-														<button className=" w-100 btn-commn">Make An Inquiry</button>
-													</Link>
+													<a
+														href={`tel:${single_lawyer.phone_number}`}
+														className="btn-commn w-100 d-flex align-items-center justify-content-center py-3 text-white text-decoration-none"
+													>
+														<PhoneIcon width={18} height={18} className="me-2 text-white" />
+														Call a Specialist
+													</a>
 												)}
 											</div>
 										</div>
@@ -1049,7 +1053,7 @@ export default function SingleLawyer({slug = ''}: Props) {
 																<img
 																	src="/woman-of-the-year-badge.png"
 																	alt="Woman of the Year - Professional Women United"
-																	style={{width: '150px', height: 'auto'}}
+																	style={{ width: '150px', height: 'auto' }}
 																/>
 															</div>
 															{/* Embed Instructions */}
@@ -1087,3 +1091,4 @@ export default function SingleLawyer({slug = ''}: Props) {
 		</>
 	);
 }
+
