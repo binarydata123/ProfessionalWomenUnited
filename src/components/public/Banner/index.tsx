@@ -16,11 +16,10 @@ export default function Banner() {
 				<div className="container top-ban">
 					<div className="hero-content">
 						<h1 className="hero-title">
-							Connecting <span>Top Women Professionals</span><br /> Nationwide
+							We recognize <span>and connect you with award-winning women</span><br />experts across the U.S.
 						</h1>
 						<p className="hero-subtitle">
-							Build trusted connections with award-winning women professionals across the United States.
-							Our platform helps you find the right expert, at the right time.
+							Build trusted connections with women professionals that have ALL been voted best in their metro area. Our platform helps you find the right expert, at the right time.
 						</p>
 						<div className="hero-buttons">
 							<Link href="/find-a-professional" className="btn-primary">Find a Professional</Link>

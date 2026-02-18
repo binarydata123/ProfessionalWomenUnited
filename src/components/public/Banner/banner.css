@@ -8,13 +8,15 @@
 
 .hero-banner {
 	position: relative;
-	background: url('/images/homebanner.webp') center/cover no-repeat;
+	/* background: url('/images/homebanner.webp') center/cover no-repeat; */
+	background: url('/images/high-angle-women-meeting-work.jpg') center/cover no-repeat;
 	min-height: 500px;
 	display: flex;
 	align-items: center;
 	padding: 80px 5%;
 	color: #fff;
 	margin-top: 90px;
+	background-position: center 26%;
 }
 
 .hero-banner .overlay {

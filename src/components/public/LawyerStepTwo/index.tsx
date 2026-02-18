@@ -1,8 +1,8 @@
 'use client';
-import {useState, useEffect, useContext} from 'react'; // Import useState
+import { useState, useEffect, useContext } from 'react'; // Import useState
 import React from 'react';
-import {ArrowSmallLeftIcon} from '@heroicons/react/20/solid';
-import {useRouter} from 'next/navigation';
+import { ArrowSmallLeftIcon } from '@heroicons/react/20/solid';
+import { useRouter } from 'next/navigation';
 import {
 	getAllCountries,
 	getAllJurisdictions,
@@ -12,16 +12,16 @@ import {
 	getAdminSettingData,
 	getAllFirmsData
 } from '../../../../lib/frontendapi';
-import {updateLaywerData} from '../../../../lib/lawyerapi';
+import { updateLaywerData } from '../../../../lib/lawyerapi';
 import ReactPhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import Link from 'next/link';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
 import AuthContext from '@/context/AuthContext';
 import Cookies from 'js-cookie';
 import Popup from '@/commonUI/Popup';
 import AddFirmLawyer from '@/components/lawyer/Popup/AddFirmLawyer';
-import {PatternFormat} from 'react-number-format';
+import { PatternFormat } from 'react-number-format';
 
 interface FormData {
 	license_number: string;
@@ -46,7 +46,7 @@ export default function LawyerStepTwo() {
 		setIsFocused(false);
 	};
 
-	const {user} = useContext(AuthContext);
+	const { user } = useContext(AuthContext);
 	const router = useRouter();
 
 	const [formData, setFormData] = useState<FormData>({
@@ -61,7 +61,7 @@ export default function LawyerStepTwo() {
 		profile_status: ''
 	});
 
-	const [errors, setErrors] = useState<{[key: string]: string}>({});
+	const [errors, setErrors] = useState<{ [key: string]: string }>({});
 	const [user_id, setUserId] = useState('');
 	const [allcountries, setCountries] = useState([]);
 	const [alljurisdictions, setJurisdictions] = useState([]);
@@ -167,7 +167,7 @@ export default function LawyerStepTwo() {
 	};
 
 	function validateForm() {
-		const newErrors: {[key: string]: string} = {};
+		const newErrors: { [key: string]: string } = {};
 		// if (!formData.license_number) {
 		// 	newErrors.license_number = 'License number is required';
 		// }
@@ -282,7 +282,7 @@ export default function LawyerStepTwo() {
 		try {
 			const trimmedFirmName = firmName.trim();
 			if (trimmedFirmName !== '') {
-				const response = await getFirmByNameSearch({p_firm_name: trimmedFirmName});
+				const response = await getFirmByNameSearch({ p_firm_name: trimmedFirmName });
 				if (response.status === 'success') {
 					const filteredSuggestions = response.data.filter((firm: any) =>
 						firm.firm_name.toLowerCase().includes(trimmedFirmName.toLowerCase())
@@ -389,7 +389,7 @@ export default function LawyerStepTwo() {
 												value={formData.phone_number}
 												placeholder="(201) 555-0123"
 												onValueChange={values => {
-													setFormData({...formData, phone_number: values.value});
+													setFormData({ ...formData, phone_number: values.value });
 													// values.value gives plain digits like "2125551234"
 													// values.formattedValue gives "(212) 555-1234"
 												}}
@@ -429,7 +429,7 @@ export default function LawyerStepTwo() {
 													className="form-fild w-100"
 													value={formData.location}
 													onChange={e =>
-														setFormData({...formData, location: e.target.value})
+														setFormData({ ...formData, location: e.target.value })
 													}>
 													<option value="">Select Location</option>
 													{allcountries.map((countries: any) => (
@@ -447,7 +447,7 @@ export default function LawyerStepTwo() {
 											)}
 											<p className="location-field-notes">
 												<i>
-													We feature professionals located within the 200 largest U.S. cities
+													We feature professionals located within the metro U.S. cities
 													to ensure broad representation across major metropolitan areas.{' '}
 													<a href="/our-selection-criteria">Learn more</a>
 												</i>
