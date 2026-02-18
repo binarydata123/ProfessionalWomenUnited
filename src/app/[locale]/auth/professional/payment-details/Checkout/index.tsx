@@ -9,6 +9,7 @@ import AuthContext from '@/context/AuthContext';
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import './style.css';
 import { ArrowSmallLeftIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
+import Cookies from 'js-cookie';
 
 interface FormData {
     CardNumber: string;
@@ -17,7 +18,7 @@ interface FormData {
     CardCvv: string;
 }
 export default function Checkout() {
-    const { user } = useContext(AuthContext)
+    // const { user } = useContext(AuthContext)
     const router = useRouter();
     const [plan_type, setPlanType] = useState('');
     const [plan_amount, setPlanAmount] = useState('');
@@ -37,24 +38,51 @@ export default function Checkout() {
     const stripe = useStripe();
     const elements: any = useElements();
 
-    useEffect(() => {
-        if (user) {
-            const temp_plan_type = window.sessionStorage.getItem('temp_plan_type');
-            const temp_plan_amount = window.sessionStorage.getItem('temp_plan_amount');
+    // useEffect(() => {
+    //     if (user) {
+    //         const temp_plan_type = window.sessionStorage.getItem('temp_plan_type');
+    //         const temp_plan_amount = window.sessionStorage.getItem('temp_plan_amount');
 
-            if (user) {
-                if (user?.id == null || user?.role == 'enduser' || temp_plan_type == null || temp_plan_amount == null) {
-                    router.push('/auth/login');
-                } else {
-                    setPlanType(temp_plan_type);
-                    setPlanAmount(temp_plan_amount);
-                    setUserId(user?.id);
-                    setUserEmail(user?.email || '');
-                    setUserName(user?.name || '');
-                }
-            }
+    //         if (user) {
+    //             if (user?.id == null || user?.role == 'enduser' || temp_plan_type == null || temp_plan_amount == null) {
+    //                 router.push('/auth/login');
+    //             } else {
+    //                 setPlanType(temp_plan_type);
+    //                 setPlanAmount(temp_plan_amount);
+    //                 setUserId(user?.id);
+    //                 setUserEmail(user?.email || '');
+    //                 setUserName(user?.first_name || '');
+    //             }
+    //         }
+    //     }
+    // }, [user]);
+    useEffect(() => {
+        const token = Cookies.get("session_token");
+        const userId = Cookies.get("userId");
+        const userEmail = Cookies.get("email");
+        const userName = Cookies.get("first_name");
+        const userRole = window.sessionStorage.getItem("temp_user_role");
+
+        const temp_plan_type = window.sessionStorage.getItem("temp_plan_type");
+        const temp_plan_amount = window.sessionStorage.getItem("temp_plan_amount");
+
+        if (!token || !userId) {
+            router.push("/auth/login");
+            return;
         }
-    }, [user]);
+        if (userRole === "enduser" || !temp_plan_type || !temp_plan_amount) {
+            router.push("/auth/login");
+            return;
+        }
+
+        // ✅ Data set in state
+        setPlanType(temp_plan_type);
+        setPlanAmount(temp_plan_amount);
+        setUserId(userId);
+        setUserEmail(userEmail || "");
+        setUserName(userName || "");
+    }, []);
+
 
 
     function SubmitPaymentForm(event: any) {
@@ -92,9 +120,13 @@ export default function Checkout() {
                                         plan_amount +
                                         ' USD will be charge monthly',
                                     showConfirmButton: true,
-                                    confirmButtonColor: '#c49073'
+                                    confirmButtonColor: '#153060'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
+                                    // window.sessionStorage.setItem('payment_pending', 'false');
+                                    window.sessionStorage.setItem('payment_pending', JSON.stringify(false));
+                                    Cookies.remove('session_token')
+
                                     router.push('/auth/professional/verify-otp');
                                 });
                             } else {
@@ -104,11 +136,14 @@ export default function Checkout() {
                                     text:
                                         'Your payment of amount ' +
                                         plan_amount +
-                                        ' USD for yearly plan has been succesfuly done',
+                                        ' USD for registration has been successfully completed.',
                                     showConfirmButton: true,
-                                    confirmButtonColor: '#c49073'
+                                    confirmButtonColor: '#153060'
                                 }).then(function () {
                                     window.sessionStorage.setItem('payment_status', 'paid');
+                                    window.sessionStorage.setItem('payment_pending', 'false');
+                                    Cookies.remove('session_token')
+                                    // window.sessionStorage.setItem('payment_pending', JSON.stringify(false)); 
                                     router.push('/auth/professional/verify-otp');
                                 });
                             }

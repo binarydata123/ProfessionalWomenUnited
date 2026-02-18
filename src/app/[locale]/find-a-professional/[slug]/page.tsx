@@ -3,6 +3,7 @@ import './lawyer-profile.css';
 import { getAllMetaData, getSingleLawyerDetails } from '../../../../../lib/frontendapi';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import SingleProfession from '@/components/lawyer/SingleProfession';
 
 type Props = {
 	params: { slug: string };
@@ -46,6 +47,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
 		notFound()
 	}
 	return <SingleLawyer slug={params.slug} />;
+	// return <SingleProfession />;
 }
 
 async function getData(slug: string) {

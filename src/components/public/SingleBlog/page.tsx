@@ -192,13 +192,21 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								)}
 
 								{blog.image && !isLoading ? (
-									<Image
+									<img
 										className="w-100 mb-4 responsive-img"
-										src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${blog.image}`}
-										alt={blog.image_alt_text}
+										src={
+											blog?.image
+												? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${blog.image}`
+												: '/images/homebanner.webp'
+										}
+										alt={blog?.image_alt_text || 'Blog Image'}
 										height={665}
 										width={1920}
+										onError={(e) => {
+											e.currentTarget.src = '/images/homebanner.webp';
+										}}
 									/>
+
 								) : (
 									<div
 										style={{
@@ -230,7 +238,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								<ul className="d-flex align-items-center">
 									<li>
 										<LinkedinShareButton
-											url={`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`}
+											url={`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`}
 										>
 											<Image
 												width={24}
@@ -242,14 +250,14 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									</li>
 									<li className="m-0">
 										<TwitterShareButton
-											url={`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`}
+											url={`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`}
 										>
 											<i className="fa-brands fa-x-twitter m-0"></i>
 										</TwitterShareButton>
 									</li>
 									<li>
 										<FacebookShareButton
-											url={`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`}
+											url={`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`}
 										>
 											<Image width={24} height={24} src="/images/Blogs/facebook.png" alt="icon" />
 										</FacebookShareButton>
@@ -257,7 +265,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 									<li>
 										<a
 											onClick={() =>
-												copyToClipboard(`${process.env.NEXT_PUBLIC_BASE_URL}blogs/${blog.slug}`)
+												copyToClipboard(`${process.env.NEXT_PUBLIC_BASE_URL}/blogs/${blog.slug}`)
 											}
 											role="button"
 											title="copy blog url"
@@ -287,7 +295,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 								<div className={`profile-data profile-d-change ${isSticky ? 'sticky-profile' : ''}`}>
 									<div className={`left-bar-image ccc `}>
 										<h6 style={{ color: '#fff' }}>GOT A PROFESSIONAL QUESTION?</h6>
-										<p>Post a question for free on our Legal Forum</p>
+										<p>Post a question for free on our Professional Forum</p>
 										<Link href="/find-a-professional">
 											<button className="w-100 btn-get-free btn-commn bg-color d-flex align-items-center justify-content-center gap-2 mt-5">
 												<span>Ask A Question</span>
@@ -347,7 +355,7 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 						)}
 					</div>
 					<div className="col-lg-3 col-12 d-block d-md-none">
-						<div className="text-center pt-5">
+						<div className="text-center pt-5 mb-5">
 							<Link
 								href={'/blogs'}
 								className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 blog-all-btn"
@@ -371,10 +379,10 @@ export default function SingleBlog({ blog, relatedBlogs }: Props) {
 			>
 				<section className="connect-with-lawyes-popup text-center" >
 					<div className="connect-title">
-						<h4 className='green-med-pop text-center need-advice-txt' >Need Professional Advice?</h4>
-						<p className='text-white text-center pop-dis'>Connect with top professionals in the USA and get the expert help you need.</p>
+						<h4 className='green-med-pop text-center need-advice-txt' style={{ color: '#fff' }}>Need Professional Advice?</h4>
+						<p className='text-white text-center pop-dis' style={{ color: '#fff' }}>Connect with top professionals in the USA and get the expert help you need.</p>
 						<Link href={'/find-a-professional'} >
-							<button className="btn-get-free btn-commn mx-auto m-w-full">
+							<button className="btn-get-free btn-commn mx-auto m-w-full mb-2">
 								Find A Professional</button>
 						</Link>
 					</div>

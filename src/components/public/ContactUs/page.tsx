@@ -67,9 +67,10 @@ export default function ContactUs() {
 
 		if (!message) {
 			errors.message = t('errMessage');
-		} else if (/[^a-zA-Z]/.test(message)) {
-			errors.message = 'Message should only contain letters';
 		}
+		// else if (/[^a-zA-Z]/.test(message)) {
+		// 	errors.message = 'Message should only contain letters';
+		// }
 		return errors;
 	};
 
@@ -98,7 +99,7 @@ export default function ContactUs() {
 												className="form-check-input"
 												type="radio"
 												name="user_is"
-												value={'lawyer'}
+												value={'professional'}
 												id="inlineRadio1"
 												defaultValue="option1"
 												onChange={handleInputChange}
@@ -155,7 +156,7 @@ export default function ContactUs() {
 										maxLength={1000}
 										value={contactUsData.message}
 										placeholder={t('let_us_know')} />
-									<p className="mt-4 set-term-use">{t('terms_of_use')}</p>
+									{/* <p className="mt-4 set-term-use">{t('terms_of_use')}</p> */}
 									<div>
 										<button
 											type="submit"
@@ -185,14 +186,14 @@ export default function ContactUs() {
 						<div className="contact-box">
 							<Image
 								src="/images/contact/sms.png"
-								alt="contact@connectlegal.com"
+								alt="contact@professionalwomen.com"
 								width={40}
 								height={40}
 							/>
 							<h5>{t('write_to_us')}</h5>
-							<a href="mailto:wisuva@mailinator.com">
+							<a href="mailto:info@professionalwomenunited.com">
 								{' '}
-								<p>contact@profesionalwomen.com</p>
+								<p>info@professionalwomenunited.com</p>
 							</a>
 						</div>
 					</div>
@@ -200,9 +201,9 @@ export default function ContactUs() {
 						<div className="contact-box pl-lg-2">
 							<Image src="/images/contact/call-calling.png" alt="contact-number" width={40} height={40} />
 							<h5>{t('talk_to_us')}</h5>
-							<a href="tel:+97143316688">
+							<a href="tel:479-321-3654">
 								{' '}
-								<p>+159654894564</p>
+								<p>479-321-3654</p>
 							</a>
 						</div>
 					</div>
@@ -210,9 +211,9 @@ export default function ContactUs() {
 						<div className="contact-box border-none pl-2">
 							<Image src="/images/contact/location.png" alt="contact-address" width={40} height={40} />
 							<h5>{t('visit_us')}</h5>
-							<a href="https://goo.gl/maps/7hfKjBNd8t5vuLej8" target="blank">
+							<a href="https://share.google/3QXIpKY1IvpoBUzro" target="blank">
 								{' '}
-								<p>804, City Tower 2, willaim Road, USA</p>
+								<p>1407 NE Beta Lane, Bentonville, AR 72712</p>
 							</a>
 						</div>
 					</div>

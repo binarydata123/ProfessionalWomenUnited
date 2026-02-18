@@ -50,9 +50,11 @@ span.border-radius-1.banner-arrow-btn.border-3DC9A1.color-add {
 @media (min-width: 991px) {
 	#bg-are-you {
 		border-radius: 16px;
-		background-color: #fff;
-		background-image: url('https://images.pexels.com/photos/5356220/pexels-photo-5356220.jpeg');
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('/images/StockCake-Professional_Woman_Working-139499-medium.jpg');
 		background-position: right;
+		background-size: cover;
+		background-repeat: no-repeat;
 		display: block;
 	}
 }

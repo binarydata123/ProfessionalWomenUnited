@@ -56,6 +56,10 @@ interface FormData {
 	profile_image: string;
 	plan: string;
 	firm_id: string;
+	address: string;
+	salutation: string;
+	zip: string;
+	website_link: string;
 }
 
 interface Specialization {
@@ -93,7 +97,11 @@ export default function Page({ params }: { params: { id: string } }) {
 		free_consultation_duration: '',
 		profile_image: '',
 		plan: '',
-		firm_id: ''
+		firm_id: '',
+		address: '',
+		salutation: '',
+		zip: '',
+		website_link: ''
 	});
 
 	const [errors, setErrors] = useState<{ [key: string]: string }>({});
@@ -139,6 +147,9 @@ export default function Page({ params }: { params: { id: string } }) {
 					email: res.data.email,
 					phone_number: res.data.phone_number,
 					gender: res.data.gender,
+					address: res.data.address,
+					zip: res.data.zip,
+					website_link: res.data.website_link,
 					linkedin_url: res.data.linkedin_url,
 					license_number: res.data.license_number,
 					acquired: res.data.acquired,
@@ -290,56 +301,56 @@ export default function Page({ params }: { params: { id: string } }) {
 		if (!formData.phone_number) {
 			newErrors.phone_number = 'Phone number is required';
 		}
-		if (!formData.gender) {
-			newErrors.gender = 'Gender is required';
-		}
+		// if (!formData.gender) {
+		// 	newErrors.gender = 'Gender is required';
+		// }
 		if (!formData.location) {
 			newErrors.location = 'Location is required';
 		}
-		if (!formData.license_number) {
-			newErrors.license_number = 'License number is required';
-		}
-		if (!formData.acquired) {
-			newErrors.acquired = 'Acquired is required';
-		} else if (!/^\d{4}$/.test(formData.acquired)) {
-			newErrors.acquired = 'Enter a valid year';
-		}
+		// if (!formData.license_number) {
+		// 	newErrors.license_number = 'License number is required';
+		// }
+		// if (!formData.acquired) {
+		// 	newErrors.acquired = 'Acquired is required';
+		// } else if (!/^\d{4}$/.test(formData.acquired)) {
+		// 	newErrors.acquired = 'Enter a valid year';
+		// }
 		if (!formData.status) {
 			newErrors.status = 'Status is required';
 		}
-		if (!formData.designation) {
-			newErrors.designation = 'Designation is required';
-		}
+		// if (!formData.designation) {
+		// 	newErrors.designation = 'Designation is required';
+		// }
 		// if (!formData.firm_id) {
 		// 	newErrors.firm_id = 'Company name is required';
 		// }
-		if (!formData.bio) {
-			newErrors.bio = 'Bio is required';
-		}
+		// if (!formData.bio) {
+		// 	newErrors.bio = 'Bio is required';
+		// }
 		// if (!formData.jurisdiction) {
 		// 	newErrors.jurisdiction = 'Jurisdiction is required';
 		// }
 		if (!formData.primary_practice_area) {
-			newErrors.primary_practice_area = 'Practice area is required';
+			newErrors.primary_practice_area = 'Profession is required';
 		}
 
-		if (isFreeConsultationChecked) {
-			if (!formData.hourly_rate) {
-				newErrors.hourly_rate = 'hourly rate is required';
-			} else if (!/^\d+$/.test(formData.hourly_rate)) {
-				newErrors.hourly_rate = 'Hourly rate must be a number';
-			}
-			if (
-				!formData.paymentMethods.cash &&
-				!formData.paymentMethods.bankTransfer &&
-				!formData.paymentMethods.cheque
-			) {
-				newErrors.paymentMethods = 'Select at least one payment method';
-			}
-			if (!formData.free_consultation_duration) {
-				newErrors.free_consultation_duration = 'Consultation duration is required';
-			}
-		}
+		// if (isFreeConsultationChecked) {
+		// 	if (!formData.hourly_rate) {
+		// 		newErrors.hourly_rate = 'hourly rate is required';
+		// 	} else if (!/^\d+$/.test(formData.hourly_rate)) {
+		// 		newErrors.hourly_rate = 'Hourly rate must be a number';
+		// 	}
+		// 	if (
+		// 		!formData.paymentMethods.cash &&
+		// 		!formData.paymentMethods.bankTransfer &&
+		// 		!formData.paymentMethods.cheque
+		// 	) {
+		// 		newErrors.paymentMethods = 'Select at least one payment method';
+		// 	}
+		// 	if (!formData.free_consultation_duration) {
+		// 		newErrors.free_consultation_duration = 'Consultation duration is required';
+		// 	}
+		// }
 
 		setErrors(newErrors);
 		return Object.keys(newErrors).length === 0;
@@ -350,23 +361,30 @@ export default function Page({ params }: { params: { id: string } }) {
 		setIsLoading(true);
 		const isValid = validateForm();
 		if (isValid) {
+			const toNullIfEmpty = (value: any) => {
+				if (value === "" || value === "null") return null;
+				return value;
+			};
 			const data = {
 				id: params.id,
 				user_id: user_id,
 				first_name: formData.first_name,
 				last_name: formData.last_name,
 				phone_number: formData.phone_number,
-				gender: formData.gender,
+				gender: 'female',
+				address: toNullIfEmpty(formData.address),
+				zip: toNullIfEmpty(formData.zip),
+				website_link: toNullIfEmpty(formData.website_link),
 				location: formData.location,
-				linkedin_url: formData.linkedin_url,
-				license_number: formData.license_number,
-				acquired: formData.acquired,
+				linkedin_url: toNullIfEmpty(formData.linkedin_url),
+				license_number: toNullIfEmpty(formData.license_number),
+				acquired: toNullIfEmpty(formData.acquired),
 				status: formData.status,
-				designation: formData.designation,
-				company_name: formData.company_name,
-				firm_id: formData.firm_id,
-				bio: formData.bio,
-				jurisdiction: formData.jurisdiction,
+				designation: toNullIfEmpty(formData.designation),
+				company_name: toNullIfEmpty(formData.company_name),
+				firm_id: toNullIfEmpty(formData.firm_id),
+				bio: toNullIfEmpty(formData.bio),
+				jurisdiction: toNullIfEmpty(formData.jurisdiction),
 				primary_practice_area: formData.primary_practice_area,
 				practice_areas: formData.practice_areas,
 				specialization: formData.selectedSpecializationIds,
@@ -374,9 +392,11 @@ export default function Page({ params }: { params: { id: string } }) {
 					? Object.keys(formData.paymentMethods)
 						.filter(method => formData.paymentMethods[method])
 						.join(', ')
-					: '',
-				free_consultation_duration: isFreeConsultationChecked ? formData.free_consultation_duration : '',
-				hourly_rate: isFreeConsultationChecked ? formData.hourly_rate : '',
+					: null,
+				free_consultation_duration: isFreeConsultationChecked ?
+					toNullIfEmpty(formData.free_consultation_duration) : null,
+				hourly_rate: isFreeConsultationChecked ?
+					toNullIfEmpty(formData.hourly_rate) : null,
 				profile_image: image,
 				plan: formData.plan
 			};
@@ -400,10 +420,10 @@ export default function Page({ params }: { params: { id: string } }) {
 						if (errors.email) {
 							toast.error(errors.email[0]);
 						} else {
-							toast.error('An error occurred while creating a new lawyer');
+							toast.error('An error occurred while creating a new professional');
 						}
 					} else {
-						toast.error('An error occurred during while creating a new lawyer');
+						toast.error('An error occurred during while creating a new professional');
 					}
 					setIsLoading(false);
 				});
@@ -421,7 +441,7 @@ export default function Page({ params }: { params: { id: string } }) {
 				practice_areas: newPracticeAreas
 			});
 		} else {
-			toast.error('Maximum 3 practice area can be added.');
+			toast.error('Maximum 3 Profession can be added.');
 		}
 	}
 
@@ -446,7 +466,7 @@ export default function Page({ params }: { params: { id: string } }) {
 	const practiceAreaInputs = formData.practice_areas.map((area, index) => (
 		<div key={index}>
 			<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 d-flex justify-content-between">
-				Practice Area {index + 1}
+				Profession {index + 1}
 				<span className="remove-spcl log-red" onClick={() => removePracticeArea(index)}>
 					Remove
 				</span>
@@ -457,7 +477,7 @@ export default function Page({ params }: { params: { id: string } }) {
 				name=""
 				onChange={e => handlePracticeAreaChange(index, e.target.value)}
 			>
-				<option value="">Select Practice Area</option>
+				<option value="">Select Profession</option>
 				{allservices.map((services: any) => (
 					<option key={services.id} value={services.id}>
 						{services.name}
@@ -671,21 +691,18 @@ export default function Page({ params }: { params: { id: string } }) {
 								)}
 								<div className="row">
 									<div className="col-sm-6 col-6">
-										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
-											Gender
+										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+											Address
 										</label>
-										<select
+										<input
+											type="text"
+											placeholder="Address"
 											className="form-fild  w-100"
-											value={formData.gender}
-											onChange={e => setFormData({ ...formData, gender: e.target.value })}
-										>
-											<option value="">Select Gender</option>
-											<option value="female">Female</option>
-											<option value="male">Male</option>
-											<option value="other">Other</option>
-										</select>
-										{errors.gender && (
-											<small className="error-message text-danger d-block">{errors.gender}</small>
+											value={formData.address}
+											onChange={e => setFormData({ ...formData, address: e.target.value })}
+										/>
+										{errors.address && (
+											<small className="error-message text-danger d-block">{errors.address}</small>
 										)}
 									</div>
 									<div className="col-sm-6 col-6">
@@ -709,6 +726,38 @@ export default function Page({ params }: { params: { id: string } }) {
 												{errors.location}
 											</small>
 										)}
+									</div>
+								</div>
+								<div className="row">
+									<div className="col-sm-6 col-6">
+										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+											Zip Code
+										</label>
+										<input
+											type="text"
+											placeholder="Zip Code"
+											className="form-fild  w-100"
+											value={formData.zip}
+											onChange={e => setFormData({ ...formData, zip: e.target.value })}
+										/>
+										{/* {errors.zip && (
+										<small className="error-message text-danger d-block">{errors.zip}</small>
+									)} */}
+									</div>
+									<div className="col-sm-6 col-6">
+										<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
+											Website Link
+										</label>
+										<input
+											type="text"
+											placeholder="https://website.com"
+											className="form-fild  w-100"
+											value={formData.website_link}
+											onChange={e => setFormData({ ...formData, website_link: e.target.value })}
+										/>
+										{/* {errors.website && (
+										<small className="error-message text-danger d-block">{errors.website}</small>
+									)} */}
 									</div>
 								</div>
 
@@ -741,7 +790,7 @@ export default function Page({ params }: { params: { id: string } }) {
 							</div>
 							<div className="col-md-6 col-lg-12 col-xl-6">
 								<div className="profile-picture">
-									<label className="font-small  weight-medium text-sonic-silver w-100 pb-2">
+									{/* <label className="font-small  weight-medium text-sonic-silver w-100 pb-2">
 										License Number
 									</label>
 									<input
@@ -755,7 +804,7 @@ export default function Page({ params }: { params: { id: string } }) {
 										<small className="error-message text-danger d-block">
 											{errors.license_number}
 										</small>
-									)}
+									)} */}
 									<div className="row">
 										<div className="col-sm-6 col-6">
 											<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
@@ -775,11 +824,11 @@ export default function Page({ params }: { params: { id: string } }) {
 												}}
 												maxLength={4}
 											/>
-											{errors.acquired && (
+											{/* {errors.acquired && (
 												<small className="error-message text-danger d-block">
 													{errors.acquired}
 												</small>
-											)}
+											)} */}
 										</div>
 										<div className="col-sm-6 col-6">
 											<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
@@ -802,7 +851,7 @@ export default function Page({ params }: { params: { id: string } }) {
 										</div>
 									</div>
 
-									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
+									{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
 										Designation
 									</label>
 									<input
@@ -816,27 +865,23 @@ export default function Page({ params }: { params: { id: string } }) {
 										<small className="error-message text-danger d-block">
 											{errors.designation}
 										</small>
-									)}
-									{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
+									)} */}
+									<label className="font-small  weight-medium text-sonic-silver w-100 mt-4">
 										Company Name
 									</label>
-									<select
-										className="form-fild w-100"
-										value={formData.firm_id}
-										onChange={(e) => setFormData({ ...formData, firm_id: e.target.value })}
-									>
-										<option value="">Select Category</option>
-										{allfirmName.map((firm: any) => (
-											<option key={firm.id} value={firm.id}>
-												{firm.firm_name}
-											</option>
-										))}
-									</select>
-									{errors.firm_id && (
+									<input
+										type="text"
+										placeholder="Business Attorney"
+										className="form-fild  w-100"
+										value={formData.company_name}
+										onChange={e => setFormData({ ...formData, company_name: e.target.value })}
+										maxLength={30}
+									/>
+									{/* {errors.firm_id && (
 										<small className="error-message text-danger d-block">
 											{errors.firm_id}
 										</small>
-									)} */}
+									)}  */}
 									<label className="font-small weight-medium text-sonic-silver w-100 mt-4 pb-2">
 										Bio
 									</label>
@@ -850,9 +895,9 @@ export default function Page({ params }: { params: { id: string } }) {
 										value={formData.bio && formData.bio}
 										onChange={handleDescriptionChange}
 									/>
-									{errors.bio && (
+									{/* {errors.bio && (
 										<small className="error-message text-danger d-block">{errors.bio}</small>
-									)}
+									)} */}
 								</div>
 							</div>
 						</div>
@@ -866,10 +911,10 @@ export default function Page({ params }: { params: { id: string } }) {
 						<div className="col-md-6 col-lg-12 col-xl-6">
 							<div className="profile-picture">
 								<h5 className="font-x-large22 weight-bold green-dark" id="practice-area">
-									Practice Area{' '}
+									Profession{' '}
 								</h5>
 								<p className="font-small  weight-light text-sonic-silver">
-									Tell us about your legal expertise
+									Tell us about your professional expertise
 								</p>
 
 								{/* <label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
@@ -891,7 +936,7 @@ export default function Page({ params }: { params: { id: string } }) {
 									<small className="error-message text-danger d-block">{errors.jurisdiction}</small>
 								)} */}
 								<label className="font-small  weight-medium text-sonic-silver w-100 mt-4 pb-2">
-									Primary Practice Area
+									Primary Profession
 								</label>
 								<select
 									className="form-fild  w-100"
@@ -903,7 +948,7 @@ export default function Page({ params }: { params: { id: string } }) {
 										})
 									}
 								>
-									<option value="">Select Practice Area</option>
+									<option value="">Select Profession</option>
 									{allservices.map((services: any) => (
 										<option key={services.id} value={services.id}>
 											{services.name}
@@ -923,7 +968,7 @@ export default function Page({ params }: { params: { id: string } }) {
 										onClick={addPracticeArea}
 										className="font-small weight-semi-bold green-medium-2 "
 									>
-										<i className="fa-solid fa-square-plus"></i> Add Practice Area{' '}
+										<i className="fa-solid fa-square-plus"></i> Add Profession{' '}
 									</a>
 								</p>
 
@@ -1067,11 +1112,11 @@ export default function Page({ params }: { params: { id: string } }) {
 											value={formData.hourly_rate}
 											onChange={e => setFormData({ ...formData, hourly_rate: e.target.value })}
 										/>
-										{errors.hourly_rate && (
+										{/* {errors.hourly_rate && (
 											<small className="error-message text-danger d-block">
 												{errors.hourly_rate}
 											</small>
-										)}
+										)} */}
 
 										<div className="form-fild-des mt-4">
 											<div className="row mt-2">
@@ -1144,11 +1189,11 @@ export default function Page({ params }: { params: { id: string } }) {
 													</label>
 												</div>
 											</div>
-											{errors.paymentMethods && (
+											{/* {errors.paymentMethods && (
 												<small className="error-message text-danger d-block">
 													{errors.paymentMethods}
 												</small>
-											)}
+											)} */}
 										</div>
 									</div>
 								)}
@@ -1180,8 +1225,8 @@ export default function Page({ params }: { params: { id: string } }) {
 									onChange={e => setFormData({ ...formData, plan: e.target.value })}
 								>
 									<option value="">Choose Plan Type</option>
-									<option value={'monthly'}>Monthly Plan</option>
-									<option value={'quarterly'}>Quarterly Plan</option>
+									<option value={'yearly'}>Yearly Plan</option>
+									{/* <option value={'quarterly'}>Quarterly Plan</option> */}
 								</select>
 							</div>
 						</div>

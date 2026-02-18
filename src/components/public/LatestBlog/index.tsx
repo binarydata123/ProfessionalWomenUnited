@@ -37,16 +37,16 @@ export default function LatestBlog({ latestBlog }: Props) {
 					<div className="row g-4">
 						<div className="col-lg-5">
 							<Link href={`blogs/${latestBlogData?.slug}`}>
-								<div className="images-blog">
+								<div className="images-blog" >
 									{isLoading && process.env.NEXT_PUBLIC_DATA_LOADING_PLACEHOLDER === 'true' ? (
 										<ImageLoadingPlacehoder height={350} />
 									) : latestBlogData?.image ? (
 										<ImageComponent
 											className="w-100"
-											// src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${latestBlogData?.image}`}
+											// src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${latestBlogData?.image}`}
 											src={
 												latestBlogData?.image
-													? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${latestBlogData.image}`
+													? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${latestBlogData.image}`
 													: `${process.env.NEXT_PUBLIC_BASE_URL}/images/624x351.png`
 											}
 
@@ -56,7 +56,7 @@ export default function LatestBlog({ latestBlog }: Props) {
 											alt={latestBlogData?.image_alt_text}
 											height={350}
 											width={350}
-											style={{ objectFit: 'contain' }}
+											style={{ objectFit: 'contain', borderRadius: '20px' }}
 										/>
 									) : (
 										<ImageComponent

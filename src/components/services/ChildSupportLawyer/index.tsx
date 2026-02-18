@@ -30,7 +30,7 @@ export default function ChildSupportLawyer() {
 									<span>
 										<Image
 											src="/images/legal-service/arrow-right.png"
-											alt="Legal Forum"
+											alt="Professional Forum"
 											width={16}
 											height={16}
 										/>
@@ -39,7 +39,7 @@ export default function ChildSupportLawyer() {
 									<span>
 										<Image
 											src="/images/legal-service/arrow-right.png"
-											alt="Legal Forum"
+											alt="Professional Forum"
 											width={16}
 											height={16}
 										/>
@@ -160,7 +160,7 @@ export default function ChildSupportLawyer() {
 					<div className="about-btn-two mt-lg-5 mt-3">
 						<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 							<span className="text-white findlawyertext">
-								<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+								<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 									Find A Professional
 								</Link>
 							</span>
@@ -543,7 +543,7 @@ export default function ChildSupportLawyer() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text-motor">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-xxx-large weight-bold social-link">
 						{t("What_Do_Clients_Most_Frequently_Search_For")}
@@ -813,7 +813,7 @@ export default function ChildSupportLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -824,22 +824,22 @@ export default function ChildSupportLawyer() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

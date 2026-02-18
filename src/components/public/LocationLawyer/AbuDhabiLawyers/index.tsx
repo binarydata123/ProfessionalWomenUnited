@@ -101,7 +101,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/bankruptcy-lawyer-uae"
+											href="/bankruptcy-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'bankruptcy' ? 'active-link-mega-menu' : ''
 												}`}
@@ -187,7 +187,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/construction-accidents-lawyer-uae"
+											href="/construction-accidents-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'constAccident' ? 'active-link-mega-menu' : ''
 												}`}
@@ -234,7 +234,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/inheritance-lawyer-uae"
+											href="/inheritance-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${activeLink === 'inheritence' ? 'active-link-mega-menu' : ''
 												}`}
@@ -362,7 +362,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/premises-liability-lawyer-uae"
+											href="/premises-liability-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${
 												activeLink === 'premsieslawyer' ? 'active-link-mega-menu' : ''
@@ -398,7 +398,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/hospital-negligence-lawyer-uae"
+											href="/hospital-negligence-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${
 												activeLink === 'hospital' ? 'active-link-mega-menu' : ''
@@ -461,7 +461,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 											/>
 										</div>
 										<div className="col-10 p-0">
-											<h6 className="set-menu-head">Family Law</h6>
+											<h6 className="set-menu-head">Family Professional</h6>
 										</div>
 									</div>
 									<li>
@@ -473,7 +473,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 											}`}
 											onMouseEnter={() => handleMouseEnter('family')}
 											onMouseLeave={handleMouseLeave}>
-											Family Lawyer
+											Family Professionalyer
 										</Link>
 									</li>
 									<li>
@@ -490,7 +490,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/child-custody-lawyer-uae"
+											href="/child-custody-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${
 												activeLink === 'childcustody' ? 'active-link-mega-menu' : ''
@@ -600,7 +600,7 @@ export default function AbuDhabiLawyers({ onclose }: any) {
 									</li>
 									<li>
 										<Link
-											href="/bankruptcy-lawyer-uae"
+											href="/bankruptcy-lawyer-usa"
 											onClick={onclose}
 											className={`set-color-sub-menus ${
 												activeLink === 'bankruptcyfinance' ? 'active-link-mega-menu' : ''

@@ -23,8 +23,6 @@ interface Props {
 
 export default function WriteAReview({ slug = '', lawyer }: Props) {
 
-	console.log(lawyer, 'testttt');
-
 	const [isSticky, setIsSticky] = useState(false);
 	const [reviewSubmitted, setreviewSubmitted] = useState(false);
 	const [errors, seterrors]: any = useState({});
@@ -100,7 +98,12 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 			router.push('/auth/choose-profile');
 		}
 	};
-
+	const handleApiNull = (value: any): string | null => {
+		if (value === null || value === undefined || value === 'null' || value === 'undefined' || value === '') {
+			return null;
+		}
+		return value;
+	};
 	return (
 		<>
 			<section className="blog-section start">
@@ -157,7 +160,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 												}
 												placeholderImgUrl={
 													lawyer.gender === 'male' || 'other'
-														? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/male-lawyer-306x200.png`
+														? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/female-lawyer-306x200.png`
 														: `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/female-lawyer-306x200.png`
 												}
 												alt="profile-user"
@@ -181,22 +184,13 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 										<div className="row">
 											<div className="col-lg-12">
 												<div className="data-profile-user">
-													<h3>{lawyer.full_name}</h3>
+													<h2>{lawyer.full_name}</h2>
 												</div>
 											</div>
 										</div>
 										<div className="row">
 											<div className="col-lg-12">
 												<div className="company-detail">
-													<p>
-														{lawyer.designation}
-
-														{lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
-															<span className="location-move-set">
-																at {' '} <Link href={`/firms/${lawyer?.firm_slug}`} style={{ color: '#02142d', fontSize: '14px', fontWeight: '600' }}>{lawyer.firm_name}</Link>
-															</span>
-														) : ""}
-													</p>
 													<p>
 														<MapPinIcon
 															width={20}
@@ -248,7 +242,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 														)}
 
 														<br />
-														{lawyer?.consultation_duration && (
+														{handleApiNull(lawyer?.consultation_duration) && (
 															<button className="btn-color">
 																Free Consultation: {lawyer?.consultation_duration}
 															</button>
@@ -472,8 +466,8 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 						</div>
 
 						<div className="col-lg-4 mt-3 d-none d-lg-block">
-							<div className={`connect-legal-review  ${isSticky ? 'sticky-profile' : ''}`}>
-								<div className="connect-legal-review-class">
+							<div className={`professional-women-review  ${isSticky ? 'sticky-profile' : ''}`}>
+								<div className="professional-women-review-class">
 									<div className="row">
 										<div className="col-lg-8">
 											<div className="legal-review d-none d-lg-block">
@@ -496,7 +490,7 @@ export default function WriteAReview({ slug = '', lawyer }: Props) {
 									<p>To ensure the integrity of our reviews, please follow these guidelines:</p>
 									<p>Be specific</p>
 									<p>
-										Clearly explain the actions taken or not taken by the lawyer in your case. We
+										Clearly explain the actions taken or not taken by the professional in your case. We
 										only accept reviews from those who have contacted, consulted with, or hired the
 										attorney.
 									</p>

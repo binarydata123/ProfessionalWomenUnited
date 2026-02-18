@@ -1,6 +1,8 @@
+'use client';
 import React from 'react';
 import './tesimonial.css';
 import SliderWithProgressBar from '../SliderWithProgressBar/page';
+import Link from 'next/link';
 
 export default function page() {
 	return (
@@ -11,11 +13,12 @@ export default function page() {
 						<div className="col-lg-4">
 							<div className="tes-sp">
 								<p className="font-x-small green-medium-2 weight-bold mb-2">TESTIMONIALS</p>
-								<h3 className="font-xxx-large weight-bold social-link">
+								<h3 className="font-xxx-large weight-bold social-link mb-3">
 									Real experiences from
 									<span className="green-medium-2"> Women Professionals</span>
 								</h3>
-								<button className="btn-208C84 mt-4 effect">View All</button>
+								<Link href='/find-a-professional' className='A-5555 mt-4 effect' style={{ backgroundColor: '#c3221b !important' }}>
+									View All</Link>
 							</div>
 						</div>
 

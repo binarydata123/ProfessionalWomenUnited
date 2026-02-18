@@ -4,7 +4,9 @@ import Link from 'next/link';
 import { GetTotalUserUnreadInquiries } from '../../../lib/enduserapi';
 import { useRouter, usePathname } from 'next/navigation';
 import AuthContext from '@/context/AuthContext';
-
+import { MdDashboard } from "react-icons/md";
+import { FaUser } from "react-icons/fa6";
+import { FaMessage } from "react-icons/fa6";
 interface Props {
 	closeMenu?: () => void;
 }
@@ -42,13 +44,16 @@ export default function UserMenu({ closeMenu }: Props) {
 		<>
 			<li onClick={closeMenu}>
 				<Link href={`/user/dashboard`} className={pathname.includes('dashboard') ? 'active' : ''}>
-					<img src="/icon/Dashboard-Icon.png" alt="left-menu-1" className="left-menu-icon" />
+					{/* <img src="/icon/Dashboard-Icon.png" alt="left-menu-1" className="left-menu-icon" /> */}
+					<MdDashboard color={'#c49073'} className="left-menu-icon" />
 					Dashboard
 				</Link>
 			</li>
 			<li onClick={closeMenu}>
 				<Link href={`/user/messages`} className={pathname.includes('messages') ? 'active' : ''}>
-					<img src="/icon/Message-Icon.png" alt="left-menu-1" className="left-menu-icon" />
+					{/* <img src="/icon/Message-Icon.png" alt="left-menu-1" className="left-menu-icon" /> */}
+					<FaMessage color={'#c49073'} className="left-menu-icon" />
+
 					Messages{' '}
 					{totalUnreadInquiries > 0 && (
 						<small className="num">
@@ -57,15 +62,17 @@ export default function UserMenu({ closeMenu }: Props) {
 					)}
 				</Link>
 			</li>
-			<li onClick={closeMenu}>
+			{/* <li onClick={closeMenu}>
 				<Link href={`/user/legal-questions`} className={pathname.includes('legal-questions') ? 'active' : ''}>
 					<img src="/icon/Legal-Forum-Icon.png" alt="left-menu-1" className="left-menu-icon" />
-					Legal Questions
+					Professional Questions
 				</Link>
-			</li>
+			</li> */}
 			<li onClick={closeMenu}>
-				<Link href={`/user/lawyers`} className={pathname.includes('lawyers') ? 'active' : ''}>
-					<img src="/icon/Profile-Icon.png" alt="left-menu-1" className="left-menu-icon" />
+				<Link href={`/user/professionals`} className={pathname.includes('lawyers') ? 'active' : ''}>
+					{/* <img src="/icon/Profile-Icon.png" alt="left-menu-1" className="left-menu-icon" /> */}
+					<FaUser color={'#c49073'} className="left-menu-icon" />
+
 					Professionals
 				</Link>
 			</li>

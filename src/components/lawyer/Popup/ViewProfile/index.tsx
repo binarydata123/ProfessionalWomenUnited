@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, {useCallback, useState} from 'react';
+import React, { useCallback, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import './view-profile.css';
 
@@ -14,7 +14,7 @@ interface ViewProfileProps {
 		profile_image_alt_text: string;
 	};
 }
-export default function ViewProfile({userData}: ViewProfileProps) {
+export default function ViewProfile({ userData }: ViewProfileProps) {
 	const [copyStatus, setCopyStatus] = useState({
 		email: false,
 		phone: false
@@ -35,21 +35,21 @@ export default function ViewProfile({userData}: ViewProfileProps) {
 	const profileImageSrc = userData.profile_image
 		? '/images/profile/' + userData.profile_image
 		: userData.gender === 'male'
-		  ? '/images/default/group-243.png'
-		  : userData.gender === 'female'
-		    ? '/images/default/group-242.png'
-		    : '/images/default/group-243.png';
+			? '/images/default/group-242.png'
+			: userData.gender === 'female'
+				? '/images/default/group-242.png'
+				: '/images/default/group-242.png';
 
 	return (
 		<div className="view-profile-wrapper">
-			<Image
+			{/* <Image
 				src={process.env.NEXT_PUBLIC_IMAGE_URL + profileImageSrc}
 				// src="/images/Profile-Avatar2.png"
 				alt="profile-circle"
 				width={80}
 				height={80}
 				style={{borderRadius: '50px'}}
-			/>
+			/> */}
 
 			<h5 className="modal-title f-22 weight-bold green-dark mt-2" id="exampleModalLabel">
 				{userData.full_name}

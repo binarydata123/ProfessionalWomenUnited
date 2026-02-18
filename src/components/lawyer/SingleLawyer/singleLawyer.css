@@ -53,6 +53,9 @@
 		z-index: 999;
 		padding: 23px 0px;
 	}
+	.text-left-line.text-start.pt-lg-5.fix-mob.mt-4 {
+		margin-top: 40px !important;
+	}
 }
 
 .location-move-set a {
@@ -64,3 +67,133 @@
 	color: var(--green-medium-2);
 	padding: 10px 0px;
 }
+
+/* Social Links Container */
+.social-links-container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* Social Link Item */
+.social-link-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: #c49073;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 6px;
+	transition: all 0.2s ease;
+	border: 1px solid transparent;
+}
+
+.social-link-item:hover {
+	background-color: rgba(196, 144, 115, 0.1);
+	border-color: rgba(196, 144, 115, 0.3);
+	transform: translateY(-1px);
+}
+
+/* Social Icon */
+.social-icon {
+	flex-shrink: 0;
+}
+
+/* Social Text */
+.social-text {
+	font-size: 14px;
+}
+
+/* Skeleton Loader */
+.skeleton-loader {
+	animation: skeleton-loading 1.5s infinite ease-in-out;
+	border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+	.social-links-container {
+		gap: 12px;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.social-link-item {
+		width: 100%;
+		justify-content: flex-start;
+		padding: 10px 12px;
+		margin-bottom: 4px;
+	}
+
+	.social-text {
+		font-size: 13px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 480px) {
+	.social-links-container {
+		gap: 8px;
+	}
+
+	.social-link-item {
+		padding: 8px 10px;
+	}
+
+	.social-text {
+		max-width: 160px;
+	}
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+	.social-text {
+		max-width: 130px;
+		font-size: 12px;
+	}
+
+	.social-icon {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+/*****31oct25-ni-css*****/
+.copy-btn {
+	background-color: #dc2626; /* red-600 */
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 16px;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	width: 100%;
+}
+
+.copy-btn:hover {
+	background-color: #b91c1c; /* red-700 */
+}
+
+.copy-btn.copied {
+	background-color: #16a34a; /* green-600 */
+}
+/*****31oct25-ni-css end*****/

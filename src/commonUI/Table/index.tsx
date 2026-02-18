@@ -9,9 +9,11 @@ interface Props {
 	columns: any[];
 	data?: any[];
 	Tooltip?: string;
+	headerRenderer?: (column: string, index: number) => React.ReactNode;
+
 }
 
-export default function Table({ className, children, columns, data }: Props) {
+export default function Table({ className, children, columns, data, headerRenderer }: Props) {
 	const [isLoading, setisLoading] = useState(true);
 	// Check if data is empty or has zero length
 	const isDataEmpty = !data || data.length === 0;
@@ -25,7 +27,15 @@ export default function Table({ className, children, columns, data }: Props) {
 	return (
 		<table className={`table-wrapper rwd-table ${className}`}>
 			<tbody>
-				<tr>{columns && columns.map((item, index) => <th key={index}>{item}</th>)}</tr>
+				<tr>
+					{columns && columns.map((item, index) => (
+						<th key={index}>
+							{headerRenderer ? headerRenderer(item, index) : item}
+						</th>
+					))}
+				</tr>
+
+				{/* <tr>{columns && columns.map((item, index) => <th key={index}>{item}</th>)}</tr> */}
 				{isLoading && columns.length > 0 ? (
 					<>
 						<tr className="w-100">

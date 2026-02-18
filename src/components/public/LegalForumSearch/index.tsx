@@ -1,14 +1,14 @@
 'use client';
-import React, {useRef, useState, useEffect} from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
-import {searchLegalForumTopic} from '../../../../lib/frontendapi';
+import { searchLegalForumTopic } from '../../../../lib/frontendapi';
 import Link from 'next/link';
 
 interface Props {
 	slug?: string;
 }
 
-export default function LegalForumSearch({slug = ''}: Props) {
+export default function LegalForumSearch({ slug = '' }: Props) {
 	const [searchInput, setSearchInput]: any = useState(null);
 	const [searchData, setSearchData]: any = useState([]);
 	const anchorRef = useRef<HTMLInputElement | null>(null);
@@ -57,13 +57,13 @@ export default function LegalForumSearch({slug = ''}: Props) {
 					<span>
 						<Image src="/images/legal-service/arrow-right.png" alt="arrow-right" width={16} height={16} />
 					</span>
-					<span>Legal Forum</span>
+					<span>Professional Forum</span>
 				</div>
 				<div className="legal-text needlawyer-text">
 					<h1>
 						Legal <span> Forum</span>{' '}
 					</h1>
-					<h5 className="text-start">Your legal questions, answered by the pros.</h5>
+					<h5 className="text-start">Your Professional Questions, answered by the pros.</h5>
 					<div className="search-btn">
 						<input
 							type="text"
@@ -91,13 +91,12 @@ export default function LegalForumSearch({slug = ''}: Props) {
 								{searchData.map((item: any, index: number) => (
 									<li key={index}>
 										<Link
-											href={`/legal-forum/${
-												item.name
-													? item.service_slug
-													: item.tag_name
-													  ? `${item.tag_slug}?tag_id=${item.tag_id}`
-													  : `${item.service_slug}/${item.slug}`
-											}`}
+											href={`/legal-forum/${item.name
+												? item.service_slug
+												: item.tag_name
+													? `${item.tag_slug}?tag_id=${item.tag_id}`
+													: `${item.service_slug}/${item.slug}`
+												}`}
 										>
 											{item.name || item.title || item.tag_name + ` (${item.service_name})`}
 										</Link>

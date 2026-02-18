@@ -1,0 +1,435 @@
+/* Lawyer Dashboard Styles with Mobile Responsiveness */
+
+.lawyer-dashboard-wrapper {
+	padding: 0 15px;
+}
+
+.dashboard-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 24px;
+	gap: 16px;
+}
+
+.welcome-section {
+	flex: 1;
+	min-width: 200px;
+}
+
+.welcome-text {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 0;
+	color: #333;
+}
+
+.welcome-name {
+	color: #c49073;
+}
+
+.subscription-section {
+	flex: 1;
+	min-width: 250px;
+	max-width: 400px;
+}
+
+.subscription-card {
+	background-color: #f9f9f9;
+	border-radius: 12px;
+	padding: 16px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	width: 100%;
+}
+
+.subscription-status {
+	color: #2e4e3e;
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin: 0 0 16px 0;
+}
+
+.plan-name {
+	color: #c49073;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.no-subscription {
+	color: #dc3545;
+}
+
+.subscription-progress {
+	margin-top: 12px;
+}
+
+.progress-bar-container {
+	width: 100%;
+	height: 8px;
+	background: #e2bca8;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.progress-bar-fill {
+	height: 100%;
+	background: #c49073;
+	border-radius: 8px;
+	transition: width 0.3s ease;
+}
+
+.days-left-text {
+	font-size: 0.75rem;
+	color: #666;
+	margin-top: 4px;
+	text-align: right;
+}
+
+/* Cancel Button Styling */
+.btn-cancel-subscription {
+	background: linear-gradient(to right, #ff6b6b, #ff4757);
+	color: white;
+	border: none;
+	border-radius: 100px;
+	padding: 10px 16px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	width: 100%;
+}
+
+.btn-cancel-subscription:hover:not(:disabled) {
+	background: linear-gradient(to right, #ff4757, #ff2e43);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(255, 71, 87, 0.25);
+}
+
+.btn-cancel-subscription:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+/* Modal Styling */
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	padding: 20px;
+}
+
+.modal-content {
+	background: white;
+	border-radius: 12px;
+	max-width: 450px;
+	width: 100%;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+	overflow: hidden;
+}
+
+.modal-header {
+	padding: 20px 24px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal-header h3 {
+	margin: 0;
+	color: #333;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.modal-close {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: #999;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+.modal-close:hover {
+	background-color: #f5f5f5;
+	color: #666;
+}
+
+.modal-body {
+	padding: 20px 24px;
+}
+
+.modal-body p {
+	margin: 0 0 12px;
+	color: #555;
+	line-height: 1.5;
+}
+
+.modal-body p:last-child {
+	margin-bottom: 0;
+}
+
+.modal-footer {
+	padding: 16px 24px 24px;
+	display: flex;
+	gap: 12px;
+	justify-content: flex-end;
+}
+
+.modal-footer .btn {
+	padding: 10px 20px;
+	border-radius: 6px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border: none;
+	min-width: 120px;
+}
+
+.modal-footer .btn-secondary {
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+.modal-footer .btn-secondary:hover {
+	background-color: #e5e5e5;
+}
+
+.modal-footer .btn-danger {
+	background: linear-gradient(to right, #ff6b6b, #ff4757);
+	color: white;
+}
+
+.modal-footer .btn-danger:hover:not(:disabled) {
+	background: linear-gradient(to right, #ff4757, #ff2e43);
+}
+
+.modal-footer .btn:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+	.lawyer-dashboard-wrapper {
+		padding: 0 10px;
+	}
+
+	.dashboard-header {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.welcome-section,
+	.subscription-section {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.welcome-text {
+		font-size: 1.25rem;
+	}
+
+	.subscription-card {
+		padding: 12px;
+	}
+
+	.modal-content {
+		margin: 0 10px;
+	}
+
+	.modal-header {
+		padding: 16px 16px 0;
+	}
+
+	.modal-body {
+		padding: 16px;
+	}
+
+	.modal-footer {
+		padding: 16px;
+		flex-direction: column;
+	}
+
+	.modal-footer .btn {
+		width: 100%;
+		min-width: auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.welcome-text {
+		font-size: 1.1rem;
+	}
+
+	.subscription-status {
+		font-size: 0.8rem;
+	}
+
+	.btn-cancel-subscription {
+		padding: 8px 12px;
+		font-size: 0.8rem;
+	}
+
+	.modal-header h3 {
+		font-size: 1.1rem;
+	}
+
+	.modal-body p {
+		font-size: 0.9rem;
+	}
+}
+
+/* Existing styles from your original CSS */
+.pag-box {
+	width: 100%;
+	height: 8px;
+	background: #e2bca8;
+	border-radius: 8px;
+}
+
+.g-pag-box {
+	width: 100%;
+	height: 8px;
+	background: #c49073;
+	border-radius: 8px;
+}
+
+.b-r-100 {
+	border-radius: 100px;
+}
+
+.pad-btn-set {
+	padding: 9px 9px;
+}
+
+.dash-card-g {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 15px;
+	border-radius: 8px;
+}
+
+.box-right {
+	border: solid 1px;
+	padding: 3px 6px;
+	border-radius: 4px;
+	position: relative;
+	left: 2px;
+}
+
+.icon-size-10 {
+	font-size: 10px;
+	padding: 1px 3px;
+}
+
+.card-inquiries {
+	border: 1px solid var(--green-light);
+	padding: 8px 24px;
+	border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+	.recent-reviews {
+		margin-top: 20px;
+	}
+}
+
+.recent-reviews.dashboard-banner {
+	display: flex;
+	height: 240px;
+	align-items: center;
+}
+
+.recent-reviews.dashboard-banner.banner-2 {
+	display: flex;
+	height: 190px;
+	align-items: center;
+}
+
+.dashboard-banner h2 {
+	color: var(--green-dark);
+	font-size: var(--font-x-large);
+	font-weight: var(--weight-bold);
+}
+
+.dashboard-banner .banner-button {
+	border: 1px solid var(--button-1);
+	border-radius: 4px;
+}
+
+.banner-box {
+	background-image: url('/images/empty-state-top-bg.jpg');
+	background-size: cover;
+	border-radius: 6px;
+}
+
+.recent-reviews.dashboard-banner.banner-box p {
+	color: var(--green-dark);
+	font-size: var(--font-x-small);
+	font-weight: var(--weight-light);
+}
+
+.cross-btn {
+	top: 0;
+	right: 0;
+}
+
+.cross-btn button {
+	border: 1px solid rgba(196, 144, 115);
+	padding: 0px 3px 3px 4px !important;
+}
+
+@media (min-width: 1400px) {
+	.dashboard-banner {
+		padding: 0 40px !important;
+	}
+}
+
+.card-notifaction {
+	background: #fcfcfc;
+	border: 1px solid var(--anti-flash-white);
+	border-radius: 8px;
+	padding: 6px 8px;
+}
+
+.w-39 {
+	width: 39px;
+	height: 39px;
+}
+
+.white-208C84 {
+	color: #c49073 !important;
+	border: 1px solid var(--button-1);
+}
+
+.white-208C84:hover {
+	background-color: #c49073 !important;
+	color: #fff !important;
+}
+
+p.list-right-text {
+	color: var(--text-sonic-silver);
+	font-size: 12px;
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--custom-line-height);
+}
+
+.main-content.add-content-user {
+	padding: 0px 0px 200px 0px;
+}

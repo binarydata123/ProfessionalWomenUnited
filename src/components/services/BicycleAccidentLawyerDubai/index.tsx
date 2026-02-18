@@ -51,7 +51,7 @@ export default function BicycleAccidentLawyerDubai() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -288,7 +288,7 @@ export default function BicycleAccidentLawyerDubai() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
@@ -528,7 +528,7 @@ export default function BicycleAccidentLawyerDubai() {
 												outcomes for bicycle accident victims. We have successfully represented
 												numerous clients in obtaining significant settlements and verdicts for
 												their injuries and losses. <br /> With a commitment to excellence and
-												the pursuit of justice, our UAE bicycle accident lawyers at Connect
+												the pursuit of justice, our USA bicycle accident lawyers at Connect
 												Legal have consistently achieved successful results for our clients. We
 												leverage our experience and resources to ensure you receive the
 												compensation you deserve.
@@ -752,7 +752,7 @@ export default function BicycleAccidentLawyerDubai() {
 			<section id="legal-issues" className="legal-issues  mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -765,7 +765,7 @@ export default function BicycleAccidentLawyerDubai() {
 						Clients frequently search for knowledgeable legal representation and clarity when seeking
 						information on bicycle accidents.
 						<br />
-						Select the legal issue you face and connect with a legal expert.
+						Select the professional issue you face and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -820,7 +820,7 @@ export default function BicycleAccidentLawyerDubai() {
 										</div>
 										<div className="text-start Discover-lawyer" />A bicycle accident lawyer can
 										provide invaluable expertise and guidance tailored to your specific case. By
-										specializing in bicycle accident cases, our legal team in Dubai offers
+										specializing in bicycle accident cases, Our professional team in Dubai offers
 										comprehensive advice on navigating the legal process and protecting your rights.
 										Our bicycle accident lawyers analyze the circumstances of your accident, assess
 										liability, and provide strategic recommendations to pursue maximum compensation.
@@ -966,7 +966,7 @@ export default function BicycleAccidentLawyerDubai() {
 													attention for any injuries, document the accident scene, gather
 													contact information from witnesses, and report the accident to the
 													authorities. You should consult a bicycle accident lawyer to
-													understand your legal rights and options.
+													understand yOur professional rights and options.
 												</div>
 											</div>
 										</div>
@@ -989,7 +989,7 @@ export default function BicycleAccidentLawyerDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													The time limit, or statute of limitations, for filing a bicycle
-													accident claim varies by jurisdiction. In Dubai and the UAE, the
+													accident claim varies by jurisdiction. In Dubai and the USA, the
 													statute of limitations typically ranges from one to three years.
 													It's crucial to consult with a bicycle accident lawyer as soon as
 													possible to ensure that you meet the deadline for filing your claim.
@@ -1065,7 +1065,7 @@ export default function BicycleAccidentLawyerDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1076,22 +1076,22 @@ export default function BicycleAccidentLawyerDubai() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

@@ -150,7 +150,7 @@ select.form-fild {
 	border-radius: 4px;
 }
 .line-hr {
-	background: var(--anti-flash-white);
+	background: #e2bca8;
 	height: 1px;
 	border: none;
 	opacity: 1;
@@ -189,7 +189,7 @@ select.form-fild {
 .rwd-table tr {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
-	background-color: #f5f9fc;
+	background-color: #f9f2ef;
 }
 
 .rwd-table tr:nth-child(odd):not(:first-child) {
@@ -357,7 +357,7 @@ ul.star-rating li {
 	font-weight: var(--weight-semi-bold);
 	border: none !important;
 	color: var(--green-medium-2);
-	background: #02142d1f;
+	background: #f9f2ef;
 	border-radius: 16px;
 	padding: 0px 10px;
 	position: relative;

@@ -124,7 +124,7 @@ export default function Page() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue">
 									<span className="text-white">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+										<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 											Join Us
 										</Link>
 									</span>
@@ -159,7 +159,7 @@ export default function Page() {
 			<section className="why-join">
 				<div className="container">
 					<p className="font-x-small text-white weight-bold mb-2">WHY JOIN US?</p>
-					<h2 className="font-smaller weight-bold text-white mb-5">Grow your legal practice with ease.</h2>
+					<h2 className="font-smaller weight-bold text-white mb-5">Grow yOur professional practice with ease.</h2>
 					<div className="row mt-5">
 						<div className="col-lg-4 col-md-4">
 							<div className="box-acc">
@@ -273,7 +273,7 @@ export default function Page() {
 								<span className="green-dark">meet your needs</span>
 							</h2>
 							<p className="font-medium weight-medium text-sonic-silver mt-2">
-								Join our platform and grow your legal practice with our flexible pricing options.
+								Join our platform and grow yOur professional practice with our flexible pricing options.
 							</p>
 						</div>
 						<div className="col-lg-4" id="nav-tab" role="tablist">
@@ -334,7 +334,7 @@ export default function Page() {
 															className="w-64"
 														/>
 														<h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-															{isMonthly == 'monthly' ? 'Solo Lawyer Plan' : ' Solo Lawyer Plan'}
+															{isMonthly == 'monthly' ? 'Solo Professional Plan' : ' Solo Professional Plan'}
 														</h5>
 													</div>
 													<div className="col-sm-6 text-right tab-left">
@@ -346,7 +346,7 @@ export default function Page() {
 																		{membershipPlan && membershipPlan.monthly_amount}
 
 																	</span>
-																	/month
+																	{/* /month */}
 																</h6>
 															) : (
 																<h6 className="social-link weight-bold f-22 m-top-80">
@@ -385,7 +385,7 @@ export default function Page() {
 
 													</div>
 												</div>
-												<div className="benefits mt-4">
+												{/* <div className="benefits mt-4">
 													<p className="font-medium weight-semi-bold social-link">Benefits:</p>
 													<p className="font-small weight-medium social-link mt-3">
 														<i className="fa-solid fa-check"></i> Enhanced Profile Visibility
@@ -405,7 +405,7 @@ export default function Page() {
 													<p className="font-small weight-medium social-link mt-2">
 														<i className="fa-solid fa-xmark"></i> Dedicated Support{' '}
 													</p>
-												</div>
+												</div> */}
 
 												<div className="text-center mt-4">
 													<button className=" w-100 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
@@ -449,7 +449,7 @@ export default function Page() {
 															className="w-64"
 														/>
 														<h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-															{isMonthly == 'monthly' ? 'Firm Focus Plan' : ' Solo Lawyer Plan'}
+															{isMonthly == 'monthly' ? 'Firm Focus Plan' : ' Solo Professional Plan'}
 														</h5>
 													</div>
 													<div className="col-sm-6 text-right tab-left">
@@ -463,7 +463,7 @@ export default function Page() {
 														</div>
 													</div>
 												</div>
-												<div className="benefits mt-4">
+												{/* <div className="benefits mt-4">
 													<p className="font-medium weight-semi-bold social-link">Benefits:</p>
 													<p className="font-small weight-medium social-link mt-3">
 														<i className="fa-solid fa-check"></i> Enhanced Profile Visibility
@@ -484,9 +484,9 @@ export default function Page() {
 														<i className="fa-solid fa-check"></i> Dedicated Support{' '}
 													</p>
 													<p className="font-small weight-medium social-link mt-2">
-														<i className="fa-solid fa-check"></i> Unlimited Lawyer Profiles{' '}
+														<i className="fa-solid fa-check"></i> Unlimited Professional Profiles{' '}
 													</p>
-												</div>
+												</div> */}
 
 												<div className="text-center mt-4">
 													<button className=" w-100 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
@@ -553,7 +553,7 @@ export default function Page() {
 										</div>
 									</div>
 								</div>
-								<div className="accordion-item">
+								{/* <div className="accordion-item">
 									<h2 className="accordion-header" id="headingTwo">
 										<button
 											className="accordion-button collapsed"
@@ -578,7 +578,7 @@ export default function Page() {
 											element.
 										</div>
 									</div>
-								</div>
+								</div> */}
 								<div className="accordion-item">
 									<h2 className="accordion-header" id="headingThree">
 										<button
@@ -643,7 +643,7 @@ export default function Page() {
 											aria-expanded="false"
 											aria-controls="collapseFive"
 										>
-											What happens if I need to cancel a consultation with a client?
+											How do I nominate a professional woman for membership?
 										</button>
 									</h2>
 									<div
@@ -653,16 +653,40 @@ export default function Page() {
 										data-bs-parent="#accordionExample"
 									>
 										<div className="accordion-body border-0">
-											This is the third item's accordion body. It is hidden by default, until the
-											collapse plugin adds the appropriate classes that we use to style each
-											element.
-										</div>
+											Please email all nominations to:&nbsp;
+											<a href="mailto:nominate@professionalwomenunited.com">
+												nominate@professionalwomenunited.com
+											</a>										</div>
 									</div>
 								</div>
+								{/* <div className="accordion-item">
+									<h2 className="accordion-header" id="headingSix">
+										<button
+											className="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseSix"
+											aria-expanded="false"
+											aria-controls="collapseSix"
+										>
+											What are the fees associated with using the platform?
+										</button>
+									</h2>
+									<div
+										id="collapseSix"
+										className="accordion-collapse collapse"
+										aria-labelledby="headingSix"
+										data-bs-parent="#accordionExample"
+									>
+										<div className="accordion-body border-0">
+											We never charge the public for using our platform to find the best woman professionals in their area.
+										</div>
+									</div>
+								</div> */}
 							</div>
 						</div>
 						<div className="col-lg-12 col-xl-5 col-md-12">
-							<img src="/images/faq-img.png" alt="faq-img" className="mt-5 m-none effect" />
+							<img src="/images/young-professional-woman-seated-with-a-smile-in-an-office..jpg" alt="faq-img" className="mt-5 m-none effect" />
 						</div>
 					</div>
 				</div>
@@ -672,7 +696,7 @@ export default function Page() {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-7 d-none d-lg-block">
-							<img src="/images/section -image.svg" alt=" Still have questions?" />
+							<img src="/images/section-image.svg" alt=" Still have questions?" />
 						</div>
 						<div className="col-lg-5 text-right">
 							<div className="still">

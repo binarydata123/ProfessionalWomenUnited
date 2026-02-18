@@ -1,5 +1,5 @@
 'use client';
-import {ThreeDots} from 'react-loader-spinner';
+import { ThreeDots } from 'react-loader-spinner';
 
 export default function Loading() {
 	return (
@@ -10,7 +10,7 @@ export default function Loading() {
 						height="80"
 						width="80"
 						radius="9"
-						color="#c49073"
+						color="#153060"
 						ariaLabel="three-dots-loading"
 						wrapperStyle={{}}
 						visible={true}

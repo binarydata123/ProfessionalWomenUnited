@@ -28,24 +28,43 @@ const OTPInputGroup = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [isLoadingTwo, setIsLoadingTwo] = useState(false);
 
-	useEffect(() => {
-		const memberplan = Cookies.get('membership');
+	// useEffect(() => {
+	// 	const memberplan = Cookies.get('membership');
 
-		const payment_status = window.sessionStorage.getItem('payment_status');
-		if (memberplan === 'true') {
-			if (payment_status !== 'paid') {
-				router.push('/auth/login');
-			} else {
-				setUserId(user?.id || '');
-				setUserEmail(user?.email || '');
-				setUserName(user?.name || '');
+	// 	const payment_status = window.sessionStorage.getItem('payment_status');
+	// 	if (memberplan === 'true') {
+	// 		if (payment_status !== 'paid') {
+	// 			router.push('/auth/login');
+	// 		} else {
+	// 			setUserId(user?.id || '');
+	// 			setUserEmail(user?.email || '');
+	// 			setUserName(user?.first_name || '');
+	// 		}
+	// 	} else {
+	// 		setUserId(user?.id || '');
+	// 		setUserEmail(user?.email || '');
+	// 		setUserName(user?.first_name || '');
+	// 	}
+	// }, [user]);
+	useEffect(() => {
+		const memberplan = Cookies.get("membership");
+		const payment_status = window.sessionStorage.getItem("payment_status");
+
+		const userId = Cookies.get("userId");
+		const userEmail = Cookies.get("email");
+		const userName = Cookies.get("first_name");
+
+		if (memberplan === "true") {
+			if (payment_status !== "paid") {
+				router.push("/auth/login");
+				return;
 			}
-		} else {
-			setUserId(user?.id || '');
-			setUserEmail(user?.email || '');
-			setUserName(user?.name || '');
 		}
+		setUserId(userId || "");
+		setUserEmail(userEmail || "");
+		setUserName(userName || "");
 	}, []);
+
 
 
 	const [inputValues, setInputValues] = useState({
@@ -78,7 +97,7 @@ const OTPInputGroup = () => {
 			const otp = Object.values(inputValues).join('');
 
 			const data = {
-				user_id: user_id,
+				user_id: user_id || Cookies.get("userId"),
 				user_name: user_name,
 				user_email: user_email,
 				otp: otp
@@ -87,6 +106,13 @@ const OTPInputGroup = () => {
 			checkEmailVerfiyOTP(data)
 				.then(res => {
 					if (res.status == true) {
+						window.sessionStorage.removeItem('temp_user_role')
+						window.sessionStorage.removeItem('payment_pending')
+						window.sessionStorage.removeItem('payment_status')
+						window.sessionStorage.removeItem('temp_plan_type')
+						window.sessionStorage.removeItem('temp_user_role')
+						window.sessionStorage.removeItem('temp_plan_amount')
+						Cookies.remove('userId')
 						toast.success(res.message);
 						Cookies.remove('session_token');
 						setTimeout(() => {
@@ -109,13 +135,14 @@ const OTPInputGroup = () => {
 	const handleResendEmailVerifyOtpSubmit = () => {
 		setIsLoadingTwo(true);
 		const data = {
-			user_id: user_id,
+			user_id: user_id || Cookies.get("userId"),
 			user_name: user_name,
 			user_email: user_email
 		};
 		resendEmailVerifyOtp(data)
 			.then(res => {
 				if (res.status == true) {
+
 					toast.success(res.message);
 					setIsLoading(false);
 				} else {
@@ -127,6 +154,9 @@ const OTPInputGroup = () => {
 				if (err.response) {
 					toast.error('An error occurred during registration');
 				}
+			})
+			.finally(() => {
+				setIsLoadingTwo(false);
 			});
 	};
 

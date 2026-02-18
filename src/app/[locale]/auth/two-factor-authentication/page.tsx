@@ -20,7 +20,7 @@ interface OTPInputProps {
 
 const OTPInputGroup = () => {
 	const router = useRouter();
-	const { user } = useContext(AuthContext)
+	const { user, setUser } = useContext(AuthContext)
 	const [isLoading, setIsLoading] = useState(false);
 	const [isLoadingTwo, setIsLoadingTwo] = useState(false);
 	const [redirectUrl, setredirectUrl]: any = useState(null);
@@ -29,8 +29,8 @@ const OTPInputGroup = () => {
 
 	useEffect(() => {
 		if (user?.two_factor_auth === 'no' && !submittedRef.current) { // Check if OTP has not been submitted yet
-			handleSubmit();
 			submittedRef.current = true; // Mark OTP as submitted to prevent further submissions
+			handleSubmit();
 		}
 	}, [user?.two_factor_auth]);
 
@@ -66,8 +66,9 @@ const OTPInputGroup = () => {
 			user?.logindate.split("").join("") :
 			Object.values(inputValues).join("");
 
+		const email = Cookies.get('email');
 		const data = {
-			user_email: user?.email,
+			user_email: email,
 			otp: otp
 		};
 
@@ -81,34 +82,36 @@ const OTPInputGroup = () => {
 			.then(res => {
 				if (res.status == true) {
 					const { token, user } = res.data;
-					Cookies.set('session_token', token)
-					toast.success(res.message);
-					Cookies.set('two_step_auth', 'true');
+					Cookies.set('session_token', token);
+					// Cookies.set('two_step_auth', 'true');
+					setUser(user);
+
+					// 🔹 Check payment again after 2FA
+					// 🔹 Payment check ONLY for professional role
+					if (user?.role === "professional") {
+						const isPaymentPending =
+							window.sessionStorage.getItem("payment_pending") === "true";
+						if (isPaymentPending) {
+							router.push("/auth/professional/payment-details");
+							return;
+						}
+					}
+
+					// 🔹 Normal redirects
 					if (redirectUrl) {
-						setTimeout(() => {
-							router.push(redirectUrl);
-						});
+						router.push(redirectUrl);
 						return;
 					}
 
-					if (user?.role == 'enduser') {
-						setTimeout(() => {
-							router.push('/user/dashboard');
-						}, 1000);
+					if (user?.role === 'enduser') {
+						router.push('/user/dashboard');
+					} else if (user?.role === 'professional') {
+						router.push('/professional/dashboard');
+					} else if (user?.role === 'admin') {
+						router.push('/admin/dashboard');
 					}
-
-					if (user?.role == 'lawyer') {
-						setTimeout(() => {
-							router.push('/lawyer/dashboard');
-						}, 1000);
-					}
-
-					if (user?.role == 'admin') {
-						setTimeout(() => {
-							router.push('/admin/dashboard');
-						}, 1000);
-					}
-				} else {
+				}
+				else {
 					toast.error(res.message);
 					setIsLoading(false);
 				}
@@ -122,10 +125,13 @@ const OTPInputGroup = () => {
 
 	const handleresendTwoSetpAuthVerifyOtpSubmit = () => {
 		setIsLoadingTwo(true);
+		const email = Cookies.get('email');
+		const id = Cookies.get('userId');
+
 		const data = {
-			user_id: user?.id,
+			user_id: user?.id || id,
 			user_name: user?.username,
-			user_email: user?.email
+			user_email: user?.email || email,
 		};
 		resendTwoSetpAuthVerifyOtp(data)
 			.then(res => {
@@ -162,7 +168,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input1"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[0] : inputValues.input1}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[0] : inputValues.input1}
 								onValueChange={handleInputChange}
 								previousId={null}
 								handleSubmit={handleSubmit}
@@ -172,7 +178,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input2"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[1] : inputValues.input2}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[1] : inputValues.input2}
 								onValueChange={handleInputChange}
 								previousId="input1"
 								handleSubmit={handleSubmit}
@@ -182,7 +188,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input3"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[2] : inputValues.input3}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[2] : inputValues.input3}
 								onValueChange={handleInputChange}
 								previousId="input2"
 								handleSubmit={handleSubmit}
@@ -194,7 +200,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input4"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[3] : inputValues.input4}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[3] : inputValues.input4}
 								onValueChange={handleInputChange}
 								previousId="input3"
 								handleSubmit={handleSubmit}
@@ -204,7 +210,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input5"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[4] : inputValues.input5}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[4] : inputValues.input5}
 								onValueChange={handleInputChange}
 								previousId="input4"
 								handleSubmit={handleSubmit}
@@ -214,7 +220,7 @@ const OTPInputGroup = () => {
 						<li>
 							<OTPInput
 								id="input6"
-								value={user?.two_factor_auth === 'no' ? user?.logindate.split("")[5] : inputValues.input6}
+								value={user?.two_factor_auth === 'no' ? user?.logindate?.split("")[5] : inputValues.input6}
 								onValueChange={handleInputChange}
 								previousId="input5"
 								handleSubmit={handleSubmit}

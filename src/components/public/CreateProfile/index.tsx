@@ -10,6 +10,7 @@ import { userregister, googleRegister } from '../../../../lib/frontendapi';
 import { signIn, useSession } from 'next-auth/react';
 import { toast } from 'react-toastify';
 import Cookies from 'js-cookie';
+import './style.css';
 
 
 interface FormData {
@@ -45,45 +46,11 @@ export default function CreateProfile() {
 			user_role ? setRole(user_role) : setRole('');
 		}
 		if (session) {
-			SocialData(session.user, 'google');
+			// SocialData(session.user, 'google');
 		}
 	}, [session]);
 
-	const SocialData = (user: any, type: any) => {
-		const data = {
-			first_name: user.name,
-			email: user.email,
-			role: role
-		};
-		googleRegister(data)
-			.then(res => {
-				if (res.status == true) {
-					const token = res.data.token;
-					Cookies.set('session_token', token);
 
-					if (res.status == true) {
-						const token = res.data.token;
-						Cookies.set('session_token', token);
-						Cookies.set('userId', res.data.user.id);
-						if (role == 'enduser') {
-							toast.success(res.message);
-							Cookies.set('two_step_auth', 'false');
-							router.push('/auth/two-factor-authentication');
-						} else {
-							// toast.success(res.message);
-
-							router.push('/auth/professional/step-2');
-
-						}
-					} else {
-						// toast.error(res.message);
-					}
-				} else {
-					toast.error(res.message);
-				}
-			})
-			.catch(error => { });
-	};
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
 		if (!formData.firstName) {
@@ -123,6 +90,8 @@ export default function CreateProfile() {
 				.then(res => {
 					if (res.status == true) {
 						Cookies.set('userId', res.data.user.id)
+						Cookies.set('email', res.data.user.email)
+						Cookies.set('first_name', res.data.user.first_name)
 						Cookies.remove('legaluserId');
 						if (role == 'enduser') {
 							toast.success(res.message + " please login your account");
@@ -130,15 +99,26 @@ export default function CreateProfile() {
 						} else {
 							const token = res.data.token;
 							Cookies.set('session_token', token);
+							Cookies.set('first_name', formData.firstName);
 							window.location.href = '/auth/professional/step-2';
 						}
 					}
 				})
 				.catch(err => {
-					if (err.response && err.response.data && err.response.data.errors) {
-						const errors = err.response.data.errors;
-						if (errors.email) {
-							toast.error(errors.email[0]);
+					const response = err.response?.data;
+
+					if (response) {
+						if (response.errors) {
+							// Validation errors
+							const errors = response.errors;
+							if (errors.email) {
+								toast.error(errors.email[0]);
+							} else {
+								toast.error('An error occurred during registration');
+							}
+						} else if (response.message) {
+							// General error message from backend
+							toast.error(response.message);
 						} else {
 							toast.error('An error occurred during registration');
 						}
@@ -146,6 +126,7 @@ export default function CreateProfile() {
 						toast.error('An error occurred during registration');
 					}
 				})
+
 				.finally(() => {
 					setTimeout(() => {
 						setIsLoading(false);
@@ -173,12 +154,6 @@ export default function CreateProfile() {
 				<div className="row">
 					<div className="">
 						<div className="main-login">
-							{/* <h1>
-								<span>Tell us a bit</span> about you
-							</h1>
-							<p className="p-text-label">
-								Please share your basic information with us. This will help clients reach you easily.
-							</p> */}
 							{redirectlegalIssue ? (
 								<>
 									<h1>
@@ -210,8 +185,8 @@ export default function CreateProfile() {
 											<input
 												type="text"
 												className="form-control"
-												placeholder="First Name"
-												maxLength={50}
+												placeholder="Please enter name"
+												maxLength={40}
 												value={formData.firstName}
 												onChange={e => setFormData({ ...formData, firstName: e.target.value })}
 											/>
@@ -229,7 +204,7 @@ export default function CreateProfile() {
 												type="text"
 												className="form-control"
 												placeholder="Last Name"
-												maxLength={50}
+												maxLength={40}
 												value={formData.lastName}
 												onChange={e => setFormData({ ...formData, lastName: e.target.value })}
 											/>
@@ -312,7 +287,7 @@ export default function CreateProfile() {
 								</button> */}
 								<p className="mt-4 text-center register-page-link">
 									Already have an account?
-									<Link href="/auth/login" style={{ color: '#c49073' }}> Log in</Link>
+									<Link href="/auth/login" style={{ color: '#153060' }}> Log in</Link>
 								</p>
 							</form>
 						</div>

@@ -178,12 +178,12 @@ export default function Page({ params }: { params: { id: string } }) {
 												: 'No Plan Purchased'}
 									</span>
 								</p>
-								{single_lawyer?.designation && (
+								{/* {single_lawyer?.designation && (
 									<p className="font-small  weight-semi-bold social-link">
 										{single_lawyer?.designation}
-										{/* at {single_lawyer?.company_name} */}
+										at {single_lawyer?.company_name}
 									</p>
-								)}
+								)} */}
 								<ul className="rating-location">
 									{single_lawyer?.location_name && (
 										<li className="loc">

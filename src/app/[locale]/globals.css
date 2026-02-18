@@ -148,7 +148,7 @@ button:hover {
 .btn-commn {
 	padding: 12px 18px 12px 18px;
 	border-radius: 4px;
-	background-color: #c49073;
+	background-color: #153060;
 	color: var(--text-white);
 	border: none;
 	font-size: var(--font-small);
@@ -354,6 +354,9 @@ section#our-blogs img {
 	.w-35 {
 		width: 100% !important;
 	}
+	img.logos-data {
+		width: 50% !important;
+	}
 }
 
 @media (min-width: 1366px) {
@@ -453,7 +456,7 @@ section#our-blogs img {
 }
 
 .testimonial button {
-	font-size: var(--font-x-small);
+	font-size: 12px;
 	font-weight: var(--weight-medium);
 	line-height: var(--line-height-xs-small);
 	letter-spacing: var(--letter-spacing-02);
@@ -462,7 +465,7 @@ section#our-blogs img {
 	background-color: var(--color-btn-testi);
 	color: var(--green-medium-2);
 	border-radius: 4px;
-	margin-top: 10px;
+	margin-top: 5px;
 	padding: 2px 6px;
 	transition: 0.5s ease;
 }
@@ -774,7 +777,7 @@ ul.dropdown-menu.shadow-lg li {
 /* find a lawywer */
 
 .find-a-lawyer-wrapper .search-filter-area {
-	background-color: var(--green-dark);
+	background-color: #02142d;
 	display: flex;
 	align-items: center;
 	padding-top: 120px;
@@ -861,7 +864,7 @@ li {
 }
 
 .nav-tab ul li.active a {
-	border-bottom: 1px solid var(--green-medium-1);
+	border-bottom: 1px solid #153060;
 	color: var(--green-medium-2);
 	font-weight: var(--weight-semi-bold);
 }
@@ -1230,7 +1233,7 @@ select.form-fild {
 		margin-top: 14px;
 	}
 	.find-a-lawyer-wrapper .search-filter-area {
-		padding-top: 90px;
+		/* padding-top: 90px; */
 	}
 	.atypebtn p:first-child,
 	.atypebtn p:nth-child(2),
@@ -1679,9 +1682,9 @@ div#tabs-viwe-buton button:nth-child(2) {
 	left: 0px;
 	height: 28px;
 	width: 28px;
-	background-color: var(--text-white);
+	background-color: #fff;
 	border-radius: 30px;
-	border: solid 1px var(--anti-flash-white);
+	border: solid 1px #c49073;
 }
 .checkmark.squere {
 	position: absolute;
@@ -1696,13 +1699,13 @@ div#tabs-viwe-buton button:nth-child(2) {
 .form-fild-des label .checkmark.squere:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 4px;
 	left: 0px;
 	top: 0px;
 }
 .form-fild-des label:hover input ~ .checkmark {
-	background-color: #f7f7f7;
+	background-color: #c49073;
 }
 
 .form-fild-des label input:checked ~ .checkmark {
@@ -1719,7 +1722,7 @@ div#tabs-viwe-buton button:nth-child(2) {
 .form-fild-des label .checkmark:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 31px;
 	left: 4.8px;
 	top: 4.3px;
@@ -1760,7 +1763,7 @@ div#tabs-viwe-buton button:nth-child(2) {
 	}
 	.accordion-body.my-drop-class li a {
 		padding: 0 !important;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: 500;
 		line-height: 26px;
 		letter-spacing: 0.02em;
@@ -1951,4 +1954,25 @@ div#tabs-viwe-buton button:nth-child(2) {
 .set-inquery-space {
 	padding: '50px';
 	height: none;
+}
+
+.register-page-link-back {
+	margin-top: 3px !important;
+	display: block;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* .lawyer-card-item {
+	box-shadow: rgb(195 144 115 / 67%) 0px 3px 8px;
+	padding: 12px;
+	border-radius: 10px;
+} */
+
+.abt-womn-pic {
+	border-radius: 12px;
+	height: 750px;
+	width: 100%;
+	/* background-size: auto; */
 }

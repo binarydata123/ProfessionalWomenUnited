@@ -39,7 +39,7 @@ export default function LawyersList() {
 							Avi Hassan
 						</h3>
 						<p className="description">
-							Legal Consultant <span>at</span> Company Name
+							professional consultant <span>at</span> Company Name
 						</p>
 						<div className="location-move">
 							<img src="/images/contact/location.png" alt="location" width={20} height={20} />
@@ -55,7 +55,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
@@ -89,7 +89,7 @@ export default function LawyersList() {
 						</div>
 						<h3 className="testimonial-title">Avi Hassan</h3>
 						<p className="description">
-							Legal Consultant <span>at</span> Company Name
+							professional consultant <span>at</span> Company Name
 						</p>
 						<div className="location-move">
 							<img src="/images/contact/location.png" alt="Dubai" width={20} height={20} />
@@ -105,7 +105,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
@@ -135,7 +135,7 @@ export default function LawyersList() {
 						</div>
 						<h3 className="testimonial-title">Avi Hassan</h3>
 						<p className="description">
-							Legal Consultant <span>at</span> Company Name
+							professional consultant <span>at</span> Company Name
 						</p>
 						<div className="location-move">
 							<img src="/images/contact/location.png" alt="location" width={20} height={20} />
@@ -151,7 +151,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>
@@ -181,7 +181,7 @@ export default function LawyersList() {
 						</div>
 						<h3 className="testimonial-title">Avi Hassan</h3>
 						<p className="description">
-							Legal Consultant <span>at</span> Company Name
+							professional consultant <span>at</span> Company Name
 						</p>
 						<div className="location-move">
 							<img src="/images/contact/location.png" alt="location" width={20} height={20} />
@@ -197,7 +197,7 @@ export default function LawyersList() {
 							<span>(10 reviews) </span>
 						</p>
 						<div className="btn-family-more">
-							<button>Family Law</button>
+							<button>Family Professional</button>
 							<a href="#">More details</a>
 						</div>
 					</div>

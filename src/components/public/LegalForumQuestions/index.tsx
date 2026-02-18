@@ -70,14 +70,14 @@ export default function LegalForumQuestions({ questionsData, slug = '' }: Props)
 						<div className="row align-items-center">
 							<div className="col-lg-6">
 								<div className="gotalegalquestion">
-									<h4>Don’t face legal issues alone - Find a professional today!</h4>
+									<h4>Don’t face professional issues alone - Find a professional today!</h4>
 									<h5>Talk to a business attorney.</h5>
 								</div>
 							</div>
 							<div className="col-lg-6 text-lg-end">
 								<div className="gotalegalquestion">
 									<Link href={'/find-a-professional'}>
-										<button className="btn-commn text-capitalize">Find A {slug} Lawyer</button>
+										<button className="btn-commn text-capitalize">Find A {slug} Professional</button>
 									</Link>
 								</div>
 							</div>
@@ -145,7 +145,7 @@ export default function LegalForumQuestions({ questionsData, slug = '' }: Props)
 										href={`/legal-forum/${slug}/ask-a-lawyer${tag_id !== null ? `/?tag_id=${tag_id}` : ''
 											}`}
 									>
-										<button className="btn-commn">Ask A Lawyer</button>
+										<button className="btn-commn">Ask A Professional</button>
 									</Link>
 								</div>
 							</div>

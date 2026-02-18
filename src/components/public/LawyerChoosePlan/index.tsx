@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AuthContext from '@/context/AuthContext';
 import './style.css';
+import Cookies from "js-cookie";
 
 interface MembershipPlan {
     id: number;
@@ -25,26 +26,58 @@ interface MembershipPlan {
 export default function LawyerChoosePlan() {
     const router = useRouter();
     const { user } = useContext(AuthContext)
-    const [isMonthly, setIsMonthly] = useState('monthly');
+    const [isMonthly, setIsMonthly] = useState('yearly');
     const [membershipPlan, setMembershipPlan] = useState<MembershipPlan | null>(null);
     const [selectedPlan, setSelectedPlan] = useState('individuals');
-
+    const [loading, setLoading] = useState(false);
     const handlePlanSelection = (plan: string) => {
         setSelectedPlan(plan === selectedPlan ? '' : plan);
     };
 
+    // useEffect(() => {
+    //     getAllMemberShipPlanData();
+    //     if (user) {
+    //         if (user?.id && user?.role == 'professional') {
+    //             getAllMemberShipPlanData();
+    //         }
+    //         else {
+    //             router.push('/auth/login');
+    //         }
+    //     }
+    // }, [user]);
+    // useEffect(() => {
+    //     if (user === undefined) {
+    //         return;
+    //     }
 
+    //     if (!user) {
+    //         router.push('/auth/login');
+    //         return;
+    //     }
+
+    //     if (user?.id && user?.role === 'professional') {
+    //         getAllMemberShipPlanData();
+    //     } else {
+    //         router.push('/auth/login');
+    //     }
+    // }, [user]);
     useEffect(() => {
-        getAllMemberShipPlanData();
-        if (user) {
-            if (user?.id && user?.role == 'lawyer') {
-                getAllMemberShipPlanData();
-            }
-            else {
-                router.push('/auth/login');
-            }
+        const token = Cookies.get("session_token");
+        const role = window.sessionStorage.getItem("temp_user_role");
+        const userId = Cookies.get("userId");
+
+        if (!token || !userId) {
+            router.push("/auth/login");
+            return;
+        }
+
+        if (role === "professional") {
+            getAllMemberShipPlanData();
+        } else {
+            router.push("/auth/login");
         }
     }, []);
+
 
     const getAllMemberShipPlanData = async () => {
         try {
@@ -58,11 +91,14 @@ export default function LawyerChoosePlan() {
     };
 
     const handlePriceSet = () => {
-        if (user) {
+        const token = Cookies.get("session_token");
+        const userId = Cookies.get("userId");
+        if (token && userId) {
+            setLoading(true);
             let tempPlanAmount;
 
-            if (isMonthly === 'monthly') {
-                tempPlanAmount = membershipPlan?.monthly_amount;
+            if (isMonthly === 'yearly') {
+                tempPlanAmount = membershipPlan?.yearly_amount;
             } else {
                 tempPlanAmount = membershipPlan?.yearly_amount;
             }
@@ -82,7 +118,7 @@ export default function LawyerChoosePlan() {
     const handleMonthlyPlanToggle = () => {
         const newPlan = plan === 'yes' ? 'no' : 'yes';
         setPlan(newPlan);
-        setIsMonthly(newPlan === 'yes' ? 'yearly' : 'monthly');
+        setIsMonthly(newPlan === 'yes' ? 'yearly' : 'yearly');
     };
 
 
@@ -103,23 +139,8 @@ export default function LawyerChoosePlan() {
                             </h1>
                             <p className="mb-3 mt-2">
                                 Choose a plan that works for you.
-                                {/* We also offer FREE 1 month trial to Professional experts on our{' '}
-                                <br /> platform. */}
                             </p>
-                            {/* <div className="btn-group-893168">
-                                <button
-                                    className={`weight-semi-bold font-small common_plan mx-2 ${selectedPlan === 'individuals' ? 'active_plan' : 'inactive_plan'}`}
-                                    onClick={() => handlePlanSelection('individuals')}
-                                >
-                                    For Individuals
-                                </button>
-                                <button
-                                    className={`weight-semi-bold font-small common_plan mx-2 ${selectedPlan === 'firms' ? 'active_plan' : 'inactive_plan'}`}
-                                    onClick={() => handlePlanSelection('firms')}
-                                >
-                                    For Firms
-                                </button>
-                            </div> */}
+
                         </div>
                     </div>
                     {selectedPlan === 'individuals' && (
@@ -135,19 +156,18 @@ export default function LawyerChoosePlan() {
                                                 height={50}
                                             />
                                             <h5 className="green-medium-2 weight-semi-bold font-xx-large mt-2">
-                                                {/* {isMonthly == 'monthly' ? 'Solo Lawyer Plan' : ' Solo Lawyer Plan'} */}
-                                                Solo Plan
+                                                Annual Membership
                                             </h5>
                                         </div>
                                         <div className="col-sm-6 text-right tab-left">
-                                            {isMonthly == 'monthly' ? (
+                                            {isMonthly == 'yearly' ? (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
                                                     USD{' '}
                                                     <span className="text-xx-50">
                                                         {membershipPlan && membershipPlan.monthly_amount}
 
                                                     </span>
-                                                    /month
+                                                    /year
                                                 </h6>
                                             ) : (
                                                 <h6 className="social-link weight-bold f-22 m-top-80">
@@ -156,45 +176,14 @@ export default function LawyerChoosePlan() {
                                                         {membershipPlan && membershipPlan.yearly_amount}
 
                                                     </span>
-                                                    /yearly
+                                                    /year
                                                 </h6>
                                             )}
                                         </div>
                                     </div>
-                                    <div className='row'>
-                                        <div className='col-md-6 d-flex'>
-
-                                        </div>
-                                        <div className='col-md-6 d-flex'>
-                                            <p className="font-small weight-medium social-link mt-2"> MONTHLY
-                                            </p>
-                                            <div className="switch-btn mt-2">
-                                                <label className="switch ">
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={plan === 'yes'}
-                                                        onChange={handleMonthlyPlanToggle}
-
-                                                    />
-                                                    <span className="slider round"></span>
-                                                </label>
-                                            </div>
-                                            <p className="font-small weight-medium social-link mt-2" style={{ paddingLeft: '10px' }}> YEARLY
-                                            </p>
-                                            <p className="font-small weight-medium social-link mt-2 set-flat-offer"> Flat 25% off
-                                            </p>
-                                        </div>
-
-                                    </div>
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'monthly' &&
-                                            membershipPlan &&
-                                            membershipPlan.monthly_desc.split(',').map((desc, index) => (
-                                                <p key={index} className="font-small weight-medium social-link mt-3">
-                                                    <i className="fa-solid fa-check"></i> {desc.trim()}
-                                                </p>
-                                            ))}
+
 
                                         {isMonthly == 'yearly' &&
                                             membershipPlan &&
@@ -212,11 +201,19 @@ export default function LawyerChoosePlan() {
                                         >
                                             <span className="">
                                                 {' '}
-                                                {/* {isMonthly == 'monthly'
-                                                    ? ' Start 1 Month Free Trial'
-                                                    : `Pay ${membershipPlan && membershipPlan.yearly_amount}`} */}
-                                                {user ? (
-                                                    isMonthly === 'monthly'
+                                                {/* {user ? (
+                                                    isMonthly === 'yearly'
+                                                        ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
+                                                        : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`
+                                                ) : (
+                                                    <Link href="/auth/login" style={{ color: 'white' }}>
+                                                        Login
+                                                    </Link>
+                                                )} */}
+                                                {loading ? (
+                                                    <>Processing...</> // 👈 loading text
+                                                ) : Cookies.get("session_token") ? (
+                                                    isMonthly === 'yearly'
                                                         ? `Pay ${membershipPlan ? membershipPlan.monthly_amount : ''}`
                                                         : `Pay ${membershipPlan ? membershipPlan.yearly_amount : ''}`
                                                 ) : (
@@ -263,7 +260,7 @@ export default function LawyerChoosePlan() {
                                     </div>
                                     <div className="benefits mt-4">
                                         <p className="font-medium weight-semi-bold social-link">Benefits:</p>
-                                        {isMonthly == 'monthly' &&
+                                        {isMonthly == 'yearly' &&
                                             membershipPlan &&
                                             membershipPlan.monthly_desc.split(',').map((desc, index) => (
                                                 <p key={index} className="font-small weight-medium social-link mt-3">

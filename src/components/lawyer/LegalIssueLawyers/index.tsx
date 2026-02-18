@@ -104,7 +104,7 @@ export default function LegalIssueLawyers({
 		return <LawyerLoadingPlaceholder />;
 	}
 
-	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
+	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
 
 	const handleSubmit = async (event: any) => {
 		event.preventDefault();
@@ -238,7 +238,7 @@ export default function LegalIssueLawyers({
 					</h3>
 				</Link>
 
-				<p className="description">
+				{/* <p className="description">
 					{lawyer?.designation && lawyer.designation.length > 30
 						? lawyer.designation.slice(0, 30) + '...'
 						: lawyer?.designation} {' '}
@@ -249,7 +249,7 @@ export default function LegalIssueLawyers({
 						</span>
 					) : ""}
 
-				</p>
+				</p> */}
 
 				{showLocation && (
 					<div className="location-move">
@@ -279,8 +279,8 @@ export default function LegalIssueLawyers({
 
 				<div className="btn-family-more">
 					{lawyer?.service_name && (
-						<Link href={`/legal-services/${lawyer?.service_slug}`}>
-							<button> {lawyer?.service_name.split(',')[0]} Law</button>
+						<Link href='/find-a-professional'>
+							<button> {lawyer?.service_name.split(',')[0]}</button>
 						</Link>
 					)}
 					<span className="view-more-btn" onClick={() => handleSingleLawyerDetails(lawyer.id)}>
@@ -303,7 +303,7 @@ export default function LegalIssueLawyers({
 										src={getAdminImageSrc306x200(lawyer?.profile_image, lawyer.gender)}
 										placeholderImgUrl={
 											process.env.NEXT_PUBLIC_IMAGE_URL +
-											`/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+											`/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
 											}`
 										}
 										alt="user-popup"
@@ -316,7 +316,7 @@ export default function LegalIssueLawyers({
 								<h3 className="testimonial-title" data-bs-toggle="modal" data-bs-target="#exampleModal">
 									{single_lawyer?.full_name}
 								</h3>
-								{single_lawyer?.designation && <p className="description py-3">{single_lawyer?.designation}</p>}
+								{/* {single_lawyer?.designation && <p className="description py-3">{single_lawyer?.designation}</p>} */}
 								{single_lawyer?.location_name && (
 									<div className="location-move p-0">
 										<Image
@@ -486,7 +486,7 @@ export default function LegalIssueLawyers({
 						Your Inquiry was submitted.
 					</h5>
 					<p className="font-medium social-link weight-light text-center mb-3">
-						This lawyer typically responds in 48 hours. Go to your dashboard to see updates.{' '}
+						This professional typically responds in 48 hours. Go to your dashboard to see updates.{' '}
 					</p>
 
 					{user && user?.role === 'enduser' && (

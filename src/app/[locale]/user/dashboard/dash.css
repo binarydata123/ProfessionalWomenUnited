@@ -1,7 +1,7 @@
 .pag-box {
 	width: 100%;
 	height: 8px;
-	background: var(--anti-flash-white);
+	background: #e2bca8;
 	border-radius: 8px;
 }
 .g-pag-box {
@@ -100,7 +100,7 @@
 	font-weight: var(--weight-semi-bold);
 	border: 1px solid var(--green-medium-2);
 	color: var(--green-medium-2);
-	background: #02142d1f;
+	background: #f9f2ef;
 	border-radius: 16px;
 	padding: 0px 10px;
 	position: relative;
@@ -190,7 +190,7 @@ ul.rating-location li i {
 }
 
 .bottom-content button {
-	border: 1px solid rgba(32, 140, 132, 1) !important;
+	border: 1px solid #fff !important;
 	margin-top: 50px;
 }
 
@@ -262,10 +262,10 @@ ul.rating-location li i {
 	width: 28px;
 	background-color: var(--text-white);
 	border-radius: 30px;
-	border: solid 1px var(--anti-flash-white);
+	border: solid 1px #c49073;
 }
 .form-fild-des label:hover input ~ .checkmark {
-	background-color: #f7f7f7;
+	background-color: #c49073;
 }
 
 .form-fild-des label input:checked ~ .checkmark {
@@ -282,7 +282,7 @@ ul.rating-location li i {
 .form-fild-des label .checkmark:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 31px;
 	left: 4.8px;
 	top: 4.3px;
@@ -415,7 +415,7 @@ ul.rating-location li i {
 	font-weight: var(--weight-semi-bold);
 	border: 1px solid var(--green-medium-2);
 	color: var(--green-medium-2);
-	background: #02142d1f;
+	background: #f9f2ef;
 	border-radius: 16px;
 	padding: 0px 10px;
 	position: relative;

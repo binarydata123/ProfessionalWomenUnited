@@ -82,7 +82,7 @@ export default function Contribution() {
 					height={300}
 					image="/images/Empty.svg"
 					text="You don’t have any contributions."
-					buttonText="Go to legal Forum"
+					buttonText="Go to Professional Forum"
 					link="/legal-forum"
 				/>
 			)}

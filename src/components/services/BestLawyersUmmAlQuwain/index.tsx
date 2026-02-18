@@ -51,7 +51,7 @@ export default function BestLawyersUmmAlQuwain() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -146,7 +146,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEight"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Professionals in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it family law, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
+												Professionals in Umm Al Quwain possess expertise in various legal areas, making sure your specific needs are met with precision. Our platform connects you with lawyers who specialize in your required field, be it Family Professional, real estate matters, or business transactions. Hiring a lawyer in Umm Al Quwain through Professional Women United guarantees that you receive tailored guidance and representation relevant to your case.
 											</div>
 										</div>
 									</div>
@@ -212,7 +212,7 @@ export default function BestLawyersUmmAlQuwain() {
 											aria-labelledby="headingEleven"
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
-												Professional Women United offers comprehensive legal support across a wide range of practice areas in Umm Al Quwain. From family law and real estate matters to business transactions and civil litigation, our platform connects you with lawyers who specialize in various areas of law, providing comprehensive assistance for your diverse legal needs. Whether you need advice, representation, or help with legal documentation, the attorneys on our platform are equipped to handle all aspects of your case with professionalism and expertise.
+												Professional Women United offers comprehensive legal support across a wide range of Professions in Umm Al Quwain. From Family Professional and real estate matters to business transactions and civil litigation, our platform connects you with lawyers who specialize in various areas of law, providing comprehensive assistance for your diverse legal needs. Whether you need advice, representation, or help with legal documentation, the attorneys on our platform are equipped to handle all aspects of your case with professionalism and expertise.
 											</div>
 										</div>
 									</div>
@@ -301,13 +301,13 @@ export default function BestLawyersUmmAlQuwain() {
 								<>
 									{showFullTextDiscover ? (
 										<>
-											The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
+											The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex professional issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
 											<br />
 											At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the professional services you need.
 
 										</>
 									) : (
-										'The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex legal issues with precision.'
+										'The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex professional issues with precision.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -321,7 +321,7 @@ export default function BestLawyersUmmAlQuwain() {
 								</>
 							) : (
 								<>
-									The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex legal issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
+									The best lawyers in Umm Al Quwain are set apart by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep knowledge of local laws and regulations, these Professional experts can handle complex professional issues with precision. They are committed to providing personalized and effective solutions tailored to each client&apos;s unique needs.
 									<br />
 									At Professional Women United, we select the best lawyers in Umm Al Quwain so that you receive professionalism, dedication, and a relentless pursuit of excellence in all the professional services you need.
 
@@ -385,7 +385,7 @@ export default function BestLawyersUmmAlQuwain() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -395,16 +395,16 @@ export default function BestLawyersUmmAlQuwain() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Clients often look for legal information to find knowledgeable representation and clarity on matters of law. Whether you’re dealing with personal injury claims, family law matters, employment disputes, or real estate issues, we connect you with Professional experts who can provide tailored guidance.
+						Clients often look for Professional Information to find knowledgeable representation and clarity on matters of law. Whether you’re dealing with personal injury claims, Family Professional matters, employment disputes, or real estate issues, we connect you with Professional experts who can provide tailored guidance.
 						<br />
-						Select the legal issue you&apos;re facing and connect with a legal expert.
+						Select the professional issue you&apos;re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
 							<Link href="#">Personal Injury Claims</Link>
 						</li>
 						<li>
-							<Link href="#">Family Law (Divorce, Child Custody)</Link>
+							<Link href="#">Family Professional (Divorce, Child Custody)</Link>
 						</li>
 						<li>
 							<Link href="#">Employment Law</Link>
@@ -449,7 +449,7 @@ export default function BestLawyersUmmAlQuwain() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										Professionals in Umm Al Quwain offer expert professional advice tailored to your specific situation. They analyze your case thoroughly, explaining your rights and options in clear terms. With their deep understanding of the law, they provide strategic guidance to help you make informed decisions and handle your legal matters with confidence.
+										Professionals in Umm Al Quwain offer expert professional advice tailored to your specific situation. They analyze your case thoroughly, explaining your rights and options in clear terms. With their deep understanding of the law, they provide strategic guidance to help you make informed decisions and handle yOur professional matters with confidence.
 									</div>
 								</div>
 								<div className="col-lg-12">
@@ -482,7 +482,7 @@ export default function BestLawyersUmmAlQuwain() {
 											</h4>
 										</div>
 										<div className="text-start Discover-lawyer" />
-										From contracts and agreements to legal pleadings and letters, lawyers in Umm Al Quwain can draft a wide range of legal documents on your behalf. They make sure all documents are meticulously prepared, accurately reflecting your intentions and objectives while adhering to relevant laws and regulations. Whether you&apos;re entering into a business transaction or initiating legal proceedings, our attorneys offer comprehensive document drafting services to support your legal needs.
+										From contracts and agreements to legal pleadings and letters, lawyers in Umm Al Quwain can draft a wide range of legal documents on your behalf. They make sure all documents are meticulously prepared, accurately reflecting your intentions and objectives while adhering to relevant laws and regulations. Whether you&apos;re entering into a business transaction or initiating legal proceedings, our attorneys offer comprehensive document drafting services to support yOur professional needs.
 									</div>
 								</div>
 							</div>
@@ -535,7 +535,7 @@ export default function BestLawyersUmmAlQuwain() {
 													data-bs-target="#collapseTwo1"
 													aria-expanded="true"
 													aria-controls="collapseTwo1">
-													What types of legal issues can Professional Women United help with?
+													What types of professional issues can Professional Women United help with?
 												</button>
 											</h2>
 											<div
@@ -544,7 +544,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Professional Women United’s network of attorneys can help with a wide range of legal matters, including family law, real estate transactions, business disputes, employment issues, and more. Our platform connects you with lawyers in Umm Al Quwain who specialize in various practice areas, ensuring comprehensive support for your diverse legal needs.
+													Professional Women United’s network of attorneys can help with a wide range of legal matters, including Family Professional, real estate transactions, business disputes, employment issues, and more. Our platform connects you with lawyers in Umm Al Quwain who specialize in various Professions, ensuring comprehensive support for your diverse legal needs.
 												</div>
 											</div>
 										</div>
@@ -588,7 +588,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													During your initial consultation with a lawyer in Umm Al Quwain, you can expect to discuss the details of your case, your objectives, and any concerns you may have. The lawyer will ask questions to gather relevant information and provide an assessment of your legal options. It&apos;s also an opportunity for you to assess whether the lawyer is the right fit for your needs.
+													During your initial consultation with a lawyer in Umm Al Quwain, you can expect to discuss the details of your case, your objectives, and any concerns you may have. The lawyer will ask questions to gather relevant information and provide an assessment of yOur professional options. It&apos;s also an opportunity for you to assess whether the lawyer is the right fit for your needs.
 												</div>
 											</div>
 										</div>
@@ -623,7 +623,7 @@ export default function BestLawyersUmmAlQuwain() {
 													data-bs-target="#collapseSix"
 													aria-expanded="true"
 													aria-controls="collapseSix">
-													How long will it take to resolve my legal issue?
+													How long will it take to resolve my professional issue?
 												</button>
 											</h2>
 											<div
@@ -632,7 +632,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingSix"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													The duration of your legal matter depends on various factors, including the complexity of the case, the cooperation of involved parties, and the court&apos;s schedule. Your lawyer will provide an estimate based on their experience and familiarity with similar cases. They&apos;ll work diligently to resolve your legal issue efficiently while keeping you informed of any developments along the way.
+													The duration of yOur professional matter depends on various factors, including the complexity of the case, the cooperation of involved parties, and the court&apos;s schedule. Your lawyer will provide an estimate based on their experience and familiarity with similar cases. They&apos;ll work diligently to resolve your professional issue efficiently while keeping you informed of any developments along the way.
 												</div>
 											</div>
 										</div>
@@ -667,7 +667,7 @@ export default function BestLawyersUmmAlQuwain() {
 													data-bs-target="#collapseEight"
 													aria-expanded="true"
 													aria-controls="collapseEight">
-													How do I know if I need a lawyer for my legal issue?
+													How do I know if I need a lawyer for my professional issue?
 												</button>
 											</h2>
 											<div
@@ -676,7 +676,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingEight"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													To figure out if you need a lawyer for your legal matter, consider the complexity of the issue, the potential consequences involved, and your comfort level with navigating the legal process on your own. Consulting with a lawyer can provide clarity on your rights, options, and the best course of action to take.
+													To figure out if you need a lawyer for yOur professional matter, consider the complexity of the issue, the potential consequences involved, and your comfort level with navigating the legal process on your own. Consulting with a lawyer can provide clarity on your rights, options, and the best course of action to take.
 												</div>
 											</div>
 										</div>
@@ -698,7 +698,7 @@ export default function BestLawyersUmmAlQuwain() {
 												aria-labelledby="headingnine"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Hiring a lawyer offers several advantages over representing yourself, including access to legal expertise, familiarity with court procedures, negotiation skills, and the ability to advocate effectively on your behalf. An attorney can also help you avoid common pitfalls and overcome complex legal issues with confidence, potentially leading to favorable outcomes in your case.
+													Hiring a lawyer offers several advantages over representing yourself, including access to legal expertise, familiarity with court procedures, negotiation skills, and the ability to advocate effectively on your behalf. An attorney can also help you avoid common pitfalls and overcome complex professional issues with confidence, potentially leading to favorable outcomes in your case.
 												</div>
 											</div>
 										</div>
@@ -725,7 +725,7 @@ export default function BestLawyersUmmAlQuwain() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -736,22 +736,22 @@ export default function BestLawyersUmmAlQuwain() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

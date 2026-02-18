@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	return {
 		title: meta.data.legal_forum_meta_title
 			? meta.data.legal_forum_meta_title
-			: `Legal Forum | ${process.env.NEXT_APP_NAME}`,
+			: `Professional Forum | ${process.env.NEXT_APP_NAME}`,
 		description: meta.data.legal_forum_meta_description
 			? meta.data.legal_forum_meta_description
 			: `${process.env.NEXT_APP_NAME}`,
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		openGraph: {
 			title: meta.data.legal_forum_meta_title
 				? meta.data.legal_forum_meta_title
-				: `Legal Forum | ${process.env.NEXT_APP_NAME}`,
+				: `Professional Forum | ${process.env.NEXT_APP_NAME}`,
 			description: meta.data.legal_forum_meta_description
 				? meta.data.legal_forum_meta_description
 				: `${process.env.NEXT_APP_NAME}`,

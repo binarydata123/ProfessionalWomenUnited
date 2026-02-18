@@ -128,10 +128,10 @@ export default function Page() {
 						if (errors.email) {
 							toast.error(errors.email[0]);
 						} else {
-							toast.error('An error occurred while creating a new lawyer');
+							toast.error('An error occurred while creating a new professional');
 						}
 					} else {
-						toast.error('An error occurred during while creating a new lawyer');
+						toast.error('An error occurred during while creating a new professional');
 					}
 					setIsLoading(false);
 				});

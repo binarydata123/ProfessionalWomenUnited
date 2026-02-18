@@ -51,7 +51,7 @@ export default function ProductLiabilityLawyer() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -92,7 +92,7 @@ export default function ProductLiabilityLawyer() {
 									<>
 										A product liability lawyer specializes in helping those harmed by defective or
 										dangerous products pursue legal action. Professional Women United connects individuals in
-										the UAE with experienced product liability lawyers who can provide professional advice,
+										the USA with experienced product liability lawyers who can provide professional advice,
 										representation, and guidance throughout the process of filing a claim and
 										seeking justice against negligent manufacturers or distributors.
 									</>
@@ -133,7 +133,7 @@ export default function ProductLiabilityLawyer() {
 									<span className="green-med-col">in the USA</span>
 								</h2>
 								<p className="weight-light font-medium text-white mt-3">
-									Corporate law in the United Arab Emirates (UAE) underwent significant changes with
+									Corporate law in the United States of America (USA) underwent significant changes with
 									the issuance of Federal Law By Decree No. 32 of 2021 on Commercial Companies,
 									replacing the Existing Law. Key amendments, effective January 2, 2022, focus on
 									strengthening foreign ownership principles, corporate governance, and minority
@@ -184,7 +184,7 @@ export default function ProductLiabilityLawyer() {
 												With the enactment of the New Consumer Protection Law (CPL) in November
 												2020, consumers in the USA now enjoy broader rights and protections.
 												This law, approved by His Highness Sheikh Khalifa bin Zayed Al Nahyan,
-												President of the UAE, replaces the old CPL, significantly enhancing
+												President of the USA, replaces the old CPL, significantly enhancing
 												consumer rights and extending product liability to include e-commerce
 												and free zone areas. The primary goal of the CPL is to safeguard
 												consumer interests, emphasizing safety, quality, and fair consumption
@@ -258,7 +258,7 @@ export default function ProductLiabilityLawyer() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 									<span className="text-white findlawyertext">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+										<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -486,7 +486,7 @@ export default function ProductLiabilityLawyer() {
 											<div className="accordion-body border-0">
 												Professional Women United connects you with experienced product liability lawyers
 												who specialize in handling cases like yours. The attorneys on our
-												platform have in-depth knowledge of the UAE product liability laws and
+												platform have in-depth knowledge of the USA product liability laws and
 												regulations, allowing them to handle legal proceedings effectively. With
 												their expertise, they can assess the merits of your case, gather
 												evidence, and build a strong legal strategy to maximize your chances of
@@ -681,7 +681,7 @@ export default function ProductLiabilityLawyer() {
 											product liability lawyers in Dubai. Our top talents are distinguished by
 											their extensive experience, exceptional legal expertise, and track record of
 											success in handling product liability cases. They possess a deep
-											understanding of UAE product liability laws and regulations, allowing them
+											understanding of USA product liability laws and regulations, allowing them
 											to advocate for your rights successfully.
 										</>
 									) : (
@@ -699,7 +699,7 @@ export default function ProductLiabilityLawyer() {
 									At Professional Women United, we pride ourselves on connecting clients with the top product
 									liability lawyers in Dubai. Our top talents are distinguished by their extensive
 									experience, exceptional legal expertise, and track record of success in handling
-									product liability cases. They possess a deep understanding of UAE product liability
+									product liability cases. They possess a deep understanding of USA product liability
 									laws and regulations, allowing them to advocate for your rights successfully.
 								</>
 							)}
@@ -761,7 +761,7 @@ export default function ProductLiabilityLawyer() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -775,7 +775,7 @@ export default function ProductLiabilityLawyer() {
 						a priority. They look for assistance in understanding their rights, determining liability, and
 						pursuing compensation for injuries or damages caused by defective products.
 						<br />
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -1062,7 +1062,7 @@ export default function ProductLiabilityLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1073,22 +1073,22 @@ export default function ProductLiabilityLawyer() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

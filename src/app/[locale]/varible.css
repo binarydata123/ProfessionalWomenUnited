@@ -29,14 +29,14 @@ html {
 	--family-Epilogue: 'Epilogue', sans-serif;
 	/* color and bg */
 	--green-medium-1: #fff;
-	--green-medium-2: #c49073;
+	--green-medium-2: #153060;
 	--button-1: #02142d;
 	--color-green-light: #02142d;
 	--social-link: #1f1f1f;
 	--green-light: #e2bca8;
 	--anti-flash-white: #f2f2f2;
 	--Chinese-silver: #cccccc;
-	--boysenberry: #c49073;
+	--boysenberry: #153060;
 	--boysenberry-light: #c49073;
 	--color-senberry-sunlight: #c49073;
 	--text-white: #fff;
@@ -497,7 +497,7 @@ button:hover {
 	transition: all 0.2s;
 }
 .card-box:hover {
-	box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 29px -5px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-item {
@@ -637,7 +637,7 @@ ul.dash-add {
 	background: #c49073 !important;
 }
 .count-card-wrapper.add-none .link-button:hover {
-	color: #fff !important;
+	color: #c49073 !important;
 }
 .pr-0 {
 	padding-right: 0 !important;
@@ -1188,4 +1188,15 @@ ul.list-12 li a svg {
 .fa-spin {
 	-webkit-animation-duration: var(--fa-animation-duration, 8s) !important;
 	animation-duration: var(--fa-animation-duration, 8s) !important;
+}
+
+.A-5555 {
+	background: #c3221b;
+	font-size: var(--font-small);
+	font-weight: var(--weight-semi-bold);
+	line-height: var(--line-height-small);
+	color: var(--text-white);
+	border: solid 1px #c3221b;
+	border-radius: 4px;
+	padding: 8px 20px;
 }

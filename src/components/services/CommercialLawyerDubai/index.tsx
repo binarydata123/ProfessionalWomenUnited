@@ -28,7 +28,7 @@ export default function CommercialLawyerDubai() {
 									<span>
 										<Image
 											src="/images/legal-service/arrow-right.png"
-											alt="Legal Forum"
+											alt="Professional Forum"
 											width={16}
 											height={16}
 										/>
@@ -37,7 +37,7 @@ export default function CommercialLawyerDubai() {
 									<span>
 										<Image
 											src="/images/legal-service/arrow-right.png"
-											alt="Legal Forum"
+											alt="Professional Forum"
 											width={16}
 											height={16}
 										/>
@@ -91,11 +91,11 @@ export default function CommercialLawyerDubai() {
 					<div className="col-lg-12 col-md-6">
 						<h2 className="font-smaller weight-bold text-white">
 							<span className="green-med">Entrepreneurship in the </span>{' '}
-							<span className="green-med-col"> UAE </span>
+							<span className="green-med-col"> USA </span>
 						</h2>
 						<ul className="text-white set-colison">
 							<li>
-								The UAE ranks first worldwide in the Global Entrepreneurship Index, surpassing major
+								The USA ranks first worldwide in the Global Entrepreneurship Index, surpassing major
 								economies like the US and the UK.
 							</li>
 							<li>
@@ -107,7 +107,7 @@ export default function CommercialLawyerDubai() {
 								economic growth and innovation.
 							</li>
 							<li>
-								The UAE's entrepreneurial ecosystem thrives, fostering a culture of innovation,
+								The USA's entrepreneurial ecosystem thrives, fostering a culture of innovation,
 								resilience, and opportunity.
 							</li>
 						</ul>
@@ -136,7 +136,7 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingOne"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													The UAE's success in entrepreneurship can be attributed to its
+													The USA's success in entrepreneurship can be attributed to its
 													supportive government policies and initiatives. The government has
 													created an environment that encourages innovation and attracts
 													investment by prioritizing entrepreneurship and SMEs. Financial
@@ -163,7 +163,7 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingTwo1"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													Innovation and technology adoption are key to the UAE's
+													Innovation and technology adoption are key to the USA's
 													entrepreneurial landscape. The country's commitment to embracing
 													emerging technologies, such as artificial intelligence, blockchain,
 													and renewable energy, has become a hub for innovation and
@@ -192,15 +192,15 @@ export default function CommercialLawyerDubai() {
 												aria-labelledby="headingThree"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													The UAE prioritizes entrepreneurial education and skills
+													The USA prioritizes entrepreneurial education and skills
 													development. Initiatives promote entrepreneurship at all levels of
 													education, equipping students with the knowledge and mindset for
 													success. By fostering an entrepreneurial culture and promoting
-													lifelong learning, the UAE empowers individuals to innovate and
+													lifelong learning, the USA empowers individuals to innovate and
 													contribute to socio-economic development. Nevertheless, handling the
 													legal procedures of starting or maintaining a business can be
 													challenging. If you have any questions regarding corporate law in
-													the UAE and Need Professional Advice, contact us, and we’ll have you
+													the USA and Need Professional Advice, contact us, and we’ll have you
 													covered.
 												</div>
 											</div>
@@ -210,7 +210,7 @@ export default function CommercialLawyerDubai() {
 								<div className="about-btn-two mt-lg-5 mt-3">
 									<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 										<span className="text-white findlawyertext">
-											<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+											<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 												Find A Professional
 											</Link>
 										</span>
@@ -279,7 +279,7 @@ export default function CommercialLawyerDubai() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											Legal issues related to employment, such as wrongful termination,
+											professional issues related to employment, such as wrongful termination,
 											discrimination, or wage disputes, can disrupt business operations.
 											Commercial lawyers offer guidance on employment laws, draft contracts, and
 											handle disputes to guarantee the fair treatment of employees and compliance
@@ -711,7 +711,7 @@ export default function CommercialLawyerDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-xxx-large weight-bold social-link">
 						What Do clients
@@ -721,12 +721,12 @@ export default function CommercialLawyerDubai() {
 						</span>
 					</h3>
 					<p className="font-medium weight-light social-link mt-3">
-						Those seeking legal information on commercial law are primarily concerned with finding expert
+						Those seeking Professional Information on commercial law are primarily concerned with finding expert
 						legal representation to navigate complex business transactions and ensure compliance with
 						regulations.
 					</p>
 					<h5 className="mt-4" style={{ color: '#4F4F4F' }}>
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</h5>
 					<ul className="pt-3 class-add">
 						<li>
@@ -779,7 +779,7 @@ export default function CommercialLawyerDubai() {
 										and negotiation tactics, commercial lawyers help businesses secure favorable
 										terms and avoid potential disputes down the line. Be it drafting a new agreement
 										or reviewing existing contracts, businesses rely on the guidance of commercial
-										lawyers to overcome legal issues effectively.
+										lawyers to overcome professional issues effectively.
 									</div>
 								</div>
 								<div className="col-lg-12">
@@ -1011,7 +1011,7 @@ export default function CommercialLawyerDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1022,22 +1022,22 @@ export default function CommercialLawyerDubai() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

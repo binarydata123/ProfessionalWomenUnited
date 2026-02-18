@@ -2,12 +2,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { getAllCountries } from '../../../lib/frontendapi';
+import { useRouter } from 'next/navigation';
 
 const professionals = [
   'Gynecologist',
-  'Dentist', 
+  'Dentist',
   'Pediatrician',
-  'Family Law Attorney',
+  'Family Professional Attorney',
   'Personal Injury Attorney',
   'Criminal Defense Attorney',
   'Real Estate Agent',
@@ -15,75 +17,124 @@ const professionals = [
   'Accountant'
 ];
 
-const topUSCities = [
-  'New York, NY', 'Los Angeles, CA', 'Chicago, IL', 'Houston, TX', 'Phoenix, AZ',
-  'Philadelphia, PA', 'San Antonio, TX', 'San Diego, CA', 'Dallas, TX', 'San Jose, CA',
-  'Austin, TX', 'Jacksonville, FL', 'Fort Worth, TX', 'Columbus, OH', 'San Francisco, CA',
-  'Charlotte, NC', 'Indianapolis, IN', 'Seattle, WA', 'Denver, CO', 'Washington, DC',
-  'Boston, MA', 'El Paso, TX', 'Detroit, MI', 'Nashville, TN', 'Portland, OR',
-  'Memphis, TN', 'Oklahoma City, OK', 'Las Vegas, NV', 'Louisville, KY', 'Baltimore, MD',
-  'Milwaukee, WI', 'Albuquerque, NM', 'Tucson, AZ', 'Fresno, CA', 'Sacramento, CA',
-  'Kansas City, MO', 'Long Beach, CA', 'Mesa, AZ', 'Atlanta, GA', 'Colorado Springs, CO',
-  'Raleigh, NC', 'Omaha, NE', 'Miami, FL', 'Oakland, CA', 'Minneapolis, MN',
-  'Tulsa, OK', 'Cleveland, OH', 'Wichita, KS', 'Arlington, TX', 'New Orleans, LA',
-  'Bakersfield, CA', 'Tampa, FL', 'Honolulu, HI', 'Aurora, CO', 'Anaheim, CA',
-  'Santa Ana, CA', 'St. Louis, MO', 'Riverside, CA', 'Corpus Christi, TX', 'Lexington, KY',
-  'Pittsburgh, PA', 'Anchorage, AK'
-];
+
 
 
 const DirectoryTabs = () => {
+  const router = useRouter();
+
   const [currentTab, setCurrentTab] = useState<'professionals' | 'cities'>('professionals');
   const [searchTerm, setSearchTerm] = useState('');
-  const [filteredCities, setFilteredCities] = useState(topUSCities);
+  // const [filteredCities, setFilteredCities] = useState(topUSCities);
   const [filteredProfessionals, setFilteredProfessionals] = useState(professionals);
+  const [filteredCities, setFilteredCities] = useState<string[]>([]);
+  const [allCities, setAllCities] = useState<string[]>([]);
+  const [loadingCities, setLoadingCities] = useState(false);
+
+  const handleSelectProfessional = (professional: string) => {
+    router.push(`/find-a-professional?service=${encodeURIComponent(professional)}`);
+  };
+
+  // const handleSelectCity = (city: string) => {
+  //   router.push(`/find-a-professional?city=${encodeURIComponent(city)}`);
+  // };
+  const handleSelectCity = (city: string) => {
+    // Send the full "City, ST" format to match your database
+    router.push(`/find-a-professional?city=${encodeURIComponent(city)}`);
+  };
+
+  useEffect(() => {
+    if (currentTab === 'cities') {
+      fetchCities();
+    }
+  }, [currentTab]);
+
+  const fetchCities = async () => {
+    setLoadingCities(true);
+    try {
+      const res: any = await getAllCountries();
+      if (res.status && res.data) {
+        // Format cities as "City, ST" to match your database
+        const cityNames = res.data.map((c: any) => {
+          if (c.state && c.name) {
+            return `${c.name}`; // Format: "New York, NY"
+          }
+          return c.name;
+        }).filter(Boolean); // Remove any null/undefined values
+
+        setAllCities(cityNames);
+        setFilteredCities(cityNames);
+      }
+    } catch (err) {
+      console.error('Cities API error', err);
+      setAllCities([]);
+      setFilteredCities([]);
+    } finally {
+      setLoadingCities(false);
+    }
+  };
+
+
 
   useEffect(() => {
     if (currentTab === 'professionals') {
-      const filtered = professionals.filter(professional =>
-        professional.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = professionals.filter(p =>
+        p.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredProfessionals(filtered);
     } else {
-      const filtered = topUSCities.filter(city =>
-        city.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = allCities.filter(c =>
+        c.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setFilteredCities(filtered);
     }
-  }, [searchTerm, currentTab]);
+  }, [searchTerm, currentTab, allCities]);
 
   return (
     <section className="directory-container py-5 bg-white"> {/* Added bg-white */}
       <div className="container">
         {/* Header Section */}
-        <div className="text-center mb-5">
-          <h1 className="display-4 fw-bold mb-3 text-[#1B3067]" style={{fontSize:'48px'}}> Professional <span className="highlight" style={{color:'#BE8363'}}>Directory</span></h1>
-          <p className="lead text-gray-600">
+        <div className="text-center mb-5 px-3">
+          <h1
+            className="fw-bold mb-3 text-[#1B3067]"
+            style={{ fontSize: 'clamp(28px, 5vw, 48px)' }} // responsive font size
+          >
+            Professional <span className="highlight" style={{ color: '#BE8363' }}>Directory</span>
+          </h1>
+          <p className="lead text-gray-600 text-sm md:text-base">
             Find professionals and explore cities across the United States
           </p>
         </div>
 
         {/* Tab Navigation */}
-        <div className="d-flex justify-content-center"> {/* Add this wrapper div */}
-  <ul className="nav nav-tabs mb-4" id="directoryTabs" role="tablist">
-    <li className="nav-item" role="presentation">
-      <button
-        className={`nav-link ${currentTab === 'professionals' ? 'active' : ''}`}
-        onClick={() => setCurrentTab('professionals')}
-      >
-        <i className="fas fa-user me-2"></i>Search by Professionals
-      </button>
-    </li>
-    <li className="nav-item" role="presentation">
-      <button
-        className={`nav-link ${currentTab === 'cities' ? 'active' : ''}`}
-        onClick={() => setCurrentTab('cities')}
-      >
-        <i className="fas fa-map-marker-alt me-2"></i>Search by USA Cities
-      </button>
-    </li>
-  </ul>
-</div>
+        <div className="d-flex justify-content-center">
+          <ul
+            className="nav nav-tabs mb-4 d-flex justify-content-center flex-wrap gap-2 w-100"
+            id="directoryTabs"
+            role="tablist"
+            style={{ maxWidth: "400px" }} // ✅ keeps it centered & not stretched full width
+          >
+            <li className="nav-item" role="presentation">
+              <button
+                className={`nav-link ${currentTab === 'professionals' ? 'active' : ''}`}
+                onClick={() => setCurrentTab('professionals')}
+                style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
+              >
+                <i className="fas fa-user me-2"></i>Search by Professions
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className={`nav-link ${currentTab === 'cities' ? 'active' : ''}`}
+                onClick={() => setCurrentTab('cities')}
+                style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
+              >
+                <i className="fas fa-map-marker-alt me-2"></i>Search by Metro Area
+              </button>
+            </li>
+          </ul>
+        </div>
+
 
         {/* Search Bar */}
         <div className="search-container mb-5">
@@ -92,7 +143,7 @@ const DirectoryTabs = () => {
             <input
               type="text"
               className="form-control search-input"
-              placeholder={currentTab === 'professionals' ? 'Search professionals...' : 'Search cities...'}
+              placeholder={currentTab === 'professionals' ? 'Search profession...' : 'Search cities...'}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -103,11 +154,8 @@ const DirectoryTabs = () => {
         <div className="tab-content">
           {/* Professionals Tab */}
           <div className={`tab-pane ${currentTab === 'professionals' ? 'show active' : 'fade'}`}>
-            {/* <div className="d-flex align-items-center mb-4">
-              <i className="fas fa-users me-2 text-[#BE8363]" style={{ fontSize: '1.5rem' }}></i>
-              <h2 className="section-title mb-0">Professional Services</h2>
-            </div> */}
-            
+
+
             {filteredProfessionals.length === 0 ? (
               <div className="no-results">
                 <i className="fas fa-search mb-3 text-gray-300" style={{ fontSize: '3rem' }}></i>
@@ -116,13 +164,19 @@ const DirectoryTabs = () => {
             ) : (
               <div className="row g-4">
                 {filteredProfessionals.map((professional, index) => (
-                  <div key={index} className="col-md-6 col-lg-4">
+                  <div key={index} className="col-md-6 col-lg-4"
+                    onClick={() => handleSelectProfessional(professional)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <div className="professional-card">
-                      <div className="professional-icon">
-                        <i className="fas fa-user text-white"></i>
+                      <div className="d-flex align-items-center">
+                        <div className="professional-icon">
+                          <i className="fas fa-user text-white"></i>
+                        </div>
+                        <div>
+                          <h6 className="text-[#1B3067] font-semibold m-0">{professional}</h6>
+                        </div>
                       </div>
-                      <h5 className="text-[#1B3067] font-semibold">{professional}</h5>
-                      <p className="text-gray-500 mb-0">Professional Services</p>
                     </div>
                   </div>
                 ))}
@@ -134,19 +188,27 @@ const DirectoryTabs = () => {
           <div className={`tab-pane ${currentTab === 'cities' ? 'show active' : 'fade'}`}>
             <div className="d-flex align-items-center mb-4">
               <i className="fas fa-map-marker-alt me-2 text-[#BE8363]" style={{ fontSize: '1.5rem' }}></i>
-              <h2 className="section-title mb-0">Top US Cities</h2>
-              <span className="badge-count">{filteredCities.length} cities</span>
+              <h2 className="section-title mb-0">Top US Metro Areas</h2>
+              <span className="badge-count">{filteredCities.length} metro areas</span>
             </div>
-
-            {filteredCities.length === 0 ? (
-              <div className="no-results">
+            {loadingCities ? (
+              <div className="text-center py-5">
+                <div className="spinner-border text-primary" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </div>
+              </div>
+            ) : filteredCities.length === 0 ? (
+              <div className="no-results text-center">
                 <i className="fas fa-search mb-3 text-gray-300" style={{ fontSize: '3rem' }}></i>
                 <p className="text-gray-500">No cities found matching your search.</p>
               </div>
             ) : (
               <div className="row g-3">
                 {filteredCities.map((city, index) => (
-                  <div key={index} className="col-md-6 col-lg-3">
+                  <div key={index} className="col-md-6 col-lg-3"
+                    onClick={() => handleSelectCity(city)} // ✅ redirect
+                    style={{ cursor: "pointer" }}
+                  >
                     <div className="city-card">
                       <div className="d-flex align-items-center">
                         <div className="city-icon">
@@ -167,9 +229,9 @@ const DirectoryTabs = () => {
 
       <style jsx>{`
         .professional-card {
-          background: white;
-          border-radius: 12px;
-          padding: 1.5rem;
+          background: white ;
+          border-radius: 8px;
+          padding: 1rem !important;
           border: 1px solid #e9ecef;
           transition: all 0.3s ease;
           cursor: pointer;
@@ -177,20 +239,20 @@ const DirectoryTabs = () => {
         }
 
         .professional-card:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+          transform: translateY(-1px);
+          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
           border-color: #BE8363;
         }
 
         .professional-icon {
-          width: 60px;
-          height: 60px;
-          background-color: #BE8363;
+          width: 40px;
+          height: 40px;
+          background-color: #02142d;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-bottom: 1rem;
+          margin-right: 0.75rem;
         }
 
         .city-card {
@@ -223,7 +285,7 @@ const DirectoryTabs = () => {
         .section-title {
           color: #1B3067;
           font-weight: 600;
-          margin-bottom: 2rem;
+          margin-bottom: 0;
         }
 
         .no-results {
@@ -251,17 +313,16 @@ const DirectoryTabs = () => {
         }
 
         .nav-tabs .nav-link:hover {
-  color: #BE8363;
-  background-color: transparent;
-}
+          color: #BE8363;
+          background-color: transparent;
+        }
 
         .nav-tabs .nav-link.active {
-  color: #BE8363; /* Active text ka color */
-  font-weight: 600;
-  border-bottom: 3px solid #BE8363; /* optional underline highlight */
-  background-color: transparent; /* background same rahe */
-}
-
+          color: #BE8363;
+          font-weight: 600;
+          border-bottom: 3px solid #BE8363;
+          background-color: transparent;
+        }
 
         .search-container {
           max-width: 400px;

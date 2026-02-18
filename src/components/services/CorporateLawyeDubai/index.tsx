@@ -51,7 +51,7 @@ export default function CorporateLawyeDubai() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -77,7 +77,7 @@ export default function CorporateLawyeDubai() {
 												with regulations. . <br />
 												At Professional Women United, our corporate lawyers offer comprehensive legal
 												solutions tailored to each client's specific needs and objectives. They
-												work closely with businesses to handle legal issues, avoid risks, and
+												work closely with businesses to handle professional issues, avoid risks, and
 												achieve their strategic goals efficiently and effectively.
 											</>
 										) : (
@@ -97,7 +97,7 @@ export default function CorporateLawyeDubai() {
 										acquisitions, corporate governance, and compliance with regulations. . <br />
 										At Professional Women United, our corporate lawyers offer comprehensive legal solutions
 										tailored to each client's specific needs and objectives. They work closely with
-										businesses to handle legal issues, avoid risks, and achieve their strategic
+										businesses to handle professional issues, avoid risks, and achieve their strategic
 										goals efficiently and effectively.
 									</>
 								)}
@@ -141,7 +141,7 @@ export default function CorporateLawyeDubai() {
 							<div className="content-wrapper">
 								<h2 className="font-smaller weight-bold text-white">
 									<span className="green-med">Product Liability in the</span>{' '}
-									<span className="green-med-col">UAE</span>
+									<span className="green-med-col">USA</span>
 								</h2>
 								<p className="weight-light font-medium text-white mt-3">
 									Product liability refers to the legal responsibility of manufacturers, distributors,
@@ -188,7 +188,7 @@ export default function CorporateLawyeDubai() {
 														investment.
 													</li>
 													<li>
-														SPACs, approved by the UAE Securities and Commodities Authority
+														SPACs, approved by the USA Securities and Commodities Authority
 														(SCA), facilitate IPOs and serve as a PJSC for acquiring or
 														merging companies.
 													</li>
@@ -264,11 +264,11 @@ export default function CorporateLawyeDubai() {
 														lump sum fee of up to USD 200,000 in case of profit failure.
 													</li>
 												</ul>
-												The New Companies Law signifies the UAE's commitment to economic
+												The New Companies Law signifies the USA's commitment to economic
 												development and alignment with international best practices. Existing
-												companies must adjust within one year, underlining the UAE's drive to
+												companies must adjust within one year, underlining the USA's drive to
 												enhance competitiveness and attract investments.
-												<br /> If you’re looking for a corporate lawyer in UAE to help you
+												<br /> If you’re looking for a corporate lawyer in USA to help you
 												introduce the New Companies Law to your corporation, make sure to
 												contact us.
 											</div>
@@ -279,7 +279,7 @@ export default function CorporateLawyeDubai() {
 							<div className="about-btn-two mt-lg-5 mt-3">
 								<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 									<span className="text-white findlawyertext">
-										<Link href={'/auth/create-profile/?role=lawyer'} style={{ color: 'white' }}>
+										<Link href={'/auth/create-profile/?role=professional'} style={{ color: 'white' }}>
 											Find A Professional
 										</Link>
 									</span>
@@ -858,7 +858,7 @@ export default function CorporateLawyeDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -873,7 +873,7 @@ export default function CorporateLawyeDubai() {
 						can provide expert guidance on various issues, including business transactions, corporate
 						governance, mergers and acquisitions, and regulatory compliance.
 						<br />
-						Select the legal issue that you face and connect with a legal expert.
+						Select the professional issue that you face and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -978,7 +978,7 @@ export default function CorporateLawyeDubai() {
 											Before forming a defense strategy, criminal lawyers carry out a thorough
 											analysis of their clients' cases and investigate the circumstances
 											surrounding the alleged offense. They review evidence, interview witnesses,
-											and identify legal issues or procedural errors that could benefit their
+											and identify professional issues or procedural errors that could benefit their
 											clients' defense. By carefully preparing cases, they make sure that their
 											clients receive a fair trial and are equipped to challenge the prosecution's
 											arguments effectively.{' '}
@@ -1156,7 +1156,7 @@ export default function CorporateLawyeDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1167,22 +1167,22 @@ export default function CorporateLawyeDubai() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

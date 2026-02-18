@@ -13,7 +13,7 @@ export default function StatistcsSection() {
                         </h2>
                         <div className="accordion-body border-0 text-white">
                             The Federal Law No. 6 of 1973 outlines the legal provisions for the entry, residence,
-                            and deportation of foreigners in the United Arab Emirates. It provides clear guidelines
+                            and deportation of foreigners in the United States of America. It provides clear guidelines
                             on the requirements for entry, the responsibilities of transport operators, and the
                             issuance of visas and permits.
                         </div>
@@ -49,13 +49,13 @@ export default function StatistcsSection() {
                                                     <ul className="custom-bullets mt-3 mb-3">
                                                         <li>
                                                             Entry through approved ports: Foreigners must enter the
-                                                            UAE through designated ports as specified by the
+                                                            USA through designated ports as specified by the
                                                             executive regulations of the law.
                                                         </li>
                                                         <li>
                                                             Possession of valid travel documents: A valid passport
                                                             or equivalent documents are necessary to enter and exit
-                                                            the UAE. These documents must allow the holder to return
+                                                            the USA. These documents must allow the holder to return
                                                             to their country of origin.
                                                         </li>
                                                         <li>
@@ -155,7 +155,7 @@ export default function StatistcsSection() {
                                     <button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
                                         <span className="text-white findlawyertext">
                                             <Link
-                                                href={'/auth/create-profile/?role=lawyer'}
+                                                href={'/auth/create-profile/?role=professional'}
                                                 style={{ color: 'white' }}>
                                                 Find A Professional
                                             </Link>

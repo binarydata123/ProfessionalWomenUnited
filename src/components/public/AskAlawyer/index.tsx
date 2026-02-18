@@ -107,12 +107,12 @@ export default function AskAlawyer({ slug = '' }: Props) {
 		<>
 			<div className="main-section pt-4">
 				<div className="container">
-					<h5>Ask a Lawyer</h5>
+					<h5>Ask a Professional</h5>
 					<div className="ask-a-lawyer">
 						<div className="text-center">
-							<h1>Ask A Lawyer</h1>
+							<h1>Ask A Professional</h1>
 							<p>
-								Get the conversation rolling. Describe your legal issue & seek solutions from legal
+								Get the conversation rolling. Describe your professional issue & seek solutions from legal
 								experts.
 							</p>
 							<div className="line-hr"></div>
@@ -230,14 +230,14 @@ export default function AskAlawyer({ slug = '' }: Props) {
 								)}
 								<FormTextarea
 									className="form-control"
-									label={'Describe your legal issue*'}
+									label={'Describe your professional issue*'}
 									rows={6}
 									name="description"
 									error={errors.description}
 									value={formData.description}
 									onChange={handleInputChange}
 									maxLength={2000}
-									placeholder="Be specific, clearly define what your legal issue is and avoid sharing personally identifiable information..."
+									placeholder="Be specific, clearly define what your professional issue is and avoid sharing personally identifiable information..."
 								/>
 								<br />
 								<label htmlFor="">Do you plan on hiring a lawyer for this issue?*</label>

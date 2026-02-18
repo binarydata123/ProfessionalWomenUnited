@@ -12,7 +12,7 @@ export default function LegalQuetion() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/get-a.png"
-									alt="Join Our Legal Forum and Get Expert
+									alt="Join Our Professional Forum and Get Expert
 Advice for Free"
 									height={370}
 									width={620}
@@ -24,18 +24,18 @@ Advice for Free"
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, Today! or chat with a
-									lawyer online for free in Dubai and across UAE now, We work on a wide range of legal
+									lawyer online for free in Dubai and across USA now, We work on a wide range of legal
 									matters. Our professional services.
 								</p>
 								<Link href={'/legal-forum'}>
 									<button className="w-40 btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-										<span className="text-white"> Visit Legal Forum </span>
+										<span className="text-white"> Visit Professional Forum </span>
 										<span className="border border-radius-1 banner-arrow-btn">
 											<ChevronRightIcon width={20} color={'#fff'} />
 										</span>

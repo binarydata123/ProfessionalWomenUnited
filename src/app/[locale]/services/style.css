@@ -1,0 +1,163 @@
+:root {
+	--navy: #02142d;
+	--coral: #c3221b;
+	--tan: #be8363;
+}
+
+.text-navy {
+	color: var(--navy);
+}
+
+.text-coral {
+	color: var(--coral);
+}
+
+.text-tan {
+	color: var(--tan);
+}
+
+.bg-navy {
+	background-color: var(--navy);
+}
+
+.bg-coral {
+	background-color: var(--coral);
+}
+
+.bg-tan {
+	background-color: var(--tan);
+}
+
+.btn-coral {
+	background-color: #c3221b;
+	color: white;
+	border-color: #c3221b;
+}
+
+.btn-coral:hover {
+	background-color: #c3221b;
+	border-color: #c3221b;
+	color: white;
+}
+
+.border-coral {
+	border-color: var(--coral) !important;
+}
+
+.card-hover {
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.card-hover:hover {
+	transform: translateY(-8px);
+	box-shadow:
+		0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+	border-color: var(--coral) !important;
+}
+
+.min-vh-100 {
+	min-height: 100vh;
+}
+
+/* New styles for the professional selection section */
+.page-title {
+	color: var(--navy);
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	font-size: 32px !important;
+}
+
+.page-subtitle {
+	color: var(--tan);
+	font-size: 16px !important;
+}
+
+.professional-card {
+	background: white;
+	border-radius: 12px;
+	border: 2px solid transparent;
+	transition: all 0.3s ease;
+	height: 100%;
+	text-align: center;
+	padding: 2rem 1.5rem;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.professional-card:hover {
+	transform: translateY(-8px);
+	box-shadow:
+		0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	border-color: var(--coral);
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom right, #f1f3f4, #e2e6e9);
+	margin: 0 auto 1.5rem;
+	font-size: 1.8rem;
+	transition: all 0.3s ease;
+	color: var(--tan);
+}
+
+.professional-card:hover .icon-container {
+	background: linear-gradient(to bottom right, var(--coral), var(--tan));
+	color: white;
+}
+
+.professional-name {
+	color: var(--navy);
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	transition: all 0.3s ease;
+	font-size: 1.25rem;
+}
+
+.professional-card:hover .professional-name {
+	color: var(--coral);
+}
+
+.professional-desc {
+	color: var(--tan);
+	font-size: 0.9rem;
+	margin-bottom: 0;
+}
+
+.fade-in {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.set-pad-top {
+	padding-top: 8rem !important;
+}
+
+@media (max-width: 700px) {
+	.page-subtitle {
+		color: var(--tan);
+		font-size: 16px !important;
+	}
+	.page-title {
+		font-size: 22px !important;
+	}
+	h1.page-title {
+		margin-top: 15px;
+	}
+}

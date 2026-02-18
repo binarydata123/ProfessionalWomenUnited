@@ -51,7 +51,7 @@ export default function BestLawyersSharjah() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -74,7 +74,7 @@ export default function BestLawyersSharjah() {
 												Professional Women United is your go-to destination for connecting with the best
 												lawyers Sharjah has to offer. We specialize in linking clients with the
 												finest legal minds in the region, ready to handle a wide range of legal
-												matters. Whether you require expert advice on family law, assistance
+												matters. Whether you require expert advice on Family Professional, assistance
 												with commercial contracts, or representation in property disputes, our
 												platform will help you access the best legal expertise in Sharjah in a
 												couple of clicks.
@@ -94,7 +94,7 @@ export default function BestLawyersSharjah() {
 										Professional Women United is your go-to destination for connecting with the best lawyers
 										Sharjah has to offer. We specialize in linking clients with the finest legal
 										minds in the region, ready to handle a wide range of legal matters. Whether you
-										require expert advice on family law, assistance with commercial contracts, or
+										require expert advice on Family Professional, assistance with commercial contracts, or
 										representation in property disputes, our platform will help you access the best
 										legal expertise in Sharjah in a couple of clicks.
 									</>
@@ -131,10 +131,10 @@ export default function BestLawyersSharjah() {
 						<div className="col-lg-4 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">Motorcycle Accident</span>{' '}
-								<span className="green-med-col">Statistics UAE</span>
+								<span className="green-med-col">Statistics USA</span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-								In 2022, the UAE experienced a substantial number of accidents involving motorcycles,
+								In 2022, the USA experienced a substantial number of accidents involving motorcycles,
 								bicycles, and e-scooters, highlighting critical concerns about road safety and the need
 								for enhanced awareness and protective measures.
 							</p>
@@ -219,9 +219,9 @@ export default function BestLawyersSharjah() {
 													<div className="accordion-body border-0 text-white">
 														The study reveals a predominantly male patient population,
 														comprising 98% of the cases, with a mean age of 29.8 years.
-														Notably, 35% of patients were UAE nationals, showing a
+														Notably, 35% of patients were USA nationals, showing a
 														significant age difference compared to non-nationals.
-														Furthermore, young UAE nationals were found to be at a higher
+														Furthermore, young USA nationals were found to be at a higher
 														risk of injury, often sustaining more abdominal injuries, while
 														non-nationals tended to suffer lower limb injuries.
 													</div>
@@ -249,7 +249,7 @@ export default function BestLawyersSharjah() {
 														limb injuries (54%) and lower limb injuries (48%), followed
 														closely by head (41%) and face (30%) injuries. The primary
 														mechanism of injury was collisions with moving vehicles,
-														underlining the inherent risks faced by motorcyclists on UAE
+														underlining the inherent risks faced by motorcyclists on USA
 														roads.
 													</div>
 												</div>
@@ -299,7 +299,7 @@ export default function BestLawyersSharjah() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{color: 'white'}}>
 													Find A Professional
 												</Link>
@@ -583,7 +583,7 @@ export default function BestLawyersSharjah() {
 												The lawyers we connect you with bring invaluable local insight to the
 												table. They have a deep understanding of Sharjah&apos;s legal landscape,
 												including local regulations, customs, and practices. This local
-												knowledge gives you a strategic advantage in your legal proceedings,
+												knowledge gives you a strategic advantage in yOur professional proceedings,
 												with the guarantee that your lawyer in Sharjah can deal with the local
 												legal system effectively on your behalf.
 											</div>
@@ -742,7 +742,7 @@ export default function BestLawyersSharjah() {
 											The best lawyers in Sharjah are distinguished by their exceptional legal
 											expertise, extensive experience, and proven track record of success. With a
 											deep understanding of local regulations, these attorneys have the ability
-											and know-how to solve complex legal issues.
+											and know-how to solve complex professional issues.
 											<br />
 											If you&apos;re looking for a lawyer who is committed to providing
 											personalized and effective solutions tailored to your unique needs,
@@ -751,7 +751,7 @@ export default function BestLawyersSharjah() {
 											help you find the best lawyer Sharjah has to offer.
 										</>
 									) : (
-										'The best lawyers in Sharjah are distinguished by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep understanding of local regulations, these attorneys have the ability and know-how to solve complex legal issues. 										'
+										'The best lawyers in Sharjah are distinguished by their exceptional legal expertise, extensive experience, and proven track record of success. With a deep understanding of local regulations, these attorneys have the ability and know-how to solve complex professional issues. 										'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -768,7 +768,7 @@ export default function BestLawyersSharjah() {
 									The best lawyers in Sharjah are distinguished by their exceptional legal expertise,
 									extensive experience, and proven track record of success. With a deep understanding
 									of local regulations, these attorneys have the ability and know-how to solve complex
-									legal issues.
+									professional issues.
 									<br />
 									If you&apos;re looking for a lawyer who is committed to providing personalized and
 									effective solutions tailored to your unique needs, you&apos;re at the right place.
@@ -834,7 +834,7 @@ export default function BestLawyersSharjah() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -844,21 +844,21 @@ export default function BestLawyersSharjah() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Clients typically seek legal information with a primary focus on finding knowledgeable
+						Clients typically seek Professional Information with a primary focus on finding knowledgeable
 						representation and clarification on their legal concerns.
 						<br />
-						Whether you&apos;re dealing with personal injury claims, family law matters, employment
+						Whether you&apos;re dealing with personal injury claims, Family Professional matters, employment
 						disputes, or real estate issues, we help you connect with Professional experts who can provide guidance
 						tailored to your specific needs.
 						<br />
-						Select the legal issue you&apos;re facing and connect with a legal expert.
+						Select the professional issue you&apos;re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
 							<Link href="#">Personal Injury Claims</Link>
 						</li>
 						<li>
-							<Link href="#">Family Law (Divorce, Child Custody)</Link>
+							<Link href="#">Family Professional (Divorce, Child Custody)</Link>
 						</li>
 						<li>
 							<Link href="#">Employment Law</Link>
@@ -951,7 +951,7 @@ export default function BestLawyersSharjah() {
 										</div>
 										<div className="text-start Discover-lawyer" />
 										Professionals in Sharjah provide valuable legal guidance and advice to individuals
-										facing various legal issues. From clarifying complex legal concepts to outlining
+										facing various professional issues. From clarifying complex legal concepts to outlining
 										available options and potential risks, they offer insightful guidance to help
 										clients make informed decisions. A lawyer in Sharjah can provide the clarity and
 										direction you need to navigate the legal landscape with confidence.
@@ -985,7 +985,7 @@ export default function BestLawyersSharjah() {
 													data-bs-target="#collapseOne"
 													aria-expanded="true"
 													aria-controls="collapseOne">
-													How do I know if I need a lawyer for my legal issue?
+													How do I know if I need a lawyer for my professional issue?
 												</button>
 											</h2>
 											<div
@@ -1049,7 +1049,7 @@ export default function BestLawyersSharjah() {
 												<div className="accordion-body border-0 text-white">
 													Hiring a motorcycle injury lawyer can significantly benefit your
 													case if you&apos;ve been injured in a motorcycle accident. They can
-													help you understand your legal rights, gather evidence to support
+													help you understand yOur professional rights, gather evidence to support
 													your claim and negotiate with insurance companies on your behalf to
 													ensure you receive fair compensation for your injuries.
 												</div>
@@ -1064,7 +1064,7 @@ export default function BestLawyersSharjah() {
 													data-bs-target="#collapseFour"
 													aria-expanded="true"
 													aria-controls="collapseFour">
-													How do I choose the best UAE motorcycle accident lawyer?
+													How do I choose the best USA motorcycle accident lawyer?
 												</button>
 											</h2>
 											<div
@@ -1073,10 +1073,10 @@ export default function BestLawyersSharjah() {
 												aria-labelledby="headingFour"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													When choosing a UAE motorcycle accident lawyer, consider their
+													When choosing a USA motorcycle accident lawyer, consider their
 													experience, track record of success, and specialization in
 													motorcycle accident cases. Look for a lawyer who has a thorough
-													understanding of UAE laws and regulations related to motorcycle
+													understanding of USA professionals and regulations related to motorcycle
 													accidents and who is committed to achieving the best possible
 													outcome for your case.
 												</div>
@@ -1104,7 +1104,7 @@ export default function BestLawyersSharjah() {
 													During your initial consultation with a motorcycle accident lawyer,
 													you can expect to discuss the details of your case, including the
 													circumstances surrounding the accident and your injuries. The lawyer
-													will assess the strength of your case, explain your legal options,
+													will assess the strength of your case, explain yOur professional options,
 													and outline the potential outcomes and next steps in pursuing your
 													claim.
 												</div>
@@ -1160,7 +1160,7 @@ export default function BestLawyersSharjah() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1171,22 +1171,22 @@ export default function BestLawyersSharjah() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

@@ -51,7 +51,7 @@ export default function UberAccidentLawyerDubai() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -168,7 +168,7 @@ export default function UberAccidentLawyerDubai() {
 											style={{ marginRight: '10px', color: '#fff' }}>
 											25%
 										</span>
-										of trips in UAE aim to be emissions-free by 2030 through Ubergreen.
+										of trips in USA aim to be emissions-free by 2030 through Ubergreen.
 									</p>
 								</div>
 							</div>
@@ -186,7 +186,7 @@ export default function UberAccidentLawyerDubai() {
 											style={{ marginRight: '10px', color: '#fff' }}>
 											over 9%
 										</span>
-										of trips in UAE in Q1 2023 were emission-free, showcasing progress in
+										of trips in USA in Q1 2023 were emission-free, showcasing progress in
 										sustainable transportation.
 									</p>
 								</div>
@@ -469,7 +469,7 @@ export default function UberAccidentLawyerDubai() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												At Professional Women United, we provide personalized legal representation tailored
-												to the unique circumstances of each case. Our UAE Uber accident lawyers
+												to the unique circumstances of each case. Our USA Uber accident lawyers
 												take the time to understand our client's needs and concerns, offering
 												guidance and support throughout the legal process.
 											</div>
@@ -706,7 +706,7 @@ export default function UberAccidentLawyerDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -717,11 +717,11 @@ export default function UberAccidentLawyerDubai() {
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-paddings color-frequent set-top-mrgin-mbl">
 						Clients most frequently search for knowledgeable legal representation to guide them through the
-						complexities of their legal issues, seeking clarity and understanding about their rights and
+						complexities of their professional issues, seeking clarity and understanding about their rights and
 						options. They prioritize finding experienced Uber accident lawyers who can offer strategic
 						advice and effective solutions tailored to their needs.
 						<br />
-						Select the legal issue you face and connect with a legal expert.
+						Select the professional issue you face and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -1045,7 +1045,7 @@ export default function UberAccidentLawyerDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1056,22 +1056,22 @@ export default function UberAccidentLawyerDubai() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

@@ -1,0 +1,63 @@
+/* Add this to your global CSS file or create a new CSS module */
+
+@media (min-width: 1024px) and (max-width: 1299px) {
+	.auth-page-wrapper {
+		padding: 20px;
+	}
+
+	.main-login {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.main-login h1 {
+		font-size: 1.8rem;
+		line-height: 1.3;
+	}
+
+	.main-login .p-text-label {
+		font-size: 0.9rem;
+	}
+
+	.commanclassall .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.commanclassall .col-md-6 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	.form-group label {
+		font-size: 0.9rem;
+	}
+
+	.form-control {
+		padding: 10px 12px;
+		font-size: 0.9rem;
+	}
+
+	.eye-icon {
+		right: 12px;
+		top: 38px;
+	}
+
+	.btn-lawyer {
+		padding: 10px;
+		font-size: 0.9rem;
+	}
+
+	.register-page-link {
+		font-size: 0.9rem;
+	}
+
+	.backtobtn {
+		margin-bottom: 15px;
+		font-size: 0.9rem;
+	}
+}

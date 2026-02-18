@@ -9,7 +9,7 @@ import SendMessage from '@/components/admin/modals/SendMessage';
 import ReportAccount from '@/components/admin/modals/ReportAccount';
 import EyeButton from '@/commonUI/TableActionButtons/EyeButton';
 import MessageButton from '@/commonUI/TableActionButtons/MessageButton';
-import { getAllLawyersFilteredForAdmin } from '../../../../../../lib/adminapi';
+import { getAllLawyersFilteredForAdmin, importMembers } from '../../../../../../lib/adminapi';
 import { getAllCountries, getSingleLawyerDetails } from '../../../../../../lib/frontendapi';
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -18,6 +18,8 @@ import Image from 'next/image';
 import AuthContext from '@/context/AuthContext';
 import { formatDateToDDMMYYYYMM } from '@/app/[locale]/commonfunctions/commonfunctions';
 import { CiSearch } from "react-icons/ci";
+import DefaultButton from '@/commonUI/DefaultButton';
+import ExcelUploadComponent from '@/components/admin/modals/ExcelUploadComponent';
 
 export default function lawyers() {
 	const { user } = useContext(AuthContext)
@@ -54,7 +56,7 @@ export default function lawyers() {
 			getAllCountriesData();
 			handleChange('status', 'active', user?.id);
 		}
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);
@@ -118,6 +120,8 @@ export default function lawyers() {
 		}
 	};
 
+
+
 	const handleSingleLawyerDetails = async (id: any, plan: any) => {
 		try {
 			const res = await getSingleLawyerDetails(id);
@@ -145,7 +149,17 @@ export default function lawyers() {
 		setSendMessage(false);
 		handleChange('status', 'active', user_id);
 	};
-
+	const refreshLawyersData = () => {
+		const data = {
+			name: name,
+			location: location,
+			gender: gender,
+			plan: plan,
+			status: status,
+			user_id: user_id
+		};
+		getAllLawyersFilteredForAdminData(data);
+	};
 	return (
 		<div>
 			<div className="form-part mt-2">
@@ -186,26 +200,19 @@ export default function lawyers() {
 					<div className="col-sm-6 col-md-6 col-lg-3">
 						<select
 							className="form-fild  w-100"
-							value={gender}
-							onChange={e => handleChange('gender', e.target.value, user_id)}
-						>
-							<option value={''}>Select Gender</option>
-							<option value={'male'}>Male</option>
-							<option value={'female'}>Female</option>
-							<option value={'other'}>Other</option>
-						</select>
-					</div>
-					<div className="col-sm-6 col-md-6 col-lg-3">
-						<select
-							className="form-fild  w-100"
 							value={plan}
 							onChange={e => handleChange('plan', e.target.value, user_id)}
 						>
 							<option value={''}>Select Plan</option>
-							<option value={'monthly'}>Monthly</option>
-							<option value={'Gold plan (yearly)'}>Yearly</option>
+							<option value={'yearly'}>Yearly</option>
+							{/* <option value={'monthly'}>Monthly</option>
+							<option value={'Gold plan (yearly)'}>Yearly</option> */}
 							<option value={'Not purchased'}>Not Purchased</option>
 						</select>
+					</div>
+					<div className="col-sm-6 col-md-6 col-lg-3">
+						<ExcelUploadComponent onImportSuccess={refreshLawyersData} />
+
 					</div>
 				</div>
 			</div>
@@ -215,7 +222,7 @@ export default function lawyers() {
 			</p>
 
 			<div className="table-part">
-				<Table columns={['Name', 'Designation', 'Plan', 'Last Online', 'Actions']} data={currentLawyer}>
+				<Table columns={['Name', 'Plan', 'Last Online', 'Actions']} data={currentLawyer}>
 					{(rowData, index) => (
 						<tr key={index}>
 							<td data-th="Name">
@@ -225,13 +232,18 @@ export default function lawyers() {
 									overlay={<Tooltip className="in" id="tooltip-top" > {rowData.full_name} </Tooltip>}>
 									<span onClick={() => handleSingleLawyerDetails(rowData?.id, rowData?.plan_name)}
 										style={{ cursor: 'pointer' }}>
-										{rowData.full_name && rowData.full_name.length > 50
+										{/* {rowData.full_name && rowData.full_name.length > 50
 											? rowData.full_name.substring(0, 50) + '...'
-											: rowData.full_name}
+											: rowData.full_name} */}
+										{rowData.full_name && rowData.full_name.length > 50
+											? rowData.full_name
+												.substring(0, 50)
+												.replace(/\b\w/g, (char: string) => char.toUpperCase()) + '...'
+											: rowData.full_name.replace(/\b\w/g, (char: string) => char.toUpperCase())}
 									</span>
 								</OverlayTrigger>
 							</td>
-							<td data-th="Designation">
+							{/* <td data-th="Designation">
 								<OverlayTrigger
 									placement="top"
 									delay={{ show: 250, hide: 400 }}
@@ -243,20 +255,8 @@ export default function lawyers() {
 									</span>
 								</OverlayTrigger>
 								<br />
-								<OverlayTrigger
-									placement="top"
-									delay={{ show: 250, hide: 400 }}
-									overlay={<Tooltip className="in" id="tooltip-top" > {rowData.company_name} </Tooltip>}>
-									<span className="font-x-small text-sonic-silver weight-light" >
-										{/* {rowData.company_name && rowData.company_name.length > 30
-											? rowData.company_name.substring(0, 30) + '...'
-											: rowData.company_name} */}
-
-										{rowData.firm_name && rowData.firm_name.length > 30
-											? rowData.firm_name.substring(0, 30) + '...'
-											: rowData.firm_name}
-									</span></OverlayTrigger>
-							</td>
+								
+							</td> */}
 							<td data-th="Plan">
 
 								<button className="monthly">
@@ -312,11 +312,13 @@ export default function lawyers() {
 				</Table>
 			</div>
 
-			{currentLawyer.length > 0 && (
-				<div className="text-right mt-5 m-none float-end">
-					<Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
-				</div>
-			)}
+			{
+				currentLawyer.length > 0 && (
+					<div className="text-right mt-5 m-none float-end">
+						<Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
+					</div>
+				)
+			}
 
 			<Popup
 				show={viewProfile}
@@ -353,6 +355,6 @@ export default function lawyers() {
 			>
 				<ReportAccount lawyerId={lawyer_id} closeReportPopup={closeReportPopup} />
 			</Popup>
-		</div>
+		</div >
 	);
 }

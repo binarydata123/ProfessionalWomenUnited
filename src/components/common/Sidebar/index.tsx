@@ -19,7 +19,7 @@ export default function Sidebar() {
 				<ul className="left-menu">
 					{user?.role === 'enduser' && <UserMenu />}
 					{user?.role === 'admin' && <AdminMenu />}
-					{user?.role === 'lawyer' && <LawyerMenu />}
+					{user?.role === 'professional' && <LawyerMenu />}
 				</ul>
 			</div>
 		</div>

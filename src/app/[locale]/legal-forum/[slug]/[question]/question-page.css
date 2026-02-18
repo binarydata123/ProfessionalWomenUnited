@@ -18,7 +18,8 @@
 	margin-bottom: 25px;
 }
 
-.posted-on-dd-month-yyyy-text h3, h1 {
+.posted-on-dd-month-yyyy-text h3,
+h1 {
 	font-size: var(--font-xx-large);
 	font-weight: var(--weight-semi-bold);
 	line-height: 45px;
@@ -57,7 +58,7 @@
 	padding: 0px 8px 0px 8px;
 	border-radius: 13px;
 	border: 1px solid var(--green-medium-2);
-	background-color: #ebf9f5;
+	background-color: #e2bca8;
 	color: var(--green-medium-2);
 	margin-top: 2%;
 }

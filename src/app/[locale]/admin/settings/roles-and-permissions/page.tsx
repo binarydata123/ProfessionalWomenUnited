@@ -5,8 +5,10 @@ import Table from '@/commonUI/Table';
 import DropDown from '@/commonUI/DropDown';
 import EyeButton from '@/commonUI/TableActionButtons/EyeButton';
 import {
+	deleteMembersWithCheck,
 	getAllUserAndLaywerFilteredForAdmin,
 	getSingleUserDetailByAdmin,
+	importMembers,
 	updateLawerStatus
 } from '../../../../../../lib/adminapi';
 import Pagination from '@/commonUI/Pagination';
@@ -53,12 +55,14 @@ export default function Page() {
 	const endIndex = startIndex + itemsPerPage;
 	const currentLawyer = filter_users.slice(startIndex, endIndex);
 	const totalPages = Math.ceil(filter_users.length / itemsPerPage);
+	const [selectedMembers, setSelectedMembers] = useState<number[]>([]);
+	const [selectAll, setSelectAll] = useState(false);
 
 	useEffect(() => {
 		if (user)
 			user?.id ? setUserId(user?.id) : setUserId('');
 		handleChange('sort_by', '', user?.id);
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);
@@ -70,6 +74,80 @@ export default function Page() {
 		} else {
 			router.push(`/admin/settings/roles-and-permissions/edit-professional/${id}`);
 		}
+	};
+
+	const handleSelectAll = () => {
+		if (selectAll) {
+			setSelectedMembers([]);
+		} else {
+			const allIds = currentLawyer.map((member: any) => member.id);
+			setSelectedMembers(allIds);
+		}
+		setSelectAll(!selectAll);
+	};
+
+	const customHeaderRender = (column: string) => {
+		if (column === 'Select') {
+			return (
+				<th>
+					<input
+						type="checkbox"
+						checked={selectAll}
+						onChange={handleSelectAll}
+						className="form-check-input"
+					/>
+				</th>
+			);
+		}
+		return <th>{column}</th>;
+	};
+	const handleSelectMember = (id: number) => {
+		if (selectedMembers.includes(id)) {
+			setSelectedMembers(selectedMembers.filter(memberId => memberId !== id));
+		} else {
+			setSelectedMembers([...selectedMembers, id]);
+		}
+	};
+
+	const handleDeleteSelected = async () => {
+		if (selectedMembers.length === 0) {
+			Swal.fire('Info', 'Please select at least one member to delete', 'info');
+			return;
+		}
+
+		Swal.fire({
+			title: 'Are you sure?',
+			text: `You are about to delete ${selectedMembers.length} member(s)`,
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#02142d',
+			cancelButtonColor: '#D04E4F',
+			confirmButtonText: 'Yes, delete them!'
+		}).then(async (result) => {
+			if (result.isConfirmed) {
+				try {
+					const data = {
+						member_ids: selectedMembers,
+						user_id: user_id
+					};
+
+					const response = await deleteMembersWithCheck(data);
+
+					if (response.status) {
+						Swal.fire('Success!', `Deleted ${response.deleted_count} member(s) successfully`, 'success');
+						setSelectedMembers([]);
+						setSelectAll(false);
+						// Refresh the data
+						handleChange('sort_by', '', user_id);
+					} else {
+						Swal.fire('Error!', response.message, 'error');
+					}
+				} catch (error) {
+					console.error('Delete error:', error);
+					Swal.fire('Error!', 'Failed to delete members', 'error');
+				}
+			}
+		});
 	};
 
 	const handleViewProfile = async (id: any, role: any) => {
@@ -223,7 +301,7 @@ export default function Page() {
 						>
 							<option value={''}>User</option>
 							<option value={'enduser'}>Individual</option>
-							<option value={'lawyer'}>Professional</option>
+							<option value={'professional'}>Professional</option>
 						</select>
 					</div>
 
@@ -240,7 +318,7 @@ export default function Page() {
 						</select>
 					</div>
 
-					<div className="col-sm-6 col-md-6 col-lg-2">
+					{/* <div className="col-sm-6 col-md-6 col-lg-2">
 						<select
 							className="form-fild add-icon  w-100"
 							value={sort_by}
@@ -250,6 +328,17 @@ export default function Page() {
 							<option value={'ASC'}>Oldest</option>
 							<option value={'DESC'}>Newest</option>
 						</select>
+					</div> */}
+					<div className="col-sm-6 col-md-6 col-lg-2">
+						<DefaultButton
+							height={55}
+							showIcon={false}
+							className="w-100 mt-1"
+							onClick={handleDeleteSelected}
+						// disabled={selectedMembers.length === 0}
+						>
+							Delete Selected ({selectedMembers.length})
+						</DefaultButton>
 					</div>
 					<div className="col-sm-6 col-md-6 col-lg-2">
 						<Link href={'/admin/settings/roles-and-permissions/add-new-enduser'}>
@@ -274,9 +363,17 @@ export default function Page() {
 			</p>
 
 			<div className="table-part mt-4">
-				<Table columns={['From', 'User', 'Gender', 'Status', 'Date', 'Actions']} data={currentLawyer}>
+				<Table columns={['Select', 'From', 'User', 'Gender', 'Status', 'Date', 'Actions']} data={currentLawyer} headerRenderer={customHeaderRender}>
 					{(rowData, index) => (
 						<tr key={index}>
+							<td data-th="Select" style={{ width: '0px' }}>
+								<input
+									type="checkbox"
+									checked={selectedMembers.includes(rowData.id)}
+									onChange={() => handleSelectMember(rowData.id)}
+									className="form-check-input"
+								/>
+							</td>
 							<td data-th="From">
 								<OverlayTrigger
 									placement="top"
@@ -305,7 +402,7 @@ export default function Page() {
 							<td data-th="User">
 								<p className="font-small weight-light social-link text-primary">
 									{' '}
-									{rowData.role == 'enduser' ? 'Individual' : 'Lawyer'}
+									{rowData.role == 'enduser' ? 'Individual' : 'Professional'}
 								</p>
 							</td>
 
@@ -354,10 +451,10 @@ export default function Page() {
 									Tooltip="Edit Profile"
 								/>
 
-								<DeleteButton
+								{/* <DeleteButton
 									Tooltip={'Send Message'}
 									onClick={e => changeUserStatus(rowData?.id, 'deleted')}
-								/>
+								/> */}
 							</td>
 						</tr>
 					)}

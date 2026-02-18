@@ -56,7 +56,7 @@ export default function inquiries() {
 			user?.id ? setUserId(user?.id) : setUserId('');
 			handleChange('sort_by', '', user?.id);
 		}
-	}, []);
+	}, [user]);
 
 	const handlePageChange = (newPage: any) => {
 		setCurrentPage(newPage);

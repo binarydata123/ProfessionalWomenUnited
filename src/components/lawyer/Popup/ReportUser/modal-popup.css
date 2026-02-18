@@ -33,7 +33,7 @@ p.text-sonic-silver.weight-medium.font-small {
 	width: 24px;
 	background-color: var(--text-white);
 	border-radius: 30px;
-	border: solid 1px var(--anti-flash-white);
+	border: solid 1px #c49073;
 }
 
 .form-fild-des textarea {
@@ -41,7 +41,7 @@ p.text-sonic-silver.weight-medium.font-small {
 	border-radius: 4px;
 }
 .form-fild-des label:hover input ~ .checkmark {
-	background-color: #f7f7f7;
+	background-color: #c49073;
 }
 
 .form-fild-des label input:checked ~ .checkmark {
@@ -58,7 +58,7 @@ p.text-sonic-silver.weight-medium.font-small {
 .form-fild-des label .checkmark:after {
 	width: 17px;
 	height: 17px;
-	background: var(--green-medium-1);
+	background: #c49073;
 	border-radius: 31px;
 	left: 3px;
 	top: 3px;

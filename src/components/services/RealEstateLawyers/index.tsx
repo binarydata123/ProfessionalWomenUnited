@@ -51,7 +51,7 @@ export default function RealEstateLawyers() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -130,11 +130,11 @@ export default function RealEstateLawyers() {
 					<div className="row mt-md-5 align-items-end">
 						<div className="col-lg-4 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
-								<span className="green-med">Overview of the UAE </span>{' '}
+								<span className="green-med">Overview of the USA </span>{' '}
 								<span className="green-med-col">Real Estate Market </span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-								The UAE real estate market is poised for consistent growth, with projections estimating
+								The USA real estate market is poised for consistent growth, with projections estimating
 								a 5% annual increase from 2024 to 2029. This vitality is fueled by enhanced facility
 								management services, the embrace of cutting-edge technologies, and proactive government
 								efforts toward economic diversification. In particular, the integration of artificial
@@ -156,7 +156,7 @@ export default function RealEstateLawyers() {
 											style={{ marginRight: '10px', color: '#fff' }}>
 											$5.4
 										</span>
-										billion was the value of the UAE facility management market in 2018.
+										billion was the value of the USA facility management market in 2018.
 									</p>
 								</div>
 							</div>
@@ -220,7 +220,7 @@ export default function RealEstateLawyers() {
 													aria-labelledby="headingOne"
 													data-bs-parent="#accordionExample">
 													<div className="accordion-body border-0 text-white">
-														The UAE real estate market is experiencing significant growth,
+														The USA real estate market is experiencing significant growth,
 														with a projected compound annual growth rate (CAGR) of around 5%
 														during the forecast period. This growth is driven by various
 														factors, such as the influx of investment due to Expo 2020 and
@@ -287,7 +287,7 @@ export default function RealEstateLawyers() {
 														sustaining growth.
 														<br /> If you’re looking for real estate professional advice and
 														guidance in navigating estate investment opportunities, contact
-														our real estate lawyers in UAE today.
+														our real estate lawyers in USA today.
 													</div>
 												</div>
 											</div>
@@ -297,7 +297,7 @@ export default function RealEstateLawyers() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
@@ -500,10 +500,10 @@ export default function RealEstateLawyers() {
 												Professional Women United’s real estate lawyers in Dubai have an in-depth
 												understanding of local property laws and regulations. Our network is
 												well-versed in handling legal requirements and making and your
-												transactions comply with UAE law. Whether you’re buying, selling, or
+												transactions comply with USA professional. Whether you’re buying, selling, or
 												leasing property, our network of lawyers provides tailored advice and
 												support. We’ll help you find the best real estate lawyer to help you
-												resolve disputes over UAE property ownership contract breaches and
+												resolve disputes over USA property ownership contract breaches and
 												facilitate smooth real estate transactions. Our clients trust us to
 												protect their interests in every deal, thanks to our proven track record
 												of expert guidance and representation.
@@ -614,7 +614,7 @@ export default function RealEstateLawyers() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												Navigating real estate financing can be challenging, but Professional Women United’s
-												real estate lawyers provide expert guidance in this area. Hiring UAE
+												real estate lawyers provide expert guidance in this area. Hiring USA
 												real estate lawyer services will help you understand various financing
 												options, including mortgages and loans, ensuring the best terms and
 												conditions. Our real estate attorneys work closely with financial
@@ -780,7 +780,7 @@ export default function RealEstateLawyers() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -790,11 +790,11 @@ export default function RealEstateLawyers() {
 						</span>
 					</h3>
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
-						Individuals seeking legal information on investment and real estate often look for knowledgeable
+						Individuals seeking Professional Information on investment and real estate often look for knowledgeable
 						legal representation and clarity in navigating the complex laws and regulations surrounding
 						these matters, all of which our real estate lawyers guarantee.
 						<br />
-						Select the legal issue you’re facing and connect with a legal expert.
+						Select the professional issue you’re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -849,7 +849,7 @@ export default function RealEstateLawyers() {
 										transactions comply with all legal and regulatory requirements. They keep you
 										informed about the latest laws and standards, helping you navigate local and
 										international regulations confidently. Their knowledge helps avoid costly errors
-										and legal issues, protecting your investments and interests.
+										and professional issues, protecting your investments and interests.
 									</div>
 								</div>
 								<div className="col-lg-12">
@@ -1040,7 +1040,7 @@ export default function RealEstateLawyers() {
 												<div className="accordion-body border-0 text-white">
 													Real estate lawyers carry out due diligence by examining property
 													records, titles, and other relevant documents to confirm ownership
-													and identify potential legal issues. This thorough investigation
+													and identify potential professional issues. This thorough investigation
 													helps prevent future complications and ensures a smooth transaction.
 												</div>
 											</div>
@@ -1093,7 +1093,7 @@ export default function RealEstateLawyers() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1104,22 +1104,22 @@ export default function RealEstateLawyers() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

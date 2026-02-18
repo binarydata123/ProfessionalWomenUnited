@@ -380,7 +380,7 @@ export default function lawyers() {
 						value={formData.service_id}
 						onChange={e => setFormData({ ...formData, service_id: e.target.value })}
 					>
-						<option value="">Select Legal Service</option>
+						<option value="">Select Professional Service</option>
 						{allServices.map((services: any) => (
 							<option key={services.id} value={services.id}>
 								{services.name}

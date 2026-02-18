@@ -158,10 +158,10 @@ export default function Dashboard() {
 			<div className="mmm">
 				<div className="d-flex justify-content-between">
 					<h2 className="font-smaller weight-bold social-link py-3">
-						{/* Hello{' '} */}
+						Hello{' '}
 						<span className="green-medium-2">
 							{' '}
-							{capitalizeFirstWord(username)}, {''}
+							{capitalizeFirstWord(username)} {''}
 							<img
 								src="/icon/edit.svg"
 								alt="edit Icon"

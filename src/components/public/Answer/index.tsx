@@ -228,7 +228,8 @@ export default function Answer({ answer, Key, loginUser }: Props) {
                   <div className="user-full-detail">
                     <h4>{answer.response_name}</h4>
                     <h6>
-                      {answer.designation} <span>{answer.company_name ? 'at' : ''}</span> {answer.company_name}
+                      {answer.designation}
+                      {/* <span>{answer.company_name ? 'at' : ''}</span> {answer.company_name} */}
                     </h6>
                     {
                       answer.review &&

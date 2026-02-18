@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {useState} from 'react';
+import { useState } from 'react';
 import Popup from '@/commonUI/Popup';
 import DropDown from '@/commonUI/DropDown';
 import LawyerProfile from '@/components/admin/modals/LawyerProfile';
@@ -21,7 +21,7 @@ export default function Professionals() {
 					<p className="font-small weight-light social-link"> Professional Name</p>
 				</td>
 				<td data-th="Designation">
-					<p className="font-small weight-medium social-link">Legal consultant</p>
+					<p className="font-small weight-medium social-link">professional consultant</p>
 					<p className="font-x-small text-sonic-silver weight-light">Hamdan Al Shamsi</p>
 				</td>
 				<td data-th="Plan">

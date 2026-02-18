@@ -69,10 +69,10 @@ export default function SingleAuthor({ Author }: SingleAuthorProps) {
                                 width={200}
                                 height={200}
                                 src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/${Author.author.profile_image ?
-                                    `/connect-Legal/Blogs/${Author.author.profile_image}`
+                                    `/professional-women/Blogs/${Author.author.profile_image}`
                                     :
                                     `images/default/${Author.author.gender == 'male'
-                                        ? 'male-lawyer-306x200.png'
+                                        ? 'female-lawyer-306x200.png'
                                         : 'female-lawyer-306x200.png'}`
                                     }`}
                                 alt=''

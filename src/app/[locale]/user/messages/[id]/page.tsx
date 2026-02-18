@@ -253,10 +253,10 @@ export default function Page({ params }: { params: { id: number } }) {
 			? messages[0].inquiry_to_image_name
 				? '/images/profile/' + messages[0].inquiry_to_image_name
 				: messages[0].inquiry_to_gender === 'male'
-					? '/images/default/group-243.png'
+					? '/images/default/group-242.png'
 					: messages[0].inquiry_to_gender === 'female'
 						? '/images/default/group-242.png'
-						: '/images/default/group-243.png'
+						: '/images/default/group-242.png'
 			: '';
 
 	return (
@@ -278,7 +278,7 @@ export default function Page({ params }: { params: { id: number } }) {
 							) : (
 								<Image src={'/images/profile-circle.png'} alt="profile-circle" width={40} height={40} />
 							)}
-							<h4>{messages.length > 0 ? messages[0].inquiry_to : 'Lawyer Name'}</h4>
+							<h4>{messages.length > 0 ? messages[0].inquiry_to : 'Professional Name'}</h4>
 						</div>
 						<div className="right-info-btn d-flex align-items-center gap-2">
 							<p

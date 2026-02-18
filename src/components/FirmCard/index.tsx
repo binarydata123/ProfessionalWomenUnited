@@ -50,7 +50,7 @@ export default function FirmCard({
     }
 
     const imageUrl = firms?.image
-        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${firms.image}`
+        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${firms.image}`
         : `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/1920x1080.png`;
     return (
         <div className="lawyer-card-wrapper" >
@@ -62,7 +62,7 @@ export default function FirmCard({
                         <div className="portfolioDisc_data">
                             {/* <ImageComponent
                                 className="w-130 m-img-fixed"
-                                src={firms?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${firms?.image}` : "/images/firm/test.png"}
+                                src={firms?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${firms?.image}` : "/images/firm/test.png"}
                                 alt={single_firm?.firm_name}
                                 height={100}
                                 width={100}
@@ -92,7 +92,7 @@ export default function FirmCard({
                     </h3>
                     <p className="description">
                         {/* {firms?.member_count > 0 ? `${firms?.member_count} Professionals Online` : ''} */}
-                        <span>{firms?.member_count > 0 ? `${firms?.member_count} ${firms?.member_count == 1 ? 'Lawyer Online' : 'Professionals Online'}` : ''}</span>
+                        <span>{firms?.member_count > 0 ? `${firms?.member_count} ${firms?.member_count == 1 ? 'Professional Online' : 'Professionals Online'}` : ''}</span>
                     </p>
 
                 </Link>
@@ -115,8 +115,8 @@ export default function FirmCard({
                 </span> */}
                 <span className="btn-family-more">
                     {firms?.services && (
-                        <Link href={`/legal-services/${firms?.service_slug?.split(',')[0]}`}>
-                            <button> {firms?.services?.split(',')[0]} Law</button>
+                        <Link href='/find-a-professional'>
+                            <button> {firms?.services?.split(',')[0]}</button>
                         </Link>
                     )}
                 </span>
@@ -142,7 +142,7 @@ export default function FirmCard({
                                 src={getAdminImageSrc306x200(firms?.profile_image, firms.gender)}
                                 placeholderImgUrl={
                                     process.env.NEXT_PUBLIC_IMAGE_URL +
-                                    `/images/default/${firms.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'
+                                    `/images/default/${firms.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'
                                     }`
                                 }
                                 alt="user-popup"

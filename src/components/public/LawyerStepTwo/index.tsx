@@ -21,7 +21,7 @@ import AuthContext from '@/context/AuthContext';
 import Cookies from 'js-cookie';
 import Popup from '@/commonUI/Popup';
 import AddFirmLawyer from '@/components/lawyer/Popup/AddFirmLawyer';
-
+import { PatternFormat } from 'react-number-format';
 
 interface FormData {
 	license_number: string;
@@ -46,7 +46,7 @@ export default function LawyerStepTwo() {
 		setIsFocused(false);
 	};
 
-	const { user } = useContext(AuthContext)
+	const { user } = useContext(AuthContext);
 	const router = useRouter();
 
 	const [formData, setFormData] = useState<FormData>({
@@ -77,10 +77,15 @@ export default function LawyerStepTwo() {
 	const [firmDetails, setFirmDetails] = useState(null);
 
 	useEffect(() => {
-		if (user)
-			fetchAdminSettingData(user?.id);
-		fetchFirmDetails()
+		const userId = Cookies.get('userId');
+		if (user) fetchAdminSettingData(user?.id || userId);
 	}, [user]);
+
+	// useEffect(() => {
+	// 	const userId = Cookies.get('userId')
+	// 	alert(userId)
+	// 	fetchAdminSettingData(userId);
+	// }, []);
 
 	const fetchAdminSettingData = async (user_id: any) => {
 		try {
@@ -93,23 +98,12 @@ export default function LawyerStepTwo() {
 		}
 	};
 
-	const fetchFirmDetails = async () => {
-		try {
-			const response = await getAllFirmsData();
-			if (response.status === true) {
-				setFirmDetails(response.data);
-			}
-		} catch (error) {
-			console.error('Error fetching firm details:', error);
-		}
-	};
-
 	useEffect(() => {
 		getAllCountriesData();
 		getAllJurisdictionsData();
 		getAllServicesData();
 		if (user) {
-			if (user?.role == 'lawyer') {
+			if (user?.role == 'professional') {
 				user?.role ? setUserId(user?.id) : setUserId('');
 				getSingleUserDetailsData(user?.id);
 			} else {
@@ -177,9 +171,9 @@ export default function LawyerStepTwo() {
 		// if (!formData.license_number) {
 		// 	newErrors.license_number = 'License number is required';
 		// }
-		if (!formData.designation) {
-			newErrors.designation = 'Designation is required';
-		}
+		// if (!formData.designation) {
+		// 	newErrors.designation = 'Designation is required';
+		// }
 		// if (!selectedLawFirmId) {
 		// 	newErrors.firm_id = 'Law firm is required';
 		// }
@@ -187,7 +181,7 @@ export default function LawyerStepTwo() {
 		// 	newErrors.jurisdiction_id = 'Jurisdiction is required';
 		// }
 		if (!formData.service_id) {
-			newErrors.service_id = 'Service is required';
+			newErrors.service_id = 'Profession is required';
 		}
 		if (!formData.phone_number) {
 			newErrors.phone_number = 'Phone number is required';
@@ -208,9 +202,9 @@ export default function LawyerStepTwo() {
 		setIsLoading(true);
 		const isValid = validateForm();
 		if (isValid) {
-			const id = Cookies.get("userId")
+			const id = Cookies.get('userId');
 			const data = {
-				user_id: id,
+				user_id: id || user?.id,
 				license_number: formData.license_number,
 				designation: formData.designation,
 				law_firm_name: formData.law_firm_name,
@@ -222,7 +216,7 @@ export default function LawyerStepTwo() {
 				gender: 'female',
 				firm_id: selectedLawFirmId,
 				firm_owner: selectedLawFirmId ? true : false,
-				profile_status: '',
+				profile_status: ''
 			};
 			if (settings.payment_membership === 'false') {
 				data.profile_status = 'completed';
@@ -243,10 +237,10 @@ export default function LawyerStepTwo() {
 								SetAdminSetting(res.data);
 								if (res.data.payment_membership === 'false') {
 									router.push('/auth/professional/verify-otp');
-									Cookies.set('membership', 'false')
+									Cookies.set('membership', 'false');
 								} else {
 									router.push('/auth/professional/choose-pricing-plan');
-									Cookies.set('membership', 'true')
+									Cookies.set('membership', 'true');
 								}
 							}
 
@@ -278,12 +272,11 @@ export default function LawyerStepTwo() {
 		} else {
 			setLawFirmSuggestions([]);
 		}
-
 	}, [lawFirmName]);
 
 	const defaultName = (data: any) => {
-		setLawFirmName(data.inserted_id)
-	}
+		setLawFirmName(data.inserted_id);
+	};
 
 	const getFirmSuggestions = async (firmName: any) => {
 		try {
@@ -314,7 +307,16 @@ export default function LawyerStepTwo() {
 		setShowLawFirmSuggestions(false);
 	};
 
+	// const handlePhoneChange = (value, country, e, formattedValue) => {
+	// 	// Remove any non-digit characters
+	// 	const cleanedValue = value.replace(/\D/g, '');
 
+	// 	// For US numbers, we expect exactly 10 digits (without country code)
+	// 	if (cleanedValue.length <= 10) {
+	// 		setPhoneNumber(cleanedValue);
+	// 		setIsValid(cleanedValue.length === 10);
+	// 	}
+	// };
 
 	return (
 		<>
@@ -327,149 +329,20 @@ export default function LawyerStepTwo() {
 					<div className="">
 						<div className="main-login">
 							<h1>
-								<span>A bit about your</span> legal career
+								<span>A bit about your</span> professional career
 							</h1>
 							<p className="p-text-label">
-								Please share information about your legal career with us. This will help clients reach
-								you easily.
+								Please share information about your professional career with us. This will help clients
+								reach you easily.
 							</p>
 							<form className="commanclassall" id="paymentform" onSubmit={handleSubmit}>
 								<div className="row">
-									<div className="col-md-12">
-										<div className="form-group">
-											<label htmlFor="exampleInputEmail1" className="pb-2">
-												License Number
-											</label>
-											<input
-												type="text"
-												className="form-control"
-												value={formData.license_number}
-												maxLength={30}
-												onChange={e =>
-													setFormData({
-														...formData,
-														license_number: e.target.value
-													})
-												}
-											/>
-											{/* {errors.license_number && (
-												<small className="error-message text-danger d-block">
-													{errors.license_number}
-												</small>
-											)} */}
-										</div>
-									</div>
-									<div className="col-md-12">
-										<div className="form-group">
-											<label htmlFor="exampleInputEmail1" className="pb-2 ">
-												Designation*
-											</label>
-											<input
-												type="text"
-												className="form-control"
-												placeholder="Your position (eg. Partner, Associate, etc...)"
-												value={formData.designation}
-												maxLength={50}
-												onChange={e =>
-													setFormData({
-														...formData,
-														designation: e.target.value
-													})
-												}
-											/>
-											{errors.designation && (
-												<small className="error-message text-danger d-block">
-													{errors.designation}
-												</small>
-											)}
-										</div>
-									</div>
-									{/* <div className="col-md-12">
-										<div className="form-group">
-											<label htmlFor="exampleInputEmail1" className="pb-2 ">
-												Name*
-											</label>
-											<input
-												type="text"
-												id="lawFirmName"
-												className="form-control"
-												placeholder="Type to search law firm name"
-												value={lawFirmName}
-												onChange={(e) => setLawFirmName(e.target.value)}
-												onFocus={() => setShowLawFirmSuggestions(true)}
-											/>
-											<div className={`select-firm ${isFocused ? 'visible' : ''}`}>
-												{showLawFirmSuggestions && (
-													<div className={`select-firm ${isFocused ? 'visible' : ''}`}>
-														{lawFirmSuggestions.length > 0 ? (
-															<ul style={{ cursor: 'pointer' }}>
-																{lawFirmSuggestions.map((firm: any) => (
-																	<li key={firm.id} onClick={() => handleFirmSelection(firm.id, firm.firm_name)}>
-																		{firm.firm_name}
-																	</li>
-																))}
-															</ul>
-														) : (
-															<>
-																{isSearchResultsEmpty && (
-																	<div>
-																		Legal firm not listed?{' '}
-																		<span onClick={() => {
-																			setaddNewFirm(true);
-																		}} style={{ cursor: 'pointer' }}>Click here to add them</span>
-																	</div>
-																)}
-															</>
-														)}
-													</div>
-												)}
+									<div className="col-md-12"></div>
 
-											</div>
-											{selectedLawFirmId && <input type="hidden" value={selectedLawFirmId} />}
-
-											{errors.firm_id && (
-												<small className="error-message text-danger d-block">
-													{errors.firm_id}
-												</small>
-											)}
-										</div>
-									</div> */}
-									{/* <div className="col-md-12">
-										<div className="form-group">
-											<label htmlFor="exampleInputEmail1" className="pb-2 ">
-												Jurisdiction*
-											</label>
-											<div className="select-wrapper">
-												<select
-													className="select bg-white"
-													value={formData.jurisdiction_id}
-													onChange={e =>
-														setFormData({
-															...formData,
-															jurisdiction_id: e.target.value
-														})
-													}
-												>
-													<option value="">Select Jurisdiction</option>
-													{alljurisdictions.map((jurisdiction: any) => (
-														<option key={jurisdiction.id} value={jurisdiction.id}>
-															{jurisdiction.jurisdiction_name}
-														</option>
-													))}
-												</select>
-												<span className="select-icon entypo-arrow-combo" />
-											</div>
-											{errors.jurisdiction_id && (
-												<small className="error-message text-danger d-block">
-													{errors.jurisdiction_id}
-												</small>
-											)}
-										</div>
-									</div> */}
 									<div className="col-md-12">
 										<div className="form-group">
 											<label htmlFor="exampleInputEmail1" className="pb-2 ">
-												Practice Area*
+												Profession
 											</label>
 											<div className="select-wrapper">
 												<select
@@ -480,9 +353,8 @@ export default function LawyerStepTwo() {
 															...formData,
 															service_id: e.target.value
 														})
-													}
-												>
-													<option value="">Select Practice Area</option>
+													}>
+													<option value="">Select Profession</option>
 													{allservices.map((services: any) => (
 														<option key={services.id} value={services.id}>
 															{services.name}
@@ -500,14 +372,27 @@ export default function LawyerStepTwo() {
 									</div>
 									<div className="col-md-12">
 										<div className="form-group">
-											<label htmlFor="exampleInputEmail1" className="pb-2 pt-2">
+											<label htmlFor="exampleInputEmail1" className="pb-2  d-block">
 												Contact Number*
 											</label>
-											<ReactPhoneInput
+											{/* <ReactPhoneInput
 												inputClass="form-control"
 												value={formData.phone_number}
 												country={"us"}
 												onChange={value => setFormData({ ...formData, phone_number: value })}
+											/> */}
+											<PatternFormat
+												className="form-control"
+												format="(###) ###-####"
+												mask="_"
+												allowEmptyFormatting={false}
+												value={formData.phone_number}
+												placeholder="(201) 555-0123"
+												onValueChange={values => {
+													setFormData({ ...formData, phone_number: values.value });
+													// values.value gives plain digits like "2125551234"
+													// values.formattedValue gives "(212) 555-1234"
+												}}
 											/>
 											{errors.phone_number && (
 												<small className="error-message text-danger">
@@ -522,17 +407,7 @@ export default function LawyerStepTwo() {
 												Gender*
 											</label>
 											<div className="bg-fff">
-												<select
-													className="form-fild w-100"
-													// value={formData.gender}
-													// onChange={e => setFormData({ ...formData, gender: e.target.value })}
-													value="female"
-													disabled
-												>
-													{/* <option value="">Select Gender</option>
-													<option value="male">Male</option>
-													<option value="female">Female</option>
-													<option value="other">Other</option> */}
+												<select className="form-fild w-100" value="female" disabled>
 													<option value="female">Female</option>
 												</select>
 												<span className="select-icon entypo-arrow-combo" />
@@ -553,8 +428,9 @@ export default function LawyerStepTwo() {
 												<select
 													className="form-fild w-100"
 													value={formData.location}
-													onChange={e => setFormData({ ...formData, location: e.target.value })}
-												>
+													onChange={e =>
+														setFormData({ ...formData, location: e.target.value })
+													}>
 													<option value="">Select Location</option>
 													{allcountries.map((countries: any) => (
 														<option key={countries.id} value={countries.id}>
@@ -569,21 +445,27 @@ export default function LawyerStepTwo() {
 													{errors.location}
 												</small>
 											)}
+											<p className="location-field-notes">
+												<i>
+													We feature professionals located within the metro U.S. cities
+													to ensure broad representation across major metropolitan areas.{' '}
+													<a href="/our-selection-criteria">Learn more</a>
+												</i>
+											</p>
 										</div>
 									</div>
 								</div>
 
 								<button
 									type="submit"
-									className="btn btn-outline-success text-center btn-lawyer mt-3 w-100"
-								>
+									className="btn btn-outline-success text-center btn-lawyer mt-3 w-100">
 									{!isLoading ? 'Continue' : 'Please wait...'}
 								</button>
 							</form>
 						</div>
 					</div>
 				</div>
-			</div >
+			</div>
 			<Popup
 				size="lg"
 				show={addNewfirm}
@@ -591,9 +473,16 @@ export default function LawyerStepTwo() {
 				title="Add a Firm"
 				onCancel={() => setaddNewFirm(false)}
 				onOk={() => setaddNewFirm(false)}
-				footer={false}
-			>
-				<AddFirmLawyer latestId={(data: any) => defaultName(data)} firmId={undefined} firmdata={undefined} firmDetails={firmDetails} onCancel={() => { setaddNewFirm(false) }} />
+				footer={false}>
+				<AddFirmLawyer
+					latestId={(data: any) => defaultName(data)}
+					firmId={undefined}
+					firmdata={undefined}
+					firmDetails={firmDetails}
+					onCancel={() => {
+						setaddNewFirm(false);
+					}}
+				/>
 			</Popup>
 		</>
 	);

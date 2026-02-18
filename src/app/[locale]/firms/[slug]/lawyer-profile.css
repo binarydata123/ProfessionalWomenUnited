@@ -174,7 +174,7 @@ a.unactive {
 .pag-box {
 	width: 100%;
 	height: 8px;
-	background: var(--anti-flash-white);
+	background: #e2bca8;
 	border-radius: 8px;
 }
 

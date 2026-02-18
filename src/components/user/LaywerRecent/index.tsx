@@ -22,6 +22,7 @@ import { toast } from 'react-toastify';
 import Popup from '@/commonUI/Popup';
 import AuthContext from '@/context/AuthContext';
 import { getAdminImageSrc130x130 } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { PhoneIcon } from '@heroicons/react/20/solid';
 
 interface Props {
 	lawyerdata?: any;
@@ -62,7 +63,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 				setCheckSaveLawyer(false);
 			}
 		} catch (error) {
-			console.error('Error fetching check saved lawyer data:', error);
+			console.error('Error fetching check saved professional data:', error);
 		}
 	};
 
@@ -209,7 +210,8 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 								</Link>
 								<div className="d-none d-lg-block">
 									<p className="font-small weight-semi-bold social-link">
-										{lawyerdata.service_name} at {lawyerdata.company_name}
+										{lawyerdata.service_name}
+										{/* at {lawyerdata.company_name} */}
 									</p>
 									<ul className="rating-location py-1 m-0">
 										{lawyerdata.location_name ? (
@@ -227,7 +229,7 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 										</li>
 									</ul>
 									<button className="btn-mini success-btn mr-1 mb-2">
-										{`${lawyerdata.service_name} Law`}
+										{`${lawyerdata.service_name}`}
 									</button>
 									<button className="btn-mini danger-btn mr-1 mb-2">
 										Licensed for {lawyerdata.license_for_years} Years
@@ -336,9 +338,16 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 							)}
 						</ul>
 						<div className="d-none d-lg-block">
-							<Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
+							{/* <Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
 								<button className="btn-primary mt-1 mb-2">Make An Inquiry </button>
-							</Link>
+							</Link> */}
+							<a
+								href={`tel:${lawyerdata.phone_number}`}
+								className="btn-primary mt-1 mb-2"
+							>
+								<PhoneIcon width={18} height={18} className="me-2 text-white" />
+								Call a Specialist
+							</a>
 							<p className="mt-2 m-center">
 								<Link
 									className="boysenberry font-small weight-semi-bold"
@@ -375,7 +384,8 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 								<div className="accordion-body border-0">
 									<div className="">
 										<p className="font-small weight-semi-bold social-link">
-											{lawyerdata.service_name} at {lawyerdata.company_name}
+											{lawyerdata.service_name}
+											{/* at {lawyerdata.company_name} */}
 										</p>
 										<ul className="rating-location py-1 m-0">
 											<li className="loc">
@@ -400,9 +410,24 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 					</div>
 				</div>
 				<div className="d-block d-lg-none">
-					<Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
+					{/* <Link href={`/find-a-professional/${lawyerdata.slug}/make-an-inquiry`}>
 						<button className="btn-primary  w-100 mt-1 mb-2">Make An Inquiry </button>
-					</Link>
+					</Link> */}
+					<a
+						href={`tel:${lawyerdata.phone_number}`}
+						className="btn-primary  w-100 mt-1 mb-2"
+						style={{
+							display: "flex",
+							alignItems: "center",
+							justifyContent: "center",
+							padding: "12px 0",
+							width: "100%",
+							borderRadius: "6px"
+						}}
+					>
+						<PhoneIcon width={18} height={18} style={{ marginRight: "8px" }} />
+						Call a Specialist
+					</a>
 					<p className="mt-2 m-center">
 						<Link
 							className="boysenberry font-small weight-semi-bold"

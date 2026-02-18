@@ -51,7 +51,7 @@ export default function BestLawyersDubai() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -78,7 +78,7 @@ export default function BestLawyersDubai() {
 												<br />
 												Our intuitive interface and detailed selection process ensure that you
 												can easily locate the best lawyer in Dubai for your specific legal
-												needs. Whether you need legal assistance with family law, corporate
+												needs. Whether you need legal assistance with Family Professional, corporate
 												matters, or real estate issues, our platform offers the expertise you
 												require.
 											</>
@@ -96,11 +96,11 @@ export default function BestLawyersDubai() {
 									<>
 										Finding the best lawyer in Dubai is quick and easy with Professional Women United. We offer
 										the most user-friendly platform for connecting clients with the best lawyers in
-										the UAE and simplifying the process of finding top-tier legal representation.
+										the USA and simplifying the process of finding top-tier legal representation.
 										<br />
 										Our intuitive interface and detailed selection process ensure that you can
 										easily locate the best lawyer in Dubai for your specific legal needs. Whether
-										you need legal assistance with family law, corporate matters, or real estate
+										you need legal assistance with Family Professional, corporate matters, or real estate
 										issues, our platform offers the expertise you require.
 									</>
 								)}
@@ -136,10 +136,10 @@ export default function BestLawyersDubai() {
 						<div className="col-lg-4 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">Motorcycle Accident</span>{' '}
-								<span className="green-med-col">Statistics UAE</span>
+								<span className="green-med-col">Statistics USA</span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-								In 2022, the UAE experienced a substantial number of accidents involving motorcycles,
+								In 2022, the USA experienced a substantial number of accidents involving motorcycles,
 								bicycles, and e-scooters, highlighting critical concerns about road safety and the need
 								for enhanced awareness and protective measures.
 							</p>
@@ -224,9 +224,9 @@ export default function BestLawyersDubai() {
 													<div className="accordion-body border-0 text-white">
 														The study reveals a predominantly male patient population,
 														comprising 98% of the cases, with a mean age of 29.8 years.
-														Notably, 35% of patients were UAE nationals, showing a
+														Notably, 35% of patients were USA nationals, showing a
 														significant age difference compared to non-nationals.
-														Furthermore, young UAE nationals were found to be at a higher
+														Furthermore, young USA nationals were found to be at a higher
 														risk of injury, often sustaining more abdominal injuries, while
 														non-nationals tended to suffer lower limb injuries.
 													</div>
@@ -254,7 +254,7 @@ export default function BestLawyersDubai() {
 														limb injuries (54%) and lower limb injuries (48%), followed
 														closely by head (41%) and face (30%) injuries. The primary
 														mechanism of injury was collisions with moving vehicles,
-														underlining the inherent risks faced by motorcyclists on UAE
+														underlining the inherent risks faced by motorcyclists on USA
 														roads.
 													</div>
 												</div>
@@ -304,7 +304,7 @@ export default function BestLawyersDubai() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{color: 'white'}}>
 													Find A Professional
 												</Link>
@@ -587,10 +587,10 @@ export default function BestLawyersDubai() {
 											<div className="accordion-body border-0">
 												We offer an extensive network of the best lawyers in Dubai, allowing you
 												to access a diverse pool of expertise and experience. Whether you need
-												help with family law, corporate matters, or intellectual property
+												help with Family Professional, corporate matters, or intellectual property
 												issues, our platform connects you with lawyers in Dubai who specialize
 												in your specific area of need. You can expect to receive comprehensive
-												support for your legal matters.
+												support for yOur professional matters.
 											</div>
 										</div>
 									</div>
@@ -645,7 +645,7 @@ export default function BestLawyersDubai() {
 												trustworthiness. When you hire a lawyer in Dubai through Professional Women United
 												in Dubai, you can rest assured that you're working with a legal
 												professional who prioritizes your interests and operates with utmost
-												integrity, giving you peace of mind throughout your legal proceedings.
+												integrity, giving you peace of mind throughout yOur professional proceedings.
 											</div>
 										</div>
 									</div>
@@ -671,7 +671,7 @@ export default function BestLawyersDubai() {
 												clients with top-tier legal representation in Dubai. Our selection of
 												the best lawyers in Dubai has achieved favorable outcomes for numerous
 												clients across a wide range of legal matters, earning a reputation for
-												excellence in the local legal community. When you partner with us,
+												excellence in the local professional community. When you partner with us,
 												you're choosing a trusted ally with a demonstrated history of delivering
 												results.
 											</div>
@@ -748,7 +748,7 @@ export default function BestLawyersDubai() {
 											The best lawyers in Dubai are known for their exceptional legal expertise,
 											extensive experience, and proven track record of success. These legal
 											professionals have a deep understanding of local laws and regulations,
-											allowing them to handle complex legal issues with precision.
+											allowing them to handle complex professional issues with precision.
 											<br />
 											At Professional Women United, we only list the best lawyers in Dubai so that you get
 											personalized and effective legal solutions tailored to your unique needs. Be
@@ -757,7 +757,7 @@ export default function BestLawyersDubai() {
 											relentless pursuit of excellence in their practice.
 										</>
 									) : (
-										'The best lawyers in Dubai are known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a deep understanding of local laws and regulations, allowing them to handle complex legal issues with precision.'
+										'The best lawyers in Dubai are known for their exceptional legal expertise, extensive experience, and proven track record of success. These legal professionals have a deep understanding of local laws and regulations, allowing them to handle complex professional issues with precision.'
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -774,7 +774,7 @@ export default function BestLawyersDubai() {
 									The best lawyers in Dubai are known for their exceptional legal expertise, extensive
 									experience, and proven track record of success. These legal professionals have a
 									deep understanding of local laws and regulations, allowing them to handle complex
-									legal issues with precision.
+									professional issues with precision.
 									<br />
 									At Professional Women United, we only list the best lawyers in Dubai so that you get
 									personalized and effective legal solutions tailored to your unique needs. Be it
@@ -841,7 +841,7 @@ export default function BestLawyersDubai() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -853,17 +853,17 @@ export default function BestLawyersDubai() {
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Clients normally search for expert legal representation to address their concerns and get
 						clarity on legal matters. They seek guidance on various issues ranging from personal injury
-						claims to family law matters like divorce and child custody, employment disputes, real estate
+						claims to Family Professional matters like divorce and child custody, employment disputes, real estate
 						issues such as property disputes and tenancy matters, and business law matters.
 						<br />
-						Select the legal issue you&apos;re facing and connect with a legal expert.
+						Select the professional issue you&apos;re facing and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
 							<Link href="#">Personal Injury Claims</Link>
 						</li>
 						<li>
-							<Link href="#">Family Law (Divorce, Child Custody)</Link>
+							<Link href="#">Family Professional (Divorce, Child Custody)</Link>
 						</li>
 						<li>
 							<Link href="#">Employment Law</Link>
@@ -1007,7 +1007,7 @@ export default function BestLawyersDubai() {
 													Finding the best lawyer in Dubai is simple with Professional Women United. Our
 													user-friendly platform allows you to browse through a curated
 													selection of top-tier legal professionals, each with expertise in
-													various practice areas. You can easily review their profile to make
+													various Professions. You can easily review their profile to make
 													an informed decision that aligns with your specific needs.
 												</div>
 											</div>
@@ -1032,7 +1032,7 @@ export default function BestLawyersDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													Professional Women United offers expertise across a wide range of legal areas,
-													including family law, corporate matters, real estate issues,
+													including Family Professional, corporate matters, real estate issues,
 													intellectual property, and more. Whether you&apos;re dealing with
 													personal injury claims, employment disputes, property disputes, or
 													contractual matters, our platform connects you with the lawyers who
@@ -1144,7 +1144,7 @@ export default function BestLawyersDubai() {
 												aria-labelledby="headingSix"
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
-													You may need to hire a lawyer if you're facing a legal issue that
+													You may need to hire a lawyer if you're facing a professional issue that
 													requires expert guidance, representation, or assistance. Common
 													situations that call for a lawyer include personal injury claims,
 													divorce or family disputes, business transactions, real estate
@@ -1173,7 +1173,7 @@ export default function BestLawyersDubai() {
 												data-bs-parent="#accordionExample">
 												<div className="accordion-body border-0 text-white">
 													Before hiring a lawyer in Dubai, account for factors such as their
-													experience, expertise in your specific legal issue, track record of
+													experience, expertise in your specific professional issue, track record of
 													success, communication style, and fees. Take the time to research
 													and meet with potential lawyers to make sure they are the right fit
 													for your case.
@@ -1230,7 +1230,7 @@ export default function BestLawyersDubai() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1241,22 +1241,22 @@ export default function BestLawyersDubai() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

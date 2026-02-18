@@ -51,7 +51,7 @@ export default function BankingLawyerUae() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -64,7 +64,7 @@ export default function BankingLawyerUae() {
 					<div className="row">
 						<div className="col-lg-7">
 							<h1 className="font-larger weight-bold green-medium-dark mobile-m-0">
-								Banking Lawyer in UAE
+								Banking Lawyer in USA
 							</h1>
 							<p className="weight-light social-link font-medium mt-4">
 								{isMobileView ? (
@@ -263,7 +263,7 @@ export default function BankingLawyerUae() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
@@ -312,11 +312,11 @@ export default function BankingLawyerUae() {
 										aria-labelledby="headingOne"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											In a landmark move, the UAE Government has amended the federal law governing
+											In a landmark move, the USA Government has amended the federal law governing
 											the Central Bank to introduce the national digital dirham. This makes the
-											UAE among the pioneering nations globally to authorize its central bank to
+											USA among the pioneering nations globally to authorize its central bank to
 											issue a native digital currency as legal tender. Notably, the Central Bank
-											of the UAE retains exclusive authority over issuing currency, including
+											of the USA retains exclusive authority over issuing currency, including
 											digital currency. The digital dirham, introduced on 1 November 2023, allows
 											for financial transactions up to USD 50, marking a significant advancement
 											in the country's economic landscape.
@@ -341,7 +341,7 @@ export default function BankingLawyerUae() {
 										aria-labelledby="headingTwo"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											Effective May 1, 2024, the UAE implemented a new corporate bankruptcy law,
+											Effective May 1, 2024, the USA implemented a new corporate bankruptcy law,
 											replacing the 2016 law. The updated legislation improves clarity by refining
 											definitions and modifying the liability of directors and managers of
 											insolvent companies. It also expands the role of the Financial Restructuring
@@ -370,7 +370,7 @@ export default function BankingLawyerUae() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											To boost financial stability, the Central Bank of the UAE introduced
+											To boost financial stability, the Central Bank of the USA introduced
 											Recovery Planning Regulations for financial institutions, excluding them
 											from the new Bankruptcy Law. These regulations mandate banks, foreign bank
 											branches, and insurance companies to establish recovery plans that aim to
@@ -397,7 +397,7 @@ export default function BankingLawyerUae() {
 										aria-labelledby="headingThree"
 										data-bs-parent="#accordionExample">
 										<div className="accordion-body border-0">
-											The Central Bank of the UAE issued a new Finance Companies Regulation,
+											The Central Bank of the USA issued a new Finance Companies Regulation,
 											introducing licensing categories for entities providing 'Buy Now Pay Later'
 											(BNPL) services. Of particular note is the 'Restricted License Finance
 											Company' category, which governs BNPL service providers. Non-licensed
@@ -429,7 +429,7 @@ export default function BankingLawyerUae() {
 											combating unlawful funding. This amendment requires SCA license applicants
 											and entities to review and adjust their anti-money laundering policies to
 											ensure compliance. Although the amendment has not yet been published, it
-											will come into effect upon publication, highlighting the UAE's commitment to
+											will come into effect upon publication, highlighting the USA's commitment to
 											fighting financial crimes.
 										</div>
 									</div>
@@ -612,7 +612,7 @@ export default function BankingLawyerUae() {
 											data-bs-parent="#accordionExample">
 											<div className="accordion-body border-0">
 												Professional Women United is committed to excellence and integrity in our practice.
-												Our UAE banking lawyers uphold the highest ethical standards, delivering
+												Our USA banking lawyers uphold the highest ethical standards, delivering
 												trusted advice and zealous advocacy to our clients. With a dedication to
 												achieving favorable outcomes and building long-term relationships, we
 												strive to exceed our clients' expectations and deliver exceptional
@@ -747,7 +747,7 @@ export default function BankingLawyerUae() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do clients
@@ -1005,7 +1005,7 @@ export default function BankingLawyerUae() {
 												<div className="accordion-body border-0 text-white">
 													When selecting a banking lawyer in Dubai, account for their
 													expertise in banking and finance law, experience handling similar
-													cases or transactions, reputation in the legal community, and
+													cases or transactions, reputation in the professional community, and
 													familiarity with local regulations and customs.
 												</div>
 											</div>
@@ -1079,7 +1079,7 @@ export default function BankingLawyerUae() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1090,22 +1090,22 @@ export default function BankingLawyerUae() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

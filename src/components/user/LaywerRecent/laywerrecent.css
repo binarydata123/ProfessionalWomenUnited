@@ -36,7 +36,7 @@ ul.dropdown-menu.drop-btn.show {
 	box-shadow: 0px 4px 8px 0px rgba(5, 27, 68, 0.08);
 }
 ul.dropdown-menu.drop-btn.show li.active {
-	color: rgba(30, 130, 123, 1);
+	color: #000;
 }
 @media (max-width: 991px) {
 	.accordian-phone .accordion-item button {

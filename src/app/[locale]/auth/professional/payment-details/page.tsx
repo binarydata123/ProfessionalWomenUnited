@@ -10,13 +10,17 @@ import AuthContext from '@/context/AuthContext';
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Checkout from './Checkout';
+import Cookies from 'js-cookie';
 
-const promiseCheckout = loadStripe(
-	"pk_test_FQu4ActGupRmMrkmBpwU26js"
-);
 // const promiseCheckout = loadStripe(
-// 	"pk_live_51PCFO6A2kvlFiDWuYSDdIulqEf6IacZQRVucRXyoJhICbmN0EGZt1MideQfHQrIwUpGzscJi6dqRv282TCBr05n800YCX6O86V"
+// 	"pk_test_FQu4ActGupRmMrkmBpwU26js"
 // );
+// const promiseCheckout = loadStripe(
+// 	"pk_live_51S0FGg2FZFlKmRbDVsYwwCwPjHmtqPlsTCqE94Z0rHadQfVrpmO8MdfsrxvbLMNsctBsVWaURsJku8q9U9YFaZ5800NFH6wfO1"
+// );
+const promiseCheckout = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISH_KEY || "");
+
+
 
 interface FormData {
 	CardNumber: string;
@@ -26,26 +30,42 @@ interface FormData {
 }
 
 export default function stepTwo() {
-	const { user } = useContext(AuthContext)
+	// const { user } = useContext(AuthContext)
 	const router = useRouter();
 	const [plan_type, setPlanType] = useState('');
 	const [plan_amount, setPlanAmount] = useState('');
+	// const user = Cookies.get('userId')
 
 	useEffect(() => {
-		if (user) {
-			const temp_plan_type = window.sessionStorage.getItem('temp_plan_type');
-			const temp_plan_amount = window.sessionStorage.getItem('temp_plan_amount');
+		const token = Cookies.get("session_token");
+		const userRole = window.sessionStorage.getItem("temp_user_role");
+		const userId = Cookies.get("userId");
 
-			if (user) {
-				if (user?.id == null || user?.role == 'enduser' || temp_plan_type == null || temp_plan_amount == null) {
-					router.push('/auth/login');
-				} else {
-					setPlanType(temp_plan_type);
-					setPlanAmount(temp_plan_amount);
-				}
-			}
+		const temp_plan_type = window.sessionStorage.getItem('temp_plan_type');
+		const temp_plan_amount = window.sessionStorage.getItem('temp_plan_amount');
+
+		if (!token || !userId) {
+			// Not logged in
+			router.push("/auth/login");
+			return;
 		}
-	}, [user]);
+
+		if (userRole === "enduser") {
+			router.push("/auth/login");
+			return;
+		}
+
+		if (!temp_plan_type || !temp_plan_amount) {
+			// No plan chosen → back to plan selection
+			router.push("/auth/professional/choose-pricing-plan");
+			return;
+		}
+
+		// ✅ If everything is fine, set state
+		setPlanType(temp_plan_type);
+		setPlanAmount(temp_plan_amount);
+
+	}, []);
 
 
 	return (
@@ -67,7 +87,7 @@ export default function stepTwo() {
 								{plan_type == 'monthly'
 									// ? 'Start your FREE 1 month trial on our platform.'
 									? ''
-									: 'Start your yearly plan on our platform.'}
+									: 'Start your plan on our platform.'}
 							</p>
 							<div className="payment-detail">
 								<h6>Payment Due</h6>

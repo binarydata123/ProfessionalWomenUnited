@@ -119,7 +119,7 @@ export default function LegalServices({ service, allServices }: Props) {
 									className={`legal-service ${serviceName.slug === service.slug ? 'active' : ''}`}
 									key={index}
 								>
-									<Link href={`/legal-services/${serviceName.slug}`}>
+									<Link href='/find-a-professional'>
 										<Image
 											src={getAdminLegalServiceImageSrc(serviceName.icon)}
 											width={80}

@@ -53,7 +53,7 @@ export default function LabourLawyer() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -74,7 +74,7 @@ export default function LabourLawyer() {
 										{showFullText ? (
 											<>{t('A_labour_lawyer_specialises')}</>
 										) : (
-											'A labour lawyer specializes in matters related to employment law, representing both employees and employers in matters such as contracts, disputes, and workplace rights. At Professional Women United, you’re able to connect with experienced labour lawyers who can provide comprehensive legal support tailored to your needs. They offer expert guidance on employment agreements, termination disputes, and regulatory compliance. The attorneys on our platform make sure your legal rights and interests are protected in negotiations, mediation, and litigation.'
+											'A labour lawyer specializes in matters related to employment law, representing both employees and employers in matters such as contracts, disputes, and workplace rights. At Professional Women United, you’re able to connect with experienced labour lawyers who can provide comprehensive legal support tailored to your needs. They offer expert guidance on employment agreements, termination disputes, and regulatory compliance. The attorneys on our platform make sure yOur professional rights and interests are protected in negotiations, mediation, and litigation.'
 										)}
 										<br />
 										<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -211,7 +211,7 @@ export default function LabourLawyer() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
@@ -523,7 +523,7 @@ export default function LabourLawyer() {
 									{showFullTextDiscover ? (
 										<>{t('Find_the_best_labour ')}</>
 									) : (
-										'Find the best labour lawyer Dubai has to offer at Professional Women United. We pride ourselves on offering top-notch labour law expertise through our network of highly skilled lawyers. The talented legal professionals on Professional Women United deeply understand UAE labour laws and regulations, making sure you receive the most informed and up-to-date advice. We’ll help you find the top labour lawyer in Dubai—one with strong negotiation and litigation skills, providing effective solutions for employment disputes and labour-related matters. '
+										'Find the best labour lawyer Dubai has to offer at Professional Women United. We pride ourselves on offering top-notch labour law expertise through our network of highly skilled lawyers. The talented legal professionals on Professional Women United deeply understand USA labour laws and regulations, making sure you receive the most informed and up-to-date advice. We’ll help you find the top labour lawyer in Dubai—one with strong negotiation and litigation skills, providing effective solutions for employment disputes and labour-related matters. '
 									)}
 									<br />
 									<div className="mt-3 mb-3 d-lg-none d-block weight-bold ">
@@ -596,7 +596,7 @@ export default function LabourLawyer() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						{t('What_Do_Clients ')}
@@ -873,7 +873,7 @@ export default function LabourLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -884,22 +884,22 @@ export default function LabourLawyer() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

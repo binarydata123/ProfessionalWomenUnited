@@ -419,7 +419,7 @@ export default function popup() {
 											<button className="btn-mini danger-btn mr-1 mb-2">
 												Licensed for 9 years
 											</button>
-											<button className="btn-mini danger-btn">Free Consultation: 30 mins</button>
+											{/* <button className="btn-mini danger-btn">Free Consultation: 30 mins</button> */}
 										</div>
 									</div>
 
@@ -1712,7 +1712,7 @@ export default function popup() {
 					data-bs-toggle="modal"
 					data-bs-target="#exampleModal16"
 				>
-					Create Legal Service
+					Create Professional Service
 				</button>
 
 				<div className="modal fade" id="exampleModal16" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1723,7 +1723,7 @@ export default function popup() {
 									<i className="fa-solid fa-xmark" data-bs-dismiss="modal" aria-label="Close"></i>
 								</div>
 								<h5 className="modal-title f-22 weight-bold  green-dark mt-2" id="exampleModalLabel">
-									Create Legal Service
+									Create Professional Service
 								</h5>
 
 								<form className="mt-2">
@@ -1801,8 +1801,8 @@ export default function popup() {
 										Associated to
 									</label>
 									<select className="form-fild  w-100">
-										<option>Select Legal Service</option>
-										<option>Select Legal Service</option>
+										<option>Select Professional Service</option>
+										<option>Select Professional Service</option>
 									</select>
 
 									<div className="modal-ft">
@@ -1865,7 +1865,7 @@ export default function popup() {
 													aria-expanded="true"
 													aria-controls="collapseOne"
 												>
-													Practice Area
+													Profession
 												</button>
 											</h2>
 											<div
@@ -1879,7 +1879,7 @@ export default function popup() {
 														<input
 															type="text"
 															className="field-des"
-															placeholder="Search practice area"
+															placeholder="Search Profession"
 														/>
 														<i className="fa-solid fa-magnifying-glass"></i>
 													</div>
@@ -2074,7 +2074,7 @@ export default function popup() {
 									Your Inquiry was submitted.
 								</h5>
 								<p className="font-medium social-link weight-light text-center mb-3">
-									This lawyer typically responds in 48 hours. Go to your dashboard to see updates.{' '}
+									This professional typically responds in 48 hours. Go to your dashboard to see updates.{' '}
 								</p>
 
 								<button className="btn-primary mb-2 w-100">Go to Dashboard</button>

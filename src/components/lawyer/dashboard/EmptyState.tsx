@@ -19,7 +19,7 @@ export default function EmptyState() {
 									backgroundImage="/images/Profile-dash.jpg"
 									count={0}
 									linkText={'Profile Views'}
-									href={'/lawyer/profile'}
+									href={'/professional/profile'}
 								/>
 							</div>
 							<div className="col-6">
@@ -27,7 +27,7 @@ export default function EmptyState() {
 									backgroundImage="/images/Profile-dash2.jpg"
 									count={0}
 									linkText={'Inquiries'}
-									href={'/lawyer/inquires'}
+									href={'/professional/inquires'}
 								/>
 							</div>
 							<div className="col-sm-12">
@@ -60,9 +60,9 @@ export default function EmptyState() {
 								</div>
 								<h2 className="text-center">Welcome to Professional Women United!</h2>
 								<p className="text-center">
-									Connect with Professionals or legal consultants through our platform and get the legal help you need within the United Arab Emirates.
+									Connect with Professionals or professional consultants through our platform and get the professional help you need within the United States of America.
 								</p>
-								<Link href={'/lawyer/profile/edit'}>
+								<Link href={'/professional/profile/edit'}>
 									<DefaultButton className="w-100 mt-3">Update Profile</DefaultButton>
 								</Link>
 							</div>
@@ -76,11 +76,11 @@ export default function EmptyState() {
 								</div>
 								<h2>Find clients easily...</h2>
 								<p className="mt-2">
-									Contribute to our legal community & grow your reach by sharing your expertise.{' '}
+									Contribute to our professional community & grow your reach by sharing your expertise.{' '}
 								</p>
-								<Link href={'/lawyer/legal-community'}>
+								<Link href={'/professional/dashboard'}>
 									<LinkButton height={42} className="banner-button mt-3 w-100" color="#208C84">
-										Go to Legal Community
+										Go to Professional Community
 									</LinkButton>
 								</Link>
 							</div>

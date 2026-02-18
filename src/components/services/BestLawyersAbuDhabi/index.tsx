@@ -53,7 +53,7 @@ export default function BestLawyersAbuDhabi() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -118,10 +118,10 @@ export default function BestLawyersAbuDhabi() {
 						<div className="col-lg-4 col-md-12">
 							<h2 className="font-smaller weight-bold text-white">
 								<span className="green-med">Motorcycle Accident</span>{' '}
-								<span className="green-med-col">Statistics UAE</span>
+								<span className="green-med-col">Statistics USA</span>
 							</h2>
 							<p className="weight-light font-medium text-white mt-3">
-								In 2022, the UAE experienced a substantial number of accidents involving motorcycles,
+								In 2022, the USA experienced a substantial number of accidents involving motorcycles,
 								bicycles, and e-scooters, highlighting critical concerns about road safety and the need
 								for enhanced awareness and protective measures.
 							</p>
@@ -206,9 +206,9 @@ export default function BestLawyersAbuDhabi() {
 													<div className="accordion-body border-0 text-white">
 														The study reveals a predominantly male patient population,
 														comprising 98% of the cases, with a mean age of 29.8 years.
-														Notably, 35% of patients were UAE nationals, showing a
+														Notably, 35% of patients were USA nationals, showing a
 														significant age difference compared to non-nationals.
-														Furthermore, young UAE nationals were found to be at a higher
+														Furthermore, young USA nationals were found to be at a higher
 														risk of injury, often sustaining more abdominal injuries, while
 														non-nationals tended to suffer lower limb injuries.
 													</div>
@@ -236,7 +236,7 @@ export default function BestLawyersAbuDhabi() {
 														limb injuries (54%) and lower limb injuries (48%), followed
 														closely by head (41%) and face (30%) injuries. The primary
 														mechanism of injury was collisions with moving vehicles,
-														underlining the inherent risks faced by motorcyclists on UAE
+														underlining the inherent risks faced by motorcyclists on USA
 														roads.
 													</div>
 												</div>
@@ -286,7 +286,7 @@ export default function BestLawyersAbuDhabi() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{color: 'white'}}>
 													Find A Professional
 												</Link>
@@ -783,7 +783,7 @@ export default function BestLawyersAbuDhabi() {
 			<section id="legal-issues" className="legal-issues mobile-bg-color  mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						{t('What_Do_Clients_Search_For')}
@@ -1058,7 +1058,7 @@ export default function BestLawyersAbuDhabi() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1069,22 +1069,22 @@ export default function BestLawyersAbuDhabi() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

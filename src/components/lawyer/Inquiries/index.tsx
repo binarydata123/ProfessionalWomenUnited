@@ -148,7 +148,7 @@ export default function Inquiries({ index = 0, item, onDelete, refreshPage }: Pr
 							)}
 						</div>
 					)}
-					<Link href={`/lawyer/inquiries/${item.inquiry_id}`}>
+					<Link href={`/professional/inquiries/${item.inquiry_id}`}>
 						<p className="green-dark font-small weight-bold">{item.inquirer_fullname}</p>
 						{item.response_type === 'text' || item.response_type === null ? (
 							<p className="text-sonic-silver font-x-small weight-light">
@@ -181,7 +181,7 @@ export default function Inquiries({ index = 0, item, onDelete, refreshPage }: Pr
 					</Link>
 				</div>
 				<div className="col-lg-2  col-md-2 p-0 col-2 text-right">
-					<p className="green-dark font-x-small weight-bold ">{formatDateTime(item.inquiry_created_at)}dfsdfsdfsfdf</p>
+					<p className="green-dark font-x-small weight-bold ">{formatDateTime(item.inquiry_created_at)}</p>
 				</div>
 				<div className="col-lg-1 col-md-2 col-2 text-center" id="lawyer-dash">
 					<DropDown label={<EllipsisHorizontalIcon color="#000" width={20} height={20} />}>

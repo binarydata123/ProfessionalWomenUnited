@@ -130,7 +130,7 @@ export default function SingleFirm({ slug = '' }: Props) {
     });
     const [showAllLawyers, setShowAllLawyers] = useState(false);
     const imageUrl = single_firm?.image
-        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${single_firm.image}`
+        ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${single_firm.image}`
         : `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/1920x1080.png`;
 
     return (
@@ -204,7 +204,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                     style={{ borderRadius: '10px' }}
                                                 />
                                                 {/* <div style={{
-                                                    backgroundImage: `url(${single_firm?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/connect-Legal/Blogs/${single_firm?.image}` : "/images/firm/test.png"})`,
+                                                    backgroundImage: `url(${single_firm?.image ? `${process.env.NEXT_PUBLIC_IMAGE_URL}/professional-women/Blogs/${single_firm?.image}` : "/images/firm/test.png"})`,
                                                     backgroundSize: 'cover',
                                                     backgroundRepeat: 'no-repeat',
                                                     backgroundPosition: 'center',
@@ -228,7 +228,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                             src="/images/profile/fluent_share-16-filled.png"
                                                             width={25}
                                                             height={25}
-                                                            alt="share lawyer profile"
+                                                            alt="share professional profile"
                                                             style={{ cursor: 'pointer' }}
                                                             onClick={() => setshare(!share)}
                                                         />
@@ -289,7 +289,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                                                     <div className="company-detail">
                                                         {single_firm?.member_count > 0 ? (
                                                             // <p>{single_firm?.member_count} Professionals Online</p>
-                                                            <p>{single_firm?.member_count} {single_firm?.member_count == 1 ? 'Lawyer Online' : 'Professionals Online'}</p>
+                                                            <p>{single_firm?.member_count} {single_firm?.member_count == 1 ? 'Professional Online' : 'Professionals Online'}</p>
 
                                                         ) : (
                                                             <></>
@@ -530,7 +530,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                 <div className="container" >
                     <div className="needlawyer-text-firm" >
                         <h2 className="text-start Discover-lawyer" style={{ color: '#c49073' }} >
-                            {lawyers.length ? 'Our Legal Team' : ''}
+                            {lawyers.length ? 'Our professional Team' : ''}
                         </h2>
                     </div>
                     <div className="row mt-4">
@@ -553,7 +553,7 @@ export default function SingleFirm({ slug = '' }: Props) {
                             <>
                                 {lawyers.slice(0, showAllLawyers ? lawyers.length : 4).map((item: any, index: any) => (
                                     <div className="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4">
-                                        <LawyerCard lawyer={item} Key={index} />
+                                        <LawyerCard lawyer={item} />
                                     </div>
                                 ))}
                                 {lawyers.length > 4 && !showAllLawyers && (

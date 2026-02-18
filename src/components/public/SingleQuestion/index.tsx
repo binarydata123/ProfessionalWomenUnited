@@ -96,16 +96,16 @@ export default function SingleQuestion({
 							<span>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="Legal Forum"
+									alt="Professional Forum"
 									width={16}
 									height={16}
 								/>
 							</span>
-							<span>Legal Forum</span>
+							<span>Professional Forum</span>
 							<span>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="Legal Forum"
+									alt="Professional Forum"
 									width={16}
 									height={16}
 								/>
@@ -116,7 +116,7 @@ export default function SingleQuestion({
 							<span>
 								<Image
 									src="/images/legal-service/arrow-right.png"
-									alt="Legal Forum"
+									alt="Professional Forum"
 									width={16}
 									height={16}
 								/>
@@ -156,7 +156,7 @@ export default function SingleQuestion({
 							<div className="mt-4">
 								<div className="row">
 									<div className="col-lg-6">
-										{user?.role === 'lawyer' ? (
+										{user?.role === 'professional' ? (
 											<button
 												className="btn-commn w-100"
 												onClick={() =>
@@ -168,8 +168,8 @@ export default function SingleQuestion({
 												Comment
 											</button>
 										) : (
-											<Link href={'/ask-a-lawyer'}>
-												<button className="btn-commn w-100">Ask A Lawyer - it’s FREE!</button>
+											<Link href={'/find-a-professional'}>
+												<button className="btn-commn w-100">Ask A Professional - it’s FREE!</button>
 											</Link>
 										)}
 									</div>
@@ -228,8 +228,8 @@ export default function SingleQuestion({
 					</div>
 					<div className="col-lg-4 text-lg-end">
 						<div className="gotalegalquestion">
-							<Link href={`/legal-forum/${slug}/ask-a-lawyer`}>
-								<button className="btn-commn">Ask A Lawyer</button>
+							<Link href={`/legal-forum/${slug}/find-a-professional`}>
+								<button className="btn-commn">Ask A Professional</button>
 							</Link>
 						</div>
 					</div>

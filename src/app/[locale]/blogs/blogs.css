@@ -98,11 +98,11 @@
 .all-type-of li {
 	display: inline-block;
 	border-radius: 100px;
-	border: 1px solid var(--green-medium-2);
+	border: 1px solid #153060;
 	padding: 10px 20px;
 	transition: all 0.3s;
 	margin-left: 15px;
-	color: #c49073;
+	color: #153060;
 	cursor: pointer;
 }
 
@@ -120,8 +120,8 @@
 }
 
 li.first-active {
-	color: var(--green-dark);
-	background-color: #c4907352;
+	color: #fff;
+	background-color: #153060;
 	border: 1px solid var(--color-black-gray);
 	height: -webkit-fill-available;
 }
@@ -247,6 +247,20 @@ li.first-active {
 	.all-type-of li a {
 		font-size: var(--font-small);
 	}
+
+	.all-type-of li {
+		display: inline-block;
+		border-radius: 100px;
+		border: 1px solid var(--green-medium-2);
+		padding: 4px !important;
+		transition: all 0.3s;
+		margin-left: 15px;
+		color: #c49073;
+		cursor: pointer;
+	}
+	.all-type-of {
+		padding: 20px 0px !important;
+	}
 }
 
 /* blog page start */
@@ -261,7 +275,7 @@ li.first-active {
 	line-height: var(--custom-line-height);
 	letter-spacing: var(--letter-spacing-02);
 	text-align: left;
-	color: var(--green-medium-2);
+	color: #153060;
 }
 
 a.unactive {
@@ -572,8 +586,47 @@ span.border.border-radius-1.banner-arrow-btn.border-color {
 	.blog-text-all {
 		padding-top: 30px;
 	}
-}
+	.all-type-of {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		overflow-x: auto;
+		padding: 15px 0px !important;
+		margin: 0 -10px;
+	}
 
+	.all-type-of li {
+		flex: 0 0 auto;
+		white-space: nowrap;
+		margin: 5px;
+		padding: 8px 15px !important;
+		font-size: var(--font-small) !important;
+	}
+
+	/* Ensure the slider works properly on mobile */
+	.all-type-of .slick-slide {
+		padding: 0 5px;
+	}
+
+	.all-type-of .slick-list {
+		margin: 0 -5px;
+	}
+
+	/* Make the "All" button properly sized on mobile */
+	.all-type-of > li:first-child {
+		margin-left: 0;
+	}
+}
+@media (max-width: 480px) {
+	.all-type-of li {
+		padding: 6px 12px !important;
+		font-size: var(--font-x-small) !important;
+	}
+
+	.explore-blogs-title h3 {
+		font-size: var(--font-x-large);
+		line-height: 1.3;
+	}
+}
 .sticky-profile {
 	position: fixed;
 	top: 0;
@@ -626,7 +679,7 @@ i.fa-brands.fa-x-twitter {
 .blog-popup-fix .modal-content {
 	background-position: center;
 	background: url('/images/Group39896.png') no-repeat center;
-	padding: 100px 25px;
+	padding: 78px 25px;
 	border: none !important;
 }
 

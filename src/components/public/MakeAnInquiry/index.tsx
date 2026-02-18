@@ -12,7 +12,7 @@ import FormInput from '@/commonUI/FormInput';
 import Popup from '@/commonUI/Popup';
 import FormTextarea from '@/commonUI/FormTextArea';
 import AuthContext from '@/context/AuthContext';
-import { getAdminImageSrc180x180 } from '@/app/[locale]/commonfunctions/commonfunctions';
+import { getAdminImageSrc180x180, getAdminImageSrc80x80 } from '@/app/[locale]/commonfunctions/commonfunctions';
 
 interface FormData {
 	firstName: string;
@@ -55,7 +55,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 			setMessage(issue);
 			setFormData({ ...formData, message: issue });
 		}
-	}, []);
+	}, [user]);
 
 	const handleSingleLawyerDetails = async (id: any) => {
 		try {
@@ -137,8 +137,13 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 		setMessage('');
 	};
 
-	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'male-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
-
+	const placeholderImgUrl = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/${lawyer.gender == 'male' ? 'female-lawyer-306x200.png' : 'female-lawyer-306x200.png'}`;
+	const handleApiNull = (value: any): string | null => {
+		if (value === null || value === undefined || value === 'null' || value === 'undefined' || value === '') {
+			return null;
+		}
+		return value;
+	};
 
 	return (
 		<>
@@ -186,7 +191,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 								/>
 							</li>
 							<li>
-								<Link href={''}>Make an Inquiry</Link>
+								<Link href={''}>Call a Specialist</Link>
 							</li>
 						</ul>
 					</div>
@@ -200,7 +205,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 							{isLoggedIn ? (
 								<div className="making-inquery">
 									<div className="d-none d-lg-block">
-										<h4>Make An Inquiry to {lawyer.first_name}</h4>
+										<h4>Make An Inquiry to {lawyer?.first_name
+											?.toLowerCase()
+											.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h4>
 										<p>Please fill out the form below and state the nature of your query.</p>
 									</div>
 									<form className="" onSubmit={handleSubmit}>
@@ -211,7 +218,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											required
 											label={'Your Message'}
 											maxLength={1000}
-											placeholder="Briefly share your legal issue here..."
+											placeholder="Briefly share your professional issue here..."
 											value={message}
 											error={errors.message}
 											onChange={handleTextAreaChange}
@@ -224,7 +231,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 							) : (
 								<div className="making-inquery">
 									<div className="d-none d-lg-block">
-										<h4>Make An Inquiry to {lawyer.first_name}</h4>
+										<h4>Make An Inquiry to {lawyer?.first_name
+											?.toLowerCase()
+											.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h4>
 										<p>Please fill out the form below and state the nature of your query.</p>
 									</div>
 									<form className="" onSubmit={handleSubmit}>
@@ -278,7 +287,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 											onChange={handleFormChange}
 											required
 											error={errors.message}
-											placeholder="Briefly share your legal issue here..."
+											placeholder="Briefly share your professional issue here..."
 										/>
 										<button type="submit" className="btn-commn w-100 mt-5 mb-5">
 											Submit
@@ -290,7 +299,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 						<div className="col-lg-5 order-lg-0 order-first">
 							<div className="">
 								<div className="d-block d-lg-none making-inquery">
-									<h4>Make An Inquiry to {lawyer.first_name}</h4>
+									<h4>Make An Inquiry to {lawyer?.first_name
+										?.toLowerCase()
+										.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h4>
 									<p>Please fill out the form below and state the nature of your query.</p>
 								</div>
 								<div className="profile-data">
@@ -298,11 +309,11 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 										<div className="col-3">
 											<div className="profile-user">
 												<Image
-													// src={getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)}
-													src={
-														getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)
-														|| "/images/female-lawyer-180x180.png"
-													}
+													src={getAdminImageSrc80x80(lawyer?.profile_image, lawyer.gender)}
+													// src={
+													// 	getAdminImageSrc180x180(lawyer?.profile_image, lawyer.gender)
+													// 	|| "/images/female-lawyer-180x180.png"
+													// }
 													alt={lawyer.full_name}
 													width={180}
 													height={180}
@@ -327,7 +338,9 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 												<div className="col-12">
 													<div className="data-profile-user">
 														<Link href={`/find-a-professional/${slug}`} target="_blank">
-															<h3>{lawyer.full_name}</h3>
+															<h3>{lawyer?.full_name
+																?.toLowerCase()
+																.replace(/\b\w/g, (char: string) => char.toUpperCase())}</h3>
 														</Link>
 													</div>
 												</div>
@@ -338,14 +351,14 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 														{/* <p>
 															{lawyer.designation}
 														</p> */}
-														{lawyer?.designation && (
+														{/* {lawyer?.designation && (
 															<span style={{ fontWeight: '600', fontSize: '20px' }}>{lawyer?.designation}</span>
-														)}{' '}
-														{lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
+														)}{' '} */}
+														{/* {lawyer?.firm_name && lawyer.firm_name.length > 0 ? (
 															<span className="location-move-set">
 																at {' '} <Link href={`/firms/${lawyer?.firm_slug}`} style={{ color: '#02142d', fontSize: '14px', fontWeight: '600' }}>{lawyer.firm_name}</Link>
 															</span>
-														) : ""}
+														) : ""} */}
 														{lawyer.location_name && (
 															<p>
 																<MapPinIcon
@@ -371,11 +384,12 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 																	<p>Licensed for {lawyer.license_for_years} years</p>
 																)}
 															</div>
-															{lawyer.consultation_duration && (
+															{handleApiNull(lawyer?.consultation_duration) && (
 																<p className="m-0">
-																	Free Consultation: {lawyer.consultation_duration}
+																	Free Consultation: {handleApiNull(lawyer?.consultation_duration)}
 																</p>
 															)}
+
 														</div>
 													</div>
 												</div>
@@ -399,7 +413,7 @@ export default function MakeAnInquiry({ slug = '' }: Props) {
 						Your Inquiry was submitted.
 					</h5>
 					<p className="font-medium social-link weight-light text-center mb-3">
-						This lawyer typically responds in 48 hours. Go to your dashboard to see updates.{' '}
+						This professional typically responds in 48 hours. Go to your dashboard to see updates.{' '}
 					</p>
 
 					{user && user?.role === 'enduser' && (

@@ -8,6 +8,9 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { getAllServices, updateLastSeen } from '../../../../lib/frontendapi';
 import AuthContext from '@/context/AuthContext';
 import { useTranslations } from 'next-intl';
+import { MdDashboard } from 'react-icons/md';
+import { IoMdSettings } from 'react-icons/io';
+import { TbHelpSquareFilled } from 'react-icons/tb';
 
 export default function Header({ locale }: any) {
 	const t = useTranslations('menupage');
@@ -76,7 +79,7 @@ export default function Header({ locale }: any) {
 	const profileImageSrc = user?.profile_image
 		? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/profile/${user?.profile_image}`
 		: user?.gender == 'male' || user?.gender == 'other'
-			? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-243.png`
+			? `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-242.png`
 			: `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/default/group-242.png`;
 
 
@@ -144,7 +147,7 @@ export default function Header({ locale }: any) {
 														<div className="row align-items-center">
 															<div className="col-sm-2 col-4 w-12">
 																<Image
-																	src={user?.role !== 'admin' ? profileImageSrc : 'https://pro-women.api.ai-developer.site/images/favicon.png'}
+																	src={user?.role !== 'admin' ? profileImageSrc : 'https://api.professionalwomenunited.com/images/favicon.png'}
 																	alt="user-img2"
 																	width={42}
 																	height={42}
@@ -187,55 +190,54 @@ export default function Header({ locale }: any) {
 														<div className="top-header-light">
 															<ul>
 																<li className="w-normal">
-																	<Link
+																	<Link style={{ color: '#000' }}
 																		href={(() => {
 																			if (user?.role === 'admin') {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-																			} else if (user?.role === 'lawyer') {
-																				return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/dashboard`;
+																			} else if (user?.role === 'professional') {
+																				return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 																			} else {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																			}
 																		})()}>
-																		<Image
-																			src="/images/left-menu-1.png"
-																			alt="left-menu-1"
-																			width={18}
-																			height={18}
-																		/>
+
+																		<MdDashboard color={'#c49073'} size={18} />
 																		&nbsp; {t('goToDashboard')}
 																	</Link>
 																</li>
 
 																<li>
-																	<Link
+																	<Link style={{ color: '#000' }}
 																		href={(() => {
 																			if (user?.role === 'admin') {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
-																			} else if (user?.role === 'lawyer') {
-																				return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/profile-settings`;
+																			} else if (user?.role === 'professional') {
+																				return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
 																			} else {
 																				return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																			}
 																		})()}>
-																		<Image
+																		{/* <Image
 																			src="/images/left-menu-5.png"
 																			alt="left-menu-1"
 																			width={18}
 																			height={18}
-																		/>
+																		/> */}
+																		<IoMdSettings color={'#c49073'} size={18} />
 																		&nbsp; {t('settings')}
 																	</Link>
 																</li>
 
 																<li>
 																	<Link href="#" style={{ color: '#1F1F1F' }}>
-																		<Image
+																		{/* <Image
 																			src="/images/left-menu-6.png"
 																			alt="left-menu-6"
 																			width={18}
 																			height={18}
-																		/>
+																		/> */}
+																		<TbHelpSquareFilled color={'#c49073'} size={18} />{' '}
+
 																		&nbsp; {t('help')}
 																	</Link>
 																</li>
@@ -345,8 +347,8 @@ export default function Header({ locale }: any) {
 												href={(() => {
 													if (user?.role === 'admin') {
 														return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-													} else if (user?.role === 'lawyer') {
-														return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/dashboard`;
+													} else if (user?.role === 'professional') {
+														return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 													} else {
 														return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 													}
@@ -357,10 +359,11 @@ export default function Header({ locale }: any) {
 											</Link>
 										) : (
 											<Link
-												href='/'
+												href='/auth/choose-profile'
 												className='btn btn-outline-success btn-lawyer hide-btn w-100 text-center set-bt'
+												style={{ backgroundColor: '#c3221b !important' }}
 												type="submit">
-												For Professionals
+												Registration for Invitees
 											</Link>
 										)}
 										{user?.id ? (
@@ -385,7 +388,7 @@ export default function Header({ locale }: any) {
 														)
 															: <p style={{ marginTop: '7px' }}>
 																<Image
-																	src="https://pro-women.api.ai-developer.site/images/favicon.png"
+																	src="https://api.professionalwomenunited.com/images/favicon.png"
 																	alt="user-img"
 																	width={30}
 																	height={30}
@@ -399,7 +402,7 @@ export default function Header({ locale }: any) {
 													<div className="dropdown ">
 														<button
 															className="btn btn-secondary dropdown-toggle mt-2"
-															style={{ background: '#fff' }}
+															style={{ background: '#c49073' }}
 															type="button"
 															id="dropdownMenu2"
 															data-bs-toggle="dropdown"
@@ -433,20 +436,24 @@ export default function Header({ locale }: any) {
 															<li className="">
 																<Link
 																	href={(() => {
-																		if (user?.role === 'admin') {
+																		if (typeof window !== "undefined") {
+																			const paymentPending = sessionStorage.getItem("payment_pending");
+																			if (paymentPending === "true") {
+																				return "/auth/professional/choose-pricing-plan";
+																			}
+																		}
+
+																		if (user?.role === "admin") {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/dashboard`;
-																		} else if (user?.role === 'lawyer') {
-																			return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/dashboard`;
+																		} else if (user?.role === "professional") {
+																			return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/dashboard`;
 																		} else {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/dashboard`;
 																		}
-																	})()}>
-																	<Image
-																		src="/images/left-menu-1.png"
-																		alt="left-menu-1"
-																		width={18}
-																		height={18}
-																	/>
+																	})()}
+																>
+																	<MdDashboard color={'#c49073'} size={18} />
+
 																	&nbsp; {t('goToDashboard')}
 																</Link>
 															</li>
@@ -454,32 +461,30 @@ export default function Header({ locale }: any) {
 															<li>
 																<Link
 																	href={(() => {
-																		if (user?.role === 'admin') {
+																		if (typeof window !== "undefined") {
+																			const paymentPending = sessionStorage.getItem("payment_pending");
+																			if (paymentPending === "true") {
+																				return "/auth/professional/choose-pricing-plan";
+																			}
+																		}
+																		if (user?.role === "admin") {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/admin/profile-settings`;
-																		} else if (user?.role === 'lawyer') {
-																			return `${process.env.NEXT_PUBLIC_BASE_URL}/lawyer/profile-settings`;
+																		} else if (user?.role === "professional") {
+																			return `${process.env.NEXT_PUBLIC_BASE_URL}/professional/profile-settings`;
 																		} else {
 																			return `${process.env.NEXT_PUBLIC_BASE_URL}/user/profile-settings`;
 																		}
 																	})()}>
-																	<Image
-																		src="/images/left-menu-5.png"
-																		alt="left-menu-1"
-																		width={18}
-																		height={18}
-																	/>
+																	<IoMdSettings color={'#c49073'} size={18} />{' '}
+
 																	&nbsp; {t('settings')}
 																</Link>
 															</li>
 
 															<li>
 																<Link href="/contact-us">
-																	<Image
-																		src="/images/left-menu-6.png"
-																		alt="left-menu-6"
-																		width={18}
-																		height={18}
-																	/>
+																	<TbHelpSquareFilled color={'#c49073'} size={18} />{' '}
+
 																	&nbsp; {t('help')}
 																</Link>
 															</li>

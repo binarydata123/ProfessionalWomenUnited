@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /user/
-Disallow: /lawyer/
+Disallow: /professional/
 Disallow: /temp/
 Disallow: /404/
 Disallow: /503/
@@ -20,8 +20,8 @@ Disallow: /cdn-cgi/l/email-protection/
 
 # Disallow crawling for specific subdomains
 User-agent: *
-Disallow: http://api.connectlegal.ae/
-Disallow: http://dev.connectlegal.ae/
+Disallow: https://api.professionalwomenunited.com/
+Disallow: https://api.professionalwomenunited.com/
 
 Sitemap: https://connectlegal.ae/sitemap.xml
 

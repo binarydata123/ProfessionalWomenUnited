@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, {useCallback, useState} from 'react';
+import React, { useCallback, useState } from 'react';
 
 interface ViewProfileProps {
 	laywerData: {
@@ -12,7 +12,7 @@ interface ViewProfileProps {
 		profile_image_alt_text: string;
 	};
 }
-export default function ViewProfile({laywerData}: ViewProfileProps) {
+export default function ViewProfile({ laywerData }: ViewProfileProps) {
 	const [copyStatus, setCopyStatus] = useState({
 		email: false,
 		phone: false
@@ -33,20 +33,20 @@ export default function ViewProfile({laywerData}: ViewProfileProps) {
 	const profileImageSrc = laywerData.profile_image
 		? '/images/profile/' + laywerData.profile_image
 		: laywerData.gender === 'male'
-		  ? '/images/default/group-243.png'
-		  : laywerData.gender === 'female'
-		    ? '/images/default/group-242.png'
-		    : '/images/default/group-243.png';
+			? '/images/default/group-242.png'
+			: laywerData.gender === 'female'
+				? '/images/default/group-242.png'
+				: '/images/default/group-242.png';
 
 	return (
 		<div className="view-profile-wrapper">
-			<Image
+			{/* <Image
 				src={process.env.NEXT_PUBLIC_IMAGE_URL + profileImageSrc}
 				alt="profile-circle"
 				width={80}
 				height={80}
 				style={{borderRadius: '50px'}}
-			/>
+			/> */}
 
 			<h5 className="modal-title f-22 weight-bold green-dark mt-2" id="exampleModalLabel">
 				{laywerData.full_name}

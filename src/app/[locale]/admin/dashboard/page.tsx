@@ -73,11 +73,11 @@ export default function Dashboard() {
 					<div className="row mt-4">
 						<div className="col-lg-12 col-md-12">
 							<div className="row">
-								<div className="col-sm-4 mb-3">
+								<div className="col-sm-6 col-md-4 mb-3">
 									<Link href={'/admin/user-mgmt/professionals'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.lawyer_count}
+												{dashboard_box.lawyer_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Active Professionals
@@ -85,11 +85,11 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-4 mb-3">
+								<div className="col-sm-6 col-md-4 mb-3">
 									<Link href={'/admin/user-mgmt/users'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.enduser_count}
+												{dashboard_box.enduser_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Individuals
@@ -97,7 +97,7 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-4 ">
+								<div className="col-sm-6 col-md-4 mb-3">
 									<Link href={'/admin/support'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
@@ -109,11 +109,11 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-4 mt-3">
+								<div className="col-sm-6 col-md-4 mb-3">
 									<Link href={'/admin/settings/global-parameters/authors'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.author_count_all}
+												{dashboard_box.author_count_all || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Authors
@@ -121,11 +121,11 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-4 mt-3">
+								<div className="col-sm-6 col-md-4 mb-3">
 									<Link href={'/admin/user-mgmt/inquiries'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.total_inquiry_count}
+												{dashboard_box.total_inquiry_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Inquiries
@@ -133,11 +133,11 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-4 mt-3">
+								<div className="col-sm-6 col-md-4 mb-3">
 									<Link href={'/admin/content-mgmt/blogs'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<p className="font-large text-white weight-bold">
-												{dashboard_box.blog_count}
+												{dashboard_box.blog_count || 0}
 											</p>
 											<LinkButton color="#fff" height={0}>
 												Blogs Posted
@@ -145,7 +145,8 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-6 overflow-hidden" id="add-commn-id">
+
+								<div className="col-md-6 col-12 overflow-hidden" id="add-commn-id">
 									<RecentBox
 										title="Recent Inquiries"
 										className="mt-4"
@@ -165,7 +166,7 @@ export default function Dashboard() {
 													</p>
 												</div>
 												<div className="d-flex gap-1 align-items-center left-content">
-													<p className="green-dark font-x-small weight-bold">
+													<p className="green-dark font-x-small weight-bold mobile-hide">
 														{inquiry.created_at && inquiry.created_at.split(' ')[1]}
 													</p>
 													<DropDown
@@ -193,7 +194,8 @@ export default function Dashboard() {
 										))}
 									</RecentBox>
 								</div>
-								<div className="col-sm-3 mt-4">
+
+								<div className="col-md-3 col-sm-6 col-6 mt-4">
 									<Link href={'/admin/settings/roles-and-permissions/add-new-professional'}>
 										<div className="dash-card-g dash-add back-dash-card">
 											<LinkButton color="#fff" height={0}>
@@ -202,7 +204,7 @@ export default function Dashboard() {
 										</div>
 									</Link>
 								</div>
-								<div className="col-sm-3 mt-4">
+								<div className="col-md-3 col-sm-6 col-6 mt-4">
 									<Link href="/admin/content-mgmt/blogs/create">
 										<div className="dash-card-g dash-add back-dash-card">
 											<LinkButton color="#fff" height={0}>

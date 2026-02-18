@@ -51,7 +51,7 @@ export default function BrainInjuryLawyer() {
 								<span>
 									<Image
 										src="/images/legal-service/arrow-right.png"
-										alt="Legal Forum"
+										alt="Professional Forum"
 										width={16}
 										height={16}
 									/>
@@ -269,7 +269,7 @@ export default function BrainInjuryLawyer() {
 														data-bs-target="#collapsethree"
 														aria-expanded="true"
 														aria-controls="collapsethree">
-														Getting Legal Help for Traumatic Brain Injuries
+														Getting professional help for Traumatic Brain Injuries
 													</button>
 												</h2>
 												<div
@@ -298,7 +298,7 @@ export default function BrainInjuryLawyer() {
 														data-bs-target="#collapsefour"
 														aria-expanded="true"
 														aria-controls="collapsefour">
-														Getting Legal Help for Traumatic Brain Injuries
+														Getting professional help for Traumatic Brain Injuries
 													</button>
 												</h2>
 												<div
@@ -324,7 +324,7 @@ export default function BrainInjuryLawyer() {
 										<button className="btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2 w-100-percentue findlawyermargin">
 											<span className="text-white findlawyertext">
 												<Link
-													href={'/auth/create-profile/?role=lawyer'}
+													href={'/auth/create-profile/?role=professional'}
 													style={{ color: 'white' }}>
 													Find A Professional
 												</Link>
@@ -739,7 +739,7 @@ export default function BrainInjuryLawyer() {
 											of legal expertise, compassion, and dedication to client advocacy. They have
 											extensive experience handling complex brain injury cases and a track record
 											of successful outcomes for their clients. You can trust that you're working
-											with the best brain injury lawyers in UAE who will prioritize your needs and
+											with the best brain injury lawyers in USA who will prioritize your needs and
 											strive for the best results.
 										</>
 									) : (
@@ -758,7 +758,7 @@ export default function BrainInjuryLawyer() {
 									expertise, compassion, and dedication to client advocacy. They have extensive
 									experience handling complex brain injury cases and a track record of successful
 									outcomes for their clients. You can trust that you're working with the best brain
-									injury lawyers in UAE who will prioritize your needs and strive for the best
+									injury lawyers in USA who will prioritize your needs and strive for the best
 									results.
 								</>
 							)}
@@ -820,7 +820,7 @@ export default function BrainInjuryLawyer() {
 			<section id="legal-issues" className="legal-issues  mobile-bg-color mt-5 mb-5">
 				<div className="container text-center">
 					<div className="needlawyer-text text-center">
-						<h6 className="text-center p-0">LEGAL ISSUES</h6>
+						<h6 className="text-center p-0">professional issueS</h6>
 					</div>
 					<h3 className="font-smaller weight-bold social-link">
 						What Do Clients
@@ -832,10 +832,10 @@ export default function BrainInjuryLawyer() {
 					<p className="font-medium weight-medium social-link set-text-padding color-frequent set-top-mrgin-mbl">
 						Clients frequently seek knowledgeable legal representation and clarity when seeking information
 						on brain injury cases. At Professional Women United, we ensure that your traumatic brain injury lawyer
-						understands the complexities of your situation and can provide clear guidance on your legal
+						understands the complexities of your situation and can provide clear guidance on yOur professional
 						options.
 						<br />
-						Select the legal issue you face and connect with a legal expert.
+						Select the professional issue you face and connect with a legal expert.
 					</p>
 					<ul className="pt-3 class-add">
 						<li>
@@ -941,7 +941,7 @@ export default function BrainInjuryLawyer() {
 										valuable testimony and evidence to support your case. Whether it's determining
 										the long-term effects of a traumatic brain injury or establishing causation in a
 										medical malpractice claim, having access to qualified medical experts
-										strengthens your legal position and increases your chances of success in court.
+										strengthens yOur professional position and increases your chances of success in court.
 									</div>
 								</div>
 							</div>
@@ -1109,7 +1109,7 @@ export default function BrainInjuryLawyer() {
 							<div className="needlawyer-text pt-lg-0 pt-4 hover">
 								<Image
 									src="/images/Home/legal-forum-legal-advice-free.webp"
-									alt="GOT A LEGAL QUESTION"
+									alt="GOT A Professional Question"
 									height={370}
 									width={620}
 									layout="responsive"
@@ -1120,22 +1120,22 @@ export default function BrainInjuryLawyer() {
 							<div className="needlawyer-text pt-0">
 								<h6 className="pt-0">GOT A PROFESSIONAL QUESTION?</h6>
 								<h2>
-									<span className="span">Join Our Legal Forum and </span>
+									<span className="span">Join Our Professional Forum and </span>
 									Get Expert
 									<br /> Advice for Free.
 								</h2>
 								<p>
 									Make an appointment with Advocates and Legal consultancy, one of the leading law
-									firms in Dubai and across the UAE, Today! or chat with a{' '}
+									firms in Dubai and across the USA, Today! or chat with a{' '}
 									<Link className="underlineClass" href="/find-a-professional">
 										professional lawyer online
 									</Link>{' '}
-									for free across UAE now, We work on a wide range of legal matters.
+									for free across USA now, We work on a wide range of legal matters.
 								</p>
 								<Link
 									href={'/legal-forum'}
 									className="w-35 chang-width btn-get-free btn-commn d-flex align-items-center justify-content-center gap-2">
-									<span className="text-white"> Visit Legal Forum </span>
+									<span className="text-white"> Visit Professional Forum </span>
 									<span className="border border-radius-1 banner-arrow-btn">
 										<ChevronRightIcon width={20} color={'#fff'} />
 									</span>

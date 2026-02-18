@@ -18,9 +18,10 @@
 }
 
 .card-box-rest.mar {
-	margin-left: 70px;
+	/* margin-left: 70px; */
+	margin-left: 15px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 	.tes-sp {
 		padding: 65px 80px;
 	}

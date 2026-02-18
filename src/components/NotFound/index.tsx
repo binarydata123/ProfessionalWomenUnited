@@ -12,7 +12,7 @@ export default function NotFound() {
                         <p>
                             We apologize, but the page you're looking for seems to have taken an extended recess. It
                             may have been moved, deleted, or never existed in the first place. Double-check the URL
-                            or navigate back to our homepage to find the legal information you need.
+                            or navigate back to our homepage to find the Professional Information you need.
                         </p>
                         <button className="btn-commn">Return to Homepage</button>
                     </div>

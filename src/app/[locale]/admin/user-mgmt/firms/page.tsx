@@ -314,7 +314,7 @@ export default function lawyers() {
 			const newStatus: boolean = !currentStatus;
 			handleAdminMakeOwnerToLawyer(lawyerId, newStatus);
 		} else {
-			console.error('Lawyer not found');
+			console.error('Professional not found');
 		}
 	}
 
@@ -501,7 +501,7 @@ export default function lawyers() {
 								<button className="monthly">
 									{rowData.created_by == '1' || rowData.created_by == '2'
 										? 'Admin'
-										: 'Lawyer'}
+										: 'Professional'}
 								</button>
 							</td>
 							<td data-th="Last Online">

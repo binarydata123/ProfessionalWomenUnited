@@ -35,76 +35,11 @@ export default function Login() {
 
 	useEffect(() => {
 		if (session) {
-			SocialData(session.user, 'google');
+			// SocialData(session.user, 'google');
 		}
 	}, [session]);
 
-	const SocialData = (user: any, type: any) => {
-		const data = {
-			first_name: user.name,
-			email: user.email
-		};
-		googleLogin(data)
-			.then(res => {
-				if (res.status == true) {
-					const token = res.data.token;
-					Cookies.set('session_token', token);
-					if (res.data.user.role == 'lawyer') {
-						if (res.data.user.profile_status == 'legal-step') {
-							router.push('/auth/professional/step-2');
-						}
-						if (res.data.user.profile_status == 'payment-step') {
-							router.push('/auth/professional/choose-pricing-plan');
-						}
 
-						if (res.data.user.profile_status == 'email-verification-step') {
-							window.sessionStorage.setItem('payment_status', 'paid');
-							handleResendEmailVerifyOtpSubmit(
-								res.data.user.id,
-								res.data.user.first_name,
-								res.data.user.email
-							);
-						}
-
-						if (res.data.user.profile_status == 'completed') {
-							if (res.data.user.two_factor_auth == 'yes') {
-								Cookies.set('two_step_auth', 'false');
-								router.push('/auth/two-factor-authentication');
-							} else {
-								Cookies.set('two_step_auth', 'true');
-								router.push('/lawyer/dashboard');
-							}
-						}
-					}
-					if (res.data.user.role == 'enduser') {
-						if (res.data.user.two_factor_auth == 'yes') {
-							Cookies.set('two_step_auth', 'false');
-							router.push('/auth/two-factor-authentication');
-						} else {
-							Cookies.set('two_step_auth', 'true');
-							router.push('/user/dashboard');
-						}
-					}
-					if (res.data.user.role == 'admin') {
-						if (res.data.user.two_factor_auth == 'yes') {
-							Cookies.set('two_step_auth', 'false');
-							router.push('/auth/two-factor-authentication');
-						} else {
-							Cookies.set('two_step_auth', 'true');
-							router.push('/admin/dashboard');
-
-						}
-					}
-				} else {
-					toast.error(res.message);
-
-					if (res.type == 'google') {
-						signOut({ redirect: false }).then();
-					}
-				}
-			})
-			.catch(error => { });
-	};
 
 	function validateForm() {
 		const newErrors: { [key: string]: string } = {};
@@ -124,57 +59,68 @@ export default function Login() {
 	function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault();
 		const isValid = validateForm();
-		if (isValid) {
-			setIsLoading(true);
-			login(formData.email, formData.password)
-				.then((res: any) => {
-					if (res) {
-						setIsLoading(false);
-						if (res.user.role == 'lawyer') {
-							if (res.user.profile_status == 'legal-step') {
-								router.push('/auth/professional/step-2');
-							}
-							if (res.user.profile_status == 'completed') {
-								if (res.user.two_factor_auth == 'yes') {
-									Cookies.set('two_step_auth', 'false');
-									router.push('/auth/two-factor-authentication');
-								} else {
-									router.push('/auth/two-factor-authentication');
-								}
-							}
+		if (!isValid) return;
+
+		setIsLoading(true);
+		login(formData.email, formData.password)
+			.then((res: any) => {
+				setIsLoading(false);
+				if (!res) return;
+				Cookies.set("userId", res.user.id, { expires: 1 });
+				// Cookies.set('two_factor_auth', res.user.two_factor_auth)
+				// 🔹 Step 1: Payment check
+				if (res.user.role === "professional") {
+					const isPaymentPending =
+						window.sessionStorage.getItem("payment_pending") === "true";
+					if (isPaymentPending) {
+						router.push("/auth/professional/choose-pricing-plan");
+						return;
+					}
+				}
+				if (res.next_step === 'email-verification-step') {
+					router.push('/auth/professional/verify-otp');
+					return;
+				}
+
+				// 🔹 Step 2: Two-Factor Auth / Role-based flow
+				if (res.user.role === 'professional') {
+					if (res.user.profile_status === 'professional-step') {
+						router.push('/auth/professional/step-2');
+					} else if (res.user.profile_status === 'completed') {
+						// Check if two-factor is enabled
+						if (res.user.two_factor_auth === "yes") {
+							router.push('/auth/two-factor-authentication');
 						} else {
-							if (res.user.role === 'enduser') {
-								if (res.user.two_factor_auth === 'yes') {
-									Cookies.set('two_step_auth', 'false');
-									router.push('/auth/two-factor-authentication');
-								} else {
-									router.push('/auth/two-factor-authentication');
-								}
-							} else if (res.user.role === 'admin') {
-								if (res.user.two_factor_auth === 'yes') {
-									Cookies.set('two_step_auth', 'false');
-									router.push('/auth/two-factor-authentication');
-								} else {
-									router.push('/auth/two-factor-authentication');
-								}
-							} else if (res.account === 'suspended') {
-								router.push('/account-suspended');
-							} else {
-								toast.error(res.message);
-							}
+							router.push('/professional/dashboard'); // Redirect directly to dashboard
 						}
 					}
-				})
-				.catch(err => {
-					throw err;
-				})
-				.finally(() => {
-					setTimeout(() => {
-						setIsLoading(false);
-					}, 1000);
-				});
-		}
+				} else if (res.user.role === 'enduser' || res.user.role === 'admin') {
+					// Check if two-factor is enabled
+					if (res.user.two_factor_auth === "yes") {
+						router.push('/auth/two-factor-authentication');
+					} else {
+						if (res.user.role === 'admin') {
+							router.push('/admin/dashboard');
+						} else {
+							router.push('/user/dashboard')
+						}
+					}
+				} else if (res.account === 'suspended') {
+					router.push('/account-suspended');
+				} else {
+					toast.error(res.message);
+				}
+			})
+			.catch(err => {
+				console.log(err);
+			})
+			.finally(() => setIsLoading(false));
 	}
+
+
+
+
+
 	const handleResendEmailVerifyOtpSubmit = (user_id: any, user_name: any, user_email: any) => {
 		setIsLoading(true);
 		const data = {
@@ -210,7 +156,7 @@ export default function Login() {
 						<div className="main-login top-sp-big">
 							<Link href="/" className="backtobtn mb-3">
 								<ArrowSmallLeftIcon width={20} />
-								Back
+								Back to Home Page
 							</Link>
 							<h1>
 								<span>Welcome</span> Back!
@@ -274,6 +220,13 @@ export default function Login() {
 								>
 									{!isLoading ? 'Continue' : 'Please wait...'}
 								</button>
+								{/* <Link
+									href="/"
+									className="register-page-link-back"
+									style={{ color: '#153060', marginTop: '1' }}
+								>
+									Back to Home
+								</Link> */}
 								{/* <button
 									type="button"
 									className="btn btn-outline-dark d-flex align-items-center gap-1 justify-content-center  mt-3 w-100"
@@ -283,7 +236,7 @@ export default function Login() {
 								</button> */}
 								<p className="mt-4 text-center register-page-link">
 									Dont have an account?
-									<Link href="/auth/choose-profile" style={{ color: '#c49073' }}> Create an account</Link>
+									<Link href="/auth/choose-profile" style={{ color: '#153060' }}> Create an account</Link>
 								</p>
 							</form>
 						</div>
