@@ -188,7 +188,11 @@ const DirectoryTabs = () => {
           <div className={`tab-pane ${currentTab === 'cities' ? 'show active' : 'fade'}`}>
             <div className="d-flex align-items-center mb-4">
               <i className="fas fa-map-marker-alt me-2 text-[#BE8363]" style={{ fontSize: '1.5rem' }}></i>
+<<<<<<< HEAD
               <h2 className="section-title mb-0">Top US  Metro Areas</h2>
+=======
+              <h2 className="section-title mb-0">Top US Metro Areas</h2>
+>>>>>>> 6e077dd849754ceeef3a084973caea184d52382c
               <span className="badge-count">{filteredCities.length} metro areas</span>
             </div>
             {loadingCities ? (
