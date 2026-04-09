@@ -1,11 +1,11 @@
 {
-	"name": "demo",
+	"name": "profession-women",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start": "next start -p 5000",
 		"lint": "next lint",
 		"format": "prettier --write . --ignore-path .prettierignore"
 	},

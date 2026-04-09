@@ -11,7 +11,7 @@ export default function Banner() {
 	return (
 		<div className='bg-color-blue'>
 
-			<section className="hero-banner">
+				<section className="hero-banner">
 				<div className="overlay"></div>
 				<div className="container top-ban">
 					<div className="hero-content">

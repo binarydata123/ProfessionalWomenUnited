@@ -8,7 +8,7 @@ const withNextIntl = createNextIntlPlugin();
 module.exports = withNextIntl({
 	reactStrictMode: true,
 	cache: false,
-	assetPrefix: isProd ? 'https://professionalwomenunited.com/' : 'http://localhost:3000/',
+	assetPrefix: isProd ? 'https://professionalwomenunited.com/' : 'http://localhost:5000/',
 	images: {
 		domains: ['localhost', 'professionalwomenunited.com', 'api.professionalwomenunited.com'] // Add your local domain(s) here
 	},

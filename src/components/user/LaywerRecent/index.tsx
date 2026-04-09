@@ -500,3 +500,4 @@ export default function LawyerSaved({ lawyerdata, handleDelete, handleSave }: Pr
 		</>
 	);
 }
+
