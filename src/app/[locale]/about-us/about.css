@@ -428,10 +428,6 @@ button.bg-893168.weight-semi-bold.font-small.icon-big.mt-4.transtion:hover {
 @media (min-width: 1700px) {
 	img.banner-img.effect {
 		min-width: 500px;
-<<<<<<< HEAD
         margin-top: 30px !important;
-=======
-		margin-top: 50px;
->>>>>>> 6e077dd849754ceeef3a084973caea184d52382c
 	}
 }
