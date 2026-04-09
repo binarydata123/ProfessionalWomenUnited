@@ -129,7 +129,7 @@ const DirectoryTabs = () => {
                 onClick={() => setCurrentTab('cities')}
                 style={{ whiteSpace: 'nowrap', fontSize: '14px' }}
               >
-                <i className="fas fa-map-marker-alt me-2"></i>Search by USA Cities
+                <i className="fas fa-map-marker-alt me-2"></i>Search by Metro Area
               </button>
             </li>
           </ul>
@@ -188,8 +188,8 @@ const DirectoryTabs = () => {
           <div className={`tab-pane ${currentTab === 'cities' ? 'show active' : 'fade'}`}>
             <div className="d-flex align-items-center mb-4">
               <i className="fas fa-map-marker-alt me-2 text-[#BE8363]" style={{ fontSize: '1.5rem' }}></i>
-              <h2 className="section-title mb-0">Top US Cities</h2>
-              <span className="badge-count">{filteredCities.length} cities</span>
+              <h2 className="section-title mb-0">Top US  Metro Areas</h2>
+              <span className="badge-count">{filteredCities.length} metro areas</span>
             </div>
             {loadingCities ? (
               <div className="text-center py-5">

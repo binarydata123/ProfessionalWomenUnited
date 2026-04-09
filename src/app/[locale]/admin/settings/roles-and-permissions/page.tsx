@@ -418,7 +418,7 @@ export default function Page() {
 									>
 										Approved
 									</button>
-								) : rowData.status == 'deactive' ? (
+								) : rowData.status == 'pending' ? (
 									<button
 										className="monthly"
 										style={{ color: '#F79E1B', backgroundColor: '#FFAC331F' }}
