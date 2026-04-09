@@ -172,19 +172,24 @@ export default function Page({ filterlawyer }: Props) {
 		});
 	};
 
-	const handleSearchLawyer = (e: any) => {
-	const value = e.target.value.trim(); // extra spaces remove
-
-	if (value.length > 2) {
-		getLawyersDataByName({ name: value }).then(res => {
-			setLawyers(res.data);
-			setCurrentPage(1);
-			setTotalPages(1);
-		});
-	} else {
-		handleLawyers(filterData, 1);
-	}
+const handleSearchLawyer = (e: any) => {
+    const rawValue = e.target.value;
+    const trimmedValue = rawValue.trim();
+    
+    if (trimmedValue.length >= 2) {  
+        getLawyersDataByName({ name: trimmedValue }).then(res => {
+            console.log("API Response:", res);
+            setLawyers(res.data);
+            setCurrentPage(1);
+            setTotalPages(1);
+        }).catch(err => {
+            console.error("Search error:", err);
+        });
+    } else if (rawValue === "") {
+        handleLawyers(filterData, 1);
+    }
 };
+
 	const handleJurisdication = () => {
 		getJurisdication().then(res => {
 			setJurisdication(res.data);
