@@ -407,7 +407,7 @@ export default function Page() {
 							</td>
 
 							<td data-th="Gender">
-								<p className="font-small weight-light social-link text-capitalize"> {rowData.gender}</p>
+								<p className="font-small weight-light social-link text-capitalize">{rowData.gender == 'female' ? 'female' : 'female'}</p>
 							</td>
 
 							<td data-th="Status">
@@ -418,7 +418,7 @@ export default function Page() {
 									>
 										Approved
 									</button>
-								) : rowData.status == 'deactive' ? (
+								) : rowData.status == 'pending' ? (
 									<button
 										className="monthly"
 										style={{ color: '#F79E1B', backgroundColor: '#FFAC331F' }}
@@ -430,7 +430,7 @@ export default function Page() {
 										className="monthly"
 										style={{ color: '#D04E4F', backgroundColor: '#D04E4F1F' }}
 									>
-										Suspended
+										Deactivate
 									</button>
 								)}
 							</td>

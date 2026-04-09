@@ -459,7 +459,7 @@ export default function Settings() {
 						</div>
 					)}
 				</div>
-				<div className="mt-5">
+				{/* <div className="mt-5">
 					<p className="font-small color-light mb-2 weight-medium">Notifications</p>
 					<hr className="hr-line mt-0" />
 					<div className="row">
@@ -547,7 +547,7 @@ export default function Settings() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
 				<hr className="hr-line mt-4 mb-4" />
 				<p className="font-large social-link weight-semi-bold m-font-20 mb-2  ">Help</p>
