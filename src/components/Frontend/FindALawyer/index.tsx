@@ -173,17 +173,18 @@ export default function Page({ filterlawyer }: Props) {
 	};
 
 	const handleSearchLawyer = (e: any) => {
-		if (e.target.value.length > 2) {
-			getLawyersDataByName({ name: e.target.value }).then(res => {
-				setLawyers(res.data);
-				setCurrentPage(1);
-				setTotalPages(1);
-			});
-		} else {
-			handleLawyers(filterData, 1);
-		}
-	};
+	const value = e.target.value.trim(); // extra spaces remove
 
+	if (value.length > 2) {
+		getLawyersDataByName({ name: value }).then(res => {
+			setLawyers(res.data);
+			setCurrentPage(1);
+			setTotalPages(1);
+		});
+	} else {
+		handleLawyers(filterData, 1);
+	}
+};
 	const handleJurisdication = () => {
 		getJurisdication().then(res => {
 			setJurisdication(res.data);

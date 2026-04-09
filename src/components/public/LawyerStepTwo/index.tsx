@@ -447,7 +447,7 @@ export default function LawyerStepTwo() {
 											)}
 											<p className="location-field-notes">
 												<i>
-													We feature professionals located within the 200 largest U.S. cities
+													We feature professionals located within the metro U.S. cities
 													to ensure broad representation across major metropolitan areas.{' '}
 													<a href="/our-selection-criteria">Learn more</a>
 												</i>

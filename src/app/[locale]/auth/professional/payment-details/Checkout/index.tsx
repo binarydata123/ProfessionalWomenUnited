@@ -87,6 +87,9 @@ export default function Checkout() {
 
     function SubmitPaymentForm(event: any) {
         event.preventDefault();
+
+        if (isLoading) return; // ❗ prevent double submit
+
         setIsLoading(true);
 
         if (!stripe || !elements) {

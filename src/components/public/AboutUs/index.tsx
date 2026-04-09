@@ -157,7 +157,7 @@ export default function AboutUs() {
 								</div>
 								<div className="col-sm-4 text-right tab-center d-none d-lg-block">
 									<img
-										src="/images/about-us/banner.png"
+										src="/images/about-us/abtop.png"
 										alt="about-img-banner"
 										className="banner-img effect"
 									/>

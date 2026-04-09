@@ -686,7 +686,7 @@ export default function Page() {
 							</div>
 						</div>
 						<div className="col-lg-12 col-xl-5 col-md-12">
-							<img src="/images/faq-img.png" alt="faq-img" className="mt-5 m-none effect" />
+							<img src="/images/young-professional-woman-seated-with-a-smile-in-an-office..jpg" alt="faq-img" className="mt-5 m-none effect" />
 						</div>
 					</div>
 				</div>
